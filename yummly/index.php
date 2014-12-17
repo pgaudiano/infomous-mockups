@@ -140,6 +140,8 @@ function curlInfo($term, $url, $id, $key) {
 <head>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <title>Yummly Visual Explorer</title>
+
+
 </head>
 <center>
 <body  style="background: url('spices.jpg');background-size: cover">

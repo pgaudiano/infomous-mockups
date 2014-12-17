@@ -1,6 +1,3 @@
-<script type="text/javascript" src="lib/shadowbox.js"></script>
-<link type="text/css" rel="stylesheet" href="lib/shadowbox.css"/>
-
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
@@ -18,9 +15,6 @@ if (isset($_GET['input'])) {
 echo '<html><body style="margin:0;padding:0;">
 <!-- BEGIN Infomous insertion --> 
 <script>
-    Shadowbox.init({
-      handleOversize: "resize"
-    });
     var myFeed = "'.$f.'"; // Feeds constructed above.
     var cloud;
     var myInfomousCloud = {  // Parameters that alter the look & feel of the cloud.
