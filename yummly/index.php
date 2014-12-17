@@ -140,8 +140,8 @@ function curlInfo($term, $url, $id, $key) {
 <head>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <title>Yummly Visual Explorer</title>
-
-
+<script type="text/javascript" src="http://www.infomous.com/site/scripts/shadowbox/shadowbox.js"></script>
+<link type="text/css" rel="stylesheet" href="http://www.infomous.com/site/scripts/shadowbox/shadowbox.css"/>
 </head>
 <center>
 <body  style="background: url('spices.jpg');background-size: cover">
@@ -158,11 +158,18 @@ function curlInfo($term, $url, $id, $key) {
         </table>
         <h3>The Yummly Visual Explorer by <em>Infomous</em></h3>
     
+<script>
+	Shadowbox.init({
+	handleOversize: "resize"
+	});
+</script>
+
         <div>
             <span style="padding: 10px;">Enter keywords to discover recipes: 
 	    		<input type="text" name="kw" size="50" id="search_term" onkeypress="searchKeyPress(event);">
 	    		<input type="button" id="btnSearch" value="Explore" onclick="search()">
 	    	</span>
+     <a rel="shadowbox;width=700;height=370" href="help.php" style="color:#444444;text-decoration:none;">[Help]</a>
         </div>
     </div>
     <div style="width:95%;height:95%;">
