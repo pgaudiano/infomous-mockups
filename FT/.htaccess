@@ -1,2 +1,6 @@
-Satisfy Any
-Allow from All
+Options -Indexes
+Satisfy any
+Order deny,allow
+Require group all-access FinancialTimes
+Allow from 127.0.0.1
+Deny from all
