@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+ <channel>
+  <atom:link href="http://www.infomous.com/site/mockups/FreshPatents/software_testing~8941600.xml" rel="self" type="application/rss+xml"/>
+  <title>Search pattern for software_testing</title>
+  <link>http://www.infomous.com/site/mockups/FreshPatents</link>
+  <description>Explore software testing from FreshPatents</description>
+  <item>
+   <title>Category -- Software Testing</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Testing-bx1.rss&amp;title=Software Testing</link>
+   <description>Category -- Software Testing</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Testing-bx1.rss&amp;title=Software Testing</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+ </channel>
+</rss>

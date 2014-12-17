@@ -1,0 +1,7 @@
+﻿/* BEGIN: DIALOG MODAL OVERLAY */
+div.overlay_prompt ul li.cancel a { background: url(../../../../../cms/en/us/cms_out/digital_assets/graphics/pages/bkg.a-prompt-cancel.gif) left top no-repeat transparent; }
+div.overlay_prompt ul li.continue a { background: url(../../../../../cms/en/us/cms_out/digital_assets/graphics/pages/bkg.a-prompt-continue.gif) left top no-repeat transparent; }
+div.overlay_prompt ul li.download a { background: url(../../../../../cms/en/us/cms_out/digital_assets/graphics/pages/bkg.a-prompt-download.gif) left top no-repeat transparent; }
+div.overlay_prompt ul li.close a { background: url(../../../../../cms/en/us/cms_out/digital_assets/graphics/pages/bkg.a-prompt-close.gif) left top no-repeat transparent; }
+/* END: DIALOG MODAL OVERLAY */
+

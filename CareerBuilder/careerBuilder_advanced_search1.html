@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html id="HTMLTag" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+    <title>
+        Find Jobs on CareerBuilder.com
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="cb_ad.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/shadowbox.js"></script>
+    <link type="text/css" rel="stylesheet" href="lib/shadowbox.css"/>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+</head>
+
+<body>
+    <header class="desktop-header">
+        <div class="new-platform-nav">
+            <div class="row">
+                <div class="small-6 columns no-padding">
+                    <a id="_ctl1_cbLogo" title="Click to go to the CareerBuilder homepage" class="desktop-logo" href="index.html"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="pnlOuterWrapper" class="cb_main pnlOuterWrapper">
+        <div id="pnlInnerWrapper" class="cb_style clearfix pnlInnerWrapper css3">
+            <a href="#" id="main-content"></a>
+            <h1 class="page_header">Advanced Job Search
+                <span class="thin hide-when-responsive">: Target your job search here</span>
+            </h1>
+            <div id="advSrchBox">
+                <!-- <form id="advancedSearch_frmAdvSrchBox" action="http://www.careerbuilder.com/jobseeker/jobs/jobresults.aspx" method="Get"> -->
+                    <input name="advancedSearch:MXJobSrchCriteria_JobQueryType" type="hidden" id="advancedSearch_MXJobSrchCriteria_JobQueryType" value="RAD" />
+                    <input name="advancedSearch:ch" type="hidden" id="advancedSearch_ch" value="al" />
+                    <input name="advancedSearch:MXJobSrchCriteria_QuerySrc" type="hidden" id="advancedSearch_MXJobSrchCriteria_QuerySrc" value="AdvSearchFrm" />
+                    <input name="advancedSearch:IPath" type="hidden" id="advancedSearch_IPath" value="QA" />
+                    <input type="hidden" name="qb" value="1" />
+                    <div class="column">
+                        <ul>
+                            <li>
+                                <label for="s_rawwords">Keywords</label>
+                                <input name="advancedSearch:s_rawwords" type="text" id="advancedSearch_s_rawwords" class="advancedSearch_s_rawwords_clean" maxlength="512" />
+                            </li>
+                            <li>
+                                <label for="s_use">Use</label>
+                                <select name="advancedSearch:s_use" id="advancedSearch_s_use">
+                                    <option selected="selected" value="ALL">All of these words</option>
+                                    <option value="ANY">Any of these words</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="s_freeloc">Location(s)
+                                    <span class="note">(enter up to 3)</span>
+                                </label>
+                                <input name="advancedSearch:s_freeloc" type="text" id="advancedSearch_s_freeloc" class="advancedSearch_s_freeloc_1_clean" />
+                                <input name="advancedSearch:s_freeloc" type="text" id="advancedSearch_s_freeloc" class="advancedSearch_s_freeloc_2_clean" />
+                                <input name="advancedSearch:s_freeloc" type="text" id="advancedSearch_s_freeloc" class="advancedSearch_s_freeloc_3_clean" />
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li>
+                                <label for="s_radius">Include Jobs Within</label>
+                                <select name="advancedSearch:s_radius" id="advancedSearch_s_radius" class="not-so-wide">
+                                    <option value="5">5 miles</option>
+                                    <option value="10">10 miles</option>
+                                    <option value="20">20 miles</option>
+                                    <option selected="selected" value="30">30 miles</option>
+                                    <option value="50">50 miles</option>
+                                    <option value="100">100 miles</option>
+                                    <option value="150">150 miles</option>
+                                </select>
+                                of your location(s)
+                            </li>
+
+                            <li>
+                                <label for="s_jobtypes">Job Categories
+                                    <span class="note">(select up to 3)</span>
+                                </label>
+                                <select name="advancedSearch:s_jobtypes" id="advancedSearch_s_jobtypes" class="advancedSearch_s_jobtypes_1">
+                                    <option selected="selected" value="ALL">- Select a Job Category -</option>
+                                    <option value="JN001">Accounting</option>
+                                    <option value="JN002">Admin - Clerical</option>
+                                    <option value="JN054">Automotive</option>
+                                    <option value="JN038">Banking</option>
+                                    <option value="JN053">Biotech</option>
+                                    <option value="JN019">Business Development</option>
+                                    <option value="JN059">Business Opportunity</option>
+                                    <option value="JN043">Construction</option>
+                                    <option value="JN020">Consultant</option>
+                                    <option value="JN003">Customer Service</option>
+                                    <option value="JN021">Design</option>
+                                    <option value="JN027">Distribution - Shipping</option>
+                                    <option value="JN031">Education</option>
+                                    <option value="JN004">Engineering</option>
+                                    <option value="JN022">Entry Level</option>
+                                    <option value="JN018">Executive</option>
+                                    <option value="JN017">Facilities</option>
+                                    <option value="JN005">Finance</option>
+                                    <option value="JN060">Franchise</option>
+                                    <option value="JN006">General Business</option>
+                                    <option value="JN051">General Labor</option>
+                                    <option value="JN046">Government</option>
+                                    <option value="JN070">Government - Federal</option>
+                                    <option value="JN055">Grocery</option>
+                                    <option value="JN023">Health Care</option>
+                                    <option value="JN040">Hospitality - Hotel</option>
+                                    <option value="JN007">Human Resources</option>
+                                    <option value="JN008">Information Technology</option>
+                                    <option value="JN056">Installation - Maint - Repair</option>
+                                    <option value="JN034">Insurance</option>
+                                    <option value="JN015">Inventory</option>
+                                    <option value="JN030">Legal</option>
+                                    <option value="JN041">Legal Admin</option>
+                                    <option value="JN037">Management</option>
+                                    <option value="JN029">Manufacturing</option>
+                                    <option value="JN009">Marketing</option>
+                                    <option value="JN047">Media - Journalism - Newspaper</option>
+                                    <option value="JN058">Nonprofit - Social Services</option>
+                                    <option value="JN050">Nurse</option>
+                                    <option value="JN010">Other</option>
+                                    <option value="JN049">Pharmaceutical</option>
+                                    <option value="JN024">Professional Services</option>
+                                    <option value="JN016">Purchasing - Procurement</option>
+                                    <option value="JN025">QA - Quality Control</option>
+                                    <option value="JN057">Real Estate</option>
+                                    <option value="JN026">Research</option>
+                                    <option value="JN035">Restaurant - Food Service</option>
+                                    <option value="JN033">Retail</option>
+                                    <option value="JN011">Sales</option>
+                                    <option value="JN012">Science</option>
+                                    <option value="JN013">Skilled Labor - Trades</option>
+                                    <option value="JN028">Strategy - Planning</option>
+                                    <option value="JN014">Supply Chain</option>
+                                    <option value="JN048">Telecommunications</option>
+                                    <option value="JN032">Training</option>
+                                    <option value="JN044">Transportation</option>
+                                    <option value="JN069">Veterinary Services</option>
+                                    <option value="JN045">Warehouse</option>
+                                </select>
+                                <select name="advancedSearch:s_jobtypes" id="advancedSearch_s_jobtypes" class="advancedSearch_s_jobtypes_2">
+                                    <option value="ALL">- Select a Job Category -</option>
+                                    <option value="JN001">Accounting</option>
+                                    <option value="JN002">Admin - Clerical</option>
+                                    <option value="JN054">Automotive</option>
+                                    <option value="JN038">Banking</option>
+                                    <option value="JN053">Biotech</option>
+                                    <option value="JN019">Business Development</option>
+                                    <option value="JN059">Business Opportunity</option>
+                                    <option value="JN043">Construction</option>
+                                    <option value="JN020">Consultant</option>
+                                    <option value="JN003">Customer Service</option>
+                                    <option value="JN021">Design</option>
+                                    <option value="JN027">Distribution - Shipping</option>
+                                    <option value="JN031">Education</option>
+                                    <option value="JN004">Engineering</option>
+                                    <option value="JN022">Entry Level</option>
+                                    <option value="JN018">Executive</option>
+                                    <option value="JN017">Facilities</option>
+                                    <option value="JN005">Finance</option>
+                                    <option value="JN060">Franchise</option>
+                                    <option value="JN006">General Business</option>
+                                    <option value="JN051">General Labor</option>
+                                    <option value="JN046">Government</option>
+                                    <option value="JN070">Government - Federal</option>
+                                    <option value="JN055">Grocery</option>
+                                    <option value="JN023">Health Care</option>
+                                    <option value="JN040">Hospitality - Hotel</option>
+                                    <option value="JN007">Human Resources</option>
+                                    <option value="JN008">Information Technology</option>
+                                    <option value="JN056">Installation - Maint - Repair</option>
+                                    <option value="JN034">Insurance</option>
+                                    <option value="JN015">Inventory</option>
+                                    <option value="JN030">Legal</option>
+                                    <option value="JN041">Legal Admin</option>
+                                    <option value="JN037">Management</option>
+                                    <option value="JN029">Manufacturing</option>
+                                    <option value="JN009">Marketing</option>
+                                    <option value="JN047">Media - Journalism - Newspaper</option>
+                                    <option value="JN058">Nonprofit - Social Services</option>
+                                    <option value="JN050">Nurse</option>
+                                    <option value="JN010">Other</option>
+                                    <option value="JN049">Pharmaceutical</option>
+                                    <option value="JN024">Professional Services</option>
+                                    <option value="JN016">Purchasing - Procurement</option>
+                                    <option value="JN025">QA - Quality Control</option>
+                                    <option value="JN057">Real Estate</option>
+                                    <option value="JN026">Research</option>
+                                    <option value="JN035">Restaurant - Food Service</option>
+                                    <option value="JN033">Retail</option>
+                                    <option value="JN011">Sales</option>
+                                    <option value="JN012">Science</option>
+                                    <option value="JN013">Skilled Labor - Trades</option>
+                                    <option value="JN028">Strategy - Planning</option>
+                                    <option value="JN014">Supply Chain</option>
+                                    <option value="JN048">Telecommunications</option>
+                                    <option value="JN032">Training</option>
+                                    <option value="JN044">Transportation</option>
+                                    <option value="JN069">Veterinary Services</option>
+                                    <option value="JN045">Warehouse</option>
+                                </select>
+                                <select name="advancedSearch:s_jobtypes" id="advancedSearch_s_jobtypes" class="advancedSearch_s_jobtypes_3">
+                                    <option value="ALL">- Select a Job Category -</option>
+                                    <option value="JN001">Accounting</option>
+                                    <option value="JN002">Admin - Clerical</option>
+                                    <option value="JN054">Automotive</option>
+                                    <option value="JN038">Banking</option>
+                                    <option value="JN053">Biotech</option>
+                                    <option value="JN019">Business Development</option>
+                                    <option value="JN059">Business Opportunity</option>
+                                    <option value="JN043">Construction</option>
+                                    <option value="JN020">Consultant</option>
+                                    <option value="JN003">Customer Service</option>
+                                    <option value="JN021">Design</option>
+                                    <option value="JN027">Distribution - Shipping</option>
+                                    <option value="JN031">Education</option>
+                                    <option value="JN004">Engineering</option>
+                                    <option value="JN022">Entry Level</option>
+                                    <option value="JN018">Executive</option>
+                                    <option value="JN017">Facilities</option>
+                                    <option value="JN005">Finance</option>
+                                    <option value="JN060">Franchise</option>
+                                    <option value="JN006">General Business</option>
+                                    <option value="JN051">General Labor</option>
+                                    <option value="JN046">Government</option>
+                                    <option value="JN070">Government - Federal</option>
+                                    <option value="JN055">Grocery</option>
+                                    <option value="JN023">Health Care</option>
+                                    <option value="JN040">Hospitality - Hotel</option>
+                                    <option value="JN007">Human Resources</option>
+                                    <option value="JN008">Information Technology</option>
+                                    <option value="JN056">Installation - Maint - Repair</option>
+                                    <option value="JN034">Insurance</option>
+                                    <option value="JN015">Inventory</option>
+                                    <option value="JN030">Legal</option>
+                                    <option value="JN041">Legal Admin</option>
+                                    <option value="JN037">Management</option>
+                                    <option value="JN029">Manufacturing</option>
+                                    <option value="JN009">Marketing</option>
+                                    <option value="JN047">Media - Journalism - Newspaper</option>
+                                    <option value="JN058">Nonprofit - Social Services</option>
+                                    <option value="JN050">Nurse</option>
+                                    <option value="JN010">Other</option>
+                                    <option value="JN049">Pharmaceutical</option>
+                                    <option value="JN024">Professional Services</option>
+                                    <option value="JN016">Purchasing - Procurement</option>
+                                    <option value="JN025">QA - Quality Control</option>
+                                    <option value="JN057">Real Estate</option>
+                                    <option value="JN026">Research</option>
+                                    <option value="JN035">Restaurant - Food Service</option>
+                                    <option value="JN033">Retail</option>
+                                    <option value="JN011">Sales</option>
+                                    <option value="JN012">Science</option>
+                                    <option value="JN013">Skilled Labor - Trades</option>
+                                    <option value="JN028">Strategy - Planning</option>
+                                    <option value="JN014">Supply Chain</option>
+                                    <option value="JN048">Telecommunications</option>
+                                    <option value="JN032">Training</option>
+                                    <option value="JN044">Transportation</option>
+                                    <option value="JN069">Veterinary Services</option>
+                                    <option value="JN045">Warehouse</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="exkw">Exclude Keywords</label>
+                                <input name="advancedSearch:exkw" type="text" id="advancedSearch_exkw" class="advancedSearch_exkw_clean" />
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column last">
+                        <ul>
+                            <li class="checkbox_group">
+                                <div class="label">Employment Type</div>
+                                <label>
+                                    <input name="advancedSearch:s_emptype" type="checkbox" id="advancedSearch_s_emptype" value="JTFT" class="s_emptype_JTFT" checked="checked" />Full time</label>
+                                <label>
+                                    <input name="advancedSearch:s_emptype" type="checkbox" id="advancedSearch_s_emptype" value="JTCT" class="s_emptype_JTCT"/>Contractor</label>
+                                <label>
+                                    <input name="advancedSearch:s_emptype" type="checkbox" id="advancedSearch_s_emptype" value="JTPT" class="s_emptype_JTPT"/>Part time</label>
+                                <label>
+                                    <input name="advancedSearch:s_emptype" type="checkbox" id="advancedSearch_s_emptype" value="JTIN" class="s_emptype_JTIN"/>Intern</label>
+                                <label>
+                                    <input name="advancedSearch:s_emptype" type="checkbox" id="advancedSearch_s_emptype" value="JTSE" class="s_emptype_JTSE"/>Seasonal/Temp</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="special-button">
+                        <input type="Button" name="SearchBtn" value="Find Jobs" id="SearchBtn" class="btn large" onclick="find()"/>
+                    </div>
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        Shadowbox.init({
+            handleOversize: "resize"
+        });
+        var myFeed = "http://www.careerbuilder.com/RTQ/rss20.aspx?rssid=RSS_PD&num=100"; // Feeds   constructed above.
+        var cloud;
+        var myInfomousCloud = {  // Parameters that alter the look & feel of the cloud.
+            api: "true",
+            width: "650",
+            height: "500",
+            setFrame: "True",
+            setControls: "False",
+            textOption: "TITLE_ONLY",
+            colFrame: "0x0079B5",
+            colFrameTitle: "0xffffff",
+        }
+        // This is the main Infomous API function
+        function infomous_ready(I) {
+            cloud = I.clouds.get();  // Create the cloud object
+            
+            cloud.set_var('feeds',myFeed);   // Set the feeds
+            
+            cloud.make_request();   // Update the cloud
+        }
+
+        // show Infomous cloud with dynamically created rss feed
+        function find() {
+            var feed = "http://www.careerbuilder.com/RTQ/rss20.aspx?rssid=RSS_PD&num=100";
+            // get search keywords
+            var kw = document.getElementById('advancedSearch_s_rawwords').value.trim();
+            // get option of keywords use: ANY or AND
+            var use = document.getElementById('advancedSearch_s_use').value;
+            if (kw.indexOf(' ') != -1) {
+                if (use == 'ANY') {
+                    kw = kw.split(" ").join(" ANY ");
+                }
+            }
+            // get all set location
+            var locations = document.getElementsByName('advancedSearch:s_freeloc');
+            var loc = [];
+            for (var i = 0; i < locations.length; i++) {
+                if (locations[i].value != "") {
+                    loc.push(locations[i].value);
+                }
+            }
+            // get radius within destination
+            var radius = document.getElementById('advancedSearch_s_radius').value;
+            // get all selected job types
+            var jtype = document.getElementsByName('advancedSearch:s_jobtypes');
+            var jobtype = [];
+            for (var i = 0; i < jtype.length; i++) {
+                jobtype.push(jtype[i].value);
+            }
+            // get all selected employment types
+            var emptype = [];
+            var emp = document.getElementsByName('advancedSearch:s_emptype');
+            for (var i = 0; i < emp.length; i++) {
+                if (emp[i].checked) {
+                    emptype.push(emp[i].value);
+                }
+            }
+            // check if exclude some words
+            var exkw = document.getElementById('advancedSearch_exkw').value;
+            if (exkw != "") {
+                kw = kw + " NOT " + exkw;
+            }
+            // key words
+            var query = "&kw=" + kw.split(" ").join("+");
+            // multiple locations
+            for (var i = 0; i < loc.length; i++) {
+                loc[i] = loc[i].trim();
+                // if city, state
+                if (loc[i].indexOf(',') != -1) {
+                    var l = loc[i].split(',');
+                    query = query + "&city=" + l[0].trim().split(" ").join("+") + "&state=" + l[1].trim().split(" ").join("+");
+                } else {
+                     // if a zip code
+                     if (!isNaN(loc[i])) {
+                        query = query + "&city=" + loc[i];
+                    } else {
+                     // if only a state
+                        query = query + "&state=" + loc[i].trim().split(" ").join("+");
+                    }
+                }
+            }
+            // Include Jobs Within radius
+            query = query + "&rad=" + radius;
+            // multiple categories
+            var res = "";
+            for (var i = 0; i < jobtype.length; i++) {
+                if (jobtype[i] != "ALL") {
+                    res = res + jobtype[i] + ",";
+                }
+            }
+            if (res == "") {
+                res = "ALL";
+            } else {
+                res = res.substring(0, res.length - 1);
+            }
+            query = query + "&cat=" + res + "&emptype=" + emptype.join(",");
+            // use 'http://www.careerbuilder.com/RTQ/rss20.aspx?rssid=RSS_PD&kw=[]&cat=[]&city=[]&state=[]&rad=[]&cat=[cat1,cat2]&emptype=[t1,t2]' to get dynamic rss feed
+            feed = feed.concat(query);
+            cloud.set_var('feeds',feed);   // Set the feeds
+            cloud.make_request();   // Update the cloud
+        }
+    </script>
+<center>
+<script type="text/javascript" async data-infomous-id="myInfomousCloud" src="http://www.infomous.com/client2/"></script>
+</center>
+</body>
+</html>

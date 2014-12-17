@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$INDU</link> <description>Dow Jones Industrials - SharpChart</description> <title>$indu</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$INDU</link> <description>Dow Jones Industrials - P&amp;F Pattern chart</description> <title>$indu</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$NDX</link> <description>Nasdaq 100 Index - SharpChart</description> <title>$ndx</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$NDX</link> <description>Nasdaq 100 Index - P&amp;F Pattern chart</description> <title>$ndx</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$NYA</link> <description>NYSE Composite - SharpChart</description> <title>$nya</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$NYA</link> <description>NYSE Composite - P&amp;F Pattern chart</description> <title>$nya</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=QQQ</link> <description>PowerShares QQQ Trust - SharpChart</description> <title>qqq</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=QQQ</link> <description>PowerShares QQQ Trust - P&amp;F Pattern chart</description> <title>qqq</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$RUT</link> <description>Russell 2000 Small-Cap Index - SharpChart</description> <title>$rut</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$RUT</link> <description>Russell 2000 Small-Cap Index - P&amp;F Pattern chart</description> <title>$rut</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$SPX</link> <description>S&amp;P 500 Large-Cap Index - SharpChart</description> <title>$spx</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$SPX</link> <description>S&amp;P 500 Large-Cap Index - P&amp;F Pattern chart</description> <title>$spx</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=SPY</link> <description>S&amp;P 500 SPDR - SharpChart</description> <title>spy</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=SPY</link> <description>S&amp;P 500 SPDR - P&amp;F Pattern chart</description> <title>spy</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$TICK</link> <description>NYSE - Tick - SharpChart</description> <title>$tick</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$TICK</link> <description>NYSE - Tick - P&amp;F Pattern chart</description> <title>$tick</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$TRIN</link> <description>NYSE - Arms Index - SharpChart</description> <title>$trin</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$TRIN</link> <description>NYSE - Arms Index - P&amp;F Pattern chart</description> <title>$trin</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$TSX</link> <description>TSX Index - SharpChart</description> <title>$tsx</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$TSX</link> <description>TSX Index - P&amp;F Pattern chart</description> <title>$tsx</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$USD</link> <description>US Dollar Index - SharpChart</description> <title>$usd</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$USD</link> <description>US Dollar Index - P&amp;F Pattern chart</description> <title>$usd</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$VIX</link> <description>Volatility Index - SharpChart</description> <title>$vix</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$VIX</link> <description>Volatility Index - P&amp;F Pattern chart</description> <title>$vix</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$WTIC</link> <description>Crude Oil Index - SharpChart</description> <title>$wtic</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$WTIC</link> <description>Crude Oil Index - P&amp;F Pattern chart</description> <title>$wtic</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$XEU</link> <description>Euro Index - SharpChart</description> <title>$xeu</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$XEU</link> <description>Euro Index - P&amp;F Pattern chart</description> <title>$xeu</title> </item>
+
+</channel>
+</rss>

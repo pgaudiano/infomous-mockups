@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+ <channel>
+  <atom:link href="http://www.infomous.com/site/mockups/FreshPatents/wind_power~676849.xml" rel="self" type="application/rss+xml"/>
+  <title>Search pattern for wind_power</title>
+  <link>http://www.infomous.com/site/mockups/FreshPatents</link>
+  <description>Explore wind power from FreshPatents</description>
+  <item>
+   <title>Category -- Wind Power</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Wind-Power-bx1.rss&amp;title=Wind Power</link>
+   <description>Category -- Wind Power</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Wind-Power-bx1.rss&amp;title=Wind Power</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+ </channel>
+</rss>

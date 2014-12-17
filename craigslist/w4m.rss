@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:enc="http://purl.oclc.org/net/rss_2.0/enc#"
+ xmlns:ev="http://purl.org/rss/1.0/modules/event/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://newyork.craigslist.org/search/w4m?format=rss&#x26;amp;sort=rel&#x26;amp;format=rss">
+<title>craigslist new york | women seeking men search </title>
+<link>http://newyork.craigslist.org/search/w4m?sort=rel</link>
+<description></description>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:publisher>robot@craigslist.org</dc:publisher>
+<dc:creator>robot@craigslist.org</dc:creator>
+<dc:source>http://newyork.craigslist.org/search/w4m?format=rss&#x26;amp;sort=rel&#x26;amp;format=rss</dc:source>
+<dc:title>craigslist new york | women seeking men search </dc:title>
+<dc:type>Collection</dc:type>
+<syn:updateBase>2014-11-10T20:54:29-05:00</syn:updateBase>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://newyork.craigslist.org/que/w4m/4755660326.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/w4m/4755665962.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/w4m/4755579564.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/fct/w4m/4751351664.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/w4m/4755636083.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/w4m/4755593406.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/w4m/4752462837.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/que/w4m/4755591930.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/w4m/4749853824.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/w4m/4755547881.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/w4m/4741900370.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/wch/w4m/4755516532.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/w4m/4755548733.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/w4m/4746488872.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/w4m/4755356757.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/w4m/4740865106.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/jsy/w4m/4755408716.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/fct/w4m/4755447389.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/jsy/w4m/4755410314.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/w4m/4734632493.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/w4m/4755426086.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/w4m/4755424586.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/w4m/4746298806.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/w4m/4755348889.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/que/w4m/4755357165.html" />
+ </rdf:Seq>
+</items>
+</channel>
+<item rdf:about="http://newyork.craigslist.org/que/w4m/4755660326.html">
+<title><![CDATA["Any cute rocker guy looking for a ltr" (queens ) 24yr]]></title>
+<link>http://newyork.craigslist.org/que/w4m/4755660326.html</link>
+<description><![CDATA[Hi guys so I'm on here 
+Looking for a cool boyfriend 
+I myself am cool 
+Chill thick cute 
+With an attraction to tattoos 
+I have some myself. 
+I'm into all types of music 
+I like horror and comedy movies 
+Like going out or staying in 
+I do drink. 
+Any [...]]]></description>
+<dc:date>2014-11-10T19:39:16-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/que/w4m/4755660326.html</dc:source>
+<dc:title><![CDATA["Any cute rocker guy looking for a ltr" (queens ) 24yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T19:39:16-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/w4m/4755665962.html">
+<title><![CDATA[Female college student seeks arrangment on UES  (Upper East Side) 24yr]]></title>
+<link>http://newyork.craigslist.org/mnh/w4m/4755665962.html</link>
+<description><![CDATA[I am a 24 year old female who is looking to meet an older man. I am interested in your ad. I live on the UES and love to explore the city, shopping, fine dining, jazz concerts and other leisurely pleasures. Drop me a line of your interested. 
+Thank y [...]]]></description>
+<dc:date>2014-11-10T19:32:31-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/w4m/4755665962.html</dc:source>
+<dc:title><![CDATA[Female college student seeks arrangment on UES  (Upper East Side) 24yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T19:32:31-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/w4m/4755579564.html">
+<title><![CDATA[just one of those nights ( slopes maybe?) - w4m 25yr]]></title>
+<link>http://newyork.craigslist.org/brk/w4m/4755579564.html</link>
+<description><![CDATA[hey whats up just finished taking my hair out and i just wanna chillax with someone'.my other plan fell through so here I am on cl maybe things will work out a bit better. 
+i dont care what you look like as long as your cool and normal.( my hair is w [...]]]></description>
+<dc:date>2014-11-10T19:21:10-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/w4m/4755579564.html</dc:source>
+<dc:title><![CDATA[just one of those nights ( slopes maybe?) - w4m 25yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T19:21:10-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/fct/w4m/4751351664.html">
+<title><![CDATA[LTR 60yr]]></title>
+<link>http://newyork.craigslist.org/fct/w4m/4751351664.html</link>
+<description><![CDATA[I am reposting my ad as I did not find Him. 
+Tall to very tall SINGLE Dom male for a long term relationship\marriage . 
+Very well educated and 50s- 60s ]]></description>
+<dc:date>2014-11-10T19:10:12-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/fct/w4m/4751351664.html</dc:source>
+<dc:title><![CDATA[LTR 60yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T19:10:12-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/w4m/4755636083.html">
+<title><![CDATA[Monday (Flatiron)]]></title>
+<link>http://newyork.craigslist.org/mnh/w4m/4755636083.html</link>
+<description><![CDATA[is perfect to get some quiet and calm and get those knots melted. 
+come lay on my table and let my hands knead you to bliss]]></description>
+<dc:date>2014-11-10T19:10:04-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/w4m/4755636083.html</dc:source>
+<dc:title><![CDATA[Monday (Flatiron)]]></dc:title>
+<dc:type>text</dc:type>
+<enc:enclosure resource="http://images.craigslist.org/01515_c1JxdZnWaJw_300x300.jpg" type="image/jpeg"/>
+<dcterms:issued>2014-11-10T19:10:04-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/w4m/4755593406.html">
+<title><![CDATA[Looking for a Chinese boyfriend for LTR (Brooklyn) 33yr]]></title>
+<link>http://newyork.craigslist.org/brk/w4m/4755593406.html</link>
+<description><![CDATA[I am Cantonese, 33 years old, 5'1". I have a college degree and a job. I don't smoke. I am looking for a Cantonese boyfriend for LTR. If you can not understand Cantonese or is a smoker please do not email me. I like to watch tvb and sometimes anime.  [...]]]></description>
+<dc:date>2014-11-10T19:00:04-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/w4m/4755593406.html</dc:source>
+<dc:title><![CDATA[Looking for a Chinese boyfriend for LTR (Brooklyn) 33yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T19:00:04-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/w4m/4752462837.html">
+<title><![CDATA[Trapeze swing club companion :) (Midtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/w4m/4752462837.html</link>
+<description><![CDATA[Cute, bi, ebony co-ed available to accompany a mature, white, middle aged gentleman to Le Trapeze swing club. Please reply only if you have the means to make this happen! ]]></description>
+<dc:date>2014-11-10T18:57:42-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/w4m/4752462837.html</dc:source>
+<dc:title><![CDATA[Trapeze swing club companion :) (Midtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T18:57:42-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/que/w4m/4755591930.html">
+<title><![CDATA[Plus Size Cutie Looking for her Mate  31yr]]></title>
+<link>http://newyork.craigslist.org/que/w4m/4755591930.html</link>
+<description><![CDATA[Hello I am a Single 31 year old Plus Size (BBW) Black West Indian female with No Kids looking to meet a really nice man to get to know on a friendship level meaning going out to fun interesting places and hopefully if it works well have a serious rel [...]]]></description>
+<dc:date>2014-11-10T18:51:01-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/que/w4m/4755591930.html</dc:source>
+<dc:title><![CDATA[Plus Size Cutie Looking for her Mate  31yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T18:51:01-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/w4m/4749853824.html">
+<title><![CDATA[a smile stays a long while (Upper West Side) 53yr]]></title>
+<link>http://newyork.craigslist.org/mnh/w4m/4749853824.html</link>
+<description><![CDATA[brainy zany human lawyeress seeks long term relationship - - w4m - 53 (queens) 
+w4m age : 53 
+brainy zany human lawyeress seeks long term relationship - 53 (Financial District) 
+age : 53 
+not all lawyers are creeps lol 
+I am not a bleeding heart libe [...]]]></description>
+<dc:date>2014-11-10T18:48:39-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/w4m/4749853824.html</dc:source>
+<dc:title><![CDATA[a smile stays a long while (Upper West Side) 53yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T18:48:39-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/w4m/4755547881.html">
+<title><![CDATA[Submissive Seeking LTR or to be Live-in   25yr]]></title>
+<link>http://newyork.craigslist.org/mnh/w4m/4755547881.html</link>
+<description><![CDATA[Looking for a serious dom/sub situation with an educated individual. Please email for more personal details. ]]></description>
+<dc:date>2014-11-10T18:23:25-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/w4m/4755547881.html</dc:source>
+<dc:title><![CDATA[Submissive Seeking LTR or to be Live-in   25yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T18:23:25-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/w4m/4741900370.html">
+<title><![CDATA[Dinner tonight? - w4m (Midtown West) 36yr]]></title>
+<link>http://newyork.craigslist.org/mnh/w4m/4741900370.html</link>
+<description><![CDATA[You are serious gentleman, established business professional, discreet and looking for an attractive companion to spend some time with? I am a beautiful white girl, slim and open minded, ready to have fun tonight.]]></description>
+<dc:date>2014-11-10T18:17:22-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/w4m/4741900370.html</dc:source>
+<dc:title><![CDATA[Dinner tonight? - w4m (Midtown West) 36yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T18:17:22-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/wch/w4m/4755516532.html">
+<title><![CDATA[What about Me?  - 67 (Lower Westchester)]]></title>
+<link>http://newyork.craigslist.org/wch/w4m/4755516532.html</link>
+<description><![CDATA[I'm looking for a friend/lover to grow into something more meaningful, a ltr. I've been having trouble finding this because I'm older and don't get out much. I get a lot of young guys who come on to me but they are rather unreliable to say the very l [...]]]></description>
+<dc:date>2014-11-10T18:12:49-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/wch/w4m/4755516532.html</dc:source>
+<dc:title><![CDATA[What about Me?  - 67 (Lower Westchester)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T18:12:49-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/w4m/4755548733.html">
+<title><![CDATA[Swing club companion :) (Midtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/w4m/4755548733.html</link>
+<description><![CDATA[Cute, bi, ebony co-ed available to accompany a mature, white, middle aged gentleman to Le Trapeze swing club or B Bliss. Please reply only if you have the means to make this happen! ]]></description>
+<dc:date>2014-11-10T18:08:03-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/w4m/4755548733.html</dc:source>
+<dc:title><![CDATA[Swing club companion :) (Midtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T18:08:03-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/w4m/4746488872.html">
+<title><![CDATA[Looking for Mr. Right (brooklyn) 49yr]]></title>
+<link>http://newyork.craigslist.org/brk/w4m/4746488872.html</link>
+<description><![CDATA[I want to find a man and fall in love with him over and over again. I am a 49 year old full figure black woman size 16 I wear my hair natural brown eyed fun loving educated female. Typical good girl. I'm always smiling and very down to earth. I work  [...]]]></description>
+<dc:date>2014-11-10T18:05:09-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/w4m/4746488872.html</dc:source>
+<dc:title><![CDATA[Looking for Mr. Right (brooklyn) 49yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T18:05:09-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/w4m/4755356757.html">
+<title><![CDATA[Attractive College Girl... (NYC/NNJ) 25yr]]></title>
+<link>http://newyork.craigslist.org/mnh/w4m/4755356757.html</link>
+<description><![CDATA[I'm a full time student seeking for a FWB's with a normal older professional gentlemen. I would like something ongoing, long term and discreet. I commute to the city for work and class daily. I'm fun, outgoing and classy. I'm busty with nice curves,  [...]]]></description>
+<dc:date>2014-11-10T17:31:29-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/w4m/4755356757.html</dc:source>
+<dc:title><![CDATA[Attractive College Girl... (NYC/NNJ) 25yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T17:31:29-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/w4m/4740865106.html">
+<title><![CDATA[SWF for dashing Cop Prince 27yr]]></title>
+<link>http://newyork.craigslist.org/brk/w4m/4740865106.html</link>
+<description><![CDATA[Hello :-) 
+I was wondering if there are any NYC cops who browse looking for a long term relationship. 
+Stats: 27 yrs old, shapely nice 160 lbs, attractive, brown eyes, brown hair, nice lips. 
+Looking for : white,italian, irish or hispanic or ken of j [...]]]></description>
+<dc:date>2014-11-10T17:21:41-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/w4m/4740865106.html</dc:source>
+<dc:title><![CDATA[SWF for dashing Cop Prince 27yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T17:21:41-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/jsy/w4m/4755408716.html">
+<title><![CDATA[Successful (Manhattan,Long Island,New Jersey,Conn,Westchester) 54yr]]></title>
+<link>http://newyork.craigslist.org/jsy/w4m/4755408716.html</link>
+<description><![CDATA[I am successful and accomplished and come from a good family background. I am slim with a model's figure, blonde hair, and green eyes. I am seeking a successful gentleman, Jewish, ages 58-75, fun, thoughtful. ]]></description>
+<dc:date>2014-11-10T17:15:53-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/jsy/w4m/4755408716.html</dc:source>
+<dc:title><![CDATA[Successful (Manhattan,Long Island,New Jersey,Conn,Westchester) 54yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T17:15:53-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/fct/w4m/4755447389.html">
+<title><![CDATA[Are all the good men really taken? (Manhattan, SW Ct) 55yr]]></title>
+<link>http://newyork.craigslist.org/fct/w4m/4755447389.html</link>
+<description><![CDATA[I realize this is an unlikely place to be looking for an idealistic counterpart, but I am a firm believer that you can meet the most remarkable people in the most unlikely of places. Unless you try, you just never know. I would like to find a man in  [...]]]></description>
+<dc:date>2014-11-10T17:12:51-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/fct/w4m/4755447389.html</dc:source>
+<dc:title><![CDATA[Are all the good men really taken? (Manhattan, SW Ct) 55yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T17:12:51-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/jsy/w4m/4755410314.html">
+<title><![CDATA[Successful (Manhattan,Long Island,New Jersey,Conn,Westchester) 54yr]]></title>
+<link>http://newyork.craigslist.org/jsy/w4m/4755410314.html</link>
+<description><![CDATA[I am successful and accomplished and come from a good family background. I am slim with a model's figure, blonde hair, and green eyes. I am seeking a successful gentleman, Jewish, ages 58-75, fun, thoughtful. ]]></description>
+<dc:date>2014-11-10T17:12:48-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/jsy/w4m/4755410314.html</dc:source>
+<dc:title><![CDATA[Successful (Manhattan,Long Island,New Jersey,Conn,Westchester) 54yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T17:12:48-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/w4m/4734632493.html">
+<title><![CDATA[In the city for meetings? - w4m (Midtown East) 35yr]]></title>
+<link>http://newyork.craigslist.org/mnh/w4m/4734632493.html</link>
+<description><![CDATA[If you are staying in an upscale hotel and have no plans for tonight email me. I am open minded, slender, attractive brunette ]]></description>
+<dc:date>2014-11-10T17:04:39-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/w4m/4734632493.html</dc:source>
+<dc:title><![CDATA[In the city for meetings? - w4m (Midtown East) 35yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T17:04:39-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/w4m/4755426086.html">
+<title><![CDATA[Drinks/Dinner (NYC)]]></title>
+<link>http://newyork.craigslist.org/mnh/w4m/4755426086.html</link>
+<description><![CDATA[I'm completely in the mood to grab a drink with some one new this evening....sound like something you would like to do? ideally you are quite attractive, in shape (age betw30s-40s) likes to keep fit, smart, fun, you like to meet people and are able t [...]]]></description>
+<dc:date>2014-11-10T17:01:01-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/w4m/4755426086.html</dc:source>
+<dc:title><![CDATA[Drinks/Dinner (NYC)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T17:01:01-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/w4m/4755424586.html">
+<title><![CDATA[Dinner tonight (Manhattan)]]></title>
+<link>http://newyork.craigslist.org/mnh/w4m/4755424586.html</link>
+<description><![CDATA[Seeking a date tonight. late 30's to mid 40's, single, good-looking, well traveled, fun to be with. I was interested in meeting up this evening and getting a couple of drinks. We could find a wine bar or a cocktail place in the village and chat up ov [...]]]></description>
+<dc:date>2014-11-10T16:57:08-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/w4m/4755424586.html</dc:source>
+<dc:title><![CDATA[Dinner tonight (Manhattan)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T16:57:08-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/w4m/4746298806.html">
+<title><![CDATA[hipster housewife]]></title>
+<link>http://newyork.craigslist.org/mnh/w4m/4746298806.html</link>
+<description><![CDATA[i'll clean the place while listening toro y moi. 
+dinner over radiohead. 
+i can speak at length over the merits of each character in arrested development while folding the laundry. 
+i'd love to be a kept woman, and start soon. we don't have to sleep  [...]]]></description>
+<dc:date>2014-11-10T16:31:40-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/w4m/4746298806.html</dc:source>
+<dc:title><![CDATA[hipster housewife]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T16:31:40-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/w4m/4755348889.html">
+<title><![CDATA[Classy attractive white female looking for white gentleman (Midtown East)]]></title>
+<link>http://newyork.craigslist.org/mnh/w4m/4755348889.html</link>
+<description><![CDATA[I am 29 y.o educated, attractive, likes classy places to socialize. Looking for a Caucasian gentleman who is good looking, classy, upscale and intelligent. 
+Friends with benefits or just friends 
+Please have pictures. Email title 'city' 
+and have a r [...]]]></description>
+<dc:date>2014-11-10T16:18:57-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/w4m/4755348889.html</dc:source>
+<dc:title><![CDATA[Classy attractive white female looking for white gentleman (Midtown East)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T16:18:57-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/que/w4m/4755357165.html">
+<title><![CDATA[looking for a cop or firefighter 20yr]]></title>
+<link>http://newyork.craigslist.org/que/w4m/4755357165.html</link>
+<description><![CDATA[Hello :-) 
+I'm looking for a NYC cop or firefighter to meet and see where things go 
+Stats: 20 yrs old, shapely nice 160 lbs, attractive, brown eyes, brown hair, nice lips.mixed 
+Looking for : white,italian, irish ages 21-35 
+No married guys or men w [...]]]></description>
+<dc:date>2014-11-10T16:10:47-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>&#x26;copy; 2014 &#x3C;span class="desktop"&#x3E;craigslist&#x3C;/span&#x3E;&#x3C;span class="mobile"&#x3E;CL&#x3C;/span&#x3E;</dc:rights>
+<dc:source>http://newyork.craigslist.org/que/w4m/4755357165.html</dc:source>
+<dc:title><![CDATA[looking for a cop or firefighter 20yr]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2014-11-10T16:10:47-05:00</dcterms:issued>
+</item>
+</rdf:RDF>

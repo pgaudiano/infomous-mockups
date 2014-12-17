@@ -1,0 +1,34 @@
+<?php
+
+$page = file_get_contents('http://www.meetingminds2011.org/');
+
+/* $page = str_replace(
+      '<head>',
+      '<head>
+      <base href="http://www.momcentral.com/">
+      ',
+      $page); */
+
+//      '+<p>Follow Meeting of the Minds 2011 on twitter:</p>.*?motm2011</a></p>+s',
+
+$page = preg_replace(
+      '+<p><strong>Additional Information</strong></p>.*?motm2011</a></p>+s',
+      '
+
+	 <!-- Infomous insertion -->
+	 <h2 class="entry-title">The Meeting of the Minds 2011 Twitter Navigator</h2>
+
+<script type="text/javascript" src="http://www.infomous.com/cloud_widget/6351?width=640&height=300&maxWords=30"></script>
+<a style="font-weight:bold" href="javascript:nw=window.open(\'http://www.infomous.com/cloud/fullscreen/6351\',\'_blank\',\'width=770,height=500,maxWords=50,menubar=no,toolbar=no,location=no,resizable=yes,scrollbars=no\');void(0);">New Window</a> &nbsp; &nbsp;<a style="font-weight:bold" href="javascript:nw=window.open(\'http://www.infomous.com/site/mockups/MeetingMinds2011/infohelp.html\',\'_blank\',\'width=600,height=450,menubar=no,toolbar=no,location=no,resizable=yes,scrollbars=no\');void(0);">Help</a> 
+<p>
+
+<p><strong>Additional Information</strong></p>
+',
+	$page
+);
+
+
+
+echo $page;
+
+?>

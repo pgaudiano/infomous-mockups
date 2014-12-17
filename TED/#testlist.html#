@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+var names=["Franco", "Paolo", "Andrea", "Stefano"];
+onlo
+function makeList() {
+var node=document.createElement("DIV");
+var textnode=document.createTextNode(names[0]);
+node.appendChild(textnode);
+document.getElementById("demo").appendChild(node);
+}
+</script>
+</head>
+<body>
+
+<h1>Test 123</h1>
+
+<div id="demo">
+This is a div.
+</div>
+
+</body>
+</html>

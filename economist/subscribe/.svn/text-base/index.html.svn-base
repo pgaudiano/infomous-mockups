@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>The Economist subscription page demos</title>
+<style type="text/css">
+<!--
+html, body{
+
+}
+body {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 76%;
+}
+table {
+	font-size: 1em;
+}
+
+h1{
+	font-size: 16px;
+	margin: 20px 0;
+}
+a:link {
+    color: #3B6614;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+li{
+	margin: 12px 0;
+}
+img{
+	border: 0;
+	margin: 5px;
+}
+-->
+</style>
+</head>
+<body>
+
+<table style="width: 650px;">
+	<tr>
+		<td><img alt="The Economist" src="the-economist-logo.gif" /></td>
+		<td><img alt="Infomous" src="logo_on_white.jpg" /></td>
+	</tr>
+</table>
+
+<h1>Infomous integration into The Economist subscription page</h1>
+<ul>
+	<li>
+		<a href="demo1.php" target="_blank"><b>1. Infomous cloud below subscriptions table</b></a><br/>
+		Linked pages shown in frame below cloud
+	</li>
+	<li>
+		<a href="frames.html" target="_blank"><b>2. Subscriptions page on the left of the screen</b></a><br/>
+		Linked pages shown on the right
+	</li>
+	<li>
+		<a href="frames2.html" target="_blank"><b>3. Subscriptions page on the left of the screen, narrower version</b></a><br/>
+		Linked pages shown on the right
+	</li>
+	<li>
+		<a href="demo3.php" target="_blank"><b>4. Infomous cloud above subscriptions table</b></a><br/>
+		Links in sources lists are disabled
+	</li>
+</ul>
+
+</body>
+</html>

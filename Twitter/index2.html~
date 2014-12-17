@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html class=" js"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="TwitterSearchDemo/phoenix.js" async="" type="text/javascript"></script><script src="TwitterSearchDemo/phoenix_plugins.js" async="" type="text/javascript"></script><script src="TwitterSearchDemo/api.js" async="" type="text/javascript"></script><script src="TwitterSearchDemo/base.js" async="" type="text/javascript"></script>
+<script>
+          function openSnippet(){
+          	window.open("http://www.infomous.com/site/mockups/Twitter/popup1.html","_blank", "width=780,height=600,menubar=no,toolbar=no,resizable=no");
+          }
+          function openHelp(){
+          	window.open("http://www.infomous.com/site/mockups/Twitter/infohelp.html","_blank", "width=800,height=400,menubar=no,toolbar=no,resizable=no");
+          }
+</script>    
+    <title>Twitter / Search - boston celtics</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+
+<script src="TwitterSearchDemo/ga.js" async="" type="text/javascript"></script><script type="text/javascript" charset="utf-8">
+  
+  
+  document.domain = 'twitter.com';
+
+  // this will be copied to twttr.appStartTime once our JS has started up
+  document.startTime = new Date().getTime();
+  var twttr = {};
+  twttr.versionName = 'phoenix';
+
+  if (!window.console) {
+    (function() {
+      var names = ["log", "debug", "info", "warn", "error", "assert", "dir", "dirxml",
+      "group", "groupEnd", "time", "timeEnd", "count", "trace", "profile", "profileEnd"];
+      window.console = {};
+      for (var i = 0; i < names.length; ++i) {
+        window.console[names[i]] = function() {};
+      }
+    }());
+  }
+</script>
+
+<script type="text/javascript">(function () {
+  // patch some IE things
+  window.setTimeout = window.setTimeout;
+  window.setInterval = window.setInterval;
+
+  window.WATCH = function (label, block) {
+    if (typeof block === 'undefined') {
+      block = label;
+      label = undefined;
+    }
+    if (typeof label === 'string') {
+      WATCH._didExecute[label] = true;
+    }
+
+    WATCH._attempt(this, block);
+  };
+  WATCH._didExecute = {};
+
+  WATCH._reportCount = 0;
+
+  WATCH._reportLimit = 25;
+
+  WATCH._reportInterval = 60 * 1000;
+  WATCH._active = false;
+  WATCH.activate = function (setting) {
+    if (typeof setting === 'undefined'){
+      setting = true;
+    }
+    WATCH._active = setting;
+    extend(WATCH, WATCH._active ? WATCH.actives : WATCH.inactives)
+  };
+
+  WATCH.actives = {};
+  WATCH.inactives = {};
+
+  var extend = function(destination, source){
+    for (var key in source){
+      destination[key] = source[key];
+    }
+  }
+
+  var noop = function(){};
+
+  WATCH._attempt = function(that, block) {
+    if (arguments.length < 2) {
+      block = that;
+      that = window;
+    }
+
+    if (WATCH._active) {
+      try {
+        block.apply(that);
+      } catch (error) {
+        WATCH._triggerError(error);
+      }
+    } else {
+      block.apply(that);
+    }
+  };
+
+  WATCH.inactives.end = noop;
+  WATCH.actives.end = function (label) {
+    if (typeof label === 'undefined') {
+      throw new Error('WATCH.end() requires a label');
+    }
+    if (WATCH._didExecute[label]) {
+      WATCH._didExecute[label] = false;
+    } else if (WATCH._active) {
+      WATCH._triggerError(new Error('WATCH.end("'+label+'") called without successful call to WATCH("'+label+'", fn(){...}) - a SyntaxError probably just happened'));
+    }
+    WATCH._didExecute[label] = false;
+  };
+
+  /**
+   *  Given a function, return a version of that function that is wrapped by the WATCH function.
+   */
+  WATCH.inactives.callback = function(that, callback){
+    // pass the callback through
+    return typeof callback === 'undefined' ? that : callback;
+  };
+  WATCH.actives.callback = function (that, callback) {
+    if (arguments.length === 1) {
+      callback = that;
+      that = this;
+    }
+
+    if (typeof callback === 'string') {
+      callback = (function (stringVersion) {
+        return function () {
+          eval(stringVersion);
+        };
+      }(callback));
+    }
+
+    var watchedCallback = function () {
+      var that = this,
+          args = arguments,
+          result;
+
+      WATCH._attempt(function () {
+        result = callback.apply(that, args);
+      });
+      return result;
+    };
+
+    watchedCallback.isWatched = true;
+    return watchedCallback;
+  };
+
+  WATCH._onErrorCallbacks = {};
+
+  WATCH.inactives._addOnError = noop;
+  WATCH.actives._addOnError = function (callback) {
+    var unique = WATCH._unique();
+    WATCH._onErrorCallbacks[unique] = callback;
+    return unique;
+  };
+
+  WATCH.inactives._removeOnError = noop;
+  WATCH.actives._removeOnError = function (id) {
+    delete WATCH._onErrorCallbacks[id];
+  };
+
+  WATCH._lastUnique = -1;
+  WATCH._unique = function () {
+    return ++WATCH._lastUnique;
+  };
+
+  WATCH.inactives.jQuery = noop;
+  WATCH.actives.jQuery = function () {
+    //  Wrap jQuery's event binding code so all event handlers are wrapped
+    WATCH._originalJQueryEventAdd = WATCH._originalJQueryEventAdd || jQuery.event.add;
+    jQuery.event.add = function () {
+      var newArgs = Array.prototype.slice.call(arguments);
+
+      if (typeof newArgs[2] === 'function') {
+        newArgs[2] = WATCH.callback(newArgs[2]);
+      } else if (newArgs && typeof newArgs[2] === 'object' && newArgs[2].handler) {
+        newArgs[2].handler = WATCH.callback(newArgs[2].handler);
+      }
+      return WATCH._originalJQueryEventAdd.apply(this, newArgs);
+    };
+
+    WATCH._originalJQueryAjax = WATCH._originalJQueryAjax || jQuery.ajax;
+    jQuery.ajax = function (options) {
+      jQuery.each(['complete', 'error', 'success'], function (which, key) {
+        if (!options[key]) {
+          return;
+        }
+        options[key] = WATCH.callback(options[key]);
+      });
+
+      return WATCH._originalJQueryAjax.apply(this, arguments);
+    };
+  };
+  WATCH.inactives.undoJQuery = noop;
+  WATCH.actives.undoJQuery = function() {
+    jQuery.event.add = WATCH._originalJQueryEventAdd;
+    jQuery.ajax = WATCH._originalJQueryAjax;
+  };
+
+  WATCH._previousErrors = {};
+
+  var escapeDoubleQuotes = function (string) {
+    return string.toString().replace('"', '\\"');
+  };
+
+  var stringifyLite = function (object) {
+    var result = '{', hasProperty = false;
+    for (var key in object) {
+      if(typeof object[key] === 'undefined' || object[key] === null){
+        continue;
+      }
+      result += (hasProperty ? ',"' : '"') + escapeDoubleQuotes(key) + '":"' + escapeDoubleQuotes(object[key]) + '"';
+      hasProperty = true;
+    }
+    return result + '}';
+  };
+
+  WATCH._scribeError = function(report) {
+    if(WATCH._previousErrors[report.error] && (new Date()) - WATCH._previousErrors[report.error] < WATCH._reportInterval) {
+      //  We've recently logged this; don't log it again
+      return false;
+    }
+
+    if(WATCH.reportLimit <= WATCH.reportCount){
+      return;
+    }
+
+    WATCH.reportCount++;
+
+    if ( ! document.location.hostname.match(/(^(www|api)\.)?twitter\.com$/) ) {
+      return;
+    }
+
+    WATCH._previousErrors[report.error] = new Date();
+
+    report.product_name = 'webclient';
+    report.type = 'js_error';
+    report.url = window.location.href;
+    report.event_name = "test";
+
+    var isProduction = document.location.hostname.match(/(^(www|api|staging\d+.local)\.)twitter\.com$/) != null;
+    var scribeHost = isProduction ? 'scribe.twitter.com' : window.location.host;
+    var scribeUrl = (window.location.protocol.match(/s\:$/) ? 'https' : 'http') + '://' + scribeHost;
+    scribeUrl += isProduction ? '/' : '/scribe';
+    scribeUrl += '?category=client_watch_error&log=' + encodeURIComponent(stringifyLite(report)) + '&ts=' + (new Date()).getTime();
+
+    (new Image()).src = scribeUrl;
+  };
+
+  WATCH._triggerError = function(error) {
+    var reraise = true;
+
+    var report = {
+      error: error
+    };
+
+    for (var key in WATCH._onErrorCallbacks) {
+      try {
+        if (WATCH._onErrorCallbacks[key](report) === false) {
+          reraise = false;
+        }
+      } catch (callbackError) {
+        report.callbackFailure = true;
+      }
+    }
+    WATCH._scribeError(report);
+    if(reraise){
+      throw error;
+    }
+  };
+
+  /**
+   *  Wrap built-in functions with versions that WATCH for errors as appropriate.
+   */
+  WATCH.inactives.natives = noop;
+  WATCH.actives.natives = function () {
+    window.setInterval = WATCH._watchedSetInterval;
+    window.setTimeout = WATCH._watchedSetTimeout;
+  };
+
+  WATCH.inactives.undoNatives = noop;
+  WATCH.actives.undoNatives = function () {
+    window.setInterval = WATCH._originalSetInterval;
+    window.setTimeout = WATCH._originalSetTimeout;
+  };
+
+  WATCH._originalSetInterval = window.setInterval;
+  WATCH._originalSetTimeout = window.setTimeout;
+
+  //  Wrap setInterval and setTimeout, which run code asyncronously and therefore allow it
+  //  to escape any existing try/catch blocks.
+
+  //  Rebind window.setInterval and .setTimeout
+  WATCH._watchedSetInterval = function (callback, timeout) {
+    // in IE, native functions have no .call().
+    // we have to bind to a local var in order to get them to run in the context of window
+    var setInterval = WATCH._originalSetInterval;
+    return setInterval(WATCH.callback(callback), timeout);
+  };
+
+  WATCH._watchedSetTimeout = function (callback, timeout) {
+    // in IE, native functions have no .call().
+    // we have to bind to a local var in order to get them to run in the context of window
+    var setTimeout = WATCH._originalSetTimeout;
+    return setTimeout(WATCH.callback(callback), timeout);
+  };
+
+  WATCH.activate(false);
+}());
+</script>
+<script type="text/javascript">
+  </script>
+
+
+<script>
+function bust () {
+  document.write = "";
+  window.top.location = window.self.location;
+  setTimeout(function() {
+    document.body.innerHTML = '';
+    }, 0);
+  window.self.onload = function(evt) {
+    document.body.innerHTML = '';
+  };
+}
+if (window.top !== window.self) { // are you trying to put self in an iframe?
+  try {
+    if (window.top.location.host) { // this is illegal to access unless you share a non-spoofable document domain
+      // fun times
+    } else {
+      bust(); // chrome executes this
+    }
+  } catch (ex) {
+    bust(); // everyone executes this
+  }
+}
+</script>
+
+<link href="http://twitter.com/phoenix/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="TwitterSearchDemo/phoenix.css" type="text/css" media="screen">
+    <!-- basic RSS hoopla -->
+      <link rel="http://oexchange.org/spec/0.8/rel/related-target" href="http://twitter.com/oexchange.xrd" type="application/xrd+xml">
+      <link rel="alternate" href="http://twitter.com/favorites/10252872.rss" title="Your Twitter Favorites" type="application/rss+xml">
+    <noscript>
+        <meta http-equiv=refresh content="0; URL=/?_twitter_noscript=1" />
+        </noscript>
+    
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30775-6']);
+  _gaq.push(
+    ['_trackPageview'],
+    ['_setDomainName', 'twitter.com']
+  );
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  }());
+
+  twttr.trackPageView = function(pathName) {
+    var event = ['_trackPageview'];
+    if (pathName) {
+      event.push(pathName);
+    }
+    _gaq.push(event);
+  };
+
+</script>
+  <style id="user-style-icopaolo">
+  body.user-style-icopaolo {
+          background-position: left 40px;
+      background-attachment: fixed;
+              background-repeat: no-repeat;
+            background-color: #c7800e;
+          color: #333333;
+    }
+  body.user-style-icopaolo a,
+  body.user-style-icopaolo ul.stream-tabs li,
+  body.user-style-icopaolo .component .promo strong,
+  body.user-style-icopaolo .message-thread-preview:hover .message-count,
+  body.user-style-icopaolo .list-membership-container li.create-a-list {
+          color: #0084B4;
+    }
+  body.user-style-icopaolo .stream-item:hover .tweet-screen-name,
+  body.user-style-icopaolo .stream-item:hover .tweet-timestamp,
+  body.user-style-icopaolo .stream-item:hover .tweet-geo-text,
+  body.user-style-icopaolo .stream-item:hover .user-profile-link,
+  body.user-style-icopaolo div.latest-favorite .user-profile-link,
+  body.user-style-icopaolo span.user-stat-link,
+  body.user-style-icopaolo a.title-link:hover,
+  body.user-style-icopaolo a.user-stats-count:hover span.user-stats-stat,
+  body.user-style-icopaolo .dashboard .user-small-list-item:hover a.user-screen-name,
+  body.user-style-icopaolo .user-detailed-list-item:hover a.user-screen-name,
+  body.user-style-icopaolo .tweet-activity:hover a.latest-tweet-timestamp {
+          color: #0084B4 !important;
+    }
+  body.user-style-icopaolo .hovered-stream-item,
+  body.user-style-icopaolo .stream-item:hover,
+  body.user-style-icopaolo #new-tweets-bar,
+  body.user-style-icopaolo #new-tweets-bar:active {
+          background-color: rgba(0,132,180,0.1);
+          border-color: rgba(0,132,180,0.15);
+    }
+  body.user-style-icopaolo #new-tweets-bar:hover {
+          background-color: rgba(0,132,180,0.2);
+          border-color: rgba(0,132,180,0.25);
+    }
+  body.user-style-icopaolo .dashboard .user-small-list-item .user-screen-name,
+  body.user-style-icopaolo .profile-screenname,
+  body.user-style-icopaolo .title-link,
+  body.user-style-icopaolo div.latest-tweet .latest-tweet-timestamp,
+  body.user-style-icopaolo a.user-stats-count span.user-stats-stat,
+  body.user-style-icopaolo .welcome-steps li .active a strong {
+          color: #333333;
+    }
+  body.user-style-icopaolo .dashboard .user-small-list-item .user-full-name,
+  body.user-style-icopaolo span.trend-location,
+  body.user-style-icopaolo .your-activity h3,
+  body.user-style-icopaolo .trends-inner h3,
+  body.user-style-icopaolo .dashboard .user-rec-inner h3,
+  body.user-style-icopaolo .recently-listed-in,
+  body.user-style-icopaolo .latest-favorite-inner,
+  body.user-style-icopaolo .latest-tweet,
+  body.user-style-icopaolo .latest-tweet a.latest-tweet-timestamp,
+  body.user-style-icopaolo .dashboard .dot,
+  body.user-style-icopaolo .component .promo,
+  body.user-style-icopaolo .component .promo a.definition,
+  body.user-style-icopaolo .dashboard .user-small-list-item .dismiss,
+  body.user-style-icopaolo .dashboard .user-small-list-item .ellip,
+  body.user-style-icopaolo .dashboard .copyright {
+          color: rgba(51,51,51,0.6);
+    }
+  body.user-style-icopaolo #page-container,
+  body.user-style-icopaolo .user-sidebar-color {
+          /* IE7/8 */
+      background: #ffc15c;
+          /* Modern browsers */
+      background: rgba(255,193,92,0.9);
+          /* IE6 */
+      _background-color: #ffc15c;
+    }
+.profile-style-icopaolo a {
+      color: #0084B4 !important;
+  }
+a:hover .geo-pin, body.user-style-icopaolo .stream-item:hover .geo-pin, .place_link span.place_icon {
+  background-color: #0084B4;
+}
+</style>
+<noscript>
+  <style id="user-style-icopaolo-bg-img">
+  body.user-style-icopaolo {
+                  background-image: url(http://a1.twimg.com/profile_background_images/98638040/IMG_1068.png);
+      }
+</style>
+</noscript><style id="user-style-icopaolo-bg-img">
+  body.user-style-icopaolo {
+                  background-image: url(http://a1.twimg.com/profile_background_images/98638040/IMG_1068.png);
+      }
+</style>
+
+</head>
+  <body class="mozilla user-style-icopaolo"><iframe tabindex="-1" role="presentation" style="position: absolute; top: -9999px;" src="TwitterSearchDemo/receiver.html"></iframe>
+    <div class="route-search" id="doc">
+      <div id="top-stuff">
+        <div id="banners" style="clear:both;"><div><div class="welcome-banner-outer banner-outer">
+  <div class="welcome-banner banner">
+    <div style="left: 0px;" class="welcome-banner-inside banner-inside">
+      <a class="pane-close" href="#">Close&nbsp;<span>×</span></a>
+      <span>
+        <form method="post" action="/account/use_phx?setting=false&amp;format=html" class="turn-phx-off-form"><input name="setting" value="false" type="hidden"><input name="format" value="html" type="hidden"><input value="0f405962ac5626a0b2e63d9149931c67dfabbd21" name="authenticity_token" type="hidden">Welcome to <a href="http://twitter.com/#%21/search/%23NewTwitter">#NewTwitter</a>! Read up on <a target="_blank" href="http://twitter.com/newtwitter">what’s new</a>. You can still access <button type="submit" class="turn-phx-off-button">old Twitter</button> for a limited time.</form>
+      </span>
+    </div>
+  </div>
+</div></div></div>
+        <div id="top-bar-outer">
+          <div id="top-bar-bg"></div>
+          <div id="top-bar">
+            <div style="left: 0px;" class="top-bar-inside">
+              <div class="static-links">
+  <div id="logo">
+    <a href="http://twitter.com/">Twitter</a>
+  </div>
+  <form id="search-form" action="/search" method="GET">
+    <span class="glass"><i></i></span>
+    <input value="boston celtics" placeholder="Search" name="q" id="search-query" type="text">
+  </form>
+  <div id="global-nav">
+    <ul>
+      <li class="new" id="global-nav-home"><a href="http://twitter.com/#%21/">Home</a></li>
+          <li id="global-nav-profile"><a href="http://twitter.com/#%21/icopaolo">Profile</a></li>
+          <li id="global-nav-messages"><a href="http://twitter.com/#%21/messages">Messages</a></li>
+          <li id="global-nav-whotofollow"><a href="http://twitter.com/#%21/who_to_follow">Who To Follow</a></li>
+      </ul>
+  </div>
+  <div id="sections"></div>
+</div>
+<div class="active-links">
+  <a original-title="New Tweet" id="new-tweet">
+      <span>New Tweet</span></a><span class="vr">
+    </span><span id="session" class="loggedin">
+      <a class="profile-links" href="#">
+        <img src="TwitterSearchDemo/ArtsyMe_normal.png">
+      </a>
+      <span class="ellipsify-container" id="screen-name"><span class="content">
+        icopaolo
+      </span></span>&nbsp;<span id="screen-name-dropdown">&nbsp;</span>
+      <div class="dropdown">
+        <ul class="user-dropdown">
+  <li><a href="http://twitter.com/settings/account">Settings</a></li>
+    <li><a href="http://support.twitter.com/">Help</a></li>
+
+    <li>
+        <form method="post" action="/account/use_phx" class="turn-phx-off-form">
+          <input name="setting" value="false" type="hidden">
+          <input name="format" value="html" type="hidden">
+          <input value="" name="authenticity_token" type="hidden">
+          <button type="submit" class="turn-phx-off-button">Switch to Old Twitter</button>
+        </form>
+      </li>
+    <li>
+      <form id="signout-form" class="signout-form" action="/logout" method="POST">
+        <a class="signout-button" href="#">Sign out</a>
+        <input value="0f405962ac5626a0b2e63d9149931c67dfabbd21" name="authenticity_token" id="authenticity_token" type="hidden">
+      </form>
+    </li>
+
+    </ul>
+
+      </div>
+    </span>
+  </div>
+            </div>
+          </div>
+          <div id="message-drawer"></div>
+        </div>
+      </div>
+
+      <div style="padding-top: 96px;" id="page-outer">
+
+        <div style="" id="page-container" class=""><div><div style="min-height: 560px;" class="main-content">
+  
+          <div class="search-header">
+        <div class="back-to-home">
+          <a href="http://twitter.com/#%21/">← Back to Home</a>
+        </div>
+        <div class="saved-search-container">
+      <div class="save-search">
+      <div class="button save-search-button">
+        <span class="plus"></span> <strong>Save this search</strong>
+      </div>
+    </div>
+  <div></div></div>
+      </div>
+    <div class="search-title">
+      <h2>Results for <strong class="search-query">boston celtics</strong></h2>
+      <p class="operators">
+      <strong>Tip:</strong> use <a href="#">operators</a> for <a class="advanced-search" href="http://twitter.com/#%21/search-advanced">advanced search</a>.
+  </p>
+    </div>
+    <ul class="stream-tabs">
+      <li class="stream-tab stream-tab-tweets active">
+                  <a class="tab-text" href="http://twitter.com/#%21/search/boston%20celtics">Tweets</a>
+        </li>
+      <li class="stream-tab stream-tab-links">
+        <a class="tab-text" href="http://twitter.com/#%21/search/links/boston%20celtics">Tweets with links</a>
+      </li>
+                        <li class="stream-tab stream-tab-people">
+            <a class="tab-text" href="http://twitter.com/#%21/search/users/boston%20celtics">People</a>
+          </li>
+        </ul>
+    <div class="stream-manager">
+  <div><div class="stream-title"></div><div class="stream-container"><div class="stream">
+  <div data-search-query="boston celtics" class="stream-items"><div media="true" class="stream-item " data-item-id="65860472221614080" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet top-tweet " data-tweet-id="65860472221614080" data-item-id="65860472221614080" data-screen-name="celtics" data-user-id="18139461">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/Celtics400_normal.jpg" alt="Boston Celtics" class="user-profile-link" data-user-id="18139461" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="18139461" href="http://twitter.com/#%21/celtics" title="Boston Celtics">celtics</a>
+  <span class="tweet-full-name">Boston Celtics</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">It's official: <strong>Celtics</strong> legend Bill Russell will get a statue in the city of <strong>Boston</strong>. <a href="http://t.co/HHrm48K" data-expanded-url="http://www.nba.com/celtics/news/press_release/press050411-bill-russell-statue.html/" title="http://www.nba.com/celtics/news/press_release/press050411-bill-russell-statue.html/" target="_blank" rel="nofollow" class="twitter-timeline-link">on.nba.com/lsMnCv</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/celtics/status/65860472221614080" class="tweet-timestamp" title="3:28 PM May 4th"><span class="_old-timestamp" data-time="1304537334000" data-long-form="true">4 May</span></a>
+      <span class="tweet-actions" data-tweet-id="65860472221614080">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="celtics" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+                  <div class="tweet-row tweet-labels">
+                <span class="tweet-label top-tweet-label">Top Tweet</span>
+  
+        </div>
+      </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66581864877522944" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66581864877522944" data-item-id="66581864877522944" data-screen-name="TwackleBoston" data-user-id="166594501">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/icon_normal.png" alt="Twackle Boston" class="user-profile-link" data-user-id="166594501" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="166594501" href="http://twitter.com/#%21/TwackleBoston" title="Twackle Boston">TwackleBoston</a>
+  <span class="tweet-full-name">Twackle Boston</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Eight Reasons the Miami Heat Deserve to Finish off the <strong>Boston</strong> <strong>Celtics</strong>: The Miami Heat travel to <strong>Boston</strong> tomorrow ... <a title="http://www.twackle.com/shared_link/show/11281699/?hours=24&amp;main_menu_title=Twackle%20Local" data-expanded-url="http://www.twackle.com/shared_link/show/11281699/?hours=24&amp;main_menu_title=Twackle%20Local" href="http://bit.ly/kXkF5k" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/kXkF5k</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/TwackleBoston/status/66581864877522944" class="tweet-timestamp" title="3:15 PM May 6th"><span class="_timestamp" data-time="1304709328000" data-long-form="true">1 minute ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66581864877522944">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="TwackleBoston" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66581305223159808" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66581305223159808" data-item-id="66581305223159808" data-screen-name="RaymondBirkin" data-user-id="135907462">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/raymond-birkin_normal.jpg" alt="Raymond Birkin" class="user-profile-link" data-user-id="135907462" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="135907462" href="http://twitter.com/#%21/RaymondBirkin" title="Raymond Birkin">RaymondBirkin</a>
+  <span class="tweet-full-name">Raymond Birkin</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Kevin Garnett: 'We're all in' for Game 3 <a title="http://greenstreet.weei.com/sports/boston/basketball/celtics/2011/05/06/kevin-garnett-were-all-in-for-game-3/" data-expanded-url="http://greenstreet.weei.com/sports/boston/basketball/celtics/2011/05/06/kevin-garnett-were-all-in-for-game-3/" href="http://bit.ly/iYxUlm" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/iYxUlm</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/RaymondBirkin/status/66581305223159808" class="tweet-timestamp" title="3:13 PM May 6th"><span class="_timestamp" data-time="1304709194000" data-long-form="true">3 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66581305223159808">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="RaymondBirkin" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66581142320578561" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66581142320578561" data-item-id="66581142320578561" data-screen-name="moneychangers" data-user-id="46078004">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/test2_normal.png" alt="MoneyChangers" class="user-profile-link" data-user-id="46078004" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="46078004" href="http://twitter.com/#%21/moneychangers" title="MoneyChangers">moneychangers</a>
+  <span class="tweet-full-name">MoneyChangers</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Rivers expects Shaq, injured <strong>Celtics</strong> to be ready <a title="http://sports.espn.go.com/boston/nba/news/story/?campaign=rss&amp;id=6486856&amp;source=ESPNHeadlines" data-expanded-url="http://sports.espn.go.com/boston/nba/news/story/?campaign=rss&amp;id=6486856&amp;source=ESPNHeadlines" href="http://es.pn/iR3IjE" target="_blank" rel="nofollow" class="twitter-timeline-link">http://es.pn/iR3IjE</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/moneychangers/status/66581142320578561" class="tweet-timestamp" title="3:12 PM May 6th"><span class="_timestamp" data-time="1304709156000" data-long-form="true">4 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66581142320578561">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="moneychangers" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66580633945772032" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66580633945772032" data-item-id="66580633945772032" data-screen-name="eBBallDrills" data-user-id="78484610">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/DKFBprofile_normal.jpg" alt="Patrick Burke" class="user-profile-link" data-user-id="78484610" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="78484610" href="http://twitter.com/#%21/eBBallDrills" title="Patrick Burke">eBBallDrills</a>
+  <span class="tweet-full-name">Patrick Burke</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Speaking with the Enemy: <strong>Celtics</strong> vs. Heat <a title="http://greenstreet.weei.com/sports/boston/basketball/celtics/2011/05/06/speaking-with-the-enemy-celtics-vs-heat/" data-expanded-url="http://greenstreet.weei.com/sports/boston/basketball/celtics/2011/05/06/speaking-with-the-enemy-celtics-vs-heat/" href="http://bit.ly/lHjIzt" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/lHjIzt</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/eBBallDrills/status/66580633945772032" class="tweet-timestamp" title="3:10 PM May 6th"><span class="_timestamp" data-time="1304709034000" data-long-form="true">6 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66580633945772032">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="eBBallDrills" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66580380840493056" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66580380840493056" data-item-id="66580380840493056" data-screen-name="dominic_victor" data-user-id="129974170">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/images_normal.jpg" alt="Dominic 	Victor" class="user-profile-link" data-user-id="129974170" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="129974170" href="http://twitter.com/#%21/dominic_victor" title="Dominic 	Victor">dominic_victor</a>
+  <span class="tweet-full-name">Dominic 	Victor</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Rivers still optimistic about Shaq for Game 3: <strong>Boston</strong> <strong>Celtics</strong> coach Doc Rivers said Friday he intended to put hi... <a title="http://sports.espn.go.com/boston/nba/news/story/?campaign=rss&amp;id=6493955&amp;source=NBAHeadlines" data-expanded-url="http://sports.espn.go.com/boston/nba/news/story/?campaign=rss&amp;id=6493955&amp;source=NBAHeadlines" href="http://bit.ly/j8vXZl" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/j8vXZl</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/dominic_victor/status/66580380840493056" class="tweet-timestamp" title="3:09 PM May 6th"><span class="_timestamp" data-time="1304708974000" data-long-form="true">7 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66580380840493056">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="dominic_victor" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66579769734606848" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66579769734606848" data-item-id="66579769734606848" data-screen-name="_N_B_A" data-user-id="166612413">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/1__5__normal.jpg" alt="Abigail Sebestian" class="user-profile-link" data-user-id="166612413" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="166612413" href="http://twitter.com/#%21/_N_B_A" title="Abigail Sebestian">_N_B_A</a>
+  <span class="tweet-full-name">Abigail Sebestian</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">H2H: Which Team is in More Trouble, <strong>Boston</strong> <strong>Celtics</strong> or Los Angeles Lakers <a title="http://nxy.in/276b6/" data-expanded-url="http://nxy.in/276b6/" href="http://nxy.in/276b6" target="_blank" rel="nofollow" class="twitter-timeline-link">http://nxy.in/276b6</a> [YardBarker]</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/_N_B_A/status/66579769734606848" class="tweet-timestamp" title="3:07 PM May 6th"><span class="_timestamp" data-time="1304708828000" data-long-form="true">9 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66579769734606848">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="_N_B_A" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66579738986156033" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66579738986156033" data-item-id="66579738986156033" data-screen-name="Aussieceltic" data-user-id="125267992">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/image_normal.jpg" alt="Jesse" class="user-profile-link" data-user-id="125267992" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="125267992" href="http://twitter.com/#%21/Aussieceltic" title="Jesse">Aussieceltic</a>
+  <span class="tweet-full-name">Jesse</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+              <span class="reply-icon icon">@</span>
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">@<a class="  twitter-atreply" data-screen-name="DaisySays_" href="http://twitter.com/DaisySays_" rel="nofollow">DaisySays_</a> yeh me too. Ditto for the fighter and gone baby gone. Got mad love for all things <strong>Boston</strong>. <a href="http://twitter.com/#%21/search?q=%23celtics" title="#celtics" class="  twitter-hashtag" rel="nofollow">#<strong>celtics</strong></a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/Aussieceltic/status/66579738986156033" class="tweet-timestamp" title="3:07 PM May 6th"><span class="_timestamp" data-time="1304708821000" data-long-form="true">10 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66579738986156033">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="Aussieceltic" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66578819804430336" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66578819804430336" data-item-id="66578819804430336" data-screen-name="CeeMySwag" data-user-id="45917557">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/webster_hall_normal.jpg" alt="Klosed Kaption" class="user-profile-link" data-user-id="45917557" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="45917557" href="http://twitter.com/#%21/CeeMySwag" title="Klosed Kaption">CeeMySwag</a>
+  <span class="tweet-full-name">Klosed Kaption</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">That won't help lol RT @<a class="  twitter-atreply" data-screen-name="FLy_GeeRiAn" href="http://twitter.com/FLy_GeeRiAn" rel="nofollow">FLy_GeeRiAn</a>: Tell them <strong>celtics</strong> to wake up RT @<a class="  twitter-atreply" data-screen-name="CeeMySwag" href="http://twitter.com/CeeMySwag" rel="nofollow">CeeMySwag</a>: Out here in dirty <strong>boston</strong></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/CeeMySwag/status/66578819804430336" class="tweet-timestamp" title="3:03 PM May 6th"><span class="_timestamp" data-time="1304708602000" data-long-form="true">13 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66578819804430336">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="CeeMySwag" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66578584847925248" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66578584847925248" data-item-id="66578584847925248" data-screen-name="PeachesMzWhoDat" data-user-id="28286173">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/I_wish.jpg" alt="Dana MzWhoDat J" class="user-profile-link" data-user-id="28286173" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="28286173" href="http://twitter.com/#%21/PeachesMzWhoDat" title="Dana MzWhoDat J">PeachesMzWhoDat</a>
+  <span class="tweet-full-name">Dana MzWhoDat J</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"><span class="media video" data-media-class="video" data-media-type="youtube"></span></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">@<a class="  twitter-atreply" data-screen-name="MikeBiv" href="http://twitter.com/MikeBiv" rel="nofollow">MikeBiv</a> they going in on ur team smdh &amp; lmao RT @<a class="  twitter-atreply" data-screen-name="WatchJ" href="http://twitter.com/WatchJ" rel="nofollow">WatchJ</a>  Lets End Elderly Abuse &amp; Eliminate the <strong>Boston</strong> <strong>Celtics</strong> <a href="http://youtu.be/q91YwlwQqJI" target="_blank" rel="nofollow" class="twitter-timeline-link">http://youtu.be/q91YwlwQqJI</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/PeachesMzWhoDat/status/66578584847925248" class="tweet-timestamp" title="3:02 PM May 6th"><span class="_timestamp" data-time="1304708546000" data-long-form="true">14 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66578584847925248">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="PeachesMzWhoDat" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66578568410447872" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66578568410447872" data-item-id="66578568410447872" data-screen-name="TicketShack" data-user-id="234867385">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/ticketshacklogo_normal.jpg" alt="Ticket Shack" class="user-profile-link" data-user-id="234867385" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="234867385" href="http://twitter.com/#%21/TicketShack" title="Ticket Shack">TicketShack</a>
+  <span class="tweet-full-name">Ticket Shack</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text"><strong>Boston</strong> <strong>Celtics</strong> tickets are selling fast use discount code "twitter" to save 5%  <a title="http://www.ticketshack.net/" data-expanded-url="http://www.ticketshack.net/" href="http://tiny.ly/Kxli" target="_blank" rel="nofollow" class="twitter-timeline-link">http://tiny.ly/Kxli</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/TicketShack/status/66578568410447872" class="tweet-timestamp" title="3:02 PM May 6th"><span class="_timestamp" data-time="1304708542000" data-long-form="true">14 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66578568410447872">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="TicketShack" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66578234665472000" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66578234665472000" data-item-id="66578234665472000" data-screen-name="MahranRamon8844" data-user-id="173674030">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/default_profile_5_normal.png" alt="Mahran Ramon" class="user-profile-link" data-user-id="173674030" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="173674030" href="http://twitter.com/#%21/MahranRamon8844" title="Mahran Ramon">MahranRamon8844</a>
+  <span class="tweet-full-name">Mahran Ramon</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Fan opinion: Thinking the <strong>Boston</strong> <strong>Celtics</strong> stand a chance against the Miami Heat ... - Yahoo! Sports <a title="http://www.describewords.com/tw12/fan-opinion-thinking-the-boston-celtics-stand_6513006F22i_May2011.html/" data-expanded-url="http://www.describewords.com/tw12/fan-opinion-thinking-the-boston-celtics-stand_6513006F22i_May2011.html/" href="http://bit.ly/jXylCk" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/jXylCk</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/MahranRamon8844/status/66578234665472000" class="tweet-timestamp" title="3:01 PM May 6th"><span class="_timestamp" data-time="1304708462000" data-long-form="true">16 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66578234665472000">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="MahranRamon8844" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66578232559927296" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66578232559927296" data-item-id="66578232559927296" data-screen-name="jushUNashamed" data-user-id="63081184">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/juma_normal.jpg" alt="johnson juma" class="user-profile-link" data-user-id="63081184" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="63081184" href="http://twitter.com/#%21/jushUNashamed" title="johnson juma">jushUNashamed</a>
+  <span class="tweet-full-name">johnson juma</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text"><a href="http://twitter.com/#%21/search?q=%23nw" title="#nw" class="  twitter-hashtag" rel="nofollow">#nw</a> <strong>Boston</strong> <strong>Celtics</strong> vs Miami Heat game. lets go Pierce</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/jushUNashamed/status/66578232559927296" class="tweet-timestamp" title="3:01 PM May 6th"><span class="_timestamp" data-time="1304708462000" data-long-form="true">16 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66578232559927296">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="jushUNashamed" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66578150334795776" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66578150334795776" data-item-id="66578150334795776" data-screen-name="fansofceltics" data-user-id="147561150">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/Boston-Celtics-logo_normal.jpg" alt="Boston Celtics" class="user-profile-link" data-user-id="147561150" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="147561150" href="http://twitter.com/#%21/fansofceltics" title="Boston Celtics">fansofceltics</a>
+  <span class="tweet-full-name">Boston Celtics</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">NBA 2011 Playoffs: <strong>Boston</strong> <strong>Celtics</strong>' Ray Allen Proves to Be Timeless ... <a title="http://introvibe.com/8GwDnQ/" data-expanded-url="http://introvibe.com/8GwDnQ/" href="http://introvibe.com/8GwDnQ" target="_blank" rel="nofollow" class="twitter-timeline-link">http://introvibe.com/8GwDnQ</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/fansofceltics/status/66578150334795776" class="tweet-timestamp" title="3:00 PM May 6th"><span class="_timestamp" data-time="1304708442000" data-long-form="true">16 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66578150334795776">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="fansofceltics" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66578050954964992" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66578050954964992" data-item-id="66578050954964992" data-screen-name="PKSNBA87" data-user-id="217555863">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/Twitter1_normal.png" alt="PastKast NBA 1986-87" class="user-profile-link" data-user-id="217555863" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="217555863" href="http://twitter.com/#%21/PKSNBA87" title="PastKast NBA 1986-87">PKSNBA87</a>
+  <span class="tweet-full-name">PastKast NBA 1986-87</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Today's Playoff Schedule: Milwaukee Bucks at <strong>Boston</strong> <strong>Celtics</strong> in the Eastern Conference Semifinals (<strong>Boston</strong> leads 1-0).</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/PKSNBA87/status/66578050954964992" class="tweet-timestamp" title="3:00 PM May 6th"><span class="_timestamp" data-time="1304708418000" data-long-form="true">16 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66578050954964992">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="PKSNBA87" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66577930502942721" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66577930502942721" data-item-id="66577930502942721" data-screen-name="garlicksauce" data-user-id="30238319">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/Alex_Garlick_normal.jpg" alt="Alex Garlick" class="user-profile-link" data-user-id="30238319" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="30238319" href="http://twitter.com/#%21/garlicksauce" title="Alex Garlick">garlicksauce</a>
+  <span class="tweet-full-name">Alex Garlick</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">All of these stories on the aging <a href="http://twitter.com/#%21/search?q=%23celtics" title="#celtics" class="  twitter-hashtag" rel="nofollow">#<strong>celtics</strong></a> is giving me confidence. <a title="http://www.miamiherald.com/2011/05/06/2202727/celtic-pride-might-be-all-thats.html/" data-expanded-url="http://www.miamiherald.com/2011/05/06/2202727/celtic-pride-might-be-all-thats.html/" href="http://bit.ly/imQnrZ" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/imQnrZ</a> <a title="http://www.boston.com/sports/columnists/massarotti/2011/05/are_celtics_now_playing_for_pr.html/" data-expanded-url="http://www.boston.com/sports/columnists/massarotti/2011/05/are_celtics_now_playing_for_pr.html/" href="http://bo.st/mQzDOK" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bo.st/mQzDOK</a> Go ahead, write them off</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/garlicksauce/status/66577930502942721" class="tweet-timestamp" title="2:59 PM May 6th"><span class="_timestamp" data-time="1304708390000" data-long-form="true">17 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66577930502942721">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="garlicksauce" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66577411118080000" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66577411118080000" data-item-id="66577411118080000" data-screen-name="Joicelynne" data-user-id="104888017">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/2_normal.jpg" alt="Joicelynne Slater" class="user-profile-link" data-user-id="104888017" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="104888017" href="http://twitter.com/#%21/Joicelynne" title="Joicelynne Slater">Joicelynne</a>
+  <span class="tweet-full-name">Joicelynne Slater</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Fan opinion: Thinking the <strong>Boston</strong> <strong>Celtics</strong> stand a chance against the Miami Heat ...: Yet, despite having beaten t... <a title="http://sports.yahoo.com/nba/news/?slug=ycn-8430415" data-expanded-url="http://sports.yahoo.com/nba/news/?slug=ycn-8430415" href="http://bit.ly/kxD0HJ" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/kxD0HJ</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/Joicelynne/status/66577411118080000" class="tweet-timestamp" title="2:57 PM May 6th"><span class="_timestamp" data-time="1304708266000" data-long-form="true">19 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66577411118080000">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="Joicelynne" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66576205595422720" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66576205595422720" data-item-id="66576205595422720" data-screen-name="BostonNews360" data-user-id="45032017">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/Boston_normal.jpg" alt="Boston News 360" class="user-profile-link" data-user-id="45032017" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="45032017" href="http://twitter.com/#%21/BostonNews360" title="Boston News 360">BostonNews360</a>
+  <span class="tweet-full-name">Boston News 360</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Did Tony Allen Diss <strong>Boston</strong>? | <strong>Boston</strong> <strong>Celtics</strong> Basketball - <strong>Celtics</strong> ... <a title="http://celticshub.com/2011/05/06/did-tony-allen-dis-boston/" data-expanded-url="http://celticshub.com/2011/05/06/did-tony-allen-dis-boston/" href="http://snipurl.com/27t5sq" target="_blank" rel="nofollow" class="twitter-timeline-link">http://snipurl.com/27t5sq</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/BostonNews360/status/66576205595422720" class="tweet-timestamp" title="2:52 PM May 6th"><span class="_timestamp" data-time="1304707978000" data-long-form="true">24 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66576205595422720">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="BostonNews360" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66576185232064513" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66576185232064513" data-item-id="66576185232064513" data-screen-name="FLy_GeeRiAn" data-user-id="27593562">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/291890964_normal.jpg" alt="Ola Shoksy" class="user-profile-link" data-user-id="27593562" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="27593562" href="http://twitter.com/#%21/FLy_GeeRiAn" title="Ola Shoksy">FLy_GeeRiAn</a>
+  <span class="tweet-full-name">Ola Shoksy</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Tell them <strong>celtics</strong> to wake up RT @<a class="  twitter-atreply" data-screen-name="CeeMySwag" href="http://twitter.com/CeeMySwag" rel="nofollow">CeeMySwag</a>: Out here in dirty <strong>boston</strong></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/FLy_GeeRiAn/status/66576185232064513" class="tweet-timestamp" title="2:52 PM May 6th"><span class="_timestamp" data-time="1304707974000" data-long-form="true">24 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66576185232064513">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="FLy_GeeRiAn" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66576108178509824" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66576108178509824" data-item-id="66576108178509824" data-screen-name="QUEENTYTY1234" data-user-id="287735667">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterSearchDemo/default_profile_2_normal.png" alt="Ty'Mieichia James" class="user-profile-link" data-user-id="287735667" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="287735667" href="http://twitter.com/#%21/QUEENTYTY1234" title="Ty'Mieichia James">QUEENTYTY1234</a>
+  <span class="tweet-full-name">Ty'Mieichia James</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">CHAMPS:<strong>BOSTON</strong> <strong>CELTICS</strong>...SUPERBOWL:NEW ORLEANS SAINTS...NATIONAL CHAMPS:LSU TIGERS...AMERICAN IDOL:JACOB LUSK...</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/QUEENTYTY1234/status/66576108178509824" class="tweet-timestamp" title="2:52 PM May 6th"><span class="_timestamp" data-time="1304707955000" data-long-form="true">24 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66576108178509824">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="QUEENTYTY1234" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div></div>
+</div></div></div></div>
+  
+</div>
+<div class="dashboard search-dashboard"><div class="component"><h2>People results for&nbsp;<strong>boston celtics</strong></h2>
+<ul class="people-results clearfix">
+        <li class="user-small-list-item " data-user-id="27115071">
+  <a href="http://twitter.com/#%21/paulpierce34" class="user-profile-link user-thumb" data-user-id="27115071"><img src="TwitterSearchDemo/Pierce_0398_normal.jpg" alt="paulpierce34"></a>
+  <div class="user-name-info">
+    <a class="user-profile-link user-screen-name" href="http://twitter.com/#%21/paulpierce34" data-user-id="27115071">paulpierce34</a>
+          <span class="user-follow-state" data-user-id="27115071">
+            <span class="dot">·</span>
+              <a href="#" class="user-follow-link follow-action" data-user-id="27115071">Follow</a>
+      </span>
+      <div class="user-full-name-and-label">
+        <span class="user-full-name">
+  Paul Pierce
+      <span class="verified-icon-small">&nbsp;</span>
+  </span>
+        </div>
+    </div>
+</li>
+  <li class="user-small-list-item " data-user-id="18139461">
+  <a href="http://twitter.com/#%21/celtics" class="user-profile-link user-thumb" data-user-id="18139461"><img src="TwitterSearchDemo/Celtics400_normal.jpg" alt="celtics"></a>
+  <div class="user-name-info">
+    <a class="user-profile-link user-screen-name" href="http://twitter.com/#%21/celtics" data-user-id="18139461">celtics</a>
+          <span class="user-follow-state" data-user-id="18139461">
+            <span class="dot">·</span>
+              <a href="#" class="user-follow-link follow-action" data-user-id="18139461">Follow</a>
+      </span>
+      <div class="user-full-name-and-label">
+        <span class="user-full-name">
+  Boston Celtics
+      <span class="verified-icon-small">&nbsp;</span>
+  </span>
+        </div>
+    </div>
+</li>
+  <li class="user-small-list-item " data-user-id="49269954">
+  <a href="http://twitter.com/#%21/Aabradley11" class="user-profile-link user-thumb" data-user-id="49269954"><img src="TwitterSearchDemo/bradley_normal.jpg" alt="Aabradley11"></a>
+  <div class="user-name-info">
+    <a class="user-profile-link user-screen-name" href="http://twitter.com/#%21/Aabradley11" data-user-id="49269954">Aabradley11</a>
+          <span class="user-follow-state" data-user-id="49269954">
+            <span class="dot">·</span>
+              <a href="#" class="user-follow-link follow-action" data-user-id="49269954">Follow</a>
+      </span>
+      <div class="user-full-name-and-label">
+        <span class="user-full-name">
+  Avery Bradley
+      <span class="verified-icon-small">&nbsp;</span>
+  </span>
+        </div>
+    </div>
+</li>
+  <li class="user-small-list-item " data-user-id="52475671">
+  <a href="http://twitter.com/#%21/vonwafer13" class="user-profile-link user-thumb" data-user-id="52475671"><img src="TwitterSearchDemo/photo-33_normal.JPG" alt="vonwafer13"></a>
+  <div class="user-name-info">
+    <a class="user-profile-link user-screen-name" href="http://twitter.com/#%21/vonwafer13" data-user-id="52475671">vonwafer13</a>
+          <span class="user-follow-state" data-user-id="52475671">
+            <span class="dot">·</span>
+              <a href="#" class="user-follow-link follow-action" data-user-id="52475671">Follow</a>
+      </span>
+      <div class="user-full-name-and-label">
+        <span class="user-full-name">
+  von wafer
+      <span class="verified-icon-small">&nbsp;</span>
+  </span>
+        </div>
+    </div>
+</li>
+  </ul>
+<a href="http://twitter.com/#%21/who_to_follow/search/boston%20celtics" class="more-people-results">More people results →</a><hr class="component-spacer"></div><div class="component"></div><div class="component">
+
+<div class="component"><div class="definition">
+<h2>Interactive search cloud for&nbsp;<strong>boston celtics</strong></h2>
+
+<!--<script type="text/javascript" src="http://www.infomous.com/cloud_widget/21279?width=460&height=300&colLink=0x88AA88&colLinkHover=0xAACCAA&colBlob=0x228822&colBlobHover=0x339933&colBlobBorder=0x226622&colWord=0xFAFFFA&colWordFade=0xEAEFEA"></script>-->
+
+<div style="height:560px;background: #ffffff url('cbg3.png') repeat">
+<script type="text/javascript" async data-infomous-id="nid21279" src="http://www.infomous.com/client2/?width=460&height=560&maxWords=32&colFrame=0x005613&wmode=transparent&colBackground=transparent"></script>
+</div>
+
+  </div><hr class="component-spacer"></div>
+
+<div class="trends-inner">
+  <h2>Trends
+          </h2>
+            <h3><span woeid="2367105" class="trend-location">Boston</span>
+      <span class="dot">·</span>
+      <span class="trend-toggle"><a href="#">change</a></span></h3>
+    <ul class="trends"><li class="trend-item promoted-trend">
+  <a href="http://twitter.com/#%21/search/%23AndroidUnlimited" class="trend-link">#AndroidUnlimited</a>
+            <a href="http://twitter.com/#%21/search/%23AndroidUnlimited" class="tweet-label promoted-label">
+                                  Promoted
+            </a>
+    </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/%23nu2011" class="trend-link">#nu2011</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/%23cmtsocial" class="trend-link">#cmtsocial</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/%23mamasays" class="trend-link">#mamasays</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/Katie%20Couric" class="trend-link">Katie Couric</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/Herman%20Cain" class="trend-link">Herman Cain</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/DiMasi" class="trend-link">DiMasi</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/Commencement" class="trend-link">Commencement</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/Scott%20Brown" class="trend-link">Scott Brown</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/Nicki%20Minaj" class="trend-link">Nicki Minaj</a>
+  </li></ul>
+</div><hr class="component-spacer"></div><div class="component"><div class="footer inline-list">
+  <ul>
+    <li><a href="http://twitter.com/about">About</a><span class="dot"> ·</span></li>
+    <li><a href="http://support.twitter.com/">Help</a><span class="dot"> ·</span></li>
+    <li><a href="http://blog.twitter.com/">Blog</a><span class="dot"> ·</span></li>
+    <li><a href="http://twitter.com/#%21/download">Mobile</a><span class="dot"> ·</span></li>
+<li><a href="http://status.twitter.com/">Status</a><span class="dot"> ·</span></li>
+    <li><a href="http://twitter.com/jobs">Jobs</a><span class="dot"> ·</span></li>
+    <li><a href="http://twitter.com/tos">Terms</a><span class="dot"> ·</span></li>
+    <li><a href="http://twitter.com/privacy">Privacy</a><span class="dot"> ·</span></li>
+    <li><a href="#" id="keyboard-shortcut-trigger">Shortcuts</a><span class="dot"> ·</span></li>
+<li><a href="http://business.twitter.com/advertise/start">Advertisers</a><span class="dot"> ·</span></li>
+    <li><a href="http://business.twitter.com/">Businesses</a><span class="dot"> ·</span></li>
+    <li><a href="http://media.twitter.com/">Media</a><span class="dot"> ·</span></li>
+    <li><a href="http://dev.twitter.com/">Developers</a><span class="dot"> ·</span></li>
+    <li><a href="http://twitter.com/about/resources">Resources</a><span class="dot"> ·</span></li>
+    <li><span class="copyright">© 2011 Twitter</span></li><li>
+  <ul>
+  </ul></li></ul></div><hr class="component-spacer"></div></div>
+<div id="details-pane-outer">
+  <div class="details-pane-shell">
+    <div style="height: 552px; width: 500px;" class="details-pane">
+      
+    </div>
+  </div>
+</div></div></div>
+      </div>
+
+      <div id="message-notifications"></div>
+    </div>
+
+    <div id="flash-message-storage" style="display:none"></div>
+
+    <script type="text/javascript">
+      </script>
+
+    <script type="text/javascript">WATCH('loadrunner', function() {
+        (function loadrunner(E){var V=E.document;var H=V.getElementsByTagName("script"),M,J;var b={},I={},U;for(var Y=0,R;R=H[Y];Y++){if(R.src.match(/loadrunner\.js(\?|#|$)/)){M=R;break}}function C(e){if(e.length>0){return e.replace(/\/$/,"")+"/"}return""}function N(e){return Array.prototype.slice.call(e)}function B(e,f){for(var g=0,h;h=e[g];g++){if(f==h){return g}}return -1}function S(e){return !!e.match(/^(([a-zA-Z0-9\-_]+)\/)*[a-zA-Z0-9\-_]+$/)||!Z(e)}function O(e){return !!e.match(/^(([a-zA-Z0-9\-_]+)\/)*[a-zA-Z0-9\-_]+$/)}function Z(e){return !e.match(/^>/)}function Q(e){return[C(X.path),e,".js"].join("")}function D(e){if(e.match(/^(https?)?:?\/\//)){return e}if(e.match(/^\/[^\/]/)){return C(X.docRoot)+e}if(e.match(/^\$/)){return C(X.path)+e.replace(/^\$/,"")}return e}function P(f){var e;if(e=I[f]){return e}else{return f}}function F(){}F.prototype.addCallback=function(e){if(this.completed){e.apply(this,this.results)}else{this.callbacks=this.callbacks||[];this.callbacks.push(e)}};F.prototype.complete=function(){if(!this.completed){this.results=N(arguments);this.completed=true;if(this.callbacks){for(var f=0,e;e=this.callbacks[f];f++){e.apply(window,this.results)}}}};function d(f,e){this.id=f;var h=this;function g(i){h.exports=i;h.complete(h.exports)}if(typeof e=="function"){e(g)}else{this.exports=e;this.complete(this.exports)}X.loaded.push(f)}d.prototype=new F;var A={};function L(h,j){var i;if(!A[h]){i=new F;A[h]=i;var g=function(){delete A[h];X.loaded.push(h);i.complete(h)};if(Z(h)){var e=V.createElement("script");e.type="text/javascript";e.async=true;e.onload=g;e.onerror=function(){throw h+" not loaded"};e.onreadystatechange=function(){if(this.readyState=="loaded"||this.readyState=="complete"){this.onreadystatechange=null;g()}};e.src=h;var f=V.getElementsByTagName("head")[0];if(!f){f=V.createElement("head");V.documentElement.appendChild(f)}f.insertBefore(e,f.firstChild)}else{i.onManualLoad=i.onManualLoad||[];i.onManualLoad.push(g)}}else{i=A[h]}if(j){i.addCallback(j)}return i}function T(f,e){e=[].concat(e);for(var g=0,h;h=e[g];g++){I[unescape(h)]=unescape(f)}}function X(){var f=new F,e=N(arguments),k=0,q=[];for(var n=0;n<e.length;n++){if(typeof e[n].length==="number"&&e[n].splice){e=e.slice(0,n).concat(e[n]).concat(e.slice(n+1))}}function j(){k++;if(k==e.length){var s;var v=[],u={},p;for(var t=0,r;r=q[t];t++){p=b[r].exports;v.push(p);u[r]=p}f.complete.apply(f,v)}}function g(i,p){return function(){if(!b[i]){throw new Error("File "+p+" does not provide module "+i)}b[i].addCallback(function(){j()})}}if(typeof e[e.length-1]=="function"){f.addCallback(e.pop())}if(!e.length){setTimeout(function(){f.complete()},0)}for(var l=0,h;h=e[l];l++){if(S(h)){var m=P(h);var o;if(O(h)){o=Q(m)}else{o=m}q.push(h);if(B(X.loaded,h)>-1){g(h)()}else{X.load(D(o),g(h,o))}}else{if(B(X.loaded,h)>-1){j()}else{X.load(D(P(h)),j)}}}return f}X.loaded=[];X.path="";if(M){X.path=M.getAttribute("data-path")||M.src.split(/loadrunner\.js/)[0]||"";if(U=M.getAttribute("data-alias")||window.__lralias){for(var Y=0,W,c=U.split("&");W=c[Y]&&c[Y].split("=");Y++){var K=W[0],G=W[1].split(",");T(K,G)}}}X.docRoot=X.cwd="";X.reset=function(){X.loaded=[];b={}};function a(g,f){b[g]=new d(g,f);var j=A[g];if(j&&j.onManualLoad){for(var h=0,e=j.onManualLoad.length;h<e;++h){j.onManualLoad[h]()}delete j.onManualLoad}return b[g]}E.using=X;E.using.load=L;E.using.alias=T;E.provide=a;if(J=(M&&M.getAttribute("data-main"))){X.apply(E,J.split(/\s*,\s*/))}})(this);
+      });
+    </script>
+    <script>WATCH.end('loadrunner');</script>
+    <script type="text/javascript">WATCH('javascript_includes', function() {
+
+  (function loadrunner(E){var V=E.document;var H=V.getElementsByTagName("script"),M,J;var b={},I={},U;for(var Y=0,R;R=H[Y];Y++){if(R.src.match(/loadrunner\.js(\?|#|$)/)){M=R;break}}function C(e){if(e.length>0){return e.replace(/\/$/,"")+"/"}return""}function N(e){return Array.prototype.slice.call(e)}function B(e,f){for(var g=0,h;h=e[g];g++){if(f==h){return g}}return -1}function S(e){return !!e.match(/^(([a-zA-Z0-9\-_]+)\/)*[a-zA-Z0-9\-_]+$/)||!Z(e)}function O(e){return !!e.match(/^(([a-zA-Z0-9\-_]+)\/)*[a-zA-Z0-9\-_]+$/)}function Z(e){return !e.match(/^>/)}function Q(e){return[C(X.path),e,".js"].join("")}function D(e){if(e.match(/^(https?)?:?\/\//)){return e}if(e.match(/^\/[^\/]/)){return C(X.docRoot)+e}if(e.match(/^\$/)){return C(X.path)+e.replace(/^\$/,"")}return e}function P(f){var e;if(e=I[f]){return e}else{return f}}function F(){}F.prototype.addCallback=function(e){if(this.completed){e.apply(this,this.results)}else{this.callbacks=this.callbacks||[];this.callbacks.push(e)}};F.prototype.complete=function(){if(!this.completed){this.results=N(arguments);this.completed=true;if(this.callbacks){for(var f=0,e;e=this.callbacks[f];f++){e.apply(window,this.results)}}}};function d(f,e){this.id=f;var h=this;function g(i){h.exports=i;h.complete(h.exports)}if(typeof e=="function"){e(g)}else{this.exports=e;this.complete(this.exports)}X.loaded.push(f)}d.prototype=new F;var A={};function L(h,j){var i;if(!A[h]){i=new F;A[h]=i;var g=function(){delete A[h];X.loaded.push(h);i.complete(h)};if(Z(h)){var e=V.createElement("script");e.type="text/javascript";e.async=true;e.onload=g;e.onerror=function(){throw h+" not loaded"};e.onreadystatechange=function(){if(this.readyState=="loaded"||this.readyState=="complete"){this.onreadystatechange=null;g()}};e.src=h;var f=V.getElementsByTagName("head")[0];if(!f){f=V.createElement("head");V.documentElement.appendChild(f)}f.insertBefore(e,f.firstChild)}else{i.onManualLoad=i.onManualLoad||[];i.onManualLoad.push(g)}}else{i=A[h]}if(j){i.addCallback(j)}return i}function T(f,e){e=[].concat(e);for(var g=0,h;h=e[g];g++){I[unescape(h)]=unescape(f)}}function X(){var f=new F,e=N(arguments),k=0,q=[];for(var n=0;n<e.length;n++){if(typeof e[n].length==="number"&&e[n].splice){e=e.slice(0,n).concat(e[n]).concat(e.slice(n+1))}}function j(){k++;if(k==e.length){var s;var v=[],u={},p;for(var t=0,r;r=q[t];t++){p=b[r].exports;v.push(p);u[r]=p}f.complete.apply(f,v)}}function g(i,p){return function(){if(!b[i]){throw new Error("File "+p+" does not provide module "+i)}b[i].addCallback(function(){j()})}}if(typeof e[e.length-1]=="function"){f.addCallback(e.pop())}if(!e.length){setTimeout(function(){f.complete()},0)}for(var l=0,h;h=e[l];l++){if(S(h)){var m=P(h);var o;if(O(h)){o=Q(m)}else{o=m}q.push(h);if(B(X.loaded,h)>-1){g(h)()}else{X.load(D(o),g(h,o))}}else{if(B(X.loaded,h)>-1){j()}else{X.load(D(P(h)),j)}}}return f}X.loaded=[];X.path="";if(M){X.path=M.getAttribute("data-path")||M.src.split(/loadrunner\.js/)[0]||"";if(U=M.getAttribute("data-alias")||window.__lralias){for(var Y=0,W,c=U.split("&");W=c[Y]&&c[Y].split("=");Y++){var K=W[0],G=W[1].split(",");T(K,G)}}}X.docRoot=X.cwd="";X.reset=function(){X.loaded=[];b={}};function a(g,f){b[g]=new d(g,f);var j=A[g];if(j&&j.onManualLoad){for(var h=0,e=j.onManualLoad.length;h<e;++h){j.onManualLoad[h]()}delete j.onManualLoad}return b[g]}E.using=X;E.using.load=L;E.using.alias=T;E.provide=a;if(J=(M&&M.getAttribute("data-main"))){X.apply(E,J.split(/\s*,\s*/))}})(this);
+
+  twttr.session = twttr.session || {};
+  twttr.loggedIn = true;
+
+  twttr.appStartTime = document.startTime; // set in phoenix.mustache
+
+  //  Give our session a unique impression id for profiling purposes
+  twttr.session.impressionId = twttr.appStartTime + Math.random();
+
+  twttr.remoteIP = '76.119.90.51';
+  twttr.requestFullCity = 'us,ma,boston';
+  twttr.geo = twttr.geo || {};
+
+  twttr.bundles = {"phoenix_plugins":"http:\/\/a2.twimg.com\/a\/1304464034\/javascripts\/phoenix_plugins.bundle.js","phxie6":"http:\/\/a2.twimg.com\/a\/1304464034\/javascripts\/phxie6.bundle.js","admin":"http:\/\/a1.twimg.com\/a\/1304464034\/javascripts\/admin.bundle.js","griffin":"http:\/\/a1.twimg.com\/a\/1304464034\/javascripts\/griffin.bundle.js","base":"http:\/\/a0.twimg.com\/sticky\/base.18.bundle.js","api":"http:\/\/a2.twimg.com\/a\/1304464034\/javascripts\/api.bundle.js","phoenix":"http:\/\/a0.twimg.com\/a\/1304464034\/javascripts\/phoenix.bundle.js"};
+
+  using(
+    '>allCurrentUserDataLoaded',
+    '>request_cache_seeded',
+    '>base_bundle_evaled',
+    '>phoenix_plugins_bundle_evaled',
+    '>phoenix_bundle_evaled',
+    '>languageData',
+
+    function () {
+      // Manually trigger ready event, avoiding race condition where it never fires due to iframe thingy
+      // This should be safe based on how our script loading is done
+      jQuery.ready();
+      twttr.setup();
+    }
+  );
+
+  /* -------------------- Autocomplete place data from CDN -------------------- */
+
+  twttr.placeDataPrefix = "http://geo.l3.twitter.com/places/autocomplete_places-";
+
+  /* -------------------- Initialize API Method -------------------- */
+
+  function initAPI() {
+    twttr.anywhere.api.initialize();
+
+    twttr.API = {};
+
+    twttr.aug(twttr.API, twttr.anywhere.api.models);
+    twttr.aug(twttr.API, {
+      globalEvents: twttr.anywhere.api.globalEvents
+    });
+
+    twttr.API.setConfig = twttr.anywhere.api.updateConfig;
+    twttr.API.getConfig = function () {
+      return twttr.anywhere.api.config;
+    };
+
+    if (!twttr.API.util) {
+      twttr.API.util = {};
+    }
+
+    twttr.aug(twttr.API.util, twttr.anywhere.api.util);
+
+    if (!twttr.API._requestCache) {
+      twttr.API._requestCache = twttr.anywhere.api.cache;
+    }
+
+    twttr.API.setConfig({
+      cacheObjects: true,
+      includeEntities: true
+    });
+
+    twttr.extendAPI();
+  }
+
+  /* -------------------- Init CurrentUser Method -------------------- */
+
+  function initCurrentUser() {
+    if (twttr.loggedIn) {
+      using('>bootstrap_data', '>request_cache_seeded', function (bootstrapData) {
+        twttr.API.User.current({
+          error: function() {
+            //  Not logged in anymore; refresh the page
+            window.location.reload(true);
+          },
+          success: function(currentUser) {
+            twttr.currentUser = currentUser;
+
+            for (var propName in bootstrapData.userProperties) {
+              twttr.currentUser.sync(propName, bootstrapData.userProperties[propName] || false);
+            }
+
+            provide('>allCurrentUserDataLoaded');
+          }
+        });
+      });
+    } else {
+      provide('>allCurrentUserDataLoaded');
+    }
+  };
+
+  /* -------------------- Setting up Domains -------------------- */
+
+  twttr.proto = window.location.protocol.match(/s\:$/) ? 'https' : 'http';
+  twttr.isSSL = function () {
+    return twttr.proto === 'https';
+  };
+
+  twttr.domains = {
+    local: 'twitter.com',
+    remote: 'api.twitter.com'
+  };
+
+  var match = window.location.hostname.match(/^(staging\d+\.[a-zA-Z0-9_]*?)\.twitter\.com$/i);
+
+  if (match) {
+    twttr.domains.local = match[1] + '.twitter.com';
+    twttr.domains.remote = 'api-' + match[1] + '.twitter.com';
+  }
+
+  if (document.location.hostname === "localhost.twitter.com") {
+    twttr.domains.local = 'localhost.twitter.com:3000';
+      twttr.domains.remote = 'api.localhost.twitter.com:3000';
+    }
+
+  twttr.hosts = {
+    local: twttr.proto + "://" + twttr.domains.local,
+    remote: twttr.proto + "://" + twttr.domains.remote
+  };
+
+  var pReceiverURL = twttr.hosts.remote + '/receiver.html';
+  twttr.jsonpSandboxURL = 'http://a3.twimg.com/a/1304464034/jsonp_sandbox.html#scripts=http://a0.twimg.com/sticky/base.18.bundle.js';
+
+  /* -------------------- Iframe Creator Method -------------------- */
+
+  function createIFrame(complete) {
+    var frag = document.createElement('div');
+    frag.innerHTML = '<iframe tabindex="-1" role="presentation" style="position:absolute;top:-9999px;" src="' + pReceiverURL + '"></iframe>';
+
+    var iframe = frag.firstChild;
+    var fnComplete = function() {
+      complete.apply(iframe, arguments);
+    };
+
+    iframe.addEventListener ? iframe.addEventListener('load', fnComplete, false) : iframe.attachEvent('onload', fnComplete);
+
+    //  Avoid "operation aborted" error in IE that can be caused by
+    //  appending a new element to the body via body.appendChild
+    //  by a script that is not a direct descendant of the <body>.
+    document.body.insertBefore(iframe, document.body.firstChild);
+
+    return iframe;
+  }
+
+  /*------------------- Local Assets --------------------*/
+  /*------------------- CDN Assets --------------------*/
+
+  /*------------------- fetch base --------------------*/
+    (function() {
+      var bundleFetchStartTime = new Date();
+
+      using(twttr.bundles.base, function() {
+        provide('>base_bundle_evaled');
+      });
+
+      using('>base_bundle_evaled',
+        twttr.bundles.api,
+        twttr.bundles.phoenix_plugins,
+        twttr.bundles.phoenix,
+        function() {
+          var bundleFetchEndTime = new Date();
+          provide('>allCodeLoaded');
+
+          using('>bootstrap_data', function() {
+            twttr.util.Profiler.logPreviousEvent('twttr.bundles fetched', bundleFetchStartTime, bundleFetchEndTime);
+          });
+        }
+      );
+    })();
+  /*------------------- fetch bootstrap data --------------------*/
+  (function() {
+    
+    var xhr;
+    if(window.XMLHttpRequest) {
+      xhr = new window.XMLHttpRequest();
+    } else {
+      try {
+        xhr = new window.ActiveXObject("Microsoft.XMLHTTP");
+      } catch(e) {
+        //  Eep
+      }
+    }
+
+    xhr.onreadystatechange = function() {
+      if(xhr.readyState == 4) {
+        if(xhr.responseText.charAt(0) === '{') {
+          provide('>bootstrap_data', function(exports) {
+            exports(JSON.parse(xhr.responseText));
+          });
+        } else {
+          
+          eval(xhr.responseText);
+        }
+      }
+    };
+    //  Note: we include window.location.search here so any query string parameters given to load the page are passed
+    //  along to /account/bootstrap_data.js. In particular, we want things like ?lang=ja to propogate through to the
+    //  request for bootstrap data.
+    xhr.open('GET', '/account/bootstrap_data' + (window.location.search ? (window.location.search + '&') : '?') + 'r=' + Math.random(), true);
+    xhr.send(null);
+  })();
+
+  using('>base_bundle_evaled', '>api_bundle_evaled', function() {
+    twttr.anywhere.remote = {};
+
+    provide('>api_ready', function(exports) {
+      initAPI();
+      exports();
+    });
+
+    using('>request_cache_seeded', function() {
+      initCurrentUser();
+    });
+  });
+
+  using('>bootstrap_data', function(data) {
+    twttr.payload = data.payload;
+    provide('>payload');
+
+    twttr.remoteIP = data.remoteIP;
+    twttr.requestFullCity = data.requestFullCity;
+    twttr.recentPlaces = data.recentPlaces;
+    twttr.cdnBase = data.cdnBase;
+
+    if(data.currentUser) {
+      twttr.currentUserScreenName = data.currentUserScreenName;
+    }
+
+    if (data.frontSuggestedUsers) {
+      twttr.frontSuggestedUsers = data.frontSuggestedUsers;
+    }
+
+    if(data.griffinConfig) {
+      twttr.griffinConfig = data.griffinConfig;
+      provide('>griffin_config');
+    }
+
+    if (data.isAdmin) {
+      twttr.rights = data.adminRights
+      twttr.isAdmin = true;
+    }
+
+    if (data.isNarrow) {
+      twttr.isNarrow = true;
+    }
+
+    if(data.pageLocale) {
+      twttr.pageLocale = data.pageLocale;
+    }
+    if(data.pageLocaleJS) {
+      //  Need to load language data
+      using(data.pageLocaleJS, function() {
+        provide('>languageData');
+      });
+    } else {
+      provide('>languageData');
+    }
+    if(data.pageLocaleClass) {
+      using('>base_bundle_evaled', function() {
+        $(function() {
+          $(document.body).addClass(data.pageLocaleClass);
+        });
+      });
+    }
+    if(data.languages) {
+      twttr.languages = data.languages;
+    }
+
+    using('>defaultViews', function() {
+      if(data.showWelcomeBanner) {
+        (new twttr.views.WelcomeToPhoenixBanner()).render($('#banners'), 'append');
+      }
+
+      if (data.flashNotice) {
+        $('#flash-message-storage').html(data.flashNotice).show();
+      }
+    });
+
+    using('>decider', function() {
+      twttr.decider._updateFeatures(data.deciderFeatures);
+    });
+
+    using('>ab_decider', function() {
+      twttr.abdecider._updateExperiments(data.abBuckets);
+    });
+
+    using('>api_ready', function() {
+      twttr.API.setConfig({ postAuthenticityToken: data.postAuthenticityToken });
+      $('#authenticity_token').val(data.postAuthenticityToken);
+      provide('>request_cache_seeded', function(exports) {
+        var seedData = data.requestCacheSeedData;
+        for (var i = 0, len = seedData.length; i < len; ++i) {
+          var seedItem = seedData[i];
+          twttr.API._requestCache.inject(seedItem.api_request_name, seedItem.options, seedItem.json, 1);
+        }
+        exports();
+      });
+
+      if(data.homeTimelineFetchSize) {
+        twttr.API.homeTimelineFetchSize = data.homeTimelineFetchSize;
+      }
+    });
+  });
+
+  createIFrame(function() {
+    var that = this;
+
+    using('>base_bundle_evaled', '>api_bundle_evaled', function() {
+      twttr.anywhere.remote.server = that;
+      twttr.anywhere.api.util.RemoteRequest.flush();
+    });
+  });
+
+});</script>
+<script>WATCH.end('javascript_includes');</script>
+
+<!--[if lte IE 6]>
+<script src="http://a2.twimg.com/a/1304464034/javascripts/phxie6.bundle.js"></script>
+<![endif]-->
+
+  
+
+</body></html>

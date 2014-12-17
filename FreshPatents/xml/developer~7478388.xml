@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+ <channel>
+  <atom:link href="http://www.infomous.com/site/mockups/FreshPatents/developer~7478388.xml" rel="self" type="application/rss+xml"/>
+  <title>Search pattern for developer</title>
+  <link>http://www.infomous.com/site/mockups/FreshPatents</link>
+  <description>Explore developer from FreshPatents</description>
+  <item>
+   <title>Category -- Developer</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Developer-bx1.rss</link>
+   <description>Category -- Developer</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Developer-bx1.rss</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Application Developer</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Application-Developer-bx1.rss</link>
+   <description>Category -- Application Developer</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Application-Developer-bx1.rss</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Photoresist Developer</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Photoresist-Developer-bx1.rss</link>
+   <description>Category -- Photoresist Developer</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Photoresist-Developer-bx1.rss</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+ </channel>
+</rss>

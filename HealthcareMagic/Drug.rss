@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>Related Drugs/Medications</title>
+    <link>http://www.infomous.com/site/mockups/HealthcareMagic/</link>
+
+ <item>
+    <title>Augmentin</title>
+    <link>http://www.healthcaremagic.com/topics/drugs/augmentin/19437</link>
+ </item>
+ <item>
+    <title>Ceftriaxone</title>
+    <link>http://www.healthcaremagic.com/topics/drugs/ceftriaxone/12385</link>
+ </item>
+ <item>
+    <title>Ciprofloxacin</title>
+    <link>http://www.healthcaremagic.com/topics/drugs/ciprofloxacin/3477</link>
+ </item>
+ <item>
+    <title>Amoxicillin</title>
+    <link>http://www.healthcaremagic.com/topics/drugs/amoxicillin/2093</link>
+ </item>
+</channel>
+</rss>

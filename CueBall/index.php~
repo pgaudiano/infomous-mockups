@@ -1,0 +1,28 @@
+<?php
+
+$page = file_get_contents('http://www.cueball.com/presentedge.php');
+
+$page = str_replace(
+      '<head>',
+      '<head>
+      <base href="http://www.cueball.com/">
+      ',
+      $page);
+
+$page = str_replace(
+	 '<div id="mainfeed"></div>',
+	 '
+	 <!-- Infomous insertion -->
+	 <script type="text/javascript" src="http://www.infomous.com/cloud_widget/4083?width=287&height=300&caption=false&setInteractionMode=click&colLink=0xDDDDDD"></script>
+	 <script type="text/javascript" src="http://www.infomous.com/site/mockups/Cueball/embed.js"></script>
+
+<div id="mainfeed"></div>
+',
+	$page
+);
+
+
+
+echo $page;
+
+?>

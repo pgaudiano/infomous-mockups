@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Infomous Advertising Demo</title>
+  <link>http://www.infomous.com/site/mockups/AdDemo</link>
+  <description>Demo of a sponsored or promoted word
+  </description>
+<item>
+	<title>Boston is getting this promoted content</title>
+	<link>http://www.infomous.com/site/mockups/AdDemo</link>
+	<author>Anonymous</author>
+	<pubDate>Mon, 6 Jan 14 10:55:05 +0000</pubDate>
+</item>
+</channel>
+</rss>

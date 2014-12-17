@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/3d13/0/0/%2a/m;44306;0-0;0;60859893;11549-576/50;0/0/0;u=swid=2246E08E-419F-4155-9F58-1D53A897D0CD|pgn=sweetspot|pgtyp=blog|sp=mlb|col=schoenfield_david;~sscs=%3f"><img src="http://s0.2mdn.net/viewad/817-grey.gif" border=0 alt="Advertisement"></a>');

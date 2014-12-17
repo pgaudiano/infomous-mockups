@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>An Email Feed</title>
+    <description>This is an email feed</description>
+    <pubDate>Tue, 21 Oct 2014 15:08:39 +0000</pubDate>
+    <generator>Zend_Feed_Writer 1.12.0 (http://framework.zend.com)</generator>
+    <link>http://www.infomous.com</link>
+    <atom:link rel="self" type="application/atom+xml" href="http://www.infomous.com/site/ocean/gmail"/>
+    <item>
+      <title>Call for Top Innovators</title>
+      <description><![CDATA[2014 New England Venture Summit
+=C2=A0
+THE NEW ENGLAND
+VENTURE SUMMIT
+=C2=A0
+Where
+Innovation Meets Capital
+DECEMBER 10, 2014
+=C2=A0| =C2=A0HILTON =C2=A0| =C2=A0BOSTON DEDHAM
+=C2=A0
+CALL
+FOR
+TOP
+INNOVATORS!
+=C2=A0
+9th
+annual summit will showcase more]]></description>
+      <pubDate>Tue, 21 Oct 2014 15:03:47 +0000</pubDate>
+      <link>https://mail.google.com/mail/#inbox/149333c4616e3bed</link>
+      <guid>https://mail.google.com/mail/#inbox/149333c4616e3bed</guid>
+    </item>
+    <item>
+      <title>RE: Strategic thoughts</title>
+      <description><![CDATA[Hi Paolo - Lets target Tuesday the 4th.=20
+
+-----Original Message-----
+From: Paolo Gaudiano [mailto:paolo@infomous.com]=20
+Sent: Tuesday, October 21, 2014 8:31 AM
+To: Teres, Jeremy
+Cc:]]></description>
+      <pubDate>Tue, 21 Oct 2014 15:02:31 +0000</pubDate>
+      <link>https://mail.google.com/mail/#inbox/148d1fe4d57c20ca</link>
+      <guid>https://mail.google.com/mail/#inbox/148d1fe4d57c20ca</guid>
+    </item>
+    <item>
+      <title>CrunchBase Daily: Magic Leap, Mirantis, GrabTaxi, Benu Networks, Snowflake Computing, SnapLogic, Navera, CareSync, Staq - October 21, 2014</title>
+      <description><![CDATA[
+
+October 21, 2014
+Share <http://link.crunchbase.com/52f3a373af104ed4dda887471x3ll.bl2/Ud-LRcJ=
+St1KQObI3B123b out CrunchBase'> <http://link.crunchbase.com/52f3a373af104ed=
+4dda887471x3ll.bl2/Ud-LRcJSt1KQObIvC82a2> <mailto:?subject=3DSee the Crunch=
+Base Newsletter http://link.crunchbase.com/52f3a373af104ed4dda887471x3ll.bl=
+2/Ud-LRcJSt1KQObI5B277e>
+
+Venture Investors Get Fashion Fever As Early Stage Deals]]></description>
+      <pubDate>Tue, 21 Oct 2014 15:02:46 +0000</pubDate>
+      <link>https://mail.google.com/mail/#inbox/14933395c89e414f</link>
+      <guid>https://mail.google.com/mail/#inbox/14933395c89e414f</guid>
+    </item>
+  </channel>
+</rss>
+

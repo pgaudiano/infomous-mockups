@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Infomous Advertising Demo</title>
+  <link>http://www.infomous.com/site/mockups/AdDemo</link>
+  <description>Demo of a sponsored or promoted word: this is a feed of native content
+  </description>
+<item>
+	<title>Native content will appear, related to museums or restaurants</title>
+	<link>http://www.infomous.com/site/mockups/AdDemo</link>
+	<author>Anonymous</author>
+	<pubDate>Mon, 6 Jan 14 10:55:05 +0000</pubDate>
+</item>
+<item>
+	<title>Restaurants might have native content</title>
+	<link>http://www.infomous.com/site/mockups/AdDemo</link>
+	<author>Anonymous</author>
+	<pubDate>Fri, 10 Jan 14 10:55:05 +0000</pubDate>
+</item>
+<item>
+	<title>Museums and restaurants might appear in native content.</title>
+	<description><img src=http://0.tqn.com/h/boston/1/9/J/4/-/-/CallahanTunnel.jpg" alt="This photo shows the entrance to Boston's Callahan Tunnel" width="150" height="112" />
+	<link>http://www.infomous.com/site/mockups/AdDemo</link>
+	<author>Anonymous</author>
+	<pubDate>Wed, 8 Jan 14 10:55:05 +0000</pubDate>
+</item>
+</channel>
+</rss>

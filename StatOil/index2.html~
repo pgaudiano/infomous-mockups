@@ -1,0 +1,340 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<base href="http://www.energyrealities.org">
+<title>Can the Earth provide enough to go around? - Energy Realities - A Visual Guide to Global Energy Needs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="image/jpeg" rel="image_src" href="http://media.energyrealities.org/portal/erpNV3KAS3221F785634/images/content/large/erp5344C29A81B44646C.jpg" />
+<meta name="description" content="In geological terms, humans have been on this planet for a very short time. And it&rsquo;s no coincidence that we showed up when we did, evolutionarily speaking: Human life evolved to exist in a..." />
+<meta name="keywords" content="energy realities, can the earth provide enough to go around? - energy realities - a visual guide to global energy needs" />
+<meta name="viewport" content="width=1060, maximum-scale=1" />
+<base href="http://www.energyrealities.org" />
+
+<link type="text/css" rel="stylesheet" href="css/otc/css.php" />
+<link type="text/css" rel="stylesheet" href="css/otc/theme.php" />
+<link type="text/css" rel="stylesheet" href="css/otc/detail.php" />
+<link type="text/css" rel="stylesheet" href="http://files.geoconsensus.com/css/jquery-ui-1.8.12.custom.css" />
+<link type="text/css" rel="stylesheet" href="http://files.geoconsensus.com/css/jquery.lightbox-0.5.css" />
+
+<script type="text/javascript"><!--//
+(function() {
+	var config = {
+		kitId: 'yiu8rva',
+		scriptTimeout: 3000
+	};
+	var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+})();
+//--></script>
+
+<script type="text/javascript" src="http://files.geoconsensus.com/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://files.geoconsensus.com/js/jquery-ui-1.8.12.custom.min.js" ></script>
+<script type="text/javascript" src="http://files.geoconsensus.com/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="http://files.geoconsensus.com/js/jquery.lightbox-0.5.image-data-box.js"></script>
+<script type="text/javascript" src="includes/global.js"></script>
+<script type="text/javascript" src="js/otc/index.js.php"></script>
+<script type="text/javascript">
+<!--//
+
+//Initialize page theme: 
+var index = {'theme': 'erp63557F54694BFF5B8'};
+
+$(document).ready(function() {
+
+	var intro = $('#intro #intro-div-expanded').css('display') == 'block';
+	if( intro ) { setTimeout(function() { colexpintro(0) }, 5000); }
+
+	$('#intro .ihref#intro-div-collapse a').click(function() { colexpintro(0); });
+	$('#intro .ihref#intro-div-expander a').click(function() { colexpintro(1); });
+
+	imagejqbox();
+
+	chapter(index.theme);
+
+	$(document).on('mouseover', '#items-theme .itype.index .ipage img', function() { $(this).attr('src', $(this).attr('src').replace('/off/','/on/')); });
+	$(document).on('mouseout',  '#items-theme .itype.index .ipage img', function() { $(this).attr('src', $(this).attr('src').replace('/on/','/off/')); });
+	$(document).on('mouseover', '#items-theme .itype.earth .box', function() { $('.bar', this).attr('class', 'bar on');  });
+	$(document).on('mouseout',  '#items-theme .itype.earth .box', function() { $('.bar', this).attr('class', 'bar off'); });
+
+	$(document).on('click', '#items-theme .itype.earth .box', function() { window.location.href = '/earth.php'; });
+
+});
+
+function imagejqbox() {
+	$('a.imgbox').lightBox({ });
+}
+
+function colexpintro(bool) {
+	if( bool ) {
+		$('#intro-div-expanded').animate({'height': 'toggle', 'margin-bottom': 'toggle', 'opacity': 'toggle'}, 500);
+		$('#intro-div-expander').hide(); $('#intro-div-collapse').fadeIn(500);
+		colexp('theme', 'intro', 1, index.theme);
+	} else {
+		$('#intro-div-expanded').animate({'height': 'toggle', 'margin-bottom': 'toggle', 'opacity': 'toggle'}, 500);
+		$('#intro-div-collapse').hide(); $('#intro-div-expander').fadeIn(500);
+		colexp('theme', 'intro', 0, index.theme);
+	}
+}
+
+function chapter(uid) {
+	if( uid ) {
+	//	index.theme = uid;
+		$('#items-theme').html('<img src="images/otc/iface/19-3.gif" alt="&nbsp;" style="margin: 0 auto; padding: 33px 0 50px; text-align: center;" />');
+		$('#items-theme').load('ajax/items.theme.php?page=detail&uid=' + uid, function() {
+			var types = $('#items-theme .itype');
+			for(var i = 0; i < types.length; i++) {
+				var itype = types[i];
+				$('.ident .itext', itype).parent().width($('.ident .itext', itype).width());
+				$('.ident  table', itype).css('table-layout', 'auto');
+				if( $(itype).hasClass('index') ) {
+					$('.ihtml', itype).html('<div class="item"><div class="image">&nbsp;</div><div class="info">&nbsp;</div></div>');
+					$('.ihtml', itype).load('ajax/items.type.php?theme=' + uid + '&type=' + $(itype).attr('id').replace('idx_type_','') + '&page=1');
+				}
+			}
+		});
+	}
+}
+
+function itemsthemepager(type, page) {
+	var itype = $('#items-theme .itype.index#idx_type_' + type);
+	$('.ihtml', itype).html('<div class="item"><div class="image">&nbsp;</div><div class="info">&nbsp;</div></div>');
+	$('.ihtml', itype).load('ajax/items.type.php?theme=' + index.theme + '&type=' + type + '&page=' + page);
+}
+
+//-->
+</script>
+
+<!-- Include linkedin widget: -->
+<script type="text/javascript" src="https://cw1-f2fapps.netdna-ssl.com/180/1/current/g/scripts/crossdomain/parent.js"></script>
+
+<style type="text/css">
+
+.wf-inactive *, .wf-active * { visibility: visible; }
+.wf-loading * { visibility: hidden; }
+
+</style>
+</head>
+
+<body>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+/* 66.108.77.122 */
+_gaq.push(['_setAccount', 'UA-5380724-28']);
+_gaq.push(['_setSiteSpeedSampleRate', 100]);
+_gaq.push(['_trackPageview']);
+ 		(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+
+
+
+<div id="ceil">
+	<div class="ibody">
+		<div class="icol1">
+			<div id="image-logo-primary">
+				<div class="image"><a href="/"><img src="images/otc/ER_logo.png" alt="Energy Realities" /></a></div>
+				<div class="_2pxbg">&nbsp;</div>
+			</div>
+		</div>
+		<div class="icol2">
+			<div class="_2-1">
+				<div id="icons-partners">
+					<table><tr>
+					<td><a href="http://goodideas.statoil.com" target="_blank"><img src="images/pub/com.statoil.png" alt="&nbsp;" /></a></td><td><a href="http://economistgroup.com" target="_blank"><img src="images/pub/com.economistgroup.png" alt="&nbsp;" /></a></td><td><a href="http://newscientist.com" target="_blank"><img src="images/pub/com.newscientist.png" alt="&nbsp;" /></a></td><td><a href="http://slate.com" target="_blank"><img src="images/pub/com.slate.png" alt="&nbsp;" /></a></td><td><a href="http://nationalgeographic.com" target="_blank"><img src="images/pub/com.natgeomaps.png" alt="&nbsp;" /></a></td>					</tr></table>
+					<div class="itext">In association with: </div>
+				</div>
+				<div id="iform-keyword">
+					<div class="inner off">
+						<div class="ihref"><img src="images/otc/iface/btn/off/header_keyword_lookup_button.png" alt="&nbsp;" /></div>
+					</div>
+					<div class="inner on">
+						<div class="ihref"><img src="images/otc/iface/btn/on/header_keyword_lookup_button.png" alt="&nbsp;" /></div>
+						<div class="clearboth"></div>
+						<div class="iform">
+							<form method="post" action="javascript:iformkeyword();">
+								<div class="input">
+									<input class="itext" id="iform-keyword-text" type="text" name="q" value="SEARCH" onclick="iformkeywordtextclear();" onkeypress="iformkeywordtextclear();" onblur="iformkeywordtext();" />
+									<div class="ifbtn"><a href="javascript:iformkeyword();"><img src="images/otc/iform/ceil.keyword.btn.png" alt="&#187;" /></a></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="clearboth"></div>
+			</div>
+			<div class="_2-2">
+				<div id="ihead-nav">
+					<div class="ihref" id="ihref-nav-theme-erp4DBD10A39FEAF917F"><a class="off" href="javascript:ihreftrack('weborama.fr','19897','/chapter/energys-future');">Energy's Future</a></div><div class="_2pxbg">&nbsp;</div><div class="ihref" id="ihref-nav-theme-erp306507517477640B1"><a class="off" href="javascript:ihreftrack('weborama.fr','19896','/chapter/the-right-balance');">The Right Balance</a></div><div class="_2pxbg">&nbsp;</div><div class="ihref" id="ihref-nav-theme-erp3E444C56EA69EDFAD"><a class="off" href="javascript:ihreftrack('weborama.fr','19895','/chapter/global-markets');">Global Markets</a></div><div class="_2pxbg">&nbsp;</div><div class="ihref" id="ihref-nav-theme-erp63557F54694BFF5B8"><a class="on" href="javascript:ihreftrack('weborama.fr','19894','/chapter/our-resources');">Our Resources</a></div><div class="_2pxbg">&nbsp;</div><div class="ihref" id="ihref-nav-theme-erpF2B1B3ED535DBF561"><a class="off" href="javascript:ihreftrack('weborama.fr','19893','/chapter/meeting-our-needs');">Meeting Our Needs</a></div><div class="_2pxbg">&nbsp;</div>					<div class="ihref"><a class="off" href="/">Home</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="clearboth"></div>
+	</div>
+</div><div id="intro">
+		<div id="intro-div-expanded" style="display: block;">
+		<table>
+			<tr>
+				<td class="image"><img src="images/otc/input/content/165/w/erpCC96BF165775E451A.png" alt="&nbsp;" /></td>
+				<td class="_"><img src="images/otc/iface/intro.head._.png" alt="|" /></td>
+				<td class="info">
+					<div class="ident">Our Resources</div>
+					<div class="itext"><div><p>What raw materials does the planet provide to fuel our economies and sustain our societies. What is available and where?&nbsp;How is energy developed and used and why it is important to make our world sustainable<br /><br /></p></div></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="intro-div-_colexp_">
+		<div class="ihref" id="intro-div-collapse" style="display: block;"><a href="javascript:ihref(null);"><img src="images/otc/iface/btn/off/intro.up.png" alt="^" />Hide Intro</a></div>
+		<div class="ihref" id="intro-div-expander" style="display: none;"><a href="javascript:ihref(null);"><img src="images/otc/iface/btn/off/intro.dn.png" alt="v" />Show Intro</a></div>
+	</div>
+		<div class="icbar" id="intro-bar-chapters">
+	<div class="theme" id="icb_erpF2B1B3ED535DBF561"><img src="images/otc/iface/bar/off/erpF2B1B3ED535DBF561.png" alt="&nbsp;" /></div><div class="theme" id="icb_erp63557F54694BFF5B8"><img src="images/otc/iface/bar/on/erp63557F54694BFF5B8.png" alt="&nbsp;" /></div><div class="theme" id="icb_erp3E444C56EA69EDFAD"><img src="images/otc/iface/bar/off/erp3E444C56EA69EDFAD.png" alt="&nbsp;" /></div><div class="theme" id="icb_erp306507517477640B1"><img src="images/otc/iface/bar/off/erp306507517477640B1.png" alt="&nbsp;" /></div><div class="theme" id="icb_erp4DBD10A39FEAF917F"><img src="images/otc/iface/bar/off/erp4DBD10A39FEAF917F.png" alt="&nbsp;" /></div>	</div>
+	<div class="close">&nbsp;</div>
+</div>
+
+<div class="ihtml" id="explore">
+<div class="ihead"><table><tr><td><div class="ihref off"><a href="chapter/our-resources/index/infographics/1">Infographics</a></div></td><td><div class="ihref off"><a href="chapter/our-resources/index/multimedia/1">Multimedia</a></div></td><td><div class="ihref on"><a href="chapter/our-resources/index/articles/1">Articles</a><img src="../images/otc/iface/itype.explore.on.pin.png" alt="&nbsp;" /></div></td></tr></table></div></div>
+
+<div id="content">
+	<div class="ibody"><table><tr>
+		<td class="icol1">
+			<div id="ident">
+				<div class="ihref ihrefs-external">
+					<div class="icon icon-external-google-plus"><a class="addthis_button_google_plusone_share"><img src="images/pub/icons/25/com.google.plus.png" alt="Google+" /></a></div>
+					<div class="icon icon-external-linkedin"><a class="addthis_button_linkedin"><img src="images/pub/icons/25/com.linkedin.png" alt="LinkedIn" /></a></div>
+					<div class="icon icon-external-twitter"><a class="addthis_button_twitter"><img src="images/pub/icons/25/com.twitter.png" alt="Twitter" /></a></div>
+					<div class="icon icon-external-facebook"><a class="addthis_button_facebook"><img src="images/pub/icons/25/com.facebook.png" alt="Facebook" /></a></div>
+				</div>
+				Can the Earth provide enough to go around?			</div>
+			<div class="idate iptnr">
+			<b>By National Geographic Maps</b> &nbsp;|&nbsp; Published November 17, 2011			</div>
+			<div class="image_1-2" id="image1"><div class="image"><div class="img"><a class="imgbox" href="http://media.energyrealities.org/portal/erpNV3KAS3221F785634/images/content/large/erp5344C29A81B44646C.jpg" title="People are consuming more meat and dairy products than ever, but what is the toll on the environment?&lt;br /&gt;Photo by: Jim West, Alamy"><img src="images/otc/input/content/598/w/erp5344C29A81B44646C.jpg" alt="People are consuming more meat and dairy products than ever, but what is the toll on the environment?" style="margin: -42px 0;" /></a></div></div></div><div class="itext intro"><p>In geological terms, humans have been on this planet <a href="http://humanorigins.si.edu/evidence/human-evolution-timeline-interactive">for a very short time</a>. And it&rsquo;s no coincidence that we showed up when we did, evolutionarily speaking: Human life evolved to exist in a very narrow range of conditions. Like Goldilocks, we need things to be just right&mdash;temperatures not too cold, but not too hot; just the right mix of oxygen, nitrogen and carbon dioxide in the air; and enough water and food to get by.</p></div><div class="itext"><p>While we think of ourselves as a remarkably self-sufficient species, to survive&mdash;let alone thrive&mdash;we depend on the planet&rsquo;s resources, from soil to grow crops and water to irrigate them to the air we breathe. As the Earth&rsquo;s <a href="http://news.nationalgeographic.com/news/2011/10/111031-population-7-billion-earth-world-un-seven/">population swells</a> and the demands we place on our planet increase, it&rsquo;s time to take a close look at what our world provides and whether it&rsquo;s enough to make ends meet.</p>
+<p>For millennia, the question of resource scarcity wasn&rsquo;t much of a question at all. There weren&rsquo;t that many of us, and the planet seemed like a big place, with lots of room to spread out and new frontiers to conquer. But in the decades to come, the human population is expected <a href="http://ngm.nationalgeographic.com/7-billion?source=news_7billion">to pass 9 billion</a>, and the pressure of all those people has made the question of resources more important than ever before. Do we have enough of what we need to survive? And how long will what we have last?</p>
+<p>(Related: "<a href="http://www.energyrealities.org/geoplayer/understanding-our-needs/erp01EFF6E97992BB636" target="_blank">Understanding our needs</a>")</p>
+<p><b>Future for Fossil Fuels?</b></p>
+<p>Ironically, one of the resources that we talk about most, fossil fuels, may also be one of the most abundant. Though the supply of easily extracted crude oil is dwindling, an estimated 12 trillion tons of fossil carbon, mostly coal, remain under the Earth&rsquo;s surface.</p>
+<p>The catch? Burning even a small fraction of that will push the delicate balance of gases in our atmosphere out of whack, resulting in both pollution and a greenhouse effect that is already warming the world. Much more, and the effects could be disastrous for the world as we know it.</p>
+<p>There&rsquo;s plenty of discussion when it comes to the impacts and limitations of fossil fuels. But there are other resources that we are more likely to take for granted, especially as more and more people leave the land for cities and lose touch with where our food comes from.</p>
+<p><b>Critical Lifelines</b></p>
+<p>Take <a href="http://environment.nationalgeographic.com/environment/freshwater">water</a>, something that&rsquo;s critical for every living creature on Earth. According to the United Nations, 400 million people lived in regions <a href="http://www.peopleandplanet.net/?lid=26385&amp;section=38&amp;topic=44">where water was scarce by the year 2000</a>. By 2025, that number is estimated to reach 3 billion &ndash; a sixfold increase. Population growth is a major culprit, of course, but so is the increased use of water for agriculture.</p>
+<p>Even the ground we stand on is a limited resource. Topsoil, the nutrient-rich layer of black earth that nourishes our crops, takes millennia of plant growth and gradual decomposition to create&mdash;and only a few decades of intensive planting and plowing to destroy. In just a century, Iowa has lost half of its topsoil to erosion; in many parts of the world the effects of industrial agriculture have been even more dramatic.</p>
+<p>Ongoing shifts in diet and energy consumption may have as much of an impact on the world&rsquo;s water and soil as population growth. Across the world, people are eating differently: As the developing world gets richer, billions of people in Asia and Africa are starting to adopt a more Western diet.</p>
+<p>(Related: "<a href="http://www.energyrealities.org/detail/and-then-there-were-seven-billion/erp7038F1F41A7A90646" target="_blank">And then there were seven billion</a>")</p>
+<p>Already, demand for meat and milk in the developing world is growing at almost 8 percent a year, <a href="http://www.fao.org/docrep/004/y3557e/y3557e03.htm">according to the Food and Agriculture Organization</a>. That means far more grain is needed to feed cows, pigs, and farm-raised fish. And the push to plant crops to use as biofuels&mdash;from <a href="http://www.economist.com/node/16952914">sugar cane in Brazil</a> to corn in Iowa and poplars in Europe&mdash;may be reducing the amount of farmland available for food crops.</p>
+<p>At the same time, predicted climate change could make devastating floods and droughts far more common. In fact, it may already be happening: Last summer, droughts and wildfires in Russia sent the global price of wheat soaring 50 percent in a matter of months. Australia, another major grain producer, has whipsawed between severe droughts and floods in the past two years.</p>
+<p>Other resources are harder to appreciate. The Earth&rsquo;s <a href="http://ocean.nationalgeographic.com/ocean">oceans</a>, which cover more than two thirds of the planet&rsquo;s surface, are so vast as to be beyond human comprehension. But the truth is that they&rsquo;re not bottomless. And scientists say that just in the last half century we have plundered their depths almost beyond repair: Since the advent of industrial fishing in the 1950s, more than 90 percent of the world&rsquo;s stocks of large fish&mdash;tuna, halibut, swordfish, and cod&mdash;have disappeared.</p>
+<p>In addition, resources like biodiversity are both hard to see and hard to measure in value. Biologists have argued that we are in the midst of the sixth major extinction event in the billion-year history of life on Earth.</p>
+<p>While previous extinctions have been traced to the impacts of massive asteroids or dramatic shifts in climate, within the space of a few centuries humans may <a href="http://www.nature.com/nature/journal/v471/n7336/full/nature09678.html">cause the disappearance of three-quarters of the planet&rsquo;s species</a>, according to a study published this year in <i>Nature</i>. The study&rsquo;s authors blamed a deadly mix of pollution, habitat loss, overfishing, and climate change.</p>
+<p>Making things even more complex, these resources are all interconnected. We can enrich depleted soils with artificial fertilizer but only by using fossil fuels and altering the chemistry of oceans and rivers with runoff from fertilized fields. Pumping water from underground to irrigate crops not only empties out the aquifers, but it also draws up salts and heavy metals that poison the soil. Dams built to generate electricity choke off water needed by farmers downstream, and they often wipe out wetland ecosystems entirely&mdash;the world&rsquo;s <a href="http://water.epa.gov/type/wetlands/index.cfm">wetlands</a> have shrunken by half in the last century.</p>
+<p><b>Future Solutions</b></p>
+<p>Even <a href="http://environment.nationalgeographic.com/environment/global-warming/biofuel-profile/?source=A-to-Z">biofuels</a>, the great hope of many to reduce our dependence on finite fossil fuels, are frustratingly costly. Growing crops to convert to fuel&mdash;corn and sugar cane for ethanol, for example&mdash;may mean clearing more forest land for agriculture and using more water to irrigate crops ultimately destined for our gas tanks. Many fear that agrofuels may drive up the price of wheat and corn people need to eat, resulting in food shortages around the world.</p>
+<p>(Related: "<a href="http://www.energyrealities.org/geoplayer/harvesting-energy-and-resources/erp378A5A0987FFF6D83" target="_blank">Harvesting energy and resources</a>")</p>
+<p>There are signs of hope. Many of the problems we face are low-hanging fruit. Solutions are already at hand that would improve the efficiency of irrigation, and truly sustainable energy sources&mdash;wind, geothermal, and solar power, for example&mdash;are getting more and more productive.</p>
+<p>But there&rsquo;s more to be done. Everyone on Earth must be willing to step a little lighter&mdash;eat less meat, use less gas, save electricity, and simply consume less. That&rsquo;s a hard message to sell, especially when most of the world already lives on much less than those in North America and Europe. An honest discussion of our limited resources is a critical first step in figuring out how to make the planet as we know it last for a long time to come.</p></div>
+			<!-- Include linkedin widget: -->
+	<script type="text/javascript"><!--//
+		window.onload = function() {
+			var params = {};
+			params.article = 'erpC01B8630DD24818F1';
+			params.content_description = 'In geological terms, humans have been on this planet for a very short time. And it&rsquo;s no coincidence that we showed up when we did, evolutionarily speaking: Human life evolved to exist in a...';
+			params.content_submitted_url = 'http://www.energyrealities.org/content/can-the-earth-provide-enough-to-go-around/erpC01B8630DD24818F1';
+			params.content_title = 'Can the Earth provide enough to go around?';
+			params.f2f_channel = 'http://www.energyrealities.org/pub/linkedin.com/group/f2f-channel.htm';
+			params.summary = 'In geological terms, humans have been on this planet for a very short time. And it&rsquo;s no coincidence that we showed up when we did, evolutionarily speaking: Human life evolved to exist in a...';
+			params.title = 'Can the Earth provide enough to go around?';
+			var url = '//statoil.w1.friend2friend.com/do/welcome/entry/f2f_pf_if/1/?';
+			for(var key in params) { url += key + '=' + encodeURIComponent(params[key]) + '&'; }
+			if( url.length > 2083 ) {
+				console.log('Info: URL length exceeded: ' + url.length);
+			} else {
+				var f2f_app = document.getElementById('f2f-app');
+				f2f_app.setAttribute('src', url.substr(0, url.length - 1));
+			}
+		};
+	//--></script>
+	<iframe class="iframe-external-linkedin-widget" id="f2f-app" name="f2f-app" src="" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="height: 500px; overflow: hidden; width: 610px;"></iframe>
+<!-- . -->
+		</td>
+		<td class="icol2">
+						<div id="ihref-back"><table><tr>
+				<td class="inner"><a href="chapter/our-resources/index/articles"><img src="images/otc/iface/btn/ihref.back.3c.png" alt="&lt;" />Back to Full Articles List</a></td>
+				<td class="_" style="background-color: #24a2ef;">&nbsp;</td>
+			</tr></table></div>
+
+                        <div class="items" id="feature">
+                        <div class="item"><div class="ihead">LinkedIn <b>Group Navigation</b></div>
+<script type="text/javascript" async data-infomous-id="nid35228" src="http://www.infomous.com/client2/?width=300&height=400&maxWords=30&setFrame=false&skinSourcesWidth=270"></script>
+</div>
+</div>
+						<div class="items _byxref"><div class="item"><div class="ihead">Related <b>articles</b></div><div class="image"><div class="img"><a href="content/growing-pains/erpA0BB38CB2C6DC455E"><img src="images/otc/input/content/278/w/erp3A8E356B46D990368.jpg" alt="&nbsp;" style="margin: -158.5px 0;" /></a></div></div><div class="ident"><a href="content/growing-pains/erpA0BB38CB2C6DC455E">Growing pains</a></div><div class="iptnr"><b>By Economist Intelligence Unit</b> &nbsp;|&nbsp; November 25, 2011</div></div><div class="item"><div class="image"><div class="img"><a href="content/delivering-sustainable-transport/erp245322A06FEEF0324"><img src="images/otc/input/content/278/w/erpD570BDD2C41113ECA.jpg" alt="&nbsp;" style="margin: -26px 0;" /></a></div></div><div class="ident"><a href="content/delivering-sustainable-transport/erp245322A06FEEF0324">Delivering sustainable transport</a></div><div class="iptnr"><b>By Economist Intelligence Unit</b> &nbsp;|&nbsp; December 20, 2012</div></div></div>
+			<div class="items" id="feature">
+			<div class="item"><div class="ihead">Related <b>GeoGallery</b></div><div class="box"><div class="image"><a href="chapter/energys-future/item/tapping-the-power-of-conservation/erp1D04ADA1452BB3507"><img src="images/otc/input/content/278/w/erp8A7F0377FD9B1E725.jpg" alt="&nbsp;" style="padding: 26.5px 0;" /></a></div><div class="info"><table><tr><td class="_" style="background-color: #032969;">&nbsp;</td><td class="ident"><a href="chapter/energys-future/item/tapping-the-power-of-conservation/erp1D04ADA1452BB3507">Tapping the power of conservation</a></td></tr></table></div></div></div><div class="item"><div class="ihead">Related <b>Video</b></div><div class="box"><div class="image"><a href="chapter/our-resources/item/the-sustainability-challenge/erp77AACD29F1903E803"><img src="images/otc/input/content/278/w/erpB63C772B48336D98D.jpg" alt="&nbsp;" style="padding: 41px 0;" /></a></div><div class="info"><table><tr><td class="_" style="background-color: #24a2ef;">&nbsp;</td><td class="ident"><a href="chapter/our-resources/item/the-sustainability-challenge/erp77AACD29F1903E803">The Sustainability Challenge</a></td></tr></table></div></div></div>			</div>
+			<div class="items _byxref"><div class="item"><div class="ihead">Related <b>infographics</b></div><div class="image"><div class="img"><a href="chapter/energys-future/item/years-of-fossil-fuels-remaining/erp6D28994FAAEECC86A"><img src="images/otc/input/content/278/w/erpA2A8E6B6826BF0A58.jpg" alt="&nbsp;" style="margin: -24px 0;" /></a></div></div><div class="ident"><a href="chapter/energys-future/item/years-of-fossil-fuels-remaining/erp6D28994FAAEECC86A">Years of Fossil Fuels Remaining</a></div></div><div class="item"><div class="image"><div class="img"><a href="chapter/energys-future/item/solar-and-wind-energy-potential/erp64A8DF68B7E76DA07"><img src="images/otc/input/content/278/w/erp41B68972892E837C0.jpg" alt="&nbsp;" style="margin: -24px 0;" /></a></div></div><div class="ident"><a href="chapter/energys-future/item/solar-and-wind-energy-potential/erp64A8DF68B7E76DA07">Solar and Wind Energy Potential</a></div></div></div>
+		</td>
+	</tr></table></div>
+</div>
+
+<!-- com.linkedin-group: js
+<div class="incld-external" id="com-linkedin-group">
+	<div class="ihead"><div class="inner"><a href="http://www.linkedin.com/groups?home=&gid=3676376" target="_blank" onclick="_gaq.push(['_trackEvent', 'linkedin', 'click', 'div:header']);">Join <i>the</i> Energy Innovation Discussion <i>on</i> <img src="images/pub/com.linkedin.png" alt="LinkedIn" /></a><div class="imgpin"><img src="images/otc/iface/com.linkedin.group.ihead.pin.png" alt="&nbsp;" /></div></div></div>
+	<div class="ihtml"><script type="IN/Login" data-onAuth="iface_linkedin_posts"></script></div>
+</div>-->
+<!-- com.linkedin.group: php oauth -->
+<div class="incld-external" id="com-linkedin-group">
+	<div class="ihead"><div class="inner"><a href="http://www.linkedin.com/groups?home=&gid=3676376" target="_blank" onclick="_gaq.push(['_trackEvent', 'linkedin', 'click', 'div:header']);">Join <i>the</i> Energy Innovation Discussion <i>on</i> <img src="images/pub/com.linkedin.png" alt="LinkedIn" /></a><div class="imgpin"><img src="images/otc/iface/com.linkedin.group.ihead.pin.png" alt="&nbsp;" /></div></div></div>
+	<div class="ibody"></div>
+</div>
+<div id="container">
+<div id="core">
+	<div id="index-theme">
+		<div class="ifoot _1">&nbsp;</div>
+		<div class="ihtml" id="items-theme"></div>
+		<div class="ifoot _2">&nbsp;</div>
+	</div>
+</div>
+</div>
+
+<div id="closing">
+	<div class="ibody">
+		<div class="icol1">
+			<div id="ihref-join-linkedin">
+				<div class="image">
+					<div class="inner">
+						<div class="itext1">Join the Energy innovation discussion on <b>LinkedIn</b></div>
+						<div class="itext2"><b>25,000+</b> members</div>
+					</div>
+				</div>
+				<div class="_2pxbg">&nbsp;</div>
+			</div>
+		</div>
+		<div class="icol2">
+			<div class="_2-1">
+				<div id="ifoot-nav">
+				<div class="ihref"><a href="/about/terms">Terms of Use</a></div><div class="ihref"><a href="/about/privacy">Privacy Policy</a></div><div class="ihref"><a href="/about">About Energy Realities</a></div>				</div>
+			</div>
+			<div class="_2-2">
+				<!-- com.addthis -->
+				<div class="ihrefs-external">
+					<div class="icon icon-external-google-plus"><a class="addthis_button_google_plusone_share"><img src="images/pub/icons/35/com.google.plus.png" alt="Google+" /></a></div>
+					<div class="icon icon-external-linkedin"><a class="addthis_button_linkedin"><img src="images/pub/icons/35/com.linkedin.png" alt="LinkedIn" /></a></div>
+					<div class="icon icon-external-twitter"><a class="addthis_button_twitter"><img src="images/pub/icons/35/com.twitter.png" alt="Twitter" /></a></div>
+					<div class="icon icon-external-facebook"><a class="addthis_button_facebook"><img src="images/pub/icons/35/com.facebook.png" alt="Facebook" /></a></div>
+				</div>
+				<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4ea175aa6fea9fe0"></script>
+				<!-- com.addthis -->
+			</div>
+			<div class="_2-3"><div id="itext-page-copyright">Copyright &copy; 2011 National Geographic Maps. All Rights Reserved.</div></div>
+		</div>
+		<div class="clearboth"></div>
+	</div>
+</div>
+
+<!-- weborama.fr -->
+<div id="img-weborama-fr"></div>
+<!-- weborama.fr -->
+</body>
+</html>

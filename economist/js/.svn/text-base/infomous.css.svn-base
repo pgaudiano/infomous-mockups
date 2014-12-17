@@ -1,0 +1,101 @@
+/** CSS reset rules, to avoid contamination from wrapping page styles **/
+#infomousMovie {
+  line-height: 1;
+}
+#infomousMovie div, #infomousMovie span, #infomousMovie object,
+#infomousMovie a, #infomousMovie em, #infomousMovie embed, #infomousMovie img,
+#infomousMovie strong, #infomousMovie ol, #infomousMovie ul, #infomousMovie li{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+#infomousMovie ol, #infomousMovie ul {
+  list-style: none;
+}
+/** end reset **/
+
+#infomousMovie .body{
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  color: #1E450C;
+  border: none;
+  cursor: pointer;
+  cursor: hand;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+#infomousMovie .body:hover{
+  color: #103800;
+  background-color: #EEE;
+  border: 1px solid #999;
+  z-index: 500 !important;
+}
+#infomousMovie .focused{
+  background-color: #EEE;
+  border: 1px solid #C00;
+  z-index: 499 !important;
+}
+#infomousMovie .hide{
+  width: 12px;
+  height: 12px;
+  background-image: url(img/removeMidUp.png);
+  background-repeat: no-repeat;
+  float:right;
+}
+#infomousMovie .hide:hover{
+  background-image: url(img/removeMidOver.png);
+}
+#infomousMovie .sources{
+  display: none;
+  z-index: 999;
+  background: #EEE;
+  border: 1px solid #999;
+  margin: 0;
+  padding: 3px;
+  list-style: none;
+  font-size: 11px;
+  max-height: 300px;
+  min-width: 180px;
+  max-width: 240px;
+  overflow: auto;
+}
+#infomousMovie .sources li{
+  margin-bottom: 1em;
+}
+#infomousMovie .sources li a{
+  text-decoration: none;
+  color: #333;
+}
+#infomousMovie .sources li a:hover{
+  color: #009;
+}
+#infomousMovie .sources .line2{
+  color: #666;
+  padding-top: 0.5em;
+}
+#infomousMovie .sources li.i-ad{
+  background-color: #DDD;
+  border: 1px solid #CCC;
+  padding: 2px;
+}
+#infomousMovie #infomous-logo{
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background-image: url(img/infomous_icon_24x24.png);
+  background-repeat: no-repeat;
+  z-index: 1002;
+}
+#infomousMovie #infomous-switch{
+  font-size: 11px;
+  font-family: Arial,sans-serif;
+}

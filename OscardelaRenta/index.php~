@@ -1,0 +1,112 @@
+<?php
+include("simple_html_dom.php");
+
+// A few globals
+$alltitles = array();
+$includePopItemComments = 0;
+$debug=0;
+
+
+$infile = file_get_html('http://www.infomous.com/site/mockups/Oscardelarenta/osdr.html');
+
+// Create DOM from default URL or local file
+/*
+   if (PHP_SAPI === 'cli') { //Behave differently if invoked from command line
+   $infile = file_get_html('http://www.infomous.com/site/mockups/Oscardelarenta/sale.html');
+   } else {
+   // Or GET the file...
+   if (isset($_GET["src"])) {
+   $infile = file_get_html($_GET["src"]);
+   } else {
+   print('Error: please include the URL of a LinkedIn with the call, e.g.:<br>
+   <a href="http://www.infomous.com/site/mockups/F2F/index.php?src=http://www.linkedin.com/groups/Succeed-Small-Business-Network-Powered-4733823">http://www.infomous.com/site/mockups/F2F/ligroup.php?src=http://www.linkedin.com/groups/Succeed-Small-Business-Network-Powered-4733823</a>
+   <p>Looks like we were invoked by '.PHP_SAPI);
+
+   exit;
+   }
+   }
+*/
+
+print_RSS_Header("Oscar de la Renta","http://www.oscardelarenta.com/sale/our-favorites/?p=0","A test of the Oscar de la Renta sales page");
+
+// Go through the list of carousel items
+getSaleItems($infile);
+
+print_RSS_footer();
+
+function getSaleItems($html) {
+    global $allitems;
+    $n=0;
+
+    dprint("\n=== There are ".sizeof($html->find('ul.product-set li'))." sale items ===\n\n");
+
+    foreach($html->find('ul.product-set li') as $popitem)
+    {
+    $title = $popitem->find('h2',0)->plaintext;
+    $url = html_entity_decode('http://www.oscardelarenta.com'.$popitem->find('a',0)->href);
+    $img = str_replace("216/287","64/00",$popitem->find('img',0)->src);
+    dprint("Sale item ".++$n." title: $title\n");
+    dprint("The URL is $url\n");
+    dprint("The image URL is $img\n");
+    print_RSS_item($title,$url,$title,$author,$img,$authorFeed,$n);
+    
+/*        $title = $popitem->find('h3 a',0)->title;
+         $alltitles[$n] = $title; // Store this so you can avoid dupes in the carousel
+         $url = html_entity_decode('http://www.linkedin.com'.$popitem->find('h3 a',0)->href);
+         // Remove unnecessary parts of the URL
+         if ($cut=strpos($url,'?')) { $url=substr($url,0,$cut); }
+         $description = $popitem->find('p.summary',0)->plaintext;
+         $author = $popitem->find('a img',0)->alt; 
+         $authorAvatar = str_replace("80_80","40_40",$popitem->find('a img',0)->src); 
+         $authorFeed = html_entity_decode('http://www.linkedin.com'.$popitem->find('a',0)->href);
+         dprint("Carousel item ".++$n." title: $title\n");
+         dprint("The author is: $author\n");
+         dprint("The author's avatar is: $authorAvatar\n");
+         dprint("The author's feed URL is: $authorFeed\n");
+         dprint("\n");
+         print_RSS_item($title,$url,$description,$author,$authorAvatar,$authorFeed,$n);
+*/
+
+         }
+    }
+
+// Print RSS Header
+function print_RSS_Header($channeltitle,$channelurl,$channeldescription) {
+
+    print('<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">'."
+<channel>
+  <title>$channeltitle</title>
+  <link>".urldecode($channelurl)."</link>
+  <description>$channeldescription
+  </description>
+");
+}
+
+// Print RSS item
+function print_RSS_item($title,$url,$description,$author,$authorAvatar,$authorFeed,$pubDate) {
+    print('
+<item>
+  <title>'.$title.'</title>
+  <link>'.urldecode($url).'</link>
+  <description>'.$description.'</description>
+  <media:thumbnail url="'.$authorAvatar.'"  xmlns:media="'.$authorAvatar.'"/>
+</item>
+');
+}
+//  
+
+// Print RSS Footer
+function print_rss_footer() {
+    print("</channel>\n</rss>\n");
+}
+
+
+// A simple cheat to control debugging printouts.
+function dprint($stuff) {
+        global $debug;
+        if ($debug) print($stuff);
+}
+
+
+?>

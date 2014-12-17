@@ -1,0 +1,1126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+<base href="http://www.arabnews.com">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<link rel="shortcut icon" href="http://www.arabnews.com/sites/default/files/favicon_0.ico" type="image/x-icon" />
+<title>Home | ArabNews</title>
+<link type="text/css" rel="stylesheet" media="all" href="http://www.arabnews.com/sites/default/files/css/css_f391fbb8d8bf093f94cfbb88f769c619.css" />
+<link type="text/css" rel="stylesheet" media="print" href="http://www.arabnews.com/sites/default/files/css/css_aa24b80d502572c9b086c18e87f5c931.css" />
+
+<!--[if lt IE 7.0]><link rel="stylesheet" href="/sites/all/themes/sky/css/ie-6.css" type="text/css" media="all" charset="utf-8" /><![endif]-->
+<!--[if IE 7.0]><link rel="stylesheet" href="/sites/all/themes/sky/css/ie-7.css" type="text/css" media="all" charset="utf-8" /><![endif]-->
+
+
+<script type="text/javascript" src="/misc/jquery.js?I"></script>
+<script type="text/javascript" src="/misc/drupal.js?I"></script>
+<script type="text/javascript" src="/misc/progress.js?I"></script>
+<script type="text/javascript" src="/sites/all/modules/curlypage/curlypage/curlypage.js?I"></script>
+<script type="text/javascript" src="/sites/all/modules/fancy_login/scripts/fancy_login.js?I"></script>
+<script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?I"></script>
+<script type="text/javascript" src="/sites/all/modules/views_slideshow/js/jquery.cycle.all.min.js?I"></script>
+<script type="text/javascript" src="/sites/all/modules/views_slideshow/contrib/views_slideshow_singleframe/views_slideshow.js?I"></script>
+<script type="text/javascript" src="/sites/all/modules/views_slideshow/contrib/views_slideshow_thumbnailhover/views_slideshow.js?I"></script>
+<script type="text/javascript" src="/sites/all/modules/quicktabs/js/quicktabs.js?I"></script>
+<script type="text/javascript" src="/sites/all/modules/custom/PrayTimes.js?I"></script>
+<script type="text/javascript" src="/sites/all/modules/views/js/base.js?I"></script>
+<script type="text/javascript" src="/sites/all/modules/views/js/ajax_view.js?I"></script>
+<script type="text/javascript" src="/sites/all/themes/sky/scripts/hoverIntent.js?I"></script>
+<script type="text/javascript" src="/sites/all/themes/sky/scripts/superfish.js?I"></script>
+<script type="text/javascript" src="/sites/all/themes/sky/scripts/sky.js?I"></script>
+<script type="text/javascript" src="/sites/all/themes/sky/scripts/jquery.ticker.js?I"></script>
+<script type="text/javascript" src="/sites/all/themes/sky/scripts/jquery.clickOrEnter.js?I"></script>
+<script type="text/javascript" src="/sites/all/themes/sky/scripts/site.js?I"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","fancyLogin":{"screenFadeColor":"white","screenFadeZIndex":"10","loginBoxHeight":"auto","loginBoxWidth":"175px","loginBoxBackgroundColor":"white","loginBoxTextColor":"black","loginBoxBorderColor":"black","loginBoxBorderWidth":"3px","loginBoxBorderStyle":"solid","loginPath":"user\/login","dimFadeSpeed":500,"boxFadeSpeed":1000,"hideObjects":0,"requestDestination":"?destination=home"},"googleanalytics":{"trackOutgoing":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"quicktabs":{"qt_statistics":{"tabs":[0,0,0]},"qt_widgets":{"tabs":[0,0,0,0]}},"viewsSlideshowThumbnailHover":{"#views_slideshow_thumbnailhover_main_slideshow-block_1":{"num_divs":5,"teasers_last":1,"id_prefix":"#views_slideshow_thumbnailhover_main_","div_prefix":"#views_slideshow_thumbnailhover_div_","vss_id":"slideshow-block_1","view_id":"slideshow-block_1","timeout":"5000","sort":1,"effect":"fade","speed":"300","start_paused":0,"fade_value":0.25,"hover_breakout":"teaser","hover":"hover","main_fields":{"nothing":"nothing","nothing_1":0},"breakout_fields":{"nothing_1":"nothing_1","nothing":0},"delay":"0","fixed_height":"1","random":"0","pause":"1","pause_on_click":"0","pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","remember_slide":0,"remember_slide_days":"1","pager_event":"mouseover","controls":"0","image_count":"0","sync":"1","advanced":"","ie":{"cleartype":"true","cleartypenobg":"false"},"nowrap":"0"},"#views_slideshow_thumbnailhover_main_videoslideshow_new-block_1":{"num_divs":3,"teasers_last":1,"id_prefix":"#views_slideshow_thumbnailhover_main_","div_prefix":"#views_slideshow_thumbnailhover_div_","vss_id":"videoslideshow_new-block_1","view_id":"videoslideshow_new-block_1","timeout":"5000","sort":1,"effect":"fade","speed":"300","start_paused":1,"fade_value":0.25,"hover_breakout":"teaser","hover":"hover","main_fields":{"field_vedio_embed_1":"field_vedio_embed_1","title":0,"field_vedio_embed":0},"breakout_fields":{"title":"title","field_vedio_embed":"field_vedio_embed","field_vedio_embed_1":0},"delay":"0","fixed_height":"1","random":"0","pause":"1","pause_on_click":"1","pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","remember_slide":0,"remember_slide_days":"1","pager_event":"click","controls":"0","image_count":"0","sync":"1","advanced":"\u003cdiv class=\"img grid_5 omega alpha\"\u003e[field_vedio_embed]\u003c\/div\u003e\n\u003cdiv class=\"img grid_5 omega alpha\"\u003e[title]\u003c\/div\u003e\n\u003cdiv class=\"grid_6\"\u003e\u003cdiv class=\"grid_3 omega alpha img-hover\"\u003e[field_vedio_embed_1]\u003c\/div\u003e\n\u003c\/div\u003e\u003cdiv class=\"grid_1 push_9\"\u003e\u003ca href=\"\/allvideo\"\u003e\u0627\u0644\u0645\u0632\u064a\u062f\u003c\/a\u003e\u003c\/div\u003e","ie":{"cleartype":"true","cleartypenobg":"false"},"nowrap":"1"}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:58134fa08d9430b999153089ff3ecb8a":{"view_name":"columns","view_display_id":"block_1","view_args":"","view_path":"saudiarabia\/article169188.ece","view_base_path":"columns","view_dom_id":"58134fa08d9430b999153089ff3ecb8a","pager_element":0}}}});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+jQuery(window).load(function(){
+	var date = new Date(); // today
+	var times = prayTimes.getTimes(date, [21.4200, 39.8300], +3,null,'12hNS');
+	 prayTimes.setMethod('Makkah');
+	var list = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha', 'Midnight'];
+
+	var html = '<table id="timetable">';
+	html += '<tr><th colspan="2">'+ date.toLocaleDateString()+ '</th></tr>';
+	for(var i in list)	{
+		html += '<tr><td>'+ list[i]+ '</td>';
+		html += '<td>'+ times[list[i].toLowerCase()]+ '</td></tr>';
+	}
+	html += '</table>';
+	document.getElementById('table').innerHTML = html;
+	});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+			  function changeFontSize(inc)
+		{
+		  var p = document.getElementsByTagName('p');
+		  for(n=0; n<p.length; n++) {
+			if(p[n].style.fontSize) {
+			   var size = parseInt(p[n].style.fontSize.replace("px", ""));
+			} else {
+			   var size = 13;
+			}
+			p[n].style.fontSize = size+inc + 'px';
+		   }
+		   
+		    var h1 = document.getElementsByTagName('h1');
+		  for(n=0; n<h1.length; n++) {
+			if(h1[n].style.fontSize) {
+			   var size = parseInt(h1[n].style.fontSize.replace("px", ""));
+			} else {
+			   var size = 20;
+			}
+			h1[n].style.fontSize = size+inc + 'px';
+		   }
+		   
+		}
+
+//--><!]]>
+</script>
+<script src="/sites/all/themes/sky/scripts/jquery.ticker.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="/sites/all/themes/sky/css/reset.css" />
+<link type="text/css" rel="stylesheet" href="/sites/all/themes/sky/css/960_16_col.css" />
+<link type="text/css" rel="stylesheet" href="/sites/all/themes/sky/css/text.css" />
+<link type="text/css" rel="stylesheet" href="/sites/all/modules/rpx/rpx_widgets.css?I" />
+
+<link href="/sites/all/themes/sky/css/ticker-style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div id="container" class="container_16">
+	<div id="header" class="grid_16">
+		<div id="header_left" class="grid_5 alpha">
+			<div id="date" class="grid_5 alpha">
+			<script language="JavaScript">
+
+var fixd;
+
+function isGregLeapYear(year)
+{
+return year%4 == 0 && year%100 != 0 || year%400 == 0;
+}
+
+
+function gregToFixed(year, month, day)
+{
+var a = Math.floor((year - 1) / 4);
+var b = Math.floor((year - 1) / 100);
+var c = Math.floor((year - 1) / 400);
+var d = Math.floor((367 * month - 362) / 12);
+
+if (month <= 2)
+e = 0;
+else if (month > 2 && isGregLeapYear(year))
+e = -1;
+else
+e = -2;
+
+return 1 - 1 + 365 * (year - 1) + a - b + c + d + e + day;
+}
+
+function Hijri(year, month, day)
+{
+this.year = year;
+this.month = month;
+this.day = day;
+this.toFixed = hijriToFixed;
+this.toString = hijriToString;
+}
+
+function hijriToFixed()
+{
+return this.day + Math.ceil(29.5 * (this.month - 1)) + (this.year - 1) * 354 +
+Math.floor((3 + 11 * this.year) / 30) + 227015 - 1;
+}
+
+function hijriToString()
+{
+var months = new Array("Muharam","Safar","Rabi'ul Awal","Rabiul Akhir","Jamadil Awal","Jamadil Akhir","Rajab","Sha'ban","Ramadhan","Shawwal","Dhulka'edah","Dzulhijjah");
+return months[this.month - 1] + " " + this.day + ", " +  this.year;
+}
+
+function fixedToHijri(f)
+{
+var i=new Hijri(1100, 1, 1);
+i.year = Math.floor((30 * (f - 227015) + 10646) / 10631);
+var i2=new Hijri(i.year, 1, 1);
+var m = Math.ceil((f - 29 - i2.toFixed()) / 29.5) + 1;
+i.month = Math.min(m, 12);
+i2.year = i.year;
+i2.month = i.month;
+i2.day = 1;
+i.day = f - i2.toFixed() + 1;
+return i;
+}
+
+var tod=new Date();
+var weekday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+var monthname=new Array("January","Febraury","March","April","May","June","July","August","September","October","November","December");
+
+
+
+
+var y = tod.getFullYear();
+var m = tod.getMonth();
+var d = tod.getDate();
+var dow = tod.getDay();
+
+var zm = weekday[dow] + ", " + d + " " + monthname[m] + " " + y;
+// document.write();
+
+
+m++;
+fixd=gregToFixed(y, m, d);
+var h=new Hijri(1421, 11, 28);
+h = fixedToHijri(fixd);
+// document.write();
+
+var zh = "  " + h.toString();
+
+document.write( zm + " | " + zh);
+
+</script> 
+			</div>
+			<div id="logo" class="grid_3 alpha">
+								<a href="/" title="ArabNews" id="logo"><img src="http://www.arabnews.com/sites/default/files/sky_logo.png" alt="ArabNews" /></a>
+							</div>
+		</div>
+		<div id="header_right" class="grid_11 omega">
+		    <div style="float: left; font-weight: bold; width: 304px; color: rgb(17, 154, 34); margin-right: -350px; margin-left: 7px;">Welcome to Arabnews.com new website!</div>
+			<div id="search" class="grid_6 push_5 omega">
+			<div class="login">
+			 &raquo;&nbsp;<a href="/user/login">Login</a>			</div>
+			<div class="logologin">
+				<a onmousedown="RPXNOW.default_provider = 'facebook';" onclick="return false;" class="rpxnow" href="https://arabnews.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fwww.arabnews.com%2Frpx%2Ftoken_handler%3Fdestination%3Duser"><div id="rpx-facebook" class="rpx-icon-small rpx-facebook-small"></div></a>
+				<a href="https://arabnews.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fwww.arabnews.com%2Frpx%2Ftoken_handler%3Fdestination%3Dsearch%252Fapachesolr_search" class="rpxnow" onclick="return false;" onmousedown="RPXNOW.default_provider = 'twitter';"><div class="rpx-icon-small rpx-twitter-small" id="rpx-twitter"></div></a>
+				<a onmousedown="RPXNOW.default_provider = 'google';" onclick="return false;" class="rpxnow" href="https://arabnews.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fwww.arabnews.com%2Frpx%2Ftoken_handler%3Fdestination%3Duser"><div id="rpx-google" class="rpx-icon-small rpx-google-small"></div></a><a onmousedown="RPXNOW.default_provider = 'yahoo';" onclick="return false;" class="rpxnow" href="https://arabnews.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fwww.arabnews.com%2Frpx%2Ftoken_handler%3Fdestination%3Duser"><div id="rpx-yahoo" class="rpx-icon-small rpx-yahoo-small"></div></a>
+			</div>
+			<div class="register">
+				<a href="/user/register">|   Register</a>
+			</div>
+			
+			</div>
+			<div id="header_ads" class="grid_12 pull_2">
+			<!-- begin ad tag (tile=1) -->
+<script type="text/javascript">
+//<![CDATA[
+ord=Math.random()*10000000000000000;
+document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/an/hmleaderboard;tile=1;sz=728x90;ord=' + ord + '?"><\/script>');
+//]]>
+</script>
+<noscript><a href="http://ad.doubleclick.net/jump/an/hmleaderboard;tile=1;sz=728x90;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/an/hmleaderboard;tile=1;sz=728x90;ord=123456789?" border="0" alt="" /></a></noscript>
+<!-- end ad tag -->
+	
+						</div>
+		</div>
+	</div>
+	<div id="nav" class="grid_16">
+		<div id="block-menu-menu-main" class="block block-menu block-odd region-odd clearfix style-menu">
+      <h3 class="title">Main category</h3>
+    <div class="content">
+    <ul class="menu"><li class="leaf first active-trail"><a href="/" title="" class="active"><span></span>Home</a></li>
+<li class="leaf"><a href="/saudiarabia" title=""><span></span>Saudi Arabia</a></li>
+<li class="leaf"><a href="/middleeast" title=""><span></span>Middle-East</a></li>
+<li class="leaf"><a href="/category/main-category/world" title=""><span></span>World</a></li>
+<li class="leaf"><a href="/economy" title=""><span></span>Economy</a></li>
+<li class="leaf"><a href="/sports" title=""><span></span>Sports</a></li>
+<li class="leaf"><a href="/lifestyle" title=""><span></span>Life & Style</a></li>
+<li class="leaf"><a href="/opinion" title=""><span></span>Opinion</a></li>
+<li class="leaf"><a href="/variety" title=""><span></span>Variety</a></li>
+<li class="leaf"><a href="/cartoon" title=""><span></span>Cartoons</a></li>
+<li class="leaf last"><a href="http://career.arabnews.com" title=""><span></span>Career</a></li>
+</ul>  </div>
+</div>
+<!-- /block.tpl.php -->	</div>	
+	<div id="breaking_news" class="grid_16">
+			</div>
+	<div id="content" class="grid_16">
+		<div id="left_content" class="grid_10 alpha">
+						
+			<div id="slideshow" class="grid_10 alpha omega"><div id="block-views-slideshow-block-1" class="block block-views block-even region-odd clearfix">
+    <div class="content">
+    <div class="view view-slideshow view-id-slideshow view-display-id-block-1 view-dom-id-63c47d5da216d3b6c4c5f1b9dec5676c">
+              <div class="view-content">
+      
+
+
+<div id="views_slideshow_thumbnailhover_main_slideshow-block_1" class="views_slideshow_thumbnailhover_main views_slideshow_main"><div id="views_slideshow_thumbnailhover_teaser_section_slideshow-block_1" class="views_slideshow_thumbnailhover_teaser_section views_slideshow_teaser_section"><div id="views_slideshow_thumbnailhover_div_slideshow-block_1_0" class="views_slideshow_thumbnailhover_slide views_slideshow_slide views-row-1 views-row-odd"><div class="views-field-nothing"><div class="views-content-nothing"><div class="img"><img src="http://www.arabnews.com/sites/default/files/imagecache/374X280/18762070692761068.JPG" alt="" title=""  class="imagecache imagecache-374X280 imagecache-default imagecache-374X280_default" width="340" height="280" /></div></div></div></div><div id="views_slideshow_thumbnailhover_div_slideshow-block_1_1" class="views_slideshow_thumbnailhover_slide views_slideshow_slide views-row-2 views_slideshow_thumbnailhover_hidden views-row-even"><div class="views-field-nothing"><div class="views-content-nothing"><div class="img"><img src="http://www.arabnews.com/sites/default/files/imagecache/374X280/5276062651631239.JPG" alt="" title=""  class="imagecache imagecache-374X280 imagecache-default imagecache-374X280_default" width="340" height="280" /></div></div></div></div><div id="views_slideshow_thumbnailhover_div_slideshow-block_1_2" class="views_slideshow_thumbnailhover_slide views_slideshow_slide views-row-3 views_slideshow_thumbnailhover_hidden views-row-odd"><div class="views-field-nothing"><div class="views-content-nothing"><div class="img"><img src="http://www.arabnews.com/sites/default/files/imagecache/374X280/1337531856798566500.jpg" alt="" title=""  class="imagecache imagecache-374X280 imagecache-default imagecache-374X280_default" width="340" height="280" /></div></div></div></div><div id="views_slideshow_thumbnailhover_div_slideshow-block_1_3" class="views_slideshow_thumbnailhover_slide views_slideshow_slide views-row-4 views_slideshow_thumbnailhover_hidden views-row-even"><div class="views-field-nothing"><div class="views-content-nothing"><div class="img"><img src="http://www.arabnews.com/sites/default/files/imagecache/374X280/eclipse.jpg" alt="" title=""  class="imagecache imagecache-374X280 imagecache-default imagecache-374X280_default" width="340" height="280" /></div></div></div></div><div id="views_slideshow_thumbnailhover_div_slideshow-block_1_4" class="views_slideshow_thumbnailhover_slide views_slideshow_slide views-row-5 views_slideshow_thumbnailhover_hidden views-row-odd"><div class="views-field-nothing"><div class="views-content-nothing"><div class="img"><img src="http://www.arabnews.com/sites/default/files/imagecache/374X280/1337537422769539700_0.jpg" alt="" title=""  class="imagecache imagecache-374X280 imagecache-default imagecache-374X280_default" width="340" height="280" /></div></div></div></div></div></div>
+  <div class="views-slideshow-controls-bottom clear-block">
+    <div id="views_slideshow_thumbnailhover_breakout_teasers_slideshow-block_1" class="views_slideshow_thumbnailhover_breakout_teasers clear-block"><div class="views_slideshow_thumbnailhover_div_breakout_teaser views_slideshow_thumbnailhover_active_teaser views-row-odd" id="views_slideshow_thumbnailhover_div_breakout_teaser_slideshow-block_1_0"><div class="views-field-nothing"><div class="views-content-nothing"><div class="title"><a href="/prominent-rival-sri-lanka-president-walks-free">Prominent rival of Sri Lanka president walks free</a></div></div></div></div>
+<div class="views_slideshow_thumbnailhover_div_breakout_teaser views-row-even" id="views_slideshow_thumbnailhover_div_breakout_teaser_slideshow-block_1_1"><div class="views-field-nothing"><div class="views-content-nothing"><div class="title"><a href="/least-20-killed-60-wounded-sanaa-suicide-attack">At least 20 killed, 60 wounded in Sanaa suicide attack</a></div></div></div></div>
+<div class="views_slideshow_thumbnailhover_div_breakout_teaser views-row-odd" id="views_slideshow_thumbnailhover_div_breakout_teaser_slideshow-block_1_2"><div class="views-field-nothing"><div class="views-content-nothing"><div class="title"><a href="/king-abdullah%E2%80%99s-dream-realized">King Abdullah’s dream realized</a></div></div></div></div>
+<div class="views_slideshow_thumbnailhover_div_breakout_teaser views-row-even" id="views_slideshow_thumbnailhover_div_breakout_teaser_slideshow-block_1_3"><div class="views-field-nothing"><div class="views-content-nothing"><div class="title"><a href="/science-technology/millions-turn-out-watch-rare-ring-fire-spectacle">Millions turn out to watch rare &#039;ring of fire&#039;...</a></div></div></div></div>
+<div class="views_slideshow_thumbnailhover_div_breakout_teaser views-row-odd" id="views_slideshow_thumbnailhover_div_breakout_teaser_slideshow-block_1_4"><div class="views-field-nothing"><div class="views-content-nothing"><div class="title"><a href="/makkah-construction-projects-affected-cement-crisis">Makkah construction projects affected by cement crisis</a></div></div></div></div>
+</div>
+          </div>
+    </div>
+            </div>   </div>
+</div>
+<!-- /block.tpl.php --></div>
+			
+			
+		<div class="banner_traditional">
+	<!-- begin ad tag (tile=4) -->
+<script type="text/javascript">
+//<![CDATA[
+document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/an/hm1trad;tile=4;sz=468x60;ord=' + ord + '?"><\/script>');
+//]]>
+</script>
+<noscript><a href="http://ad.doubleclick.net/jump/an/hm1trad;tile=4;sz=468x60;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/an/hm1trad;tile=4;sz=468x60;ord=123456789?" border="0" alt="" /></a></noscript>
+<!-- end ad tag -->
+
+		</div>
+			
+			<div id="business" class="grid_3 omega alpha"><div id="block-views-news-category-block-1" class="block block-views block-even region-odd clearfix">
+      <h3 class="title">Kingdom</h3>
+    <div class="content">
+    <div class="view view-news-category view-id-news-category view-display-id-block-1 view-dom-id-ac6265fe8cadb0339b201d98600d506f">
+              <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-binary-fid">        <div class="field-content"><a href="/saudi-arabia/king-abdullah-receives-sons-al-jafali" class="imagecache imagecache-179X128 imagecache-linked imagecache-179X128_linked"><img src="http://www.arabnews.com/sites/default/files/imagecache/179X128/sauking_0.jpg" alt="" title=""  class="imagecache imagecache-179X128" width="160" height="128" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/saudi-arabia/king-abdullah-receives-sons-al-jafali">King Abdullah receives sons of Al-Jafali</a></span>  </div>  </div>
+    </div>
+          <div class="attachment-after">
+      <div class="view view-news-category view-id-news-category view-display-id-attachment-1 view-dom-id-60652e1ba5e5c2ae9c8a2cfea6a1d9c1">
+              <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/saudi-arabia/crown-prince-sends-cable-congratulations-president-yemen-his-countrys-unity-day">Crown Prince sends cable...</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/saudi-arabia/king-abdullah-receives-sons-al-jafali">King Abdullah receives...</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/saudi-arabia/custodian-two-holy-mosques-sends-cable-congratulations-president-yemen-his-countrys-uni">Custodian of the Two...</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/king-abdullah%E2%80%99s-dream-realized">King Abdullah’s dream...</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/makkah-construction-projects-affected-cement-crisis">Makkah construction...</a></span>  </div></li>
+      </ul></div>    </div>
+            </div>     </div>
+        </div>   </div>
+</div>
+<!-- /block.tpl.php --></div>			
+			<div id="middle_east" class="grid_3 omega"><div id="block-views-news-category-block-2" class="block block-views block-odd region-odd clearfix">
+      <h3 class="title">Middle East</h3>
+    <div class="content">
+    <div class="view view-news-category view-id-news-category view-display-id-block-2 view-dom-id-0d35a006292b7630aaa81cf7d9aa951e">
+              <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-binary-fid">        <div class="field-content"><a href="/two-killed-sunni-muslim-clashes-beirut" class="imagecache imagecache-179X128 imagecache-linked imagecache-179X128_linked"><img src="http://www.arabnews.com/sites/default/files/imagecache/179X128/9156971464262523.JPG" alt="" title=""  class="imagecache imagecache-179X128" width="160" height="128" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/two-killed-sunni-muslim-clashes-beirut">Two killed in Sunni Muslim clashes in Beirut</a></span>  </div>  </div>
+    </div>
+          <div class="attachment-after">
+      <div class="view view-news-category view-id-news-category view-display-id-attachment-2 view-dom-id-5ad33f6e9c49b1e5460a39f3a6045e5f">
+              <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/lockerbie-bomber-megrahi-be-buried-libya">Lockerbie bomber Megrahi...</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/least-20-killed-60-wounded-sanaa-suicide-attack">At least 20 killed, 60...</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/sunnis-thrown-out-homs-allawite-state">Sunnis thrown out of...</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/fierce-fighting-rocks-damascus">Fierce fighting rocks...</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/iran-wants-world-respect-rights-nuclear-talks">Iran wants world to...</a></span>  </div></li>
+      </ul></div>    </div>
+            </div>     </div>
+        </div>   </div>
+</div>
+<!-- /block.tpl.php --></div>
+			<div id="world" class="grid_3 omega"><div id="block-views-news-category-block-3" class="block block-views block-even region-odd clearfix">
+      <h3 class="title">World</h3>
+    <div class="content">
+    <div class="view view-news-category view-id-news-category view-display-id-block-3 view-dom-id-4f83ac21d0d2d89164fd590775a1e6d7">
+              <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-binary-fid">        <div class="field-content"><a href="/prominent-rival-sri-lanka-president-walks-free" class="imagecache imagecache-179X128 imagecache-linked imagecache-179X128_linked"><img src="http://www.arabnews.com/sites/default/files/imagecache/179X128/18762070692761068.JPG" alt="" title=""  class="imagecache imagecache-179X128" width="160" height="128" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/prominent-rival-sri-lanka-president-walks-free">Prominent rival of Sri Lanka president walks...</a></span>  </div>  </div>
+    </div>
+          <div class="attachment-after">
+      <div class="view view-news-category view-id-news-category view-display-id-attachment-3 view-dom-id-dc22fa537e63d7fde79910899ebead2b">
+              <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/putin-announces-new-russian-government">Putin announces new...</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/malaysia%E2%80%99s-anwar-faces-charges-over-protest-election-looms">Malaysia’s Anwar faces...</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/strauss-kahn-investigators-open-group-rape-inquiry">Strauss-Kahn...</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/nato-discusses-afghanistan-withdrawl">NATO discusses...</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/deadly-earthquake-strikes-italy">Deadly earthquake...</a></span>  </div></li>
+      </ul></div>    </div>
+            </div>     </div>
+        </div>   </div>
+</div>
+<!-- /block.tpl.php --></div>
+			<div id="economy" class="grid_3 omega alpha"><div id="block-views-news-category-block-4" class="block block-views block-odd region-odd clearfix">
+      <h3 class="title">Economy</h3>
+    <div class="content">
+    <div class="view view-news-category view-id-news-category view-display-id-block-4 view-dom-id-67fa941153b6d9a4109dfa36b86fa5e0">
+              <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-binary-fid">        <div class="field-content"><a href="/commodities-face-bumpy-road-ahead-saxo-bank-ceo" class="imagecache imagecache-179X128 imagecache-linked imagecache-179X128_linked"><img src="http://www.arabnews.com/sites/default/files/imagecache/179X128/1337523248417313500.jpg" alt="" title=""  class="imagecache imagecache-179X128" width="160" height="128" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/commodities-face-bumpy-road-ahead-saxo-bank-ceo">Commodities to face a bumpy road ahead: Saxo...</a></span>  </div>  </div>
+    </div>
+          <div class="attachment-after">
+      <div class="view view-news-category view-id-news-category view-display-id-attachment-4 view-dom-id-37513102cc53cb758b33e14e732256f0">
+              <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/ge-reinforces-commitment-technology-partner-kingdoms-econmic-growth">GE reinforces commitment...</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/sr-57-m-contracts-inked-jubail-ras-al-khair">SR 57 m contracts inked...</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/2965-toyota-fortuner-vehicles-be-recalled">2,965 Toyota Fortuner...</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/mobily-adopts-ericssons-evolved-packet-core-solution-saudi-arabia">Mobily adopts Ericsson...</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/prince-khaled-al-faisal-honors-makkah-prize%E2%80%99s-strategic-partner-stc">Prince Khaled Al-Faisal...</a></span>  </div></li>
+      </ul></div>    </div>
+            </div>     </div>
+        </div>   </div>
+</div>
+<!-- /block.tpl.php --></div>
+			<div id="sports" class="grid_3 omega"><div id="block-views-news-category-block-5" class="block block-views block-odd region-odd clearfix">
+      <h3 class="title">Sports</h3>
+    <div class="content">
+    <div class="view view-news-category view-id-news-category view-display-id-block-5 view-dom-id-277a6911fb2491218b0afaf0a16cc291">
+              <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-binary-fid">        <div class="field-content"><a href="/nadal-beats-djokovic-regain-rome-title" class="imagecache imagecache-179X128 imagecache-linked imagecache-179X128_linked"><img src="http://www.arabnews.com/sites/default/files/imagecache/179X128/3248171985646313.jpg" alt="" title=""  class="imagecache imagecache-179X128" width="160" height="128" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/nadal-beats-djokovic-regain-rome-title">Nadal beats Djokovic to regain Rome title</a></span>  </div>  </div>
+    </div>
+          <div class="attachment-after">
+      <div class="view view-news-category view-id-news-category view-display-id-attachment-5 view-dom-id-16e4e5ac81929e04b80a282cad1355b7">
+              <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/chelsea-city-triumphs-could-signal-new-era">Chelsea, City triumphs...</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/basden-impressive-petron-debut-rain-or-shine-scores">Basden impressive in...</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/spurs-push-clippers-brink">Spurs push Clippers to...</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/pressel-wins-twice-make-sybase-semifinals">Pressel wins twice to...</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/bi-o-posts-second-straight-oneasia-victory">Bi-O posts second...</a></span>  </div></li>
+      </ul></div>    </div>
+            </div>     </div>
+        </div>   </div>
+</div>
+<!-- /block.tpl.php --></div>
+			<div id="life_style" class="grid_3 omega"><div id="block-views-news-category-block-6" class="block block-views block-even region-odd clearfix">
+      <h3 class="title">Life &amp; Style</h3>
+    <div class="content">
+    <div class="view view-news-category view-id-news-category view-display-id-block-6 view-dom-id-9bcd61e56a17beb175831adede493af6">
+              <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-binary-fid">        <div class="field-content"><a href="/winners-math-physics-olympiad-honored" class="imagecache imagecache-179X128 imagecache-linked imagecache-179X128_linked"><img src="http://www.arabnews.com/sites/default/files/imagecache/179X128/1337531185788466100.jpg" alt="" title=""  class="imagecache imagecache-179X128" width="160" height="128" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/winners-math-physics-olympiad-honored">Winners of math-physics olympiad honored</a></span>  </div>  </div>
+    </div>
+          <div class="attachment-after">
+      <div class="view view-news-category view-id-news-category view-display-id-attachment-6 view-dom-id-9ae12d195d0e8291505bd57e0b10f06d">
+              <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/taekwondo-martial-arts-peace-afghanistan">Taekwondo: Martial arts...</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/football-bridges-religious-divide-thai-south">Football bridges...</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/whaam-lichtenstein-retrospective-opens-chicago-tomorrow">Whaam! Lichtenstein...</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/race-save-devil-down-under">Race to save the devil...</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/many-animals-emulate-paul-octopus">Many animals emulate...</a></span>  </div></li>
+      </ul></div>    </div>
+            </div>     </div>
+        </div>   </div>
+</div>
+<!-- /block.tpl.php --></div>	
+			<div id="video" class="grid_10 alpha omega"><div id="block-views-videoslideshow-new-block-1" class="block block-views block-odd region-odd clearfix">
+      <h3 class="title">Arabnews Videos</h3>
+    <div class="content">
+    <div class="view view-videoslideshow-new view-id-videoslideshow-new view-display-id-block-1 view-dom-id-ce2043db64cf51ff2c85a9da5aa6261c">
+              <div class="view-content">
+      
+
+
+<div id="views_slideshow_thumbnailhover_main_videoslideshow_new-block_1" class="views_slideshow_thumbnailhover_main views_slideshow_main"><div id="views_slideshow_thumbnailhover_teaser_section_videoslideshow_new-block_1" class="views_slideshow_thumbnailhover_teaser_section views_slideshow_teaser_section"><div id="views_slideshow_thumbnailhover_div_videoslideshow_new-block_1_0" class="views_slideshow_thumbnailhover_slide views_slideshow_slide views-row-1 views-row-odd"><div class="views-field-field-vedio-embed"><div class="views-content-field-vedio-embed"><div class="emvideo emvideo-preview emvideo-youtube"><div id="media-youtube-1" class="media-youtube">
+  <div id="media-youtube-default-external-1">
+  <object type="application/x-shockwave-flash" height="254" width="380" data="http://www.youtube.com/v/jfVMNZY2YQc&amp;amp;rel=0&amp;amp;hd=1&amp;amp;enablejsapi=1&amp;amp;playerapiid=ytplayer&amp;amp;fs=1" id="media-youtube-default-external-object-1">
+    <param name="movie" value="http://www.youtube.com/v/jfVMNZY2YQc&amp;amp;rel=0&amp;amp;hd=1&amp;amp;enablejsapi=1&amp;amp;playerapiid=ytplayer&amp;amp;fs=1" />
+    <param name="allowScriptAccess" value="sameDomain"/>
+    <param name="quality" value="best"/>
+    <param name="allowFullScreen" value="true"/>
+    <param name="bgcolor" value="#FFFFFF"/>
+    <param name="scale" value="noScale"/>
+    <param name="salign" value="TL"/>
+    <param name="FlashVars" value="playerMode=embedded" />
+    <param name="wmode" value="transparent" />
+    <!-- Fallback content -->
+      <a href="http://www.youtube.com/watch?v=jfVMNZY2YQc"><img src="http://www.arabnews.com/sites/default/files/emvideo-youtube-jfVMNZY2YQc_1.jpg" alt="See video" title="See video"  width="380" height="254" /></a>  </object>
+</div>
+</div>
+</div></div></div></div><div id="views_slideshow_thumbnailhover_div_videoslideshow_new-block_1_1" class="views_slideshow_thumbnailhover_slide views_slideshow_slide views-row-2 views_slideshow_thumbnailhover_hidden views-row-even"><div class="views-field-field-vedio-embed"><div class="views-content-field-vedio-embed"><div class="emvideo emvideo-preview emvideo-youtube"><div id="media-youtube-2" class="media-youtube">
+  <div id="media-youtube-default-external-2">
+  <object type="application/x-shockwave-flash" height="254" width="380" data="http://www.youtube.com/v/XMQD0LAXFn8&amp;amp;rel=0&amp;amp;hd=1&amp;amp;enablejsapi=1&amp;amp;playerapiid=ytplayer&amp;amp;fs=1" id="media-youtube-default-external-object-2">
+    <param name="movie" value="http://www.youtube.com/v/XMQD0LAXFn8&amp;amp;rel=0&amp;amp;hd=1&amp;amp;enablejsapi=1&amp;amp;playerapiid=ytplayer&amp;amp;fs=1" />
+    <param name="allowScriptAccess" value="sameDomain"/>
+    <param name="quality" value="best"/>
+    <param name="allowFullScreen" value="true"/>
+    <param name="bgcolor" value="#FFFFFF"/>
+    <param name="scale" value="noScale"/>
+    <param name="salign" value="TL"/>
+    <param name="FlashVars" value="playerMode=embedded" />
+    <param name="wmode" value="transparent" />
+    <!-- Fallback content -->
+      <a href="http://www.youtube.com/watch?v=XMQD0LAXFn8"><img src="http://www.arabnews.com/sites/default/files/emvideo-youtube-XMQD0LAXFn8_0.jpg" alt="See video" title="See video"  width="380" height="254" /></a>  </object>
+</div>
+</div>
+</div></div></div></div><div id="views_slideshow_thumbnailhover_div_videoslideshow_new-block_1_2" class="views_slideshow_thumbnailhover_slide views_slideshow_slide views-row-3 views_slideshow_thumbnailhover_hidden views-row-odd"><div class="views-field-field-vedio-embed"><div class="views-content-field-vedio-embed"><div class="emvideo emvideo-preview emvideo-youtube"><div id="media-youtube-3" class="media-youtube">
+  <div id="media-youtube-default-external-3">
+  <object type="application/x-shockwave-flash" height="254" width="380" data="http://www.youtube.com/v/WQ-y1gjWX9I&amp;amp;rel=0&amp;amp;hd=1&amp;amp;enablejsapi=1&amp;amp;playerapiid=ytplayer&amp;amp;fs=1" id="media-youtube-default-external-object-3">
+    <param name="movie" value="http://www.youtube.com/v/WQ-y1gjWX9I&amp;amp;rel=0&amp;amp;hd=1&amp;amp;enablejsapi=1&amp;amp;playerapiid=ytplayer&amp;amp;fs=1" />
+    <param name="allowScriptAccess" value="sameDomain"/>
+    <param name="quality" value="best"/>
+    <param name="allowFullScreen" value="true"/>
+    <param name="bgcolor" value="#FFFFFF"/>
+    <param name="scale" value="noScale"/>
+    <param name="salign" value="TL"/>
+    <param name="FlashVars" value="playerMode=embedded" />
+    <param name="wmode" value="transparent" />
+    <!-- Fallback content -->
+      <a href="http://www.youtube.com/watch?v=WQ-y1gjWX9I"><img src="http://www.arabnews.com/sites/default/files/emvideo-youtube-WQ-y1gjWX9I.jpg" alt="See video" title="See video"  width="380" height="254" /></a>  </object>
+</div>
+</div>
+</div></div></div></div></div></div>
+  <div class="views-slideshow-controls-bottom clear-block">
+    <div id="views_slideshow_thumbnailhover_breakout_teasers_videoslideshow_new-block_1" class="views_slideshow_thumbnailhover_breakout_teasers clear-block"><div class="views_slideshow_thumbnailhover_div_breakout_teaser views_slideshow_thumbnailhover_active_teaser views-row-odd" id="views_slideshow_thumbnailhover_div_breakout_teaser_videoslideshow_new-block_1_0"><div class="views-field-title"><div class="views-content-title">Eclipse &#039;ring...</div></div><div class="views-field-field-vedio-embed"><div class="views-content-field-vedio-embed"><a href="/eclipse-ring-fire-wows-japanese-sky-gazers"><img src="http://www.arabnews.com/sites/default/files/imagecache/video_66x56/emvideo-youtube-jfVMNZY2YQc_1.jpg" alt="" title=""  class="imagecache imagecache-video_66x56" width="66" height="56" /></a></div></div></div>
+<div class="views_slideshow_thumbnailhover_div_breakout_teaser views-row-even" id="views_slideshow_thumbnailhover_div_breakout_teaser_videoslideshow_new-block_1_1"><div class="views-field-title"><div class="views-content-title">Protesters march in...</div></div><div class="views-field-field-vedio-embed"><div class="views-content-field-vedio-embed"><a href="/protesters-march-chicago-ahead-nato-summit-0"><img src="http://www.arabnews.com/sites/default/files/imagecache/video_66x56/emvideo-youtube-XMQD0LAXFn8_0.jpg" alt="" title=""  class="imagecache imagecache-video_66x56" width="66" height="56" /></a></div></div></div>
+<div class="views_slideshow_thumbnailhover_div_breakout_teaser views-row-odd" id="views_slideshow_thumbnailhover_div_breakout_teaser_videoslideshow_new-block_1_2"><div class="views-field-title"><div class="views-content-title">Indonesian soldiers...</div></div><div class="views-field-field-vedio-embed"><div class="views-content-field-vedio-embed"><a href="/%5Btermalias-raw%5D/indonesian-soldiers-hunt-bodies-russian-jet-crash"><img src="http://www.arabnews.com/sites/default/files/imagecache/video_66x56/emvideo-youtube-WQ-y1gjWX9I.jpg" alt="" title=""  class="imagecache imagecache-video_66x56" width="66" height="56" /></a></div></div></div>
+</div>
+          </div>
+    </div>
+            
+<div class="more-link">
+  <span class="icon">&nbsp;</span>
+  <a href="/videos">
+    more  </a>
+</div>
+      </div>   </div>
+</div>
+<!-- /block.tpl.php --><div id="block-views-columns-block-1" class="block block-views block-even region-even clearfix">
+      <h3 class="title">Arabnews Columns</h3>
+    <div class="content">
+    <div class="view view-columns view-id-columns view-display-id-block-1 view-dom-id-58134fa08d9430b999153089ff3ecb8a">
+              <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="grid_3"><div class="grid_3 alpha omega autherimg">
+<a href="/syrian-regime-tripoli-kandahar-0"><a href="/syrian-regime-tripoli-kandahar-0" class="imagecache imagecache-80x50 imagecache-linked imagecache-80x50_linked"><img src="http://www.arabnews.com/sites/default/files/imagecache/80x50/Abdul%20Rahman%20Al-Rashid_0.jpg" alt="" title=""  class="imagecache imagecache-80x50" width="80" height="50" /></a></a>
+</div>
+<div class="grid_3 alpha omega authername">
+<a href="/author/Abdul Rahman Al-Rashid">Abdul Rahman Al-Rashid</a>
+</div>
+<div class="grid_3 alpha omega columntitle">
+<a href="/syrian-regime-tripoli-kandahar-0">Syrian regime: Tripoli is Kandahar</a>
+</div>
+</div></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="grid_3"><div class="grid_3 alpha omega autherimg">
+<a href="/aleppo-not-surprise-0"><a href="/aleppo-not-surprise-0" class="imagecache imagecache-80x50 imagecache-linked imagecache-80x50_linked"><img src="http://www.arabnews.com/sites/default/files/imagecache/80x50/Tariq%20Alhomayed_2.jpg" alt="" title=""  class="imagecache imagecache-80x50" width="80" height="50" /></a></a>
+</div>
+<div class="grid_3 alpha omega authername">
+<a href="/author/Tariq Alhomayed">Tariq Alhomayed</a>
+</div>
+<div class="grid_3 alpha omega columntitle">
+<a href="/aleppo-not-surprise-0">Aleppo is not a surprise</a>
+</div>
+</div></span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last">
+      
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="grid_3"><div class="grid_3 alpha omega autherimg">
+<a href="/how-much-should-we-worry-about-egypt-0"><a href="/how-much-should-we-worry-about-egypt-0" class="imagecache imagecache-80x50 imagecache-linked imagecache-80x50_linked"><img src="http://www.arabnews.com/sites/default/files/imagecache/80x50/Jarmo-T_0.jpg" alt="" title=""  class="imagecache imagecache-80x50" width="80" height="50" /></a></a>
+</div>
+<div class="grid_3 alpha omega authername">
+<a href="/author/Dr Jarmo T. Kotilaine">Dr Jarmo T. Kotilaine</a>
+</div>
+<div class="grid_3 alpha omega columntitle">
+<a href="/how-much-should-we-worry-about-egypt-0">How much should we worry about Egypt?</a>
+</div>
+</div></span>  </div>  </div>
+    </div>
+              <div class="view-footer">
+      <p><a href="/columns">More</a></p>
+    </div>
+    </div>   </div>
+</div>
+<!-- /block.tpl.php --></div>
+			<div id="blog" class="grid_5 alpha"><div id="block-views-caricature-block-1" class="block block-views block-odd region-odd clearfix">
+      <h3 class="title">Arabnews Cartoons</h3>
+    <div class="content">
+    <div class="view view-caricature view-id-caricature view-display-id-block-1 view-dom-id-9f18a2cd9c67c1d9e201275c381e4ad5">
+              <div class="view-content">
+      <table class="views-view-grid col-4">
+  <tbody>
+          <tr class="row-1 row-first row-last">
+                  <td class="col-1 col-first">
+              
+  <div class="views-field views-field-field-binary-fid">        <div class="field-content"><a href="/cartoon-akramslan-1" class="imagecache imagecache-280x160 imagecache-linked imagecache-280x160_linked"><img src="http://www.arabnews.com/sites/default/files/imagecache/280x160/0521_cartoon_0.jpg" alt="" title=""  class="imagecache imagecache-280x160" width="280" height="160" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/cartoon-akramslan-1">Cartoon - Akramslan</a></span>  </div>          </td>
+                  <td class="col-2">
+                      </td>
+                  <td class="col-3">
+                      </td>
+                  <td class="col-4 col-last">
+                      </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+              <div class="view-footer">
+      <p><a href="/cartoon">MORE</a></p>
+    </div>
+    </div>   </div>
+</div>
+<!-- /block.tpl.php --></div>
+			<div id="photos" class="grid_5 omega"><div id="block-views-node-gallery-blocks-block-3" class="block block-views block-even region-odd clearfix">
+      <h3 class="title">Arabnews Photo Gallery</h3>
+    <div class="content">
+    <div class="view view-node-gallery-blocks view-id-node-gallery-blocks view-display-id-block-3 view-dom-id-42498f381340014c36f06b9e65c9f162">
+              <div class="view-content">
+      <table class="views-view-grid col-4">
+  <tbody>
+          <tr class="row-1 row-first row-last">
+                  <td class="col-1 col-first">
+              
+  <div class="views-field views-field-field-node-gallery-image-fid">        <span class="field-content"><a href="/photo_gallery/myanmar" class="imagecache imagecache-280x160 imagecache-linked imagecache-280x160_linked"><img src="http://www.arabnews.com/sites/default/files/imagecache/280x160/9931115456423308.jpg" alt="" title=""  class="imagecache imagecache-280x160" width="280" height="160" /></a></span>  </div>  
+  <div class="views-field views-field-title-1">    <span class="views-label views-label-title-1">Image: </span>    <span class="field-content"><a href="/photo_gallery/myanmar">Myanmar</a></span>  </div>          </td>
+                  <td class="col-2">
+                      </td>
+                  <td class="col-3">
+                      </td>
+                  <td class="col-4 col-last">
+                      </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+              <div class="view-footer">
+      <p><a href="/photo-gallery">MORE</a></p>
+    </div>
+    </div>   </div>
+</div>
+<!-- /block.tpl.php --></div>
+			<div id="classifieds" class="grid_10 alpha omega"><div id="block-block-19" class="block block-block block-odd region-odd clearfix">
+      <h3 class="title">Arabnews iReport</h3>
+    <div class="content">
+    <p><img alt="" src="/sites/default/files/images/irptr.jpg" style="width: 566px; height: 206px;" /></p>
+  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-views-classifieds-block-2" class="block block-views block-even region-even clearfix">
+      <h3 class="title">Arabnews Classifieds</h3>
+    <div class="content">
+    <div class="view view-classifieds view-id-classifieds view-display-id-block-2 view-dom-id-c166bc457d6d1075ac2cc041cb011646">
+        <div class="view-header">
+      <p><a href="/classifieds "><img src="http://67.213.74.68/sites/default/files/classifiled.png" alt="classifieds" /></a></p>
+    </div>
+            <div class="view-content">
+      <table class="views-view-grid col-2">
+  <tbody>
+          <tr class="row-1 row-first">
+                  <td class="col-1 col-first">
+              
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="line grid_3">
+<div class="grid_3 omega alpha"><a href="/matrimonial-3">MATRIMONIAL</a></div>
+<div class="grid_3 omega alpha"><p>Sunni Muslim indian...</div>
+<div class="grid_3 omega alpha">2012-05-21 10:46</div>
+</div></span>  </div>          </td>
+                  <td class="col-2 col-last">
+              
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="line grid_3">
+<div class="grid_3 omega alpha"><a href="/matrimonial-2">MATRIMONIAL</a></div>
+<div class="grid_3 omega alpha"><p>A Reputed family...</div>
+<div class="grid_3 omega alpha">2012-05-21 10:45</div>
+</div></span>  </div>          </td>
+              </tr>
+          <tr class="row-2">
+                  <td class="col-1 col-first">
+              
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="line grid_3">
+<div class="grid_3 omega alpha"><a href="/matrimonial-1">MATRIMONIAL</a></div>
+<div class="grid_3 omega alpha"><p>Indian Hyderabadi SM...</div>
+<div class="grid_3 omega alpha">2012-05-17 23:19</div>
+</div></span>  </div>          </td>
+                  <td class="col-2 col-last">
+              
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="line grid_3">
+<div class="grid_3 omega alpha"><a href="/matrimonial-0">MATRIMONIAL</a></div>
+<div class="grid_3 omega alpha"><p>Indian Hyderabadi SM...</div>
+<div class="grid_3 omega alpha">2012-05-17 23:07</div>
+</div></span>  </div>          </td>
+              </tr>
+          <tr class="row-3">
+                  <td class="col-1 col-first">
+              
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="line grid_3">
+<div class="grid_3 omega alpha"><a href="/matrimonial">MATRIMONIAL</a></div>
+<div class="grid_3 omega alpha"><p>Indian Hyderabadi...</div>
+<div class="grid_3 omega alpha">2012-05-17 23:07</div>
+</div></span>  </div>          </td>
+                  <td class="col-2 col-last">
+              
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="line grid_3">
+<div class="grid_3 omega alpha"><a href="/announcements">ANNOUNCEMENTS</a></div>
+<div class="grid_3 omega alpha"><p>I, Manosh Jacob,...</div>
+<div class="grid_3 omega alpha">2012-05-17 23:06</div>
+</div></span>  </div>          </td>
+              </tr>
+          <tr class="row-4 row-last">
+                  <td class="col-1 col-first">
+              
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="line grid_3">
+<div class="grid_3 omega alpha"><a href="/immigration">IMMIGRATION</a></div>
+<div class="grid_3 omega alpha"><p>Settlement services...</div>
+<div class="grid_3 omega alpha">2012-05-17 23:06</div>
+</div></span>  </div>          </td>
+                  <td class="col-2 col-last">
+              
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="line grid_3">
+<div class="grid_3 omega alpha"><a href="/%5Btermalias-raw%5D/announcement-4">ANNOUNCEMENT</a></div>
+<div class="grid_3 omega alpha"><p>Mr. Sharaf from the...</div>
+<div class="grid_3 omega alpha">2012-05-16 01:12</div>
+</div></span>  </div>          </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+              <div class="view-footer">
+      <p><a href="/classifieds">more</a></p>
+    </div>
+    </div>   </div>
+</div>
+<!-- /block.tpl.php --></div>
+			
+			
+		<div class="banner_traditional">
+	<!-- begin ad tag (tile=5) -->
+<script type="text/javascript">
+//<![CDATA[
+document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/an/hm2trad;tile=5;sz=468x60;ord=' + ord + '?"><\/script>');
+//]]>
+</script>
+<noscript><a href="http://ad.doubleclick.net/jump/an/hm2trad;tile=5;sz=468x60;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/an/hm2trad;tile=5;sz=468x60;ord=123456789?" border="0" alt="" /></a></noscript>
+<!-- end ad tag -->
+
+		</div>
+			
+		</div>
+		<div id="sidebar" class="grid_6 omega"><div id="block-search-0" class="block block-search block-odd region-odd clearfix">
+      <h3 class="title">Search</h3>
+    <div class="content">
+    <form action="/"  accept-charset="UTF-8" method="post" id="search-block-form">
+<div><div class="container-inline">
+  <div class="form-item form-item-textfield" id="edit-search-block-form-1-wrapper">
+ <label for="edit-search-block-form-1">Search this site: </label>
+ <input type="text" maxlength="128" name="search_block_form" id="edit-search-block-form-1" size="15" value="" title="Enter the terms you wish to search for." class="form-text" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Search"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-1ddf981a1546a05f4e86fb223a941136" value="form-1ddf981a1546a05f4e86fb223a941136"  />
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form"  />
+</div>
+
+</div></form>
+  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-quicktabs-statistics" class="block block-quicktabs block-even region-even clearfix">
+    <div class="content">
+    <div id="quicktabs-statistics" class="quicktabs_wrapper quicktabs-style-nostyle"><ul class="quicktabs_tabs quicktabs-style-nostyle"><li class="qtab-0 active first"><a href="/home?quicktabs_statistics=0#quicktabs-statistics" id="quicktabs-tab-statistics-0" class="qt_tab active">Latest</a></li>
+
+<!--<li class="qtab-1"><a href="/home?quicktabs_statistics=1#quicktabs-statistics" id="quicktabs-tab-statistics-1" class="qt_tab active">Most Read</a></li> -->
+
+<li class="qtab-2 last"><a href="/home?quicktabs_statistics=2#quicktabs-statistics" id="quicktabs-tab-statistics-2" class="qt_tab active">Most commented</a></li></ul><div id="quicktabs_container_statistics" class="quicktabs_main quicktabs-style-nostyle"><div id="quicktabs_tabpage_statistics_0" class="quicktabs_tabpage"><div class="view view-most-recent view-id-most-recent view-display-id-block-4 view-dom-id-8e485d67e80ad8e8afc29fcd1b187ccc">
+              <div class="view-content">
+      <div class="item-list">    <ol>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/saudi-arabia/king-abdullah-receives-sons-al-jafali">King Abdullah receives sons of Al-Jafali</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/saudi-arabia/saudi-arabia-and-turkey-signcustoms-agreement">Saudi Arabia and Turkey signcustoms...</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/saudi-arabia/custodian-two-holy-mosques-sends-cable-congratulations-president-yemen-his-countrys-uni">Custodian of the Two Holy Mosques sends...</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/saudi-arabia/crown-prince-sends-cable-congratulations-president-yemen-his-countrys-unity-day">Crown Prince sends cable of...</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/syrian-regime-tripoli-kandahar-0">Syrian regime: Tripoli is Kandahar</a></span>  </div></li>
+      </ol></div>    </div>
+            </div> </div><div id="quicktabs_tabpage_statistics_1" class="quicktabs_tabpage quicktabs-hide"><div class="view view-most-recent view-id-most-recent view-display-id-block-2 view-dom-id-6617453478c8110721394d55d90098bb">
+              <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/node/211103">Sultan makes major changes in SFF</a></span>  </div>  
+  <div class="views-field views-field-totalcount">        <span class="field-content">0 Read</span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/node/265211">Canadian Band Wows Riyadh Audience</a></span>  </div>  
+  <div class="views-field views-field-totalcount">        <span class="field-content">0 Read</span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/node/265373">Franjieh Warns Vote Delay May Trigger...</a></span>  </div>  
+  <div class="views-field views-field-totalcount">        <span class="field-content">0 Read</span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/node/259217">Sparks Fly in Parliament Over Babri...</a></span>  </div>  
+  <div class="views-field views-field-totalcount">        <span class="field-content">0 Read</span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/node/262133">Israel, PA Declare Cease-Fire</a></span>  </div>  
+  <div class="views-field views-field-totalcount">        <span class="field-content">0 Read</span>  </div></li>
+      </ul></div>    </div>
+            </div> </div><div id="quicktabs_tabpage_statistics_2" class="quicktabs_tabpage quicktabs-hide"><div class="view view-most-recent view-id-most-recent view-display-id-block-1 view-dom-id-9734f5ae9271bc4d80e38f370939e9a8">
+              <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/saudis-need-acquire-professional-certificates">Saudis need to acquire professional...</a></span>  </div>  
+  <div class="views-field views-field-comment-count">        <span class="field-content">2 comment</span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/saudis-need-acquire-professional-certificates">Saudis need to acquire professional...</a></span>  </div>  
+  <div class="views-field views-field-comment-count">        <span class="field-content">2 comment</span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/saudi-rewarded-his-honesty">Saudi rewarded for his honesty</a></span>  </div>  
+  <div class="views-field views-field-comment-count">        <span class="field-content">2 comment</span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/saudi-rewarded-his-honesty">Saudi rewarded for his honesty</a></span>  </div>  
+  <div class="views-field views-field-comment-count">        <span class="field-content">2 comment</span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/uk-honors-saudi-paralympic-team">UK honors Saudi Paralympic team</a></span>  </div>  
+  <div class="views-field views-field-comment-count">        <span class="field-content">1 comment</span>  </div></li>
+      </ul></div>    </div>
+            </div> </div></div></div>  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-quicktabs-widgets" class="block block-quicktabs block-odd region-odd clearfix">
+      <h3 class="title">Widgets</h3>
+    <div class="content">
+    <div id="quicktabs-widgets" class="quicktabs_wrapper quicktabs-style-nostyle"><ul class="quicktabs_tabs quicktabs-style-nostyle"><li class="qtab-0 active first"><a href="/home?quicktabs_widgets=0#quicktabs-widgets" id="quicktabs-tab-widgets-0" class="qt_tab active">Weather</a></li><li class="qtab-1"><a href="/home?quicktabs_widgets=1#quicktabs-widgets" id="quicktabs-tab-widgets-1" class="qt_tab active">Prices</a></li><li class="qtab-2"><a href="/home?quicktabs_widgets=2#quicktabs-widgets" id="quicktabs-tab-widgets-2" class="qt_tab active">Currency</a></li><li class="qtab-3 last"><a href="/home?quicktabs_widgets=3#quicktabs-widgets" id="quicktabs-tab-widgets-3" class="qt_tab active">Prayer Times</a></li></ul><div id="quicktabs_container_widgets" class="quicktabs_main quicktabs-style-nostyle"><div id="quicktabs_tabpage_widgets_0" class="quicktabs_tabpage"><div id="block-block-8" class="block block-block block-odd region-odd clearfix">
+    <div class="content">
+    <script type="text/javascript" src="http://67.213.74.68/sites/all/themes/sky/scripts/weather/swfobject.js"></script><script type="text/javascript">
+var flashvars = {};
+flashvars.folderPath = "http://67.213.74.68/sites/all/themes/sky/scripts/weather/";
+var params = {};
+params.scale = "noscale";
+params.salign = "tl";
+params.wmode = "transparent";
+params.allowScriptAccess = "always";
+params.allowFullScreen = "true";
+var attributes = {};
+swfobject.embedSWF("http://67.213.74.68/sites/all/themes/sky/scripts/weather/WeatherWidgetFX.swf", "DivWeatherWidgetFX", "280", "192", "9.0.0", false, flashvars, params, attributes);
+</script><div id="DivWeatherWidgetFX">
+	&nbsp;</div>
+  </div>
+</div>
+<!-- /block.tpl.php --></div><div id="quicktabs_tabpage_widgets_1" class="quicktabs_tabpage quicktabs-hide"><div id="block-block-4" class="block block-block block-even region-even clearfix">
+    <div class="content">
+    <p><center><iframe marginwidth="0" height="120" marginheight="0" vspace="0" hspace="0" allowtransparency="true" src="http://www.goldline.com/widgets/spots.php" scrolling='no' frameborder="0" ></iframe></center></p>
+  </div>
+</div>
+<!-- /block.tpl.php --></div><div id="quicktabs_tabpage_widgets_2" class="quicktabs_tabpage quicktabs-hide"><div id="block-block-3" class="block block-block block-odd region-odd clearfix">
+    <div class="content">
+    <p><center><iframe allowtransparency="true" hspace="0" vspace="0" marginheight="0" marginwidth="0" src="http://www.currencyconverter.co.uk/widget/ccwidget.html?from=SAR&amp;to=USD&amp;val=100&amp;du=14400&amp;ac=1" border="0" id="ccwidget_iframe_0" name="ccwidget_iframe_0" scrolling="no" width="200" frameborder="0" height="236"></iframe></center></p>
+  </div>
+</div>
+<!-- /block.tpl.php --></div><div id="quicktabs_tabpage_widgets_3" class="quicktabs_tabpage quicktabs-hide"><div id="block-custom-0" class="block block-custom block-even region-even clearfix">
+    <div class="content">
+     <p align="center">Makkah, Saudi Arabia <p> <div align="center" id="table"></div>  </div>
+</div>
+<!-- /block.tpl.php --></div></div></div>  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-block-1" class="block block-block block-even region-even clearfix">
+    <div class="content">
+    <script language="JavaScript" type="text/javascript">
+ord=Math.random()*10000000000000000;
+document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/an/hmmedrectangle;sz=300x250;ord=' + ord + '?" type="text/javascript">&lt;\/script>');
+</script><p><noscript><a href="http://ad.doubleclick.net/jump/an/hmmedrectangle;sz=300x250;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/ad/an/hmmedrectangle;sz=300x250;ord=123456789?" width="300" height="250" border="0" alt="" /></a></noscript></p>
+</script>  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-block-9" class="block block-block block-odd region-odd clearfix">
+      <h3 class="title">Arabnews Follow us on</h3>
+    <div class="content">
+    <ul>
+<li>
+		&nbsp;</li>
+<li>
+		<a href="http://www.facebook.com/pages/Arab-News/10250877124" target="_blank"><img src="/sites/all/themes/sky/images/facebook.png" /></a></li>
+<li>
+		<a href="http://twitter.com/#!/arab_news" target="_blank"><img src="/sites/all/themes/sky/images/twitter.png" /></a></li>
+<li>
+		<a href="http://www.youtube.com/arabnewstube" target="_blank"><img src="/sites/all/themes/sky/images/youtube.png" /></a></li>
+<li>
+		<a href="#" target="_blank"><img src="/sites/all/themes/sky/images/google+.png" /></a></li>
+<li>
+		<a href="/rss"><img src="/sites/all/themes/sky/images/rss.png" /></a></li>
+</ul>
+  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-block-12" class="block block-block block-even region-even clearfix">
+      <h3 class="title">Arabnews Mobile Applications</h3>
+    <div class="content">
+    <ul style="margin-left:8px">
+<li style="padding-right:15px; display: inline;float: left;margin: 0px !important;">
+		<a href="/sms" target="_blank"><img src="/sites/all/themes/sky/images/Social-Media2_03.png" /></a></li>
+<li style="padding-right:15px; display: inline;float: left;margin: 0px !important;">
+		<a href="https://play.google.com/store/apps/details?id=com.knowledgeview.android.arabnews" target="_blank"><img src="/sites/all/themes/sky/images/Social-Media2_05.png" /></a></li>
+<li style="padding-right:15px; display: inline;float: left;margin: 0px !important;">
+		<a href="http://itunes.apple.com/sa/app/arab-news/id406350388?mt=8&amp;ign-mpt=uo%3D4" target="_blank"><img src="/sites/all/themes/sky/images/Social-Media2_07.png" /></a></li>
+<li style=" display: inline;float: left;margin: 0px !important;">
+		<a href="http://itunes.apple.com/sa/app/arab-news-news-paper/id406348044?mt=8&amp;ign-mpt=uo%3D4" target="_blank"><img src="/sites/all/themes/sky/images/Social-Media2_09.png" /></a></li>
+</ul>
+  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-twitter-profile-widget-0" class="block block-twitter-profile-widget block-odd region-odd clearfix">
+    <div class="content">
+    <div class = "twitter_profile_widget">
+
+            <script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
+        <script type = "text/javascript">
+    new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp:  10,
+      interval: 20000,
+      
+      width: 'auto',
+      height: 300,
+      theme: {
+        shell: {
+          background: '#669966',
+          color: '#ffffff'
+        },
+        tweets: {
+          background: '#ffffff',
+          color: '#000000',
+          links: '#46b5ff'
+        }
+      },
+      features: {
+        scrollbar: true,
+        loop: false,
+        live: true,
+        hashtags: true,
+        timestamp: true,
+        avatars: true,
+        behavior: 'all'
+      }
+    }).render().setUser('arab_news').start();</script>
+    
+    
+</div>  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-block-11" class="block block-block block-even region-even clearfix">
+    <div class="content">
+    <p><iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FArab-News%2F10250877124&amp;width=325&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;appId=321209561240674" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:352px; height:590px;" allowTransparency="true"></iframe></p>
+  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-block-2" class="block block-block block-odd region-odd clearfix">
+    <div class="content">
+    <script type="text/javascript">
+document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/an/hm2medrect;tile=3;sz=300x250;ord=' + ord + '?">&lt;\/script>');
+</script><p><noscript><a href="http://ad.doubleclick.net/jump/an/hm2medrect;tile=3;sz=300x250;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/an/hm2medrect;tile=3;sz=300x250;ord=123456789?" border="0" alt="" /></a></noscript></p>
+</script>  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-block-21" class="block block-block block-even region-even clearfix">
+      <h3 class="title">Events &amp; Exhibitions</h3>
+    <div class="content">
+    <div class="tcContent">
+<div class="buttonLink">
+		<a href="/node/335300" target="_blank">SAOGE</a></div>
+<div class="buttonLink">
+		<a href="/node/335301" target="_blank">EUROMONEY</a></div>
+<div class="clearfix">
+		&nbsp;</div>
+</div>
+  </div>
+</div>
+<!-- /block.tpl.php --></div>
+	</div>
+	<div id="footer" class="grid_16">
+		<div id="block-menu-menu-menuoffooter" class="block block-menu block-odd region-odd clearfix style-menu">
+      <h3 class="title">Footer</h3>
+    <div class="content">
+    <ul class="menu"><li class="leaf first active-trail"><a href="/" title="" class="active"><span></span>Home</a></li>
+<li class="leaf"><a href="/saudiarabia" title=""><span></span>Saudi Arabia</a></li>
+<li class="leaf"><a href="/middleeast" title=""><span></span>Middle-East</a></li>
+<li class="leaf"><a href="/category/main-category/world" title=""><span></span>World</a></li>
+<li class="leaf"><a href="/economy" title=""><span></span>Economy</a></li>
+<li class="leaf"><a href="/economy/islamicfinance" title=""><span></span>Islamic Finance </a></li>
+<li class="leaf"><a href="/economy/corporatenews" title=""><span></span>Corporate News</a></li>
+<li class="leaf"><a href="/economy/investments" title=""><span></span>Investments</a></li>
+<li class="leaf"><a href="/economy/top_100_fdi" title=""><span></span>Top 100 FDI</a></li>
+<li class="leaf"><a href="/sports" title=""><span></span>Sports</a></li>
+<li class="leaf"><a href="/opinion" title=""><span></span>Opinion</a></li>
+<li class="leaf"><a href="/opinion/editorial" title=""><span></span>Editorial</a></li>
+<li class="leaf"><a href="/columns" title=""><span></span>columns</a></li>
+<li class="leaf"><a href="/opinion/letters" title=""><span></span>Letters</a></li>
+<li class="leaf"><a href="/opinion/cartoons" title=""><span></span>Cartoons</a></li>
+<li class="leaf"><a href="/variety" title=""><span></span>Variety</a></li>
+<li class="leaf"><a href="/category/main-category/variety/food-health" title=""><span></span>Food & Health</a></li>
+<li class="leaf"><a href="/category/main-category/variety/islam-perspective" title=""><span></span>Islam in Perspective</a></li>
+<li class="leaf"><a href="/category/main-category/variety/science-technology" title=""><span></span>Science & Technology</a></li>
+<li class="leaf"><a href="/category/main-category/variety/travel" title=""><span></span>Travel</a></li>
+<li class="leaf"><a href="/lifestyle" title=""><span></span>Life & Style</a></li>
+<li class="leaf"><a href="/lifestyle/offbeat" title=""><span></span>Offbeat</a></li>
+<li class="leaf"><a href="/category/main-category/life-style/art-culture" title=""><span></span>Art & Culture</a></li>
+<li class="leaf last"><a href="/category/main-category/life-style/fashion" title=""><span></span>Fashion</a></li>
+</ul>  </div>
+</div>
+<!-- /block.tpl.php --><div id="block-menu-menu-footer" class="block block-menu block-even region-even clearfix style-menu">
+      <h3 class="title">Footer_bottom</h3>
+    <div class="content">
+    <ul class="menu"><li class="leaf first"><a href="/node/51199" title=""><span></span>About us</a></li>
+<li class="leaf"><a href="/contact-us" title=""><span></span>Contact Us</a></li>
+<li class="leaf"><a href="/node/51201" title=""><span></span>Advertising</a></li>
+<li class="leaf"><a href="/node/51202" title=""><span></span>Archives</a></li>
+<li class="leaf"><a href="/node/51203" title=""><span></span>Copyright</a></li>
+<li class="leaf"><a href="/node/51204" title=""><span></span>Terms of Use</a></li>
+<li class="leaf last"><a href="/rss" title=""><span></span>RSS</a></li>
+</ul>  </div>
+</div>
+<!-- /block.tpl.php -->	</div>
+</div>
+<div id="fancy_login_dim_screen"></div><div id="fancy_login_login_box"><div id="fancy_login_form_contents"><a href="#" id="fancy_login_close_button">X</a><form id="user-login" method="post" accept-charset="UTF-8" action="/user/login"><div><div class="form-item form-item-textfield form-item-required" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" tabindex="1" class="form-text required" />
+</div>
+<div class="form-item form-item-password form-item-required" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="128"  size="15"  tabindex="2" class="form-text required" />
+</div>
+<div class="item-list"><ul class="rpx-links"><li class="rpx-link first last"><a href="https://arabnews.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fwww.arabnews.com%2Frpx%2Ftoken_handler%3Fdestination%3Dhome" class="rpxnow" onclick="return false;" onmousedown="delete RPXNOW.default_provider;">Sign in using one of these accounts:</a><br /><a href="https://arabnews.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fwww.arabnews.com%2Frpx%2Ftoken_handler%3Fdestination%3Dhome" class="rpxnow" onclick="return false;" onmousedown="RPXNOW.default_provider = &#039;facebook&#039;;"><div class="rpx-icon-small rpx-facebook-small" id="rpx-facebook"></div></a><a href="https://arabnews.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fwww.arabnews.com%2Frpx%2Ftoken_handler%3Fdestination%3Dhome" class="rpxnow" onclick="return false;" onmousedown="RPXNOW.default_provider = &#039;twitter&#039;;"><div class="rpx-icon-small rpx-twitter-small" id="rpx-twitter"></div></a><a href="https://arabnews.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fwww.arabnews.com%2Frpx%2Ftoken_handler%3Fdestination%3Dhome" class="rpxnow" onclick="return false;" onmousedown="RPXNOW.default_provider = &#039;google&#039;;"><div class="rpx-icon-small rpx-google-small" id="rpx-google"></div></a><a href="https://arabnews.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fwww.arabnews.com%2Frpx%2Ftoken_handler%3Fdestination%3Dhome" class="rpxnow" onclick="return false;" onmousedown="RPXNOW.default_provider = &#039;yahoo&#039;;"><div class="rpx-icon-small rpx-yahoo-small" id="rpx-yahoo"></div></a></li>
+</ul></div><input type="hidden" name="form_id" id="edit-user-login" value="user_login"  />
+<input type="hidden" name="form_build_id" id="form-1b4a260912cb845bb6f75622fe8add94" value="form-1b4a260912cb845bb6f75622fe8add94"  />
+<input type="submit" name="op" id="edit-submit-2" value="Log in"  tabindex="3" class="form-submit" />
+</div></form><div class="item-list"><ul><li class="first"><a href="/user/register" title="Create a new user account.">Create new account</a></li>
+<li class="last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div></div><div id="fancy_login_ajax_loader"><img src="http://www.arabnews.com/sites/all/modules/fancy_login/images/ajax-loader.gif" alt="Loading" /></div></div><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+curlypage_flag_swf = '/sites/all/modules/curlypage/curlypage/flag.swf';
+curlypage_peel_swf = '/sites/all/modules/curlypage/curlypage/turn.swf';
+curlypage_flash_version = '9.0.0';
+curlypage_getflashplayer = 1;
+curlypage_flash_security_policy = 'sameDomain';
+curlypages['topleft'] = new Array();
+curlypage_vars = {
+cpid: "2",
+flag_style: "style1",
+peel_style: "style1",
+peel_position: "topleft",
+peel_position_model: "absolute",
+wait_enable: "0",
+wait_url: "\/sites\/all\/modules\/curlypage\/curlypage\/wait.gif",
+wait_width: "42",
+wait_height: "42",
+flag_width: "100",
+flag_height: "100",
+peel_width: "500",
+peel_height: "500",
+small_url: "%2Fsites%2Fdefault%2Ffiles%2Fcurlypage%2Fsmall_url_2_0.jpg",
+big_url: "%2Fsites%2Fdefault%2Ffiles%2Fcurlypage%2Fbig_url_2_4.jpg",
+mirror: "1",
+in_transition: "none",
+transition_duration: "4",
+peel_color_style: "gradient",
+peel_color: "custom",
+red_value: "255",
+green_value: "255",
+blue_value: "255",
+link_enabled: "1",
+link_target: "_blank",
+link: "http%3A%2F%2Fwww.arabnews.com%2Fcontact-us",
+load_sound_url: "",
+open_sound_url: "",
+close_sound_url: "",
+flag_speed: "4",
+peel_speed: "4",
+automatic_open: "0",
+automatic_close: "0",
+open_onclick: "0",
+close_button_enable: "0",
+text_on_close_button: "close",
+close_red_value: "100",
+close_green_value: "100",
+close_blue_value: "100",
+delay: "0",
+time_slot: "0",
+repeat_times: "1"
+};
+curlypage = new Curlypage(curlypage_vars);
+curlypages['topleft'].push(curlypage);
+$(document).ready(function() { curlypage_write_curlypages(); });
+
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+    <!-- Begin Janrain Engage common. Visit http://www.rpxnow.com/ -->
+    var rpxJsHost = (("https:" == document.location.protocol) ? "https://" : "http://static.");
+    document.write(unescape("%3Cscript src='" + rpxJsHost + "rpxnow.com/js/lib/rpx.js' type='text/javascript'%3E%3C/script%3E"));
+    <!-- End Janrain Engage common -->
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+    <!-- Begin Janrain Engage Sign-In. Visit http://www.rpxnow.com/ -->
+    RPXNOW.realm = "arabnews.rpxnow.com";
+    RPXNOW.overlay = true;
+    RPXNOW.language_preference = "en";
+    RPXNOW.flags = "delay_domain_check";
+    RPXNOW.ssl = true;
+    <!-- End Janrain Engage Sign-In -->
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-8935925-5"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript">
+	$(".breaking").attr("id","js-news");
+	
+	var options = {
+    newsList: "#js-news",
+    startDelay: 10,
+    placeHolder1: " _"
+  }
+  $().newsTicker(options);
+</script>
+
+<script type="text/javascript">
+  (function() {
+    var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+    em.src = ('https:' == document.location.protocol ? 'https://me-ssl' : 'http://me-cdn') + '.effectivemeasure.net/em.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+  })();
+</script>
+<noscript>
+<img src="//me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;" />
+</noscript>
+
+<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-8935925-5");pageTracker._trackPageview();} catch(err) {}</script>
+
+</body>
+</html>
+<!-- Page cached by Boost @ 2012-05-21 20:32:25, expires @ 2012-05-21 20:32:24 -->

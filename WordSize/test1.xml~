@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+ <channel>
+  <atom:link href="http://www.infomous.com/site/rss/Word_size_test_1~6190324.xml" rel="self" type="application/rss+xml"/>
+  <title>Word_size_test_1</title>
+  <link>http://www.infomous.com/site/rss</link>
+  <description>Infomous RSS Generator from xml file or manually</description>
+  <item>
+   <title>Paolo</title>
+   <author>XIN@INFOMOUS.COM (XIN)</author>
+   <link>http://infomous.com/#tab=news/world</link>
+   <description>1</description>
+   <guid>http://infomous.com/#tab=news/world#1</guid>
+   <pubDate>Tue, 18 Nov 2014 14:41:02 EST</pubDate>
+   <media:thumbnail url="http://infomous.com/sites/all/themes/infomous3/img/logo_on_fafafa.png"/>
+  </item>
+  <item>
+   <title>Paolo</title>
+   <author>XIN@INFOMOUS.COM (XIN)</author>
+   <link>http://infomous.com/#tab=news/world</link>
+   <description>1</description>
+   <guid>http://infomous.com/#tab=news/world#2</guid>
+   <pubDate>Tue, 18 Nov 2014 14:41:02 EST</pubDate>
+   <media:thumbnail url="http://infomous.com/sites/all/themes/infomous3/img/logo_on_fafafa.png"/>
+  </item>
+  <item>
+   <title>Paolo</title>
+   <author>XIN@INFOMOUS.COM (XIN)</author>
+   <link>http://infomous.com/#tab=news/world</link>
+   <description>1</description>
+   <guid>http://infomous.com/#tab=news/world#3</guid>
+   <pubDate>Tue, 18 Nov 2014 14:41:02 EST</pubDate>
+   <media:thumbnail url="http://infomous.com/sites/all/themes/infomous3/img/logo_on_fafafa.png"/>
+  </item>
+  <item>
+   <title>Xin</title>
+   <author>XIN@INFOMOUS.COM (XIN)</author>
+   <link>http://infomous.com/#tab=news/world</link>
+   <description>1</description>
+   <guid>http://infomous.com/#tab=news/world#4</guid>
+   <pubDate>Tue, 18 Nov 2014 14:41:02 EST</pubDate>
+   <media:thumbnail url="http://infomous.com/sites/all/themes/infomous3/img/logo_on_fafafa.png"/>
+  </item>
+  <item>
+   <title>Xin</title>
+   <author>XIN@INFOMOUS.COM (XIN)</author>
+   <link>http://infomous.com/#tab=news/world</link>
+   <description>1</description>
+   <guid>http://infomous.com/#tab=news/world#5</guid>
+   <pubDate>Tue, 18 Nov 2014 14:41:02 EST</pubDate>
+   <media:thumbnail url="http://infomous.com/sites/all/themes/infomous3/img/logo_on_fafafa.png"/>
+  </item>
+  <item>
+   <title>Xin</title>
+   <author>XIN@INFOMOUS.COM (XIN)</author>
+   <link>http://infomous.com/#tab=news/world</link>
+   <description>1</description>
+   <guid>http://infomous.com/#tab=news/world#6</guid>
+   <pubDate>Tue, 18 Nov 2014 14:41:02 EST</pubDate>
+   <media:thumbnail url="http://infomous.com/sites/all/themes/infomous3/img/logo_on_fafafa.png"/>
+  </item>
+ </channel>
+</rss>

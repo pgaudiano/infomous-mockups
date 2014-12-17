@@ -1,0 +1,189 @@
+
+#infomous-cloudContainer {
+    font-family: Arial,sans-serif;
+    margin: 0;
+    position: relative;
+}
+
+#infomous-movie-container {
+    line-height: 0;
+}
+
+/*
+ * sections tabs
+ */
+
+#infomous-cloudSections {
+    font-size: 13px;
+    height: 30px;
+    margin-bottom: 0;
+    border-bottom: 5px solid #598a9e;
+}
+
+#infomous-cloudSections a.section {
+    color: #26526F;
+    background-color: #d3d3d3;
+    display: block;
+    float: left;
+    height: 25px;
+    width: 135px;
+    /*border: 1px solid #CCC;*/
+    text-decoration: none;
+    padding: 5px 8px 0px 8px;
+    position: relative;
+    margin-right: 10px;
+}
+
+#infomous-cloudSections a.section span {
+    position: relative;
+    top: 4px;
+    left: 2px;
+    font-weight: bold;
+}
+
+#infomous-cloudSections a.section:hover {
+    color: white;
+    /*background-color: #D4DBE1;*/
+    /*background-color: #87ADBC;*/
+}
+
+#infomous-cloudSections a.active {
+    /*font-weight: bold;*/
+    color: white;
+    background-color: #598a9e;
+}
+
+/*
+ * cloud footer
+ */
+
+#infomous-cloudFooter {
+    height: 25px;
+    background-color: #598a9e;
+    font-size: 11px;
+    margin: 0;
+}
+
+#infomous-cloudFooter a.footer-elem {
+    display: block;
+    text-decoration: none;
+    padding: 3px 16px 0px 10px;
+    color: #598a9e;
+}
+
+#infomous-cloudFooter a.footer-elem:hover {
+    color: #c0dbe5;
+}
+
+#infomous-cloudFooter a#cloud-full-bt {
+    float: left;
+}
+
+#infomous-cloudFooter a#cloud-period-bt {
+    float: right;
+}
+
+#infomous-cloudFooter a.footer-elem span {
+    position: relative;
+    top: -4px;
+    left: 3px;    
+    color: white;
+}
+
+/*
+ * period bar
+ */
+
+#infomous-cloudPeriodBar {
+
+    position: absolute;
+    color: white;
+    z-index: 2;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    right: 16px;
+    bottom: 32px;
+
+    /*background-color: #E5ECF2;*/
+    background-color: rgb(0, 0, 0); /*ie8 fallback*/
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    height: 25px;
+    margin-bottom: 0;
+    /*border-bottom: 2px solid #598a9e;*/
+}
+
+#infomous-cloudPeriodBar .svg-triangle {
+    fill: rgb(0, 0, 0); /*ie8 fallback*/
+    fill: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 250px;
+    top: 25px;
+    width: 12px;
+    height: 10px;
+}
+
+#infomous-cloudPeriodBar .period {
+    padding: 5px 10px 0 15px;
+    float: left;
+}
+
+#infomous-cloudPeriodBar a.date {
+    /*color: #26526F;*/
+    color: inherit;
+    display: block;
+    float: left;
+    height: 25px;
+    /*border-left: 1px solid #CCC;*/
+    /*background-color: #E5ECF2;*/
+    /*padding: 0 5px;*/
+    text-decoration: none;
+}
+
+#infomous-cloudPeriodBar img {
+    display: block;
+    float: left;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;    
+}
+
+#infomous-cloudPeriodBar a.date span {
+    position: relative;
+    top: 5px;
+    border-left: 1px solid #CCC;
+    padding: 0 5px;    
+}
+
+#infomous-cloudPeriodBar a.date:hover {
+    /*background-color: #D4DBE1;*/
+    background-color: rgb(0, 0, 0); /*ie8 fallback*/
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#infomous-cloudPeriodBar a.activeDate {
+    font-weight: bold;
+    /*background-color: #598a9e;*/
+}
+
+#infomous-cloudPeriodBar a.last {
+    border-right: 1px solid #CCC;
+}
+
+/*
+ * sources lists fixes
+ */
+
+.infomous .infomous-cloud .sources .menu-sources-list .menu-source-item .line1 font,
+.infomous .infomous-cloud .sources .menu-sources-list .menu-source-item .line1 font * {
+    font-size: 12px;
+    display: inline;
+}
+
+.infomous .infomous-cloud .sources .menu-sources-list .menu-source-item .line1 font font,
+.infomous .infomous-cloud .sources .menu-sources-list .menu-source-item .line2 font {
+    color: #999999;
+}
+

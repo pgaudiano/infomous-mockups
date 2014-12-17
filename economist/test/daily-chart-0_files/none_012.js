@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/3bd8/0/0/%2a/p;250145908;0-0;1;41934750;3-125/125;39152883/39170670/1;;~sscs=%3fhttp://www.oxcis.ac.uk/merdeka"><img src="http://s0.2mdn.net/viewad/2979827/125x125_merdeka.gif" border=0 alt="Click here to find out more!"></a>');

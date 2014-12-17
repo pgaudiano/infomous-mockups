@@ -1,0 +1,4227 @@
+<!DOCTYPE html> 
+ <!--[if lt IE 7]> <html lang="en" class="ie ie6 lte9 lte8 lte7 os-linux"> <![endif]-->
+ <!--[if IE 7]> <html lang="en" class="ie ie7 lte9 lte8 lte7 os-linux"> <![endif]-->
+ <!--[if IE 8]> <html lang="en" class="ie ie8 lte9 lte8 os-linux"> <![endif]-->
+ <!--[if IE 9]> <html lang="en" class="ie ie9 lte9 os-linux"> <![endif]-->
+ <!--[if gt IE 9]> <html lang="en" class="os-linux"> <![endif]-->
+ <!--[if !IE]><!--> <html lang="en" class="os-linux"> <!--<![endif]-->
+
+<head>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <script type="text/javascript">
+ if (!window.i18n) { window.i18n = {}; }
+ // global webtrack object for timing information
+ var WEBTRACK_GLOBAL = {
+ softTimings: {},
+ hardTimings: {},
+ seedTime: null,
+ now: function() { return (new Date()).getTime(); },
+ lapse: function() { return this.now() - this.seedTime; },
+ get: function(name) { return (this.hardTimings.hasOwnProperty(name)) ? this.hardTimings[name] : this.softTimings[name]; },
+ getSoftTimings: function() { return this.softTimings; },
+ set: function(name, val) { this.hardTimings[name] = (val*-1 > 0) ? null : val*1; },
+ record: function(name) { this.softTimings[name] = this.now(); },
+ clean: function() {} // FIXME
+ };
+ WEBTRACK_GLOBAL.seedTime = WEBTRACK_GLOBAL.now();
+ </script>
+
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="pageImpressionID" content="4552f0d8-5dd6-4382-bf1f-33f8220d03a1">
+<meta name="pageKey" content="group_item_detail_guest" >
+<meta name="analyticsURL" content="/analytics/noauthtracker">
+<meta name="treeID" content="">
+<link rel="openid.server" href="">
+<link rel="apple-touch-icon-precomposed" href="/img/icon/apple-touch-icon.png">
+ <!--[if gte IE 9]>
+<meta name="msapplication-task" content="name=Home;action-uri=/home?trk=ie_sm_home;icon-uri=http://static.licdn.com/scds/common/u/img/favicon_ie9.ico"/>
+<meta name="msapplication-task" content="name=My Inbox;action-uri=/inbox/messages/received?trk=ie_sm_inbox;icon-uri=http://static.licdn.com/scds/common/u/img/favicon_ie9.ico"/>
+<meta name="msapplication-task" content="name=My Profile;action-uri=/profile/edit?trk=ie_sm_pro;icon-uri=http://static.licdn.com/scds/common/u/img/favicon_ie9.ico"/>
+<meta name="msapplication-task" content="name=My Connections;action-uri=/connections?trk=ie_sm_cnts;icon-uri=http://static.licdn.com/scds/common/u/img/favicon_ie9.ico"/>
+<meta name="msapplication-task" content="name=My Groups;action-uri=/myGroups?trk=ie_sm_grps;icon-uri=http://static.licdn.com/scds/common/u/img/favicon_ie9.ico"/>
+<![endif]-->
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <link rel="stylesheet" type="text/css" href="http://static.licdn.com/scds/concat/common/css?h=3bifs78lai5i0ndyj1ew7316e-c8kkvmvykvq2ncgxoqb13d2by-4ac0dg6ldb6e58rbrixrhrggi-c5839km74lqu75dnankln5rgt-4uu2pkz5u0jch61r2nhpyyrn8-7poavrvxlvh0irzkbnoyoginp-aaf05uhqqum64rj28yk7u5pwu-3t9ar1pajet97hzt9uou74qbb-ct4kfyj4tquup0bvqhttvymms-d9cf0y6oqg7cyljx7zamp3id6-9zbbsrdszts09by60it4vuo3q-8ti9u6z5f55pestwbmte40d9-anh0kob2i3lfqyuekf39o0bp9-cv4cvfq8dxxwejkd2x9u08g9y-6ramlbadr9lh7v5r7vuc6t4ld-7dohkpwgmf5cvprr7qxtr6qcc-ab01tg8funn2n1exayaej7367">
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <script type="text/javascript" src="http://static.licdn.com/scds/concat/common/js?h=dfoaudjrk6rbf82f45bz5crwi-62og8s54488owngg0s7escdit-c8ha6zrgpgcni7poa5ctye7il-3ufb745s29q1ovtbq6htt6rwh-51dv6schthjydhvcv6rxvospp-e9rsfv7b5gx0bk0tln31dx3sq-2r5gveucqe4lsolc3n0oljsn1-8v2hz0euzy8m1tk5d6tfrn6j-b88qxy99s08xoes3weacd08uc-d7z5zqt26qe7ht91f8494hqx5-6a5und5cdxoyc0xrbi3x7kqqz-5jtrz5noan83x6iogrfoq65dz-5sxd3af04gzkta5e8h4ecnsu2-5ee6w9abrtmcjqm2omop15g07-bmajlznvqaout2p7mpludwbus-7yly2a0gn0x4rrgw1qqq532hr-4c6mz6u5rinti47gswwanj74j-5eec9p1vamr86uabn13sngx92-6oxtrh5eu6olunu39xzqgp10i-cagqp97jnj4dz7mff26d76x2a-anaxa6l712w7m4gp8089vyb5m-a418kd1djwz5n91ayiv933odl-80vg9koywz84zoon9sjflbru0-4xlkttqdqrmvbmr35jaga18yy-8idc205bpee0gob4eb8ob7z22-57sur4cj634ll9tk38imgvc6g"></script>
+ 
+ 
+
+
+
+
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="http://static.licdn.com/scds/common/u/js/scds-hashes.js"></script>
+  <script type="text/javascript">
+    LI.injectBaseUrl = "http://static.licdn.com/scds/concat/common/js?v=build-2000_1_25964-prod";
+    LI.injectRelayHtmlUrl = "http://static.licdn.com/scds/common/u/lib/inject/0.4.1/relay.html";
+    LI.injectRelaySwfUrl = "http://static.licdn.com/scds/common/u/lib/inject/0.4.1/relay.swf";
+    LI.comboBaseUrl = "http://static.licdn.com/scds/concat/common";
+    LI.staticUrlHashEnabled = "true";
+  </script>
+
+
+
+
+
+     
+      
+  
+
+    
+      
+        
+          
+            
+                
+              
+          
+        
+      
+    
+    
+<script type="text/javascript">
+//InSlow namespace
+if(!InSlow || typeof(InSlow) === 'undefined' ) var InSlow = {};
+InSlow.scriptUrl = 
+      
+        
+            
+              
+              
+                ["http://static.licdn.com/scds/concat/common/js?h=avzk7itghu69mbjdafj6tlzx3"]
+              
+            
+          
+        
+      
+    [0];
+</script>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+
+
+ 
+ 
+
+ 
+ 
+
+ <title>This is a huge argument AGAINST alternative energy.  While CO2 warming accounts for much of global warming, just using any energy at all, causes significant warming.  It does not matter the source. | LinkedIn</title>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ <link rel="stylesheet" type="text/css" href="http://static.licdn.com/scds/concat/common/css?h=38krf71atsts0nz3nz5fc5s8s-dcj2garzpzvlbljd7wc3zeqsr-blwgxe37ggnjwp7yr1srnafk1-e7rabv2od3m6i4h300610hb0a-ee859529mdos6retehcmn9z8a">
+ 
+ 
+
+ <!--[if gte IE 9]>
+ <link rel="shortcut icon" type="image/ico" href="http://static.licdn.com/scds/common/u/img/favicon_ie9.ico">
+ <![endif]-->
+ <!--[if (!IE)|(lt IE 9)]>
+ <link rel="shortcut icon" type="image/ico" href="http://static.licdn.com/scds/common/u/img/favicon_v3.ico">
+ <![endif]-->
+
+
+
+
+
+  
+
+
+
+
+  
+     
+     
+      
+       
+       
+       
+     
+    
+      
+        
+          
+            
+                
+                  
+                    <script type="text/javascript" src="http://static.licdn.com/scds/concat/common/js?h=5k244sxxgg571q4dvckr52g13-2cjdxpar2e09nahqvh2nsuezb-do7ban8578dlbpniu4kgo34mp"></script>
+                  
+                  
+                
+              
+          
+        
+      
+    
+    
+    
+
+
+      
+      
+        
+    
+      
+      
+    
+  <meta name="Description" content="This is a huge argument AGAINST alternative energy. While CO2 warming accounts for much of global warming, just using any energy at all, causes significant warming. It does not...">
+  <meta property="og:title" content="This is a huge argument AGAINST alternative energy.  While CO2 warming accounts for much of global warming, just using any energy at all, causes significant warming.  It does not matter the source.">
+  <meta property="og:description" content="Energy dissipated as heat in cities can cause regional temperature changes, simulations suggest Web edition: January 25, 2013 Print edition: February 23, 2013; Vol.183 #4 (p. 16) The waste heat generated by car engines, power...">
+  
+     
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+                    <link rel="stylesheet" type="text/css" href="http://static.licdn.com/scds/concat/common/css?h=3yidtzciodue6ysuy27m8001h-7vtsxfk98av9s51ztcyx6r8oe-41atpqtmqvtxqysazt3umcpjt-cd8iur24776ik5xzhvbnbgcz9-154kxlhs4z8rrtcvqfbage7t-dcpcqhu0qg64h1uaphsnq2dxh-856ew3tssx4tmltel53hr2ct-d70p2aiii0ezm1jfzv9alkomw-dzr9ds2ae8o3poemfo3cfy7u0-cliikq4b14p7ya1s87d7cv9di-87xmayq7kjta9v4nhqfks9yif">
+    
+     
+
+  <base href="http://www.linkedin.com/groups" >
+  <link rel="canonical" href="http://www.linkedin.com/groups/This-is-huge-argument-AGAINST-3676376%2ES%2E222835085"/>
+
+
+      
+        
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+     
+      
+      
+     
+    
+      
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</head>      
+      
+        
+    
+    
+
+
+
+      
+        
+    
+      
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+
+
+
+
+
+<body class="en guest v2 user-groups subnav-anet-overview chrome-v4 background-v4 sticky-bg guest" id="pagekey-group_item_detail_guest">
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ <input id="ubpTracker" type="hidden"/>
+
+ <input id="inSlowConfig" type="hidden" value="false" />
+
+<script type="text/javascript">document.body.className += " js ";</script>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+  
+      
+
+    
+
+
+
+
+
+<div id="header" class="global-nav guest" role="banner">
+  
+  <div class="top-nav">
+    <div class="wrapper">
+      
+          <h2 class="logo"><a href="http://www.linkedin.com/" title="Home"> LinkedIn</a></h2>
+        
+    </div>
+  </div>
+
+  
+  <div class="bottom-nav">
+    <div class="wrapper">
+      <ul class="nav" role="navigation">
+        <li id="nav-primary-home" class="tab"><a href="/home?trk=hb_home" class="tab-name"><span>Home</span></a></li>
+        <li id="nav-primary-what" class="tab"><a href="/static?key=what_is_linkedin&amp;trk=hb_what" class="tab-name"><span>What is LinkedIn?</span></a></li>
+        <li id="nav-primary-join" class="tab"><a href="https://www.linkedin.com/reg/join?trk=hb_join" rel="nofollow" class="tab-name"><span>Join Today</span></a></li>
+        
+            
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+ 
+ <li id="nav-primary-auth" class="tab"><a href="https://www.linkedin.com/uas/login?goback=%2Egde_3676376_member_222835085&amp;trk=hb_signin" rel="nofollow" class="tab-name"><span>Sign In</span></a></li>
+
+ 
+ 
+
+          
+      </ul>
+    </div>
+  </div>
+
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ <hr>
+ <div id="body" class="" role="main">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+  
+
+
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+  
+
+
+
+
+
+  <div id="section-header" class="sub">
+      <div class="group-icon">
+          <a href="/groups?home=&amp;gid=3676376&amp;trk=anet_ug_hm" >        <img src="http://media.licdn.com/media/p/2/000/08f/3ae/3f24996.png" width="100" height="50" alt="Energy innovation by Statoil" title="Energy innovation by Statoil">
+      
+</a>
+      </div>
+    <h1 class="group-name">
+          <span class="public">Energy innovation by Statoil</span>
+    </h1>
+       
+         <ul class="nav-extra" id="anet-nav-extra">
+                 <li id="nav-anet-newpost">
+                     <a href="https://www.linkedin.com/secure/register?goback=%2Egde_3676376_member_222835085&amp;trk=reg-pub-groups&amp;trk=anet_ug_newp" class="new-post">Discussion</a>
+                     <span class="cta-separator">|</span>
+                    
+                     <a href="https://www.linkedin.com/secure/register?goback=%2Egde_3676376_member_222835085&amp;trk=reg-pub-groups&amp;trk=anet_ug_newpl" class="new-post">Poll</a>
+
+                  </li>
+  
+         </ul>
+       
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+
+   
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+  
+    
+  
+
+
+          <script id="control-http-12220-2012803-1" type="linkedin/control" class="li-control">
+            
+        /* extlib: _droplist */
+        
+    
+            LI.Controls.addControl('control-http-12220-2012803-1', 'DropList', {});
+          </script>
+        
+           
+       
+       
+         <ul id="nav-secondary">
+             <li id="nav-anet-overview" class="selected"><a href="/groups/Energy-innovation-Statoil-3676376?goback=%2Egde_3676376_member_222835085" title="Home">Discussions</a></li>
+             <li id="nav-anet-promos" class=""><a href="/groups?promosList=&amp;gid=3676376&amp;trk=anet_ug_promos" ><span>Promotions</span></a></li>
+             <li id="nav-anet-search" class=""><a href="/groups?newItemsAbbr=&amp;gid=3676376" >Search</a></li>
+           
+             <li id="nav-anet-more" class="droplist ">
+               <a href="#" ><span class="more-items">More...</span></a>
+               <ul>
+               </ul>
+             </li>
+
+         </ul>
+       
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+          <script id="control-http-12220-2012804-2" type="linkedin/control" class="li-control">
+            
+    
+            LI.Controls.addControl('control-http-12220-2012804-2', 'DropList', {});
+          </script>
+        
+    
+       
+   </div>
+
+     
+
+<div class="sub-navigation">
+  <div class="inner">
+    
+  
+  </div>
+</div>
+
+
+
+
+ 
+ 
+
+<div class="wrapper hp-nus-wrapper">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+<div id="global-error">
+</div>
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+
+
+   
+
+
+
+
+
+
+
+
+  
+
+
+
+
+      
+      
+        
+    
+    
+
+<div id="main" class="grid-e">
+  
+
+
+
+  <div id="content" class="item-details">
+
+
+
+
+
+
+
+    <div class="groups-upsell-bubble">
+      <div class="join-or-signin">
+        <a href="https://www.linkedin.com/secure/register?goback=%2Egde_3676376_member_222835085&amp;trk=reg-pub-groups" rel="nofollow" class=" btn-action join"><span>Join LinkedIn</span></a>
+        <p><span>Or</span> <a href="https://www.linkedin.com/uas/login?session_redirect=http%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fgroups%2FThis-is-huge-argument-AGAINST-3676376%2ES%2E222835085&amp;goback=%2Egde_3676376_member_222835085&amp;trk=auth-pub-groups" rel="nofollow" class="signin"> Sign In &raquo;</a></p>
+      </div>
+      <h3 class="header">Have something to say?</h3>
+      <p class="left-col">Join LinkedIn for free to participate in the conversation. When you join, you can comment and post your own discussions.</p>
+    </div>
+  
+
+    
+
+         
+
+
+
+
+
+
+
+
+
+
+<div id="anetItemSubject" class="popular-item subject " data-li-item_id="222835085" data-li-item_type="member">
+        <div class="popular-entity">
+                <a href="/profile/view?id=192167149&goback=%2Egde_3676376_member_222835085" title="Brian C." rel="">
+                      <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/4/000/17b/3e6/1a0fdd3.jpg" alt="Brian C." width="80" height="80">
+                </a>
+                <p><span>Brian</span></p>
+        </div>
+  <div class="popular-content">
+    <div class="popular-article">
+        <div class="user-contributed">
+                <h2 class="title">
+                  This is a huge argument AGAINST alternative energy.  While CO2 warming accounts for much of global warming, just using any energy at all, causes significant warming.  It does not matter the source.
+                </h2>
+        </div>
+        <div class="popular-referenced-item">
+
+
+          <div>
+            <h4 class="article-title">
+
+              
+
+                    <a href="/news?viewArticle=&amp;articleID=5701446410650533908&amp;gid=3676376&amp;type=member&amp;item=222835085&amp;articleURL=http%3A%2F%2Fwww%2Esciencenews%2Eorg%2Fview%2Fgeneric%2Fid%2F347857%2Fdescription%2FHuman-made_waste_heat_warms_climate&amp;urlhash=oORA&amp;goback=%2Egde_3676376_member_222835085" target="_blank" data-contentpermalink="http://www.sciencenews.org/view/generic/id/347857/description/Human-made_waste_heat_warms_climate">Human-made waste heat warms climate</a>
+
+              
+              <span class="content-source">sciencenews.org</span>
+            </h4>
+          </div>
+          <p class="article-summary">Energy dissipated as heat in cities can cause regional temperature changes, simulations suggest Web edition: January 25, 2013 Print edition: February 23, 2013; Vol.183 #4 (p. 16) The waste heat generated by car engines, power...</p>
+        </div>
+
+    </div>
+
+
+        <div class="popular-item-meta">
+          
+            <span class="timestamp">10 days ago</span>
+          
+          <ul class="popular-item-actions">
+            
+              <li class="hide"><a href="#" class="video-close" role="button">Close viewer</a></li>
+            
+          </ul>
+        </div>
+
+  </div><!--popular-content-->
+
+
+</div><!--popular-item-->
+
+
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+          <script id="control-http-12220-2012807-3" type="linkedin/control" class="li-control">
+            
+        /* extlib: _anetpopularitemsubject */
+        
+    
+            LI.Controls.addControl('control-http-12220-2012807-3', 'AnetPopularItemSubject', {
+           "is-manager":false,
+           "itemType": "discussion",
+           "token":"ajax:3709504301741708187",
+           "urlDomainAndPath":"http://www.linkedin.com/groupItem",
+           "gid":"3676376" });
+          </script>
+        
+    
+
+                
+
+
+
+
+<div class="item-detail-actionbar rounded-small gradient">
+  <ul>
+    <li class="comment inactive button">
+      <a href="#" >Like</a>
+    </li>
+
+      <li class="has-more-comments active button" role="button"><a href="/groupItem?view=&amp;gid=3676376&amp;type=member&amp;item=222835085&amp;commentID=-1#lastComment" >Comment</a></li>
+
+    <li class="follow active button" role="button">
+            <a href="#" >Follow</a>
+    </li>
+
+      <li class="flag-menu active button">
+        <a href="#" class="menu flag">Flag</a>
+          <ul class="drop">
+              <li class="flagInappropriate"><a href="#" >Flag as Inappropriate</a></li>
+          </ul>
+      </li>
+
+      <li class="report active button">
+        <a href="#" class="report" id="report">More</a>
+        <ul class="drop">
+            <li class="share">
+                  
+                <a href="#" id="actionbar_share">Share Link</a>
+                
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+          <script id="control-http-12220-2012808-4" type="linkedin/control" class="li-control">
+            
+        /* extlib: _share */
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+LI.i18n.register( 'share-dialog-title', 'Share' );
+LI.i18n.register( 'share-dialog-error-timeout', 'We\'re sorry. Something unexpected happened and your request could not be completed. Please try again later.' );
+
+
+     
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+    
+      
+        
+          
+            
+                
+              
+          
+        
+      
+    
+    
+
+
+     
+    
+  
+  
+
+     
+      
+        
+          
+            
+                
+              
+          
+        
+      
+    
+     
+
+LI.define( 'SharingDialog.Scripts' );
+LI.SharingDialog.Scripts = 
+      
+        
+            
+              
+              
+                ["http://static.licdn.com/scds/concat/common/js?h=etnslh010spg2bg9u1bn3qnoe-bsnr81j3v60h85h0kpvj4ednu-3t2nr7xbh812p768447v3dqf2-bjxgts851uzzctcvpzne07ivi-2anelgfd1m4tz3qipmd6yg29c-9plt7yps86nu0gulrcndu1ss9-8v6o0480wy5u6j7f3sh92hzxo-9gwlc8mz83jdjgs7toofd2cop-bhzxeixpttw30r88wokw36ilg"]
+              
+            
+          
+        
+      
+    ;
+
+LI.define( 'SharingDialog.Styles' );
+LI.SharingDialog.Styles = 
+      
+        
+            
+              
+              
+                ["http://static.licdn.com/scds/concat/common/css?h=d70p2aiii0ezm1jfzv9alkomw-6z5mznv6g2a6942zzz0acmjqi"]
+              
+            
+          
+        
+      
+    ;
+
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+LI.i18n.register( 'AddressLabel-limitOver', 'You can send this message to {0} total recipients. You currently have {1};' );
+LI.i18n.register( 'AddressLabel-limitAt',   'You have the maximium number of total recipients({0}).' );
+LI.i18n.register( 'AddressLabel-limitClose',   'You can send this message to {0} total recipients. You can add {1} more.' );
+        
+    
+            LI.Controls.addControl('control-http-12220-2012808-4', 'Share', {
+                  url: 'share?displayShare=&eid=SHAR_3676376-222835085'
+                });
+          </script>
+        
+    
+            </li>
+
+
+
+        </ul>
+      </li>
+  </ul>
+</div>
+
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+            <script id="control-http-12220-2012808-5" type="linkedin/control" class="li-control">
+              
+        /* extlib: _anetactionbar */
+        
+    
+              LI.Controls.setInitialized(YDom.get('control-http-12220-2012808-5'));
+            </script>
+            <script type="linkedin/control" data-li-on="click">
+              {"name":"AnetActionbar","config": {
+'autoFollowOnLike':false,
+'isIdentified':false,
+'registerUrl':'https://www.linkedin.com/secure/register?goback=%2Egde_3676376_member_222835085&amp;trk=reg-pub-groups',
+'isFeatured':false,
+'isManager':false,
+'itemID':'222835085',
+'itemType':'member',
+'itemLiked':'false',
+'itemFollowed':'false',
+'memberID':'0',
+'memberFullName':'',
+'token':'ajax:3709504301741708187',
+'urlDomainAndPath':'http://www.linkedin.com/groupItem',
+'gid':3676376
+}
+              
+              }
+            </script>
+        
+    
+
+
+        
+      <div id="commentItems" class="comment-items  has-likes has-comments">
+
+        <div class="like-and-count">
+          
+
+
+
+  
+
+
+    <div class="popular-item like"><div class="popular-content"><div class="popular-article">
+      
+            <p><a class="first liker" href="/groups?viewMemberFeed=&gid=3676376&memberID=1618319&goback=%2Egde_3676376_member_222835085">Urs B.</a> <span class='verbiage'>likes this</span></p>
+            <p class="hide"><span class='you liker'>You, </span><a class="first liker" href="/groups?viewMemberFeed=&gid=3676376&memberID=1618319&goback=%2Egde_3676376_member_222835085">Urs B.</a> <span class='verbiage'>like this</span></p>
+      
+    </div></div></div>
+  
+
+
+
+                <p class="last-comment"><span class="count">162 comments</span>
+                   &bull; <a href="/groupItem?view=&amp;gid=3676376&amp;type=member&amp;item=222835085&amp;commentID=-1#lastComment" >Jump to most recent comments</a>
+                </p>
+          </div><!--like-and-count-->
+
+          
+
+              
+              
+
+
+<!--keeps a track of how many times the post-it is displayed -->
+
+
+
+  
+  
+  
+  
+
+    
+    <div class="popular-item comment" data-li-comment_id="125075597">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=35748946&goback=%2Egde_3676376_member_222835085" title="Finn K.">
+                        <img src="http://static.licdn.com/scds/common/u/img/icon/icon_no_photo_80x80.png" width="80" height="80" class="commenter" data-li-comment-text="This does really says that it is very important to have renewable sources.
+ &quot;The results demonstrate that climate researchers shouldn&#x2019;t ignore waste heat, says Mark Flanner,&quot; That is only showing that if we can reduce heating from one source it will help." data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Finn</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125075597">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=35748946" title="See this member's activity" class="commenter">Finn K.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+This does really says that it is very important to have renewable sources.<br/>
+ "The results demonstrate that climate researchers shouldn’t ignore waste heat, says Mark Flanner," That is only showing that if we can reduce heating from one source it will help.                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">10 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125165422">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=192167149&goback=%2Egde_3676376_member_222835085" title="Brian C.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/4/000/17b/3e6/1a0fdd3.jpg" alt="Brian C." width="80" height="80" class="commenter" data-li-comment-text="Finn, my argument here is that waste heat is important.  Energy USAGE is growing very fast.  While waste heat may only account for (guessing) 25% of global warming,  TODAY, what happens 20-50 years from now when energy consumption is 10X what it is today?  Even if we completely switched over to non-carbon sources of energy, with such dramatic growth in energy consumption (period) no matter what the source, conversion from carbon source energy will not solve the problem.
+
+In other words, the only way to actually reduce global warming in the long run is to reduce energy consumption.  Switching to non-carbon energy could at most delay it by a few decades." data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Brian</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125165422">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=192167149" title="See this member's activity" class="commenter">Brian C.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+Finn, my argument here is that waste heat is important.  Energy USAGE is growing very fast.  While waste heat may only account for (guessing) 25% of global warming,  TODAY, what happens 20-50 years from now when energy consumption is 10X what it is today?  Even if we completely switched over to non-carbon sources of energy, with such dramatic growth in energy consumption (period) no matter what the source, conversion from carbon source energy will not solve the problem.<br/>
+<br/>
+In other words, the only way to actually reduce global warming in the long run is to reduce energy consumption.  Switching to non-carbon energy could at most delay it by a few decades.                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">10 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125225901">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=173283094&goback=%2Egde_3676376_member_222835085" title="Oddgeir H.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/6/000/20d/33b/1200e84.jpg" alt="Oddgeir H." width="80" height="80" class="commenter" data-li-comment-text="Well, that`s B-$ as compared to solar energy hitting the planet at a rate of the energy equivalent of 29,2 million barrels of oil per second...
+
+Oddgeir" data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Oddgeir</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125225901">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=173283094" title="See this member's activity" class="commenter">Oddgeir H.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+Well, that`s B-$ as compared to solar energy hitting the planet at a rate of the energy equivalent of 29,2 million barrels of oil per second...<br/>
+<br/>
+Oddgeir                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">10 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125230608">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=35748946&goback=%2Egde_3676376_member_222835085" title="Finn K.">
+                        <img src="http://static.licdn.com/scds/common/u/img/icon/icon_no_photo_80x80.png" width="80" height="80" class="commenter" data-li-comment-text="Brian,
+basically you are right, it will always be good to reduce the energy consumption. The 29.2 mill barrels that Oddgeir writes is not know for me and I would like to see the source. Since I do not know the source for his information I have some problems with his postulates." data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Finn</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125230608">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=35748946" title="See this member's activity" class="commenter">Finn K.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+Brian,<br/>
+basically you are right, it will always be good to reduce the energy consumption. The 29.2 mill barrels that Oddgeir writes is not know for me and I would like to see the source. Since I do not know the source for his information I have some problems with his postulates.                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">10 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125267443">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=192167149&goback=%2Egde_3676376_member_222835085" title="Brian C.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/4/000/17b/3e6/1a0fdd3.jpg" alt="Brian C." width="80" height="80" class="commenter" data-li-comment-text="All that energy radiates back into space. In fact the Earth releases more energy than it absorbs from the Sun.  The Earth itself is cooling; the molten rock and the radioactive decay of rock in the Earth...
+
+The idea here is that a small delay in the release of energy (from greenhouse gases) or an increase in the rate of decay of radioactive materials (from nuclear power plants) can slow this cooling down." data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Brian</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125267443">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=192167149" title="See this member's activity" class="commenter">Brian C.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+All that energy radiates back into space. In fact the Earth releases more energy than it absorbs from the Sun.  The Earth itself is cooling; the molten rock and the radioactive decay of rock in the Earth...<br/>
+<br/>
+The idea here is that a small delay in the release of energy (from greenhouse gases) or an increase in the rate of decay of radioactive materials (from nuclear power plants) can slow this cooling down.                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125271244">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=173283094&goback=%2Egde_3676376_member_222835085" title="Oddgeir H.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/6/000/20d/33b/1200e84.jpg" alt="Oddgeir H." width="80" height="80" class="commenter" data-li-comment-text="Finn Kaare,
+
+I am happy to oblige.  Seen from the sun, Earth is a disc with diameter 12750 km.  The surface thus amounts to 1,3e14 square meters.
+
+The solar radiation is 1,4 kW per hour and square meter.  This goes on 24/7.  Hence we are receiving 1,8e17 Watt per hour.  There is 3600 second in an hour and 1700 kW per barrel of oil equivalent energy.
+
+Incoming 29,2 million boe of energy per second, 24/7.  365,25.
+
+The zero point 25 being the 1/4 of one leap year day representing 6 hours or 21600 seconds, equivalent to 630 billion barrels of oil.
+
+Not a postulate, no sir.  Sillymath`s.  With so huge figures we don`t have the brain capacity to understand them if we don`t break them down.  Like in..
+
+How much oil has been burnt by mankind since the dawn of the species?
+
+1. hours worth of solar?
+
+Oddgeir" data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Oddgeir</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125271244">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=173283094" title="See this member's activity" class="commenter">Oddgeir H.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+Finn Kaare,<br/>
+<br/>
+I am happy to oblige.  Seen from the sun, Earth is a disc with diameter 12750 km.  The surface thus amounts to 1,3e14 square meters.<br/>
+<br/>
+The solar radiation is 1,4 kW per hour and square meter.  This goes on 24/7.  Hence we are receiving 1,8e17 Watt per hour.  There is 3600 second in an hour and 1700 kW per barrel of oil equivalent energy.   <br/>
+<br/>
+Incoming 29,2 million boe of energy per second, 24/7.  365,25.<br/>
+<br/>
+The zero point 25 being the 1/4 of one leap year day representing 6 hours or 21600 seconds, equivalent to 630 billion barrels of oil.<br/>
+<br/>
+Not a postulate, no sir.  Sillymath`s.  With so huge figures we don`t have the brain capacity to understand them if we don`t break them down.  Like in..<br/>
+<br/>
+How much oil has been burnt by mankind since the dawn of the species?<br/>
+<br/>
+6 hours worth of solar?<br/>
+<br/>
+Oddgeir                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125273849">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=192167149&goback=%2Egde_3676376_member_222835085" title="Brian C.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/4/000/17b/3e6/1a0fdd3.jpg" alt="Brian C." width="80" height="80" class="commenter" data-li-comment-text="The argument in this article is that the warming is local.  And not so much that it is overall warming, but is enough to change weather patterns." data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Brian</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125273849">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=192167149" title="See this member's activity" class="commenter">Brian C.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+The argument in this article is that the warming is local.  And not so much that it is overall warming, but is enough to change weather patterns.                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125275267">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=173283094&goback=%2Egde_3676376_member_222835085" title="Oddgeir H.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/6/000/20d/33b/1200e84.jpg" alt="Oddgeir H." width="80" height="80" class="commenter" data-li-comment-text="Would these changes in weather patterns be local as well?
+
+With highly suggestive scaremongers computer model crap-in-crap-out, probably not....
+
+Oddgeir" data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Oddgeir</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125275267">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=173283094" title="See this member's activity" class="commenter">Oddgeir H.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+Would these changes in weather patterns be local as well?<br/>
+<br/>
+With highly suggestive scaremongers computer model crap-in-crap-out, probably not....<br/>
+<br/>
+Oddgeir                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125275676">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=192167149&goback=%2Egde_3676376_member_222835085" title="Brian C.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/4/000/17b/3e6/1a0fdd3.jpg" alt="Brian C." width="80" height="80" class="commenter" data-li-comment-text="yes.  the changes are LOCAL." data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Brian</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125275676">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=192167149" title="See this member's activity" class="commenter">Brian C.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+yes.  the changes are LOCAL.                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125276139">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=63070412&goback=%2Egde_3676376_member_222835085" title="Vegard Kristoffer E.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/8/000/1d9/20b/17f093b.jpg" alt="Vegard Kristoffer E." width="80" height="80" class="commenter" data-li-comment-text="Dear Friends . . . CO2 has little to nothing to do with global warming or cooling . . . 
+.
+The presence of water in the atmosphere together with the large sea streams, refection of heat back to space and receiving of energy from the sun and cosmic particle radiation directed thru the poles heating the magma, that is what basically regulates the climate on the globe . . . 
+.
+Human made CO2 counts for less than 5% while the nature is releasing over 95% of the CO2 to the air, besides that, CO2 is useful to increase the plant growth on the Earth and has wary little to nothing to do with global warming or cooling . . . 
+. 
+. . . friendly greetings, Vegard K. Emanuelsen" data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Vegard Kristoffer</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125276139">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=63070412" title="See this member's activity" class="commenter">Vegard Kristoffer E.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+Dear Friends . . . CO2 has little to nothing to do with global warming or cooling . . . <br/>
+.<br/>
+The presence of water in the atmosphere together with the large sea streams, refection of heat back to space and receiving of energy from the sun and cosmic particle radiation directed thru the poles heating the magma, that is what basically regulates the climate on the globe . . . <br/>
+.<br/>
+Human made CO2 counts for less than 5% while the nature is releasing over 95% of the CO2 to the air, besides that, CO2 is useful to increase the plant growth on the Earth and has wary little to nothing to do with global warming or cooling . . . <br/>
+. <br/>
+. . . friendly greetings, Vegard K. Emanuelsen                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125297368">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=7836767&goback=%2Egde_3676376_member_222835085" title="John S.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/3/000/040/20b/22368f1.jpg" alt="John S." width="80" height="80" class="commenter" data-li-comment-text="Quite to the contrary, Brian... This is an excellent indication that we need to increase our overall efficiency and &quot;hold on&quot; to our generated heat better. This, in tandem with continued development of renewable energies, will allow us to more effectively rely solely ON those renewable energies. Under the current paradigm, we waste so much energy that we cannot supply it all exclusively with renewables. Do you see the connection?" data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>John</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125297368">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=7836767" title="See this member's activity" class="commenter">John S.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+Quite to the contrary, Brian... This is an excellent indication that we need to increase our overall efficiency and "hold on" to our generated heat better. This, in tandem with continued development of renewable energies, will allow us to more effectively rely solely ON those renewable energies. Under the current paradigm, we waste so much energy that we cannot supply it all exclusively with renewables. Do you see the connection?                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125328077">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=63070412&goback=%2Egde_3676376_member_222835085" title="Vegard Kristoffer E.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/8/000/1d9/20b/17f093b.jpg" alt="Vegard Kristoffer E." width="80" height="80" class="commenter" data-li-comment-text="Well, what is renewable energy . . . ? . . . that is energy dependent on the different eco systems in the nature to regenerate it self, some eco systems are regenerating slow.
+.
+Biological eco systems is producing . . . wood, biological oil, algae, 
+Water eco systems is generating . . . wind, waves, rainfall, 
+.
+Planetary eco systems is generating . . . fossil fuels, geothermal energy, magnetic fields
+Inter planetary eco systems is generating . . . tidal power solar winds, particle storms 
+.
+The form of energy we currently are using on our globe today that is not renewable is nuclear power, since it is based on splitting compete atoms to smaller and incomplete parts of the creation, which is considered to be harmful and a crime to the creation.
+.
+What we consider to be renewable energy in the time line and space of our every day life, useful for us to live in harmony with the nature, the eco systems and our globe, that is currently: 
+.
+low, middle and high temperature geothermal energy 
+sun, 
+wind, 
+waves, 
+tidal power, 
+static electricity, 
+magnetic fields, 
+bio fuels, 
+gravity 
+. 
+What we consider to not be renewable in a time line and space of our reality is: 
+. 
+Fossil Oil 
+Fossil Gas 
+Fossil Coal 
+. 
+What we consider not to be renewable at all and dangerous to use is: 
+. 
+Nuclear reactions forming new isotopes of materials 
+Cold or warm reactions releasing radioactive radiation 
+Other methods to brake down atoms to release energy 
+.
+Methods considered to be safe using atoms to release energy is for example: 
+. 
+Chemical reactions when two or more materials are forming new bounds without to destroy each others unique atomic existence, normally forming new materials and bonds and where the process can be reversed to restore eco logical balance . . . 
+.
+For example to burn Hydrogen + Carbon + Oxygen to release thermal energy 
+. 
+. . . friendly greetings, Vegard K. Emanuelsen
+
+." data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Vegard Kristoffer</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125328077">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=63070412" title="See this member's activity" class="commenter">Vegard Kristoffer E.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+Well, what is renewable energy . . . ? . . . that is energy dependent on the different eco systems in the nature to regenerate it self, some eco systems are regenerating slow.<br/>
+.<br/>
+Biological eco systems is producing . . . wood, biological oil, algae, <br/>
+Water eco systems is generating . . . wind, waves, rainfall, <br/>
+.<br/>
+Planetary eco systems is generating . . . fossil fuels, geothermal energy, magnetic fields<br/>
+Inter planetary eco systems is generating . . . tidal power solar winds, particle storms <br/>
+.<br/>
+The form of energy we currently are using on our globe today that is not renewable is nuclear power, since it is based on splitting compete atoms to smaller and incomplete parts of the creation, which is considered to be harmful and a crime to the creation.<br/>
+.<br/>
+What we consider to be renewable energy in the time line and space of our every day life, useful for us to live in harmony with the nature, the eco systems and our globe, that is currently: <br/>
+.<br/>
+low, middle and high temperature geothermal energy <br/>
+sun, <br/>
+wind, <br/>
+waves, <br/>
+tidal power, <br/>
+static electricity, <br/>
+magnetic fields, <br/>
+bio fuels, <br/>
+gravity <br/>
+. <br/>
+What we consider to not be renewable in a time line and space of our reality is: <br/>
+. <br/>
+Fossil Oil <br/>
+Fossil Gas <br/>
+Fossil Coal <br/>
+. <br/>
+What we consider not to be renewable at all and dangerous to use is: <br/>
+. <br/>
+Nuclear reactions forming new isotopes of materials <br/>
+Cold or warm reactions releasing radioactive radiation <br/>
+Other methods to brake down atoms to release energy <br/>
+.<br/>
+Methods considered to be safe using atoms to release energy is for example: <br/>
+. <br/>
+Chemical reactions when two or more materials are forming new bounds without to destroy each others unique atomic existence, normally forming new materials and bonds and where the process can be reversed to restore eco logical balance . . . <br/>
+.<br/>
+For example to burn Hydrogen + Carbon + Oxygen to release thermal energy <br/>
+. <br/>
+. . . friendly greetings, Vegard K. Emanuelsen <br/>
+<br/>
+.                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125357208">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=14632026&goback=%2Egde_3676376_member_222835085" title="Gennady S.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/2/000/005/04a/39e4553.jpg" alt="Gennady S." width="80" height="80" class="commenter" data-li-comment-text="the Title of discussion &quot;HUGE ARGUMETNS AGAINST&quot; remind me other titles from industries that come into defensive stage , e.g. passed their pick point. After carefully reading of article these are my lessons:1.  the study is just initial draft use non accurate simulations.  2. It's nothing there that make carbons use preferable over alternative sources" data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Gennady</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125357208">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=14632026" title="See this member's activity" class="commenter">Gennady S.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+the Title of discussion "HUGE ARGUMETNS AGAINST" remind me other titles from industries that come into defensive stage , e.g. passed their pick point. After carefully reading of article these are my lessons:1.  the study is just initial draft use non accurate simulations.  2. It's nothing there that make carbons use preferable over alternative sources                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125358838">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=192167149&goback=%2Egde_3676376_member_222835085" title="Brian C.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/4/000/17b/3e6/1a0fdd3.jpg" alt="Brian C." width="80" height="80" class="commenter" data-li-comment-text="Well Gennady, if the oil industry is in a &quot;defensive stage&quot;, then it's working.  Belief in catastrophic climate change is dropping fast.  In the last 15 years, the number of believers have dropped by about 30%.
+
+But to repeat my argument again.  Because energy usage itself causes climate change, switching to alternative energy sources does little but delay climate change by a few years.  As long as energy consumption is in exponential growth.
+
+Let's say that we completely ended oil and coal consumption and replaced it with solar PV.  Yet energy usage continued to rise exponentially.  How many years before the entire globe is covered by solar cells?  And how hot would the Earth be, especially as these solar cells become more efficient and convert more any more of the Sun's energy into usable power?  Eventually the entire Earth will be BLACK and HOT.
+
+There is no winning end game with alternative energy.  The only way to actually win is to reduce consumption.  So the question is, should we invest in alternative energy which is also a path to self destruction?  Or invest in energy efficiency?" data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Brian</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125358838">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=192167149" title="See this member's activity" class="commenter">Brian C.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+Well Gennady, if the oil industry is in a "defensive stage", then it's working.  Belief in catastrophic climate change is dropping fast.  In the last 15 years, the number of believers have dropped by about 30%.  <br/>
+<br/>
+But to repeat my argument again.  Because energy usage itself causes climate change, switching to alternative energy sources does little but delay climate change by a few years.  As long as energy consumption is in exponential growth.<br/>
+<br/>
+Let's say that we completely ended oil and coal consumption and replaced it with solar PV.  Yet energy usage continued to rise exponentially.  How many years before the entire globe is covered by solar cells?  And how hot would the Earth be, especially as these solar cells become more efficient and convert more any more of the Sun's energy into usable power?  Eventually the entire Earth will be BLACK and HOT.<br/>
+<br/>
+There is no winning end game with alternative energy.  The only way to actually win is to reduce consumption.  So the question is, should we invest in alternative energy which is also a path to self destruction?  Or invest in energy efficiency?                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125359554">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=192167149&goback=%2Egde_3676376_member_222835085" title="Brian C.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/4/000/17b/3e6/1a0fdd3.jpg" alt="Brian C." width="80" height="80" class="commenter" data-li-comment-text="And I have another thread as a good example of this type thinking, about the 285 mpg DIESEL car.  What is a better investment, building a car that uses 1/10th the petroleum as a normal car?  Or building a hybrid electric car that is the same price, but uses the same or MORE net energy, but it's primary energy source is the grid, coal, nuclear, solar, or whatever...
+
+In the end, they hybrid/electric uses more energy in total, although its source may not be petroleum.  Opposed to just the supper efficient conventional vehicle which uses 90% less energy in total, although still uses some petroleum...
+
+Which is the wiser investment?" data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Brian</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125359554">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=192167149" title="See this member's activity" class="commenter">Brian C.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+And I have another thread as a good example of this type thinking, about the 285 mpg DIESEL car.  What is a better investment, building a car that uses 1/10th the petroleum as a normal car?  Or building a hybrid electric car that is the same price, but uses the same or MORE net energy, but it's primary energy source is the grid, coal, nuclear, solar, or whatever...<br/>
+<br/>
+In the end, they hybrid/electric uses more energy in total, although its source may not be petroleum.  Opposed to just the supper efficient conventional vehicle which uses 90% less energy in total, although still uses some petroleum...<br/>
+<br/>
+Which is the wiser investment?                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125364464">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=14632026&goback=%2Egde_3676376_member_222835085" title="Gennady S.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/2/000/005/04a/39e4553.jpg" alt="Gennady S." width="80" height="80" class="commenter" data-li-comment-text="Well Brian, I think you getting to the point - how usage of alternative sources of energy impact our power consumption? I think the answer is clear  - we going to use more energy, taking in consideration that with a time these sources will be cheaper than carbons. Still we need invest money to develop alternative sources and not invest in carbons technology (oil companies have enough cash to improve current technologies, no need to help them). Currently we behavior with oil &amp; gas like primitive tribe that find box with printed dollars and burn it in a night fair." data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Gennady</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125364464">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=14632026" title="See this member's activity" class="commenter">Gennady S.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+Well Brian, I think you getting to the point - how usage of alternative sources of energy impact our power consumption? I think the answer is clear  - we going to use more energy, taking in consideration that with a time these sources will be cheaper than carbons. Still we need invest money to develop alternative sources and not invest in carbons technology (oil companies have enough cash to improve current technologies, no need to help them). Currently we behavior with oil &amp; gas like primitive tribe that find box with printed dollars and burn it in a night fair.                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125365254">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=192167149&goback=%2Egde_3676376_member_222835085" title="Brian C.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/4/000/17b/3e6/1a0fdd3.jpg" alt="Brian C." width="80" height="80" class="commenter" data-li-comment-text="I completely disagree.  IF efficiency is the most important thing, then in transportation today, carbon fiber is the key to achieving this.  Carbon fiber is made from... guess what... petroleum.
+
+The problem is that carbon fiber is too expensive.  But if government were to &quot;help&quot; anyone, we should be helping petroleum companies manufacture the raw materials for carbon fiber and the polymers used in manufacturing composite materials from them.
+
+This would be far wiser than government &quot;helping&quot; some other industry produce solar panels or batteries." data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Brian</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125365254">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=192167149" title="See this member's activity" class="commenter">Brian C.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+I completely disagree.  IF efficiency is the most important thing, then in transportation today, carbon fiber is the key to achieving this.  Carbon fiber is made from... guess what... petroleum.<br/>
+<br/>
+The problem is that carbon fiber is too expensive.  But if government were to "help" anyone, we should be helping petroleum companies manufacture the raw materials for carbon fiber and the polymers used in manufacturing composite materials from them.<br/>
+<br/>
+This would be far wiser than government "helping" some other industry produce solar panels or batteries.                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125367240">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=14632026&goback=%2Egde_3676376_member_222835085" title="Gennady S.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/2/000/005/04a/39e4553.jpg" alt="Gennady S." width="80" height="80" class="commenter" data-li-comment-text="Civilization makes us efficient, most inefficient people lived on Earth 5,000 - 10.000 years ago so I do not fear about efficiency, solution will come. What I do not know how carbon fibers can help to oil industry be efficient? It used from 1960th with up &amp;downs, without any disruptive innovations in last decades." data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Gennady</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125367240">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=14632026" title="See this member's activity" class="commenter">Gennady S.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+Civilization makes us efficient, most inefficient people lived on Earth 5,000 - 10.000 years ago so I do not fear about efficiency, solution will come. What I do not know how carbon fibers can help to oil industry be efficient? It used from 1960th with up &amp;downs, without any disruptive innovations in last decades.                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125367590">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=192167149&goback=%2Egde_3676376_member_222835085" title="Brian C.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/4/000/17b/3e6/1a0fdd3.jpg" alt="Brian C." width="80" height="80" class="commenter" data-li-comment-text="Sure it has.  Why you don't notice it is because the defense industry consumes almost all of the carbon fiber produced.  Little of it reaches the civil market.  But considering that even naval ships today are being made from it, it has to be the most revolutionary product out there.  It's as revolutionary and &quot;disruptive&quot; as the building of the first iron-clad warships." data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Brian</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125367590">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=192167149" title="See this member's activity" class="commenter">Brian C.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+Sure it has.  Why you don't notice it is because the defense industry consumes almost all of the carbon fiber produced.  Little of it reaches the civil market.  But considering that even naval ships today are being made from it, it has to be the most revolutionary product out there.  It's as revolutionary and "disruptive" as the building of the first iron-clad warships.                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+    <div class="popular-item comment" data-li-comment_id="125367706">
+
+            <div class="popular-entity">
+                    <a href="/profile/view?id=192167149&goback=%2Egde_3676376_member_222835085" title="Brian C.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_80_80/p/4/000/17b/3e6/1a0fdd3.jpg" alt="Brian C." width="80" height="80" class="commenter" data-li-comment-text="In the end, the question is how do you quench the defense industry's seemingly infinite appetite for carbon fiber  and/or how do you outproduce the consumption of the defense industry so they don't buy up every last gram of the stuff?" data-li-editable="false" data-li-edit-sec-left="900" data-li-time="">
+                    </a>
+                    <p><span>Brian</p></span>
+
+            </div>
+
+          <div class="popular-content">
+            <div class="popular-article" id="commentID_125367706">
+                <p class="commenter">
+                  <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=192167149" title="See this member's activity" class="commenter">Brian C.</a> &bull;
+                        <span class="comment-body" data-li-comment-text="" />
+                    
+In the end, the question is how do you quench the defense industry's seemingly infinite appetite for carbon fiber  and/or how do you outproduce the consumption of the defense industry so they don't buy up every last gram of the stuff?                      
+                    </span>
+                  </p>
+
+                <div class="extra">
+                  <span class="timestamp">9 days ago</span>
+
+                </div> <!--extra-->
+
+              </div><!--popular-article-->
+            </div><!-- popular-content-->
+
+
+    </div>
+
+
+
+<script type="text/javascript" charset="utf-8">
+  if ( LI && LI.i18n ) {
+    LI.i18n.register( 'report', "Thanks! This content has been marked as inappropriate." );
+    LI.i18n.register( 'moveItem', "This discussion has been moved to Jobs." );
+    LI.i18n.register( 'moveItemToPromos', "This discussion has been moved to Promotions." );
+    LI.i18n.register( 'moveItemBack', "This item was successfully moved back to Discussions." );
+    LI.i18n.register( 'undo', "Undo" );    
+    LI.i18n.register( 'flagItem', "Thanks! This discussion has been flagged as a job." );
+    LI.i18n.register( 'flagComment', "Thank you, this comment has been flagged for review." );
+    LI.i18n.register( 'unflagComment', "Thank you, this comment is no longer flagged for review." );
+    LI.i18n.register( 'unflagItem', "Thank you, this item is no longer flagged for review." );
+    LI.i18n.register( 'deleteComment', "The comment has been deleted." );
+    LI.i18n.register( 'editExpired', "Time left to edit the comment has expired. Comments can be deleted from the discussion detail page." );
+    LI.i18n.register( 'deleteItem', "This content has been deleted." );
+    LI.i18n.register( 'feature', "Success. You have featured this item." );
+    LI.i18n.register( 'unfeature', "The item is no longer featured." );
+    LI.i18n.register( 'follow', "Follow" );
+    LI.i18n.register( 'unfollow', "Unfollow" );
+    LI.i18n.register( 'flagged', "Thank you, the selected item has been flagged for review." );
+    LI.i18n.register( 'undoFlagged', "The selected item is no longer flagged for review." );
+    LI.i18n.register( 'error', "We ran into a problem with your request. Try again later." );
+    LI.i18n.register( 'successGeneric', "Your request was completed successfully" );
+    LI.i18n.register( 'successDelete', "The item was deleted successfully" );
+    LI.i18n.register( 'successClear', "The item\'s flags were cleared successfully" );
+    LI.i18n.register( 'successJob', "The item was successfully moved to the Jobs area" );
+    LI.i18n.register( 'successPromo', "The item was successfully moved to the Promotions area" );
+    LI.i18n.register( 'successBulkApprove', "The items have been approved successfully. (Comments can only be deleted or approved.)" );
+    LI.i18n.register( 'successBulkBlock', "The selected members have been blocked." );
+    LI.i18n.register( 'successBulkClear', "The selected item\'s flags were successfully cleared" );
+     LI.i18n.register( 'successBulkDelete', "The selected items were deleted successfully" );
+    LI.i18n.register( 'successBulkJobs', "The selected items were successfully moved to the Jobs area. (Comments can only be deleted or approved.)" );
+    LI.i18n.register( 'successBulkPromos', "The selected items were successfully moved to the Promotions area. (Comments can only be deleted or approved.)" );
+    LI.i18n.register( 'successBulkGray', "Submissions from the selected user(s) now require moderation." );
+    LI.i18n.register( 'successBulkWrite', "Submissions from the selected user(s) do not require moderation." );
+    LI.i18n.register( 'no-auth', "You are not currently logged in." );
+    
+    LI.i18n.register( 'you-and-others', "You and <em>2<\/em> others like this!" );
+    LI.i18n.register( 'you-and-other', "You and <em>1<\/em> other like this!" );
+    LI.i18n.register( 'you-are', "You are the first to like this!" );
+    LI.i18n.register( 'you-no', "You no longer like this" );
+    LI.i18n.register( 'you-have', "You have passed on this item." );
+    LI.i18n.register( 'no-one', "No one who viewed it liked it." );
+    LI.i18n.register( 'like', "Like" );
+    LI.i18n.register( 'unlike', "Unlike" );
+    LI.i18n.register( 'save', "Save" );
+    LI.i18n.register( 'edit', "Edit" );
+    LI.i18n.register( 'or', "or" );
+    LI.i18n.register( 'cancel', "Cancel" );
+    LI.i18n.register( 'likes-this', "likes this." );
+    LI.i18n.register( 'like-this', "like this." );
+    LI.i18n.register( 'you', "You" );
+    LI.i18n.register( 'you-like-this', "You Like this" );
+    LI.i18n.register( 'subscribeToNewPosts', "You successfully subscribed to all new discussions." );
+    LI.i18n.register( 'unsubscribeToNewPosts', "You successfully unsubscribed from all new discussions." );
+    LI.i18n.register( 'default-ago', "seconds ago" );
+    LI.i18n.register( 'empty', "Please enter a comment." );
+    LI.i18n.register( 'max', "Your comment has exceeded the maximum character length." );
+    LI.i18n.register( 'approve', "You have approved the item successfully." );
+    LI.i18n.register( 'totalCommentsFlaggedSingular', "There is a total of" );
+    LI.i18n.register( 'comment', "comment" );
+    LI.i18n.register( 'sendMeEmail', "Send me an email for each new comment." );
+    LI.i18n.register( 'anet-clean-sweep', "<span>Thanks for cleaning out your moderation queue and keeping the group happy.<\/span>" );
+    LI.i18n.register( 'anetSubmissionEditExpired', "Time left to edit the comment has expired." );
+    LI.i18n.register( 'anetMsgSubApprove', "Your submission has already been approved" );
+    LI.i18n.register( 'anetMsgSubMoveJobs', "Your submission has been moved to the Jobs area." );
+    LI.i18n.register( 'anetMsgSubMovePromos', "Your submission has been moved to the Promotions area." );
+    LI.i18n.register( 'anetMsgSubWritelistUser', "You have been given access to post discussions directly to the group." );
+    LI.i18n.register( 'anetMsgSubReject', "Your submission has already been deleted." );
+    LI.i18n.register( 'anetMsgSubPurgeUser', "You have been dis-allowed from participating in the group." );
+    LI.i18n.register( 'anetMsgSubDefault', "Your submission has already been moderated." );
+    LI.i18n.register( 'anetMsgSubView', "View it here &#187;" );
+    
+    LI.i18n.register( 'anetMsgRepost', "Your item has been successfully reposted. You can view it <a class=\"repost\" href=\"#\">here<\/a>." );
+    LI.i18n.register( 'anetMsgRepostFailIsPremoderated', "Thanks! Your repost has been submitted for review. You can edit it <a class=\"repost\" href=\"#\">here<\/a>." );
+    LI.i18n.register( 'anetMsgRepostFailIsPosted', "Sorry, you have already reposted this item." );
+    LI.i18n.register( 'anetMsgRepostFailUnknown', "Sorry, your item cannot be reposted at this time." );
+  }
+</script>
+
+
+              
+                <div id="inline-pagination">
+                  <span class='running-count'>20</span>
+                  <span class='total-count'>162</span>
+                  <a href="/groupItem?seeMore=&amp;split_page=2&amp;type=member&amp;item=222835085&amp;gid=3676376" class="btn-quaternary" title="Show more comments">
+                    <span id="show_more_text" class="hide">Show more comments</span>
+                    <span id="loading_icon" class="show loader"></span>
+                  </a>
+                </div>
+              
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+          <script id="control-http-12220-2012821-6" type="linkedin/control" class="li-control">
+            
+        /* extlib: _anetinlinepagination */
+        
+    
+            LI.Controls.addControl('control-http-12220-2012821-6', 'AnetInlinePagination', {
+                'direction':'forward',
+                'useAnimation':true,
+                'hasMoreComments':true,
+                'hasPreviousComments':false,
+                'moreCommentsUrl':'http://www.linkedin.com/groupItem?seeMore=&amp;split_page=2&amp;type=member&amp;item=222835085&amp;gid=3676376&amp;ajax=ajax',
+                'page':'gde',
+                'isInfScroll':true,
+                'noOfPagesUserCanScroll':5
+              });
+          </script>
+        
+    
+
+        
+
+      </div>
+        
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+          <script id="control-http-12220-2012822-7" type="linkedin/control" class="li-control">
+            
+        /* extlib: _anetcommentitems */
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+LI.i18n.register( 'anetCommentsSingular', '1 comment' );
+LI.i18n.register( 'anetCommentsZero', '0 comments' );        
+    
+            LI.Controls.addControl('control-http-12220-2012822-7', 'AnetCommentItems', {
+          'user-name':'',
+          'user-img':'',
+          'is-manager':false,
+          'token':'ajax:3709504301741708187',
+          'urlDomainAndPath':'http://www.linkedin.com/groupItem',
+          'gid':3676376,
+          'loadingGifUrl':'http://static.licdn.com/scds/common/u/img/anim/anim_loading_16x16.gif',
+          'uid':'0',
+          'likeDialogUrl':'http://www.linkedin.com/groupItem?getLikers=&gid=3676376&type=member&item=222835085&split_page=1',
+          'likeDialogTitle':'Loading...'});
+          </script>
+        
+    
+        <a href="#" name="lastComment"></a>
+
+
+
+
+
+
+
+
+    <div class="groups-upsell-bubble">
+      <div class="join-or-signin">
+        <a href="https://www.linkedin.com/secure/register?goback=%2Egde_3676376_member_222835085&amp;trk=reg-pub-groups" rel="nofollow" class=" btn-action join"><span>Join LinkedIn</span></a>
+        <p><span>Or</span> <a href="https://www.linkedin.com/uas/login?session_redirect=http%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fgroups%2FThis-is-huge-argument-AGAINST-3676376%2ES%2E222835085&amp;goback=%2Egde_3676376_member_222835085&amp;trk=auth-pub-groups" rel="nofollow" class="signin"> Sign In &raquo;</a></p>
+      </div>
+      <h3 class="header">Have something to say?</h3>
+      <p class="left-col">Join LinkedIn for free to participate in the conversation. When you join, you can comment and post your own discussions.</p>
+    </div>
+  
+
+  </div><!--end content-->
+
+
+
+
+
+
+
+
+
+  
+
+
+  <div id="extra">
+    
+	    
+      
+        
+      <div class="leo-module mod-util modern" id="module-id9">
+        <div class="header"><h3>Share Discussion</h3></div>
+      <div class="content">
+    
+	      <div class="third-party">
+	        <div class="buttons">
+  	        <a href="https://www.linkedin.com/secure/register?goback=%2Egde_3676376_member_222835085&amp;trk=reg-pub-groups" class="share-button"><span class="site in"></span></a>
+
+  	      
+  	        <a href="http://twitter.com/share" id="anetShareTwitter" class="share-button" data-count="none" target="_blank"><span class="site twitter"></span></a>
+  	      
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+          <script id="control-http-12220-2012823-9" type="linkedin/control" class="li-control">
+            
+        /* extlib: _anetwindowopen */
+        
+    
+            LI.Controls.addControl('control-http-12220-2012823-9', 'AnetWindowOpen', {url: 'http://twitter.com/share?url=http://lnkd.in/YTV4vU&text=This is a huge argument AGAINST alternative energy.  While CO2 warming accounts for much of global warming, just using any energy at all, causes significant warming.  It does not matter the source.','name': 'twitter', params: 'width=550,height=380',webtrack:'anet_grpdtl-0-0-tshrb'});
+          </script>
+        
+    
+  	      
+  	      <a name="fb_share" id="anetShareFB" type="icon" href="http://www.facebook.com/sharer.php" class="share-button"><span class="FBConnectButton_Simple"></span></a>
+  	      
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+          <script id="control-http-12220-2012824-10" type="linkedin/control" class="li-control">
+            
+    
+            LI.Controls.addControl('control-http-12220-2012824-10', 'AnetWindowOpen', {url: 'http://www.facebook.com/sharer.php?u=http://lnkd.in/YTV4vU', name: 'facebook', params: 'width=650,height=380', webtrack:'anet_grpdtl-0-0-fshrb'});
+          </script>
+        
+    
+
+  	      <div class="share-button plusone">
+  	        <div class="g-plusone" data-size="small" data-count="false"></div>
+	      </div>
+
+
+	      </div>
+
+	      <input type="text" value="http://lnkd.in/YTV4vU" class="short-url">
+	      </div>
+	    </div></div>
+
+    <div class="content" id="ad-slot-3">
+      
+            
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+
+    
+
+    var dbl_url = "http://ad.doubleclick.net/adj/linkedin.dart/";
+       
+    
+        
+        
+            var dbl_src = dbl_url + "group_item_detail_guest;optout=false;lang=en;tile=1;sz=300x125;;dcopt=ist;grpid=3676376;s=0;ord=868090121?";
+          
+      
+    
+        document.write('<sc' + 'ript src="' + dbl_src + '" type="text/javascript"><\/scr' + 'ipt>');
+      
+  </script>
+
+
+
+
+    
+    </div>
+
+
+    <div class="general-box ad-block">
+      <div class="title"><h6>Ad</h6></div>
+      <div class="content" id="ad-slot-1">
+      
+            
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+
+    
+
+    var dbl_url = "http://ad.doubleclick.net/adj/linkedin.dart/";
+       
+    
+        
+        
+            var dbl_src = dbl_url + "group_item_detail_guest;optout=false;lang=en;tile=2;sz=300x250;;grpid=3676376;did=222835085;s=0;ord=868090121?";
+          
+      
+    
+        document.write('<sc' + 'ript src="' + dbl_src + '" type="text/javascript"><\/scr' + 'ipt>');
+      
+  </script>
+
+
+
+
+    
+    </div>
+    </div>
+
+      
+      
+        
+      <div class="leo-module mod-util " id="module-id12">
+        <div class="header"><h3>Manager's Choice</h3></div>
+      <div class="content">
+    
+        <div class='manager-item'>
+                    <a href="/profile/view?id=23599154&goback=%2Egde_3676376_member_222835085" title="Erik H.">
+                        <img src="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/14c/098/120a146.jpg" alt="Erik H." width="40" height="40" class="photo groups">
+                    </a>
+          <div class="right-column">
+            <p class='title'>
+              <a href="/groups/When-will-we-see-new-3676376%2ES%2E222103128?goback=%2Egde_3676376_member_222835085" >When will we see new production of oil and gas in the Arctic?</a>
+            </p>
+            <p class='fullname'>
+                <a href="/groups?viewMemberFeed=&amp;gid=3676376&amp;memberID=23599154&amp;goback=%2Egde_3676376_member_222835085" title="See this member's activity">Erik H.</a>
+              <a href="/groups?featured=&amp;gid=3676376&amp;goback=%2Egde_3676376_member_222835085" class="see-all">See all &#187;</a>
+            </p>
+          </div>
+
+        </div>
+      </div></div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+          <script id="control-http-12220-2012825-12" type="linkedin/control" class="li-control">
+            
+        /* extlib: _anetnuslike */
+        
+    
+            LI.Controls.addControl('control-http-12220-2012825-12', 'AnetNusLike', {container:'extra'});
+          </script>
+        
+    
+
+</div>
+
+
+<script type="text/javascript" charset="utf-8">
+  if ( LI && LI.i18n ) {
+    LI.i18n.register( 'report', "Thanks! This content has been marked as inappropriate." );
+    LI.i18n.register( 'moveItem', "This discussion has been moved to Jobs." );
+    LI.i18n.register( 'moveItemToPromos', "This discussion has been moved to Promotions." );
+    LI.i18n.register( 'moveItemBack', "This item was successfully moved back to Discussions." );
+    LI.i18n.register( 'undo', "Undo" );    
+    LI.i18n.register( 'flagItem', "Thanks! This discussion has been flagged as a job." );
+    LI.i18n.register( 'flagComment', "Thank you, this comment has been flagged for review." );
+    LI.i18n.register( 'unflagComment', "Thank you, this comment is no longer flagged for review." );
+    LI.i18n.register( 'unflagItem', "Thank you, this item is no longer flagged for review." );
+    LI.i18n.register( 'deleteComment', "The comment has been deleted." );
+    LI.i18n.register( 'editExpired', "Time left to edit the comment has expired. Comments can be deleted from the discussion detail page." );
+    LI.i18n.register( 'deleteItem', "This content has been deleted." );
+    LI.i18n.register( 'feature', "Success. You have featured this item." );
+    LI.i18n.register( 'unfeature', "The item is no longer featured." );
+    LI.i18n.register( 'follow', "Follow" );
+    LI.i18n.register( 'unfollow', "Unfollow" );
+    LI.i18n.register( 'flagged', "Thank you, the selected item has been flagged for review." );
+    LI.i18n.register( 'undoFlagged', "The selected item is no longer flagged for review." );
+    LI.i18n.register( 'error', "We ran into a problem with your request. Try again later." );
+    LI.i18n.register( 'successGeneric', "Your request was completed successfully" );
+    LI.i18n.register( 'successDelete', "The item was deleted successfully" );
+    LI.i18n.register( 'successClear', "The item\'s flags were cleared successfully" );
+    LI.i18n.register( 'successJob', "The item was successfully moved to the Jobs area" );
+    LI.i18n.register( 'successPromo', "The item was successfully moved to the Promotions area" );
+    LI.i18n.register( 'successBulkApprove', "The items have been approved successfully. (Comments can only be deleted or approved.)" );
+    LI.i18n.register( 'successBulkBlock', "The selected members have been blocked." );
+    LI.i18n.register( 'successBulkClear', "The selected item\'s flags were successfully cleared" );
+     LI.i18n.register( 'successBulkDelete', "The selected items were deleted successfully" );
+    LI.i18n.register( 'successBulkJobs', "The selected items were successfully moved to the Jobs area. (Comments can only be deleted or approved.)" );
+    LI.i18n.register( 'successBulkPromos', "The selected items were successfully moved to the Promotions area. (Comments can only be deleted or approved.)" );
+    LI.i18n.register( 'successBulkGray', "Submissions from the selected user(s) now require moderation." );
+    LI.i18n.register( 'successBulkWrite', "Submissions from the selected user(s) do not require moderation." );
+    LI.i18n.register( 'no-auth', "You are not currently logged in." );
+    
+    LI.i18n.register( 'you-and-others', "You and <em>2<\/em> others like this!" );
+    LI.i18n.register( 'you-and-other', "You and <em>1<\/em> other like this!" );
+    LI.i18n.register( 'you-are', "You are the first to like this!" );
+    LI.i18n.register( 'you-no', "You no longer like this" );
+    LI.i18n.register( 'you-have', "You have passed on this item." );
+    LI.i18n.register( 'no-one', "No one who viewed it liked it." );
+    LI.i18n.register( 'like', "Like" );
+    LI.i18n.register( 'unlike', "Unlike" );
+    LI.i18n.register( 'save', "Save" );
+    LI.i18n.register( 'edit', "Edit" );
+    LI.i18n.register( 'or', "or" );
+    LI.i18n.register( 'cancel', "Cancel" );
+    LI.i18n.register( 'likes-this', "likes this." );
+    LI.i18n.register( 'like-this', "like this." );
+    LI.i18n.register( 'you', "You" );
+    LI.i18n.register( 'you-like-this', "You Like this" );
+    LI.i18n.register( 'subscribeToNewPosts', "You successfully subscribed to all new discussions." );
+    LI.i18n.register( 'unsubscribeToNewPosts', "You successfully unsubscribed from all new discussions." );
+    LI.i18n.register( 'default-ago', "seconds ago" );
+    LI.i18n.register( 'empty', "Please enter a comment." );
+    LI.i18n.register( 'max', "Your comment has exceeded the maximum character length." );
+    LI.i18n.register( 'approve', "You have approved the item successfully." );
+    LI.i18n.register( 'totalCommentsFlaggedSingular', "There is a total of" );
+    LI.i18n.register( 'comment', "comment" );
+    LI.i18n.register( 'sendMeEmail', "Send me an email for each new comment." );
+    LI.i18n.register( 'anet-clean-sweep', "<span>Thanks for cleaning out your moderation queue and keeping the group happy.<\/span>" );
+    LI.i18n.register( 'anetSubmissionEditExpired', "Time left to edit the comment has expired." );
+    LI.i18n.register( 'anetMsgSubApprove', "Your submission has already been approved" );
+    LI.i18n.register( 'anetMsgSubMoveJobs', "Your submission has been moved to the Jobs area." );
+    LI.i18n.register( 'anetMsgSubMovePromos', "Your submission has been moved to the Promotions area." );
+    LI.i18n.register( 'anetMsgSubWritelistUser', "You have been given access to post discussions directly to the group." );
+    LI.i18n.register( 'anetMsgSubReject', "Your submission has already been deleted." );
+    LI.i18n.register( 'anetMsgSubPurgeUser', "You have been dis-allowed from participating in the group." );
+    LI.i18n.register( 'anetMsgSubDefault', "Your submission has already been moderated." );
+    LI.i18n.register( 'anetMsgSubView', "View it here &#187;" );
+    
+    LI.i18n.register( 'anetMsgRepost', "Your item has been successfully reposted. You can view it <a class=\"repost\" href=\"#\">here<\/a>." );
+    LI.i18n.register( 'anetMsgRepostFailIsPremoderated', "Thanks! Your repost has been submitted for review. You can edit it <a class=\"repost\" href=\"#\">here<\/a>." );
+    LI.i18n.register( 'anetMsgRepostFailIsPosted', "Sorry, you have already reposted this item." );
+    LI.i18n.register( 'anetMsgRepostFailUnknown', "Sorry, your item cannot be reposted at this time." );
+  }
+</script>
+
+      
+        
+    
+      
+ </div>
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<script type="text/javascript">LI.Controls.processQueue();</script>      
+        
+    
+    
+
+      
+        
+    
+      
+    
+    
+    
+      
+     
+    
+     
+      
+          
+        
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+
+
+ <script type="text/javascript">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ LI_WCT([
+ "control-http-12220-2012803-1",
+ "control-http-12220-2012804-2",
+ "control-http-12220-2012807-3",
+ "control-http-12220-2012808-4",
+ "control-http-12220-2012821-6",
+ "control-http-12220-2012822-7",
+ "control-http-12220-2012823-9",
+ "control-http-12220-2012824-10",
+ "control-http-12220-2012825-12",
+ ]);
+ 
+ 
+ 
+ 
+ LI_WCT([
+ "control-http-12220-2012808-5",
+ ]);
+ 
+ </script>
+ 
+
+
+
+
+<div id="footer">
+ <div class="wrapper">
+ <ul class="nav-footer">
+ <li>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+ 
+ 
+ 
+ <a href="/redir/redirect?url=http%3A%2F%2Flinkedin%2Ecusthelp%2Ecom%2Fapp%2Fhome%2Floc%2Fft%2Ftrk%2Fgroup_item_detail_guest%2F&amp;urlhash=fySg&amp;trk=help-en" target="_blank" rel="nofollow" class="cust-svc-link"><strong>Help Center</strong></a>
+ 
+
+ 
+ 
+
+ </li>
+ <li><a href="/about-us" >About</a></li>
+ <li><a href="/redir/redirect?url=http%3A%2F%2Fpress%2Elinkedin%2Ecom%2F&amp;urlhash=UMoC" target="_blank">Press</a></li>
+ <li><a href="/redir/redirect?url=http%3A%2F%2Fblog%2Elinkedin%2Ecom%2F&amp;urlhash=ULil" target="_blank">Blog</a></li>
+ <li><a href="/company/linkedin/careers?trk=hb_ft_work" >Careers</a></li>
+ <li><a href="/advertising?src=en-all-el-li-hb_ft_ads&amp;trk=hb_ft_ads" >Advertising</a></li>
+ <li><a href="/redir/redirect?url=http%3A%2F%2Ftalent%2Elinkedin%2Ecom%2F%3Fpin%3Dtr02&amp;urlhash=zJmW" target="_blank">Talent Solutions</a></li>
+ <li><a href="/static?key=tools&amp;trk=hb_ft_tools" >Tools</a></li>
+ <li><a href="/redir/redirect?url=http%3A%2F%2Ftouch%2Ewww%2Elinkedin%2Ecom%2Fmobile%2Ehtml%3Ftrk%3Dhb_ft_mobile&amp;urlhash=DTIz" target="_blank">Mobile</a></li>
+ <li><a href="/redir/redirect?url=http%3A%2F%2Fdeveloper%2Elinkedin%2Ecom&amp;urlhash=EFv_" target="_blank">Developers</a></li>
+ <li><a href="/publishers?trk=hb_ft_pubs" >Publishers</a></li>
+ <li id="nav-utility-lang">
+ <a href="https://www.linkedin.com/secure/settings" >Language</a>
+ 
+ <form name="languageSelectorForm"
+ action="/languageSelector"
+ method="POST"
+ accept-charset="UTF-8"
+ novalidate="novalidate"
+ >
+ 
+ <ul id="lang-list">
+ <li class="in"><a href="https://www.linkedin.com/secure/settings" lang="in_ID"><span>Bahasa Indonesia</span></a></li>
+ <li class="ms"><a href="https://www.linkedin.com/secure/settings" lang="ms_MY"><span>Bahasa Malaysia</span></a></li>
+ <li class="cs"><a href="https://www.linkedin.com/secure/settings" lang="cs_CZ"><span>Čeština</span></a></li>
+ <li class="da"><a href="https://www.linkedin.com/secure/settings" lang="da_DK"><span>Dansk</span></a></li>
+ <li class="de"><a href="https://www.linkedin.com/secure/settings" lang="de_DE"><span>Deutsch</span></a></li>
+ <li class="selected en"><a href="https://www.linkedin.com/secure/settings" lang="en_US"><strong>English</strong></a></li>
+ <li class="es"><a href="https://www.linkedin.com/secure/settings" lang="es_ES"><span>Español</span></a></li>
+ <li class="fr"><a href="https://www.linkedin.com/secure/settings" lang="fr_FR"><span>Français</span></a></li>
+ <li class="ko"><a href="https://www.linkedin.com/secure/settings" lang="ko_KR"><span>한국어</span></a></li>
+ <li class="it"><a href="https://www.linkedin.com/secure/settings" lang="it_IT"><span>Italiano</span></a></li>
+ <li class="nl"><a href="https://www.linkedin.com/secure/settings" lang="nl_NL"><span>Nederlands</span></a></li>
+ <li class="ja"><a href="https://www.linkedin.com/secure/settings" lang="ja_JP"><span>日本語</span></a></li>
+ <li class="no"><a href="https://www.linkedin.com/secure/settings" lang="no_NO"><span>Norsk</span></a></li>
+ <li class="pl"><a href="https://www.linkedin.com/secure/settings" lang="pl_PL"><span>Polski</span></a></li>
+ <li class="pt"><a href="https://www.linkedin.com/secure/settings" lang="pt_BR"><span>Português</span></a></li>
+ <li class="ro"><a href="https://www.linkedin.com/secure/settings" lang="ro_RO"><span>Română</span></a></li>
+ <li class="ru"><a href="https://www.linkedin.com/secure/settings" lang="ru_RU"><span>Русский</span></a></li>
+ <li class="sv"><a href="https://www.linkedin.com/secure/settings" lang="sv_SE"><span>Svenska</span></a></li>
+ <li class="tr"><a href="https://www.linkedin.com/secure/settings" lang="tr_TR"><span>Türkçe</span></a></li>
+ </ul>
+ 
+ <input type="hidden" name="i18nLang" value="">
+ <input type="hidden" name="currenturl" value="http%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fgroups%2FThis-is-huge-argument-AGAINST-3676376%2ES%2E222835085%3Furlhash%3DB7pW">
+ </form>
+ 
+ </li>
+ <li class="last"><a href="/redir/redirect?url=http%3A%2F%2Fwww%2Eslideshare%2Enet&amp;urlhash=nLLC" target="_blank">SlideShare</a></li>
+ </ul>
+ <ul class="nav-footer">
+ <li><a href="http://www.linkedin.com/in/updates?trk=hb_ft_liup" >LinkedIn Updates</a></li>
+ <li><a href="http://www.linkedin.com/today/post/whoToFollow?trk=hb_ft_influencers" >LinkedIn Influencers</a></li>
+ <li><a href="http://www.linkedin.com/jobs?displayHome=&amp;trk=hb_ft_jobs" >LinkedIn Jobs</a></li>
+ <li><a href="http://www.linkedin.com/directory/jobs/" >Jobs Directory</a></li>
+ <li><a href="http://www.linkedin.com/directory/companies/" >Company Directory</a></li>
+ <li><a href="http://www.linkedin.com/directory/groups/" >Groups Directory</a></li>
+ <li><a href="/skills/directory" >Skills Directory</a></li>
+ <li class="last"><a href="http://www.linkedin.com/directory/title/" >Title Directory</a></li>
+ </ul>
+ <p id="copyright">LinkedIn Corporation &copy; 2013</p>
+ <ul id="nav-legal">
+ <li><a href="/static?key=user_agreement&amp;trk=hb_ft_userag" >User Agreement</a></li>
+ <li><a href="/static?key=privacy_policy&amp;trk=hb_ft_priv" >Privacy Policy</a></li>
+ <li>
+ 
+ <a href="/redir/redirect?url=http%3A%2F%2Flinkedin%2Ecusthelp%2Ecom%2Fapp%2Fanswers%2Fglobal%2Fid%2F34593%2Fft%2Feng%2Floc%2F%27na%27%2Ftrk%2Fgroup_item_detail_guest%2F&amp;urlhash=mwar&amp;trk=help-en" target="_blank" rel="nofollow">Community Guidelines</a>
+ </li>
+ <li><a href="/legal/cookie_policy" >Cookie Policy</a></li>
+ <li class="last"><a href="/static?key=copyright_policy&amp;trk=hb_ft_copy" >Copyright Policy</a></li>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+ 
+
+ 
+ 
+ </ul>
+ </div>
+</div>
+
+
+ 
+
+<script type="text/javascript">
+
+
+ if ( typeof( oUISettings ) !== 'undefined' ) {
+ oUISettings.saveSettingsURL = "/lite/ui-settings-save?csrfToken=ajax%3A3709504301741708187";
+ }
+
+ if ( typeof( WebTracking ) !== 'undefined' ) {
+ WebTracking.saveWebActionTrackURL = "/lite/web-action-track?csrfToken=ajax%3A3709504301741708187";
+ }
+ if ( typeof( SearchWebTracking ) !== 'undefined' ) {
+ SearchWebTracking.saveSearchWebActionTrackURL = "/wt?csrfToken=ajax%3A3709504301741708187";
+ }
+</script>
+
+
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ <script type="text/javascript" src="http://static.licdn.com/scds/concat/common/js?h=7te4p95pipb5icveef284kps-6fpgvxfmet1dgazyby9ub4rnk"></script>
+ 
+ 
+
+
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+        
+    
+      
+
+          <script id="localChrome"></script>
+      
+    
+  
+     
+      
+    
+    
+    
+    
+    
+    
+  
+    
+                    <script type="text/javascript" src="http://static.licdn.com/scds/concat/common/js?h=dkyh7dq1lhk19287leoctro2c-1kgvpxgkm7b9iylnec4z9a0j1-9tc2xkl0y8jwzxnu6o0wnvxcz-dfpc1yil5f4234b53w2vatnbd-2q4a3qv922lpv4lycj7s9bazq-57aov2h3h9na3o7ilvrm21m6e"></script>
+    
+    
+  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+      
+      
+      
+       
+       
+   
+          
+    
+   
+        <script type="text/javascript">
+          YEvent.onDOMReady(function() {
+            LI.log("defer:js execution for "+YAHOO.lang.dump([
+              'http:\/\/static.licdn.com\/scds\/concat\/common\/js?h=9fn1u8cisjms2qtlsya7r23k7-8m3d6jfq04xsiwbmm8m30skpe-b7jlmmvvhel5q4502hhi3er59-3tu63s1gnqwg9wt4x4xxbmnat-1w8ib5u1eak4ztd094p33k2ex-dfimuec22cmsagc2ivh8b1rfq-4kj1l93ian9xttbty9ae5ganh-2u9y0ptyqosp9ligwl8ueexar-70ue2bsjivhu3kbkmdypme7kz-7g87annbkdzaard85ykqkxofa-3g1o1eq4xerv9pfouv7h7qbhq-7ng9ghupi9jwezig9hx0s5uwz-6i1c4kze4zjd83ttxoey1kue7-bxy64a5nzq5u9tjgrjkz8fxkj-cdwd3kr42v9ncfe8i27a30rkt-5fcngqorlx9v4dfpnmlsxihfo-4fzfpmf5qxj7trlaponlg4uke-a4heryjf391nav504lp93z37h-sjzcwllg35gwzd2l0ceaskgt',
+            ]), "defer-js", "shared.tmpl");
+            YAHOO.util.Get.script([
+              'http:\/\/static.licdn.com\/scds\/concat\/common\/js?h=9fn1u8cisjms2qtlsya7r23k7-8m3d6jfq04xsiwbmm8m30skpe-b7jlmmvvhel5q4502hhi3er59-3tu63s1gnqwg9wt4x4xxbmnat-1w8ib5u1eak4ztd094p33k2ex-dfimuec22cmsagc2ivh8b1rfq-4kj1l93ian9xttbty9ae5ganh-2u9y0ptyqosp9ligwl8ueexar-70ue2bsjivhu3kbkmdypme7kz-7g87annbkdzaard85ykqkxofa-3g1o1eq4xerv9pfouv7h7qbhq-7ng9ghupi9jwezig9hx0s5uwz-6i1c4kze4zjd83ttxoey1kue7-bxy64a5nzq5u9tjgrjkz8fxkj-cdwd3kr42v9ncfe8i27a30rkt-5fcngqorlx9v4dfpnmlsxihfo-4fzfpmf5qxj7trlaponlg4uke-a4heryjf391nav504lp93z37h-sjzcwllg35gwzd2l0ceaskgt',
+            ], {
+              onSuccess: function() {
+                LI.log("defer:js call successful", "defer-js", "shared.tmpl");
+                LI.Controls.processQueue();
+              },
+              onFailure: function() {
+                LI.log("defer:js call failed", "defer-js", "shared.tmpl");
+              }
+            });
+          });
+        </script>
+    
+
+	   
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+ 
+
+<script type="text/javascript">
+  YEvent.on( window, 'load', function() {
+    YAHOO.util.Get.script( 'http://www.google-analytics.com/ga.js', { onSuccess: function() {
+      var pageTracker = _gat._getTracker("UA-3242811-1");
+      
+      pageTracker._setDomainName(".linkedin.com");
+      pageTracker._setVar("guest");
+      pageTracker._trackPageview("group_item_detail_guest");
+    } });
+  });
+</script>
+
+
+
+
+
+
+<script type="text/javascript">/* <![CDATA[ */
+(function() {
+
+  var bcookie = escape( LI.readCookie("bcookie") ),
+    newTrkInfo = '3676376,222835085',
+    alias_secure = 'https://www.linkedin.com/analytics/noauthtracker?type=leo%2EpageTracking&pageType=full_page&pageKey=group_item_detail_guest_jsbeacon&trkInfo=REPLACEME',
+    alias_normal = '/analytics/noauthtracker?type=leo%2EpageTracking&pageType=full_page&pageKey=group_item_detail_guest_jsbeacon&trkInfo=REPLACEME',
+    is_secure = false,
+    url = (is_secure) ? alias_secure : alias_normal;
+
+  url = url.replace("REPLACEME", newTrkInfo);
+
+  if (bcookie) {
+    if(window.$ && $.ajax){
+      $.ajax(url);
+    } else {
+      YAHOO.util.Connect.asyncRequest( 'get', url, {} );
+    }
+  }
+
+})();
+/* ]]> */</script>   
+   <script type="text/javascript">
+      window.___gcfg = {lang: window.google_language};
+     (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/plusone.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     })();
+   </script>
+
+   
+     
+      
+     
+   
+    
+                
+    
+    
+   
+     
+    
+      
+   
+     
+                
+    
+     
+
+  <script type="text/javascript">
+    LI.define('AnetLikeDialogResources.Scripts');
+    LI.AnetLikeDialogResources.Scripts = 
+                ["http://static.licdn.com/scds/concat/common/js?h=ck3z4t1p830123htozbh1ltlm"]
+    ;
+   
+    LI.define('AnetLikeDialogResources.Styles');
+    LI.AnetLikeDialogResources.Styles = 
+                ["http://static.licdn.com/scds/concat/common/css?h=1ef557s87drrjh6y2x6t6q1vi"]
+    ;
+  </script>
+   
+
+      
+      
+      
+        
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+<script type="text/javascript">LI.Controls.processQueue();</script>
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+ 
+ 
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+<script type="text/javascript">
+  LI.define('Tracking.Quantcast');
+  LI.Tracking.Quantcast = function() {
+    _qoptions = { qacct:"p-b3sGjMtCFrexE" };
+    YAHOO.util.Get.script( 'http://edge.quantserve.com/quant.js' );
+  };
+  YEvent.on( window, 'load', LI.Tracking.Quantcast);
+</script>
+<noscript>
+  <a href="http://www.quantcast.com/p-b3sGjMtCFrexE" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-b3sGjMtCFrexE.gif" style="display: none;" height="1" width="1" alt=""></a>
+</noscript>
+
+ 
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+
+
+<script type="text/javascript">
+  LI.define('Tracking.Comscore');
+  LI.Tracking.Comscore = function() {
+    YAHOO.util.Get.script( 'http://b.scorecardresearch.com/beacon.js', {
+      onSuccess: function() {
+        COMSCORE.beacon({ c1:2, c2:6402952, c3:"", c4:"", c5:"", c6:"", c15:"" });
+      }
+    });
+  };
+  YEvent.on( window, 'load', LI.Tracking.Comscore);
+</script>
+<noscript>
+  
+      <img src="http://b.scorecardresearch.com/b?c1=2&amp;c2=6402952&amp;c3=&amp;c4=&amp;c5=&amp;c6=&amp;c15=&amp;cv=1.3&amp;cj=1" style="display:none" width="0" height="0" alt="">
+    
+</noscript>
+
+ 
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+    
+<script type="text/javascript">
+  YEvent.on( window, 'load', function() {
+    (function () {
+      var protocol = 'http:';
+      var d = new Image(1, 1);
+      d.onerror = d.onload = function () { d.onerror = d.onload = null; };    
+      d.src = [
+        protocol,
+        "//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603751h&cg=0&cc=1&si=", 
+        escape(window.location.href), "&rp=", 
+        escape(document.referrer),   
+        "&ts=compact&rnd=", 
+        (new Date()).getTime()
+      ].join('');
+    })();
+  });
+</script>
+<noscript>
+  
+      <img src="http://secure-us.imrworldwide.com/cgi-bin/m?ci=us-603751h&cg=0&cc=1&ts=noscript" width="1" height="1" alt="" style="display:none">
+    
+</noscript>
+
+
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ <script type="text/javascript">
+ if(typeof(WEBTRACK_GLOBAL) !== "undefined") {
+ WEBTRACK_GLOBAL.set('serverStartTime', ('1364217301.075')*1000);
+ WEBTRACK_GLOBAL.set('serverFirstFlushTime', ('1364217301.707')*1000);
+ WEBTRACK_GLOBAL.set('serverEndTime', ('1364217301.774')*1000);
+ }
+ </script>
+
+
+
+
+ </body>
+</html>
+      
+      
+        
+    
+    
+

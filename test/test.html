@@ -1,0 +1,376 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Test text file parsing</title>
+</head>
+
+<body bgcolor="white">
+
+Rohit and Samantha 26 March 2010
+
+Samantha: Director of Strategic Technology manages field engineers.
+
+I'll take 30 min to give you an overview of the system, then deeper
+dive into inventory aspects.
+
+Real-time reporting
+
+Let's go straight to campaign set-up
+
+PG: who is your typical user?
+
+R: typically geared toward publisher. They forge a partnership to use
+our platform. In your world, boston.com. Want to work with an ad
+server. Their traffic managers get campaigns from advertisers. Traffic
+manager gets insertion order. So they see all the campaigns.
+
+Operational arm of publisher to sift through campaigns they have
+sold. Make sure the system meets the goals, and optimize things.
+
+If publisher has contract to deliver a certain campaign, these reports
+have the proof they need. Reports are important from the point of use
+of advertiser for success of campaigns, but also help publishers to
+show their ability to meet goals, and thus sell more.
+
+Some reports are geared to external elements, but some are for the
+traffic manager to show if it is on target, if it's meeting criteria,
+if it's delayed, by how much?
+
+Also there is inventory competition, as there are hundreds of
+thousands of campaigns running at the same time. Therein lies part of
+the problem for which we are engaging you.
+
+PG: Sorry to ask basic questions!
+
+RG: No problem.
+
+Each campaign has different scheduling and targeting criteria.
+
+Here is an example: 
+
+Overview, schedule/billing, pages, excluded sites/pages, creatives,
+target, notifications (alerts etc., can be set with thresholds).
+
+TARGET:
+Domain
+
+
+...
+
+Query targeting: 126 possible page positions on the page. Each request
+to the server provides information about the content, the pseudo-URL
+and the position, plus a query string consisting of keyword-value
+pairs that consist of search terms for targeting.
+
+So if you want additional targeting information you would employ the
+query string (e.g., gender=female,age=45,...) or let's say someone is
+under arts & entertainment, someone looking at "contemporary art"
+has that sent as a query.
+
+Cookie targeting: if some publishers have cookie info and package it
+in the query, then we can use that.
+
+RDB = Registration Data Base (if available)
+
+Behavioral Targeting
+
+PG: how do you blend Claritas, Omniture or their other behavioral one?
+
+RG: some advertiser may want to use Claritas. Others Omniture.
+
+Let's say someone comes to publisher and says "I am interested in all
+folks interested in art & entertainment". If you take everyone who is
+interested in A&E, then it's fine.
+
+BUt what if someone who is interested in A&E shows up on a sports
+section, then how do you use the information? Then you put them in a
+segment regardless of where they are on the site.
+
+Segments are very tactical. Claritas is an historical breakdown of
+markets based on demographics, usage, etc.
+
+The segmentation is tactical, based on how they interact with your
+site. E.g, someone doing a certain thing may be interested in buying a
+car, which Claritas will never tell you about.
+
+SCHEDULING AND BILLING TAB
+
+Impressions, clicks or uniques.
+
+Priority level: all the way to the right, "S" means
+sponsorship. Exclusive campaign on a given page. So the basic level
+from inventory standpoint is a certain position on the page. Each page
+has multiple positions. That's the most granular level. Competition is
+among campaigns to grab each spot. AdServer tries to deliver the
+highest priority campaigns first, but make sure you don't completely
+block everyone.
+
+We set a 15-minute goal for top priority campaigns, then if those are
+met go to the next ones.
+
+Weight: if priority and everything else is the same, twice the weight
+means twice the exposure.
+
+PG: So, different campaigns from different advertisers are based on
+price? E.g., Nike vs. Reebok.
+
+Priority of 20 will always deliver more than an 18. But in addition,
+need to look at CPM tabulation against priority.
+
+Switch to CONFIGURATION of PRIORITY LEVEL.
+
+You build a grid as a publisher to say, you know, I get CPMs in the
+$20 range, anything above that is priority 20 (top). Tabulate in terms
+of eCPM (expected CPM) ranges min-max.
+
+So now when I go to billing fees and set a CPM target and use the
+yield manager, then the system figures it out automatically.
+
+"Competitive separation". Let's say Delta airlines and American
+Airlines. Two competing advertisers on contract do not want to show up
+together. Something else the delivery mechanism needs to check.
+
+You can always do overrides e.g.. if a campaign near end is way below
+targets, turn up priority.
+
+Also can specify what goals have to be met in order to end campaign.
+
+REACH: 
+house campaigns only deliver when no paid campaign can be delivered.
+fixed campaign: exactly some number of clicks
+Dynamic, some flexibility but no major swings. Initially figure out
+how many impressions to deliver daily, and tries to deliver that
+number, but then adapt the next days to balance out.
+
+Open: don't care, usually long-term campaign with no fixed hard goals.
+
+Fixed: calculated same as dynamic campaign as to what is delivered for
+a given day. Or you can have daily click number, or an impression
+overrun (e.g., give advertiser 10% bonus, for whatever reason).
+Daily delivery rate: ASAP or smooth.
+
+Companion positions. This too complicates inventory
+management. Campaigns fighting for a spot, and some fighting for
+multiple spots simultaneously. SOme competitive blocking.
+
+Frequency: we can cap frequency for a particular user. Primary
+frequency, e.g., no more than two impressions per day, and maybe no
+more than 10 per month.
+
+PG: what percentage of users cannot be tracked?
+
+RG: very small. Most require cookies. We typically generate our cooky
+in the publisher's domain. If they turn it off they will be in trouble
+with their experience.
+
+PG: But this is not a big deal?
+
+RG: not really, we can also track IP etc., but the reality is that
+it's not perfect in the industry. They will not always deliver
+messaging exactly as required. But if you are on Boston.com and have
+turned off cookies, then Boston.com will not provide certain
+facilitation mechanisms.
+
+PAGES:
+
+Sections can be used to provide a higher-level control, e.g., target
+at section level to capture multiple page types.
+
+OK, so if you get the point, it's a marriage of content and
+audience. Then campaigns are trying to gather or corner that piece of
+content and make sure they are showing up to be viewed by the right
+people.
+
+Traffic managers typically know what sort of positions support which
+type of ads, in some cases they can rotate as long as it does not ruin
+the point of the campaign.
+
+
+NEXT STEP: INVENTORY AND REPORTS
+
+Two aspects of inventory manager.
+
+(1) Give provider historical perspective in terms of what transpired
+with position, page, section, # of impressions... and also (2)
+futuristic aspect in terms of forecast: based on past historical
+patterns, we expect that this piece of real estate will generate this
+much impressions. And you may have overbooked, or have spare
+inventory.
+
+CONFIGURATION
+
+Historical period: past 4 weeks, past 12 weeks, same period last year,
+custom period.
+
+Algorithms:
+
+Uniform growth: same growth as you have experience in the past
+
+day of week - uniform growth: some sites show different patterns on
+weekends and weekdays
+
+day of week - no growth.
+
+flat average
+
+custom growth: skew up or down by certain percentage.
+
+PG: is this at publisher level? section level? page level?
+
+RG: that's the crux: this is at publisher level. That's a big
+deficiency.
+
+PG: I am guessing they use it for inventory forecasting and pricing?
+
+RG: yes, but a third one is to make sure that if they are overbooked
+or reach a certain level of booking, they have to satisfy advertisers
+and make sure they can deliver against promises, that they can
+deliver.
+
+PG: how would they do this??? Create new content?
+
+Well, one way is you can add capacity (unlike hotels or airlines). SO
+if you add a page, you can deliver more. Another thing might be:
+Mr. advertisers, we could only deliver 80% of impressions, but folks
+were paying more for them, so if you want to guarantee delivery, then
+you have to pay us a bit more.
+
+PG: what is the typical forecasting horizon?
+
+RG: typically six months, but sometimes a year.
+
+PG: from which I derive that you don't really account for spikes,
+tsunamis etc.?
+
+RG: well it depends on the site, e.g., they could use a custom growth
+rate if the weather is unstable. Or maybe on a political site, when
+the Clinton impeachment story went on for a long time, hard to
+predict. Some publishers may have a small growth curve.
+
+Also another aspect, each section will behave differently.
+
+Now let's look at forecast at lowest level: pages.
+
+Remnant inventory is what kicks in when you don't have any more paid
+inventory.
+
+Similar snapshot at section level, site level, various levels in the
+hierarchy.
+
+Note that this is without an overlap of the audience. Not capturing
+the features of the audience. So no overlay of targeting aspects from
+inventory standpoint.
+
+PG: unclear about Total (which is the forecast from the model)
+vs. Booked (which is the booked campaigns but not necessarily
+executed).
+
+So, back to overlaying the targeting on this.
+
+Given sheer number of targeting criteria, we do this in a piecemeal
+level. E.g., geographically we go down only by section.
+
+Geography inventory. Select your criteria, e.g., geo-targeting. Select
+the section, e.g. business. Check out resulting report.
+
+Forecasting cannot be done at page level. 
+
+Also keyword forecasting. 
+
+PG: so all the forecasting is purely based on each publisher and his
+or her own data? What if you are a new client?
+
+RG: not meaningful until you've been around for a few weeks, but it
+depends on how predictable you are as a site.
+
+But if you have a big spike that is not representative, then the
+numbers could take a long time to reveal the true picture.
+
+PG: you provide the specific keywords?
+
+Yes, you don't have to do it manually.
+
+RG: now we overlay on this the audience caps such as frequency. And
+then companion requirements.
+
+PG: but does that complicate ad delivery or forecasting?
+
+RG: if you see things not working, e.g., you set a frequency cap at 7, but
+you see little click through after 3rd impression, then you may change
+that on the fly.
+
+DD: Are all those other things captured in the forecasting?
+
+No. IN some cases we have done some custom things for clients that
+include some audience interactions.
+
+PG: so, the biggest problems are in inventory forecasting?
+
+Absolutely, checking inventory forecasting. For one thing, blanket
+inventory by publisher is not good. Second, in addition to algorithms
+we have, we need others. Third, we need to factor in a much more
+multi-variate system than what we have seen. We do not have bandwidth
+and do not have a statistical expertise in-house. We do not employ
+people like that, but we understand your company has.
+
+We are aware of deficiencies. This could be improved with one or two
+things. BUt for us to take it on we'd have to take it on, but need the
+expertise and time.
+
+DD: what do you mean by multivariate?
+
+Interplay of audience and content. Geographies, ... How about
+geography, with content, with a certain segment of user?
+
+The combination of any element of targeting, and also frequency cap,
+etc. E.g., I can tell you about anyone willing to buy a car in the LA
+target and who is in a certain income level -- and we can provide you
+1000 such users.
+
+You don't need hundreds of conditions, because if it only generates 5
+people they publishers don't want that.
+
+PG: we would probably take more of a user-centric forecasting
+approach.
+
+RG: we did not use to do that (user-centric) at all, have tried a
+little, but unfortunately not much interest in the industry. It makes
+sense, ultimately you are reaching an audience. At the end of the day
+it's all about behavior. If you target them about finance, it has to
+do with behavior.
+
+PG: do you think we can go after one of your clients for a joint
+project?
+
+RG: need to work with someone big and who covers a lot of factors that
+could then be generalized.
+
+PG: what about a 1/4 mil? How significant would that be?
+
+PG: we'd like to do it holistically.
+
+RG: that's a lot of money even for one of our customers. I can give
+Dave a sense of what you said. See what he thinks. What about timing?
+
+Hardware?
+
+No big deal.
+
+One element that is important to mention: the whole for you to figure
+out how a campaign will deliver against that inventory. So that's the
+other complication, factoring in the performance of the
+campaign. Could you do that as well? Mapping the campaign behavior
+based on prioritization.
+
+PG: Is your business based on traffic or not?
+
+Yes, but unfortunately commoditized. E.g., google is killing us and
+devaluing the charge for serving ads. Not about the technology.
+
+VOlume based but price pressure on it.
+
+PG: OK, we'll think it over and send you some sort of outline.
+
+</body>
+</html>

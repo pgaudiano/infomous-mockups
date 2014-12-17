@@ -1,0 +1,27 @@
+<?php
+
+$page = file_get_contents('http://www.tnaflix.com/');
+
+$page = str_replace(
+      '<head><title>',
+      '<head>
+      <base href="http://futurem.org/">
+      <title>',
+      $page);
+
+$page = str_replace(
+	 '<div align="center" style="margin-top: 5px;" id="rightPromo">',
+	 '
+	 <!-- Infomous insertion -->
+	 <script type="text/javascript" src="http://www.infomous.com/cloud_widget/4989?width=190&height=380&caption=false&setInteractionMode=hover"></script>
+
+<div align="center" style="margin-top: 5px;" id="rightPromo">
+',
+	$page
+);
+
+
+
+echo $page;
+
+?>

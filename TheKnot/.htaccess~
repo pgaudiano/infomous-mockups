@@ -1,0 +1,13 @@
+Satisfy Any
+Allow from All
+
+<Files "*.png">
+    Satisfy any
+    Allow from all
+</Files>
+
+<Files "*.jpg">
+    Satisfy any
+    Allow from all
+</Files>
+

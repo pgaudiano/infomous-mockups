@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<!--
+Things I am doing to this file for conversion:
+
+* Add proper header information
+* Convert each <Voice_of_Customer> into an <item> 
+* Make the item title a combination of Sender and Subject (if available)
+* Make the item description from the Contents
+* Strip out unnecessary tags:
+   - <Received> (Note: tried to convert to pubDate but format needs to be fixed)
+   - <Sender_x0020_Name>
+   - <Has_x0020_Attachments>
+
+-->
+<channel>
+  <title>Navistar Voice of Customer</title>
+  <link>http://www.infomous.com</link>
+  <description>Test of using Infomous to visualize Navistar's Voice of Customer messages
+    </description>
+  
+<item>
+<title>Kerri Podewell:
+voice of the customer template - FL</title>
+<description> 
+
+ 
+
+ 
+
+cid:image001.png@01C953BD.72B92370
+
+ 
+
+Kerri Podewell
+
+Director, Pricing &amp; Strategic Initiatives
+
+phone: 331-332-6966  І   cell:  630-743-9079
+
+ 
+
+Navistar, Inc.
+
+2701 Navistar Drive
+
+Lisle, IL  60532
+
+ 
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:</title>
+<description> 
+
+We should include the parts in the ppt to our VOC database.
+
+ 
+
+Thanks,
+Kerri
+
+ 
+
+cid:image001.png@01C953BD.72B92370
+
+ 
+
+Kerri Podewell
+
+Director, Pricing &amp; Strategic Initiatives
+
+phone: 331-332-6966  І   cell:  630-743-9079
+
+ 
+
+Navistar, Inc.
+
+2701 Navistar Drive
+
+Lisle, IL  60532
+
+ 
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: Boyer Meritor </title>
+<description>Starting of competitive knowledge…this one is old from 2009….would like some similar info more current on air bags if possible.
+
+ 
+
+From: Zinsli, Scott 
+Sent: Friday, May 04, 2012 12:57 PM
+To: Podewell, Kerri
+Cc: Mikula, Dean J
+Subject: Boyer Meritor 
+
+ 
+
+Here is the list from 2009.
+
+ 
+
+I will follow up with you on Goodyear Pricing, from Freightliner, and local WD’s
+
+ 
+
+Thanks for all your help.
+
+ 
+
+cid:image002.gif@01CA5968.E4FDF580
+
+Scott Zinsli
+
+Parts Sales Manager
+
+ 
+
+Navistar, Inc.
+
+605 D Walden Court
+
+Altoona, WI 54720
+
+ 
+
+P: 715-688-9780
+
+F: 715-834-8592
+
+scott.zinsli@navistar.com
+
+ 
+
+</description>
+</item>
+<item>
+<title>Alex Mendoza:
+FW: Pricing on AC29884PG...Direct Ship</title>
+<description>For voice of customer
+
+ 
+
+From: Podewell, Kerri 
+Sent: Thursday, May 10, 2012 1:44 PM
+To: Mendoza, Alex; Hoefferle, Gina; Felicelli, Joe
+Cc: Stone, Linda B
+Subject: FW: Pricing on AC29884PG...Direct Ship
+
+ 
+
+Gina and Joe – 
+
+Competitive intel.  
+
+ 
+
+Alex – 
+
+Please add to our “VOC” database.
+
+ 
+
+Thanks Linda for sending….we are consolidating a large population of data with which we are using for review in the next 30 days as well as developing a process for continued review moving forward.
+
+ 
+
+Regards,
+
+Kerri
+
+ 
+
+From: Stone, Linda B 
+Sent: Wednesday, May 09, 2012 5:08 PM
+To: Podewell, Kerri
+Cc: Bartz, Mike
+Subject: Pricing on AC29884PG...Direct Ship
+
+ 
+
+AA Wheel, Kansas City, Mo. sells this wheel to end user for $137………….our DN is $155.78
+
+ 
+
+Dealer is buying from AA wheel….no freight and lower price.  I don’t know what our cost is, but would be good to check it out, since it is exact same product…apples for apples  
+
+ 
+
+Linda Stone, PSM-Parts
+
+ 
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: pricing</title>
+<description>This would be comparable to our DNet.
+
+ 
+
+Once I send a few of these and you incorporate, can you please set up time to review format, and next steps?
+
+ 
+
+Thanks,
+
+Kerri
+
+ 
+
+From: Currlin, Carlos A 
+Sent: Thursday, May 10, 2012 4:46 PM
+To: Podewell, Kerri
+Subject: FW: pricing
+
+ 
+
+Kerri, here it is.
+
+ 
+
+From: Dave Olson [mailto:dolson@boyertrucks.com] 
+Sent: Thursday, May 10, 2012 4:45 PM
+To: Currlin, Carlos A
+Subject: pricing
+
+ 
+
+Carlos,
+
+ 
+
+Here is the list for all makes.
+
+ 
+
+Please let me know if you have any questions.
+
+ 
+
+Thanks
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: WD Pricing </title>
+<description>More data – WD direct competition.
+
+ 
+
+ 
+
+From: Zinsli, Scott 
+Sent: Thursday, May 10, 2012 9:33 AM
+To: Podewell, Kerri
+Cc: Mikula, Dean J
+Subject: WD Pricing 
+
+ 
+
+Kerri,
+
+Here are some examples on WD pricing in Iowa and Minnesota.
+
+I will be sending you updates as I receive them.
+
+ 
+
+cid:image002.gif@01CA5968.E4FDF580
+
+Scott Zinsli
+
+Parts Sales Manager
+
+ 
+
+Navistar, Inc.
+
+605 D Walden Court
+
+Altoona, WI 54720
+
+ 
+
+P: 715-688-9780
+
+F: 715-834-8592
+
+scott.zinsli@navistar.com
+
+ 
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: Parts Pricing</title>
+<description>More competitive intel
+
+ 
+
+ 
+
+From: Chuck Imbler, Jr. [mailto:chuckjr@truckcenterinc.com] 
+Sent: Tuesday, April 24, 2012 10:02 AM
+To: Podewell, Kerri
+Subject: FW: Parts Pricing
+
+ 
+
+Here are some flyers from MHC Kenworth out of Memphis by Diamond International
+
+Chuck Imbler, Jr.
+
+ 
+
+________________________________
+
+From: Rickey Hall [mailto:Rickey.Hall@diamondtrucks.com] 
+Sent: Monday, April 23, 2012 2:08 PM
+To: chuckjr@truckcenterinc.com; ekyrish@aol.com; Kerri.podewell@navistar.com
+Cc: Richard Sweebe
+Subject: FW: Parts Pricing
+
+ 
+
+Also see attachments
+
+ 
+
+ 
+
+
+
+ 
+
+Rickey Hall
+
+Parts Manager
+
+(901) 345-6300 (office)
+
+(901) 489-1835 (cell) 
+
+                    
+
+DIA_int+tag (2)
+
+ 
+
+Visit us at www.diamondtrucks.com &lt;http://www.diamondtrucks.com&gt;  or www.facebook.com/diamondtrucks &lt;http://www.facebook.com/diamondtrucks&gt; 
+
+ 
+
+Disclaimer Confidentiality Notice: This e-mail, and any attachments and/or documents linked to this email, are intended for the  addressee and may contain information that is privileged, confidential, proprietary, or otherwise protected by law. Any dissemination, distribution, or copying is prohibited. This notice serves as a confidentiality marking for the purpose of any confidentiality or nondisclosure agreement. If you have received this communication in error, please contact the original sender. 
+
+ 
+
+Please consider the environment before printing this email.
+
+ 
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: pricing eamples</title>
+<description>Another….
+
+ 
+
+ 
+
+From: Chuck Imbler, Jr. [mailto:chuckjr@truckcenterinc.com] 
+Sent: Thursday, April 19, 2012 4:11 PM
+To: Podewell, Kerri
+Subject: FW: pricing eamples
+
+ 
+
+Here is pricing examples from the Rush Enterprise people.
+
+Chuck
+
+ 
+
+________________________________
+
+From: SamoraM@rushenterprises.com [mailto:SamoraM@rushenterprises.com] 
+Sent: Thursday, April 19, 2012 9:38 AM
+To: chuckjr@truckcenterinc.com
+Cc: RyanR@rushenterprises.com
+Subject: pricing eamples
+
+ 
+
+Would you please forward to Kerri Podewell. Rich asked me to send some pricing examples.
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: pricing</title>
+<description>While this is an email….the source info is good.
+
+ 
+
+Can we note vendor in the database?  It would be compared to DNet  (but we will also compare to our cost in the end….)
+
+ 
+
+KP
+
+ 
+
+From: Chuck Imbler, Jr. [mailto:chuckjr@truckcenterinc.com] 
+Sent: Wednesday, April 25, 2012 4:21 PM
+To: Podewell, Kerri
+Subject: FW: pricing
+
+ 
+
+ 
+
+Here is a pricing Issue from Ed Kyrish out of Houston Texas. We also buy product from the company he references TTAC and there prices are much cheaper than Navistar.
+
+Chuck Imbler, Jr.
+
+ 
+
+________________________________
+
+From: ekyrish@aol.com [mailto:ekyrish@aol.com] 
+Sent: Wednesday, April 25, 2012 4:15 PM
+To: chuckjr@truckcenterinc.com
+Subject: Fwd: pricing
+
+ 
+
+FYI
+
+-----Original Message-----
+From: RONNIE HARTMAN &lt;RHARTMAN@INTLTRUCKS.COM&gt;
+To: ekyrish &lt;ekyrish@aol.com&gt;
+Sent: Wed, Apr 25, 2012 11:26 am
+Subject: FW: pricing
+
+Ed
+
+FYI
+
+ 
+
+We need to discuss we can purchase from a company called TTAC cost is $175.00. 
+
+Something is very wrong with Navistar’s pricing
+
+ 
+
+Ronnie
+
+ 
+
+ 
+
+ 
+
+From: RAY ZATOPEK [mailto:RZATOPEK@INTLTRUCKS.COM &lt;mailto:RZATOPEK@INTLTRUCKS.COM?&gt; ] 
+Sent: Tuesday, April 24, 2012 3:30 PM
+To: rhartman@intltrucks.com &lt;mailto:rhartman@intltrucks.com&gt; 
+Subject: pricing
+
+ 
+
+Ronnie, as our conversation here are the part numbers and issues , first Cy Fair I.S.D. drivers heater core 2585989c1 natl fleet $ 909.00 , they said they
+
+Can purchase this locally under a Kysor # 2612251 for $ 189.00, second pricing complaints on surge tank # 2602943c91 this price has increased
+
+From 2010  for $ 95.00, to 2011 $ 221.00, to current price of $ 315.68   this is  a duel port sure tank with a long hose and a piece of reflective tape
+
+There is another tank ( the tank itself is identical ) with a shorter hose and no tape 2602872c91 that sell for $ 153.09 customers do not understand
+
+Why such an increase and price difference. Thanks Ray Z.
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: Scanned from ToshParts 04/25/2012 14:44</title>
+<description>Email and file….
+
+ 
+
+From: Chuck Imbler, Jr. [mailto:chuckjr@truckcenterinc.com] 
+Sent: Wednesday, April 25, 2012 4:24 PM
+To: Podewell, Kerri
+Subject: FW: Scanned from ToshParts 04/25/2012 14:44
+
+ 
+
+More pricing issues from Houston Texas
+
+Chuck Imbler, Jr.
+
+ 
+
+________________________________
+
+From: ekyrish@aol.com [mailto:ekyrish@aol.com] 
+Sent: Wednesday, April 25, 2012 4:18 PM
+To: chuckjr@truckcenterinc.com
+Subject: Fwd: Scanned from ToshParts 04/25/2012 14:44
+
+ 
+
+  I TALKED WITH THREE DIFFERENT DEALERS.  IT  SEEMS LIKE AT THE MOMENT FLYERS ARE NOT IN VOGUE.
+
+PRICING COMPARISONS ARE WORSE THAN EVER.  LET ME EXPLAIN THE ATTACHED.
+
+ITEM # 1.  THIS IS A PTO WE ARE INSTALLING ON 50 NEW UNITS.  NAV. PRICE IS $ 581.96.  CUSTOMER WAS
+
+QUOTED $ 495.02.  OBVIOUSLY OUR COMPETITION IS MAKING A PROFIT.   WE HAVE ASKED FOR AN SPA.  
+
+WE WILL PURCHASE OUTSIDE IF WE DO NOT HEAR PROMPTLY.
+
+ITEM # 2
+
+IN THE SPIRIT OF DEALING WITH CARQUEST WE PURCHASED THIS BATTERY FOR 100.07.  NAV.DEALER NET
+
+WAS $ 49.05 .  WHERE IS THE RECIPROCITY?
+
+ITEM # 3.  
+
+THIS IS A PAGE FROM A COMPETITOR SHOWING THE HEATER CORE REFERRED TO YOU IN THE MESSAGE
+
+I FORWARDED YOUFROM RON HARTMAN.  THE PRICING IS RIDICULOUS.    
+
+ 
+
+DISREGARD THE SEAL PRICING MEMO.  I ADDRESSED IT LAST YEAR.  DON&apos;T KNOW HOW IT GOT COPIED.
+
+ 
+
+SORRY COULD NOT GIVE YOU MORE.  I WILL FORWARD JACK SAUMS RESPONSE.
+
+
+ 
+
+-----Original Message-----
+From: scanner1 &lt;scanner1@intltrucks.com&gt;
+To: ED KYRISH &lt;ekyrish@aol.com&gt;
+Sent: Wed, Apr 25, 2012 3:48 pm
+Subject: Scanned from ToshParts 04/25/2012 14:44
+
+Scanned from ToshParts.
+Date: 04/25/2012 14:44
+Pages:5
+Resolution:200x200 DPI
+----------------------------------------
+This is automated scan.  Please do not reply.
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: FL template to DL (2).xlsx</title>
+<description> 
+
+ 
+
+From: Nana [mailto:nhirsch@barrtruck.com] 
+Sent: Tuesday, April 24, 2012 3:06 PM
+To: Bogel, William R (Bill)
+Cc: Bartz, Mike; Veranese, James T (Jim); Podewell, Kerri
+Subject: FL template to DL (2).xlsx
+
+ 
+
+Lets try this again.
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: Autocar Sales to Rush</title>
+<description>This and Boyer should be top priority for review.
+
+ 
+
+Thanks,
+
+Kerri
+
+ 
+
+From: Harris, Mike P 
+Sent: Friday, May 11, 2012 7:36 AM
+To: Podewell, Kerri
+Cc: Cancelliere, Michael A
+Subject: Autocar Sales to Rush
+
+ 
+
+Kerri – stop by and I’ll give you the background on this file.
+
+ 
+
+ 
+
+ 
+
+cid:image001.png@01C953BD.72B92370
+
+Mike Harris
+
+Director, Product Management - Vehicle Components Group
+
+ 
+
+Navistar Inc | 2701 Navistar Drive, Lisle, IL 60532
+
+P:  331-332-2125 | C: 813-376-9977  mike.harris@navistar.com
+
+ 
+
+ 
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: ATF Fluid - FATF27101D</title>
+<description>Please add to VOC database.
+
+ 
+
+ 
+
+ 
+
+From: Benko, Russell 
+Sent: Tuesday, May 15, 2012 9:05 AM
+To: Podewell, Kerri
+Subject: RE: ATF Fluid - FATF27101D
+
+ 
+
+PDC,
+
+ 
+
+I think it is Fleetrite 
+
+ 
+
+The supplier is BASF.
+
+NAVISTAR-Parts_SIG_rev
+
+Russell Benko
+
+Pricing Manager
+
+ 
+
+Navistar, Inc.
+
+4201 Windfield Road
+
+Warrenville, IL, 60555 USA
+
+ 
+
+P: (331) 332-2018
+
+ 
+
+From: Podewell, Kerri 
+Sent: Monday, May 14, 2012 5:19 PM
+To: Benko, Russell
+Subject: FW: ATF Fluid - FATF27101D
+
+ 
+
+Is this PDC or DS?
+
+ 
+
+ 
+
+From: Benko, Russell 
+Sent: Monday, May 14, 2012 4:35 PM
+To: Podewell, Kerri
+Subject: ATF Fluid - FATF27101D
+
+ 
+
+This is the part you asked me to follow up on.
+
+ 
+
+Our price on this part is $2166.19
+
+ 
+
+Our cost is $1,630
+
+ 
+
+Alison’s price is $1,610.53 
+
+ 
+
+Our cost is higher than the competitive price.
+
+ 
+
+NAVISTAR-Parts_SIG_rev
+
+Russell Benko
+
+Pricing Manager
+
+ 
+
+Navistar, Inc.
+
+4201 Windfield Road
+
+Warrenville, IL, 60555 USA
+
+ 
+
+P: (331) 332-2018
+
+ 
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: Emailing: 20120518084632832</title>
+<description>Price - Kenworth data for VOC
+
+Gina - can you summarize how we compare - both our DNet, and our GM%  (to understand if a cost issue or price risk compared to Kenworth)
+
+Thanks,
+Kerri
+
+-----Original Message-----
+From: Malcolm Pierson [mailto:malcolm@westrux.com] 
+Sent: Monday, May 21, 2012 12:31 PM
+To: Podewell, Kerri
+Cc: David Kenney-c
+Subject: FW: Emailing: 20120518084632832
+
+Kerri    Here is another line of parts (Bendix) that might need to be looked
+at.  
+
+-----Original Message-----
+From: Eddie Lloyd [mailto:elloyd@westrux.com]
+Sent: Friday, May 18, 2012 8:50 AM
+To: malcolm@westrux.com
+Subject: Emailing: 20120518084632832
+
+Mal
+
+Check out the pricing on the 298818 bendix knob. I put that we purchased from Freightliner but seen that we got it from Kenworth.
+
+Eddie
+The message is ready to be sent with the following file or link attachments:
+
+20120518084632832
+
+
+Note: To protect against computer viruses, e-mail programs may prevent sending or receiving certain types of file attachments.  Check your e-mail security settings to determine how attachments are handled.
+
+-----
+No virus found in this message.
+Checked by AVG - www.avg.com
+Version: 2012.0.2176 / Virus Database: 2425/5007 - Release Date: 05/18/12
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: Competitive Information</title>
+<description>Info to VOC
+
+ 
+
+From: Hoefferle, Gina 
+Sent: Monday, May 21, 2012 10:29 AM
+To: vincentwigfield@delvaltrucks.com
+Cc: Benko, Russell; Houseward, David N; Price; Podewell, Kerri
+Subject: FW: Competitive Information
+
+ 
+
+Vince,
+
+ 
+
+Thank you for sharing the data.  I do have a question.  Can you tell me what price level these prices would be compared to?
+
+ 
+
+·         For example, the Bendix 102657N is advertised at $21.91 in attachment 5.  Current Navistar National Fleet is $12.89 and Retail is $25.86 for part BX102657N.  Would you be competing at the Retail price level with this competitor?
+
+ 
+
+·         Bendix Air Dryer Cartridge is 109685X is $157.91 in the advertisement.  Navistar National Fleet is $179.17 and Retail is $378.13.  What price level would we be comparing to in this example?
+
+ 
+
+ 
+
+Thanks,
+
+ 
+
+ 
+
+NAVISTAR-Parts_SIG_rev
+
+ 
+
+Gina Hoefferle
+
+Pricing Manager
+
+ 
+
+Navistar, Inc.
+
+2701 Navistar Drive
+
+Lisle, IL 60532 
+
+P:  331-332-3712
+
+E: Gina.Hoefferle@Navistar.com
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+From: Vincent Wigfield [mailto:vincentwigfield@delvaltrucks.com] 
+Sent: Friday, May 18, 2012 12:09 PM
+To: Price
+Cc: Todd Moyer; Carroll, Kevin J
+Subject: Competitive Information
+
+ 
+
+Greetings:
+
+The six attachments, submitted for your information, are examples of competitive pricing we continuously face in our market area.
+
+Please contact our Parts Manager, Todd Moyer, or me with any questions you may have.
+
+Thank you,
+
+Vince Wigfield,
+
+Del-Val International Trucks, Inc.
+
+ 
+
+</description>
+</item>
+
+</channel>
+</rss>
+

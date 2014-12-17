@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html id="HTMLTag" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+    <title>
+        Find Jobs on CareerBuilder.com
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="cb.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&dummy=.js"></script>
+    <script type="text/javascript" src="lib/shadowbox.js"></script>
+    <link type="text/css" rel="stylesheet" href="lib/shadowbox.css"/>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+</head>
+
+<body>
+    <header class="desktop-header">
+        <div class="new-platform-nav">
+            <div class="row">
+                <div class="small-6 columns no-padding">
+		  <table width=100%>
+				<tr>
+					<td align=left>
+						<a href="http://www.infomous.com"><img src="http://www.infomous.com/site/logos/logo_on_white.jpg" height="50"></a>
+					</td>
+                    <td align=right>
+                    <a id="_ctl1_cbLogo" title="Click to go to the CareerBuilder homepage" class="desktop-logo" href="index.html"></a>
+                    </td>
+				</tr>
+			</table>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Begin QuickBarV2 -->
+    <div class="quickSearchBar clearfix">
+        <div class="quickbar_inner css3 clearfix">
+            <div class="narrowWidth clearfix">
+                <a href="#" id="search-form"></a>
+                <div class="searchBox quickbar_large clearfix">
+                    <h1>Find Jobs</h1>
+                    <div class="inputWrapper">
+                        <label for="s_rawwords">Keywords
+                            <span class="example">Ex. Registered Nurse or Sales</span>
+                        </label>
+                        <input id="s_rawwords" name="s_rawwords" maxlength="512" type="text" class="cbautocomplete-keywords">
+                    </div>
+                    <div id="AutoComplete" class="inputWrapper">
+                        <label for="s_freeloc">Location
+                            <span class="example">Ex. Chicago, IL or 60607</span>
+                        </label>
+                        <input class="cbautocomplete-location placeholder" id="s_freeloc" type="text" name="s_freeloc">
+                    </div>
+                    <!-- Job Categories -->
+                    <div id="careersByCategory" class="inputWrapper">
+                        <label for="s_jobtypes">Careers by Category</label>
+                        <select id="s_jobtypes" name="s_jobtypes" value="Accounting">
+                            <option value="ALL">- Select a Job Category -</option>
+                            <option value="JN001">Accounting</option>
+                            <option value="JN002">Admin - Clerical</option>
+                            <option value="JN054">Automotive</option>
+                            <option value="JN038">Banking</option>
+                            <option value="JN053">Biotech</option>
+                            <option value="JN019">Business Development</option>
+                            <option value="JN059">Business Opportunity</option>
+                            <option value="JN043">Construction</option>
+                            <option value="JN020">Consultant</option>
+                            <option value="JN003">Customer Service</option>
+                            <option value="JN021">Design</option>
+                            <option value="JN027">Distribution - Shipping</option>
+                            <option value="JN031">Education</option>
+                            <option value="JN004">Engineering</option>
+                            <option value="JN022">Entry Level</option>
+                            <option value="JN018">Executive</option>
+                            <option value="JN017">Facilities</option>
+                            <option value="JN005">Finance</option>
+                            <option value="JN060">Franchise</option>
+                            <option value="JN006">General Business</option>
+                            <option value="JN051">General Labor</option>
+                            <option value="JN046">Government</option>
+                            <option value="JN070">Government - Federal</option>
+                            <option value="JN055">Grocery</option>
+                            <option value="JN023">Health Care</option>
+                            <option value="JN040">Hospitality - Hotel</option>
+                            <option value="JN007">Human Resources</option>
+                            <option value="JN008">Information Technology</option>
+                            <option value="JN056">Installation - Maint - Repair</option>
+                            <option value="JN034">Insurance</option>
+                            <option value="JN015">Inventory</option>
+                            <option value="JN030">Legal</option>
+                            <option value="JN041">Legal Admin</option>
+                            <option value="JN037">Management</option>
+                            <option value="JN029">Manufacturing</option>
+                            <option value="JN009">Marketing</option>
+                            <option value="JN047">Media - Journalism - Newspaper</option>
+                            <option value="JN058">Nonprofit - Social Services</option>
+                            <option value="JN050">Nurse</option>
+                            <option value="JN010">Other</option>
+                            <option value="JN049">Pharmaceutical</option>
+                            <option value="JN024">Professional Services</option>
+                            <option value="JN016">Purchasing - Procurement</option>
+                            <option value="JN025">QA - Quality Control</option>
+                            <option value="JN057">Real Estate</option>
+                            <option value="JN026">Research</option>
+                            <option value="JN035">Restaurant - Food Service</option>
+                            <option value="JN033">Retail</option>
+                            <option value="JN011">Sales</option>
+                            <option value="JN012">Science</option>
+                            <option value="JN013">Skilled Labor - Trades</option>
+                            <option value="JN028">Strategy - Planning</option>
+                            <option value="JN014">Supply Chain</option>
+                            <option value="JN048">Telecommunications</option>
+                            <option value="JN032">Training</option>
+                            <option value="JN044">Transportation</option>
+                            <option value="JN069">Veterinary Services</option>
+                            <option value="JN045">Warehouse</option>
+                        </select>
+                    </div>
+                    <div id="searchPanel" class="inputWrapper narrowbox">
+                        <input type="Submit" class="btn" id="qsbButton" value="Find Jobs" title="Find Jobs" onclick="find()">
+                        <!-- link to advanced search page-->
+                        <a id="_ctl6_NavBar_ucQuickBar_advSearch" title="Advanced Search" href="careerBuilder_advanced_search.html">Advanced Search</a>
+                    </div>
+                    <!-- </form> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <BR>
+    <!-- End QuickBarV2 -->
+<!-- BEGIN Infomous insertion --> 
+<script>
+    // set up googlemaps autocomplete address suggestion
+    var input = document.getElementById('s_freeloc');
+    var options = {
+        componentRestrictions: {
+            country: 'us'
+        }
+    };
+    new google.maps.places.Autocomplete(input, options);
+   
+    Shadowbox.init({
+      handleOversize: "resize"
+    });
+    var myFeed = "http://www.careerbuilder.com/RTQ/rss20.aspx?rssid=RSS_PD&num=100"; // Feeds constructed above.
+    var cloud;
+    var myInfomousCloud = {  // Parameters that alter the look & feel of the cloud.
+      api: "true",
+      width: "1000",
+      height: "500",
+      setFrame: "True",
+      setControls: "False",
+      textOption: "TITLE_ONLY",
+    maxWords: "30",
+    skinBackgroundImage: "http://www.infomous.com/site/images/careerbuilder.png",
+    hiddenSource: "http://www.infomous.com/site/blocked/english.txt",
+    skinLine1Size: "14",
+    skinLine2Size: "12",
+    setFrame: "1",
+    colFrame: "0x0079B5",
+    colFrameTitle: "0xFFFFFF",
+    skinSourcesWidth: "450",
+    skinMaxFontSize: "42",
+    skinMinFontSize: "14",
+    colWord: "0x201c56",
+    colHoverBox: "0x201c56",
+    colLinkHover: "0xf7b68b",
+    colBlob: "0xfffcff",
+    colBlobBorder: "0xff6600",
+    colBlobHover: "0xe1edf2",
+    colSourcesFill: "0xfcf0e8",
+    colSourcesBorder: "0x0079b5",
+    colButton: "0x023658",
+    colButtonHover: "0x081c29",
+    colButtonDown: "0x0566a6",
+    colBackground: "0xffffff",
+    title: "Explore CareerBuilder.com jobs with Infomous",
+    }
+    // This is the main Infomous API function
+    function infomous_ready(I) {
+      cloud = I.clouds.get();  // Create the cloud object
+      
+      cloud.set_var('feeds',myFeed);   // Set the feeds
+    
+      cloud.make_request();   // Update the cloud
+    }
+    function find() {
+        var feed = "http://www.careerbuilder.com/RTQ/rss20.aspx?rssid=RSS_PD&num=100";
+         // get search keywords
+        var kw = document.getElementById('s_rawwords').value; 
+        kw = kw.trim().split(" ").join("+");
+        // get location
+        var loc = document.getElementById('s_freeloc').value; 
+        // get selected job category
+        var jselector = document.getElementById('s_jobtypes'); 
+        var jtype = jselector.options[jselector.selectedIndex].value;
+        var query = "&kw=" + kw + "&cat=" + jtype;
+        // if user inputs a zip code as location
+        if (!isNaN(loc)) {
+            query = query + "&city=" + loc;
+        } else {
+            // if not a zip code, if should be city, state
+            var loca = loc.split(",");
+            var city = loca[0].trim().split(" ").join("+");
+            var state = loca[1].trim().split(" ").join("+");
+            query = query + "&city=" + city + "&state=" + state;
+        }
+        feed = feed.concat(query);
+        cloud.set_var('feeds',feed);
+        cloud.make_request();
+    }
+</script>
+<center>
+<script type="text/javascript" async data-infomous-id="myInfomousCloud" src="http://www.infomous.com/client2/"></script>
+</center>
+</body>
+</html>

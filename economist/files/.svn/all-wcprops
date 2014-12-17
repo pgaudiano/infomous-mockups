@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/58552/dev/text_sites/trunk/economist/files
+END
+blocked_words.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/58263/dev/text_sites/trunk/economist/files/blocked_words.txt
+END
+adCampaigns.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/58264/dev/text_sites/trunk/economist/files/adCampaigns.xml
+END
+composite_words.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/58158/dev/text_sites/trunk/economist/files/composite_words.txt
+END

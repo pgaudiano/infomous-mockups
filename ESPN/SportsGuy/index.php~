@@ -1,0 +1,19 @@
+<?php
+$page = file_get_contents('http://sports.espn.go.com/espn/page2/simmons/index');
+
+$page = str_replace(
+		    '<div class="sg-row2-left">',
+		    '
+		<div class="sg-row2-left">
+
+		<div class="leftItem clearfix">
+		<h1>Interactive Bill Simmons Blog Navigator</h1>
+		<script type="text/javascript" src="cloud.js"></script>
+                </div>
+',
+	$page
+);
+
+echo $page;
+
+?>

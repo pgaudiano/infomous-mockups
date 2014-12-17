@@ -1,0 +1,38 @@
+<network>
+ <exceptions/>
+
+<!-- Feed REQUESTS section -->
+  <requests>
+   <rssInputRequest id="0" >
+   </rssInputRequest>
+
+   <rssInputRequest id="10" feedName="Archery" url="http://www.london2012.com/archery"></rssInputRequest>
+
+  </requests>
+<!-- SOURCES section -->
+<sources>
+
+  <source id="0" request="0" title="Source 0 title" url="http://www.infomous.com"></source>  <!-- Blank -->
+
+</sources>
+
+<ads>
+	<ad id="0" line1="This is Ad 0 Line 1" line2="Ad 0 line 2" url="http://www.blah.com" img="http://ew.infomous.com/images/Cowboys_48x48_01.jpg"/>
+</ads>
+
+<!-- WORDS section -->
+<words>
+
+   <word id="100" text="Word 100" count="3" group="1" sources="0" ads="0"/>
+   <word id="200" text="Word 200" count="2" group="1" sources="0"/>
+   <word id="300" text="Word 300" count="4" group="2" sources="0"/>
+</words>
+
+<!-- LINKS section -->
+<links>
+
+  <link from="100" to="200" weight="2.0"/>
+
+</links>
+
+</network>

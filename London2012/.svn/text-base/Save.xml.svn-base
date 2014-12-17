@@ -1,0 +1,205 @@
+<!-- This is a sample xml file that can be fed directly to the Infomous front end. The file should contain four sections:
+<requests> Appear as greyed out text and can optionally have a URL link, typically this would be the URL of the original RSS file
+<sources> are links to actual articles, typically one item in the RSS list
+<words> is the list of words actually show. Here you also specify grouping
+<links> determine which links are shown between which words.
+-->
+<network>
+ <exceptions/>
+
+<!-- Feed REQUESTS section -->
+  <requests>
+
+<!-- Feed: Infomous / Main -->
+   <rssInputRequest id="0" feedName="Welcome to Infomous" url="http://www.infomous.com">
+   </rssInputRequest>
+
+<!-- Feed: Personal -->
+   <rssInputRequest id="10" feedName="Infomous for Personal Web Surfing" url="http://www.infomous.com/drupal/welcome/personal">
+   </rssInputRequest>
+
+<!-- Feed: Publishers -->
+   <rssInputRequest id="20" feedName="Infomous for publishers" url="http://www.infomous.com/drupal/welcome/enterprise">
+   </rssInputRequest>
+
+<!-- Feed: Advertisers -->
+   <rssInputRequest id="30" feedName="Infomous for Advertisers" url="advertisers.html">
+   </rssInputRequest>
+
+<!-- Feed: Advertisers -->
+   <rssInputRequest id="40" feedName="Gallery of sample Infomous clouds" url="http://www.infomous.com/drupal/explore/main">
+   </rssInputRequest>
+
+<!-- Feed: Help -->
+   <rssInputRequest id="50" feedName="Infomous Help and User Guide" url="http://www.infomous.com/drupal/help/main">
+   </rssInputRequest>
+
+<!-- Feed: Contacts -->
+   <rssInputRequest id="60" feedName="Contact us">
+   </rssInputRequest>
+   <rssInputRequest id="61" feedName="Send us e-mail" url="mailto:info@infomous.com">
+   </rssInputRequest>
+   <rssInputRequest id="62" feedName="Personal use information request" url="http://www.infomous.com/drupal/welcome/personal">
+   </rssInputRequest>
+   <rssInputRequest id="63" feedName="Publisher/enterprise information request" url="http://www.infomous.com/drupal/welcome/enterprise">
+   </rssInputRequest>
+
+<!-- Feed: Sharing sites -->
+   <rssInputRequest id="101" feedName="del.icio.us"  url="http://del.icio.us/post?url=http%3A%2F%2Finfomous.com%2F&amp;title=A%20new%20way%20to%20navigate">
+   </rssInputRequest>
+   <rssInputRequest id="102" feedName="Digg"  url="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Finfomous.com%2F&amp;title=A%20new%20way%20to%20navigate" >
+   </rssInputRequest>
+   <rssInputRequest id="103" feedName="Furl"  url="http://www.furl.net/storeIt.jsp?u=http%3A%2F%2Finfomous.com%2F&amp;t=A%20new%20way%20to%20navigate" >
+   </rssInputRequest>
+   <rssInputRequest id="104" feedName="Reddit"  url="http://reddit.com/submit?url=http%3A%2F%2Finfomous.com%2F&amp;title=A%20new%20way%20to%20navigate" >
+   </rssInputRequest>
+   <rssInputRequest id="105" feedName="StumbleUpon"  url="http://www.stumbleupon.com/submit?url=http%3A%2F%2Finfomous.com%2F&amp;title=A%20new%20way%20to%20navigate" >
+   </rssInputRequest>
+   <rssInputRequest id="106" feedName="Technorati"  url="http://technorati.com/faves?add=http%3A%2F%2Finfomous.com%2F" >
+   </rssInputRequest>
+
+<!-- 800s are for sponsored ads -->
+   <rssInputRequest id="801" feedName="Find the perfect name for your baby with Nymbler" url="http://www.nymbler.com">
+   </rssInputRequest>
+   <rssInputRequest id="802" feedName="Discover the power of Icosystem's predictive modeling and analytics" url="http://www.icosystem.com">
+   </rssInputRequest>
+   <rssInputRequest id="803" feedName="See how The Atlantic is using Infomous" url="http://www.theatlantic.com">
+   </rssInputRequest>
+
+<!-- Feed: Miscellaneous -->
+   <rssInputRequest id="810" feedName="Get more information in a pop-up" url="popup.php">
+   </rssInputRequest>
+<!-- Feed 999 is blank-->
+   <rssInputRequest id="999">
+   </rssInputRequest>
+   
+  </requests>
+
+<!-- SOURCES section -->
+<sources>
+
+  <source id="0" request="0" url="http://www.infomous.com/welcome/new" title="Infomous: a new way to navigate online"></source>
+  <source id="9" request="999" title="Welcome to Infomous, the revolutionary new way to navigate online. Use the links below or hover other words to find out more."></source>
+
+  <!-- Sources: Personal -->
+  <source id="10" request="10" ></source>
+  <source id="19" request="999" title="Discover an entirely new way to surf your favorite sources of online information. Our personal site (launching in Q4-2010) allows you to create, edit and share custom Infomous clouds for many online destinations."></source>
+
+  <!-- Sources: Professional -->
+  <source id="20" request="20" ></source>
+  <source id="29" request="999" url="http://www.infomous.com/drupal/welcome/enterprise" title="You can add Infomous to your web site, blog, portal, or other online destination. Use the link below to request information about Infomous for Publishers"></source>
+
+  <!-- Sources: Advertisers -->
+  <source id="30" request="30" ></source>
+  <source id="39" request="999" title="Infomous revolutionizes the way targeted advertising is delivered, offering the benefits of both display and search advertising, and much, much more." url="advertisers.html"></source>
+  <source id="31" request="999" title="Users can embed any publisher's feeds and Infomous clouds on their own sites or on infomous.com. This generates a viral spread of information that drives traffic back to publishers."></source>
+
+  <!-- Sources: Examples -->
+  <source id="40" request="40" ></source>
+  <source id="49" request="999" title="View some examples of Infomous clouds for reading news, want ads, blogs,social sites, even foreign-language sites."></source>
+
+  <!-- Sources: Help -->
+  <source id="50" request="50" ></source>
+  <source id="59" request="999" title="Infomous is a revolutionary way to navigate online. Hover your mouse over a word to reveal releated information and links. Click on a word to make it the focus. Remove unwanted words.
+
+The cloud you are seeing was created with Infomous to navigate this site. Explore the rest of the site to find out more, or follow the link below for a more detailed user guide."></source>
+
+  <!-- Sources: Contact -->
+  <source id="60" request="999" title="Contact us using one of the following:"></source>
+  <source id="61" request="61" ></source>
+  <source id="62" request="62" ></source>
+  <source id="63" request="63" ></source>
+
+  <!-- Sources: Sharing sites -->
+  <source id="100" request="999" title="Share Infomous with your favorite sites:"></source>
+  <source id="101" request="101"></source>
+  <source id="102" request="102"></source>
+  <source id="103" request="103"></source>
+  <source id="104" request="104"></source>
+  <source id="105" request="105"></source>
+  <source id="106" request="106"></source>
+
+  <!-- Sources: sponsored links -->
+
+  <!-- Generic SPONSORED LINK header -->
+  <source id="800" request="999" title="------- SPONSORED LINK -------"></source>  <!-- Header -->
+
+  <!-- The following use the request to display a sponsored link -->
+  <!--
+      <source id="801" request="801" title="SPONSORED LINK:"></source>
+      <source id="802" request="802" title="SPONSORED LINK:"></source>
+      <source id="803" request="803" title="SPONSORED LINK:"></source>
+      -->
+
+  <!-- The following use the source to display a sponsored link -->
+  <source id="801" request="999" title="Find the perfect name for your baby with Nymbler" url="http://www.nymbler.com"></source>  <!-- Nymbler -->
+  <source id="802" request="999" title="Discover the power of Icosystem's predictive modeling and analytics" url="http://www.icosystem.com"></source>  <!-- Icosystem -->
+  <source id="803" request="999" title="Get your daily news and more at The Atlantic" url="http://www.theatlantic.com"></source>  <!-- Atlantic -->
+
+  <!-- Sources: MISC -->
+  <source id="810" request="999" url="http://www.infomous.com/"></source> <!-- test popup -->
+  <source id="901" request="10"></source>    <!-- Personal -->
+  <source id="902" request="20"></source>    <!-- Publishers -->
+
+  <source id="999" request="999"></source>  <!-- Blank -->
+
+</sources>
+<!-- WORDS section -->
+<words>
+
+<!-- Infomous main -->
+   <word id="0" text="Infomous" count="3.5" group="0" sources="802,800,30,10,20,40,50,9"/>
+
+<!-- Personal -->
+   <word id="10" text="Personal" count="3.1" group="0" sources="801,800,10,19"/>
+
+<!-- Publishers -->
+   <word id="20" text="Publishers" count="3.0" group="0" sources="803,800,20,29"/>
+
+<!-- Advertisers -->
+   <word id="30" text="Advertisers" count="2.9" group="0" sources="802,800,30,39"/>
+
+<!-- Examples -->
+   <word id="40" text="Gallery" count="3.0" group="0" sources="802,800,40,49"/>
+
+<!-- Help -->
+   <word id="50" text="  Help  " count="3.0" group="5" sources="802,800,50,59"/>
+
+<!-- Contacts -->
+   <word id="60" text="Contact" count="1.5" group="5" sources="802,800,61,62,63,60"/>
+
+<!-- Sharing -->
+   <word id="100" text="Share" count="3.0" group="10" sources="106,105,104,103,102,101,100"/>
+<!--
+   <word id="101" text="Like" count="3.0" group="10" sources="106,105,104,103,102,101,100"/>
+-->
+
+
+</words>
+
+<!-- LINKS section -->
+<links>
+
+<!-- Links: Infomous main -->
+  <link from="0" to="10" weight="1.0"/>
+  <link from="0" to="20" weight="3.0"/>
+  <link from="0" to="30" weight="3.0"/>
+  <link from="0" to="40" weight="3.0"/>
+
+<!-- Links: Personal -->
+
+<!-- Links: Publishers -->
+
+<!-- Links: Advertisers -->
+
+<!-- Links: Examples -->
+
+<!-- Links: Help -->
+  <link from="50" to="60" weight="1.0"/>
+
+<!-- Links: Share -->
+
+</links>
+
+</network>
+

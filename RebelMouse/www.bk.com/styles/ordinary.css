@@ -1,0 +1,62 @@
+﻿/** ordinary.master **/
+body 
+{
+    background: #ffffff!important;
+}
+
+
+
+.ordinaryWrapper
+{
+    padding-top: 190px; 
+    position:relative;
+}
+
+.ordinaryWrapper .contentArea
+{
+    position:relative;
+}
+
+.ordinaryWrapper .contentH1Title
+{
+    
+    color: #ffffff;
+    float: left;
+    margin-left: 140px;
+    margin-top: -105px;
+    
+    text-shadow: 0px 0px 4px #999;
+}
+
+.ordinaryWrapper #UtilityPane
+{
+    position: absolute;
+    top: -130px;
+    right: 0px;
+    height: 130px;
+}
+
+/** ordinary_withframe.master **/
+.frameContentWrapper
+{
+    width: 958px;
+    position: relative;
+    left: -4px;
+    margin-bottom: 30px;
+}
+.frameContentWrapper .borderTop
+{
+    height: 10px;
+    background: url(../images/ordinary/ordinary-frame-bkg-top.png) no-repeat;
+}
+.frameContentWrapper .borderBottom
+{
+    height: 10px;
+    background: url(../images/ordinary/ordinary-frame-bkg-bottom.png) no-repeat;
+}
+.frameContentWrapper .contentBody
+{
+    background: url(../images/ordinary/ordinary-frame-bkg-body.png) repeat-y;
+    padding: 20px 30px;
+}
+

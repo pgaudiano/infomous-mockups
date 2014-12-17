@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guess Who?</title>
+<style type="text/css">
+  <!--
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h5{
+    margin-bottom: 0.2em;
+  }
+  -->
+</style>
+
+<script type="text/javascript">
+var numWords=1;
+var maxWords=20;
+var persons = new Array();
+var numPersons = 1;
+var myPerson = 1;
+var baseURL = "http://www.infomous.com/site/mockups/GuessWho/";
+persons[numPersons++] = "PaoloGaudiano";
+persons[numPersons++] = "PabloFunes";
+persons[numPersons++] = "EricBonabeau";
+persons[numPersons++] = "LeonardoSolaas";
+
+numPersons--;
+
+var feedFile;
+var ngramsFile;
+
+function selectFeed()
+{
+//myPerson = Math.floor((Math.random()*numPersons)+1);
+ngramsFile = baseURL+persons[myPerson]+'Ngrams';
+feedFile = baseURL+persons[myPerson]+'.xml';
+++myPerson;
+myPerson = (myPerson > numPersons) ? 1 : myPerson;
+}
+
+selectFeed();
+
+</script>
+
+</head>
+<body>
+
+  <div id="infomous" class="infomous"></div>
+  <script type="text/javascript">//<![CDATA[
+	var vars = {
+		width: "500",
+		height: "400",
+		maxWords: "1",
+		colWord: "0x800000",
+                adsShowPlain: "false",
+                skinMaxFontSize: "18",
+                highlighted: "6 paolo gaudiano,6 eric bonabeau,6 pablo funes,6 leonardo solaas",
+                ngramsSource: ngramsFile,
+                feeds: feedFile
+	}
+
+	function infomous_load(platform) {
+		if (typeof console !== 'undefined')
+			console.log('infomous_load platform = ', platform);
+		cloudproxy = new CloudProxy(platform, vars,true);
+	}
+
+//]]></script>
+
+  <script type="text/javascript" src="/client/embed.js"></script>
+
+<div>
+<a href="javascript:void(0);" onclick="cloudproxy.set_var('maxWords', ++numWords, true);">One more hint</a> |
+<!-- <a href="javascript:void(0);" onclick="cloudproxy.set_var('maxWords', (numWords>1?--numWords:numWords), true);">Remove a word </a> | -->
+<a href="javascript:void(0);" onclick="cloudproxy.set_var('maxWords', maxWords, true);">I give up!</a>
+<p>
+<a href="javascript:void(0);" onclick="selectFeed();numWords=1;cloudproxy.set_var('maxWords', numWords, true);cloudproxy.set_feeds(feedFile, true);cloudproxy.set_var('ngramsSource', ngramsFile, true);cloudproxy.make_request();">New game</a>
+</div>
+
+</body>
+</html>
+
+

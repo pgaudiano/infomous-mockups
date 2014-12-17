@@ -1,0 +1,45 @@
+<?php
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+
+<head>
+  <title>Word test</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+</head>
+
+<body>
+<h1>Infomous interest word test</h1>
+
+<script type="text/javascript">
+
+   var words = <?=($_GET["n"])?$_GET["n"]:2; ?>;
+   var myInfomousCloud = {
+     api : "true",
+     width: "600",
+     height: "400",
+     maxWords: words,
+     nid: "38474",
+  }
+
+  function infomous_ready(I){
+   myCloud = I.clouds.get();
+  }
+
+</script>
+
+<div style="height:400px">
+<script type="text/javascript" async data-infomous-id="myInfomousCloud" src="https://www.infomous.com/client2"></script>
+</div>
+
+<p><a href="javascript:void(0);" onclick="myCloud.set_var('maxWords',++words);myCloud.make_request();">
+Add a word</a></p>
+
+<p><a href="javascript:void(0);" onclick="myCloud.set_var('maxWords',--words);myCloud.make_request();">
+Subtract a word</a></p>
+
+</body>
+
+</html>
+

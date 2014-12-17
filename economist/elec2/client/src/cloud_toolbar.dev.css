@@ -1,0 +1,229 @@
+#css-ready { color: #797979; }
+
+/* toolbar */
+
+.cloud-toolbar {
+	position: absolute;
+	z-index: 1;
+
+	/*float: left;*/
+	/*overflow: auto;*/
+	/*width: 100%;*/
+
+	background-color: rgb(255, 255, 255);
+	/*margin-top: 10px;*/
+	/*padding: 3px;*/
+	border: 1px solid #c8c8c8;
+
+	left: -1px;
+	bottom: -1px;
+	height: 35px;
+}
+
+.cloud-toolbar .ctrls-widget {
+	margin: 5px;
+    /*position: relative;*/
+}
+
+.cloud-toolbar .ctrls-groups {
+	float: left;
+	width: 70px;
+	height: 20px;
+}
+
+/* sliders */
+
+.cloud-toolbar .ctrls-sliders.ctrls-dropup {
+	width: 80px;
+}
+.cloud-toolbar .ctrls-sliders-bt.ctrls-dropup-bt {
+	width: 80px; 
+}
+.cloud-toolbar .ctrls-sliders-list.ctrls-dropup-list {
+	height: 55px;
+	bottom: 85px;
+}
+.cloud-toolbar .ctrls-slider {
+	margin-top: 10px;
+	float: left;
+}
+.cloud-toolbar .ctrls-slider-value-container {
+	float: left;
+	margin-right: 4px;
+	border: 1px solid #c8c8c8;
+	height: 12px;
+}
+.cloud-toolbar .ctrls-slider-value {
+	margin: 0px 5px 0px 5px;
+	width: 12px;
+	font-size: 9px;
+}
+.cloud-toolbar .ctrls-slider-widget {
+	float: left;
+	width: 120px;
+	height: 8px;
+	top: 2px;
+}
+.cloud-toolbar .ui-slider a {
+	top: -1px;
+	width: 8px;
+	height: 8px;
+	cursor: pointer;
+}
+.cloud-toolbar .ui-slider,
+.cloud-toolbar .ui-slider a {
+	-moz-border-radius-topleft: 0px; 
+	-webkit-border-top-left-radius: 0px; 
+	-khtml-border-top-left-radius: 0px; 
+	border-top-left-radius: 0px;
+	
+	-moz-border-radius-topright: 0px; 
+	-webkit-border-top-right-radius: 0px; 
+	-khtml-border-top-right-radius: 0px; 
+	border-top-right-radius: 0px;
+	
+	-moz-border-radius-bottomleft: 0px; 
+	-webkit-border-bottom-left-radius: 0px; 
+	-khtml-border-bottom-left-radius: 0px; 
+	border-bottom-left-radius: 0px;
+	
+	-moz-border-radius-bottomright: 0px; 
+	-webkit-border-bottom-right-radius: 0px; 
+	-khtml-border-bottom-right-radius: 0px; 
+	border-bottom-right-radius: 0px;
+}
+
+/* dropup menues */
+
+.cloud-toolbar .ctrls-dropup {
+	float: left;
+	width: 120px;
+	height: 25px;
+}
+.cloud-toolbar .ctrls-dropup-bt {
+	width: 120px; /*with bt-ext: 72px;*/
+}
+.cloud-toolbar .ctrls-dropup-list-item {	
+	width: 120px;
+}
+.cloud-toolbar .ctrls-dropup .ctrls-dropup-bt {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 1px 1px 2px rgb(200,200,200);
+	-webkit-box-shadow: 1px 1px 2px rgb(200,200,200);
+	box-shadow: 1px 1px 2px rgb(200,200,200);
+}
+.cloud-toolbar .ctrls-dropup-bt .ui-button-text {
+	margin-right: 1px;
+	text-align:left;
+	font-size: 10.5px;
+}
+.cloud-toolbar .ctrls-word-add-bt-ext {
+	margin-left: -3px;
+}
+.cloud-toolbar .ctrls-word-add-bt-ext .ui-button-text {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.cloud-toolbar .ctrls-dropup-list {
+	background-color: rgb(250,250,250);
+	border: 1px solid #c8c8c8;
+    position: relative;
+	bottom: 160px;
+	height: 130px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 999;
+	/*padding: 4px;*/
+}
+
+.cloud-toolbar .ctrls-dropup-list-item {	
+	text-align: left;
+	font-size: 11px;
+	margin-left: -1px;
+	margin-top: -1px;
+}
+
+.cloud-toolbar .ctrls-dropup-list-item .ui-button-text {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.cloud-toolbar .ctrls-dropup-list-item .ui-icon {
+	margin-right: 14px;
+	background-image: url("lib/images/ui-icons_847e71_256x240.png");
+}
+
+/* dropup items interactions states */
+
+.cloud-toolbar .ctrls-dropup-list .ui-state-default, 
+.cloud-toolbar .ctrls-dropup-list .ui-widget-content .ui-state-default,
+.cloud-toolbar .ctrls-dropup-list .ui-widget-header .ui-state-default { 
+	border: 1px solid #c8c8c8; 
+	background: rgb(250,250,250); 
+	font-weight: normal; color: #363636; 
+}
+
+.cloud-toolbar .ctrls-dropup-list .ui-state-default a, 
+.cloud-toolbar .ctrls-dropup-list .ui-state-default a:link, 
+.cloud-toolbar .ctrls-dropup-list .ui-state-default a:visited { 
+	color: #ffffff; text-decoration: none; 
+}
+.cloud-toolbar .ctrls-dropup-list .ui-state-hover, 
+.cloud-toolbar .ctrls-dropup-list .ui-widget-content 
+.cloud-toolbar .ctrls-dropup-list .ui-state-hover, 
+.cloud-toolbar .ctrls-dropup-list .ui-widget-header .ui-state-hover 
+/*.cloud-toolbar .ctrls-dropup-list .ui-state-focus, */
+/*.cloud-toolbar .ctrls-dropup-list .ui-widget-content .ui-state-focus, */
+/*.cloud-toolbar .ctrls-dropup-list .ui-widget-header .ui-state-focus */
+{ 
+	border: 1px solid #c8c8c8; 
+	background: rgb(230,230,230);
+	font-weight: normal; color: #363636; 
+}
+.cloud-toolbar .ctrls-dropup-list .ui-state-hover a, 
+.cloud-toolbar .ctrls-dropup-list .ui-state-hover a:hover { 
+	color: #ffffff; text-decoration: none; 
+}
+.cloud-toolbar .ctrls-dropup-list .ui-state-active, 
+.cloud-toolbar .ctrls-dropup-list .ui-widget-content .ui-state-active, 
+.cloud-toolbar .ctrls-dropup-list .ui-widget-header .ui-state-active { 
+	border: 1px solid #c8c8c8; 
+	background: rgb(240,240,240); 
+	font-weight: normal; color: #363636; 
+}
+.cloud-toolbar .ctrls-dropup-list .ui-state-active a, 
+.cloud-toolbar .ctrls-dropup-list .ui-state-active a:link, 
+.cloud-toolbar .ctrls-dropup-list .ui-state-active a:visited { 
+	color: #459e00; text-decoration: none; 
+}
+.cloud-toolbar .ctrls-dropup-list .ui-widget :active { 
+	outline: none; 
+}
+
+/* override: dropup items for words */
+
+.cloud-toolbar .ctrls-dropup-list .ctrls-word-add-bt { 
+	background: rgb(240,240,240);
+	font-weight: bold;
+	margin: 0px;
+	margin-top: -1px;
+	margin-left: -1px;
+	padding: 3px 5px 3px 5px;
+	width: 120px;
+}
+
+.cloud-toolbar .ctrls-dropup-list .ctrls-word-add-bt .ui-button-text {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.cloud-toolbar .ctrls-dropup-list .ctrls-word-add-bt .ui-icon {
+	margin-right: 18px;
+}
+
+.cloud-toolbar .ctrls-word-add-dialog-btns {
+	display: block;
+	margin-top: 5px;
+}

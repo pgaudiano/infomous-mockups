@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" >
+<head profile="http://gmpg.org/xfn/11">
+<base href="http://www.sramanamitra.com/">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Thought Leaders in Big Data: Interview with Mike Byers, CEO of HighRoads (Part 1) | Sramana Mitra</title>        
+
+
+
+<!-- leave this for stats -->
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/sramanamitra" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/sramanamitra" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/sramanamitra" />
+<link type="image/vnd.microsoft.icon" rel="shortcut icon" href="http://www.sramanamitra.com/favicon.ico" />
+<link rel="stylesheet" href="http://www.sramanamitra.com/wp-content/themes/New-1M_by_1M/style.css" type="text/css" media="screen" />
+<link rel="pingback" href="http://www.sramanamitra.com/xmlrpc.php" />
+
+
+<link rel="alternate" type="application/rss+xml" title="Sramana Mitra &raquo; Thought Leaders in Big Data: Interview with Mike Byers, CEO of HighRoads (Part 1) Comments Feed" href="http://www.sramanamitra.com/2013/12/07/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-1/feed/" />
+<meta property="og:title" content="Thought Leaders in Big Data: Interview with Mike Byers, CEO of HighRoads (Part 1)"/><meta property="og:type" content="article"/><meta property="og:url" content="http://www.sramanamitra.com/2013/12/07/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-1/"/><meta property="og:site_name" content="One Million by One Million"/><meta property="og:description" content="Next&raquo;&raquo; Next&raquo;&raquo; This segment is part 1 in the series : Thought Leaders in Big Data: Interview with Mike Byers, CEO of HighRoads1 2 3 4 5"/><meta property="og:image" content="http://www.sramanamitra.com/wp-content/themes/New-1M_by_1M/images/fblogo.jpg"/><link rel='stylesheet' id='msw_wpfm_scan-css'  href='http://www.sramanamitra.com/wp-content/plugins/wordpress-file-monitor/wordpress-file-monitor.php?ver=scan' type='text/css' media='all' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.sramanamitra.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.sramanamitra.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Thought Leaders in Online Education: Interview with Shaul Kuper, CEO of Destiny Solutions (Part 5)' href='http://www.sramanamitra.com/2013/12/07/thought-leaders-in-online-education-interview-with-shaul-kuper-ceo-of-destiny-solutions-part-5/' />
+<link rel='next' title='Bootstrapping with a Paycheck in India: Sangeeta Banerjee, CEO of ApartmentADDA (Part 1)' href='http://www.sramanamitra.com/2013/12/08/bootstrapping-with-a-paycheck-in-india-sangeeta-banerjee-ceo-of-apartmentadda-part-1/' />
+<meta name="generator" content="WordPress 3.8.1" />
+<link rel='shortlink' href='http://www.sramanamitra.com/?p=71666' />
+
+<!-- All in One SEO Pack 2.0.3.1 by Michael Torbert of Semper Fi Web Design[389,498] -->
+<meta name="description" content="Mike Byers is the chief executive officer of HighRoads, a company that helps its clients with benefits plan management and healthcare compliance through its" />
+
+<link rel="canonical" href="http://www.sramanamitra.com/2013/12/07/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-1/" />
+<!-- /all in one seo pack -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<style type="text/css">
+#makeMeScrollable {
+  height: 150px;
+  position: relative;
+  width: 100%;
+}
+#makeMeScrollable div.scrollableArea img {
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+</style>
+<link rel="Stylesheet" type="text/css" href="http://www.sramanamitra.com/wp-content/themes/New-1M_by_1M/video-scroll/css/smoothDivScroll.css" />
+<link rel="stylesheet" type="text/css" href="http://www.sramanamitra.com/wp-content/themes/New-1M_by_1M/video-lightbox/jquery.fancybox.css"/>
+   <style type="text/css">
+
+  .sharrre .button {
+    float:left;
+	padding-right:4px;
+    min-width:60px;
+  }
+.hn-share-iframe
+{
+	    float:left;
+	padding-right:4px;
+    min-width:60px;
+	margin-top:0px !important;
+}
+  .twitter
+  {
+	  margin-top:-10px !important;
+  }
+</style>
+</head>
+
+<body class="single single-post postid-71666 single-format-standard"><div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=139236704213";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="flow"> <a href="http://www.facebook.com/1Mby1M" target="_blank"><img src="http://www.sramanamitra.com/wp-content/themes/New-1M_by_1M/images/fb.jpg" alt=""/></a> <a target="_blank" href="https://twitter.com/1Mby1M"><img src="http://www.sramanamitra.com/wp-content/themes/New-1M_by_1M/images/tw.jpg" alt=""/></a> <a target="_blank" href="http://www.youtube.com/user/1M1MRoundtables/"><img src="http://www.sramanamitra.com/wp-content/themes/New-1M_by_1M/images/yt.jpg" alt=""/></a> </div>
+<div class="wraper">
+<div class="menu">
+  <ul id="menu-topnav" class="clearfix sf-menu"><li id="menu-item-61446" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-61446"><a href="http://www.sramanamitra.com">Home</a></li>
+<li id="menu-item-61449" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61449"><a href="http://1m1m.sramanamitra.com/free-public-roundtables/">Free Public Roundtables</a></li>
+<li id="menu-item-61450" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61450"><a href="http://1m1m.sramanamitra.com/free-public-roundtables/the-1m1m-self-assessment/">1M/1M Self-Assessment</a></li>
+<li id="menu-item-61447" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61447"><a href="http://1m1m.sramanamitra.com/">Premium Program</a></li>
+<li id="menu-item-61454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-61454"><a href="http://www.sramanamitra.com">Blog</a></li>
+<li id="menu-item-61816" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61816"><a href="http://www.sramanamitra.com/2008/09/09/entrepreneur-journeys-now-on-amazon/">Books</a></li>
+<li id="menu-item-61455" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61455"><a href="http://1m1m.sramanamitra.com/contact-us/">Contact</a></li>
+<li id="menu-item-61456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61456"><a href="http://1m1m.sramanamitra.com/media-coverage/">Press</a></li>
+</ul></div>
+<div class="bannerb">
+  
+ 
+  <div class="bloginfo"> <a title="Home" href="http://www.sramanamitra.com">
+    <p>Sramana Mitra's</p>
+    <h1>One Million </h1>
+    <h6> by </h6>
+    <h1>One Million <span class="bloghead">Blog</span></h1>
+    </a> </div>
+  <div class="clear"></div>
+</div>
+<div class="sidebarb"><!--Sidebar -->
+  <div class="searchform">
+    <form action="http://www.sramanamitra.com" method="get" id="searchform">
+      <input type="text" placeholder="Search the Blog" class="srarch" id="s" name="s"/>
+      </button>
+      <input class="searchbtn" type="submit" id="searchsubmit" value="Search">
+    </form>
+  </div>
+  <h2>categories</h2>
+  <ul id="menu-sidebarmenu" class="sbcatlist"><li id="menu-item-61674" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61674"><a href="http://www.sramanamitra.com/entrepreneurship-case-studies">Entrepreneur Journeys</a></li>
+<li id="menu-item-61808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61808"><a href="http://www.sramanamitra.com/big-data/">Big Data</a></li>
+<li id="menu-item-61809" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61809"><a href="http://www.sramanamitra.com/mobile-social/">Mobile &#038; Social</a></li>
+<li id="menu-item-61677" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61677"><a href="http://www.sramanamitra.com/cloud-computing-2">Cloud Computing</a></li>
+<li id="menu-item-61675" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61675"><a href="http://www.sramanamitra.com/seed-capital-4/">Seed Capital</a></li>
+<li id="menu-item-61676" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61676"><a href="http://www.sramanamitra.com/business-incubator/">Business Incubators</a></li>
+<li id="menu-item-61678" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61678"><a href="http://www.sramanamitra.com/outsourcing/">Outsourcing</a></li>
+<li id="menu-item-61679" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61679"><a href="http://www.sramanamitra.com/sales-2-0/">Sales 2.0</a></li>
+<li id="menu-item-61673" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61673"><a href="http://www.sramanamitra.com/deal-radar/">Deal Radar</a></li>
+<li id="menu-item-61672" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61672"><a href="http://www.sramanamitra.com/incubation-radar/">Incubation Radar</a></li>
+<li id="menu-item-61671" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61671"><a href="http://www.sramanamitra.com/topics/technology-stocks/">Technology Stocks</a></li>
+</ul>    <h2>HOT TOPICS</h2>
+  <div style="clear:both;"></div>
+  <ul class="hottopics">
+  
+ 	<li><a href="http://www.sramanamitra.com/2013/01/24/the-million-dollar-club-introduction/">The Million Dollar Club</a></li>
+	<li><a href="http://www.amazon.com/dp/B00FBQRXKI">The Other 99% (Entrepreneurs)</a></li>
+	<li><a href="http://www.amazon.com/Seed-India-Navigate-Entrepreneur-Journeys-ebook/dp/B00GS9QRUE/">Seed Capital In India</a></li>
+    <li><a href="http://www.sramanamitra.com/2013/01/12/series-a-crunch-real-vs-pseudo-entrepreneurs/">Series A Crunch</a></li>
+    <li><a href="http://www.sramanamitra.com/2010/10/12/capitalism-2-0-distributed-democratic-capitalism/">Capitalism 2.0</a></li>
+    <li><a href="http://www.sramanamitra.com/2007/02/14/web-30-4c-p-vs/">Web 3.0 = (4C + P + VS)</a></li>
+    <li><a href="http://www.amazon.com/Feminine-Feminism-Entrepreneur-Journeys-Sramana-ebook/dp/B00G4E5HJA/">Women And Entrepreneurship</a></li>
+	<li><a href="http://www.sramanamitra.com/2013/10/24/how-to-navigate-indias-seed-capital-gap/">How to Navigate India's Seed Capital Gap</a></li>
+    <li><a href="http://www.sramanamitra.com/2010/02/15/entrepreneurship-education-bootstrapping-at-b-schools/">Bootstrapping At B-Schools?</a></li>
+        <li><a href="http://www.sramanamitra.com/2010/03/02/entrepreneurship-education-why-incubators-fail/">Why Do Business Incubators Fail?</a></li>
+    <li><a href="http://www.sramanamitra.com/2007/09/28/the-vc-entrepreneur-compensation-disbalance/">The VC-Entrepreneur Compensation Disbalance</a></li>
+  </ul>
+  <p class="cartoonlink"><a href="http://www.youtube.com/playlist?list=PLXToK7SnDV3_Oe__vUSjRR67sy5rWyDiQ">1M/1M Cartoons</a></p>
+    <p><a class="rss" href="http://feeds.feedburner.com/sramanamitra" target="_blank">Subscribe to our Feed</a></p>
+</div>
+<div class="containerb">
+	       <div id="entry">
+         <h2 id="post_title"><a href="http://www.sramanamitra.com/2013/12/07/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-1/">Thought Leaders in Big Data: Interview with Mike Byers, CEO of HighRoads (Part 1)</a></h2>
+       <div class="posted">Posted on Saturday, Dec 7th 2013</div>
+        <div class="sernext"> <a href="http://www.sramanamitra.com/2013/12/08/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-2/" class="next" >Next&raquo;&raquo;</a> </div><p>Mike Byers is the chief executive officer of HighRoads, a company that helps its clients with benefits plan management and healthcare compliance through its cloud-based SaaS offering. Mike has studied at the University of Massachusetts at Amherst&#8217;s Isenberg School of Management and has more than 30 years of experience in finance and software. In this interview he describes HighRoads&#8217; value proposition in the benefits and healthcare space and gives us a few interesting use cases.</p>
+<p><b>Sramana Mitra: </b>Mike, let´s start with introducing you as well as HighRoads to our audience.</p>
+<p><b>Mike Byers: </b>Thank you for the interview. I appreciate the opportunity. My background is an almost 30-year career that started in finance as a CPA. <span id="more-71666"></span>In 1990 I joined my first software company. The first half of my career I spent in a finance function – CFO. I have been a CEO since roughly 2000 for two different organizations. I have spent the last nine years with HighRoads.</p>
+<p><b>SM: </b>What is HighRoads?</p>
+<p><b>MB: </b>HighRoads, until recently, has been a tech-enabled services company helping Fortune 500 companies manage everything from the procurement of a healthcare plan or a benefit plan right to the communication of those plans to employees – most notably a document referred to as a summary plan description. It is a legal agreement between an employee and an employer as to what the employee is entitled to for a particular benefit plan, a pension and savings or a 401(k) plan. Some of our clients today include companies like IBM, Boeing, General Dynamics, Dell, etc.</p>
+<p><b>SM: </b>Pick any three of your clients, and let&#8217;s double click down into what problems you are solving and how you are solving them.</p>
+<p><b>MB: </b>The first one I will pick is General Dynamics – a Fortune 100 company that has just over 100,000 active employees, a significant number of retirees and 14 individual business units. The most relevant problem they were faced with was the ability to aggregate all their benefit plan information that had been stored in their business units – aggregating that data, normalizing it, and making it accessible to the HR professionals.</p>
+<p>The second thing we did was provide an automated way for them to renew their HMOs – that was something that was being done by third-party consultants at a fairly expensive rate – and then take that process and automate their summary plan description management needs. The aggregation of all those services in the first couple of years had about a 75% reduction in their spending.</p>
+<p>The way we did that was through a combination of our people and our technology. It was a novel approach when we first started working with General Dynamics, which was about 10 years ago. They have consistently stayed as a client of ours, and over the years we added new functionality in order for them to gain greater efficiency in their HR department.</p>
+<div class="sernext"> <a href="http://www.sramanamitra.com/2013/12/08/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-2/" class="next" >Next&raquo;&raquo;</a> </div><p id="serlnk" class="series_nav series_nav_full"><strong>This segment is part 1 in the series : Thought Leaders in Big Data: Interview with Mike Byers, CEO of HighRoads</strong><br><span style="color:#999;">1</span> <a href="http://www.sramanamitra.com/2013/12/08/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-2/" >2</a> <a href="http://www.sramanamitra.com/2013/12/09/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-3/" >3</a> <a href="http://www.sramanamitra.com/2013/12/10/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-4/" >4</a> <a href="http://www.sramanamitra.com/2013/12/11/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-5/" >5</a> </p><style type="text/css">.sershort { height: 148px; overflow:hidden;  } #serexpid{ position: relative; } #sermore { position:absolute; right:0px; bottom:0px;</style><script type="text/javascript">
+	jQuery("#sermore").toggle(function() {
+	jQuery("#serexpid").removeClass("sershort");
+	jQuery(this).html("«« Less")
+}, function() {
+	jQuery("#serexpid").addClass("sershort");
+	jQuery(this).html("More »»")
+});
+</script>            <div class="meta">  </div> 
+          <div class="socialcmm"><div class="sshare" id="shareme" data-url="http://www.sramanamitra.com/2013/12/07/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-1/" data-text="Thought Leaders in Big Data: Interview with Mike Byers, CEO of HighRoads (Part 1)"></div><a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="Thought Leaders in Big Data: Interview with Mike Byers, CEO of HighRoads (Part 1)" data-url="http://www.sramanamitra.com/2013/12/07/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-1/">Hacker News</a> 
+  <div style="float:right;">
+<strong>(<fb:comments-count href="http://www.sramanamitra.com/2013/12/07/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-1/"></fb:comments-count>) Comments</strong>
+  </div>
+  
+</div>
+
+<script type="text/javascript" async data-infomous-id="nid49648" src="http://www.infomous.com/client2/?width=676&height=400"></script>
+
+    </div>
+ 
+<div class="clear"></div>
+<h2 class="videohead">Featured Videos</h2>
+<div class="videos">
+    <div class="contim-bot">
+    <div  id="makeMeScrollable">
+            <a title="The Other 99%<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/CTr7-8XJYC0?rel=0&autoplay=1">The Other 99%<br /></a>
+      <a title="1M/1M vs. YCombinator<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/3mTCVs1bkQg?rel=0&autoplay=1">1M/1M vs. YCombinator<br /></a>
+      <a title="Can 1M/1M Help Me Raise Money?<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/vhucqmmKafw?rel=0&autoplay=1">Can 1M/1M Help Me Raise Money?<br /></a>
+      <a title="How Does 1M/1M Democratize Entrepreneurship Education?<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/rKEeuzMnZK4?rel=0&autoplay=1">How Does 1M/1M Democratize Entrepreneurship Education?<br /></a>
+      <a title="How Does 1M/1M Democratize Management Consulting?<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/M572enwVDkY?rel=0&autoplay=1">How Does 1M/1M Democratize Management Consulting?<br /></a>
+      <a title="When Is The Right Time To Join 1M/1M?<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/5a6qCL_o2g4?rel=0&autoplay=1">When Is The Right Time To Join 1M/1M?<br /></a>
+      <a title="Can 1M/1M Help Me With Business Development?<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/L0X6Ea_0fho?rel=0&autoplay=1">Can 1M/1M Help Me With Business Development?<br /></a>
+      <a title="Can 1M/1M Help Me With Market Sizing?<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/Vdfa_y453Pg?rel=0&autoplay=1">Can 1M/1M Help Me With Market Sizing?<br /></a>
+      <a title="Can 1M/1M Help Me Validate My Product?<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/Ii2rFSk3awU?rel=0&autoplay=1">Can 1M/1M Help Me Validate My Product?<br /></a>
+      <a title="Will I Have Private 1-on-1 Sessions In 1M/1M?<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/vcAPNH1zfCA?rel=0&autoplay=1">Will I Have Private 1-on-1 Sessions In 1M/1M?<br /></a>
+      <a title="How Does 1M/1M Help Entrepreneurs Connect With Silicon Valley?<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/EbW_1j5qbPg?rel=0&autoplay=1">How Does 1M/1M Help Entrepreneurs Connect With Silicon Valley?<br /></a>
+      <a title="Mentoring or Consulting?<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/E3UMUqSe_VU?rel=0&autoplay=1">Mentoring or Consulting?<br /></a>
+      <a title="Why Does 1M/1M Charge $1000 a Year?<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/CSOByOtj6eI?rel=0&autoplay=1">Why Does 1M/1M Charge $1000 a Year?<br /></a>
+      <a title="Why Does 1M/1M Partner With Local Organizations?<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/U-0_uD961zw?rel=0&autoplay=1">Why Does 1M/1M Partner With Local Organizations?<br /></a>
+      <a title="Why Don\&#8217;t Mentoring Networks Work?<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/BiZVOOkGo88?rel=0&autoplay=1">Why Don\&#8217;t Mentoring Networks Work?<br /></a>
+      <a title="Why Is It Important To Study With 1M/1M Now?</p>" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/LBoiHViOEEo?rel=0&autoplay=1">Why Is It Important To Study With 1M/1M Now?</p></a>
+      <a title="Testimonials</p>" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/HKbogRwT7mk?rel=0&autoplay=1">Testimonials</p></a>
+      <a title="Dan Stewart Story<br />" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/zyDpp-NGIBM?rel=0&autoplay=1">Dan Stewart Story<br /></a>
+      <a title="Vikrant Mathur Story</p>" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/5gs_t0Ywe0c?rel=0&autoplay=1">Vikrant Mathur Story</p></a>
+      <a title="" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/javascript">?rel=0&autoplay=1"></a>
+      <a title="" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/	jQuery("#sermore").toggle(function() {?rel=0&autoplay=1"></a>
+      <a title="" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/	jQuery("#serexpid").removeClass("sershort");?rel=0&autoplay=1"></a>
+      <a title="" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/	jQuery(this).html("«« Less")?rel=0&autoplay=1"></a>
+      <a title="" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/}, function() {?rel=0&autoplay=1"></a>
+      <a title="" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/	jQuery("#serexpid").addClass("sershort");?rel=0&autoplay=1"></a>
+      <a title="" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/	jQuery(this).html("More »»")?rel=0&autoplay=1"></a>
+      <a title="" class="hvideo iframe playbut videow" id="playbg" href="http://www.youtube.com/embed/});?rel=0&autoplay=1"></a>
+    </div>
+  </div>
+</div>
+
+
+<!-- You can start editing here. -->
+<div id="comments"><div class="fb-comments" data-href="http://www.sramanamitra.com/2013/12/07/thought-leaders-in-big-data-interview-with-mike-byers-ceo-of-highroads-part-1/" data-width="680" data-num-posts="25"></div>
+ 
+	</div>
+<div style="clear:both"></div>
+     
+   </div>
+
+<div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+<div class="footer">
+  <div class="footerover">
+    <div class="blocka">
+      <div class="joind"> <a href="http://1m1m.sramanamitra.com/wp-login.php?action=register"></a> </div>
+     
+      <p><a href="http://www.sramanamitra.com/bio/">Sramana Mitra's Biography</a></p> <p>Copyright 2012 sramanamitra.com</p>
+    </div>
+    <div class="blocka">
+      <h2>Free Program</h2>
+      <ul id="single" class="footee_menu1"><li id="menu-item-61511" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61511"><a href="http://1m1m.sramanamitra.com/free-public-roundtables/">Free Public Roundtables</a></li>
+<li id="menu-item-61512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61512"><a href="http://1m1m.sramanamitra.com/free-public-roundtables/the-1m1m-self-assessment/">1M/1M Self-Assessment</a></li>
+<li id="menu-item-61513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61513"><a href="http://sramanamitra.com/">Blog</a></li>
+</ul>   <li style=" list-style:none;" id="menu-item-61514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61514"><a href="#" class="optpop" rel="1m1m">Free Newsletter</a></li>
+
+    </div>
+    <div class="blocka">
+      <h2>Premium Program</h2>
+      <ul id="single" class="footee_menu2"><li id="menu-item-61515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61515"><a href="http://1m1m.sramanamitra.com/what-to-expect-from-the-premium-program/">What To Expect?</a></li>
+<li id="menu-item-62190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62190"><a href="http://1m1m.sramanamitra.com/2012/02/27/1m1m-orientation/">Orientation</a></li>
+<li id="menu-item-61516" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61516"><a href="http://1m1m.sramanamitra.com/what-to-expect-from-the-premium-program/faq/">FAQ</a></li>
+<li id="menu-item-61517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61517"><a href="http://1m1m.sramanamitra.com/2012/01/24/video-messages/">Video FAQ</a></li>
+<li id="menu-item-61518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61518"><a href="http://1m1m.sramanamitra.com/wp-login.php?action=register">Join Now</a></li>
+</ul>    </div>
+    <div class="blocka">
+      <h2>Premium Members Only</h2>
+      <ul id="single" class="footee_menu3"><li id="menu-item-62192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62192"><a href="http://1m1m.sramanamitra.com/curriculum/">Curriculum</a></li>
+<li id="menu-item-61520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61520"><a href="http://1m1m.sramanamitra.com/private-roundtables/">Private Roundtables</a></li>
+<li id="menu-item-61521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61521"><a href="http://1m1m.sramanamitra.com/investor-introduction/">Investor Introduction</a></li>
+<li id="menu-item-61522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61522"><a href="http://1m1m.sramanamitra.com/customer-partner/">Customer Partner</a></li>
+<li id="menu-item-61523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61523"><a href="http://1m1m.sramanamitra.com/2011/08/03/how-you-can-use-the-1m1m-twitter-channel/">Twitter</a></li>
+<li id="menu-item-61524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61524"><a href="http://1m1m.sramanamitra.com/incubation-radar/">Incubation Radar</a></li>
+<li id="menu-item-61525" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61525"><a href="http://1m1m.sramanamitra.com/discussion-forum/">Discussion Forum</a></li>
+</ul>    </div>
+    <div class="blocka">
+      <h2>Partners</h2>
+      <ul id="single" class="footee_menu4"><li id="menu-item-61526" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61526"><a href="http://1m1m.sramanamitra.com/partnership-overview/">Overview</a></li>
+<li id="menu-item-61527" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61527"><a href="http://1m1m.sramanamitra.com/affiliate-program/">Affiliates</a></li>
+<li id="menu-item-61528" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61528"><a href="http://1m1m.sramanamitra.com/incubator-partnerships/">Incubators</a></li>
+<li id="menu-item-61529" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61529"><a href="http://www.sramanamitra.com/2011/11/03/1m1m-ambassadors-update-plans/">Ambassadors</a></li>
+</ul> 
+                       <li style=" list-style:none;" id="menu-item-61514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61514"><a href="#" class="optpop" rel="incubators">Free Partner Newsletter</a></li>
+    </div>
+  </div>
+</div>
+
+
+
+`<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+        <script src="http://www.sramanamitra.com/wp-content/themes/New-1M_by_1M/video-scroll/js/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script> 
+
+<!-- Latest version of jQuery Mouse Wheel by Brandon Aaron
+	     You will find it here: http://brandonaaron.net/code/mousewheel/demos --> 
+<script src="http://www.sramanamitra.com/wp-content/themes/New-1M_by_1M/video-scroll/js/jquery.mousewheel.min.js" type="text/javascript"></script> 
+
+<!-- Smooth Div Scroll 1.2 minified--> 
+<script src="http://www.sramanamitra.com/wp-content/themes/New-1M_by_1M/video-scroll/js/jquery.smoothdivscroll-1.2-min.js" type="text/javascript"></script> 
+
+<!-- Styles for my specific scrolling content --> 
+<script type="text/javascript" src="http://www.sramanamitra.com/wp-content/themes/New-1M_by_1M/video-lightbox/jquery.fancybox.pack.js"></script> 
+<script type="text/javascript">
+       jQuery(document).ready(function() {
+ jQuery(".iframe").fancybox({
+		'transitionIn'	: 'none',
+		'transitionOut'	: 'none',
+		'type':'iframe',
+ 'width': 640, //or whatever you want
+ 'height': 360
+
+	});  
+	});
+		
+		
+    </script> 
+<script type="text/javascript">
+		// Initialize the plugin with no custom options
+		jQuery(document).ready(function () {
+			// None of the options are set
+			jQuery("div#makeMeScrollable").smoothDivScroll({
+		visibleHotSpotBackgrounds: "always",
+		hotSpotScrollingStep: 1
+			});
+		});
+
+	</script> <script src="http://www.sramanamitra.com/wp-content/themes/New-1M_by_1M/lib/jquery.sharrre-1.3.4.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script>
+	jQuery(document).ready( function() { 
+jQuery('.sshare').sharrre({
+  share: {
+    googlePlus: true,
+    facebook: true,
+    stumbleupon: true,
+    linkedin: true,   
+	twitter: true,
+  },
+  buttons: {
+    googlePlus: {size: 'medium'},
+    facebook: {layout: 'button_count'},
+    stumbleupon: {layout: '1'},
+    linkedin: {counter: 'right'},    
+	twitter: {count: 'horizontal'},
+  },
+  enableHover: false,
+  enableCounter: false,
+  enableTracking: true
+});
+
+	
+	
+
+
+		jQuery('#optsend').live('click',function(e) {
+			var liname = jQuery('#optpop').attr('rel');
+			jQuery('#listnamepop').val(liname) ;
+			jQuery("[name='returnURL']").val(window.location);	
+			var cansubmit = 'yes';		
+			
+			if(!jQuery('#optcompany').val())
+			{
+			jQuery('#optcompany').addClass('optbred');
+			var cansubmit = 'no';
+			}
+			
+			if(!jQuery('#optfname').val())
+			{
+			jQuery('#optfname').addClass('optbred');
+			var cansubmit = 'no';
+			}
+			
+			if(!jQuery('#optlname').val())
+			{
+			jQuery('#optlname').addClass('optbred');
+			var cansubmit = 'no';
+			}
+			
+			
+			if(!jQuery('#optemail').val())
+			{
+			jQuery('#optemail').addClass('optbred');
+			var cansubmit = 'no';
+			}
+			
+			if(cansubmit == 'yes')
+				jQuery('#optinformid').submit();				
+			else
+				e.preventDefault();
+				return false;
+		});
+		
+            jQuery(".optpop").click(function () {
+                jQuery("#crmWebToEntityForm").show();
+            });
+			jQuery("#optclose").click(function () {
+                jQuery("#crmWebToEntityForm").hide();
+            });
+
+			
+        });
+    </script>
+<script>
+    (function(d, t) {
+        var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        g.src = '//hnbutton.appspot.com/static/hn.min.js';
+        s.parentNode.insertBefore(g, s);
+    }(document, 'script'));
+</script>
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1701195-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- optin form -->
+<div id='crmWebToEntityForm' align="center" style="display:none;">
+  <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads514964000001045051 method='POST' id="optinformid" accept-charset='UTF-8'>
+    <table border=0 cellspacing=0 cellpadding=5 width=480 style='border:2px solid #4a2920;background-color:#ffffff;' class="optable">
+      <input type='text' style='display:none;' name='xnQsjsdp' value='bZhWjnQIgPQ$'/>
+      <input type='text' style='display:none;' name='xmIwtLD' value='dxykAn7XEZ5GhmfXOIJMHYhtUVzz56G-'/>
+      <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='/>
+      <input type='hidden' name='returnURL' value='' />
+      <br>
+      <tr>
+        <td colspan='2' align='left' class='opthead'>Sign Up for FREE</td>
+      </tr>
+      <tr style="display:none;">
+        <td nowrap style='font-family:sans-serif;font-weight:bold' align='right' width='25%'>Company<span style="color: #F00">*</span> &nbsp;&nbsp;:</td>
+        <td width='75%'>
+                    <input type='hidden' maxlength='100' name='Company' value="No Company" id="optcompany"/>
+        </td>
+      </tr>
+      <tr>
+        <td nowrap style='font-family:sans-serif;font-weight:bold' align='right' width='25%'>First Name<span style="color: #F00">*</span> &nbsp;&nbsp;:</td>
+        <td width='75%'>
+          <input type='text' maxlength='40' name='First Name'  id="optfname"/>
+        </td>
+      </tr>
+      <tr>
+        <td nowrap style='font-family:sans-serif;font-weight:bold' align='right' width='25%'>Last Name<span style="color: #F00">*</span> &nbsp;&nbsp;:</td>
+        <td width='75%'>
+          <input type='text' maxlength='80' name='Last Name'  id="optlname"/>
+        </td>
+      </tr>
+      <tr>
+        <td nowrap style='font-family:sans-serif;font-weight:bold' align='right' width='25%'>Email<span style="color: #F00">*</span> &nbsp;&nbsp;:</td>
+        <td width='75%'>
+          <input type='text' maxlength='100' name='Email'  id="optemail"/>
+        </td>
+      </tr>
+      <tr style="display:none">
+        <td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold' align='right' width='25%'>Aweber Listname &nbsp;&nbsp;:</td>
+        <td width='75%'>
+          <input id='listnamepop' type='hidden' maxlength='255' name='LEADCF11' value='1m1m'/>
+        </td>
+      </tr>
+      <tr>
+        <td colspan=2 align=center style='background-color:#4a2920'>
+          <input type='submit' name='save' value="Send" class="optbut" id="optsend"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='button' name='save' value="close" id="optclose" class="optbut"/>
+          
+        </td>
+      </tr>
+    </table>
+
+  </form>
+</div>
+</body></html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Infomous: TV Program Explorer</title>
+<link rel="shortcut icon" href="favicon.ico">
+<style type="text/css">
+<!--
+html, body{
+margin: 0;
+padding: 0;
+background-color: #DDDDDD;
+width: 100%;
+height: 100%;
+}
+#flash{
+margin: 0;
+width: 100%;
+height: 100%;
+}
+
+-->
+</style>
+<script type="text/javascript" src="swfobject.js"></script>
+</head>
+
+<body>
+	<table width=100%" height="100%">
+	<tr height="100%">
+	<td width="70%">
+	<div id="flash" align="left">
+			You need Flash Player 8 or newer and JavaScript on to view this site.
+	</div>
+	</td>
+	<td width="30%" valign="top">
+		<b>Movie titles (for comedies only)</b>
+		<p>This cloud shows relationships between movies based on having cast the same actor.  The data represents all comedies from the New York headend on Saturday Feb 26 2011 starting at or after 8pm.
+		<p> Things to play with:
+		<ul>
+			<li>Hovering over a movie title shows a list of actors starring in the movie.</li>
+			<li>Locate the movie  "He's Just Not That Into You" and hover over it; in the popup list, next to "Jennifer Aniston" there is an IMDb link which takes you to the IMDb page for the actress</li>
+			<li>Click on a movie (e.g. "Down Periscope") to focus on it and display only the movies linked to it. 
+				<ul>
+				<li>Note that when hovering over a related movie the popup list now shows only the actors that also star in the focused movie.</li>
+				<li>Click the focused movie or click anywhere in the cloud background to unfocus and see the original cloud again</li>
+				</ul>
+			</li>
+		</ul>
+	<p><a href="http://www.infomous.com/site/mockups/TV/index.html">HOME</a>
+	</td>
+	</tr>
+	</table>
+
+	<script type="text/javascript">
+		// <![CDATA[
+			var so = new SWFObject("infomous2.swf", "infomous", "100%", "100%", "8", "#DDDDDD");
+			so.addVariable("name", getQueryParamValue("name"));
+			so.addVariable("linkageThreshold", "1");
+			so.addVariable("popularWordCutoff", getQueryParamValue("popularWordCutoff"));
+			so.addVariable("pos", getQueryParamValue("pos"));
+			so.addVariable("focused", getQueryParamValue("focused"));
+			so.addVariable("hidden", "");
+			so.addVariable("zoom", ".5");
+			so.addVariable("fontScale", ".9");
+			so.addVariable("maxWords", "80");
+			so.addVariable("groups", "false");
+			so.addVariable("bottomBarControls", "fontSlider,zoomSlider,wordsSlider,pos,groups,capture,fullscreen,focusSelect");
+            		so.addVariable("feeds", "http%3A%2F%2Fwww.infomous.com%2Fsite%2Fmockups%2FTV%2Fdata%2Fxml%2Fat-he91922-20110226209-c301-wNames-unfocused-100-7.xml");
+			so.addParam("allowScriptAccess", "always");
+			so.addParam("allowFullScreen", "true");
+ 			so.addVariable("setPanels", "status,blobs,words,bottom");
+ 		        so.addVariable("highlighted", "");
+        		so.addVariable("colWordHighlighted", "0x0000FF");
+			so.addVariable("skinMaxFontSize", "20");
+			so.write("flash");
+		// ]]>
+	</script>
+</body>
+</html>
+

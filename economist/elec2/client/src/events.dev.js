@@ -1,0 +1,108 @@
+/*!
+ * Infomous Events
+ * http://www.infomous.com/
+ * 
+ * @constructor
+ */
+
+Infomous.define('Events', (function(I) {
+
+var Events = function() {
+	if (!(this instanceof Events)) 
+		return new Events();
+	this.listeners = { all: [] };
+}
+
+Events.prototype = {
+
+	constructor: Events, 
+
+	on: function(types, fn, context) {
+
+		if ( this.has(fn) )
+			return false;
+		
+        types = I.make_array(types);
+		
+        var lst = this.listeners,
+		    type,
+		    i = types.length;
+		
+        while(i--) {
+			type = types[i];
+			lst[type] = lst[type] || []; 
+			lst[type].push({ 
+				fn: fn, 
+				context: context || this
+			});
+		}
+		return true;
+	},
+
+	//TODO FIXME
+	
+    off: function(types, fn, context) {
+
+		types = I.make_array(types);
+		
+        if ( ! I.contains(types, 'all') )
+			types = types.concat('all');
+		
+        var type, 
+		    i = types.length;
+		
+        var list, len, j;
+		
+        while(i--) {
+			type = types[i];
+			list = this.listeners[type];
+			len = list ? list.length : 0;
+			for (j = 0; j < len; j++) {
+				if (list[j].fn === fn && 
+					list[j].context === context ) 
+					list.splice(j, 1);
+			}
+		}
+	},	
+	
+	dispatch: function(types, _event) {
+		
+		types = I.make_array(types);
+
+		var lst = this.listeners,
+		    type,
+		    tylen = types.length,
+		    i;
+		
+		var callbacks,
+		    callback,
+		    cblen,
+		    j;
+		
+		for (i = 0; i < tylen; i++) {
+			type = types[i];
+			callbacks = lst.all.concat( lst[type] );
+			cblen = callbacks.length;
+			for (j = 0; j < cblen; j++) {
+				callback = callbacks[j];
+				if (callback === undefined) 
+					continue;
+				callback.fn.call( callback.context, _event || {} );
+			}
+		}
+	},
+
+    has: function(fn) {
+		var lst = this.listeners,
+		    i = lst.length;
+		while(i--) 
+			if ( lst[i].fn === fn )
+				return true;
+		return false;
+	}
+};
+
+return Events;
+
+})(Infomous) );
+

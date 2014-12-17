@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Infomous text comment viewer</title>
+  <link>http://www.infomous.com</link>
+  <description>Infomous text comment viewer
+  </description>
+<item>
+	<title>one </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers2.html#item1</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>one two </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers2.html#item2</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>one two three </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers2.html#item3</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>one two three four </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers2.html#item4</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>one two three four five </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers2.html#item5</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>one two three four five six </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers2.html#item6</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>one two three four five six seven </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers2.html#item7</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>one two three four five six seven eight </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers2.html#item8</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>one two three four five six seven eight nine </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers2.html#item9</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>one two three four five six seven eight nine ten </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers2.html#item10</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>one two three four five six seven eight nine ten eleven </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers2.html#item11</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>one two three four five six seven eight nine ten eleven twelve </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers2.html#item12</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+</channel>
+</rss>

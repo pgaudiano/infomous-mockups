@@ -1,0 +1,79 @@
+VPATH = src:lib
+
+all: sdk.js client gui 
+
+debug:
+	make DEBUG=1
+
+sdk = \
+	  sdk.dev.js \
+      ga_tracker.dev.js \
+      events.dev.js \
+      cloud_proxy.dev.js
+
+sdk.js: $(sdk)
+
+client: \
+	embed.js \
+	infomous.js \
+	infomous.css 
+
+gui: \
+	cloud_gui.js \
+	cloud_gui.css \
+	cloud_frame.js \
+	cloud_frame.css
+
+embed.js: \
+	$(sdk) \
+	swfobject.js \
+	embed.dev.js
+
+infomous.js: infomous.dev.js
+infomous.css: infomous.dev.css
+
+cloud_gui.js: cloud_toolbar.dev.js
+cloud_gui.css: cloud_toolbar.dev.css
+
+cloud_frame.js: cloud_frame.dev.js
+cloud_frame.css: cloud_frame.dev.css
+
+%.js: 
+	cat $^ > $@.cat
+ifdef DEBUG
+	cp $@.cat $@
+else
+	java -jar deploy/yuicompressor-2.4.7.jar --type js -o $@ $@.cat
+endif
+	rm $@.cat
+
+%.css: 
+	cat $^ > $@.cat
+ifdef DEBUG
+	cp $@.cat $@
+else
+	java -jar deploy/yuicompressor-2.4.7.jar --type css -o $@ $^
+endif
+	rm $@.cat
+
+export_id = client_export
+export:
+	svn export . $(export_id)
+	rm -r \
+		$(export_id)/deploy \
+		$(export_id)/src \
+		$(export_id)/makefile
+	tar -czvf $(export_id).zip $(export_id)
+	rm -r $(export_id)
+
+clean:
+	-rm \
+		sdk.js \
+		embed.js \
+		infomous.js \
+		infomous.css \
+		cloud_gui.js \
+		cloud_gui.css \
+		cloud_frame.js \
+		cloud_frame.css
+

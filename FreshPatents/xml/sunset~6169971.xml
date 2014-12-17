@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+ <channel>
+  <atom:link href="http://www.infomous.com/site/mockups/FreshPatents/sunset~6169971.xml" rel="self" type="application/rss+xml"/>
+  <title>Search pattern for sunset</title>
+  <link>http://www.infomous.com/site/mockups/FreshPatents</link>
+  <description>Explore sunset from FreshPatents</description>
+  <item>
+   <title>Category -- Sunset</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Sunset-bx1.rss</link>
+   <description>Category -- Sunset</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Sunset-bx1.rss</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+ </channel>
+</rss>

@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+    var myCloud = {
+    width: "728",
+    height: "90",
+    nid: "54781"
+};
+
+function infomous_ready(myCloud) {
+
+    var cloud = myCloud.clouds.get();
+
+    cloud.make_request();
+    cloud.on("menu_added", myCallback);
+}
+
+// This function is called when the user clicks a word. Use it to open a new window
+function myCallback(e) {
+	 var url;
+
+	 url = decodeURIComponent('http://discover.economist.com');
+
+    window.open(url, '_parent');
+}
+</script>
+</head>
+
+<body>
+
+<script type="text/javascript" async data-infomous-id="myCloud" src="http://www.infomous.com/client2/"></script>
+
+</body>
+</html>

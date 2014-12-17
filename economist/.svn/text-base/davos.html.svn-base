@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+<head>
+  <title>Economist Davos 2013 Cloud by Infomous </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<link type="text/css" rel="stylesheet" media="all" href="style.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?y" />
+  <script type="text/javascript" src="/misc/jquery.js?y"></script>
+<script type="text/javascript" src="/misc/drupal.js?y"></script>
+<script type="text/javascript" src="/sites/all/themes/infomous2/scripts/analytics.js?y"></script>
+<script type="text/javascript">jQuery.extend(Drupal.settings, { "basePath": "/" });</script>
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript"> </script>
+
+<!-- <link rel="stylesheet" type="text/css" href="landing/infomous.css" /> -->
+
+</head>
+<body>
+<div align="center">
+<!-- 
+<table cellpadding="10" cellspacing="0" style="width:880px; border:1px solid #4A8019; text-align:center; margin: 15px 0;" >
+  <tr>
+    <td align="left">
+      <a href="http://infomous.com">
+            <img src="landing/logo_on_white.jpg" alt="Infomous" />
+      </a>
+    </td>
+  </tr>
+</table>
+-->
+
+<div style="width:880px; border:1px solid #4A8019; padding-bottom:5px; margin: 10px 0; text-align:center; font-family:Arial,Helvetica,sans-serif; font-size:18px; color:#3B6614; font-weight:bold;">
+	<a style="font-size: 32px; color: #444;" href="http://economist.com"><img style="top: 5px; position: relative;" src="landing/TE.png" alt="Infomous" />&nbsp;The Economist&nbsp;&nbsp;</a> Davos 2013 Cloud by &nbsp;&nbsp;<a href="http://infomous.com"><img style="top: 5px; position: relative;" src="landing/logo_on_white.jpg" alt="Infomous" /></a> 
+</div>
+
+<div style="width:880px; padding:5px; text-align:center; font-size:1.0em; color:#444444; font-weight:normal; margin-bottom: 20px;">
+  The Economist Davos 2013 Cloud aggregates tweets from The Economist Group's <a href="">Davos Twitter list</a>.
+</div>
+
+  
+<div style="width: 880px;">
+    
+    <!-- infomous snippet -->
+
+    <script type="text/javascript" src="http://economist.infomous.com/site/economist/1_6b/economist_cloud.js?width=880&height=500&maxWords=50&brandLogoDestination=http%3A%2F%2Finfomous.com%2F"></script>
+
+    <script> $('#readerscomments').hide() </script>
+    
+    <!-- end of infomous snippet -->
+
+<div style="width:880px; margin:0; padding: 4px 0; font-size:12px; color:#3B6614; background-color:#E5ECF2; text-align:right;">
+  <div style="margin:0 0 0 10px; padding:0px; text-align:left; font-size:11px; color:#3B6614; font-weight:normal; float:left;">
+	  Hover and click on the words to interact and read more. 
+	</div>
+  <font color="#777777">Powered by </font>
+  <a href="http://www.infomous.com" target="_blank" style="text-decoration:underline">Infomous<a/> 
+  <font color="#777777"> and </font>
+  <a href="http://www.twitter.com" target="_blank" style="text-decoration:underline">Twitter</a>&nbsp;&nbsp;
+</div>
+
+
+
+
+
+<div style="margin: 15px 0; width:880px; border:1px solid #4A8019; font-size: 0.8em;">
+  <p>Like this? Share it!&nbsp;
+    <a href="http://twitter.com/share" class="twitter-share-button"
+    data-text="Economist Davos 2013 Cloud" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    &nbsp;
+    <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like layout="button_count"></fb:like> 
+
+&nbsp;&nbsp;&nbsp;Copyright 2007-2012 Infomous Inc. | <a href="/drupal/terms">Terms of service</a> | <a href="/drupal/privacy">Privacy policy</a> | <a href="/drupal/about">About us</a> | <a href="/drupal/contact">Feedback</a></p>
+</div><!-- footer -->
+
+	</div><!-- align="center" -->
+</body>

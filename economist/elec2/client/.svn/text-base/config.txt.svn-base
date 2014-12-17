@@ -1,0 +1,67 @@
+brandShowLogo = true
+adsShowPlain = true
+
+query:cAuthors = true
+query:cFeed = false
+query:cFeedLink = none
+query:agg = yes
+
+skin = economist
+linkageThreshold = 1
+setShowReset = true
+setShowErrors = false
+brandLogoPosition = top left
+brandLogoDestination = http://infomous.com/site/economist
+trackOmniture = false
+trackGoogle = true
+trackGAAccount = UA-20995290-1
+
+//colors
+//colWord = 0x000000
+//colWordHover = 0xFFFFFF
+//colWordFade = 0x333333
+//colWordOverLinked = 0x000000
+colBackground = 0xD9E4E6
+colHoverBox = 0x08526D
+colFocusBox = 0xFFFFFF
+//colFocusBorder = 0x08526D
+//colBlob = 0xFFFFFF
+//colBlobHover = 0x96AFAE
+//colBlobBorder = 0x86A1A8
+//colLink = 0x86A1A8
+//colLinkHover = 0xFF0000
+colSourcesFill = 0xFFFFFF
+colSourcesLine1 = 0x08526D
+colSourcesLine2 = 0x08526D
+colSourcesTextHover = 0x488CA7
+colSourcesBorder = 0x488CA7
+
+title = Electionism 
+description = 
+feeds = http://api.twitter.com/1/lists/statuses.atom?slug=latest-from-twitter&owner_screen_name=Electionism&per_page=100&include_entities=true&infcutbef=:%20
+groups = 1
+fontScale = 1
+zoom = 1
+maxWords = 40
+dict = NOUN|1,VERB|0,ADJECTIVE|0,ADVERB|0,NUMBER|0,OTHER|1
+focused = 
+blocked = via,will,too,only,so,better off,ago,out,now,going,would,should,could,did
+campaign = none
+adsShowPlain = true
+trackGoogle = true
+setMinutesToReload = 15
+
+colWordHighlighted = 0x005BED
+colWord = 0x002868
+colWordHover = 0x002868
+colWordFade = 0xFFB0B0
+colWordHoverLinked = 0x005BED
+colFocusBorder = 0x005BED
+colLink = 0xFFE0E0
+colLinkHover = 0xDEF1FF
+colBlob = 0xFFFFFF
+colBlobBorder = 0xBF0A30
+colBlobHover = 0xAAAAAA
+skinMinFontSize = 13
+skinMaxFontSize = 48
+setPanels = words,blobs,status,branding

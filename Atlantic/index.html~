@@ -1,0 +1,2426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns#"
+      xmlns:og="http://ogp.me/ns#"
+      prefix="og: http://ogp.me/ns#"
+      itemscope="itemscope"
+      itemtype="http://schema.org/">
+<head>
+			<!-- for chartbeat -->
+	<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+	<script type="text/javascript">
+//<![CDATA[
+		if (window.location.hash != undefined && window.location.hash.substr(0,2) == '#!') {
+			window.location = window.location.hash.substr(2);
+		}
+//]]>
+	</script>
+
+	<title>The Atlantic &mdash; News and analysis on politics, business, culture, technology, national,  international, and life – TheAtlantic.com</title>
+
+	
+			<link rel="stylesheet" href="http://cdn.theatlantic.com/static/front/css/site.css?v=3.3" type="text/css" media="screen,projection" />
+		<!--[if lt IE 8]>
+		<link rel="stylesheet" href="http://cdn.theatlantic.com/static/front/css/ie.css?v=2.0" type="text/css" media="screen,projection" />
+		<![endif]-->
+		<!--[if IE 6]>
+		<link rel="stylesheet" href="http://cdn.theatlantic.com/static/front/css/ie6.css?v=2.3" type="text/css" media="screen,projection" />
+		<![endif]-->
+		<!--[if IE 7]>
+		<link rel="stylesheet" href="http://cdn.theatlantic.com/static/front/css/ie7.css?v=2.4" type="text/css" media="screen,projection" />
+		<![endif]-->
+		<!--[if IE 8]>
+		<link rel="stylesheet" href="http://cdn.theatlantic.com/static/front/css/ie8.css?v=1.0" type="text/css" media="screen,projection" />
+		<![endif]-->
+	
+	
+			<meta property="og:site_name" content="The Atlantic" />
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="http://cdn.theatlantic.com/static/front/images/favicon.ico" />
+<link rel="shortcut icon" href="http://cdn.theatlantic.com/static/front/images/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="http://cdn.theatlantic.com/static/front/images/apple-touch-icon-precomposed.png" />
+
+<meta property="fb:page_id" content="29259828486" />
+<meta property="fb:app_id" content="100770816677686" />
+
+	<meta name="description" content="The Atlantic covers news and analysis on politics, business, culture, technology, national, international and life on the official site of The Atlantic Magazine." />
+
+	<meta name="keywords" content="The Atlantic, The Atlantic Magazine, TheAtlantic.com, Atlantic, news, opinion, breaking news, analysis, commentary, business, politics, culture, international, science, technology, national and life" />
+
+	<link rel="image_src" href="http://cdn.theatlantic.com/static/front/images/default_thumbnail.gif" />
+	<meta property="og:image" content="http://cdn.theatlantic.com/static/front/images/default_thumbnail.gif" />
+	<meta itemprop="image" content="http://cdn.theatlantic.com/static/front/images/default_thumbnail.gif" />
+
+	<meta property="og:type" content="website" /> 
+
+
+
+
+
+<meta name='parsely-page' content='{"section":"Homepage","post_id":"mt261888"}'>
+
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="title" content="The Atlantic &amp;mdash; News and analysis on politics, business, culture, technology, national,  international, and life – TheAtlantic.com" />
+
+		
+				    		        <meta http-equiv="refresh" content="600" />
+		    		
+			
+	
+		<link rel="alternate" type="application/rss+xml" title="The Atlantic" href="http://feeds.feedburner.com/TheAtlantic" />
+	<link rel="alternate" type="application/rss+xml" title="Best of The Atlantic" href="http://feeds.feedburner.com/Best-Of-The-Atlantic" />
+	
+									<link rel="alternate" type="application/rss+xml" title="Politics Channel" href="http://feeds.feedburner.com/AtlanticPoliticsChannel" />
+											<link rel="alternate" type="application/rss+xml" title="Business Channel" href="http://feeds.feedburner.com/AtlanticBusinessChannel" />
+											<link rel="alternate" type="application/rss+xml" title="Entertainment Channel" href="http://feeds.feedburner.com/AtlanticCulture" />
+											<link rel="alternate" type="application/rss+xml" title="International Channel" href="http://feeds.feedburner.com/AtlanticInternational" />
+											<link rel="alternate" type="application/rss+xml" title="Technology Channel" href="http://feeds.feedburner.com/AtlanticScienceAndTechnology" />
+											<link rel="alternate" type="application/rss+xml" title="National Channel" href="http://feeds.feedburner.com/AtlanticNational" />
+											<link rel="alternate" type="application/rss+xml" title="Health Channel" href="http://feeds.feedburner.com/AtlanticFood" />
+											<link rel="alternate" type="application/rss+xml" title="Video Channel" href="http://feeds.feedburner.com/AtlanticVideo" />
+											<link rel="alternate" type="application/rss+xml" title="Steve Clemons" href="http://feeds.feedburner.com/SteveClemonsTheAtlantic" />
+											<link rel="alternate" type="application/rss+xml" title="Alexis Madrigal" href="http://feeds.feedburner.com/AlexisMadrigalTheAtlantic" />
+											<link rel="alternate" type="application/rss+xml" title="Damien Ma" href="http://feeds.feedburner.com/DamienMaTheAtlantic" />
+											<link rel="alternate" type="application/rss+xml" title="Robert Wright" href="http://feeds.feedburner.com/RobertWrightTheAtlantic" />
+											<link rel="alternate" type="application/rss+xml" title="Conor Friedersdorf" href="http://feeds.feedburner.com/ConorFriedersdorf" />
+											<link rel="alternate" type="application/rss+xml" title="Garance Franke-Ruta" href="http://feeds.feedburner.com/GaranceFrankeRutaTheAtlantic" />
+											<link rel="alternate" type="application/rss+xml" title="Lisa Margonelli" href="http://feeds.feedburner.com/LisaMargonelliTheAtlantic" />
+											<link rel="alternate" type="application/rss+xml" title="Derek Thompson" href="http://feeds.feedburner.com/DerekThompsonTheAtlantic" />
+											<link rel="alternate" type="application/rss+xml" title="Graeme Wood" href="http://feeds.feedburner.com/GraemeWoodTheAtlantic" />
+											<link rel="alternate" type="application/rss+xml" title="Alyssa Rosenberg" href="http://feeds.feedburner.com/AlyssaRosenberg" />
+											<link rel="alternate" type="application/rss+xml" title="Ta-Nehisi Coates" href="http://feeds.feedburner.com/Ta-nehisiCoates" />
+											<link rel="alternate" type="application/rss+xml" title="David Shenk" href="http://feeds.feedburner.com/DavidShenkTheAtlantic" />
+											<link rel="alternate" type="application/rss+xml" title="Lane Wallace" href="http://feeds.feedburner.com/LaneWallaceTheAtlantic" />
+											<link rel="alternate" type="application/rss+xml" title="Jeffrey Goldberg" href="http://feeds.feedburner.com/JeffGoldberg" />
+											<link rel="alternate" type="application/rss+xml" title="Clive Crook" href="http://feeds.feedburner.com/CliveCrook" />
+							
+	
+		<!-- SiteCatalyst code version: H.22.1
+	Copyright 1997-2008 Omniture, Inc. More info available at
+	http://www.omniture.com -->
+	<script type="text/javascript" src="http://cdn.theatlantic.com/static/front/js/omniture/s_code-2.js?v=1.4"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="http://cdn.theatlantic.com/static/front/js/site.js?v=15.11"></script>
+	<script type="text/javascript" src="http://cdn.theatlantic.com/static/front/js/jquery.colorbox-min.js"></script>
+	
+	<script type="text/javascript">
+	//<![CDATA[
+		var facebookXdReceiverPath = '/static/front/html/xd_receiver.htm';
+		//]]>
+	</script>
+	<script type="text/javascript" src="http://cdn.theatlantic.com/static/front/js/brightCove/MobileCompatibility.js"></script>
+
+	<script src="http://siterecruit.comscore.com/sr/atlantic/broker.js"></script>
+
+	<script type="text/javascript">
+	//<![CDATA[
+	function cssFixes() {
+		$('.metadata .comments:last-child').addClass('last-child');
+		$('.metadata .authors:last-child').addClass('last-child');
+		$('.metadata .channel:last-child').addClass('last-child');
+		$('.metadata .date:last-child').addClass('last-child');
+		$('.rightContent .module:first-child').addClass('first-child');
+		$('.contentColumn hr:last-child').addClass('last-child');
+		$('#authorRiver .post:last-child').addClass('last-child');
+		$('#profile .bioTools li:last-child').addClass('last-child');
+	}
+	var debug = false;
+	var loadTimes = {
+		'js': {},
+		'ads': {}
+	};
+	//]]>
+	</script>
+
+	<!-- Begin comScore Tag -->
+<script type="text/javascript">
+//<![CDATA[
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "6463921" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+//]]>
+</script>
+<noscript>
+	<img src="http://b.scorecardresearch.com/p?c1=2&c2=6463921&cv=2.0&cj=1" alt="" />
+</noscript>
+<!-- End comScore Tag -->
+		<script type="text/javascript">
+//<![CDATA[
+		/* You may give each page an identifying name, server, and channel on
+		the next lines. */
+			s.server="www.theatlantic.com"
+			s.channel="homepage"
+			
+			s.pageName="homepage - homepage - n/a"
+			
+			s.prop3="homepage - homepage - n/a"
+
+			s.prop4="/"
+
+			
+			
+			s.prop6="homepage"
+			s.prop7="homepage"
+			s.prop8="homepage"
+			
+			
+			
+			s.prop15="n/a"
+						s.prop17="homepage"
+
+			
+			s.hier1="homepage"
+
+			s.prop23="regular"
+			s.prop24="regular"
+			s.prop25="regular"
+			s.prop26="regular"
+
+		/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+		var s_code=s.t();if(s_code) document.write(s_code)
+		if(navigator.appVersion.indexOf('MSIE')>=0) document.write(unescape('%3C')+'\!-'+'-');
+//]]>
+	</script>
+	<noscript><div><a href="http://www.omniture.com" title="Web Analytics" ><img
+src="http://atlanticmedia.122.2o7.net/b/ss/atlanticprod/1/H.22--NS/0"
+height="1" width="1" alt="" /></a></div></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.22. -->
+	<!-- google analytics -->
+<script type="text/javascript">
+//<![CDATA[
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20189-19']);
+  _gaq.push(['_setDomainName', '.theatlantic.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+//]]>
+</script>
+	
+	
+	<style type="text/css">
+	#partner-centerpiece {
+		width: 190px;
+		font-family: Arial, sans-serif;
+		margin: 0 auto 0 auto;
+		padding: 8px 0 0 0;
+		border-top: 4px solid #242B30;
+	}
+
+	#partner-centerpiece-header {
+		text-align: center;
+		margin: 0 auto 5px auto;
+	}
+
+	#partner-centerpiece-banner {
+		color: white;
+		font-size: 7pt;
+		text-transform: uppercase;
+		font-weight: lighter;
+		background: #a0a0a0;
+		width: 190px;
+		margin: 0 auto 5px auto;
+		text-align: center;
+	}
+
+	#partner-centerpiece-title {
+		font-family: Georgia, 'Times New Roman', serif;
+		color: black;
+		font-size: 12pt;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0 auto 0 auto;
+		text-align: center;
+	}
+
+	#partner-centerpiece-subtitle {
+		color: #646464;
+		font-size: 8px;
+		text-transform: uppercase;
+		font-weight: lighter;
+		/*border-bottom: 1px solid #d8d8d8;*/
+		padding: 0 0 0 0;
+		margin: 0 auto 3px auto;
+		text-align: center;
+	}
+
+	#partner-centerpiece-posts {
+		text-align: center;
+	}
+
+	h3.partner-headline {
+		font-size: 9pt !important;
+		line-height: 12pt !important;
+		margin: 0 0 5px 5px;
+		color: black;
+		text-decoration: none;
+		text-align: left;
+	}
+
+	h3.partner-headline a {
+		text-decoration: none;
+	}
+
+	div.partner-centerpiece-dek {
+		line-height: 15px;
+		text-align: left;
+		margin: 0 5px 7px 5px;
+	}
+
+	.partner-centerpiece-thumbnail {
+		border: 1px solid #c2ccd2;
+		padding: 1px;
+		margin-top: 2px;
+		width: 170px;
+	}
+</style>
+</head>
+<body id="homePage">
+<div id="fb-root"></div>
+<script type="text/javascript">
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId: '100770816677686',
+			channelURL: '//www.theatlantic.com/channel.html',
+			status: true,
+			cookie: true,
+			xfbml: true
+		});
+	};
+</script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=100770816677686&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>	<!--[if lt IE 7]>
+	<div class="warning message">
+		<div class="container">
+			<strong>Your browser is no longer supported.</strong>
+			For maximum compatibility
+			we recommend upgrading to a <a href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie-8">newer version of IE</a>,
+			or another browser such as <a href="http://www.google.com/chrome/">Chrome</a>,
+			<a href="http://www.apple.com/safari/">Safari</a>,
+			or <a href="http://www.mozilla.com/en-US/firefox/new/">Firefox</a>.
+		</div>
+	</div>
+	<![endif]-->
+
+	
+<div class="ad adGutter" id="adGutter4">
+			<script type="text/javascript">
+//<![CDATA[
+			if (typeof window.dartOrd == 'undefined') {
+				window.dartOrd = ('000000000' + Math.ceil(Math.random()*1000000000).toString()).slice(-9);
+			}
+			if (typeof window.dartTile == 'undefined') {
+				window.dartTile = 0;
+			}
+			window.dartTile += 1;
+			if (typeof(window.bizoDart) == 'undefined') {
+				if (typeof(window.Atlantic) =='object' && typeof(window.Atlantic.getBizoDartString) == 'function') {
+					window.bizoDart = Atlantic.getBizoDartString();
+				} else {
+					window.bizoDart = '';
+				}	
+			}
+			jsProperties = 'TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=gutter;sz=0x0';
+			document.write('<' + 'script type="text/javascript" src="http://ad.doubleclick.net/adj/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=gutter;sz=0x0;' + window.bizoDart + 'ord=' + window.dartOrd + ';tile=' + window.dartTile + '" id="adGutterScript"></' + 'script' + '>');
+//]]>
+			</script>
+<noscript><div><a href="http://ad.doubleclick.net/jump/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=gutter;sz=0x0" title=""><img src="http://ad.doubleclick.net/ad/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=gutter;sz=0x0" alt="" /></a></div></noscript>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+if( $("#adGutter4").html().search("grey.gif") != -1 ){
+	$("#adGutter4").hide();
+}
+//]]>
+</script>
+			<span></span>
+	
+	<div class="skipNav"><a title="Skip Navigation" id="top" href="#middle">Skip Navigation</a></div>
+	
+	<div id="topAdsWrap">
+<div id="topAds">
+	
+<div class="ad adTopleader" id="adTopleader5">
+			<script type="text/javascript">
+//<![CDATA[
+			if (typeof window.dartOrd == 'undefined') {
+				window.dartOrd = ('000000000' + Math.ceil(Math.random()*1000000000).toString()).slice(-9);
+			}
+			if (typeof window.dartTile == 'undefined') {
+				window.dartTile = 0;
+			}
+			window.dartTile += 1;
+			if (typeof(window.bizoDart) == 'undefined') {
+				if (typeof(window.Atlantic) =='object' && typeof(window.Atlantic.getBizoDartString) == 'function') {
+					window.bizoDart = Atlantic.getBizoDartString();
+				} else {
+					window.bizoDart = '';
+				}	
+			}
+			jsProperties = 'TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=topleader;sz=728x90,970x66,970x418,970x250;dcopt=ist';
+			document.write('<' + 'script type="text/javascript" src="http://ad.doubleclick.net/adj/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=topleader;sz=728x90,970x66,970x418,970x250;dcopt=ist;' + window.bizoDart + 'ord=' + window.dartOrd + ';tile=' + window.dartTile + '" id="adTopleaderScript"></' + 'script' + '>');
+//]]>
+			</script>
+<noscript><div><a href="http://ad.doubleclick.net/jump/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=topleader;sz=728x90,970x66,970x418,970x250;dcopt=ist" title=""><img src="http://ad.doubleclick.net/ad/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=topleader;sz=728x90,970x66,970x418,970x250;dcopt=ist" alt="" /></a></div></noscript>
+</div>
+	<div id="adHeaderCirc" class="ad adHeadercirc"></div>
+
+	<script type="text/javascript">
+//<![CDATA[
+	var topAdAttempts = 0;
+
+	function topAds() {
+
+		// Has DoubleClick sent a blank ad (as signified by a grey.gif tracking pixel)
+		var blankAdLoaded = false;
+		var $adTopleader = $("#topAds div.adTopleader");
+		if ($adTopleader.html().search("grey.gif") != -1) {
+			blankAdLoaded = true;
+		} 
+		
+		// webkit seems to be having issues with visiblity detection
+		var visibilityCheck;
+		if (jQuery.browser.webkit) {
+			visibilityCheck = function(index) {
+				return $(this).css('visibility') == 'visible';
+			}
+		} else {
+			visibilityCheck = ':visible';
+		}
+		
+		var visibleElements = $adTopleader.find(">*").not('script').filter(visibilityCheck);
+		var adWidth = 0;
+		for (i=visibleElements.length; i--; i>=0) {
+			var currentElementWidth = $(visibleElements[i]).width();
+			if (currentElementWidth > adWidth) {
+				adWidth = currentElementWidth;
+			}
+		}
+	
+		// If we don't have a blank ad from DoubleClick, or the ad width is such
+		// that we suspect it hasn't finished loading, try again in a bit...
+		if (blankAdLoaded == false && adWidth <= 500) {
+			if (topAdAttempts < 50) { // Try up to 50 times
+				topAdAttempts++;
+				setTimeout('topAds()', 50 + (topAdAttempts * 20)); // Each attempt is a litle slower, try to ketch people on really slow connections
+				return false;
+			} else {
+				// We've waited a while, doesn't look like an ad is coming
+				blankAdLoaded = true;
+			}
+		}
+				
+		// If we have a blank ad or a wide push down ad, then show the wide circ
+		if ( blankAdLoaded == true || adWidth > 732 )
+		{			
+				var circAd = '';
+				circAd += '<div id="adHeaderWideCirc">';
+				circAd +=	'<a id="circCover" href="https://secure.palmcoastd.com/pcd/eSv?iMagId=23301&i4Ky=IA2S" title="Subscribe to The Atlantic">';
+				circAd +=		'<img width="66" src="http://cdn.theatlantic.com/static/newsroom/img/2012/08/20/0912 Cover_210x280/mag-issue-medium.jpg?m92if7" alt="Subscribe to The Atlantic" />';
+				circAd +=	'</a>';
+				circAd +=	'<ul>';
+				circAd +=		'<li><a href="https://secure.palmcoastd.com/pcd/eSv?iMagId=23301&i4Ky=IA1S">Subscribe</a></li>';
+				circAd +=		'<li>&bull;<a href="https://secure.palmcoastd.com/pcd/eServ?iServ=MjMzMDE1ODgzNQ==">Renew</a></li>';
+				circAd +=		'<li>&bull;<a href="https://secure.palmcoastd.com/pcd/eSv?iMagId=23301&i4Ky=IFGD">Give a Gift</a></li>';
+				circAd +=		'<li>&bull;<a href="http://itunes.apple.com/us/app/the-atlantic-magazine-digital/id397599894?mt=8">Digital Edition</a></li>';
+				circAd +=	'</ul>';
+				circAd += '</div>';		
+						
+				$("#adHeaderCirc").html(circAd);
+
+			if (blankAdLoaded == false) 
+			{
+				$adTopleader.addClass('adPush').removeClass('ad');
+			}
+
+		// ELSE the topleader has an ad in it, but it is less than 730px
+		// So show the small circ ad that goes with it
+		} else {
+			var circAd = '';
+
+						$adTopleader.attr('style', 'width:730px');
+			
+			circAd += '<div id="adHeaderSmallCirc">';
+			circAd +=	'<a id="circCover" href="https://secure.palmcoastd.com/pcd/eSv?iMagId=23301&i4Ky=IA2S" title="Subscribe to The Atlantic">';
+			circAd +=		'<img width="58" height="78" src="http://cdn.theatlantic.com/static/newsroom/img/2012/08/20/0912 Cover_210x280/mag-issue-medium.jpg?m92if7" alt="Subscribe to The Atlantic" />';
+			circAd +=	'</a>';
+			circAd +=	'<ul>';
+			circAd +=		'<li>&bull;<a href="https://secure.palmcoastd.com/pcd/eSv?iMagId=23301&i4Ky=IA1S">Subscribe</a></li>';
+			circAd +=		'<li>&bull;<a href="https://secure.palmcoastd.com/pcd/eServ?iServ=MjMzMDE1ODgzNQ==">Renew</a></li>';
+			circAd +=		'<li>&bull;<a href="https://secure.palmcoastd.com/pcd/eSv?iMagId=23301&i4Ky=IFGD">Give a Gift</a></li>';
+			circAd +=		'<li>&bull;<a href="http://itunes.apple.com/us/app/the-atlantic-magazine-digital/id397599894?mt=8">Digital Edition</a></li>';
+			circAd +=	'</ul>';
+			circAd += '</div>';
+						
+			$("#adHeaderCirc").html(circAd).attr('style', 'float:right');
+		}
+
+		return true;
+	}
+	topAds();
+//]]>	
+	</script>
+	<div style="clear:both"></div>
+</div>
+</div>
+<script language="VBScript">
+//<![CDATA[
+Sub FlASH_AD_FSCommand(ByVal command, ByVal args)
+	call FlASH_AD_DoFSCommand(command, args)
+end sub
+//]]>
+</script>
+
+
+	<div id="contentShadow">
+	<div id="container">
+		<div id="header" class="nav">
+			
+			<a id="atlanticLogo" href="/" title="The Atlantic Home">The Atlantic Home</a>
+			
+			<div id="headerRight" class="clearfix">
+
+			<table border="0" cellspacing="0" cellpadding="0" >
+				<tr>
+					<td>
+						<div id="siteDate" >Wednesday, September 5, 2012</div>
+					</td>
+					<td>
+						<form action="/search/" method="get" id="search">
+							<fieldset>
+								<div class="searchin">
+									<input id="query" type="text" name="q" value=""  />
+									<button id="searchBtn" type="submit" >Go</button>
+								</div>
+							</fieldset>
+						</form><!-- /search -->
+					</td>
+					<td>
+						<div id="followNav">
+							<a href="/follow-the-atlantic/" id="followLink" >Follow the Atlantic &raquo;</a>
+							
+							<div id="followIcons">
+								<a href="http://twitter.com/TheAtlantic/" title="Twitter" ><img src="http://cdn.theatlantic.com/static/front/images/twitter.png" height="23" alt="Twitter" /></a>
+							
+								<a href="http://www.facebook.com/TheAtlantic" title="Facebook" ><img src="http://cdn.theatlantic.com/static/front/images/facebook.png" height="23" alt="Facebook" /></a>
+							
+								<a href="/follow-the-atlantic/#rssFeeds" title="RSS" ><img src="http://cdn.theatlantic.com/static/front/images/rss-30x30.png" height="23" alt="RSS" /></a>
+							
+								<a href="http://itunes.apple.com/us/app/the-atlantic-magazine-digital/id397599894?mt=8" title="iPhone App" ><img src="http://cdn.theatlantic.com/static/front/images/iphone.png" height="23" alt="iPhone"  /></a>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+
+			</div><!-- /headerRight -->
+			
+						<ul id="menu">
+													
+								
+					<li id="navPolitics" >
+						<a class="navLink" name="&amp;lpos=Top Nav" href="http://www.theatlantic.com/politics/" title="Politics">Politics</a>
+					</li>
+									
+								
+					<li id="navBusiness" >
+						<a class="navLink" name="&amp;lpos=Top Nav" href="http://www.theatlantic.com/business/" title="Business">Business</a>
+					</li>
+									
+								
+					<li id="navEntertainment" >
+						<a class="navLink" name="&amp;lpos=Top Nav" href="http://www.theatlantic.com/entertainment/" title="Entertainment">Entertainment</a>
+					</li>
+									
+								
+					<li id="navInternational" >
+						<a class="navLink" name="&amp;lpos=Top Nav" href="http://www.theatlantic.com/international/" title="International">International</a>
+					</li>
+									
+								
+					<li id="navTechnology" >
+						<a class="navLink" name="&amp;lpos=Top Nav" href="http://www.theatlantic.com/technology/" title="Technology">Technology</a>
+					</li>
+									
+								
+					<li id="navNational" >
+						<a class="navLink" name="&amp;lpos=Top Nav" href="http://www.theatlantic.com/national/" title="National">National</a>
+					</li>
+									
+								
+					<li id="navHealth" >
+						<a class="navLink" name="&amp;lpos=Top Nav" href="http://www.theatlantic.com/health/" title="Health">Health</a>
+					</li>
+									
+								
+					<li id="navMagazine" >
+						<a class="navLink" name="&amp;lpos=Top Nav" href="http://www.theatlantic.com/magazine/" title="Magazine">Magazine</a>
+					</li>
+									
+								
+					<li id="navVideo" >
+						<a class="navLink" name="&amp;lpos=Top Nav" href="http://www.theatlantic.com/video/" title="video">video</a>
+					</li>
+							</ul>
+			<div id="menuNavExpanded">
+												
+					 
+<div id="navPoliticsExpanded" class="navExpanded">
+		
+	<div class="sponsor">	
+			<div style="position: relative; top: -12px;">
+				<img src="http://cdn.theatlantic.com/static/front/images/specialreports/election-2012/checkbox-large.png"
+					 style="float: left; margin-right: 5px; border: 0;"/>
+				<div style="font-family: 'Arial black', Arial, sans-serif; color: #bf0000; text-transform: uppercase; font-weight: bold;">
+					CAMPAIGN DASHBOARD
+				</div>
+				<a href="http://www.theatlantic.com/special-report/election-2012/">
+					<strong>
+						Full Coverage&nbsp;
+						<img src="http://cdn.theatlantic.com/static/front/images/arrows/right-arrow-blue.png" />
+					</strong>
+				</a>
+			</div>
+	</div>
+			<div class="links">
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/politics/archive/2012/09/juli-n-castros-rebuttal-to-the-gop/261968/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/011525_juliancastroDNC.nav.reuters.jpg" alt="Julián Castro's Rebuttal to the GOP" title="Julián Castro's Rebuttal to the GOP" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/09/juli-n-castros-rebuttal-to-the-gop/261968/">Julián Castro's Rebuttal to the GOP</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/molly-ball/" class="author" >Molly Ball</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/politics/archive/2012/09/flotus-like-a-butterfly-sting-like-a-bee/261969/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/011458_michelleobamaDNC.nav.reuters.jpg" alt="Michelle Obama's Big Night" title="Michelle Obama's Big Night" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/09/flotus-like-a-butterfly-sting-like-a-bee/261969/">Michelle Obama's Big Night</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/garance-franke-ruta/" class="author voice" >Garance Franke-Ruta</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/politics/archive/2012/09/charlotte-swag-once-you-vote-black-you-never-go-back-and-more/261934/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/011553_hipstersobama.nav.DAG.jpg" alt="The Best Swag in Charlotte: Photos" title="The Best Swag in Charlotte: Photos" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/09/charlotte-swag-once-you-vote-black-you-never-go-back-and-more/261934/">The Best Swag in Charlotte: Photos</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/david-a-graham/" class="author" >David A. Graham</a></span></span>
+		</div><!-- /linkContent -->
+	</div> <!-- /links -->
+</div> <!-- /navExpanded -->
+												
+					 
+<div id="navBusinessExpanded" class="navExpanded">
+		<div class='ad adNavlogoContainer'><iframe class='ad adNavlogo' id='adNavlogo6' src='http://cdn.theatlantic.com/static/empty.html' realsrc='/ad/iframe/TheAtlanticOnline/channel_business;src=landing;pos=navlogo;sz=215x64' frameborder='0' marginheight='0' marginwidth='0' scrolling='no' style='width:215px;height:64px;'></iframe></div> <script type='text/javascript'> currentAdId = $('#adNavlogo6');  if (currentAdId.is(':visible')) { Atlantic.Ad.activatedIframeAds(currentAdId); } </script>	<div class="links">
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/business/archive/2012/09/why-does-canada-have-a-strategic-maple-syrup-reserve/261869/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/113136_55_Canada_Flag_Wikimedia.jpg" alt="On Canada's Strategic Maple Syrup Reserve" title="On Canada's Strategic Maple Syrup Reserve" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/business/archive/2012/09/why-does-canada-have-a-strategic-maple-syrup-reserve/261869/">On Canada's Strategic Maple Syrup Reserve</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/jordan-weissmann/" class="author" >Jordan Weissmann</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/business/archive/2012/09/freezing-out-workers-what-the-nhls-looming-crack-up-says-about-sports-labor/261887/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/113045_55_Hockey_Stanely_Cup_Reuters.jpg" alt="Could the NHL Crack Up Again?" title="Could the NHL Crack Up Again?" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/business/archive/2012/09/freezing-out-workers-what-the-nhls-looming-crack-up-says-about-sports-labor/261887/">Could the NHL Crack Up Again?</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/armin-rosen/" class="author" >Armin Rosen</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/business/archive/2012/09/what-a-non-partisan-plan-for-us-entrepeneurship-would-look-like/261892/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/113021_55_venture_capital_entrepreneur.jpg" alt="A Non-Partisan Plan for Entrepreneurship" title="A Non-Partisan Plan for Entrepreneurship" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/business/archive/2012/09/what-a-non-partisan-plan-for-us-entrepeneurship-would-look-like/261892/">A Non-Partisan Plan for Entrepreneurship</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/derek-thompson/" class="author voice" >Derek Thompson</a></span></span>
+		</div><!-- /linkContent -->
+	</div> <!-- /links -->
+</div> <!-- /navExpanded -->
+												
+					 
+<div id="navEntertainmentExpanded" class="navExpanded">
+		<div class="sponsor"><a href="https://secure.palmcoastd.com/pcd/eSv?iMagId=23301&i4Ky=IA2V" title="Subscribe to The Atlantic" onclick="s.tl(this,'o','EasyAd: 2-Atlantic_Sub_V19_Atl_Red_86_88x31.jpg');" class="adNavlogo"><span class="sponsorText">Presented By</span><img src="http://cdn.theatlantic.com/static/easel/images/ads/104833_2-Atlantic_Sub_V19_Atl_Red_86_88x31.jpg" alt="" /></a></div>	<div class="links">
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/entertainment/archive/2012/09/stop-making-predictions-about-this-years-nfl-season/261980/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/122804_55peyton.jpg" alt="Stop Making Predictions About the NFL Season" title="Stop Making Predictions About the NFL Season" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/entertainment/archive/2012/09/stop-making-predictions-about-this-years-nfl-season/261980/">Stop Making Predictions About the NFL Season</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/allen-barra/" class="author" >Allen Barra</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/entertainment/archive/2012/08/why-the-end-of-men-is-more-complicated-than-it-seems/261144/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/122738_55adam.jpg" alt="'The End of Men': More Complex Than It Seems" title="'The End of Men': More Complex Than It Seems" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/entertainment/archive/2012/08/why-the-end-of-men-is-more-complicated-than-it-seems/261144/">'The End of Men': More Complex Than It Seems</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/chloe-angyal/" class="author" >Chloe Angyal</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/entertainment/archive/2012/09/enjoy-roger-federers-graceful-poetic-tennis-game-while-you-still-can/261916/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/123223_55federer.jpg" alt="Enjoy Roger Federer's Brilliance While It Lasts" title="Enjoy Roger Federer's Brilliance While It Lasts" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/entertainment/archive/2012/09/enjoy-roger-federers-graceful-poetic-tennis-game-while-you-still-can/261916/">Enjoy Roger Federer's Brilliance While It Lasts</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/kevin-craft/" class="author" >Kevin Craft</a></span></span>
+		</div><!-- /linkContent -->
+	</div> <!-- /links -->
+</div> <!-- /navExpanded -->
+												
+					 
+<div id="navInternationalExpanded" class="navExpanded">
+		<div class='ad adNavlogoContainer'><iframe class='ad adNavlogo' id='adNavlogo7' src='http://cdn.theatlantic.com/static/empty.html' realsrc='/ad/iframe/TheAtlanticOnline/channel_international;src=landing;pos=navlogo;sz=215x64' frameborder='0' marginheight='0' marginwidth='0' scrolling='no' style='width:215px;height:64px;'></iframe></div> <script type='text/javascript'> currentAdId = $('#adNavlogo7');  if (currentAdId.is(':visible')) { Atlantic.Ad.activatedIframeAds(currentAdId); } </script>	<div class="links">
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/international/archive/2012/09/a-place-of-dreams-a-source-of-villainy-how-foreign-movies-portray-america/261876/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/110803_max_fisher_movie_post_nav.jpg" alt="How Foreign Films Portray America" title="How Foreign Films Portray America" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/international/archive/2012/09/a-place-of-dreams-a-source-of-villainy-how-foreign-movies-portray-america/261876/">How Foreign Films Portray America</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/max-fisher/" class="author" >Max Fisher</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/international/archive/2012/09/was-gen-dempsey-goading-israel-to-attack-iran/261874/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/110937_dempsey_nav.jpg" alt="A Top U.S. General, Israel, and Iran" title="A Top U.S. General, Israel, and Iran" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/international/archive/2012/09/was-gen-dempsey-goading-israel-to-attack-iran/261874/">A Top U.S. General, Israel, and Iran</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/jeffrey-goldberg/" class="author voice" >Jeffrey Goldberg</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/international/archive/2012/08/chinas-long-history-of-defying-the-doomsayers/261783/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/123737_chiina_protest_nav.jpg" alt="China's History of Defying the Doomsayers" title="China's History of Defying the Doomsayers" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/international/archive/2012/08/chinas-long-history-of-defying-the-doomsayers/261783/">China's History of Defying the Doomsayers</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/splattwasserstrom/" class="author" >Stephen Platt & Jeffrey Wasserstrom</a></span></span>
+		</div><!-- /linkContent -->
+	</div> <!-- /links -->
+</div> <!-- /navExpanded -->
+												
+					 
+<div id="navTechnologyExpanded" class="navExpanded">
+		<div class='ad adNavlogoContainer'><iframe class='ad adNavlogo' id='adNavlogo8' src='http://cdn.theatlantic.com/static/empty.html' realsrc='/ad/iframe/TheAtlanticOnline/channel_technology;src=landing;pos=navlogo;sz=215x64' frameborder='0' marginheight='0' marginwidth='0' scrolling='no' style='width:215px;height:64px;'></iframe></div> <script type='text/javascript'> currentAdId = $('#adNavlogo8');  if (currentAdId.is(':visible')) { Atlantic.Ad.activatedIframeAds(currentAdId); } </script>	<div class="links">
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/technology/archive/2012/09/the-martian-landscape-in-wacky-3d/261942/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/092102_683938main_pia16140-43_946-710.jpeg" alt="The Martian Landscape, in Wacky 3D" title="The Martian Landscape, in Wacky 3D" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/technology/archive/2012/09/the-martian-landscape-in-wacky-3d/261942/">The Martian Landscape, in Wacky 3D</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/megan-garber/" class="author" >Megan Garber</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/technology/archive/2012/09/slight-changes-in-yelp-ratings-can-mean-huge-losses-for-small-businesses/261943/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/092034_4468206970_cf8ca43730_z-330.jpg" alt="Yelp Ratings Can Make or Break Businesses" title="Yelp Ratings Can Make or Break Businesses" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/technology/archive/2012/09/slight-changes-in-yelp-ratings-can-mean-huge-losses-for-small-businesses/261943/">Yelp Ratings Can Make or Break Businesses</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/rebecca-rosen/" class="author" >Rebecca J. Rosen</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/technology/archive/2012/09/crazy-video-from-nasa-of-a-filament-eruption-on-the-sun/261954/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/092002_683968main1_Aug31-CME-4Panel-330.jpg" alt="Crazy Video From NASA of a Solar Eruption" title="Crazy Video From NASA of a Solar Eruption" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/technology/archive/2012/09/crazy-video-from-nasa-of-a-filament-eruption-on-the-sun/261954/">Crazy Video From NASA of a Solar Eruption</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/rebecca-rosen/" class="author" >Rebecca J. Rosen</a></span></span>
+		</div><!-- /linkContent -->
+	</div> <!-- /links -->
+</div> <!-- /navExpanded -->
+												
+					 
+<div id="navNationalExpanded" class="navExpanded">
+		<div class='ad adNavlogoContainer'><iframe class='ad adNavlogo' id='adNavlogo9' src='http://cdn.theatlantic.com/static/empty.html' realsrc='/ad/iframe/TheAtlanticOnline/channel_national;src=landing;pos=navlogo;sz=215x64' frameborder='0' marginheight='0' marginwidth='0' scrolling='no' style='width:215px;height:64px;'></iframe></div> <script type='text/javascript'> currentAdId = $('#adNavlogo9');  if (currentAdId.is(':visible')) { Atlantic.Ad.activatedIframeAds(currentAdId); } </script>	<div class="links">
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/national/archive/2012/09/should-kids-go-to-jail-for-skipping-school/261937/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/093343_teen-skippingnav.jpg" alt="Should Kids Go to Jail for Skipping School?" title="Should Kids Go to Jail for Skipping School?" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/national/archive/2012/09/should-kids-go-to-jail-for-skipping-school/261937/">Should Kids Go to Jail for Skipping School?</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/annette-fuentes/" class="author" >Annette Fuentes</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/national/archive/2012/08/the-bland-bravery-of-richard-levin/261849/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/103430_levin-widenav.jpg" alt="Richard Levin's Bland Bravery" title="Richard Levin's Bland Bravery" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/national/archive/2012/08/the-bland-bravery-of-richard-levin/261849/">Richard Levin's Bland Bravery</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/nicole-allan/" class="author" >Nicole Allan</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/national/archive/2012/09/the-false-promise-of-back-to-school-commercials/261903/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/102329_back-school4nav.jpg" alt="The False Promise of Back-to-School Ads" title="The False Promise of Back-to-School Ads" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/national/archive/2012/09/the-false-promise-of-back-to-school-commercials/261903/">The False Promise of Back-to-School Ads</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/danielle-moodie/" class="author" >Danielle Moodie-Mills</a></span></span>
+		</div><!-- /linkContent -->
+	</div> <!-- /links -->
+</div> <!-- /navExpanded -->
+												
+					 
+<div id="navHealthExpanded" class="navExpanded">
+		<div class='ad adNavlogoContainer'><iframe class='ad adNavlogo' id='adNavlogo10' src='http://cdn.theatlantic.com/static/empty.html' realsrc='/ad/iframe/TheAtlanticOnline/channel_health;src=landing;pos=navlogo;sz=215x64' frameborder='0' marginheight='0' marginwidth='0' scrolling='no' style='width:215px;height:64px;'></iframe></div> <script type='text/javascript'> currentAdId = $('#adNavlogo10');  if (currentAdId.is(':visible')) { Atlantic.Ad.activatedIframeAds(currentAdId); } </script>	<div class="links">
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/health/archive/2012/09/who-benefits-from-food-stamps/261993/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/015953_foodstamp-55.jpg" alt="Who Benefits From Food Stamps?" title="Who Benefits From Food Stamps?" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/health/archive/2012/09/who-benefits-from-food-stamps/261993/">Who Benefits From Food Stamps?</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/brian-fung/" class="author" >Brian Fung</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/health/archive/2012/09/the-aura-of-life-after-death-and-other-famous-takes-mortality/261933/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/113314_sontagTHUMb.jpg" alt="Quotations on Mortality" title="Quotations on Mortality" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/health/archive/2012/09/the-aura-of-life-after-death-and-other-famous-takes-mortality/261933/">Quotations on Mortality</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/emily-temple/" class="author" >Emily Temple</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/health/archive/2012/09/the-asthma-medication-thats-making-us-shorter/261920/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/121719_asthmanav.jpg" alt="The Asthma Medication Making Us Shorter" title="The Asthma Medication Making Us Shorter" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/health/archive/2012/09/the-asthma-medication-thats-making-us-shorter/261920/">The Asthma Medication Making Us Shorter</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/lindsay-abrams/" class="author" >Lindsay Abrams</a></span></span>
+		</div><!-- /linkContent -->
+	</div> <!-- /links -->
+</div> <!-- /navExpanded -->
+												
+					 
+<div id="navMagazineExpanded" class="navExpanded">
+		<div class="sponsor"><a href="https://secure.palmcoastd.com/pcd/eSv?iMagId=23301&i4Ky=IA2V" title="Subscribe to The Atlantic" onclick="s.tl(this,'o','EasyAd: 2-Atlantic_Sub_V19_Atl_Red_86_88x31.jpg');" class="adNavlogo"><span class="sponsorText">Presented By</span><img src="http://cdn.theatlantic.com/static/easel/images/ads/104833_2-Atlantic_Sub_V19_Atl_Red_86_88x31.jpg" alt="" /></a></div>	<div class="links">
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/magazine/archive/2012/09/slugfest/309063/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/201209-romney.jpeg" alt="Does Romney Have What It Takes to Debate Obama?" title="Does Romney Have What It Takes to Debate Obama?" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/magazine/archive/2012/09/slugfest/309063/">Does Romney Have What It Takes to Debate Obama?</a></h4>
+
+			<span class="author"><span class="authors"><span class="author">James Fallows</span></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/magazine/archive/2012/09/fear-of-a-black-president/309064/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/201209-obama.jpeg" alt="Fear of a Black President" title="Fear of a Black President" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/magazine/archive/2012/09/fear-of-a-black-president/309064/">Fear of a Black President</a></h4>
+
+			<span class="author"><span class="authors"><span class="author">TA-NEHISI COATES</span></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/magazine/archive/2012/09/boys-on-the-side/309062/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/201209-hookup.jpeg" alt="How the Hook-Up Culture Empowers Young Women" title="How the Hook-Up Culture Empowers Young Women" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/magazine/archive/2012/09/boys-on-the-side/309062/">How the Hook-Up Culture Empowers Young Women</a></h4>
+
+			<span class="author"><span class="authors"><span class="author">HANNA ROSIN</span></span></span>
+		</div><!-- /linkContent -->
+	</div> <!-- /links -->
+</div> <!-- /navExpanded -->
+												
+					 
+<div id="navVideoExpanded" class="navExpanded">
+		<div class="sponsor"><a href="https://secure.palmcoastd.com/pcd/eSv?iMagId=23301&i4Ky=IA2V" title="Subscribe to The Atlantic" onclick="s.tl(this,'o','EasyAd: 2-Atlantic_Sub_V19_Atl_Red_86_88x31.jpg');" class="adNavlogo"><span class="sponsorText">Presented By</span><img src="http://cdn.theatlantic.com/static/easel/images/ads/104833_2-Atlantic_Sub_V19_Atl_Red_86_88x31.jpg" alt="" /></a></div>	<div class="links">
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/video/archive/2012/08/a-whirlwind-travel-diary-shot-in-morocco/261747/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/123452_morocco.png" alt="A Whirlwind Travel Diary Shot in Morocco" title="A Whirlwind Travel Diary Shot in Morocco" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/video/archive/2012/08/a-whirlwind-travel-diary-shot-in-morocco/261747/">A Whirlwind Travel Diary Shot in Morocco</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/video/" class="author" >Kasia Cieplak-Mayr von Baldegg</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/video/archive/2012/08/a-music-video-powered-by-pure-color-and-rhythm/261745/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/024309_face.png" alt="A Music Video Powered by Color and Rhythm" title="A Music Video Powered by Color and Rhythm" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/video/archive/2012/08/a-music-video-powered-by-pure-color-and-rhythm/261745/">A Music Video Powered by Color and Rhythm</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/kasia-cieplak-mayr-von-baldegg/" class="author" >Kasia Cieplak-Mayr von Baldegg</a></span></span>
+		</div><!-- /linkContent -->
+		<div class="linkContent">
+			<a href="http://www.theatlantic.com/video/archive/2012/08/the-gorgeous-mystery-film-experiment-from-icelandic-group-sigur-r-s/261742/"><img src="http://cdn.theatlantic.com/static/easel/images/navbars/024041_sigur.png" alt="The Gorgeous 'Mystery' Film from Sigur Rós" title="The Gorgeous 'Mystery' Film from Sigur Rós" width="55" /></a>
+			
+			<h4 class="headline"><a href="http://www.theatlantic.com/video/archive/2012/08/the-gorgeous-mystery-film-experiment-from-icelandic-group-sigur-r-s/261742/">The Gorgeous 'Mystery' Film from Sigur Rós</a></h4>
+
+			<span class="author"><span class="authors"><a href="http://www.theatlantic.com/kasia-cieplak-mayr-von-baldegg/" class="author" >Kasia Cieplak-Mayr von Baldegg</a></span></span>
+		</div><!-- /linkContent -->
+	</div> <!-- /links -->
+</div> <!-- /navExpanded -->
+							</div>
+						
+		</div> <!--/header -->
+  
+		
+		<div class="middle">
+			 
+	<div class="contentColumn ">
+
+	<div class="rightContent" id="centerRail">
+				
+				<div class="container">
+		<div id="breakingOpinions" class="module">
+	<h2>
+		<a href="http://www.theatlanticwire.com/" name="&amp;lpos=CR Wire" title="Breaking Opinions from The Atlantic Wire"><img id="fromTheWire" src="http://cdn.theatlantic.com/static/front/images/TheAtlanticWire.png" alt="From the Atlantic Wire" width="93" height="43" /></a>
+	</h2>
+	<div class="header"><span>what matters now</span></div>
+		<div class="post">
+		<a class="photo" href="http://www.theatlanticwire.com/politics/2012/09/backflipping-american-hero-gabby-douglas-will-appear-dnc/56540/" name="&amp;lpos=CR Wire" title="Gabby Douglas Will Appear at the DNC">
+			<img src="http://cdn.theatlantic.com/static/easel/images/breakingopinions/044854_gabdouglas.jpg" alt="Gabby Douglas Will Appear at the DNC" />
+			<span class="credit embeddedCredit">Reuters</span>
+		</a>
+
+		<h4><a href="http://www.theatlanticwire.com/politics/2012/09/backflipping-american-hero-gabby-douglas-will-appear-dnc/56540/" name="&amp;lpos=CR Wire" title="Gabby Douglas Will Appear at the DNC">Gabby Douglas Will Appear at the DNC</a></h4>
+	</div>
+   	<div class="post">
+		<a class="photo" href="http://www.theatlanticwire.com/entertainment/2012/09/secret-language-restaurants/56543/" name="&amp;lpos=CR Wire" title="The Secret Language of Restaurants">
+			<img src="http://cdn.theatlantic.com/static/easel/images/breakingopinions/044729_restaurants.jpg" alt="The Secret Language of Restaurants" />
+			<span class="credit embeddedCredit">Shutterstock/Discpicture</span>
+		</a>
+
+		<h4><a href="http://www.theatlanticwire.com/entertainment/2012/09/secret-language-restaurants/56543/" name="&amp;lpos=CR Wire" title="The Secret Language of Restaurants">The Secret Language of Restaurants</a></h4>
+	</div>
+   	<div class="post">
+		<a class="photo" href="http://www.theatlanticwire.com/global/2012/09/huge-79-earthquake-hits-costa-rica/56530/" name="&amp;lpos=CR Wire" title="Huge 7.6 Earthquake Hits Costa Rica">
+			<img src="http://cdn.theatlantic.com/static/easel/images/breakingopinions/115048_usgeologicalsurvey.jpg" alt="Huge 7.6 Earthquake Hits Costa Rica" />
+			<span class="credit embeddedCredit">U.S. Geological Survey</span>
+		</a>
+
+		<h4><a href="http://www.theatlanticwire.com/global/2012/09/huge-79-earthquake-hits-costa-rica/56530/" name="&amp;lpos=CR Wire" title="Huge 7.6 Earthquake Hits Costa Rica">Huge 7.6 Earthquake Hits Costa Rica</a></h4>
+	</div>
+   
+</div>
+
+<div id="partner-centerpiece" class="module">
+
+	<div id="partner-centerpiece-header">
+		<div id="partner-centerpiece-banner">Sponsor Content</div>
+		<div id="partner-centerpiece-title">Centerpiece</div>
+		<div id="partner-centerpiece-subtitle">Sponsored by Shell</div>
+	</div>
+
+	<div id="partner-centerpiece-posts">
+				<a href="http://www.theatlantic.com/sponsored/shell/rational-middle/"
+		   name="&amp;lpos=centerpiece -- homepage"
+		   class="centerpiece">
+			<img src="http://cdn.theatlantic.com/static/front/images/sponsored/shell-rational-middle/centerpiece.jpg?v=2" 
+				 class="partner-centerpiece-thumbnail"
+				 alt="Truthing Our Energy and its Future" 
+				 title="Truthing Our Energy and its Future" />
+		</a>
+		
+		<h3 class="headline partner-headline">
+			<a href="http://www.theatlantic.com/sponsored/shell/rational-middle/"
+			   name="&amp;lpos=centerpiece -- homepage"
+			   class="centerpiece">
+				Truthing Our Energy and its Future			</a>
+		</h3>
+
+				
+	</div>
+
+</div><!-- End partner-centerpiece -->
+
+<div id="voicesMenu" class="module">
+	<div class="title">
+		<h2>Voices</h2>
+	</div>
+	
+	<ul class="headshots">
+		<li class="post" >			
+			<a href="http://www.theatlantic.com/james-fallows/" name="&amp;lpos=CR Voices" class="photo">
+				<img src="http://cdn.theatlantic.com/static/newsroom/img/authors/f/james-fallows/voice_headshot/voice-headshot.jpeg?m8un2g" 
+					width="45" 
+					height="42" />
+			</a>
+			
+			<span class="authors">
+			<a href="http://www.theatlantic.com/james-fallows/" name="&amp;lpos=CR Voices" class="author">
+				James Fallows			</a>
+			</span>
+				
+			<h3 class="headline">				
+				<a href="http://www.theatlantic.com/politics/archive/2012/09/paul-ryan-has-made-close-to-40-climbs-not-climbed-close-to-40-peaks/262017/" name="&amp;lpos=CR Voices" title="Paul Ryan Has Made &#039;Close to 40 Climbs,&#039; Not &#039;Climbed Close to 40 Peaks&#039;">
+					Paul Ryan Has Made 'Close to 40 Climbs,' Not&hellip;				</a> 
+			</h3>
+			<span class="date">5:58 PM ET</span>
+		</li><!-- /post -->
+		<li class="post" >			
+			<a href="http://www.theatlantic.com/alexis-madrigal/" name="&amp;lpos=CR Voices" class="photo">
+				<img src="http://cdn.theatlantic.com/static/newsroom/img/authors/m/alexis-madrigal/voice_headshot/voice-headshot.jpeg?m8umzc" 
+					width="45" 
+					height="42" />
+			</a>
+			
+			<span class="authors">
+			<a href="http://www.theatlantic.com/alexis-madrigal/" name="&amp;lpos=CR Voices" class="author">
+				Alexis C. Madrigal			</a>
+			</span>
+				
+			<h3 class="headline">				
+				<a href="http://www.theatlantic.com/technology/archive/2012/09/vladimir-putins-motorized-hang-glider-flight-into-the-anthropocene/262010/" name="&amp;lpos=CR Voices" title="Vladimir Putin&#039;s (Motorized Hang Glider) Flight into the Anthropocene">
+					Vladimir Putin's (Motorized Hang Glider) Flight&hellip;				</a> 
+			</h3>
+			<span class="date">5:09 PM ET</span>
+		</li><!-- /post -->
+		<li class="post" >			
+			<a href="http://www.theatlantic.com/jeffrey-goldberg/" name="&amp;lpos=CR Voices" class="photo">
+				<img src="http://cdn.theatlantic.com/static/newsroom/img/authors/g/jeffrey-goldberg/voice_headshot/voice-headshot.jpeg?m8un2x" 
+					width="45" 
+					height="42" />
+			</a>
+			
+			<span class="authors">
+			<a href="http://www.theatlantic.com/jeffrey-goldberg/" name="&amp;lpos=CR Voices" class="author">
+				Jeffrey Goldberg			</a>
+			</span>
+				
+			<h3 class="headline">				
+				<a href="http://www.theatlantic.com/international/archive/2012/09/the-dnc-regains-its-cunning-ceases-to-forget-jerusalem/262012/" name="&amp;lpos=CR Voices" title="The DNC Regains Its Cunning, Ceases to Forget Jerusalem">
+					The DNC Regains Its Cunning, Ceases to Forget&hellip;				</a> 
+			</h3>
+			<span class="date">5:06 PM ET</span>
+		</li><!-- /post -->
+		<li class="post" >			
+			<a href="http://www.theatlantic.com/ta-nehisi-coates/" name="&amp;lpos=CR Voices" class="photo">
+				<img src="http://cdn.theatlantic.com/static/newsroom/img/authors/c/ta-nehisi-coates/voice_headshot/voice-headshot.jpeg?m8un4b" 
+					width="45" 
+					height="42" />
+			</a>
+			
+			<span class="authors">
+			<a href="http://www.theatlantic.com/ta-nehisi-coates/" name="&amp;lpos=CR Voices" class="author">
+				Ta-Nehisi Coates			</a>
+			</span>
+				
+			<h3 class="headline">				
+				<a href="http://www.theatlantic.com/entertainment/archive/2012/09/a-quick-thought-on-michael-clarke-duncan/262003/" name="&amp;lpos=CR Voices" title="A Quick Thought on Michael Clarke Duncan">
+					A Quick Thought on Michael Clarke Duncan				</a> 
+			</h3>
+			<span class="date">4:57 PM ET</span>
+		</li><!-- /post -->
+		<li class="post" >			
+			<a href="http://www.theatlantic.com/derek-thompson/" name="&amp;lpos=CR Voices" class="photo">
+				<img src="http://cdn.theatlantic.com/static/newsroom/img/authors/t/derek-thompson/voice_headshot/voice-headshot.jpeg?m8un1d" 
+					width="45" 
+					height="42" />
+			</a>
+			
+			<span class="authors">
+			<a href="http://www.theatlantic.com/derek-thompson/" name="&amp;lpos=CR Voices" class="author">
+				Derek Thompson			</a>
+			</span>
+				
+			<h3 class="headline">				
+				<a href="http://www.theatlantic.com/business/archive/2012/09/lets-review-whats-the-point-of-raising-taxes/262002/" name="&amp;lpos=CR Voices" title="Let&#039;s Review: What&#039;s the Point of Raising Taxes?">
+					Let's Review: What's the Point of Raising Taxes?				</a> 
+			</h3>
+			<span class="date">3:10 PM ET</span>
+		</li><!-- /post -->
+		<li class="post" >			
+			<a href="http://www.theatlantic.com/garance-franke-ruta/" name="&amp;lpos=CR Voices" class="photo">
+				<img src="http://cdn.theatlantic.com/static/newsroom/img/authors/f/garance-franke-ruta/voice_headshot/voice-headshot.jpeg?m8un1y" 
+					width="45" 
+					height="42" />
+			</a>
+			
+			<span class="authors">
+			<a href="http://www.theatlantic.com/garance-franke-ruta/" name="&amp;lpos=CR Voices" class="author">
+				Garance Franke-Ruta			</a>
+			</span>
+				
+			<h3 class="headline">				
+				<a href="http://www.theatlantic.com/politics/archive/2012/09/flotus-like-a-butterfly-sting-like-a-bee/261969/" name="&amp;lpos=CR Voices" title="FLOTUS Like a Butterfly, Sting Like a Bee">
+					FLOTUS Like a Butterfly, Sting Like a Bee				</a> 
+			</h3>
+			<span class="date">12:56 AM ET</span>
+		</li><!-- /post -->
+		<li class="post" >			
+			<a href="http://www.theatlantic.com/clive-crook/" name="&amp;lpos=CR Voices" class="photo">
+				<img src="http://cdn.theatlantic.com/static/newsroom/img/authors/c/clive-crook/voice_headshot/voice-headshot.jpeg?m8un0p" 
+					width="45" 
+					height="42" />
+			</a>
+			
+			<span class="authors">
+			<a href="http://www.theatlantic.com/clive-crook/" name="&amp;lpos=CR Voices" class="author">
+				Clive Crook			</a>
+			</span>
+				
+			<h3 class="headline">				
+				<a href="http://www.theatlantic.com/politics/archive/2012/09/fact-checking-a-clarification/261945/" name="&amp;lpos=CR Voices" title="Fact-Checking: A Clarification">
+					Fact-Checking: A Clarification				</a> 
+			</h3>
+			<span class="date">Sep 4, 2012</span>
+		</li><!-- /post -->
+		<li class="post" >			
+			<a href="http://www.theatlantic.com/robert-wright/" name="&amp;lpos=CR Voices" class="photo">
+				<img src="http://cdn.theatlantic.com/static/newsroom/img/authors/w/robert-wright/voice_headshot/voice-headshot.jpeg?m8un3i" 
+					width="45" 
+					height="42" />
+			</a>
+			
+			<span class="authors">
+			<a href="http://www.theatlantic.com/robert-wright/" name="&amp;lpos=CR Voices" class="author">
+				Robert Wright			</a>
+			</span>
+				
+			<h3 class="headline">				
+				<a href="http://www.theatlantic.com/health/archive/2012/09/do-you-have-the-internet-addiction-gene/261915/" name="&amp;lpos=CR Voices" title="Do You Have the &#039;Internet-Addiction Gene&#039;?">
+					Do You Have the 'Internet-Addiction Gene'?				</a> 
+			</h3>
+			<span class="date">Sep 4, 2012</span>
+		</li><!-- /post -->
+		<li class="post" >			
+			<a href="http://www.theatlantic.com/steve-clemons/" name="&amp;lpos=CR Voices" class="photo">
+				<img src="http://cdn.theatlantic.com/static/newsroom/img/authors/c/steve-clemons/voice_headshot/voice-headshot.jpeg?m8un3w" 
+					width="45" 
+					height="42" />
+			</a>
+			
+			<span class="authors">
+			<a href="http://www.theatlantic.com/steve-clemons/" name="&amp;lpos=CR Voices" class="author">
+				Steve Clemons			</a>
+			</span>
+				
+			<h3 class="headline">				
+				<a href="http://www.theatlantic.com/international/archive/2012/09/no-way-out-fear-of-dying-among-afghanistans-professional-class/261888/" name="&amp;lpos=CR Voices" title="No Way Out? Fear of Dying Among Afghanistan&#039;s Professional Class">
+					No Way Out? Fear of Dying Among Afghanistan's&hellip;				</a> 
+			</h3>
+			<span class="date">Sep 3, 2012</span>
+		</li><!-- /post -->
+	</ul><!--/headshots -->
+</div><!-- /voicesMenu -->
+
+<div id="correspondentsMenu" class="module">
+	<div class="title">
+	<h2>Correspondents</h2>
+	</div>
+	<ul>
+				<li class="post">
+			<a href="http://www.theatlantic.com/andrew-cohen" name="&amp;lpos=CR Correspondents" class="author">Andrew Cohen</a>
+			
+			<h3><a href="http://www.theatlantic.com/politics/archive/2012/09/voting-rights-this-is-what-a-strong-party-platform-would-look-like/261640/" name="&amp;lpos=CR Correspondents">Voting Rights: This Is What a Strong Party Platform Would Look Like</a></h3>
+		</li><!-- /post -->
+				<li class="post">
+			<a href="http://www.theatlantic.com/ben-w-heineman" name="&amp;lpos=CR Correspondents" class="author">Ben W. Heineman Jr.</a>
+			
+			<h3><a href="http://www.theatlantic.com/politics/archive/2012/09/the-political-lie-from-cicero-to-joe-mccarthy/261973/" name="&amp;lpos=CR Correspondents">The Political Lie, from Cicero to Joe McCarthy</a></h3>
+		</li><!-- /post -->
+				<li class="post">
+			<a href="http://www.theatlantic.com/peter-osnos" name="&amp;lpos=CR Correspondents" class="author">Peter Osnos</a>
+			
+			<h3><a href="http://www.theatlantic.com/business/archive/2012/09/the-cruel-paradox-of-self-publishing/261912/" name="&amp;lpos=CR Correspondents">The Cruel Paradox of Self-Publishing</a></h3>
+		</li><!-- /post -->
+			</ul>
+	
+	<div class="expandingMenu" id="correspondentDropdown">
+
+		<a href="/voices/#correspondents" name="&amp;lpos=CR Correspondents" class="expandingArrow expandingArrowDown">
+			<span class="expandingTitle" >View All Correspondents</span>
+		</a>
+		<script type="text/javascript">
+			$('.expandingArrow').attr('href', '');
+		</script>
+
+		<div id="correspondentContent" class="expandingContent" style="display:none">
+		
+<table>
+<tr>
+<td class="column1"><span class="authors"><a href="http://www.theatlantic.com/yoni-appelbaum/" class="author" >Yoni Appelbaum</a></span><span class="shortBlurb">History, politics</span></td>
+
+<td class="column2"><span class="authors"><a href="http://www.theatlantic.com/jack-balkin/" class="author" >Jack M. Balkin</a></span><span class="shortBlurb">The law</span></td>
+
+<td class="column3"><span class="authors"><a href="http://www.theatlantic.com/raymond-bonner/" class="author" >Raymond Bonner</a></span><span class="shortBlurb">International affairs, civil liberties</span></td>
+
+<td class="column4"><span class="authors"><a href="http://www.theatlantic.com/thanassis-cambanis/" class="author" >Thanassis Cambanis</a></span><span class="shortBlurb">International affairs</span></td>
+</tr><tr>
+<td class="column1"><span class="authors"><a href="http://www.theatlantic.com/andrew-cohen/" class="author" >Andrew Cohen</a></span><span class="shortBlurb">The law, society</span></td>
+
+<td class="column2"><span class="authors"><a href="http://www.theatlantic.com/bill-davidow/" class="author" >Bill Davidow</a></span><span class="shortBlurb">Technology, economics</span></td>
+
+<td class="column3"><span class="authors"><a href="http://www.theatlantic.com/mickey-edwards/" class="author" >Mickey Edwards</a></span><span class="shortBlurb">Politics</span></td>
+
+<td class="column4"><span class="authors"><a href="http://www.theatlantic.com/garrett-epps/" class="author" >Garrett Epps</a></span><span class="shortBlurb">Law professor and journalist</span></td>
+</tr><tr>
+<td class="column1"><span class="authors"><a href="http://www.theatlantic.com/richard-florida/" class="author" >Richard Florida</a></span><span class="shortBlurb">Cities, creativity</span></td>
+
+<td class="column2"><span class="authors"><a href="http://www.theatlantic.com/joshua-foust/" class="author" >Joshua Foust</a></span><span class="shortBlurb">International affairs</span></td>
+
+<td class="column3"><span class="authors"><a href="http://www.theatlantic.com/howard-w-french/" class="author" >Howard W. French</a></span><span class="shortBlurb">International affairs</span></td>
+
+<td class="column4"><span class="authors"><a href="http://www.theatlantic.com/alex-gibney/" class="author" >Alex Gibney</a></span><span class="shortBlurb">Documentary film</span></td>
+</tr><tr>
+<td class="column1"><span class="authors"><a href="http://www.theatlantic.com/db-grady/" class="author" >D.B. Grady</a></span><span class="shortBlurb">The military, politics</span></td>
+
+<td class="column2"><span class="authors"><a href="http://www.theatlantic.com/shadi-hamid/" class="author" >Shadi Hamid</a></span><span class="shortBlurb">The Middle East</span></td>
+
+<td class="column3"><span class="authors"><a href="http://www.theatlantic.com/ben-w-heineman/" class="author" >Ben W. Heineman Jr.</a></span><span class="shortBlurb">Politics, economics</span></td>
+
+<td class="column4"><span class="authors"><a href="http://www.theatlantic.com/steven-heller/" class="author" >Steven Heller</a></span><span class="shortBlurb">Graphic design</span></td>
+</tr><tr>
+<td class="column1"><span class="authors"><a href="http://www.theatlantic.com/jeff-howe/" class="author" >Jeff Howe</a></span><span class="shortBlurb">Literature, new media</span></td>
+
+<td class="column2"><span class="authors"><a href="http://www.theatlantic.com/wendy-kaminer/" class="author" >Wendy Kaminer</a></span><span class="shortBlurb">Civil liberties, the law</span></td>
+
+<td class="column3"><span class="authors"><a href="http://www.theatlantic.com/zvika-krieger/" class="author" >Zvika Krieger</a></span><span class="shortBlurb">The Middle East</span></td>
+
+<td class="column4"><span class="authors"><a href="http://www.theatlantic.com/lawrence-lessig/" class="author" >Lawrence Lessig</a></span><span class="shortBlurb">Legal and political ethics</span></td>
+</tr><tr>
+<td class="column1"><span class="authors"><a href="http://www.theatlantic.com/jon-lovett/" class="author" >Jon Lovett</a></span><span class="shortBlurb">Politics</span></td>
+
+<td class="column2"><span class="authors"><a href="http://www.theatlantic.com/damien-ma/" class="author" >Damien Ma</a></span><span class="shortBlurb">China</span></td>
+
+<td class="column3"><span class="authors"><a href="http://www.theatlantic.com/lisa-margonelli/" class="author" >Lisa Margonelli</a></span><span class="shortBlurb">Energy, the environment</span></td>
+
+<td class="column4"><span class="authors"><a href="http://www.theatlantic.com/peter-osnos/" class="author" >Peter Osnos</a></span><span class="shortBlurb">Media, publishing</span></td>
+</tr><tr>
+<td class="column1"><span class="authors"><a href="http://www.theatlantic.com/alyssa-rosenberg/" class="author" >Alyssa Rosenberg</a></span><span class="shortBlurb">Popular culture</span></td>
+
+<td class="column2"><span class="authors"><a href="http://www.theatlantic.com/cristine-russell/" class="author" >Cristine Russell</a></span><span class="shortBlurb">Science, health</span></td>
+
+<td class="column3"><span class="authors"><a href="http://www.theatlantic.com/nancy-scola/" class="author" >Nancy Scola</a></span><span class="shortBlurb">Technology, politics</span></td>
+
+<td class="column4"><span class="authors"><a href="http://www.theatlantic.com/ellen-ruppel-shell/" class="author" >Ellen Ruppel Shell</a></span><span class="shortBlurb">Science</span></td>
+</tr><tr>
+<td class="column1"><span class="authors"><a href="http://www.theatlantic.com/david-shenk/" class="author" >David Shenk</a></span><span class="shortBlurb">Science, culture </span></td>
+
+<td class="column2"><span class="authors"><a href="http://www.theatlantic.com/anne-marie-slaughter/" class="author" >Anne-Marie Slaughter</a></span><span class="shortBlurb">Foreign policy</span></td>
+
+<td class="column3"><span class="authors"><a href="http://www.theatlantic.com/erik-tarloff/" class="author" >Erik Tarloff</a></span><span class="shortBlurb">Politics, media</span></td>
+
+<td class="column4"><span class="authors"><a href="http://www.theatlantic.com/edward-tenner/" class="author" >Edward Tenner</a></span><span class="shortBlurb">Culture, technology</span></td>
+</tr><tr>
+<td class="column1"><span class="authors"><a href="http://www.theatlantic.com/dominic-tierney/" class="author" >Dominic Tierney</a></span><span class="shortBlurb">International affairs</span></td>
+
+<td class="column2"><span class="authors"><a href="http://www.theatlantic.com/brian-till/" class="author" >Brian Till</a></span><span class="shortBlurb">International affairs</span></td>
+
+<td class="column3"><span class="authors"><a href="http://www.theatlantic.com/kathleen-kennedy-townsend/" class="author" >Kathleen Kennedy Townsend</a></span><span class="shortBlurb">Politics, religion</span></td>
+
+<td class="column4"><span class="authors"><a href="http://www.theatlantic.com/steve-tuttle/" class="author" >Steve Tuttle</a></span><span class="shortBlurb">Americana</span></td>
+</tr><tr>
+<td class="column1"><span class="authors"><a href="http://www.theatlantic.com/ford-vox/" class="author" >Ford Vox</a></span><span class="shortBlurb">Health, medicine</span></td>
+
+<td class="column2"><span class="authors"><a href="http://www.theatlantic.com/lane-wallace/" class="author" >Lane Wallace</a></span><span class="shortBlurb">Politics, media, aviation</span></td>
+
+<td class="column3"><span class="authors"><a href="http://www.theatlantic.com/james-warren/" class="author" >James Warren</a></span><span class="shortBlurb">Politics</span></td>
+
+<td class="column4"><span class="authors"><a href="http://www.theatlantic.com/adam-werbach/" class="author" >Adam Werbach</a></span><span class="shortBlurb">Sustainability</span></td>
+</tr><tr>
+<td class="column1"><span class="authors"><a href="http://www.theatlantic.com/graeme-wood/" class="author" >Graeme Wood</a></span><span class="shortBlurb">International affairs, travel</span></td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+</table>
+		</div>
+	
+	</div><!-- /correspondentDropdown -->
+	<br style="clear:both;" />
+</div><!-- /correspondentsMenu -->
+<div id="citiesOpinions" class="module">
+	<h2>
+		<a href="http://www.theatlanticcities.com/" title="Breaking Opinions from The Atlantic Cities" name="&amp;lpos=CR Cities"><img id="fromCities" src="http://cdn.theatlantic.com/static/front/images/module-cities-feed.png" alt="From the Atlantic Cities" width="124" height="64" /></a>
+	</h2>
+
+	 	<div class="post">
+		<a class="photo" href="http://www.theatlanticcities.com/arts-and-lifestyle/2012/09/lessons-nations-biggest-architectural-toy-collection/3149/" title="Lessons From an Architectural Toy Collection" name="&amp;lpos=CR Cities">
+			<img src="http://cdn.theatlantic.com/static/easel/images//092637_architecturaltoy.jpg" alt="Lessons From an Architectural Toy Collection" />
+			<span class="credit embeddedCredit">Henry Grabar</span>
+		</a>
+
+		<h4><a href="http://www.theatlanticcities.com/arts-and-lifestyle/2012/09/lessons-nations-biggest-architectural-toy-collection/3149/" title="Lessons From an Architectural Toy Collection" name="&amp;lpos=CR Cities">Lessons From an Architectural Toy Collection</a></h4>
+	</div>
+   	<div class="post">
+		<a class="photo" href="http://www.theatlanticcities.com/jobs-and-economy/2012/09/city-brink-charlottes-recession-era-unraveling/3150/" title="Charlotte&#039;s Recession-Era Unraveling " name="&amp;lpos=CR Cities">
+			<img src="http://cdn.theatlantic.com/static/easel/images//092515_charlotte.jpg" alt="Charlotte&#039;s Recession-Era Unraveling " />
+			<span class="credit embeddedCredit">David Francis</span>
+		</a>
+
+		<h4><a href="http://www.theatlanticcities.com/jobs-and-economy/2012/09/city-brink-charlottes-recession-era-unraveling/3150/" title="Charlotte&#039;s Recession-Era Unraveling " name="&amp;lpos=CR Cities">Charlotte's Recession-Era Unraveling </a></h4>
+	</div>
+   	<div class="post">
+		<a class="photo" href="http://www.theatlanticcities.com/jobs-and-economy/2012/09/next-major-real-estate-cycle-walkable-urbanism/3161/" title="The Next Major Real Estate Cycle: Walkable Urbanism?" name="&amp;lpos=CR Cities">
+			<img src="http://cdn.theatlantic.com/static/easel/images//092326_realestate.jpg" alt="The Next Major Real Estate Cycle: Walkable Urbanism?" />
+			<span class="credit embeddedCredit">M.V. Jantzen/Flickr</span>
+		</a>
+
+		<h4><a href="http://www.theatlanticcities.com/jobs-and-economy/2012/09/next-major-real-estate-cycle-walkable-urbanism/3161/" title="The Next Major Real Estate Cycle: Walkable Urbanism?" name="&amp;lpos=CR Cities">The Next Major Real Estate Cycle: Walkable Urbanism?</a></h4>
+	</div>
+   
+</div>
+<div class="module" style="overflow:hidden;">
+	<div class="title"><h2>ATLANTIC E-BOOK: OBAMA, EXPLAINED</h2></div>
+
+	<a href="/ebooks/" name="&amp;lpos=CR Obama Explained Ebook" style="float:left;width:70px;margin-right:10px;margin-top:5px;"><img src="http://cdn.theatlantic.com/static/front/images/ebooks/obama-explained/cover-small.png" alt="Obama Explained eBook" width="70" height="93" /></a>
+
+	<div style="float:left;width:103px;">
+		James Fallows's definitive take on the administration. Includes a conversation with Ta-Nehisi Coates.<br />
+		<a href="/ebooks/" name="&amp;lpos=CR Obama Explained Ebook">Read more &raquo;</a>
+	</div>
+</div>		</div>
+				
+	</div><!-- /rightContent -->
+
+<div id="carousel" class="carousel leftContent">
+	<div class="topStoryControls" style="display:none">
+		<div class="control" id="topStoryControl1"><span class="play playing"></span></div>
+		<div class="control"><span class="number selected">1</span></div>
+				<div class="control" id="topStoryControl2"><span class="number">2</span></div>
+				<div class="control" id="topStoryControl3"><span class="number">3</span></div>
+			
+		
+			</div>
+	<script type="text/javascript">
+	$('#carousel .topStoryControls').show();
+	</script>
+
+		<div id="topStoryPlayer1" class="topStoryPlayer"  >
+		<a href="http://www.theatlantic.com/politics/archive/2012/09/bill-clintons-challenge-in-tonights-dnc-speech-affirming-obamas-record/261991/" class="topStoryImage photo" name="&amp;lpos=LR Carousel">
+			<img src="http://cdn.theatlantic.com/static/easel/images/carousels/014253_clintonschallenge2.jpg" width="386" height="250" alt="Can Clinton Deliver the Speech Obama Needs?" title="Can Clinton Deliver the Speech Obama Needs?" />
+			<span class="credit embeddedCredit">Jason Reed/Reuters</span>
+		</a>
+		
+	
+		<div class="post">
+			
+			<h3><a href="http://www.theatlantic.com/politics/archive/2012/09/bill-clintons-challenge-in-tonights-dnc-speech-affirming-obamas-record/261991/" name="&amp;lpos=LR Carousel">Can Clinton Deliver the Speech Obama Needs?</a></h3>
+			
+			<p>The former president is more comfortable attacking Republicans than making the case for another Democrat.</p>
+			
+			<h4><span class="authors"><a href="http://www.theatlantic.com/conor-friedersdorf/" class="author" >Conor Friedersdorf</a></span></h4>
+
+						 		</div>
+	</div>
+		<div id="topStoryPlayer2" class="topStoryPlayer"  style="display:none;" >
+		<a href="http://www.theatlantic.com/entertainment/archive/2012/09/attention-50-shades-copycats-rip-off-the-orgasms-not-the-whips-and-chains/261957/" class="topStoryImage photo" name="&amp;lpos=LR Carousel">
+			<img src="http://cdn.theatlantic.com/static/easel/images/carousels/015720_50shadescopycats.jpg" width="386" height="250" alt="'50 Shades' Isn't About Sadomasochism" title="'50 Shades' Isn't About Sadomasochism" />
+			<span class="credit embeddedCredit">MGM</span>
+		</a>
+		
+	
+		<div class="post">
+			
+			<h3><a href="http://www.theatlantic.com/entertainment/archive/2012/09/attention-50-shades-copycats-rip-off-the-orgasms-not-the-whips-and-chains/261957/" name="&amp;lpos=LR Carousel">'50 Shades' Isn't About Sadomasochism</a></h3>
+			
+			<p>It's about orgasms: The ones the heroine is having and the ones many women, including the readers, aren't.</p>
+			
+			<h4><span class="authors"><a href="http://www.theatlantic.com/maura-kelly/" class="author" >Maura Kelly</a></span></h4>
+
+						 		</div>
+	</div>
+		<div id="topStoryPlayer3" class="topStoryPlayer"  style="display:none;" >
+		<a href="http://www.theatlantic.com/infocus/2012/09/the-2012-summer-paralympics/100365/" class="topStoryImage photo" name="&amp;lpos=LR Carousel">
+			<img src="http://cdn.theatlantic.com/static/easel/images/carousels/050009_paralympics.jpg" width="386" height="250" alt="The 2012 Summer Paralympics" title="The 2012 Summer Paralympics" />
+			<span class="credit embeddedCredit">Glyn Kirk/AFP/Getty</span>
+		</a>
+		
+	
+		<div class="post">
+			
+			<h3><a href="http://www.theatlantic.com/infocus/2012/09/the-2012-summer-paralympics/100365/" name="&amp;lpos=LR Carousel">The 2012 Summer Paralympics</a></h3>
+			
+			<p>Sailing, track and field, swimming, archery, and more</p>
+			
+			<h4><span class="authors"><span class="author">Alan Taylor</span></span></h4>
+
+						 		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+	//Set the height of the carousel to the height of the tallest carousel page
+	var maxHeight = Math.max(
+		$("#topStoryPlayer1").height(),
+		$("#topStoryPlayer2").height(),
+		$("#topStoryPlayer3").height()
+	) + 10;
+	$("#carousel").height(maxHeight);
+//]]>
+</script>
+<div class="leftContent">
+		<div class="post">
+
+			
+			
+			<a href="http://www.theatlantic.com/business/archive/2012/09/the-democrats-single-least-credible-idea-an-all-of-the-above-energy-plan/261996/" class="photo" name="&amp;lpos=LR River">
+				<img src="http://cdn.theatlantic.com/static/easel/images/morenews/055955_energyplan.jpg" alt="The Democrats' Single Least Credible Idea" title="The Democrats' Single Least Credible Idea" width="110" />
+				<span class="credit">Reuters</span>
+			</a>
+
+				<h3 class="headline"><a href="http://www.theatlantic.com/business/archive/2012/09/the-democrats-single-least-credible-idea-an-all-of-the-above-energy-plan/261996/" name="&amp;lpos=LR River">The Democrats' Single Least Credible Idea</a></h3>
+
+				<p class="dek">Why an "all of the above" energy plan is ridiculous</p>
+
+				<p class="metadata">
+										<a href="/business/" class="channel">Business</a>										<span class="authors"><a href="http://www.theatlantic.com/jordan-weissmann/" class="author" >Jordan Weissmann</a></span>					<a class="comments" href="http://www.theatlantic.com/business/archive/2012/09/the-democrats-single-least-credible-idea-an-all-of-the-above-energy-plan/261996/#disqus_thread" disqus="mt261996"></a>				</p>
+		</div><!-- /post -->
+		<div class="post">
+
+			
+			
+			<a href="http://www.theatlantic.com/video/archive/2012/09/the-elegant-and-freaky-art-of-mannequin-design/262008/" class="photo" name="&amp;lpos=LR River">
+				<img src="http://cdn.theatlantic.com/static/easel/images/morenews/051534_mannequin.jpg" alt="The Elegant and Disturbing Art of Mannequin Design" title="The Elegant and Disturbing Art of Mannequin Design" width="110" />
+				<span class="credit">NOWNESS.com</span>
+			</a>
+
+				<h3 class="headline"><a href="http://www.theatlantic.com/video/archive/2012/09/the-elegant-and-freaky-art-of-mannequin-design/262008/" name="&amp;lpos=LR River">The Elegant and Disturbing Art of Mannequin Design</a></h3>
+
+				<p class="dek">"The mannequin reflects the times we live in."</p>
+
+				<p class="metadata">
+										<a href="/video/" class="channel">Video</a>										<span class="authors"><a href="http://www.theatlantic.com/kasia-cieplak-mayr-von-baldegg/" class="author" >Kasia Cieplak-Mayr von Baldegg</a></span>					<a class="comments" href="http://www.theatlantic.com/video/archive/2012/09/the-elegant-and-freaky-art-of-mannequin-design/262008/#disqus_thread" disqus="mt262008"></a>				</p>
+		</div><!-- /post -->
+		<div class="post">
+
+			
+			
+			<a href="http://www.theatlantic.com/technology/archive/2012/09/found-worlds-oldest-message-in-a-bottle-part-of-1914-citizen-science-experiment/261981/" class="photo" name="&amp;lpos=LR River">
+				<img src="http://cdn.theatlantic.com/static/easel/images/morenews/015438_messagebottle.jpg" alt="The World's Oldest Message in a Bottle" title="The World's Oldest Message in a Bottle" width="110" />
+				<span class="credit">AP</span>
+			</a>
+
+				<h3 class="headline"><a href="http://www.theatlantic.com/technology/archive/2012/09/found-worlds-oldest-message-in-a-bottle-part-of-1914-citizen-science-experiment/261981/" name="&amp;lpos=LR River">The World's Oldest Message in a Bottle</a></h3>
+
+				<p class="dek">An experiment, discovered by a Scottish fisherman</p>
+
+				<p class="metadata">
+										<a href="/technology/" class="channel">Technology</a>										<span class="authors"><a href="http://www.theatlantic.com/alexis-madrigal/" class="author voice" >Alexis Madrigal</a></span>					<a class="comments" href="http://www.theatlantic.com/technology/archive/2012/09/found-worlds-oldest-message-in-a-bottle-part-of-1914-citizen-science-experiment/261981/#disqus_thread" disqus="mt261981"></a>				</p>
+		</div><!-- /post -->
+		<div class="post">
+
+			
+			
+			<a href="http://www.theatlantic.com/politics/archive/2012/09/the-speech-you-missed-that-captures-the-ruthless-efficiency-of-the-dnc/261985/" class="photo" name="&amp;lpos=LR River">
+				<img src="http://cdn.theatlantic.com/static/easel/images/morenews/011617_andrewtobias.jpg" alt="The Address You Missed" title="The Address You Missed" width="110" />
+				<span class="credit">electad.com</span>
+			</a>
+
+				<h3 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/09/the-speech-you-missed-that-captures-the-ruthless-efficiency-of-the-dnc/261985/" name="&amp;lpos=LR River">The Address You Missed</a></h3>
+
+				<p class="dek">A 3-and-a-half minute plot-twisting speech that perfectly captures the ruthless efficiency of the DNC.</p>
+
+				<p class="metadata">
+										<a href="/politics/" class="channel">Politics</a>										<span class="authors"><a href="http://www.theatlantic.com/james-bennet/" class="author" >James Bennet</a></span>					<a class="comments" href="http://www.theatlantic.com/politics/archive/2012/09/the-speech-you-missed-that-captures-the-ruthless-efficiency-of-the-dnc/261985/#disqus_thread" disqus="mt261985"></a>				</p>
+		</div><!-- /post -->
+
+<div class="ad adLeftrail" id="adLeftrail1">
+			<script type="text/javascript">
+//<![CDATA[
+			if (typeof window.dartOrd == 'undefined') {
+				window.dartOrd = ('000000000' + Math.ceil(Math.random()*1000000000).toString()).slice(-9);
+			}
+			if (typeof window.dartTile == 'undefined') {
+				window.dartTile = 0;
+			}
+			window.dartTile += 1;
+			if (typeof(window.bizoDart) == 'undefined') {
+				if (typeof(window.Atlantic) =='object' && typeof(window.Atlantic.getBizoDartString) == 'function') {
+					window.bizoDart = Atlantic.getBizoDartString();
+				} else {
+					window.bizoDart = '';
+				}	
+			}
+			jsProperties = 'TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=leftrail;sz=381x121';
+			document.write('<' + 'script type="text/javascript" src="http://ad.doubleclick.net/adj/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=leftrail;sz=381x121;' + window.bizoDart + 'ord=' + window.dartOrd + ';tile=' + window.dartTile + '" id="adLeftrailScript"></' + 'script' + '>');
+//]]>
+			</script>
+<noscript><div><a href="http://ad.doubleclick.net/jump/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=leftrail;sz=381x121" title=""><img src="http://ad.doubleclick.net/ad/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=leftrail;sz=381x121" alt="" /></a></div></noscript>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+if( $("#adLeftrail1").html().search("grey.gif") != -1 ){
+	$("#adLeftrail1").hide();
+}
+//]]>
+</script>
+					<div class="post">
+
+			
+			
+			<a href="http://www.theatlantic.com/technology/archive/2012/09/the-world-wide-web-by-the-numbers/261982/" class="photo" name="&amp;lpos=LR River">
+				<img src="http://cdn.theatlantic.com/static/easel/images/morenews/121538_wwwfoundation_copy.jpg" alt="And the Biggest Internet Users Are ... Swedes?" title="And the Biggest Internet Users Are ... Swedes?" width="110" />
+				<span class="credit">World Wide Web Foundation</span>
+			</a>
+
+				<h3 class="headline"><a href="http://www.theatlantic.com/technology/archive/2012/09/the-world-wide-web-by-the-numbers/261982/" name="&amp;lpos=LR River">And the Biggest Internet Users Are ... Swedes?</a></h3>
+
+				<p class="dek">An intriguing chart of global web use</p>
+
+				<p class="metadata">
+										<a href="/technology/" class="channel">Technology</a>										<span class="authors"><a href="http://www.theatlantic.com/megan-garber/" class="author" >Megan Garber</a></span>					<a class="comments" href="http://www.theatlantic.com/technology/archive/2012/09/the-world-wide-web-by-the-numbers/261982/#disqus_thread" disqus="mt261982"></a>				</p>
+		</div><!-- /post -->
+
+</div>
+<div id="dontMiss">
+	<h2>You might have missed</h2>
+		 	<div class="post">
+		<a class="photo" href="http://www.theatlantic.com/entertainment/archive/2012/09/the-stories-behind-the-5-most-difficult-to-film-scenes-in-samsara/261923/" name="&amp;lpos=LR Missed Module">
+			<img src="http://cdn.theatlantic.com/static/easel/images/dontmiss/014929_Samsara.jpg" alt="A Film About Deserts, Babies, and Workers" title="A Film About Deserts, Babies, and Workers" />
+		</a>
+		<h3 class="headline"><a href="http://www.theatlantic.com/entertainment/archive/2012/09/the-stories-behind-the-5-most-difficult-to-film-scenes-in-samsara/261923/" name="&amp;lpos=LR Missed Module">A Film About Deserts, Babies, and Workers</a></h3>
+		<div class="metadata">
+			<span class="authors"><a href="http://www.theatlantic.com/joe-fassler/" class="author" >Joe Fassler</a></span>		</div>
+	</div><!-- /post -->
+		 	<div class="post">
+		<a class="photo" href="http://www.theatlantic.com/magazine/archive/2012/09/foxy-ladies/309054/" name="&amp;lpos=LR Missed Module">
+			<img src="http://cdn.theatlantic.com/static/easel/images/dontmiss/111505_foxyladies.jpg" alt="Fox News's Foxy Ladies" title="Fox News's Foxy Ladies" />
+		</a>
+		<h3 class="headline"><a href="http://www.theatlantic.com/magazine/archive/2012/09/foxy-ladies/309054/" name="&amp;lpos=LR Missed Module">Fox News's Foxy Ladies</a></h3>
+		<div class="metadata">
+			<span class="authors"><span class="author">Liza Mundy</span></span>		</div>
+	</div><!-- /post -->
+		 	<div class="post">
+		<a class="photo" href="http://www.theatlantic.com/technology/archive/2012/08/make-way-for-the-soccer-geeks/261634/" name="&amp;lpos=LR Missed Module">
+			<img src="http://cdn.theatlantic.com/static/easel/images/dontmiss/110148_datasoccer.jpg" alt="A New Way of Understanding Soccer" title="A New Way of Understanding Soccer" />
+		</a>
+		<h3 class="headline"><a href="http://www.theatlantic.com/technology/archive/2012/08/make-way-for-the-soccer-geeks/261634/" name="&amp;lpos=LR Missed Module">A New Way of Understanding Soccer</a></h3>
+		<div class="metadata">
+			<span class="authors"><a href="http://www.theatlantic.com/alexander-furnas-and-gabe-lezra/" class="author" >Alexander Furnas and Gabe Lezra</a></span>		</div>
+	</div><!-- /post -->
+		 	<div class="post">
+		<a class="photo" href="http://www.theatlantic.com/politics/archive/2012/08/tiny-explainer-mitt-romneys-taxes/261657/" name="&amp;lpos=LR Missed Module">
+			<img src="http://cdn.theatlantic.com/static/easel/images/dontmiss/110012_romtax.jpg" alt="Quick Explainer: Mitt Romney's Taxes" title="Quick Explainer: Mitt Romney's Taxes" />
+		</a>
+		<h3 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/08/tiny-explainer-mitt-romneys-taxes/261657/" name="&amp;lpos=LR Missed Module">Quick Explainer: Mitt Romney's Taxes</a></h3>
+		<div class="metadata">
+			<span class="authors"><a href="http://www.theatlantic.com/molly-ball/" class="author" >Molly Ball</a></span>		</div>
+	</div><!-- /post -->
+		 	<div class="post">
+		<a class="photo" href="http://www.theatlantic.com/national/archive/2012/08/lifestyles-of-the-rich-and-loquacious/261481/" name="&amp;lpos=LR Missed Module">
+			<img src="http://cdn.theatlantic.com/static/easel/images/dontmiss/055334_punditscar.jpg" alt="What's Wrong With America's Pundits?" title="What's Wrong With America's Pundits?" />
+		</a>
+		<h3 class="headline"><a href="http://www.theatlantic.com/national/archive/2012/08/lifestyles-of-the-rich-and-loquacious/261481/" name="&amp;lpos=LR Missed Module">What's Wrong With America's Pundits?</a></h3>
+		<div class="metadata">
+			<span class="authors"><a href="http://www.theatlantic.com/ta-nehisi-coates/" class="author voice" >Ta-Nehisi Coates</a></span>		</div>
+	</div><!-- /post -->
+	</div>
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/health/archive/2012/09/study-how-reading-cosmo-affects-perceptions-of-sex/261955/" name="&amp;lpos=LR River">How Reading Cosmo Affects Perceptions of Sex</a></h3>
+	<p class="dek">Yup: There's a new study looking at this.</p>
+
+	<p class="metadata">
+				<a href="/health/" class="channel">Health</a>				<span class="authors"><a href="http://www.theatlantic.com/lindsay-abrams/" class="author" >Lindsay Abrams</a></span><a class="comments" href="http://www.theatlantic.com/health/archive/2012/09/study-how-reading-cosmo-affects-perceptions-of-sex/261955/#disqus_thread" disqus="mt261955"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlanticcities.com/jobs-and-economy/2012/09/next-major-real-estate-cycle-walkable-urbanism/3161/" name="&amp;lpos=LR River">The Next Big Thing: Walkable Urbanism</a></h3>
+	<p class="dek">A different way of organizing space</p>
+
+	<p class="metadata">
+								<span class="authors"><span class="author">Emily Badger</span></span>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/09/ted-kennedy-takes-on-mitt-romney-in-dnc-video-tribute/261961/" name="&amp;lpos=LR River">Ted Kennedy Takes on Mitt Romney in DNC Video Tribute</a></h3>
+	<p class="dek">The DNC ran the clips as a warm-up act.</p>
+
+	<p class="metadata">
+				<a href="/politics/" class="channel">Politics</a>				<span class="authors"><a href="http://www.theatlantic.com/garance-franke-ruta/" class="author voice" >Garance Franke-Ruta</a></span><a class="comments" href="http://www.theatlantic.com/politics/archive/2012/09/ted-kennedy-takes-on-mitt-romney-in-dnc-video-tribute/261961/#disqus_thread" disqus="mt261961"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/international/archive/2012/09/answers-to-all-your-questions-about-iran-israel-bibi-and-obama/261906/" name="&amp;lpos=LR River">Answers to All Your Questions About a Potential War With Iran</a></h3>
+	<p class="dek">Barack vs. Barak vs. Bibi vs. Ahmadinejad</p>
+
+	<p class="metadata">
+				<a href="/international/" class="channel">International</a>				<span class="authors"><a href="http://www.theatlantic.com/jeffrey-goldberg/" class="author voice" >Jeffrey Goldberg</a></span><a class="comments" href="http://www.theatlantic.com/international/archive/2012/09/answers-to-all-your-questions-about-iran-israel-bibi-and-obama/261906/#disqus_thread" disqus="mt261906"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/health/archive/2012/09/organic-food-isnt-more-nutritious-but-that-isnt-the-point/261929/" name="&amp;lpos=LR River">'Organic': What's It All About, Anyway?</a></h3>
+	<p class="dek">Nutrition was never the point. It's about environmental and public health benefits.</p>
+
+	<p class="metadata">
+				<a href="/health/" class="channel">Health</a>				<span class="authors"><a href="http://www.theatlantic.com/brian-fung/" class="author" >Brian Fung</a></span><a class="comments" href="http://www.theatlantic.com/health/archive/2012/09/organic-food-isnt-more-nutritious-but-that-isnt-the-point/261929/#disqus_thread" disqus="mt261929"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/national/archive/2012/09/the-economics-of-magazines-and-diversity/261597/" name="&amp;lpos=LR River">Why Magazines Hire Few Black Writers</a></h3>
+	<p class="dek">Or: Why you should finally subscribe, allowing the publication to diversify</p>
+
+	<p class="metadata">
+				<a href="/national/" class="channel">National</a>				<span class="authors"><a href="http://www.theatlantic.com/ta-nehisi-coates/" class="author voice" >Ta-Nehisi Coates</a></span><a class="comments" href="http://www.theatlantic.com/national/archive/2012/09/the-economics-of-magazines-and-diversity/261597/#disqus_thread" disqus="mt261597"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/09/fact-checking-campaign-lies-does-anybody-give-a-damn/261900/" name="&amp;lpos=LR River">Why Don't We Care About Political Lies?</a></h3>
+	<p class="dek">Dishonesty, whether by a candidate or a corporation, doesn't count for much any more</p>
+
+	<p class="metadata">
+				<a href="/politics/" class="channel">Politics</a>				<span class="authors"><a href="http://www.theatlantic.com/james-warren/" class="author" >James Warren</a></span><a class="comments" href="http://www.theatlantic.com/politics/archive/2012/09/fact-checking-campaign-lies-does-anybody-give-a-damn/261900/#disqus_thread" disqus="mt261900"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/health/archive/2012/09/how-regulation-really-does-change-eating-behavior/261908/" name="&amp;lpos=LR River">How Regulation Really Does Change Eating Behavior</a></h3>
+	<p class="dek">Do I really want a 600-calorie breakfast muffin? Not today, thanks.</p>
+
+	<p class="metadata">
+				<a href="/health/" class="channel">Health</a>				<span class="authors"><a href="http://www.theatlantic.com/marion-nestle/" class="author" >Marion Nestle</a></span><a class="comments" href="http://www.theatlantic.com/health/archive/2012/09/how-regulation-really-does-change-eating-behavior/261908/#disqus_thread" disqus="mt261908"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/national/archive/2012/09/the-false-promise-of-back-to-school-commercials/261903/" name="&amp;lpos=LR River">If Only Life Were Like Back-to-School Commercials</a></h3>
+	<p class="dek">Are today's kids ever outdoors that much?</p>
+
+	<p class="metadata">
+				<a href="/national/" class="channel">National</a>				<span class="authors"><a href="http://www.theatlantic.com/danielle-moodie/" class="author" >Danielle Moodie-Mills</a></span><a class="comments" href="http://www.theatlantic.com/national/archive/2012/09/the-false-promise-of-back-to-school-commercials/261903/#disqus_thread" disqus="mt261903"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlanticcities.com/arts-and-lifestyle/2012/09/pit-bulls-ultimate-urban-dog/3138/" name="&amp;lpos=LR River">The Ultimate Urban Dog</a></h3>
+	<p class="dek">Fear of pit bulls has much to do with America's fear of its inner cities</p>
+
+	<p class="metadata">
+								<span class="authors"><span class="author">Sarah Goodyear</span></span>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/health/archive/2012/09/sarah-palin-ran-a-faster-marathon-than-paul-ryan/261895/" name="&amp;lpos=LR River">Sarah Palin Ran a Faster Marathon Than Paul Ryan</a></h3>
+	<p class="dek">And she did it after having four kids.</p>
+
+	<p class="metadata">
+				<a href="/health/" class="channel">Health</a>				<span class="authors"><a href="http://www.theatlantic.com/alexis-madrigal/" class="author voice" >Alexis Madrigal</a></span><a class="comments" href="http://www.theatlantic.com/health/archive/2012/09/sarah-palin-ran-a-faster-marathon-than-paul-ryan/261895/#disqus_thread" disqus="mt261895"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/09/unions-prepare-for-a-bittersweet-labor-day-in-charlotte-and-nationwide/261877/" name="&amp;lpos=LR River">A Bittersweet Labor Day for the Country's Unions</a></h3>
+	<p class="dek">A tough year for the movement culminates with the Democratic National Convention being held in a so-called right-to-work state.</p>
+
+	<p class="metadata">
+				<a href="/politics/" class="channel">Politics</a>				<span class="authors"><a href="http://www.theatlantic.com/david-a-graham/" class="author" >David A. Graham</a></span><a class="comments" href="http://www.theatlantic.com/politics/archive/2012/09/unions-prepare-for-a-bittersweet-labor-day-in-charlotte-and-nationwide/261877/#disqus_thread" disqus="mt261877"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/international/archive/2012/09/no-way-out-fear-of-dying-among-afghanistans-professional-class/261888/" name="&amp;lpos=LR River">Fear of Dying Among Afghanistan's Professional Class</a></h3>
+	<p class="dek">Those who have worked for the U.S. government or other western groups are at risk of being targeted.</p>
+
+	<p class="metadata">
+				<a href="/international/" class="channel">International</a>				<span class="authors"><a href="http://www.theatlantic.com/steve-clemons/" class="author voice" >Steve Clemons</a></span><a class="comments" href="http://www.theatlantic.com/international/archive/2012/09/no-way-out-fear-of-dying-among-afghanistans-professional-class/261888/#disqus_thread" disqus="mt261888"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/national/archive/2012/09/why-do-americans-hate-the-media-just-watch-the-conventions/261879/" name="&amp;lpos=LR River">Why Americans Hate the Media</a></h3>
+	<p class="dek">To understand what's wrong with journalism today, just look at the conventions.</p>
+
+	<p class="metadata">
+				<a href="/national/" class="channel">National</a>				<span class="authors"><a href="http://www.theatlantic.com/andrew-cohen/" class="author" >Andrew Cohen</a></span><a class="comments" href="http://www.theatlantic.com/national/archive/2012/09/why-do-americans-hate-the-media-just-watch-the-conventions/261879/#disqus_thread" disqus="mt261879"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/09/the-base-election-on-the-ground/261871/" name="&amp;lpos=LR River">Through Florida's Eyes</a></h3>
+	<p class="dek">An on-the-ground view of why Romney and Obama are both failing to connect with the state's voters.</p>
+
+	<p class="metadata">
+				<a href="/politics/" class="channel">Politics</a>				<span class="authors"><a href="http://www.theatlantic.com/garance-franke-ruta/" class="author voice" >Garance Franke-Ruta</a></span><a class="comments" href="http://www.theatlantic.com/politics/archive/2012/09/the-base-election-on-the-ground/261871/#disqus_thread" disqus="mt261871"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/health/archive/2012/08/addicted-to-shopping/261845/" name="&amp;lpos=LR River">A Guide to Shopping 'Addiction'</a></h3>
+	<p class="dek">A rundown of the research on consumer psychology</p>
+
+	<p class="metadata">
+				<a href="/health/" class="channel">Health</a>				<span class="authors"><a href="http://www.theatlantic.com/brian-fung/" class="author" >Brian Fung</a></span><a class="comments" href="http://www.theatlantic.com/health/archive/2012/08/addicted-to-shopping/261845/#disqus_thread" disqus="mt261845"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/entertainment/archive/2012/08/the-big-secret-of-breaking-bad-walter-white-was-always-a-bad-guy/261833/" name="&amp;lpos=LR River">The Big Secret of 'Breaking Bad'</a></h3>
+	<p class="dek">As tonight's midseason finale draws close, it's become clear: Walter White was always a bad guy.</p>
+
+	<p class="metadata">
+				<a href="/entertainment/" class="channel">Entertainment</a>				<span class="authors"><a href="http://www.theatlantic.com/scott-meslow/" class="author" >Scott Meslow</a></span><a class="comments" href="http://www.theatlantic.com/entertainment/archive/2012/08/the-big-secret-of-breaking-bad-walter-white-was-always-a-bad-guy/261833/#disqus_thread" disqus="mt261833"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/video/archive/2012/08/the-jet-propulsion-lab-is-way-weirder-and-awesomer-than-you-even-imagined/261685/" name="&amp;lpos=LR River">The Delightful Oddness of Caltech's Jet Propulsion Lab</a></h3>
+	<p class="dek">A quirky, 52-mile journey through the center for space science</p>
+
+	<p class="metadata">
+				<a href="/video/" class="channel">Video</a>				<span class="authors"><a href="http://www.theatlantic.com/kasia-cieplak-mayr-von-baldegg/" class="author" >Kasia Cieplak-Mayr von Baldegg</a></span><a class="comments" href="http://www.theatlantic.com/video/archive/2012/08/the-jet-propulsion-lab-is-way-weirder-and-awesomer-than-you-even-imagined/261685/#disqus_thread" disqus="mt261685"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/business/archive/2012/09/why-does-canada-have-a-strategic-maple-syrup-reserve/261869/" name="&amp;lpos=LR River">Why Does Canada Have a Strategic Maple Syrup Reserve? </a></h3>
+	<p class="dek">A short trip through the sweet, sweet economics of sap.</p>
+
+	<p class="metadata">
+				<a href="/business/" class="channel">Business</a>				<span class="authors"><a href="http://www.theatlantic.com/jordan-weissmann/" class="author" >Jordan Weissmann</a></span><a class="comments" href="http://www.theatlantic.com/business/archive/2012/09/why-does-canada-have-a-strategic-maple-syrup-reserve/261869/#disqus_thread" disqus="mt261869"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/09/the-real-mystery-of-paul-ryans-marathon-time/261866/" name="&amp;lpos=LR River">The Real Mystery of Paul Ryan's Marathon Time</a></h3>
+	<p class="dek">Why risk an unnecessary lie?</p>
+
+	<p class="metadata">
+				<a href="/politics/" class="channel">Politics</a>				<span class="authors"><a href="http://www.theatlantic.com/james-fallows/" class="author voice" >James Fallows</a></span>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/international/archive/2012/08/is-the-world-too-easy-on-egypts-muslim-brotherhood-leaders/261854/" name="&amp;lpos=LR River">Is the World Too Easy on Egypt's Muslim Brotherhood Leaders?</a></h3>
+	<p class="dek">As they've clamped down on the press, the globe has reacted with a shrug.</p>
+
+	<p class="metadata">
+				<a href="/international/" class="channel">International</a>				<span class="authors"><a href="http://www.theatlantic.com/steven-a-cook/" class="author" >Steven A. Cook</a></span><a class="comments" href="http://www.theatlantic.com/international/archive/2012/08/is-the-world-too-easy-on-egypts-muslim-brotherhood-leaders/261854/#disqus_thread" disqus="mt261854"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/health/archive/2012/08/californias-historic-move-to-ban-gay-conversion-therapy/261755/" name="&amp;lpos=LR River">A Short History of Gay Conversion 'Therapy'</a></h3>
+	<p class="dek">As California moves to ban the practice, we look back at its inglorious past.</p>
+
+	<p class="metadata">
+				<a href="/health/" class="channel">Health</a>				<span class="authors"><a href="http://www.theatlantic.com/lindsay-abrams/" class="author" >Lindsay Abrams</a></span><a class="comments" href="http://www.theatlantic.com/health/archive/2012/08/californias-historic-move-to-ban-gay-conversion-therapy/261755/#disqus_thread" disqus="mt261755"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/health/archive/2012/08/what-are-the-chances-i-have-mad-cow-disease/261857/" name="&amp;lpos=LR River">What Are the Chances I Have Mad Cow Disease?</a></h3>
+	<p class="dek">James Hamblin, MD, tells you the odds.</p>
+
+	<p class="metadata">
+				<a href="/health/" class="channel">Health</a>				<span class="authors"><a href="http://www.theatlantic.com/james-hamblin/" class="author" >James Hamblin</a></span><a class="comments" href="http://www.theatlantic.com/health/archive/2012/08/what-are-the-chances-i-have-mad-cow-disease/261857/#disqus_thread" disqus="mt261857"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/business/archive/2012/08/mitt-romneys-tax-plan-only-works-if-income-inequality-explodes/261617/" name="&amp;lpos=LR River">Romney's Tax Plan Only Works If Income Inequality Explodes</a></h3>
+	<p class="dek">We treated the hints that have been dropped like a logic game. Guess what we found?</p>
+
+	<p class="metadata">
+				<a href="/business/" class="channel">Business</a>				<span class="authors"><a href="http://www.theatlantic.com/matthew-obrien/" class="author" >Matthew O'Brien</a></span><a class="comments" href="http://www.theatlantic.com/business/archive/2012/08/mitt-romneys-tax-plan-only-works-if-income-inequality-explodes/261617/#disqus_thread" disqus="mt261617"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/09/drink-up-the-white-house-releases-its-secret-beer-recipe/261870/" name="&amp;lpos=LR River">Drink Up! The White House Releases Its Secret Beer Recipe</a></h3>
+	<p class="dek">Transparency at last!</p>
+
+	<p class="metadata">
+				<a href="/politics/" class="channel">Politics</a>				<span class="authors"><a href="http://www.theatlantic.com/jordan-weissmann/" class="author" >Jordan Weissmann</a></span><a class="comments" href="http://www.theatlantic.com/politics/archive/2012/09/drink-up-the-white-house-releases-its-secret-beer-recipe/261870/#disqus_thread" disqus="mt261870"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/technology/archive/2012/08/ronald-reagan-and-the-case-of-the-missing-hologram/261838/" name="&amp;lpos=LR River">Ronald Reagan and the Case of the Missing Hologram</a></h3>
+	<p class="dek">How a resurrected Gipper almost appeared at the Republican National Convention</p>
+
+	<p class="metadata">
+				<a href="/technology/" class="channel">Technology</a>				<span class="authors"><a href="http://www.theatlantic.com/megan-garber/" class="author" >Megan Garber</a></span><a class="comments" href="http://www.theatlantic.com/technology/archive/2012/08/ronald-reagan-and-the-case-of-the-missing-hologram/261838/#disqus_thread" disqus="mt261838"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/national/archive/2012/08/the-bland-bravery-of-richard-levin/261849/" name="&amp;lpos=LR River">Yale Bids Farewell to a Complicated President</a></h3>
+	<p class="dek">Richard Levin's tenure was marked by gender relations controversy.</p>
+
+	<p class="metadata">
+				<a href="/national/" class="channel">National</a>				<span class="authors"><a href="http://www.theatlantic.com/nicole-allan/" class="author" >Nicole Allan</a></span><a class="comments" href="http://www.theatlantic.com/national/archive/2012/08/the-bland-bravery-of-richard-levin/261849/#disqus_thread" disqus="mt261849"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/technology/archive/2012/08/survey-75-of-homeless-youth-use-at-least-one-social-network/261817/" name="&amp;lpos=LR River">75% of Homeless Youth Use at Least One Social Network</a></h3>
+	<p class="dek">The digital divide doesn't seem to be socioeconomic, but age-oriented.</p>
+
+	<p class="metadata">
+				<a href="/technology/" class="channel">Technology</a>				<span class="authors"><a href="http://www.theatlantic.com/alexis-madrigal/" class="author voice" >Alexis Madrigal</a></span><a class="comments" href="http://www.theatlantic.com/technology/archive/2012/08/survey-75-of-homeless-youth-use-at-least-one-social-network/261817/#disqus_thread" disqus="mt261817"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlanticcities.com/politics/2012/08/how-californias-carbon-market-will-work/3137/" name="&amp;lpos=LR River">How California's Carbon Market Will Work</a></h3>
+	<p class="dek">The rest of the U.S. has been slow to join the climate change battle</p>
+
+	<p class="metadata">
+								<span class="authors"><span class="author">Tim McDonnell</span></span>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/health/archive/2012/08/study-we-benefit-from-seeing-strong-women-on-tv/261790/" name="&amp;lpos=LR River">Study: Society Benefits From Having Strong Women on TV</a></h3>
+	<p class="dek">The "Buffy effect"</p>
+
+	<p class="metadata">
+				<a href="/health/" class="channel">Health</a>				<span class="authors"><a href="http://www.theatlantic.com/lindsay-abrams/" class="author" >Lindsay Abrams</a></span><a class="comments" href="http://www.theatlantic.com/health/archive/2012/08/study-we-benefit-from-seeing-strong-women-on-tv/261790/#disqus_thread" disqus="mt261790"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/08/gop-nominees-didnt-always-run-as-bellicose-nationalists/261803/" name="&amp;lpos=LR River">GOP Nominees Weren't Always Bellicose Nationalists</a></h3>
+	<p class="dek">Comparing Romney's RNC speech to what the last Republican president with a successful foreign-policy record said</p>
+
+	<p class="metadata">
+				<a href="/politics/" class="channel">Politics</a>				<span class="authors"><a href="http://www.theatlantic.com/conor-friedersdorf/" class="author" >Conor Friedersdorf</a></span><a class="comments" href="http://www.theatlantic.com/politics/archive/2012/08/gop-nominees-didnt-always-run-as-bellicose-nationalists/261803/#disqus_thread" disqus="mt261803"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/08/clint-eastwoods-unbelievable-republican-national-convention-speech/261821/" name="&amp;lpos=LR River">Clint Eastwood's Unbelievable Speech</a></h3>
+	<p class="dek">The actor's rambling remarks strike a puzzling note in Tampa.</p>
+
+	<p class="metadata">
+				<a href="/politics/" class="channel">Politics</a>				<span class="authors"><a href="http://www.theatlantic.com/garance-franke-ruta/" class="author voice" >Garance Franke-Ruta</a></span><a class="comments" href="http://www.theatlantic.com/politics/archive/2012/08/clint-eastwoods-unbelievable-republican-national-convention-speech/261821/#disqus_thread" disqus="mt261821"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/entertainment/archive/2012/08/clint-eastwood-political-wanderer/261808/" name="&amp;lpos=LR River">Clint Eastwood, Political Wanderer</a></h3>
+	<p class="dek">The 82-year-old star spoke at the RNC Thursday night.</p>
+
+	<p class="metadata">
+				<a href="/entertainment/" class="channel">Entertainment</a>				<span class="authors"><a href="http://www.theatlantic.com/christopher-orr/" class="author" >Christopher Orr</a></span><a class="comments" href="http://www.theatlantic.com/entertainment/archive/2012/08/clint-eastwood-political-wanderer/261808/#disqus_thread" disqus="mt261808"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/technology/archive/2012/08/with-this-mans-help-we-celebrate-people-by-dropping-balloons-on-them/261816/" name="&amp;lpos=LR River">The Man Who Drops the Balloons</a></h3>
+	<p class="dek">Treb Heining has some 100,000 balloons ready to fall on attendees at the Republican National Convention.</p>
+
+	<p class="metadata">
+				<a href="/technology/" class="channel">Technology</a>				<span class="authors"><a href="http://www.theatlantic.com/megan-garber/" class="author" >Megan Garber</a></span><a class="comments" href="http://www.theatlantic.com/technology/archive/2012/08/with-this-mans-help-we-celebrate-people-by-dropping-balloons-on-them/261816/#disqus_thread" disqus="mt261816"></a>	</p>
+</div><!-- /post -->
+<div class="post">
+
+	
+	<h3 class="headline"><a href="http://www.theatlantic.com/international/archive/2012/08/chinas-long-history-of-defying-the-doomsayers/261783/" name="&amp;lpos=LR River">Think China Will Falter? Think Again</a></h3>
+	<p class="dek">The Communist Party has survived much worse than a dip in economic growth.</p>
+
+	<p class="metadata">
+				<a href="/international/" class="channel">International</a>				<span class="authors"><a href="http://www.theatlantic.com/splattwasserstrom/" class="author" >Stephen Platt & Jeffrey Wasserstrom</a></span><a class="comments" href="http://www.theatlantic.com/international/archive/2012/08/chinas-long-history-of-defying-the-doomsayers/261783/#disqus_thread" disqus="mt261783"></a>	</p>
+</div><!-- /post -->
+
+<!-- BTF -->
+	<div id="btf" >
+		<div id="moreAt">
+			<h2>More at the Atlantic</h2>
+									<div class="post">
+				<a class="photo" href="http://www.theatlantic.com/business/archive/2012/08/bye-bye-boomers-this-is-the-age-of-the-baby-bust-ers/261424/" name="&amp;lpos=LR More Module">
+					<img src="http://cdn.theatlantic.com/static/easel/images/dontmiss/123025_babies_copy.jpg" alt="Putting Babies on Hold" title="Putting Babies on Hold" />
+				</a>
+				<h3 class="headline"><a href="http://www.theatlantic.com/business/archive/2012/08/bye-bye-boomers-this-is-the-age-of-the-baby-bust-ers/261424/" name="&amp;lpos=LR More Module">Putting Babies on Hold</a></h3>
+			</div><!-- /post -->
+									<div class="post">
+				<a class="photo" href="http://www.theatlantic.com/entertainment/archive/2012/08/slugfest-2012-the-making-of-the-atlantics-september-cover/261446/" name="&amp;lpos=LR More Module">
+					<img src="http://cdn.theatlantic.com/static/easel/images/dontmiss/124349_cover.jpg" alt="Making a Magazine Cover" title="Making a Magazine Cover" />
+				</a>
+				<h3 class="headline"><a href="http://www.theatlantic.com/entertainment/archive/2012/08/slugfest-2012-the-making-of-the-atlantics-september-cover/261446/" name="&amp;lpos=LR More Module">Making a Magazine Cover</a></h3>
+			</div><!-- /post -->
+									<div class="post">
+				<a class="photo" href="http://www.theatlantic.com/health/archive/2012/08/study-a-childhood-need-for-immediate-gratification-predicts-adult-obesity/261226/" name="&amp;lpos=LR More Module">
+					<img src="http://cdn.theatlantic.com/static/easel/images/dontmiss/094735_marshmallow.jpg" alt="The Childhood Test That Predicts Adult Obesity" title="The Childhood Test That Predicts Adult Obesity" />
+				</a>
+				<h3 class="headline"><a href="http://www.theatlantic.com/health/archive/2012/08/study-a-childhood-need-for-immediate-gratification-predicts-adult-obesity/261226/" name="&amp;lpos=LR More Module">The Childhood Test That Predicts Adult Obesity</a></h3>
+			</div><!-- /post -->
+					</div>
+
+		
+		
+<div class="ad adBottomboxleft" id="adBottomboxleft2">
+			<script type="text/javascript">
+//<![CDATA[
+			if (typeof window.dartOrd == 'undefined') {
+				window.dartOrd = ('000000000' + Math.ceil(Math.random()*1000000000).toString()).slice(-9);
+			}
+			if (typeof window.dartTile == 'undefined') {
+				window.dartTile = 0;
+			}
+			window.dartTile += 1;
+			if (typeof(window.bizoDart) == 'undefined') {
+				if (typeof(window.Atlantic) =='object' && typeof(window.Atlantic.getBizoDartString) == 'function') {
+					window.bizoDart = Atlantic.getBizoDartString();
+				} else {
+					window.bizoDart = '';
+				}	
+			}
+			jsProperties = 'TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=bottomboxleft;sz=300x250,336x280,620x280';
+			document.write('<' + 'script type="text/javascript" src="http://ad.doubleclick.net/adj/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=bottomboxleft;sz=300x250,336x280,620x280;' + window.bizoDart + 'ord=' + window.dartOrd + ';tile=' + window.dartTile + '" id="adBottomboxleftScript"></' + 'script' + '>');
+//]]>
+			</script>
+<noscript><div><a href="http://ad.doubleclick.net/jump/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=bottomboxleft;sz=300x250,336x280,620x280" title=""><img src="http://ad.doubleclick.net/ad/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=bottomboxleft;sz=300x250,336x280,620x280" alt="" /></a></div></noscript>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+if( $("#adBottomboxleft2").html().search("grey.gif") != -1 ){
+	$("#adBottomboxleft2").hide();
+}
+//]]>
+</script>
+				
+	</div>
+
+<script type="text/javascript">cssFixes()</script>
+</div><!-- contentColumn -->
+
+
+<div class="promoColumn">
+
+
+
+		
+	<!-- The promo module. -->
+	<div class="promoModule">
+
+		<!-- The promo header/banner. -->
+		<div class="promoModuleHeader">
+			Special Report
+		</div>
+
+		<!-- The promo content. -->
+		<table class="promoModuleContent">
+			<tr>
+			<td valign="top">
+							<a href="http://www.theatlantic.com/special-report/brave-thinkers-2012/"
+				   class="promoModuleThumbnail" name="&amp;lpos=RR Special Report">
+					<img src="http://cdn.theatlantic.com/static/easel/images//060224_brave_thinkers_110x90.jpg"
+						 alt="Vote for a Brave Thinker"
+						 title="Vote for a Brave Thinker"
+						/>
+					<span class="credit">The Atlantic</span>
+				</a>
+						</td>
+
+			<td valign="top" class="promoModuleText">
+			<span class="promoModuleHeadline">
+				<a href="http://www.theatlantic.com/special-report/brave-thinkers-2012/" name="&amp;lpos=RR Special Report">
+					Vote for a Brave Thinker				</a>
+			</span>
+
+			<br />
+
+			<span class="promoModuleDek">
+				Help pick the "Reader's Choice" Brave Thinker for <i>The Atlantic</i>'s November issue!				<a href="http://www.theatlantic.com/special-report/brave-thinkers-2012/" name="&amp;lpos=RR Special Report">
+					Read&nbsp;more&nbsp;&rsaquo;
+				</a>
+			</span>
+			</td>
+			</tr>
+
+		</table>
+		<!-- End promo content -->
+
+	</div>
+	<!-- End promo module. -->
+
+
+<div class="ad adTopboxright" id="adTopboxright3">
+<h2>Browse our main stories</h2>
+<div style="height:335px">
+<script type="text/javascript" src="http://www.infomous.com/cloud_widget/21215?width=334&height=300&maxWords=32&skinMaxFontSize=16&skinMinFontSize=14"></script></span>
+<span style="height:18px"><a onclick="window.open('http://www.infomous.com/cloud/fullscreen/21215','_blank','width=770,height=500,menubar=no,toolbar=no,location=no,resizable=yes,scrollbars=no');void(0);" target="_infomous"><img src="http://www.infomous.com/site/mockups/img/InfoLogo20x20.jpg" height="16px"> View full size</a>
+<noscript><div><a href="http://ad.doubleclick.net/jump/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=topboxright;sz=336x280,300x250,300x600,336x1000" title=""><img src="http://ad.doubleclick.net/ad/TheAtlanticOnline/atlantic_online_homepage;src=landing;pos=topboxright;sz=336x280,300x250,300x600,336x1000" alt="" /></a></div></noscript>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+if( $("#adTopboxright3").html().search("grey.gif") != -1 ){
+	$("#adTopboxright3").hide();
+}
+//]]>
+</script>
+			<div id="ourLatestPost" class="module" >
+	<div class="title">
+		<h2>Just In</h2>
+	</div>
+
+	<div class="wrapper" id="olpWrapper">
+		<div id="olpScroll">
+			
+<div id="olpEntry1" class="olpEntry">
+	<a href="#" class="previousEntryLink toggleArrows"></a>
+
+	<div class="post">
+			<a href="http://www.theatlantic.com/conor-friedersdorf/" class="photo">
+			<img src="http://cdn.theatlantic.com/static/newsroom/img/authors/f/conor-friedersdorf/headshot/author-headshot.jpg?m8tdf9" />
+		</a>
+		<div class="authorLine">
+				<span class="authors">
+			<a class="author" href="http://www.theatlantic.com/conor-friedersdorf/">Conor Friedersdorf</a>
+		</span>
+				<span class="date">6:11 PM ET</span>
+	</div>
+	<h3 class="headline"><a href="http://www.theatlantic.com/politics/archive/2012/09/should-it-unnerve-us-that-michelle-obama-and-ann-romney-are-so-disarming/262020/" name="&amp;lpos=RR Just In">Should It Unnerve Us That Michelle Obama and Ann Romney Are So&hellip;</a></h3>
+	</div>
+	<div class="justInUnixDate" style="display:none">1346883095</div>
+
+	<a href="#" class="nextEntryLink toggleArrows"></a>
+
+	<!-- 1346889917 -->
+</div>
+		</div>
+	</div>
+</div>
+	<div id="infocusSide" class="module">
+	  <div class="title">
+	    <h2><a href="http://www.theatlantic.com/infocus/" name="&amp;lpos=RR InFocus"><img src="http://cdn.theatlantic.com/static/front/images/infocus/side_header.png" /></a></h2>
+	  </div>
+	  <div><h4 style="margin: 0;" class="rubric">The Biggest Story in Photos</h4>
+	    <a href="http://www.theatlantic.com/infocus/2012/09/the-2012-summer-paralympics/100365/" name="&amp;lpos=RR InFocus"><img class="image" src="http://cdn.theatlantic.com/static/infocus/highlight_2012090508.jpg" /></a>
+	    <h3 style="display: inline;" class="headline"><a href="http://www.theatlantic.com/infocus/2012/09/the-2012-summer-paralympics/100365/" name="&amp;lpos=RR InFocus">The 2012 Summer Paralympics</a></h3> <span class="date">Sep 5, 2012</span>
+	  </div>
+	</div>
+
+<div id="videoFeature" class="module">
+	<div class="title">
+		<h2><a href="http://www.theatlantic.com/video/" name="&amp;lpos=RR Video">Video</a></h2>
+	</div>
+	
+	<div class="player">
+		<!-- Start of Brightcove Player -->
+<div style="display:none"></div>
+
+<script type="text/javascript">
+	// <![CDATA[
+	// We test !jQuery.isReady so we don't do a document.write after page load
+	if (typeof window.brightcove == 'undefined') {
+		if ((typeof jQuery != 'object' && !document.body) || !jQuery.isReady) {
+			document.write('<' + 'script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences_all.js"' + '><' + '/script' + '>');
+		} else {
+			// Insert with DOM, document is already loaded
+			var script = document.createElement('SCRIPT');
+			script.setAttribute('type', 'text/javascript');
+			script.setAttribute('src', 'http://admin.brightcove.com/js/BrightcoveExperiences_all.js');
+			var ins = document.getElementsByTagName('SCRIPT')[0];
+			ins.parentNode.insertBefore(script, ins);
+		}
+	}
+	// ]]>
+</script>
+		
+<object id="myExperience1824168409001" class="BrightcoveExperience">
+	<param name="bgcolor" value="#FFFFFF" />
+	<param name="width" value="305" />
+	<param name="height" value="177" />
+	<param name="playerID" value="1091263959001" />
+	<param name="playerKey" value="AQ~~,AAAABvb_NGE~,DMkZt2E6wO0aqwg3BkGVZipVhkS_MPQH" />
+	<param name="isVid" value="true" />
+	<param name="isUI" value="true" />
+	<param name="dynamicStreaming" value="true" />
+	<param name="wmode" value="transparent" />
+	<param name="language" value="en" />
+	<param name="@videoPlayer" value="1824168409001" />
+	
+</object>
+
+<script type="text/javascript">brightcove.createExperiences();</script>
+<!-- End of Brightcove Player -->		<a href="http://www.theatlantic.com/video/index/261979/" name="&amp;lpos=RR Video">Daddy, Where Do Babies Come From? This Handy 1940s Sex Ed Film Is Here to Help</a>
+	</div>
+	
+	<div class="related">
+			<a href="http://www.theatlantic.com/video/index/261514/" name="&amp;lpos=RR Video" class="video">
+						<img src="http://cdn.theatlantic.com/static/video/2012/08/screen-shot-2012-08-23-at-43342-pm/related.png" />
+			Insane in the Chromatophores		</a>
+			<a href="http://www.theatlantic.com/video/index/261138/" name="&amp;lpos=RR Video" class="video">
+						<img src="http://cdn.theatlantic.com/static/video/2012/08/toddler-still2/related.jpg" />
+			How to Speak Toddler-ese		</a>
+			<a href="http://www.theatlantic.com/video/index/260965/" name="&amp;lpos=RR Video" class="video">
+			<div class="sponsored">Sponsor Video</div>			<img src="http://cdn.theatlantic.com/static/video/2012/09/large-image-of-fuller/related.jpg" />
+			The Impact of One Counselor		</a>
+		</div>
+	<div style="clear:both"></div>
+	<a class="moreVideo" href="http://www.theatlantic.com/video/" name="&amp;lpos=RR Video">Watch More Video</a>
+</div>
+<!--div id="specialReport" class="module"></div--><div id="newsstands" class="module">
+	<div class="title">
+		<h2>On Newsstands Now</h2>
+	</div>
+	<div class="subscriptionForm">
+		<h4 class="price"><nobr>Subscribe and SAVE 59%</nobr><br /><nobr>10 issues JUST $2.45/COPY</nobr></h4>
+		<form action="https://ssl.palmcoastd.com/23301/apps/ORDER_57927?iKey=I**AEM" method="post" id="circForm" class="labeled">
+        <input type="hidden" name="iTermValue" value="1_US" />
+        <input type="hidden" name="iPayopt" value="Y">
+		<input type="hidden"   name="iaccountnumber" />
+        <input name="iOrdBillCountry" value="US" type="hidden" /> 
+
+        <fieldset>
+           <p>
+			   <input class="name" name="iOrdBillFName" type="text" size="22" value="" longdesc="FIRST NAME" />	   
+           </p>
+		   <p>
+			   <input class="name" name="iOrdBillLName" type="text" size="22" value="" longdesc="LAST NAME" />		   
+           </p>
+           <p>
+			   <input class="address1" name="iOrdBillAddr1" type="text" size="22" value="" longdesc="ADDRESS 1" />
+           </p>
+           <p>
+			   <input class="address2" name="iOrdBillAddr2" type="text" size="22" value="" longdesc="ADDRESS 2"  />
+           </p>
+           <p>
+			   <input class="city" name="iOrdBillCity" type="text"  size="22" value="" longdesc="CITY" />
+           </p>
+           <p>
+               <select class="state" name="iOrdBillState" tabindex="5"  >
+                       <option value="">STATE</option>
+                       <option value="AK">AK</option>
+                       <option value="AL">AL</option>
+                       <option value="AR">AR</option>
+                       <option value="AZ">AZ</option>
+                       <option value="CA">CA</option>
+                       
+                       <option value="CO">CO</option>
+                       <option value="CT">CT</option>
+                       <option value="DC">DC</option>
+                       <option value="DE">DE</option>
+                       <option value="FL">FL</option>
+                       <option value="GA">GA</option>
+                       
+                       <option value="HI">HI</option>
+                       <option value="IA">IA</option>
+                       <option value="ID">ID</option>
+                       <option value="IL">IL</option>
+                       <option value="IN">IN</option>
+                       <option value="KS">KS</option>
+                       
+                       <option value="KY">KY</option>
+                       <option value="LA">LA</option>
+                       <option value="MA">MA</option>
+                       <option value="MD">MD</option>
+                       <option value="ME">ME</option>
+                       <option value="MI">MI</option>
+                       
+                       <option value="MN">MN</option>
+                       <option value="MO">MO</option>
+                       <option value="MS">MS</option>
+                       <option value="MT">MT</option>
+                       <option value="NC">NC</option>
+                       <option value="ND">ND</option>
+                       
+                       <option value="NE">NE</option>
+                       <option value="NH">NH</option>
+                       <option value="NJ">NJ</option>
+                       <option value="NM">NM</option>
+                       <option value="NV">NV</option>
+                       <option value="NY">NY</option>
+                       
+                       <option value="OH">OH</option>
+                       <option value="OK">OK</option>
+                       <option value="OR">OR</option>
+                       <option value="PA">PA</option>
+                       <option value="RI">RI</option>
+                       <option value="SC">SC</option>
+                       
+                       <option value="SD">SD</option>
+                       <option value="TN">TN</option>
+                       <option value="TX">TX</option>
+                       <option value="UT">UT</option>
+                       <option value="VA">VA</option>
+                       <option value="VT">VT</option>
+                       
+                       <option value="WA">WA</option>
+                       <option value="WI">WI</option>
+                       <option value="WV">WV</option>
+                       <option value="WY">WY</option>
+                       <option value="YT">YT</option>
+               </select><input class="zip" name="iOrdBillPcode" type="text" size="3" value="" longdesc="ZIP"  />
+           </p>
+           <p>
+			   <input class="email" name="iOrdBillEmail" type="text" size="22" value="" longdesc="EMAIL"  />
+           </p>
+           <p class="submit">
+			   <button type="submit" value="Submit" name="Submit" tabindex="8"  >Subscribe</button>
+           </p>
+	</fieldset>
+</form>	</div>
+	<div class="currentIssue">
+		<p>
+			<a href="/magazine/" name="&amp;lpos=RR Newsstands">
+				<img src="http://cdn.theatlantic.com/static/newsroom/img/2012/08/20/0912 Cover_210x280/mag-issue-medium.jpg?m92if7" 
+					width="85"
+					height="113"
+					alt="The Atlantic Monthly" />
+			</a>
+		</p>
+		<p>
+			James Fallows on <a href="http://www.theatlantic.com/magazine/archive/2012/09/slugfest/309063/">Romney&#39;s debating strengths and weaknesses</a>, Ta-Nehisi Coates on <a href="http://www.theatlantic.com/magazine/archive/2012/09/fear-of-a-black-president/309064/">Obama and race</a>, Hanna Rosin on <a href="http://www.theatlantic.com/magazine/archive/2012/09/boys-on-the-side/309062/">college girls and sex</a>, new <a href="http://www.theatlantic.com/magazine/archive/2012/09/onward/309065/">fiction</a> by Emma Donoghue, and more		</p>
+	</div>
+	<div style="clear:both"></div>
+</div><div id="facebookPromo" class="module">
+	<div class="title">
+		<h2>Facebook</h2>
+	</div>
+<iframe src="http://www.facebook.com/plugins/activity.php?site=theatlantic.com&amp;width=300&amp;height=300&amp;header=false&amp;colorscheme=light&amp;recommendations=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:300px;" allowTransparency="true"></iframe>
+</div><div id="newsletters" class="module">
+	<div class="title">
+		<h2>Newsletters</h2>
+	</div>
+	
+	<p>Sign up to receive our free newsletters</p>
+
+	<form 	action="http://theatlantic.us2.list-manage.com/subscribe/post?u=ed2d318978b7dc9b30b1f464f&amp;id=f2eeb0a9f3" 
+			method="post" 
+			id="mc-embedded-subscribe-form" 
+			name="mc-embedded-subscribe-form" 
+			class="labeled" 
+			target="_blank">
+
+	<p class="input">
+		<input type="checkbox" value="4" name="group[7413][4]" id="mce-group[7413]-7413-0"> 
+		<label for="mce-group[7413]-7413-0">
+			<strong>This Week</strong> on TheAtlantic.com
+		</label>
+		(<a href="http://www.theatlantic.com/newsletters/this-week" title="Sample of Weekly Atlantic Website Newsletter" onclick="window.open(this.href,'Sample Weekly Atlantic Website Newsletter','width=785,scrollbars=yes'); return false;">sample</a>)
+	</p>
+
+	<p class="input">
+		<input type="checkbox" value="8" name="group[7413][32]" id="mce-group[7413]-7413-1"> 
+		<label for="mce-group[7413]-7413-1">
+			<strong>This Month</strong> in The Atlantic 
+		</label>
+		(<a href="http://www.theatlantic.com/newsletters/this-month" title="Sample Atlantic Magazine Newsletter" onclick="window.open(this.href,'Sample Atlantic Magazine Newsletter','width=785,scrollbars=yes'); return false;">sample</a>)
+	</p>
+
+	<p class="input">
+		<input type="checkbox" value="128" name="group[7413][128]" id="mce-group[7413]-7413-2"> 
+		<label for="mce-group[7413]-7413-2">
+			<strong>Today's Top Stories</strong> on The Atlantic.com 
+		</label>
+		(<a href="http://www.theatlantic.com/newsletters/top-stories/" title="Sample Top Stories on The Atlantic Newsletter" onclick="window.open(this.href,'Sample Top Stories on The Atlantic Newsletter','width=785,scrollbars=yes'); return false;">sample</a>)
+	</p>
+
+	<p class="input">
+		<input type="checkbox" value="256" name="group[7413][256]" id="mce-group[7413]-7413-3"> 
+		<label for="mce-group[7413]-7413-3">
+			New from <strong>In Focus:</strong>
+		</label>
+		(<a href="http://www.theatlantic.com/newsletters/infocus/" title="Sample In Focus newsletter" onclick="window.open(this.href,'Sample In Focus newsletter','width=785,scrollbars=yes'); return false;">sample</a>)
+	</p>
+
+	<p class="input">
+		<input type="checkbox" value="2" name="group[7049][2]" id="mce-group[7049]-7049-0"> 
+		<label for="mce-group[7049]-7049-0">
+			<strong>5 Best Columns</strong> from The Atlantic Wire
+		</label>
+		(<a href="http://www.theatlanticwire.com/newsletter" title="Sample Atlantic Wire Newsletter" onclick="window.open(this.href,'Sample Atlantic Wire Newsletter','width=785,scrollbars=yes'); return false;">sample</a>)
+	</p>
+	
+	<p class="input">
+		<input type="checkbox" value="1" name="group[7045][1]" id="mce-group[7045]-7045-0">
+		<label for="mce-group[7045]-7045-0">
+			<strong>Daily Newsletter</strong> from The Atlantic Cities
+		</label> 
+		(<a href="http://www.theatlanticcities.com/newsletters/top-stories/" title="Sample Atlantic Wire Newsletter" onclick="window.open(this.href,'Sample Atlantic Cities Newsletter','width=785,scrollbars=yes'); return false;">sample</a>)
+	</p>
+
+	<p class="partners">
+		<input type="checkbox" value="16" name="group[7421][8]" id="mce-group[7421]-7421-0" checked="checked"> 
+		<label for="mce-group[7421]-7421-0">I want to receive updates from our partners and sponsors</label>
+	</p>
+
+	<fieldset>
+		<input type="text" size="35" name="EMAIL" id="emailAddress" class="inputField"  longdesc="EMAIL" />
+		<input type="submit" class="button" name="subscribe" value="Submit" />
+	</fieldset>
+</form>
+	
+</div>
+
+<div id="mostPopular" class="module">
+	<div class="title">
+		<h2>Most Popular</h2>
+	</div>
+	
+	<dl>
+		
+		<dt>1</dt>
+		<dd><a href="/politics/archive/2012/09/paul-ryan-mountaineer/261904/" name="&amp;lpos=RR Most Popular">Paul Ryan, Mountaineer</a></dd>
+				
+		<dt>2</dt>
+		<dd><a href="/politics/archive/2012/09/better-than-fact-checking-an-ohio-reporter-speaks-truth-to-power/261995/" name="&amp;lpos=RR Most Popular">Better Than Fact-Checking: An Ohio Reporter Speaks Truth to Power</a></dd>
+				
+		<dt>3</dt>
+		<dd><a href="/health/archive/2012/09/organic-food-isnt-more-nutritious-but-that-isnt-the-point/261929/" name="&amp;lpos=RR Most Popular">Organic Food Isn&#039;t More Nutritious, but That Isn&#039;t the Point</a></dd>
+				
+		<dt>4</dt>
+		<dd><a href="/magazine/archive/2012/09/fear-of-a-black-president/309064/" name="&amp;lpos=RR Most Popular">Fear of a Black President</a></dd>
+				
+		<dt>5</dt>
+		<dd><a href="/international/archive/2012/08/gangnam-style-dissected-the-subversive-message-within-south-koreas-music-video-sensation/261462/" name="&amp;lpos=RR Most Popular">Gangnam Style, Dissected: The Subversive Message Within South Korea&#039;s Music Video Sensation</a></dd>
+				
+		<dt>6</dt>
+		<dd><a href="/entertainment/archive/2012/09/attention-50-shades-copycats-rip-off-the-orgasms-not-the-whips-and-chains/261957/" name="&amp;lpos=RR Most Popular">Attention &#039;50 Shades&#039; Copycats: Rip Off the Orgasms, Not the Whips and Chains</a></dd>
+				
+		<dt>7</dt>
+		<dd><a href="/infocus/2012/09/burning-man-2012/100363/" name="&amp;lpos=RR Most Popular">Burning Man 2012</a></dd>
+				
+		<dt>8</dt>
+		<dd><a href="/technology/archive/2012/09/the-best-craigslist-missed-connections-from-burning-man/262004/" name="&amp;lpos=RR Most Popular">The Best Craigslist &#039;Missed Connections&#039; from Burning Man</a></dd>
+				
+		<dt>9</dt>
+		<dd><a href="/politics/archive/2012/09/paul-ryan-has-made-close-to-40-climbs-not-climbed-close-to-40-peaks/262017/" name="&amp;lpos=RR Most Popular">Paul Ryan Has Made &#039;Close to 40 Climbs,&#039; Not &#039;Climbed Close to 40 Peaks&#039;</a></dd>
+				
+		<dt>10</dt>
+		<dd><a href="/magazine/archive/2012/07/why-women-still-cant-have-it-all/309020/" name="&amp;lpos=RR Most Popular">Why Women Still Can&rsquo;t Have It All</a></dd>
+			</dl>
+</div>
+</div>
+
+
+			<div style="clear:both"></div>
+		<div id="promoFooter">
+				</div>
+	
+
+			<div style="clear:both"></div>
+		</div><!-- /middle -->
+
+
+	<div style="clear:both"></div>
+
+	<div id="footer" class="nav">
+		<ul>
+
+			<li><a href="/subscribe-help/" name="&amp;lpos=Footer">Subscribe Help</a></li>
+			
+			<li><a href="/faq/" name="&amp;lpos=Footer">Faq</a></li>
+			
+			<li><a href="/follow-the-atlantic/" name="&amp;lpos=Footer">Follow the Atlantic</a></li>
+			
+			<li><a href="/masthead/" name="&amp;lpos=Footer">Masthead</a></li>
+			
+			<li><a href="/emporium/" name="&amp;lpos=Footer">Store</a></li>
+			
+			<li><a href="/store/" name="&amp;lpos=Footer">Merchandise</a></li>
+			
+			<li><a href="/jobs/" name="&amp;lpos=Footer">Jobs</a></li>
+			
+			<li><a href="/education/" name="&amp;lpos=Footer">Educational Program</a></li>
+			
+			<li><a href="/privacy-policy/" name="&amp;lpos=Footer">Privacy Policy</a></li>
+			
+		</ul>
+		<ul>
+			<li><a href="/site-map/" name="&amp;lpos=Footer">Site Map</a></li>
+
+			<li><a href="/terms-and-conditions/" name="&amp;lpos=Footer">Terms &amp; Conditions</a></li>
+			
+			<li><a href="http://advertising.theatlantic.com/" name="&amp;lpos=Footer">Advertise</a></li>
+			
+			<li><a href="/press-release/" name="&amp;lpos=Footer">Press</a></li>
+			
+			<li><a href="/contact/" name="&amp;lpos=Footer">Contact Us</a></li>
+			
+			<li><a href="/special-report/" name="&amp;lpos=Footer">Special Reports</a></li>
+			
+			<li><a href="/social-gallery/" name="&amp;lpos=Footer">Atlantic Scene</a></li>
+			
+			<li><a href="http://events.theatlantic.com/" name="&amp;lpos=Footer">Events</a></li>
+			
+		</ul>
+	</div><!-- /footer -->
+
+
+</div><!-- /container -->
+</div><!-- /contentShadow -->
+
+<div id="copyright">
+    Copyright &copy; 2012 by The Atlantic Monthly Group. All Rights Reserved.
+    <br />
+    <a href="http://www.edgecast.com/">CDN</a> powered by Edgecast Networks.
+</div>
+
+
+<script src="http://cdn.theatlantic.com/static/front/js/jquery.start.js?v=15.11" type="text/javascript"></script>
+
+<div id="BF_WIDGET_1"> </div>
+<script type="text/javascript">
+(function( ){
+BF_WIDGET_JS=document.createElement("script"); BF_WIDGET_JS.type="text/javascript";
+BF_WIDGET_SRC="http://ct.buzzfeed.com/wd/UserWidget?u=theatlantic.com&to=1&or=vb&wid=1&cb=" + (new Date()).getTime();
+setTimeout(function() {document.getElementById("BF_WIDGET_1").appendChild(BF_WIDGET_JS);BF_WIDGET_JS.src=BF_WIDGET_SRC},1);
+})();
+</script>
+
+<!-- datepicker required files -->
+<script type="text/javascript" src="http://cdn.theatlantic.com/static/front/js/datepicker/datepicker.js"></script>
+<script type="text/javascript" src="http://cdn.theatlantic.com/static/front/js/datepicker/eye.js"></script>
+<script type="text/javascript" src="http://cdn.theatlantic.com/static/front/js/datepicker/layout.js"></script>
+
+
+<script type="text/javascript" >
+//<![CDATA[
+	(function () {
+		var s = document.createElement('script'); s.async = true;
+		s.type = 'text/javascript';
+		s.src = 'https://apis.google.com/js/plusone.js';
+		if (typeof(navigator) != 'undefined'
+			&& navigator.userAgent
+			&& /iPad|iPhone|Android/.test(navigator.userAgent))
+			s.src = "https://ssl.gstatic.com/webclient/js/gc/" +
+				"22224365-adc8a19e" + // changed whenever Google make changes
+				"/googleapis.client__plusone.js";
+		(document.getElementsByTagName('HEAD')[0]
+			|| document.getElementsByTagName('BODY')[0]).appendChild(s);
+	}());
+//]]>
+</script>
+
+
+<!-- Default Insight Tag -->
+<script type="text/javascript">
+//<![CDATA[
+var _bizo_data_partner_id = "1016";
+var _bizo_p = (("https:" == document.location.protocol) ? "https://sjs." : "http://js.");
+document.write(unescape("%3Cscript src='" + _bizo_p + "bizographics.com/convert_data.js?partner_id=" + _bizo_data_partner_id + "' type='text/javascript'%3E%3C/script%3E"));
+//]]>
+</script><!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <a id="parsely-cfg" data-parsely-site="theatlantic.com"
+     href="http://parsely.com">Powered by the Parse.ly Publisher Platform (P3).</a>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include -->
+
+	
+<!-- chartbeat -->
+<script type="text/javascript">
+//<![CDATA[
+var _sf_async_config={uid:17396,domain:"theatlantic.com"};
+	
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+//]]>
+</script>
+<!-- 1346889917 -->
+<!-- PAGE_COMPLETED -->
+
+
+</body>
+</html>

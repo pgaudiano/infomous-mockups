@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>The Economist Opinion Cloud</title>
+
+<link type="text/css" rel="stylesheet" media="all" href="style.css" />
+<link rel="stylesheet" type="text/css" href="landing/infomous.css" />
+
+<style type="text/css">
+  <!--
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  -->
+</style>
+
+<script type="text/javascript" src="/misc/jquery.js?y"></script>
+</head>
+
+<body>
+
+<div style="margin:10px">
+<p>The Economist Opinion Cloud v. 1.6 </p>
+
+<script language="javascript">
+
+	function infomous_load(platform) {
+		thisMovie('infomous').makeRequest();
+	}
+
+	function thisMovie(movieName) {
+		if (navigator.appName.indexOf("Microsoft") != -1) {
+			return window[movieName];
+		} else {
+			return document[movieName];
+		}
+	}
+
+	function setDate(elem, days,daysTo){
+		$("a.date").removeClass("activeDate");
+		$(elem).addClass("activeDate");
+		thisMovie("infomous").setDate(days,daysTo);
+	}
+
+</script>
+<div id="cloudPeriodBar" style="width:348px; height:25px;">
+<span class="period">Period:</span> 
+<a class="date activeDate" onclick="setDate(this, 1,0);" id="sortBy1" href="javascript:void(0);"><span>today</span></a>
+<a class="date" onclick="setDate(this, 2,1);" id="sortBy2" href="javascript:void(0);"><span>yesterday</span></a>
+<a class="date" onclick="setDate(this, 7,0);" id="sortBy3" href="javascript:void(0);"><span>this week</span></a>
+<a class="date" onclick="setDate(this, 14,0);" id="sortBy4" href="javascript:void(0);"><span>two weeks</span></a>
+<a class="date" onclick="setDate(this, 30,0);" id="sortBy5" href="javascript:void(0);"><span>this month</span></a>
+</div> 
+
+<div id="infomousMovie">
+<script type="text/javascript" src="embed_landing_small.js"> </script> 
+</div>
+</div>
+
+</body>
+</html>
+

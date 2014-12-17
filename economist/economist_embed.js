@@ -1,0 +1,2 @@
+document.write('<embed type="application/x-shockwave-flash" src="http://dev.infomous.com/site/economist/infomous.swf" id="infomous" name="infomous" bgcolor="#D9E4E6" quality="high" allowscriptaccess="always" allowfullscreen="true" flashvars="omnitureTracking=true&amp;maxWords=24&amp;GA_account=UA-20995290-1&amp;linkageThreshold=1&amp;fromDaysBack=30&amp;toDaysBack=0&amp;interfaceClass=widget&amp;skin=economist" width="348" height="300">');
+

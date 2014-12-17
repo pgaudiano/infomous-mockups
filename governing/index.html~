@@ -1,0 +1,1875 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<link href="http://www.governing.com/includes/reset.css" rel="stylesheet" type="text/css" />
+<link href="http://www.governing.com/includes/governing.css" rel="stylesheet" type="text/css"  />
+<link href="http://www.governing.com/includes/gov_forms.css" rel="stylesheet" type="text/css"  />
+<link href="http://www.governing.com/includes/gov_invert.css" rel="stylesheet" type="text/css"  />
+<!--[if IE 7]><link rel="stylesheet" href="http://www.governing.com/includes/ie7.css" type="text/css" media="screen, projection"/><![endif]-->
+<!--[if lt IE 7]><link rel="stylesheet" href="http://www.governing.com/includes/ie.css" type="text/css" media="screen, projection"/><![endif]-->
+<!--[if IE 6]><script type="text/javascript" src="http://www.governing.com/includes/gov_png_fix.js"></script><![endif]-->
+<script type="text/javascript" src="http://www.governing.com/includes/common_utils.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://www.governing.com/includes/jmorph.js"></script>
+<link href="http://www.governing.com/includes/screen_only.css" rel="stylesheet" type="text/css"  />
+<link href="http://www.governing.com/includes/external_link.css" rel="stylesheet" type="text/css" />
+
+<link href ="http://www.governing.com/includes/core-layout.css" rel='stylesheet' type='text/css'/>
+<script type="text/javascript" src="http://www.governing.com/includes/gt_common.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.5/all/jquery.tools.min.js"></script>
+
+<!-- Colorbox -->
+<script type="text/javascript" src="http://www.governing.com/includes/jquery.colorbox-min.js"></script>
+<link href="http://www.governing.com/includes/colorbox.css" rel="stylesheet" type="text/css" />
+
+<!-- ChartBeat Tracking -->
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<!-- /ChartBeat Tracking -->
+
+<META NAME='wss' CONTENT="FedWatch">
+<META NAME='wssUrl' CONTENT="http://www.governing.com/blogs/fedwatch">
+
+	<META NAME='contentType' CONTENT="GOV Blog Post">
+	<META NAME='source' CONTENT="">
+				<META NAME='authors' CONTENT="[{title: 'Ryan Holeywell', url: 'http://www.governing.com/authors/Ryan-Holeywell.html'}]">
+	<META NAME='pubDate' CONTENT='2013-09-12'>
+
+
+<!-- start of common_globals -->
+
+      <script type="text/javascript">
+        var content_id = 223351541;
+    </script>
+<!-- end of common_globals -->
+                                             																																							
+
+       <script type="text/javascript" language="javascript">
+    var AD_SOURCE = "site=gov/area=_blogs_fedwatch_gov-how-to-toll-every-interstate-highway-in-america.html";
+</script>
+
+        
+    
+																												
+
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<title>How to Toll Every Interstate Highway in America</title>
+<meta name="description" content="The Reason Foundation -- one of the early champions of public-private partnerships -- outlines a plan for lifting the federal ban on interstate tolling to fund roads.">
+    	    																													
+
+																								
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.governing.com/blogs/fedwatch/index.rss">
+
+
+<link rel="stylesheet" type="text/css" href="http://www.governing.com/includes/jquery.interstitial.css" media="screen">
+<script type="text/javascript" src="http://www.governing.com/includes/jquery.interstitial.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+								
+						
+		$('body').interstitial({
+    			'siteZone'  	: '/blogs/fedwatch',
+    			'siteDomain' 	: 'www.governing.com',
+    			'contentID'   	: '223351541',
+    			'featured'	: '<p><strong><span style="font-size: larger;">THIS JUST IN: </span><font color="#0000ee" size="2"><u><a href="http://www.governing.com/mag/august-2013-table-of-contents.html">August issue of <em>Governing</em> magazine</a></u></font></strong></p>',
+    			'quote'         : 'no'
+		});
+
+	});
+</script>
+
+<div class="interstitial_ad_wrapper" style="display: none;">
+    <div class="boxstyle4">
+        <div class="boxstyle4inner">
+                                    
+            <div class="continue">
+                <a class="continue">Continue to Site »</a>
+                <span class="time_remaining">Site will load in <span id="countdown"></span> second(s)</span>
+            </div>
+                                    
+            <div class="thought_of_the_day">
+                <div class="no">
+                    <p><strong><span style="font-size: larger;">THIS JUST IN: </span><font color="#0000ee" size="2"><u><a href="http://www.governing.com/mag/august-2013-table-of-contents.html">August issue of <em>Governing</em> magazine</a></u></font></strong></p>
+                </div>
+            </div>
+                                    
+        </div>
+         <div class="clear"></div>
+    </div>
+                            
+    <div class="ad_wrapper">
+        <p>ADVERTISEMENT</p>
+        <div id="ad"></div>
+    </div>
+</div>
+
+    	    				    	    															    													    															
+
+    <script type="text/javascript">
+    var disable_flyin = false;
+    var slide_in = false;
+    var slide_out = false;
+    $(document).ready(function() {
+    
+    if(Math.floor(Math.random()*3) != 1)
+	return;
+    
+    var clickCount = jQuery.cookie("surveyFlyinCount3")? jQuery.cookie("surveyFlyinCount3") : 0 ;
+    if(isNaN(clickCount))
+       clickCount =0;
+       
+    var dayCount = jQuery.cookie("surveyFlyinDayCount3");
+    if(dayCount)
+       return;
+       
+    var surveyTaken = jQuery.cookie("surveyFlyinTaken3");
+    if(surveyTaken)
+       return;
+       
+    if(clickCount++ > 2)
+       return;
+
+
+    jQuery('#flyin_close').click(function(){
+	jQuery.cookie('surveyFlyinCount3', clickCount, { expires: 30, path: '/' });  
+	jQuery.cookie('surveyFlyinDayCount3', "dayCount", { expires: 1, path: '/' });
+    });
+    
+    jQuery('.flyincontent').click(function(){
+	jQuery.cookie('surveyFlyinTaken3', "surveyTaken", { expires: 30, path: '/' }); 
+    });
+    
+    
+     
+    
+    
+    
+    
+        $("#flyin_ad").css("left", $(window).width() + $("#flyin_ad").outerWidth(true))
+        $("#flyin_ad").show();
+        $("#flyin_ad").css("height", $("#flyin_ad").css("height"))
+        $("#flyin_ad").css("top", $(window).height() - $("#flyin_ad").outerHeight(true))
+  
+        $(window).scroll(function() {
+            if (disable_flyin == true)
+            {
+                return false;
+            }
+            var contentEl = "#Main";
+            el_bottom = $(contentEl).outerHeight(true) + $(contentEl).offset().top;
+            portal_bottom = $(window).scrollTop() + $(window).height()
+	    if ($(window).scrollTop() > 100)
+            {
+                if(slide_in == false)
+		{
+		    slide_in = true;
+  		    $("#flyin_ad").show().animate({
+                        left: $(window).width() - $("#flyin_ad").outerWidth(true),
+                        queue: false
+                    }, 1000, function() { slide_in = false; });
+		}
+            }
+            else
+            {
+                if(slide_out == false)
+		{
+		    slide_out = true;
+  		    $("#flyin_ad").animate({
+                        left: $(window).width() + $("#flyin_ad").outerWidth(true),
+                        queue: false
+                    }, 1000, function() { slide_out = false; });
+		}
+            }
+        });
+
+        $(window).bind("resize", function(e) {
+            $("#flyin_ad").css("left", $(window).width() + $("#flyin_ad").outerWidth(true))
+            $("#flyin_ad").css("top", $(window).height() - $("#flyin_ad").outerHeight(true))
+        });
+        
+    });
+    
+    </script>
+    
+    	    <div id="flyin_ad" class="flyin_ad">
+	        <div class="flyincontent">
+	                	                <a target="_blank" href="https://www.governingexchange.com/R.aspx?a=155"><img src="http://media.governing.com/designimages/takethissurvey.png" /></a>
+	        </div>
+	        <button id="flyin_close" type="button" onClick="$('#flyin_ad').hide();disable_flyin=true;">Close</button>
+	        <br style="clear: both;">
+	    </div>
+        
+																				
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".group1").colorbox({rel:'group1'});
+    $(".ajax").colorbox();
+    $(".iframe").colorbox({iframe:true, width:"90%", height:"90%"});
+    $(".inline").colorbox({inline:true});
+  });
+</script>
+<!-- End Colorbox -->
+
+<!-- Google Standout Tag -->
+<!-- End Google Standout Tag -->
+
+<script type="text/javascript"><!--//--><![CDATA[//>
+	function getBrowserType()
+	{
+	var u = ""+navigator.userAgent;
+	if(u.indexOf("Android") > 0 )
+		return('Android');
+	if(u.indexOf("iPad") > 0)
+		return 'iPad';	
+	if(u.indexOf("iPhone") > 0)
+		return 'iPhone';	
+	return 'other';  
+	}
+    sfHover = function() {
+      var sfEls = document.getElementById("Topnavigation_lev1").getElementsByTagName("LI");
+      for (var i=0; i<sfEls.length; i++) {
+        sfEls[i].onmouseover=function() {
+          this.className+=" sfhover";
+        }
+        sfEls[i].onmouseout=function() {
+          this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+        }
+      }
+    }
+    if (window.attachEvent) window.attachEvent("onload", sfHover);
+    //--><!]]></script>
+<script type="application/javascript" language="javascript">
+function toggleDisplay(id) {
+   var obj = document.getElementById(id);
+   if(obj.style.display == 'none') {
+      obj.style.display = 'block';
+   } else {
+      obj.style.display = 'none';
+   }
+}
+</script>
+<link rel="icon" href="http://media.governing.com/designimages/gov_favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://media.governing.com/designimages/gov_favicon.ico" type="image/x-icon">  
+<script type="text/javascript">
+var _customVars = [];
+    	    																																											    							    															
+
+
+
+
+                	    				    	    																													    													    															
+    	    				    	    																																											    													    															
+                                                                                                            																																				
+
+
+
+																												
+
+
+                                                                                    
+
+																																
+                                    _customVars.push({ index: 1, name: 'Author', value: 'Ryan Holeywell', scope: 3 });
+    </script>
+<script type="text/javascript">
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2081253-1']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script>
+
+
+<!--Google Plus-->
+<link href="https://plus.google.com/109928664820221778498" rel="publisher" />
+<!--End Google Plus-->
+</head>
+<body>
+
+
+
+
+<!-- for facebook like button -->
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- for facebook like button END -->
+
+<script language="Javascript" >var js="0.0";</script><script language="Javascript1.0" >js="1.0";</script><script language="Javascript1.1">js="1.1";</script><script language="Javascript1.2" >js="1.2";</script><script language="Javascript1.3">js="1.3";</script><script language="Javascript1.4" >js="1.4";</script><script language="Javascript1.5">js="1.5";</script><script language="Javascript1.6">js="1.6";</script><script language="Javascript1.7">js="1.7";</script><script language="Javascript1.8">js="1.8";</script><script language="Javascript1.9">js="1.9";</script><script language="javascript1.1" type="text/javascript"> 
+<!-- 
+var bb=new Image();var _ti=910;var _q="";var na=(navigator.appName=="Netscape");var ns=(navigator.appName.substring(0,9)=="Microsoft");var _qDate=new Date();var _r=(document.referrer.indexOf(getdomain(location))>-1?"":document.referrer);_q+="&5="+parseInt(_qDate.getTimezoneOffset());_q+="&35="+parseInt(_qDate.toString().indexOf("aylight")>-1?1:0);_q+="&6=223351541";_q+="&7=620182";_q+="&8="+encodeURIComponent(document.location);_q+="&9="+encodeURIComponent(_r);_q+="&10="+encodeURIComponent(document.title);_q+="&11="+encodeURIComponent(navigator.userAgent);_q+="&12="+encodeURIComponent((na?navigator.language:navigator.userLanguage));_q+="&13="+((navigator.javaEnabled()?'1':'0'));_q+="&14="+encodeURIComponent(js);if(document.cookie.indexOf("cc")==-1)document.cookie="cc=t;";_q+="&15="+((document.cookie.indexOf("cc")==-1)?"0":"1");_q+="&16="+encodeURIComponent((screen.width+'x'+screen.height));_q+="&17="+encodeURIComponent(((ns)?screen.colorDepth:screen.pixelDepth));_q+="&18="+encodeURIComponent(Math.random());_q+="&19="+_ti;bb.src="http://s.clickability.com/s?"+_q;
+function setonclicks(a,b){var i=0;var retval=true;while(document.links[i]!=a){i++;}if(b.li[i])retval=b.li[i].oldonclick();bye(a);return retval;}
+function newonld(){if(hasonload)oldonld();lnks=new Object();var sze=document.links.length;lnks.li=new Array(sze);for (var i=0; i<sze; i++){if(document.links[i].onclick){lnks.li[i]=document.links[i];lnks.li[i].oldonclick=document.links[i].onclick;}eval("document.links[i].onclick=function(){return setonclicks(this,lnks);}");}}function bye(a){if(a.href.toLowerCase().indexOf('http')!=0)return true;if(getdomain(location)==getdomain(a))return true;if(a.href.toLowerCase().indexOf('http')!=0)return true;var _qc="http://s.clickability.com/s?19=912";_qc+="&6=223351541";_qc+="&7=620182";_qc+="&18="+encodeURIComponent(Math.random());_qc+="&100="+a.href;_qc+="&101="+encodeURIComponent(a.text);var cc=new Image();if(na){cc.src=_qc;pc(100);}else cc.src=_qc;return true;}function pc(a){d = new Date(); while (1){m =new Date(); df = m-d;if( df > a ) {break;}}}function getdomain(a){var i=a.host.indexOf(":");return (i>=0)?a.host.substring(0,i):a.host;}if(self['setupalready']){var dosetup = false;alert('There are two $imware.tracker calls on this page. Please alert Client Services');}else{var dosetup = true;var hasonload=false;}if(dosetup && ((window.screen)||((new Array()).toSource)||((new Array()).shift&&ns))&&(navigator.userAgent.indexOf('Mac')<0)){if(window.onload){oldonld=window.onload;hasonload=true;}window.onload=newonld;var setupalready = true;}//-->
+</script><noscript>
+<img width="1" height="1" src="http://s.clickability.com/s?19=990&14=0&6=223351541&7=620182&25=0&18=0.7885521179306026">
+</noscript>
+
+<div id="Outershell">   
+            	    				    	    																																																																    													    															
+    
+<style>
+#Topbanner #ad_T2 div.img_nopad div {z-index: 99 !important;}
+</style>
+
+<div id="ad_I1"   style="width:=1px; height=:1px;" > 
+    <div class="img_nopad">
+        	<script type="text/javascript">
+        	display_ad('223351541', 'false', 'i.site285.opus', '/blogs/fedwatch', 'I1', '1', '1', false, 'false');
+    	</script>
+        </div>
+</div>
+<script type="text/javascript"> 
+   var ad_div = document.getElementById('ad_I1');
+   hideAdZone(ad_div);
+</script>
+																																																
+
+     <div id="Shadowblock">
+        <div id="ShadowblockFade">
+        <!--- PAGE HEADER AND NAVIGATION--->
+        <div id="Pagehead">
+            <div id="Subscribeblock">
+                   																		
+
+
+
+
+
+        	    				    	    																													    													    															
+    	    				    	    																																											    													    															
+                                                                                                            																																				
+
+
+
+																												
+
+
+
+																
+
+
+                <div class="magcover">
+                    <a href="http://www.governing.com/mag/september-2013-table-of-contents.html"><img src="http://media.governing.com/images/128*166/GOV-september-2013-cover1.jpg" alt='' /></a>
+                </div>
+            </div>
+            <div style="width: 777px; float:left">
+            <a href="/"><img src="http://media.governing.com/designimages/gov_top_logo.gif" alt="Governing" />
+                                            <a href="/blogs/fedwatch">
+                                <img src="http://media.governing.com/designimages/gov_top_subhead_fedwatch.gif" alt="Governing" />
+                                        </a>
+            </div>
+                <div class="subscribelinks">
+                    <a  href="/subscribe/">Subscribe</a><br />
+ 
+                    <a  href="http://www.governing.com/newsletters">Newsletters</a><br />
+                    <a  href="http://www.erepublic.com/advertise/governing/" target="_blank">Advertise</a>
+                </div>
+        </div>
+        <!--- LEVEL 1 NAVIGATION --->
+    <div id="Topnavigation_lev1">
+        <ul style="width: 865px">
+            <li><a href="/">Home<span class="right">&nbsp;</span></a></li>
+            <li><a href="javascript:void(0)" class="dropdown">Topics<span class="right">&nbsp;</span></a>
+                <ul>
+                    <li><a href="/topics/education">Education</a></li>
+		    <li><a href="/topics/finance">Finance</a></li>
+		    <li><a href="/topics/health-human-services">Health and Human Services</a></li>
+		    <li><a href="/topics/transportation-infrastructure">Infrastructure and Environment</a></li>
+		    <li><a href="/topics/mgmt">Management and Labor</a></li>
+		    <li><a href="/topics/politics">Politics</a></li>
+		    <li><a href="/topics/public-justice-safety">Public Safety</a></li>     
+		    <li><a href="/topics/urban">Urban</a></li>                 
+                </ul>
+            </li>
+            <li><a href="/columns-blogs/" class="dropdown">Columns &amp; Blogs<span class="right">&nbsp;</span></a>
+                <ul>
+                    <li class="heavy"><a href="/columns/">Columns</a></li>
+                                                                                            <li><a href="/columns/assessments"></a></li>
+                                                                                                <li><a href="/columns/bg-report">B&G Report</a></li>
+                                                                                                <li><a href="/columns/dispatch">Dispatch</a></li>
+                                                                                                <li><a href="/columns/eco-engines">Economic Engines</a></li>
+                                                                                                <li><a href="/columns/mgmt-insights">Management Insights</a></li>
+                                                                                                <li><a href="/columns/potomac-chronicle">Potomac Chronicle</a></li>
+                                                                                                <li><a href="/columns/public-finance">Public Finance</a></li>
+                                                                                                <li><a href="/columns/public-money">Public Money</a></li>
+                                                                                                <li><a href="/columns/smart-mgmt">Smart Management</a></li>
+                                                                                                <li><a href="/columns/tech-talk">Tech Talk</a></li>
+                                                                                                            <li class="heavy"><a href="/blogs/">Blogs</a></li>
+                    																																																																														
+                                        <li><a href="/blogs/bfc">Better, Faster, Cheaper</a></li>
+                                        <li><a href="/gov-institute/funkhouser">Bring on the Funk</a></li>
+                                        <li><a href="/blogs/by-the-numbers">By the Numbers</a></li>
+                                        <li><a href="/blogs/daybook">Daybook</a></li>
+                                        <li><a href="/blogs/fedwatch">FedWatch</a></li>
+                                        <li><a href="/blogs/politics">Politics</a></li>
+                                        <li><a href="/blogs/public-great">Public Great</a></li>
+                                        <li><a href="/blogs/view">View</a></li>
+                                    </ul>
+            </li>
+
+               																		
+
+
+
+
+
+        	    				    	    																													    													    															
+    	    				    	    																																											    													    															
+                                                                                                            																																				
+
+
+
+																												
+
+
+
+																
+
+
+            <li><a href="http://www.governing.com/mag/september-2013-table-of-contents.html">Magazine<span class="right">&nbsp;</span></a></li>
+            <li><a href="/events/">Events & Webinars<span class="right">&nbsp;</span></a></li>
+            <li><a href="/books/">Books<span class="right">&nbsp;</span></a></li>
+            <li><a href="/papers/">Papers<span class="right">&nbsp;</span></a></li>
+            <li><a href="/multimedia/" class="dropdown">Multimedia<span class="right">&nbsp;</span></a>
+                <ul>
+                    <li><a href="/photos/">Photos</a></li>
+                    <li><a href="/video/">Videos</a></li>
+                    <li><a href="/gov-data/">Gov-Data</a></li>
+                </ul>
+            </li>            
+        </ul>
+    </div>
+
+        <!--- LEVEL 2 NAVIGATION ---> 
+<div id="Topnavigation_lev2" style="clear:left;">
+    <ul>
+    <li class="first"style="color:#FFFFFF; font-size:11px;padding:0 0 0 10px;">Current:</li>
+    <li style="padding:0 10px;" class="first"><a href="/generations">Generations</a></li>
+    <li style="padding:0 10px;"><a href="/degrees/">Public Sector Degrees</a></li>     
+    <li style="padding:0 10px;"><a href="/gov-data/">GOVERNING Data</a></li>    
+    <li style="padding:0 10px;"><a href="/gov-institute/">The Governing Institute</a></li>
+    </ul>
+</div>        
+<!--- SEARCH BOX --->
+<div id="Searchbox">
+    <form id="id_search" method='GET' name="search" action="/search" >
+     <input type="text" id="id_keyword"  name="keyword" value="SEARCH" class="thick" onclick="clickclear(this, 'SEARCH')" onblur="clickrecall(this,'SEARCH')" />
+     <a href="javascript:void(0);" if(document.getElementById('id_search')).value != 'SEARCH') onclick="document.getElementById('id_search').submit(); return false;">
+          <img src="http://media.governing.com/designimages/gov_btn_go.gif" alt="Go"  />
+     </a> 
+    </form>
+</div>
+
+
+       
+		        <!--- TOP ADVERTISMENT BANNER --->
+	        <div id="Topbanner">
+	        
+	       	       	       	       	       	         
+	            	                	    				    	    																																																																    													    															
+    
+<style>
+#Topbanner #ad_T2 div.img_nopad div {z-index: 99 !important;}
+</style>
+
+<div id="ad_T2" class="topAd ctr"   style="width:=728px; height=:90px;" > 
+    <div class="img_nopad">
+        	<script type="text/javascript">
+        	display_ad('223351541', 'false', 'i.site285.opus', '/blogs/fedwatch', 'T2', '728', '90', false, 'false');
+    	</script>
+        </div>
+</div>
+																																																
+
+	            	            	            </div>
+	        </div>        
+        <div id="Contentblock">
+
+
+		<script type="text/javascript" src="http://www.governing.com/includes/common_utils.js"></script>
+	<script type="text/javascript" src="http://www.governing.com/includes/gt_common.js"></script>
+                     	 <script type="text/javascript">
+          check4Mobile();
+    	 </script>
+        
+<!-- ============== END OF gov_head =============== -->
+
+
+
+
+
+
+    	    				    	    																																																									    													    															
+
+
+
+
+
+            		        
+    
+    
+            	    				    	    				    	    																																																																    																			    															
+
+
+    
+
+
+																																																				
+
+
+    
+    
+            	    																																																																																																										    							    															
+
+
+
+
+
+
+   
+   
+      
+         
+   
+      
+         
+   
+      
+         
+   
+      
+         
+   
+      
+      
+  
+																																																																				
+
+																																												
+
+  
+
+    	    																																																																																																										    							    															
+
+
+
+
+
+
+   
+   
+      
+         
+   
+      
+         
+   
+      
+         
+   
+      
+         
+   
+      
+      
+  
+																																																																				
+
+
+
+<!--startclickprintexclude--> 
+<!--- MAIN COLUMN --->
+<div id="Main" style='width:650px;padding-right:20px'>
+   
+    <!-------------------- FULL LEFT COLUMN -------------------->
+    <div>
+             	     	    								    							    															
+
+
+<div id="Shareicons">
+    <script language="javascript1.2">var trkcid=223351541;var partnerID=620182; var _hb=1;</script><script language="javascript1.2" src="http://www.governing.com/g/g/button/button_1.js"></script>
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style">
+        <a class="addthis_button_email"></a>
+        
+
+ 
+ 
+        <A style="float: left;" HREF="#" ONCLICK='window.open("/templates/gov_print_article?id=223351541", "print","width=600,height=600,scrollbars=1");' onMouseOver="return(PTMouseOver());"
+        onMouseOut="return(PTMouseOut());"><img src="http://media.governing.com/designimages/gov_ico_print.gif" title="Print"/></a>       
+        <a class="addthis_button_facebook"></a>
+        <a class="addthis_button_twitter"></a>
+        <a class="addthis_button_delicious"></a>
+        <a class="addthis_button_google"></a>
+        <a class="addthis_button_linkedin"></a>      
+        <span class="addthis_separator">|</span>
+    <a href="http://addthis.com/bookmark.php?v=250&amp;username=governing" class="addthis_button_expanded">More</a>
+    </div>
+    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=governing"></script>
+    <!-- AddThis Button END -->
+</div>
+
+ 
+												
+
+
+        <br clear="all" />
+        
+         <!--endclickprintexclude-->         <h1>How to Toll Every Interstate Highway in America</h1>
+                     	    				    	    																																											    													    															
+
+    	    																																											    							    															
+
+
+
+
+                	    				    	    																													    													    															
+    	    				    	    																																											    													    															
+                                                                                                            																																				
+
+
+
+																												
+
+
+                                                                                    
+
+																																
+
+                                                                                																																				
+        <p class="byline bottom">Posted By <a rel='author' href='http://www.governing.com/authors/Ryan-Holeywell.html'>Ryan Holeywell</a> | September 12, 2013</p>
+        
+        <div style="overflow: hidden;">	
+				<div class="gov_article_sm" style="float:left; width:85px;">
+			<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	        </div>
+	        	        <div class="gov_article_sm" style="float:left; width:140px;">
+	        	<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.governing.com/blogs/fedwatch/gov-how-to-toll-every-interstate-highway-in-america.html&amp;send=false&amp;layout=button_count&amp;width=140&amp;show_faces=false&amp;action=recommend&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:140px; height:21px;" allowTransparency="true"></iframe>
+	        </div>
+	        	        <div class="gov_article_sm" style="float:left; width:38px;">
+	        	<script type="text/javascript">
+				(function() {
+					var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+					po.src = 'https://apis.google.com/js/plusone.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				})();
+			</script>
+			<g:plusone size="medium" annotation="inline" width="120"></g:plusone>
+	        </div>
+	        	        <div class="gov_article_sm" style="float:left; width:40px;">
+	        	<a onmouseout="return(ETMouseOut());" onmouseover="return(ETMouseOver());" onclick="return(ET());" href="#"><img title="Email to a friend" src="http://media.navigatored.com/designimages/ETbb-promo.gif"></a>
+	        </div>
+	        <br clear="all"/>
+	</div>
+	<br clear="all"/>
+        
+                
+                
+        	            <div><img src="http://media.governing.com/images/660*440/interstate-toll.jpg" width="660" height="440" alt="" title="" border="0" /></div>
+            <div style="color:#979797; margin-top:10px;">
+	        <div style="text-align:right;font-size:8pt;">AP/David Duprey</div>       	        Motorists pay tolls to pass through an Interstate 90 tributary in New York. Most of the few roadways that allow tolling on the interstate are on the East Coast.	    </div><br />
+                        
+            <!-- Articleoptions -->
+	    <div id="Articleoptions">
+        	                
+		
+		
+		<br clear="all" />
+	
+		
+						<div class="boxstyle2">
+		    <h2>Related Articles</h2>
+		    <ul class="listing">
+		    		        		        
+		        		            	    				    	    																													    													    															
+    	    				    	    																																											    													    															
+                                                                                                                                            																																				
+
+
+
+																												
+
+
+		        		        
+		        		            		        		        		        		        <li><a href="http://www.governing.com/blogs/fedwatch/gov-could-feds-lift-ban-interstate-tolling.html">To Toll or Not: Could the Feds Lift a Ban on Interstate Tolling?</a></li>
+		        		    		        		        
+		        		            	    				    	    																													    													    															
+    	    				    	    																																											    													    															
+                                                                                                                                                            																																				
+
+
+
+																												
+
+
+		        		        
+		        		            		        		        		        		        <li><a href="http://www.governing.com/blogs/fedwatch/Oregon-Bill-Awaiting-Governors-Signature-Would-Be-Transportation-Milestone.html">Oregon to Charge Drivers by the Mile -- Not the Gallon</a></li>
+		        		    		    </ul>
+		</div>
+			</div>     
+	<!-- Articleoptions -->
+       
+        <div id="Article">  
+                <p>When it comes to infrastructure in America, two things are clear to most observers: the need for improvements are vast, and Washington isn't too keen on figuring out how to pay for it.</p>
+<p>That's caused various organizations and interests to continue exploring potential ways Congress could pay for roads. Some advocate for higher gases taxes. Some pitch per-mile driving fees. And still others are hoping Congress will allow <a href="http://www.governing.com/blogs/fedwatch/gov-could-feds-lift-ban-interstate-tolling.html">more tolling</a>.</p>
+<p>To that end, the Reason Foundation this week published an ambitious <a href="http://reason.org/files/modernizing_interstates_toll_finance.pdf">study</a> to explain how, exactly, tolling the interstate might work.</p>
+<p>Historically, tolling the interstate has been prohibited, except  for a few roadways -- mainly on the East Coast -- that were  grandfathered in when the interstate system was created. Over time, that situation has changed slightly. In the 1990s, states started to get greater flexibility to toll the interstate when they built new lanes. And since 1998, a pilot program allows states pursuing major rehabilitation to interstates to toll them too (the three states in that pilot, Virginia, Missouri and North Carolina, haven't actually done interstate tolling yet).</p>
+<p>But the Reason Foundation -- along with several other stakeholders -- is asking Congress to make a major departure and instead let states toll all the interstates, so long as they use the money to rebuild or expand the roads.</p>
+<p>Such a move would be dramatically different from the status quo and no doubt controversial. But Congress hasn't raised the gas tax in 20 years, and it hasn't taken any steps to indicate its serious about addressing the funding shortfall facing the country's roadways. &quot;There's no serious alternative on the table anywhere that has a chance,&quot; says Robert Poole, Reason's director of transportation policy.</p>
+<p>Poole and others argue that the timing is right for wide-spread interstate tolling for a few reasons. While the interstate  represents just 2.5 percent of all lane-miles of roadway in the country, it  represents 25 percent of the miles driven by motorists. Meanwhile, most of the  interstate was designed for a 50-year life span, which is quickly  approaching.</p>
+<p><a href="http://www.governing.com/topics/transportation-infrastructure"><strong>Want more transportation news? Click here.</strong></a></p>
+<p>The technology exists to make widespread tolling possible without the huge cost of actually manning toll booths. Traffic has grown since the early days of the interstate, when tolling was initially banned due to concerns about insufficient volume to make it economically feasible. And the growth of the population in the south and west means tolling could work in places where it previously wouldn't have made much sense.</p>
+<p>But those are old arguments. So Poole took the case a step further, and tried to model how, exactly, a nationally tolled interstate system would work in hopes of giving him and other advocates more ammunition.</p>
+<p>First, he tried to estimate on a state-by-state basis how much it would cost to reconstruct the country's interstates and widen the ones in need of more capacity. The work was based largely on traffic projections using a U.S. Department of Transportation model. Moreover, construction cost estimates were calculated for each state too, based not only on the amount of work needed but how expensive construction is in each state.</p>
+<p>Then, he came up with some standardized toll rates. Under Poole's model, interstates could be tolled at 3.5 cents per mile for cars and 14 centers per mile for trucks, adjusted for inflation annually. Those tolls would be feasible in about 30 states, would need to be a bit higher in 15, and would seemingly be prohibitively expensive -- and thus in need of supplemental funding -- in about six mostly rural states.</p>
+<p>In short, Poole concluded, the whole undertaking would cost about $1 trillion, and the tolls could pay for it, under a plan to rebuild the interstate over a decade and pay for it via tolling for 35 years after that. &quot;It appears feasible to finance the reconstruction and  selective widening of nearly the entire Interstate system via moderate  toll rates collected via (all-electronic tolling),&quot; he writes.</p>
+<p>That's important, because advocates have long called for lifting the interstate tolling ban, but Poole's study shows how, exactly, it would work.</p>
+<p>Still, the plan could be a tough sell, which Poole fully acknowledges. The  trucking industry generally opposes tolling, and so to do some auto  clubs. Moreover, a massive system of interstate tolling would likely be a huge opportunity for so-called &quot;public-private partnerships,&quot; in which the private sector would take a larger role in operating the country's infrastructure. Those deals have been controversial in many states, and undoubtedly, they could be controversial on something like the interstate as well.</p>
+<p>But Poole envisions a scenario in which users of the tolled interstates could be reimbursed the gas tax they pay on those routes, to eliminate criticism of &quot;double taxation.&quot; Moreover, he argues that tolls are actually more politically palatable to drivers than across-the-board gas tax hikes, since they're seen as more equitable. The people who use the interstate the most would pay the most, and the tolls would reflect the actual cost of the roadway improvements.</p>
+<p>The idea of easing interstate tolling restrictions gained some traction last year, when Congress debated the MAP-21 highway bill. Three moderate senators -- Democrats Tom Carper of Delaware and Mark  Warner of Virginia, and Republican Mark Kirk of Illinois -- introduced an  amendment that would have lifted the cap on interstate tolling pilots, but they ultimately withdrew it. Tolling advocates want to see that amendment again.</p>
+<p>But that raises the question of why other states could be expected to toll, when the the three states already in the pilot aren't doing it? Poole says he doesn't expect every state would take advantage of the policy, at least initially, but if Congress lifted the tolling ban, one state would eventually figure out a politically palatable way to do it and could become a &quot;pathfinder&quot; other states would follow.</p>
+<p>Patrick Jones, who leads the trade association representing toll owners and operators, says the issue is about giving states the flexibility to toll the interstate, not a mandate. &quot;Right now,&quot; he says, &quot;we can't even have that debate in the states.&quot;</p>    
+	</div>
+	<br clear="all"/>  
+	
+	
+	<!--startclickprintexclude-->
+
+ 	<div style="float:none;"> 		
+	        	        <div class="center top right" style="width:380px;">
+	                                             
+	      	    		        	    				    	    																																																									    													    															
+
+
+
+      
+
+
+
+
+
+																																												
+
+ 
+		   		    
+	        </div>   
+ 	</div>      
+ 	<br clear="all"/>  	 
+        <p>&nbsp;</p>
+        
+
+	
+	<br clear="all"/>
+	
+		    	    																						    							    															
+        	    																																											    							    															
+
+
+
+
+                	    				    	    																													    													    															
+    	    				    	    																																											    													    															
+                                                                                                            																																				
+
+
+
+																												
+
+
+                                                                                    
+
+																																
+            <!--- AUTHOR INFO --->
+                <div class="boxstyle5">
+            <div class="content">
+                <a href="http://www.governing.com/authors/Ryan-Holeywell.html">
+                                <img src="http://media.governing.com/images/80*80/holeywell.jpg" class='left marginright' alt='' />
+                </a>
+                <div class="title"><a href="http://www.governing.com/authors/Ryan-Holeywell.html">Ryan Holeywell</a></div>
+                <p>Ryan Holeywell is a staff writer at GOVERNING.</p>
+                <strong>E-mail: <a href="mailto:rholeywell@governing.com">rholeywell@governing.com</a></strong>                <br />
+                                
+    	    				    	    				    	    																													    																			    															
+
+                	     	        	     	        	              	     	             
+     	
+																																
+
+
+                                <strong>Twitter: <a href='http://www.twitter.com/ryanholeywell'>@ryanholeywell</a></strong>
+                <br clear="all" />
+            </div>
+        </div>
+            																				
+<script type="text/javascript" async data-infomous-id="nid42253" src="http://www.infomous.com/client2?width=650&height=400"></script>
+
+       
+       
+	    	        	    								
+
+<style>
+        #comments {
+            margin: 5px 10px; font-size: 12px;}
+            
+        #comments .comment_head {
+            background: url(http://media.governing.com/designimages/comment_head_corners.jpg) no-repeat left #e1e1e1;
+            margin-bottom: 5px;
+            height: 16px;
+            padding: 3px 0 0 10px;}
+
+	.invert  #comments .comment_head {
+            background: url(http://media.governing.com/designimages/comment_head_corners2.jpg) no-repeat left  #4f4f4f;
+            margin-bottom: 5px;
+            height: 16px;
+            padding: 3px 0 0 10px;
+            color: #fff;
+            }
+	.invert .authorcomment .color3 {color: #fff;} 
+	            
+ 	.invert #comments .comment_tools .replylink a {
+	    background: url(http://media.governing.com/designimages/gov_btn_grey_gradient.jpg);
+	    border: 1px solid #666;
+	    font-size: 10px;
+	    padding: 1px 8px;
+	    text-transform: uppercase;
+	    color: #333; }
+	.invert .replylink {
+	    margin-bottom: 20px;}
+	    
+	.invert .boxstyle1 {
+	    background: #393939;
+	    border: 1px solid #4f4f4f;	}
+	.invert .boxstyle1 h3{
+	    background: #4f4f4f;
+	    color: #ccc;	}	    
+	.invert .form-container {
+	    background: #393939;
+	    color: #ccc;}	 
+	.invert .boxstyle1 .color4 {
+	    color: #ccc;}	 	       
+            
+        .authorcomment {
+            background: #E1E1E1;
+            border: 1px solid #ccc;
+            margin: 20px 0;}
+            
+            
+        #comments .authorcomment .comment_head {
+            background: #ccc;
+            padding-top: 3px;}
+	.authorcomment .color3 {color: #333;}            
+            
+        #comments .comment .authorcomment {
+	    margin-left: 28px;}    
+	
+	#comments .comment .authorcomment .comment_head {
+	    margin: 0px;}
+	             
+	#comments .comment .authorcomment .comment {
+	    margin: 10px;}            
+            
+            
+                        
+        #comments .comment {
+            margin: 10px 0 20px 10px;
+            }
+        #comments .comment .comment_head {
+            margin: 10px 0 10px 28px;}
+    
+        #comments .comment .comment {
+            margin: 10px 0 10px 38px;}  
+        #comments .comment_tools {
+            margin-top: 15px; }    
+        #comments .comment_tools .recommend {
+            height: 30px; float: right; width:85px; margin-top: -10px;}
+	#comments .comment_tools .replylink a {
+	    background: url(http://media.governing.com/designimages/gov_btn_silv_gradient.jpg);
+	    border: 1px solid #CCC;
+	    font-size: 10px;
+	    padding: 1px 8px;
+	    text-transform: uppercase;
+	     }
+        #comments .numberbox {      
+            border:1px solid #ccc; padding: 1px 10px; 
+            float:right; width: 25px; text-align:center; 
+            font-size: 16px; font-weight:bold; height: 20px;}
+	#id_comment_sort {
+	    margin-top: -5px;}            
+                                                    
+</style>
+
+<script>
+
+/* 
+function thumbsUp4comment(frm)
+{
+    postForm(frm, true, function() {});	
+    alert("thumbs up");
+    return false;
+}
+*/
+
+function threadedComment(threadID)
+{
+	var t=jQuery( "#id_reply_" + threadID);
+	jQuery("#id_comment_reply").show().appendTo(t);
+	jQuery("#id_parent_id").val(threadID);
+}
+</script>
+
+<style type="text/css">
+.submission {
+	display: none;
+}
+</style>
+ 
+<script type="text/javascript">
+var Clickability = Clickability || {};
+Clickability.Comment = {
+	Private : {
+		kP : 0,
+		aT : 0,
+		myInterval : null,
+		xPos : -1,
+		yPos : -1,
+		firstX : -1,
+		firstY : -1,
+		intervals : 0,
+		req : null,
+		cid :  223351541 ,
+		did :  620182 ,
+		cP :  4 ,
+		cD : "Wed Sep 11 13:37:19 PDT 2013",
+		d : 0,
+		mT : 0
+	},
+	name : null,
+	website : null,
+	title : null,
+	comment : null,
+	email : null,
+	rating : null,
+	ratingType : null,
+	commentType : null,
+	flagged : false,
+	isAuthor : false,
+	error : null,
+	status : null,
+	level : 0,
+	parentID : 0,
+	threadID : 0,
+	id : 0,
+	extID : null
+};
+Clickability.Comment.Private.myInterval = window.setInterval(timedMousePos,250);
+
+var name = null;
+var website = null;
+var title = null;
+var comment = null;
+var email = null;
+var rating = null;
+var ratingType = null;
+var commentType = null;
+var flagged = false;
+var isAuthor = false;
+var error = null;
+var status = null;
+
+var kP = 0;
+var aT = 0;
+var myInterval = Clickability.Comment.Private.myInterval;
+var xPos = -1;
+var yPos = -1;
+var firstX = -1;
+var firstY = -1;
+var intervals = 0;
+var req = null;
+var cid =  223351541 ;
+var did =  620182 ;
+var cP =  4 ;
+var cD = "Wed Sep 11 13:37:19 PDT 2013";
+var d = 0;
+var mT = 0;
+
+document.onkeypress = lK;
+window.onload = rAT;
+
+function checkField(field) {
+	
+	var button = document.getElementById("btSubmit");
+	
+	if(field.value.length > 0) {
+		CM_btnEnable(button);
+	}
+	else {
+		CM_btnDisable(button);
+	}
+}
+
+function lK() {
+	Clickability.Comment.Private.kP++;
+}
+
+function rAT() {
+	Clickability.Comment.Private.aT = new Date();
+}
+
+function CM_btnDisable (which) {
+	which.disabled = true;
+	if (document.all){
+		which.filters.alpha.opacity = 25;
+	}else {
+		which.style.MozOpacity = 0.25;
+	}	
+	which.style.cursor = "default";
+}
+
+function CM_btnEnable (which) {
+	which.disabled = false;
+	if (document.all){
+		which.filters.alpha.opacity = 100;
+		which.style.cursor = "hand";
+	}else {
+		which.style.MozOpacity = 1;
+		which.style.cursor = "pointer";
+	}
+}
+
+
+function submitForm(formObj) {
+
+    if(formObj.action == ""){
+    	formObj.action = "/c";
+    }
+	addFieldsToForm(formObj);
+    formObj.submit();
+}
+
+function addFieldsToForm(formObj, redirect) {
+	var mTField = document.createElement('input');
+	var dField = document.createElement('input');
+	var kPField = document.createElement('input');
+  	var cidField = document.createElement('input');
+  	var didField = document.createElement('input');
+  	
+  	
+	mTField.setAttribute('name','mT');
+	mTField.setAttribute('type', 'hidden');
+  	  
+	dField.setAttribute('name', 'd');
+	dField.setAttribute('type', 'hidden');
+  	  
+	kPField.setAttribute('name', 'kP');
+	kPField.setAttribute('type', 'hidden');
+  	
+	cidField.setAttribute('name', 'cid');
+	cidField.setAttribute('type', 'hidden');
+  	
+  	didField.setAttribute('name', 'did');
+  	didField.setAttribute('type', 'hidden');	
+  	
+  	if(redirect != null) {
+  		var pathField = document.createElement('input');
+  		pathField.setAttribute('name', 'path');
+  		pathField.setAttribute('type', 'hidden');
+  		pathField.value = redirect;
+  		formObj.appendChild(pathField);
+  	}
+  	  
+	mTField.value = Clickability.Comment.Private.mT;
+	dField.value = Clickability.Comment.Private.d;
+	kPField.value = Clickability.Comment.Private.kP;
+	cidField.value = Clickability.Comment.Private.cid;
+	didField.value = Clickability.Comment.Private.did;
+  		
+	formObj.appendChild(dField);
+	formObj.appendChild(kPField);
+	formObj.appendChild(mTField);
+	formObj.appendChild(cidField);
+	formObj.appendChild(didField);
+}
+
+function getMousePos(p) {
+	if (!p) var p = window.event;
+	if (p.pageX || p.pageY) {
+		Clickability.Comment.Private.xPos = p.pageX;
+		Clickability.Comment.Private.yPos = p.pageY;
+	} else if (p.clientX || p.clientY) {
+		Clickability.Comment.Private.xPos = p.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+		Clickability.Comment.Private.yPos = p.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+	}
+}
+
+function timedMousePos() {
+	document.onmousemove = getMousePos;
+	if (Clickability.Comment.Private.xPos >= 0 && Clickability.Comment.Private.yPos >= 0) {
+	var newX = Clickability.Comment.Private.xPos;
+	var newY = Clickability.Comment.Private.yPos;
+	Clickability.Comment.Private.intervals++;
+	}
+	if (Clickability.Comment.Private.intervals == 1) {
+		Clickability.Comment.Private.firstX = Clickability.Comment.Private.xPos;
+		Clickability.Comment.Private.firstY = Clickability.Comment.Private.yPos;
+	} else if (Clickability.Comment.Private.intervals == 2) {
+		clearInterval(Clickability.Comment.Private.myInterval);
+		calcDistance(Clickability.Comment.Private.firstX,Clickability.Comment.Private.firstY,newX,newY);
+	}
+}
+
+function calcDistance(aX,aY,bX,bY) {
+	Clickability.Comment.Private.mT = Math.round(Math.sqrt(Math.pow(aX-bX,2)+Math.pow(aY-bY,2)));
+}
+
+function getXmlRequestObject() {
+	if(Clickability.Comment.Private.req == null){
+		if(window.XMLHttpRequest){
+			Clickability.Comment.Private.req = new XMLHttpRequest();
+		}else if(window.ActiveXObject){
+			try{
+				Clickability.Comment.Private.req = new ActiveXObject("Msxml2.XMLHTTP");
+			}catch(e){
+				try{
+					Clickability.Comment.Private.req = new ActiveXObject("Microsoft.XMLHTTP");
+				}catch(e){
+                	return null;
+				}
+			}
+		}
+    }
+    return Clickability.Comment.Private.req;
+}
+
+function insertComment(formObj, isAjax, responseHandler){
+	var sT = new Date();
+	Clickability.Comment.Private.d = sT - Clickability.Comment.Private.aT;
+	if((isAjax == true) && (responseHandler != null)) {
+		Clickability.Comment.Private.req = getXmlRequestObject();
+		if(Clickability.Comment.Private.req != null) {
+			var formVars = getFormValues(formObj);
+ 			var handlerFunction = getReadyStateHandler(Clickability.Comment.Private.req, responseHandler);
+			Clickability.Comment.Private.req.onreadystatechange = handlerFunction;
+			var url = "/c";
+            var params = "ajax=true&" + formVars;
+ 
+            Clickability.Comment.Private.req.open("POST", url, true);
+            Clickability.Comment.Private.req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+            
+     
+            Clickability.Comment.Private.req.send(params);
+            return false;
+    	}
+    	else {
+    		return false;
+    	}
+	}
+	else {
+		addFieldsToForm(formObj);
+ 		submitForm(formObj);
+	}
+}
+   
+function postForm(formObj, isAjax, responseHandler) {
+	return insertComment(formObj, isAjax, responseHandler);
+}
+
+function getFormValues(fobj) {
+   var str = "";
+   var valueArr = null;
+   var val = "";
+   var cmd = "";	
+   var ampRegex = new RegExp("&", "g");
+   var replaceAmpStr = escape("&#38;");
+   var percentRegex = new RegExp("%", "g"); 
+   var replacePerStr = escape("&#37;");
+
+   for(var i = 0;i < fobj.elements.length;i++)
+   {
+   		var field = fobj.elements[i];
+   		if(field.tagName === "TEXTAREA" || (field.tagName === "INPUT" && field.type != "submit" && field.type != "button")){ 
+			var fieldStr = field.value;
+			fieldStr = fieldStr.replace(percentRegex, replacePerStr);
+            fieldStr = fieldStr.replace(ampRegex, replaceAmpStr);
+   			str += field.name + "=" + fieldStr + "&";
+       		field.value = "";
+       	}
+   }
+   str += "mT=" + Clickability.Comment.Private.mT;
+   str += "&d=" + Clickability.Comment.Private.d;
+   str += "&kP=" + Clickability.Comment.Private.kP;
+   str += "&cid=" + Clickability.Comment.Private.cid;
+   str += "&did=" + Clickability.Comment.Private.did;
+ 
+   return str;
+}
+
+function getReadyStateHandler(ajaxreq, responseHandler) {
+
+  // Return an anonymous function that listens to the 
+  // XMLHttpRequest instance
+  return function () {
+
+    // If the request's status is "complete"
+    if (ajaxreq.readyState == 4) {
+      
+      // Check that a successful server response was received
+      if (ajaxreq.status == 200) {
+
+        // Pass the XML payload of the response to the 
+        // handler function
+        gatherResponse(ajaxreq.responseText);
+        responseHandler();
+
+      } else {
+
+        // An HTTP problem has occurred
+        alert("HTTP error: "+ajaxreq.status);
+      }
+    }
+  }
+}
+
+function gatherResponse(commentObject) {
+		name = null;
+	website = null;
+	title = null;
+	comment = null;
+	email = null;
+	rating = null;
+	ratingType = null;
+	commentType = null;
+	flagged = false;
+	isAuthor = false;
+	error = null;
+	status = null;
+	
+	Clickability.Comment.name = null;
+	Clickability.Comment.website = null;
+	Clickability.Comment.title = null;
+	Clickability.Comment.comment = null;
+	Clickability.Comment.email = null;
+	Clickability.Comment.rating = null;
+	Clickability.Comment.ratingType = null;
+	Clickability.Comment.commentType = null;
+	Clickability.Comment.flagged = false;
+	Clickability.Comment.isAuthor = false;
+	Clickability.Comment.error = null;
+	Clickability.Comment.status = null;
+	Clickability.Comment.level = 0;
+	Clickability.Comment.parentID = 0;
+	Clickability.Comment.threadID = 0;
+	Clickability.Comment.id = 0;
+	Clickability.Comment.extID = null;
+
+ 	var jsonExpression = "(" + commentObject+ ")";
+    var commentData = eval(jsonExpression);
+    error = commentData.error;
+    name = commentData.name;
+    comment = commentData.comment;
+    commentType = commentData.commentType
+    rating = commentData.ratingScore;
+    ratingType = commentData.ratingType;
+    email = commentData.email;
+    website = commentData.website;
+    title = commentData.title;
+    isAuthor = false;
+    flagged = false;
+    status = commentData.status;
+    if(status == "AUTHOR") {
+    	isAuthor = true;
+    }
+    else if(status != "APPROVED") {
+        flagged = true;
+    }
+    
+    Clickability.Comment.error = commentData.error;
+    Clickability.Comment.name = commentData.name;
+    Clickability.Comment.comment = commentData.comment;
+    Clickability.Comment.commentType = commentData.commentType
+    Clickability.Comment.rating = commentData.ratingScore;
+    Clickability.Comment.ratingType = commentData.ratingType;
+    Clickability.Comment.email = commentData.email;
+    Clickability.Comment.website = commentData.website;
+    Clickability.Comment.title = commentData.title;
+    Clickability.Comment.isAuthor = false;
+    Clickability.Comment.flagged = false;
+    Clickability.Comment.status = commentData.status;
+    if(Clickability.Comment.status == "AUTHOR") {
+    	Clickability.Comment.isAuthor = true;
+    }
+    else if(Clickability.Comment.status != "APPROVED") {
+        Clickability.Comment.flagged = true;
+    }
+    Clickability.Comment.id = commentData.id;
+    Clickability.Comment.threadID = commentData.threadID;
+    Clickability.Comment.parentID = commentData.parentID;
+    Clickability.Comment.level = commentData.level;
+    Clickability.Comment.extID = commentData.extID;
+}
+</script>
+
+
+<div> 
+    <a name="Comments"></a>
+    <div class="content">
+        <h2 style="margin-bottom:0;">Comments</h2>
+<br clear="all" />
+        <select id="id_comment_sort"  style="float:right;" >
+             <option value="original">oldest first</option>
+             <option id="id_option_reversed" value="reversed">newest first</option>
+         </select>
+         
+         
+        <a name="comments"></a>
+<br clear="all" />        
+        <div id="comments" style="margin-top: 20px;">
+            <script type="text/javascript">
+            jQuery(function() {
+                getThreadedComments();
+            });
+                        </script>
+        </div>
+
+        <div class="boxstyle1" id="comment-form-container">
+            <h3>Add Your Comment</h3> 
+            <div class="form-container">
+                <div style="width: 100%;">
+                    <div class="right small marginright color4" style="width: 150px;">
+                        You are solely responsible for the content of your comments. GOVERNING reserves the right to remove 
+                        comments that are considered profane, vulgar, obscene, factually inaccurate, off-topic, or considered
+                        a personal attack.<br /><br />Comments must be fewer than 2000 characters.
+                    </div>
+                
+                    <form name="comment" onsubmit="return processComment(this);">                  
+                        <fieldset> 
+                            <legend></legend>
+                            <div>
+                                <label for="name">Name <em>*</em></label>
+                                <input id="name" type="text" name="name" value="" />
+                            </div>
+                            <div>
+                                <label for="email">Email </label> 
+                                <input id="email" type="text" name="email" value="" />
+                            </div>
+                            <div>
+                                <label for="field">Comment <em>*</em></label> 
+                                <textarea id="field" name="field" rows="2"></textarea>
+                            </div>                       
+                        </fieldset>
+                        
+                        <div class="buttonrow">
+                            <input type="submit" value="Submit Comment" class="button" />
+                        </div>                                                          
+                    </form>
+                        
+                    <script type="text/javascript">
+                     jQuery(function(){
+                        jQuery("textarea[name='field']").focus(function() {
+                            jQuery(this).animate({height: 175}, 500);
+                        });
+                     })
+                    </script>                    
+                </div> 
+            </div> <!-- form-container -->         
+        </div> <!-- boxstyle1 -->
+        
+        
+        
+    <div class="boxstyle1"  id="id_comment_reply" style="z-index:1000; position:relative; display:none;">
+            <h3>Reply to this Thread</h3> 
+            <div class="form-container">
+                <div style="width: 100%;">
+                    <div class="right small marginright color4" style="width: 150px;">
+                        You are solely responsible for the content of your comments. GOVERNING reserves the right to remove 
+                        comments that are considered profane, vulgar, obscene, factually inaccurate, off-topic, or considered
+                        a personal attack.<br /><br />Comments must be fewer than 2000 characters.
+                    </div>     
+        
+                     <form   name="comment" onsubmit="return processComment(this);">                  
+                        <fieldset> 
+                            <legend></legend>
+                            <div>
+                                <label for="name">Name <em>*</em></label>
+                                <input id="name" type="text" name="name" value="" />
+                            </div>
+                            <div>
+                                <label for="email">Email </label> 
+                                <input id="email" type="text" name="email" value="" />
+                            </div>
+                            <div>
+                                <label for="field">Reply <em>*</em></label> 
+                                <textarea id="field" name="field" rows="2"></textarea>
+                            </div>                       
+                        </fieldset>
+                        
+                         <input id="id_parent_id" type="hidden" name="parentID" value="sss" />
+                        <div class="buttonrow">
+                            <input type="submit" value="Submit Reply" class="button" />
+                            <input type="button" value="Cancel" class="button" onclick='jQuery("#id_comment_reply").hide();'/>
+                        </div>                                                          
+                    </form>
+                   
+                  </div> 
+            </div> <!-- form-container -->         
+        </div> <!-- boxstyle1 -->
+        
+        
+        
+    </div> <!-- comments content -->
+</div> <!-- boxstyle1 --> 
+
+												
+
+
+  
+    </div> <!-- main right -->         
+</div> <!-- main column -->
+<style type='text/css'>
+	#Rightcol ul{list-style:none}
+</style>
+ 
+<div id="Rightcol"> 
+        	 	    
+               	    				    	    																																				    													    															    
+      
+ 
+ 
+ 
+                                                  <div      moduleID="88480247">      
+                                	    								    							    															
+
+
+<div  class="boxstyle6"> 
+
+   <p><!---<style type="text/css"> 
+
+.boxstyle6 {background: url(http://media.governing.com/designimages/gov_blog_bfc_gradient.gif) #f6f4eb repeat-x top; color: #000000;}
+.boxstyle6 a {color: #8b1528;}
+.boxstyle6 h1, .boxstyle6 h2, .boxstyle6 h3, .boxstyle6 h4, .boxstyle6 h5, .boxstyle6 h6 {color: #000000;}
+
+.blog_foot {
+ background: #8b1528;} 
+.blog_foot a {color: #FFFFFF;} 						
+</style>
+---> <img width="270" height="60" border="0" style="vertical-align: middle;" alt="About" src="http://media.governing.com/designimages/gov_logo_fedwatch60x270.png" /></p>
+<p>From regulations to spending, the federal government can be a huge thorn in the sides of state and local governments. Written by Ryan Holeywell, GOVERNING FedWatch monitors all the money spent and all the mandates required by the federal government that effect states and localities.</p>
+<div class="small blog_foot"><a class="ico_rss" href="http://www.governing.com/blogs/fedwatch/index.rss">RSS</a>  <a class="ico_about" href="/blogs/fedwatch/about">About this Blog</a>  <a class="ico_email" href="mailto:zpatton@governing.com">Contact</a></div>  
+
+</div>
+
+												
+
+
+         </div>
+                         
+      
+ 
+ 
+ 
+                                                  <div      moduleID="90029002">      
+                                	    				    	    				    	    								    																			    															
+
+
+<div class="boxstyle2">
+    <h2>Latest From FedWatch</h2> 
+    <ul class="listing">
+            <li class="title"><a href="http://www.governing.com/blogs/fedwatch/gov-marketplace-fairness-act-faces-uncertain-future-in-house.html">Online Sales Tax Legislation Faces Uncertain Future in House</a></li>
+                    <li class="title"><a href="http://www.governing.com/blogs/fedwatch/gov-how-to-toll-every-interstate-highway-in-america.html">How to Toll Every Interstate Highway in America</a></li>
+                    <li class="title"><a href="http://www.governing.com/blogs/fedwatch/gov-house-unveils-bill-for-critical-water-infrastructure-projects.html">House Unveils Bill for Water Infrastructure Projects</a></li>
+                    <li class="title"><a href="http://www.governing.com/blogs/fedwatch/gov-obamacare-cadillac-tax-reinsurance-fee.html">Public Employers Seek to Soften Impact of Obamacare Fees and Taxes</a></li>
+                    <li class="title"><a href="http://www.governing.com/blogs/fedwatch/gov-obamacare-cadillac-tax-health-insurance.html">Obamacare's Cadillac Tax Could Spur States & Localities to Cut Back Benefits</a></li>
+                </ul>
+    <br clear="all" />                                    
+</div>
+
+																				
+
+
+         </div>
+                         
+      
+ 
+ 
+ 
+                                                  <div      moduleID="44496592">      
+                             	    								    							    															
+    	    				    	    																																																																    													    															
+    
+<style>
+#Topbanner #ad_T2 div.img_nopad div {z-index: 99 !important;}
+</style>
+
+<div id="ad_R2" class="admargin"   style="width:=300px; height=:250px;" > 
+    <div class="img_nopad">
+        	<script type="text/javascript">
+        	display_ad('223351541', 'false', 'i.site285.opus', '/blogs/fedwatch', 'R2', '300', '250', false, 'false');
+    	</script>
+        </div>
+</div>
+<script type="text/javascript"> 
+   var ad_div = document.getElementById('ad_R2');
+   hideAdZone(ad_div);
+</script>
+																																																
+
+
+												
+
+
+         </div>
+                         
+      
+ 
+ 
+ 
+                                                  <div    class="dm"    moduleID="88454777">      
+                                	    																																											    							    															
+
+
+
+
+
+           <h2>Categories</h2>
+    
+    <ul class="listing bottom">
+            <li> <a href="/blogs/fedwatch?cat=Aid_to_States%2C_Cities_and_Counties">Aid to States, Cities and Counties</a> </li>
+            <li> <a href="/blogs/fedwatch?cat=Commerce_%26_Finance">Commerce & Finance</a> </li>
+            <li> <a href="/blogs/fedwatch?cat=Education">Education</a> </li>
+            <li> <a href="/blogs/fedwatch?cat=Emergency_Management_%26_Public_Safety">Emergency Management & Public Safety</a> </li>
+            <li> <a href="/blogs/fedwatch?cat=Energy_%26_the_Environment">Energy & the Environment</a> </li>
+            <li> <a href="/blogs/fedwatch?cat=Health_%26_Human_Services">Health & Human Services</a> </li>
+            <li> <a href="/blogs/fedwatch?cat=Housing_%26_Urban_Development">Housing & Urban Development</a> </li>
+            <li> <a href="/blogs/fedwatch?cat=Labor">Labor</a> </li>
+            <li> <a href="/blogs/fedwatch?cat=Technology">Technology</a> </li>
+            <li> <a href="/blogs/fedwatch?cat=Transportation%2C_Infrastructure_%26_Land_Use">Transportation, Infrastructure & Land Use</a> </li>
+        </ul>
+    
+    <br clear="all"/>
+
+																																
+
+
+         </div>
+                         
+      
+ 
+ 
+ 
+                                                  <div      moduleID="44496897">      
+                             	    								    							    															
+    	    				    	    																																																																    													    															
+    
+<style>
+#Topbanner #ad_T2 div.img_nopad div {z-index: 99 !important;}
+</style>
+
+<div id="ad_R4" class="admargin"   style="width:=300px; height=:250px;" > 
+    <div class="img_nopad">
+        	<script type="text/javascript">
+        	display_ad('223351541', 'false', 'i.site285.opus', '/blogs/fedwatch', 'R4', '300', '250', false, 'false');
+    	</script>
+        </div>
+</div>
+<script type="text/javascript"> 
+   var ad_div = document.getElementById('ad_R4');
+   hideAdZone(ad_div);
+</script>
+																																																
+
+
+												
+
+
+         </div>
+                         
+      
+ 
+ 
+ 
+                                                  <div      moduleID="46383122">      
+                             	    								    							    															
+    	    				    	    																																																																    													    															
+    
+<style>
+#Topbanner #ad_T2 div.img_nopad div {z-index: 99 !important;}
+</style>
+
+<div id="ad_L1" class="admargin"   style="width:=160px; height=:600px;" > 
+    <div class="img_nopad">
+        	<script type="text/javascript">
+        	display_ad('223351541', 'false', 'i.site285.opus', '/blogs/fedwatch', 'L1', '160', '600', false, 'false');
+    	</script>
+        </div>
+</div>
+<script type="text/javascript"> 
+   var ad_div = document.getElementById('ad_L1');
+   hideAdZone(ad_div);
+</script>
+																																																
+
+
+												
+
+
+         </div>
+                         
+ 
+																																
+ 
+   
+</div>          
+                        
+ <!--endclickprintexclude-->     
+<!-- =========== START OF gov_foot ============ -->
+
+        </div> <!--end of content block -->
+        <!--- BOTTOM BANNER --->        
+    <div id="Btmbanner">
+                    	    				    	    																																																																    													    															
+    
+<style>
+#Topbanner #ad_T2 div.img_nopad div {z-index: 99 !important;}
+</style>
+
+<div id="ad_B1"   style="width:=728px; height=:90px;" > 
+    <div class="img_nopad">
+        	<script type="text/javascript">
+        	display_ad('223351541', 'false', 'i.site285.opus', '/blogs/fedwatch', 'B1', '728', '90', false, 'false');
+    	</script>
+        </div>
+</div>
+<script type="text/javascript"> 
+   var ad_div = document.getElementById('ad_B1');
+   hideAdZone(ad_div);
+</script>
+																																																
+
+ 
+    </div> 
+    
+    <!--- FOOTER --->
+        <div id="Footer">
+            <div class="footercolumn" style="width:240px;">
+                <h3 class="first">Topics</h3>
+                <ul class="footercolumnlinks first">
+                    <li><a href="/topics/education">Education</a></li>
+		    <li><a href="/topics/finance">Finance</a></li>
+		    <li><a href="/topics/health-human-services">Health and Human Services</a></li>
+		    <li><a href="/topics/transportation-infrastructure">Infrastructure and Environment</a></li>
+		    <li><a href="/topics/mgmt">Management and Labor</a></li>
+		    <li><a href="/topics/politics">Politics</a></li>
+		    <li><a href="/topics/public-justice-safety">Public Safety</a></li>     
+		    <li><a href="/topics/urban">Urban</a></li>
+                </ul>
+            </div>
+            <div class="footercolumn" style="width:180px;">
+                <h3>Columns</h3>
+                <ul class="footercolumnlinks">
+                                            <li><a href="/columns/assessments">Assessments</a></li>
+                                            <li><a href="/columns/bg-report">B&G Report</a></li>
+                                            <li><a href="/columns/dispatch">Dispatch</a></li>
+                                            <li><a href="/columns/eco-engines">Economic Engines</a></li>
+                                            <li><a href="/columns/mgmt-insights">Management Insights</a></li>
+                                            <li><a href="/columns/potomac-chronicle">Potomac Chronicle</a></li>
+                                            <li><a href="/columns/public-finance">Public Finance</a></li>
+                                            <li><a href="/columns/public-money">Public Money</a></li>
+                                            <li><a href="/columns/smart-mgmt">Smart Management</a></li>
+                                            <li><a href="/columns/tech-talk">Tech Talk</a></li>
+                                            <li><a href="/columns/urban-notebook">Urban Notebook</a></li>
+                                    </ul>
+            </div>
+            <div class="footercolumn">
+                <h3>Social</h3>
+                <ul class="footercolumnlinks">
+                    <li><a href="http://twitter.com/governing"><img src="http://media.governing.com/designimages/ico_twitter2.gif" class="marginright" alt="Twitter" />Twitter</a></li>
+                    <li><a href="http://www.facebook.com/governing"><img src="http://media.governing.com/designimages/ico_facebook2.gif" class="marginright" alt="Facebook" />Facebook</a></li>
+                    <li><a href="http://www.linkedin.com/groups?gid=54800"><img src="http://media.governing.com/designimages/ico_linkedin2.gif" class="marginright" alt="LinkedIn" />LinkedIn</a></li>
+
+                    <li><a href="http://www.youtube.com/governingmagazine"><img src="http://media.governing.com/designimages/ico_youtube2.gif" class="marginright" alt="YouTube" />YouTube</a></li>
+                    <li><a href="http://www.flickr.com/photos/governing"><img src="http://media.governing.com/designimages/ico_flickr2.gif" class="marginright" alt="Flickr" />Flickr</a></li>                    
+                </ul>
+            </div>
+            <div class="footercolumn" style="width:200px;">
+                <h3>Governing</h3>
+                <ul class="footercolumnlinks">
+                    <li><a  href="/mag/" >Magazine</a></li>
+                    <li><a href="/subscribe/" >Subscribe</a></li>
+                    <li><a href="http://www.governing.com/newsletters">Email Newsletters</a></li>
+                    <li><a href="http://www.erepublic.com/advertise/governing/" target="_blank">Advertise</a></li>
+                    <li><a href="/rss"><img src="http://media.governing.com/designimages/gov_ico_rss.gif" class="marginright"/>RSS</a></li>
+                    <li><a href="/gov-institute/">Governing Institute</a></li>
+                    <li><a href="/authors/">Staff</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+
+            </div>            
+
+            <div class="footercolumn" style="width:200px;">
+                <h3>Network</h3>
+                <ul class="footercolumnlinks">
+                    <li><a href="http://www.govtech.com/" target="_blank">Government Technology</a></li>
+                    <li><a href="http://www.emergencymgmt.com/" target="_blank">Emergency Management</a></li>
+                    <li><a href="http://www.govtech.com/dc/index" target="_blank">Digital Communities</a></li>
+                    <li><a href="http://www.govtech.com/pcio/" target="_blank">Public CIO</a></li>
+                    <li><a href="http://www.centerdigitalgov.com/" target="_blank">Center for Digital Government</a></li>
+                    <li><a href="http://www.centerdigitaled.com/" target="_blank">Center for Digital Education</a></li>
+                    <li><a href="http://www.convergemag.com/" target="_blank">Converge</a></li>
+                    <li><a href="http://www.erepublic.com/" target="_blank">e.Republic, Inc.</a></li>
+                </ul>
+            </div>            
+
+        </div><!--- Footer --->
+  <br clear="all" />
+	</div>
+
+             
+    <div class=" bottom center" style="width: 1018px;">
+        	     <img src="http://media.governing.com/designimages/gov_btm_shadow.jpg" />
+        	     &copy; 2011 e.Republic, Inc. All Rights reserved. &nbsp;&nbsp;    |     &nbsp;&nbsp;<a href="/privacy">Privacy Policy</a>&nbsp;&nbsp;    |     &nbsp;&nbsp;<a href="/sitemap">Site Map</a>
+    </div> 
+</div>
+<script type="text/javascript" src="http://www.governing.com/includes/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://www.governing.com/includes/gov_utils.js"></script>
+
+<!---<script type="text/javascript" src="http://www.governing.com/includes/gov_png_fix.js"></script>--->
+<script type="text/javascript">
+ jQuery(function(){
+    // select contents of a text field when it gets the focus
+    jQuery(':text').focus(function(){this.select();})  
+ })
+</script>
+
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+sfHover = function() {
+  var sfEls = document.getElementById("Topnavigation_lev1").getElementsByTagName("LI");
+  for (var i=0; i<sfEls.length; i++) {
+    sfEls[i].onmouseover=function() {
+      this.className+=" sfhover";
+    }
+    sfEls[i].onmouseout=function() {
+      this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+    }
+  }
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+//--><!]]></script>
+
+<script type="text/javascript">
+    // show first one to begin and always show one (in the document flow, below the list) 
+    function switchNext2(el,tname,first) {
+        var selcn="selected";
+        var parent=el.parentNode;
+        var tags=parent.getElementsByTagName(tname);
+        var next=el.nextSibling;
+        var last=parent.lastChild;
+        while(last.nodeType != 1) last = last.previousSibling;
+        while(next.nodeType != 1) next = next.nextSibling;
+        next.style.display="none";
+        if (first!=1){
+            for (i=0; i<tags.length; i++) {
+                var tohide=tags[i].nextSibling;
+                while(tohide.nodeType != 1) tohide = tohide.nextSibling;
+                if (tohide!=next){tohide.style.display="none";}
+                tags[i].className=tags[i].className.replace(new RegExp(selcn+"\\b"), "");
+                if (tags[i]==el){
+                    var rEx = new RegExp("(^|\\s)" + selcn + "(\\s|$)");
+                    if (rEx.test(tags[i].className)==false) {tags[i].className+=" "+selcn;}
+                }
+            }   
+            var clone=next.cloneNode(true);
+            clone.style.display="block";
+            parent.removeChild(last);
+            parent.appendChild(clone);
+        }
+        else {
+            var firstone=tags[0].nextSibling;
+            while(firstone.nodeType != 1) firstone = firstone.nextSibling;
+            var clone=firstone.cloneNode(true);
+            clone.style.display="block";
+            if (last.innerHTML!=clone.innerHTML){parent.appendChild(clone);}
+            var rEx = new RegExp("(^|\\s)" + selcn + "(\\s|$)");
+            if (rEx.test(tags[0].className)==false) {tags[0].className+=" "+selcn;}
+        }
+    }
+    
+    function switchNextByIdAndTag2(el,tname) {
+        var ccn="clicker";
+        if (document.getElementById(el))
+        {
+            clickers=document.getElementById(el).getElementsByTagName(tname);
+            for (i=0; i<clickers.length; i++) {
+                clickers[i].className+=" "+ccn;
+                clickers[i].onclick=function() {switchNext2(this,tname)}
+                switchNext2(clickers[i],tname,1);
+            }
+        }
+    }
+    switchNextByIdAndTag2('dlist','dt');
+</script>  
+
+<script type="text/javascript">
+function clickclear(thisfield, defaulttext) {
+if (thisfield.value == defaulttext) {
+thisfield.value = "";
+}
+}
+function clickrecall(thisfield, defaulttext) {
+if (thisfield.value == "") {
+thisfield.value = defaulttext;
+}
+}
+</script>
+
+
+
+<!-- Eloqua -->
+<script src="/includes/elqCfg.js" type="text/javascript"></script>
+<script src="/includes/elqImg.js" type="text/javascript"></script>
+
+<!-- ChartBeat Tracking -->
+<script type="text/javascript">
+  var _sf_async_config = { uid: 46219, domain: 'governing.com' };
+  (function() {
+    function loadChartbeat() {
+      window._sf_endpt = (new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+        (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+        "js/chartbeat.js");
+      document.body.appendChild(e);
+    };
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+      loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- /ChartBeat Tracking -->
+
+  </body>
+
+</html>
+

@@ -1,0 +1,9 @@
+<script type="text/javascript" src="beck_popup.js"></script>
+	<script language="javascript">
+          <!--
+          function openHelp(){
+          	window.open("infohelp.html","_blank", "width=800,height=400,menubar=no,toolbar=no,resizable=no");
+          }
+--></script>
+<a href="javascript:openHelp()"><img src="help_on_big.png" border="0"></a>
+

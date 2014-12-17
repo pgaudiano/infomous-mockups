@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:ev="http://purl.org/rss/1.0/modules/event/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://newyork.craigslist.org/rej/index.rss">
+<title>craigslist | real estate jobs in new york city</title>
+<link>http://newyork.craigslist.org/rej/</link>
+<description></description>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:publisher>robot@craigslist.org</dc:publisher>
+<dc:creator>robot@craigslist.org</dc:creator>
+<dc:source>http://newyork.craigslist.org/rej/index.rss</dc:source>
+<dc:title>craigslist | real estate jobs in new york city</dc:title>
+<dc:type>Collection</dc:type>
+<syn:updateBase>2013-02-22T15:28:33-05:00</syn:updateBase>
+<syn:updateFrequency>4</syn:updateFrequency>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3636324145.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3636056358.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3636040910.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635961306.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635932771.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635786680.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635782174.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/rej/3635781835.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/stn/rej/3635777171.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635774949.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/que/rej/3635774042.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635771434.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/lgi/rej/3635770417.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brx/rej/3635766606.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635764259.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635759418.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635754892.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635740150.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635737383.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635725541.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635720452.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635700676.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635679935.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635678393.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635646227.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635632458.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635597873.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/wch/rej/3635516322.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635514199.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635487096.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635480488.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635478896.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635467690.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635450449.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635448622.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635443210.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635443146.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/rej/3635425965.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635419007.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635397289.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635394730.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635386833.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635383741.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635380869.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3635356984.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/rej/3634910434.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3634535698.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/que/rej/3634531950.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3634456128.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/que/rej/3634441391.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/que/rej/3634383119.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3634351768.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3634344811.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/lgi/rej/3634279267.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3634249280.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3634200683.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/lgi/rej/3634008637.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633998389.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633626112.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633611888.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brx/rej/3633588744.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633553055.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633498019.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633414928.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633296458.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633257826.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633255241.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633246492.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/rej/3633220005.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633210375.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633198653.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633195215.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/rej/3633194672.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633169781.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633165181.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633102653.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633089857.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brx/rej/3633078571.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brx/rej/3633076244.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/rej/3633033776.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633030878.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3633026184.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brx/rej/3632985860.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/rej/3632614148.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3632591893.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/rej/3632335118.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3632162678.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3631913113.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3631884462.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3631884179.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/wch/rej/3631742979.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/que/rej/3631737410.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3631732712.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3631601666.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3631535929.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3631529208.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/lgi/rej/3631475540.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/rej/3631424794.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/mnh/rej/3631400704.html" />
+  <rdf:li rdf:resource="http://newyork.craigslist.org/brk/rej/3631343622.html" />
+ </rdf:Seq>
+</items>
+</channel>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3636324145.html">
+<title><![CDATA[ Leasing Agents On-Site - Full Time (Manhattan (Various))]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3636324145.html</link>
+<description><![CDATA[Real Estate - Manhattan 
+Leasing Agents On-Site - Full Time 
+Dynamic Real Estate Developer has unique opportunity for licensed agents to work at one of our luxury, Manhattan apartment rental buildings. Candidate must have excellent customer service a [...]]]></description>
+<dc:date>2013-02-22T15:18:08-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3636324145.html</dc:source>
+<dc:title><![CDATA[ Leasing Agents On-Site - Full Time (Manhattan (Various))]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T15:18:08-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3636056358.html">
+<title><![CDATA[Boutique Firm Interviewing... (West Village)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3636056358.html</link>
+<description><![CDATA[We are looking for people who want to make real estate their career. Come and work at a positive and well positioned boutique firm. Deals are happening now, how many did you do in January? Our exclusives create more leads than you can handle... 
+Excl [...]]]></description>
+<dc:date>2013-02-22T13:37:40-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3636056358.html</dc:source>
+<dc:title><![CDATA[Boutique Firm Interviewing... (West Village)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T13:37:40-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3636040910.html">
+<title><![CDATA[Director - Asset & Construction Finance Management]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3636040910.html</link>
+<description><![CDATA[Our Client, the largest owner and pre-eminent 'first in class' international REIT focused principally on the ownership, operation, management, acquisition, redevelopment and selective development of properties containing office space, is looking for  [...]]]></description>
+<dc:date>2013-02-22T13:31:58-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3636040910.html</dc:source>
+<dc:title><![CDATA[Director - Asset & Construction Finance Management]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T13:31:58-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635961306.html">
+<title><![CDATA[~~~~~~~Virtual Agents~~~~~~~Real Money~~~~~~~Direct Deposit Tomorrow]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635961306.html</link>
+<description><![CDATA[VIRTUAL AGENTS/REAL MONEY 
+Have you seen all of the 100% commission ads that promise agents their entire commission? 
+Did you attend the seminar only to find there were MONTHLY DESK FEES, TRANSACTION FEES, ADVERTISING FEES, PRINTING &amp; COPYING FEE [...]]]></description>
+<dc:date>2013-02-22T13:02:25-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635961306.html</dc:source>
+<dc:title><![CDATA[~~~~~~~Virtual Agents~~~~~~~Real Money~~~~~~~Direct Deposit Tomorrow]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T13:02:25-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635932771.html">
+<title><![CDATA[Closing Agent (Midtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635932771.html</link>
+<description><![CDATA[Real Estate firm, looking for a Closing Agent. Must have Condo/Co-op exp. Must be able to write well. Handle closings from A to Z. Dealing with brokers, sellers and buyers. Putting together board packages. 
+Hrs 9-5]]></description>
+<dc:date>2013-02-22T12:51:57-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635932771.html</dc:source>
+<dc:title><![CDATA[Closing Agent (Midtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T12:51:57-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635786680.html">
+<title><![CDATA[Insurance Inspector  (Manhattan )]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635786680.html</link>
+<description><![CDATA[About us: 
+Mueller Services, Inc. has been a national insurance services provider since 1980. The company is recognized by top insurance carriers for providing industry leading quality, customer service and technology. Mueller Services, Inc. takes pr [...]]]></description>
+<dc:date>2013-02-22T11:57:44-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635786680.html</dc:source>
+<dc:title><![CDATA[Insurance Inspector  (Manhattan )]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:57:44-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635782174.html">
+<title><![CDATA[Director of Residential Real Estate]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635782174.html</link>
+<description><![CDATA[Job Description 
+Our client, a NYC based Owner of Residential Rental Properties, is searching for a 'Director of Real Estate'. The position offers full and excellent benefits. This is a very busy working environment. 
+POSITION SUMMARY 
+The Director o [...]]]></description>
+<dc:date>2013-02-22T11:56:02-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635782174.html</dc:source>
+<dc:title><![CDATA[Director of Residential Real Estate]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:56:02-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/rej/3635781835.html">
+<title><![CDATA[Insurance Inspector  (Kings County - Brooklyn)]]></title>
+<link>http://newyork.craigslist.org/brk/rej/3635781835.html</link>
+<description><![CDATA[About us: 
+Mueller Services, Inc. has been a national insurance services provider since 1980. The company is recognized by top insurance carriers for providing industry leading quality, customer service and technology. Mueller Services, Inc. takes pr [...]]]></description>
+<dc:date>2013-02-22T11:55:55-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/rej/3635781835.html</dc:source>
+<dc:title><![CDATA[Insurance Inspector  (Kings County - Brooklyn)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:55:55-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/stn/rej/3635777171.html">
+<title><![CDATA[Insurance Inspector  (Staten Island)]]></title>
+<link>http://newyork.craigslist.org/stn/rej/3635777171.html</link>
+<description><![CDATA[About us: 
+Mueller Services, Inc. has been a national insurance services provider since 1980. The company is recognized by top insurance carriers for providing industry leading quality, customer service and technology. Mueller Services, Inc. takes pr [...]]]></description>
+<dc:date>2013-02-22T11:54:13-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/stn/rej/3635777171.html</dc:source>
+<dc:title><![CDATA[Insurance Inspector  (Staten Island)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:54:13-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635774949.html">
+<title><![CDATA[Portfolio/Asset Manager Luxury Residential]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635774949.html</link>
+<description><![CDATA[POSITION SUMMARY 
+The asset manager will report to Senior Vice President and Regional Director for asset and property management for a portfolio of mid-rise and high-rise Residential Communities. 
+General Summary 
+The Portfolio/Asset Manager is respo [...]]]></description>
+<dc:date>2013-02-22T11:53:21-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635774949.html</dc:source>
+<dc:title><![CDATA[Portfolio/Asset Manager Luxury Residential]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:53:21-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/que/rej/3635774042.html">
+<title><![CDATA[Insurance Inspector  (Queens - Jamaica)]]></title>
+<link>http://newyork.craigslist.org/que/rej/3635774042.html</link>
+<description><![CDATA[Mueller Services, Inc. has been in the business since 1980. When we started, we only covered New York State. Over 30 years later, we are an industry leader, providing services nationwide. We have nearly 1,600 field representatives who live all over t [...]]]></description>
+<dc:date>2013-02-22T11:53:01-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/que/rej/3635774042.html</dc:source>
+<dc:title><![CDATA[Insurance Inspector  (Queens - Jamaica)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:53:01-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635771434.html">
+<title><![CDATA[Project Manager (Long Island)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635771434.html</link>
+<description><![CDATA[Project Manager 
+POSITION SUMMARY 
+Our Client, a Long Island based Construction Company specializing in exterior construction projects in the Tri State area, is looking for a 'Project Manager' to assist the Senior Vice President with the administrati [...]]]></description>
+<dc:date>2013-02-22T11:52:01-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635771434.html</dc:source>
+<dc:title><![CDATA[Project Manager (Long Island)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:52:01-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/lgi/rej/3635770417.html">
+<title><![CDATA[Insurance Inspector (Nassau- Long Beach)]]></title>
+<link>http://newyork.craigslist.org/lgi/rej/3635770417.html</link>
+<description><![CDATA[About us: 
+Mueller Services, Inc. has been a national insurance services provider since 1980. The company is recognized by top insurance carriers for providing industry leading quality, customer service and technology. Mueller Services, Inc. takes pr [...]]]></description>
+<dc:date>2013-02-22T11:51:38-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/lgi/rej/3635770417.html</dc:source>
+<dc:title><![CDATA[Insurance Inspector (Nassau- Long Beach)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:51:38-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brx/rej/3635766606.html">
+<title><![CDATA[Insurance Inspector (Bronx County)]]></title>
+<link>http://newyork.craigslist.org/brx/rej/3635766606.html</link>
+<description><![CDATA[Mueller Services, Inc. has been in the business since 1980. When we started, we only covered New York State. Over 30 years later, we are an industry leader, providing services nationwide. We have nearly 1,600 field representatives who live all over t [...]]]></description>
+<dc:date>2013-02-22T11:50:13-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brx/rej/3635766606.html</dc:source>
+<dc:title><![CDATA[Insurance Inspector (Bronx County)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:50:13-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635764259.html">
+<title><![CDATA[Service Manager]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635764259.html</link>
+<description><![CDATA[Service Manager 
+POSITION SUMMARY 
+Our Client, a high-end residential construction & professional services company is looking to fill a 'Service Manager' position. 
+Title: Service Manager 
+FLSA Status: Exempt 
+Reports to: Director of Operations, Serv [...]]]></description>
+<dc:date>2013-02-22T11:49:23-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635764259.html</dc:source>
+<dc:title><![CDATA[Service Manager]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:49:23-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635759418.html">
+<title><![CDATA[Commercial Construction/Development Manager]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635759418.html</link>
+<description><![CDATA[POSITION SUMMARY 
+Our Client, a Developer, Owner and Manager of Class 'A' Office Buildings in New York City, is looking for a 'Commercial Construction/Development Manager'. Qualified candidates will have experience working in a commercial real estate [...]]]></description>
+<dc:date>2013-02-22T11:47:34-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635759418.html</dc:source>
+<dc:title><![CDATA[Commercial Construction/Development Manager]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:47:34-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635754892.html">
+<title><![CDATA[Asset Manager]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635754892.html</link>
+<description><![CDATA[POSITION SUMMARY 
+Our Client, an Owner and Manager of Class A Commercial Office Buildings in New York City is looking for an 'Asset Manager'. Qualified candidates will have experience working in a commercial real estate environment and be familiar wi [...]]]></description>
+<dc:date>2013-02-22T11:45:58-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635754892.html</dc:source>
+<dc:title><![CDATA[Asset Manager]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:45:58-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635740150.html">
+<title><![CDATA[Commercial Property Manager]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635740150.html</link>
+<description><![CDATA[Our Client, a Developer, Owner and Manager of Class 'A' Office Buildings in New York City, is looking for a 'Commercial Property Manager'. Qualified candidates will have experience working in a commercial real estate environment and be familiar with  [...]]]></description>
+<dc:date>2013-02-22T11:40:23-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635740150.html</dc:source>
+<dc:title><![CDATA[Commercial Property Manager]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:40:23-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635737383.html">
+<title><![CDATA[Co-op/Condo Property Manager (Midtown East)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635737383.html</link>
+<description><![CDATA[Midsize property management company seeking Co-op/Condo manager with 5+ years experience. Must be detail oriented, well spoken, able to attend nightly board meetings. Yardi experience a plus. 
+Only looking for those who have prior co-op/condo experie [...]]]></description>
+<dc:date>2013-02-22T11:39:23-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635737383.html</dc:source>
+<dc:title><![CDATA[Co-op/Condo Property Manager (Midtown East)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:39:23-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635725541.html">
+<title><![CDATA[Commercial Property Manager NJ & CT]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635725541.html</link>
+<description><![CDATA[NJ Commercial Property Manager 
+POSITION SUMMARY 
+Our Client, a Queens based Owner of Residential Buildings and Commercial Office Buildings, is searching for a Commercial Property Manager to manage their New Jersey and Rockland County commercial port [...]]]></description>
+<dc:date>2013-02-22T11:34:56-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635725541.html</dc:source>
+<dc:title><![CDATA[Commercial Property Manager NJ & CT]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:34:56-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635720452.html">
+<title><![CDATA[Analyst/Associate Asset Manager ]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635720452.html</link>
+<description><![CDATA[Analyst/Associate Asset Manager - NYC Commercial Class A Office Buildings 
+Our Client, a Developer, Owner and Manager of Class 'A' Office Buildings in New York City, is looking for a 'Analyst/Associate Asset Manager'. Qualified candidates will have e [...]]]></description>
+<dc:date>2013-02-22T11:33:00-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635720452.html</dc:source>
+<dc:title><![CDATA[Analyst/Associate Asset Manager ]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:33:00-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635700676.html">
+<title><![CDATA[Calling All New Real Estate Sales Agents!!!!! (Downtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635700676.html</link>
+<description><![CDATA[I'm looking 4 Licensed Sales Agents with a "Hustler" attitude.
+We have an Start Of The Art Office, Located on 37th & 5th Ave.
+If you are serious about Real Estate and ready to make money
+Call Ms. Sheila @ 646-288-6608 or Fax your Resume Attn: Ms. Dot [...]]]></description>
+<dc:date>2013-02-22T11:25:26-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635700676.html</dc:source>
+<dc:title><![CDATA[Calling All New Real Estate Sales Agents!!!!! (Downtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:25:26-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635679935.html">
+<title><![CDATA[24/7 TRAINING & SUPPORT_*_Fast-Paced&#9650;Top Producing Firm_*_Hiring NOW ! (Midtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635679935.html</link>
+<description><![CDATA[This is a job offer for new or experienced residential rental agents and rental brokers in New York City. 
+Areas of work include Chelsea , East Village , Murray Hill , Gramercy , Midtown East , Midtown West , Upper East Side & Upper West Side , Finan [...]]]></description>
+<dc:date>2013-02-22T11:17:34-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635679935.html</dc:source>
+<dc:title><![CDATA[24/7 TRAINING & SUPPORT_*_Fast-Paced&#9650;Top Producing Firm_*_Hiring NOW ! (Midtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:17:34-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635678393.html">
+<title><![CDATA[PAID TRAINING ENTRY LEVEL LOAN OFFICERS, MARKETING ASSISTANTS NEEDED!  (Midtown, Manhattan)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635678393.html</link>
+<description><![CDATA[Paid Training and Entry Level Opportunities for Loan Officers, Marketing Assistants! (Midtown, Manhattan) 
+$200K+ Revenue Producers, Processors, and Closers WANTED! 
+US Mortgage Corporation has been in business since 1994 and has been implementing ag [...]]]></description>
+<dc:date>2013-02-22T11:16:59-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635678393.html</dc:source>
+<dc:title><![CDATA[PAID TRAINING ENTRY LEVEL LOAN OFFICERS, MARKETING ASSISTANTS NEEDED!  (Midtown, Manhattan)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:16:59-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635646227.html">
+<title><![CDATA[*Caliber is NOW seeking new agents*Let Us Show You How to Make $$$* (Midtown/Flatiron)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635646227.html</link>
+<description><![CDATA[&nbsp;]]></description>
+<dc:date>2013-02-22T11:04:23-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635646227.html</dc:source>
+<dc:title><![CDATA[*Caliber is NOW seeking new agents*Let Us Show You How to Make $$$* (Midtown/Flatiron)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T11:04:23-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635632458.html">
+<title><![CDATA[Collections Specialist -- Commercial Real Estate]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635632458.html</link>
+<description><![CDATA[Our Client, a NYC Commercial Property Manager and Leasing Company specializing in small to medium office leases, is looking for a Collections Specialist -- Commercial Real Estate 
+Position Summary: 
+Collect and track all funds due from tenant account [...]]]></description>
+<dc:date>2013-02-22T10:58:35-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635632458.html</dc:source>
+<dc:title><![CDATA[Collections Specialist -- Commercial Real Estate]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T10:58:35-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635597873.html">
+<title><![CDATA[ERGPA is Now Hiring Investment Sales and Commercial Mortgage Brokers (Flatiron)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635597873.html</link>
+<description><![CDATA[About: 
+ERG Property Advisors (www.ergpa.com) is a full-service commercial real estate marketing company based in New York City. Its core business activities are investment sales, finance and direct capital services. While focused on the broader New  [...]]]></description>
+<dc:date>2013-02-22T10:44:12-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635597873.html</dc:source>
+<dc:title><![CDATA[ERGPA is Now Hiring Investment Sales and Commercial Mortgage Brokers (Flatiron)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T10:44:12-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/wch/rej/3635516322.html">
+<title><![CDATA[Real Estate Appraiser(s) Needed in Westchester (Westchester County NY)]]></title>
+<link>http://newyork.craigslist.org/wch/rej/3635516322.html</link>
+<description><![CDATA[We are a large full service appraisal firm with over 25 years experience, looking for experienced appraiser(s) (Certified preferred, but will consider Licensed) for fee split work, currently needed for Westchester County in NY currently. Preference g [...]]]></description>
+<dc:date>2013-02-22T10:08:01-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/wch/rej/3635516322.html</dc:source>
+<dc:title><![CDATA[Real Estate Appraiser(s) Needed in Westchester (Westchester County NY)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T10:08:01-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635514199.html">
+<title><![CDATA[LEVEL GROUP - NOW HIRING AMBITIOUS AGENTS ]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635514199.html</link>
+<description><![CDATA[Level Group is currently seeking both NEW and EXPERIENCED agents who are driven, entrepreneurial and desire to succeed! 
+You will join over 150 other Level Group agents who have DOUBLED THEIR INCOME by switching to our company.
+We offer a unique and  [...]]]></description>
+<dc:date>2013-02-22T10:06:59-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635514199.html</dc:source>
+<dc:title><![CDATA[LEVEL GROUP - NOW HIRING AMBITIOUS AGENTS ]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T10:06:59-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635487096.html">
+<title><![CDATA[RESEARCH ASSISTANT -- $13/Hour plus Commissions]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635487096.html</link>
+<description><![CDATA[Highly successful Executive Search firm specializing in the placement of Real Estate professionals at all levels seeks a Research Assistant. Position offers flexible hours with the ability to work from home and/or from midtown office location. 
+With  [...]]]></description>
+<dc:date>2013-02-22T09:53:36-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635487096.html</dc:source>
+<dc:title><![CDATA[RESEARCH ASSISTANT -- $13/Hour plus Commissions]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T09:53:36-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635480488.html">
+<title><![CDATA[**AGENTS WANTED -- NO FEES -- TOP TEAM -- LIMITED SEATS** (Midtown West)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635480488.html</link>
+<description><![CDATA[]]></description>
+<dc:date>2013-02-22T09:50:06-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635480488.html</dc:source>
+<dc:title><![CDATA[**AGENTS WANTED -- NO FEES -- TOP TEAM -- LIMITED SEATS** (Midtown West)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T09:50:06-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635478896.html">
+<title><![CDATA[Metropolitan Property Group is looking for agents! Make 150k per year! (Flatiron)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635478896.html</link>
+<description><![CDATA[Metropolitan Property Group is a team of over 180 agents working with clients to rent, sell and buy the city's best apartments, co-ops and condos. We are one of the most aggressive brokerage houses in the city and are breaking company records. 
+Curre [...]]]></description>
+<dc:date>2013-02-22T09:49:17-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635478896.html</dc:source>
+<dc:title><![CDATA[Metropolitan Property Group is looking for agents! Make 150k per year! (Flatiron)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T09:49:17-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635467690.html">
+<title><![CDATA[Join NYC's leading independent firm today and be ready for the spring! (Flatiron)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635467690.html</link>
+<description><![CDATA[]]></description>
+<dc:date>2013-02-22T09:43:36-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635467690.html</dc:source>
+<dc:title><![CDATA[Join NYC's leading independent firm today and be ready for the spring! (Flatiron)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T09:43:36-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635450449.html">
+<title><![CDATA[Keep 100% Commission, NYC's Best Training/OH Every Fri. 10AM. FT/PT OK (Manhattan)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635450449.html</link>
+<description><![CDATA[Come to our Open Houses or Call us for a personal interview. ]]></description>
+<dc:date>2013-02-22T09:34:23-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635450449.html</dc:source>
+<dc:title><![CDATA[Keep 100% Commission, NYC's Best Training/OH Every Fri. 10AM. FT/PT OK (Manhattan)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T09:34:23-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635448622.html">
+<title><![CDATA[Real Estate Project Manager (East Village)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635448622.html</link>
+<description><![CDATA[Our highly reputable Manhattan, East Village, rental firm is seeking a full-time Project Manager. The portfolio consists of over 20 buildings, about 700 units, mostly residential with some commercial. 
+Responsible to support the Senior Property Manag [...]]]></description>
+<dc:date>2013-02-22T09:33:19-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635448622.html</dc:source>
+<dc:title><![CDATA[Real Estate Project Manager (East Village)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T09:33:19-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635443210.html">
+<title><![CDATA[Boutique Brokerage Firm in Midtown- Training/Support! (Midtown West)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635443210.html</link>
+<description><![CDATA[Â  CLICK HERE TO FIND OUT MORE ABOUT PLATINUM PROPERTIES EMPLOYMENT OPPORTUNITIES Who we are: A company that in 7 years has emerged as the leading luxury brokerage in Lower Manhattan and has expanded to Midtown Manhattan. A company that prides itself [...]]]></description>
+<dc:date>2013-02-22T09:30:20-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635443210.html</dc:source>
+<dc:title><![CDATA[Boutique Brokerage Firm in Midtown- Training/Support! (Midtown West)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T09:30:20-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635443146.html">
+<title><![CDATA[JOIN A WINNING TEAM - MAKE 150K A YEAR + / BEST SUPPORT & HIGH SPLITS (Midtown East)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635443146.html</link>
+<description><![CDATA[We are currently looking for both NEW and EXPERIENCED Licensed Real Estate Agents who are driven and have a desire to succeed. As one of the top Rental firms in Manhattan, we are constantly growing and looking for new potential. We have access to all [...]]]></description>
+<dc:date>2013-02-22T09:30:18-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635443146.html</dc:source>
+<dc:title><![CDATA[JOIN A WINNING TEAM - MAKE 150K A YEAR + / BEST SUPPORT & HIGH SPLITS (Midtown East)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T09:30:18-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/rej/3635425965.html">
+<title><![CDATA[Learn, Earn, & Grow!!! Ideal Properties Group. (Downtown Brooklyn)]]></title>
+<link>http://newyork.craigslist.org/brk/rej/3635425965.html</link>
+<description><![CDATA[idealpropertiesgroup.com 
+Leave the stress of low-paying dead-end jobs behind! We will teach you the intricacies of becoming financially successful by investing in your talent. Simply bring your dedication and willingness to become successful, and be [...]]]></description>
+<dc:date>2013-02-22T09:20:35-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/rej/3635425965.html</dc:source>
+<dc:title><![CDATA[Learn, Earn, & Grow!!! Ideal Properties Group. (Downtown Brooklyn)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T09:20:35-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635419007.html">
+<title><![CDATA[KEEP 100% of your Commi$$ion Make 100K+ 1st Year - BE A TITAN (Midtown East)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635419007.html</link>
+<description><![CDATA[Teams Welcome. Special Group Rates NO OTHER COMPANY CAN OFFER THIS TO YOU! WATCH OUR 3 MINUTE VIDEO 
+This post is not for everyone. Only selected people will be accepted. In order to qualify you must pass a company exam as well as a personal intervie [...]]]></description>
+<dc:date>2013-02-22T09:16:23-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635419007.html</dc:source>
+<dc:title><![CDATA[KEEP 100% of your Commi$$ion Make 100K+ 1st Year - BE A TITAN (Midtown East)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T09:16:23-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635397289.html">
+<title><![CDATA[$1500-$3000 A WEEK PERFECT FOR REAL ESTATE AGENTS-FLEXIBLE HOURS]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635397289.html</link>
+<description><![CDATA[WE ARE LIFE ALERT. IF YOU HAVE FLEXIBLE TIME DURING THE DAY, COME EARN MONEY WITH US 
+ALL LEADS ARE FROM INCOMING CALLS. THE WHOLE SALES TRANSACTION IS DONE OVER THE PHONE. 
+$ 3,000 WEEKLY - START IMMEDIATELY -- HIGH COMMISSION SALES 
+If you have gre [...]]]></description>
+<dc:date>2013-02-22T09:02:55-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635397289.html</dc:source>
+<dc:title><![CDATA[$1500-$3000 A WEEK PERFECT FOR REAL ESTATE AGENTS-FLEXIBLE HOURS]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T09:02:55-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635394730.html">
+<title><![CDATA[BOND New York Top Agents Wanted (New Columbus Circle Flagship)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635394730.html</link>
+<description><![CDATA[With the addition of 6,000 square feet of second floor retail, our flagship location now occupies 12,000 square feet at the corners of 57th and Broadway. NOW OPEN!! Please email uwscareers@bondnewyork.com to find out more about career opportunities a [...]]]></description>
+<dc:date>2013-02-22T09:01:21-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635394730.html</dc:source>
+<dc:title><![CDATA[BOND New York Top Agents Wanted (New Columbus Circle Flagship)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T09:01:21-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635386833.html">
+<title><![CDATA[BOND Upper East Side - Top Agents Wanted (Upper East Side)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635386833.html</link>
+<description><![CDATA[BOND NY, New York's largest independently owned real estate brokerage, is looking for sales and rental agents to join us in our bustling Upper East Side retail location at 1500 Second Avenue. Enjoy the flexibility to work both sales and rentals, as w [...]]]></description>
+<dc:date>2013-02-22T08:56:20-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635386833.html</dc:source>
+<dc:title><![CDATA[BOND Upper East Side - Top Agents Wanted (Upper East Side)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T08:56:20-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635383741.html">
+<title><![CDATA[BOND Chelsea/Flatiron - Top Agents Wanted (Chelsea/Flatiron)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635383741.html</link>
+<description><![CDATA[Being an Independent Contractor is one thing. . ..being totally independent is another.
+At Bond New York you will be part of a team. We pride ourselves on having some of the top sales and rental managers in the industry.
+Our focus is on you. . ..the  [...]]]></description>
+<dc:date>2013-02-22T08:54:17-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635383741.html</dc:source>
+<dc:title><![CDATA[BOND Chelsea/Flatiron - Top Agents Wanted (Chelsea/Flatiron)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T08:54:17-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635380869.html">
+<title><![CDATA[BOND - New York's Largest Independently Owned Real Estate Brokerage (Tribeca)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635380869.html</link>
+<description><![CDATA[ 
+BOND NY, New York's largest independently owned real estate brokerage, is looking for sales and rental agents to join us in our prestigious Tribeca retail location at 25 Hudson Street. Enjoy the flexibility to work both sales and rentals, as well a [...]]]></description>
+<dc:date>2013-02-22T08:52:20-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635380869.html</dc:source>
+<dc:title><![CDATA[BOND - New York's Largest Independently Owned Real Estate Brokerage (Tribeca)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T08:52:20-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3635356984.html">
+<title><![CDATA[Part time administrative assistant for top real estate sales team (Union Square)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3635356984.html</link>
+<description><![CDATA[The position: top producing and growing real estate sales team based in Greenwich Village is looking for a part time administrative assistant to become our Client Care Coordinator and help support our team as we grow. The Client Care Coordinator will [...]]]></description>
+<dc:date>2013-02-22T08:34:55-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3635356984.html</dc:source>
+<dc:title><![CDATA[Part time administrative assistant for top real estate sales team (Union Square)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-22T08:34:55-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/rej/3634910434.html">
+<title><![CDATA[Full time sales person & experience Manager/Associate Manager needed   (Downtown Brooklyn)]]></title>
+<link>http://newyork.craigslist.org/brk/rej/3634910434.html</link>
+<description><![CDATA[Sales person wanted for very..... BUSY & (2 location) GROWING Real Estate company in Downtown Brooklyn location! Seeking full time & part time career minded salespeople & team player. Rental & Sales in PRIME Atlantic location! Member of REBNY (Manhat [...]]]></description>
+<dc:date>2013-02-21T22:53:10-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/rej/3634910434.html</dc:source>
+<dc:title><![CDATA[Full time sales person & experience Manager/Associate Manager needed   (Downtown Brooklyn)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T22:53:10-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3634535698.html">
+<title><![CDATA[Top Agent Looking For Assistant (Upper West Side)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3634535698.html</link>
+<description><![CDATA[EXPERIENCED LICENSED AGENTS ONLY. 
+I want to save you time. For this position you need to have at least a BA or a BFA. You need to have been working as a real estate agent for at least 6 months. You must want to make real estate a career and putting  [...]]]></description>
+<dc:date>2013-02-21T19:18:07-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3634535698.html</dc:source>
+<dc:title><![CDATA[Top Agent Looking For Assistant (Upper West Side)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T19:18:07-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/que/rej/3634531950.html">
+<title><![CDATA[Mortgage Processor- Experience Required. (HICKSVILLE, NY)]]></title>
+<link>http://newyork.craigslist.org/que/rej/3634531950.html</link>
+<description><![CDATA[** Immediate Position Available for a Experienced Mortgage Processor! 
+USN Mortgage Inc is seeking a well-qualified Mortgage Processor to join our dynamic team at our Office located in Hicksville, NY. Our office is a very high producing branch that w [...]]]></description>
+<dc:date>2013-02-21T19:16:22-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/que/rej/3634531950.html</dc:source>
+<dc:title><![CDATA[Mortgage Processor- Experience Required. (HICKSVILLE, NY)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T19:16:22-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3634456128.html">
+<title><![CDATA[&#9658;140+ Exclusive Buildings**HIGH SPLITS**Full Training**NO DESK FEES&#9668; (Union Square)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3634456128.html</link>
+<description><![CDATA[CLICK HERE to watch our Video! Click here to view our Twitter page! Click here to view our Facebook page! ]]></description>
+<dc:date>2013-02-21T18:40:24-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3634456128.html</dc:source>
+<dc:title><![CDATA[&#9658;140+ Exclusive Buildings**HIGH SPLITS**Full Training**NO DESK FEES&#9668; (Union Square)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T18:40:24-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/que/rej/3634441391.html">
+<title><![CDATA[MORTGAGE PROCESSOR (Queens)]]></title>
+<link>http://newyork.craigslist.org/que/rej/3634441391.html</link>
+<description><![CDATA[A Queens based mortgage company is looking for an experienced Mortgage Processor. Ideal candidate must have: 
+- A minimum 2-3 years of experience as a processor 
+- Able to process multiple files at the same time at different stages from the approval  [...]]]></description>
+<dc:date>2013-02-21T18:33:36-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/que/rej/3634441391.html</dc:source>
+<dc:title><![CDATA[MORTGAGE PROCESSOR (Queens)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T18:33:36-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/que/rej/3634383119.html">
+<title><![CDATA[LOOKING FOR TELEMARKETERS-SHORT SALES-PROS/WILL TRAIN (HOLLIS, NY)]]></title>
+<link>http://newyork.craigslist.org/que/rej/3634383119.html</link>
+<description><![CDATA[With over 50 years of experience in the real estate field our focus is the New York metropolitan area. Through our various methods of marketing we strive to acquire new assets and expand our portfolio. Our company is looking for motivated and ambitio [...]]]></description>
+<dc:date>2013-02-21T18:07:00-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/que/rej/3634383119.html</dc:source>
+<dc:title><![CDATA[LOOKING FOR TELEMARKETERS-SHORT SALES-PROS/WILL TRAIN (HOLLIS, NY)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T18:07:00-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3634351768.html">
+<title><![CDATA[100% Commission * 100% Support * 100K a Year! * 20 Years in Business (Murray Hill)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3634351768.html</link>
+<description><![CDATA[Uploaded with ImageShack.us]]></description>
+<dc:date>2013-02-21T17:52:54-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3634351768.html</dc:source>
+<dc:title><![CDATA[100% Commission * 100% Support * 100K a Year! * 20 Years in Business (Murray Hill)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T17:52:54-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3634344811.html">
+<title><![CDATA[Boutique Wall St. Firm Looking for Driven Agents (Downtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3634344811.html</link>
+<description><![CDATA[Who buys and rents the best real estate in Manhattan? Did you answer "The people who work on Wall Street"? 
+Our flagship office is located in the heart of the Financial District at 30 Wall Street, directly across from the New York Stock Exchange. Per [...]]]></description>
+<dc:date>2013-02-21T17:49:45-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3634344811.html</dc:source>
+<dc:title><![CDATA[Boutique Wall St. Firm Looking for Driven Agents (Downtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T17:49:45-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/lgi/rej/3634279267.html">
+<title><![CDATA[Seeking Experienced Mortgage Processor (Lake Success)]]></title>
+<link>http://newyork.craigslist.org/lgi/rej/3634279267.html</link>
+<description><![CDATA[Seeking Experienced Mortgage Processor for a small but growing Mortgage Company. 
+Must have a minimum of 3 Years experience in the Mortgage business.]]></description>
+<dc:date>2013-02-21T17:21:16-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/lgi/rej/3634279267.html</dc:source>
+<dc:title><![CDATA[Seeking Experienced Mortgage Processor (Lake Success)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T17:21:16-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3634249280.html">
+<title><![CDATA[-&gt; KEEP 100% COMMISSION - NO DEAL FEES, TRANSACTION FEES, HIDDEN FEES (Midtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3634249280.html</link>
+<description><![CDATA[CONTACT US AT: 212-300-6412 
+WWW.100PERCENTCOMMISSIONFRIM.COM 
+CONTACT US AT: 212-300-6412 
+WWW.100PERCENTCOMMISSIONFRIM.COM 
+100 percent commission, Oxford Property Group, 100 percent 
+commission firm, 100 percent commission new york city, 100 perce [...]]]></description>
+<dc:date>2013-02-21T17:08:36-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3634249280.html</dc:source>
+<dc:title><![CDATA[-&gt; KEEP 100% COMMISSION - NO DEAL FEES, TRANSACTION FEES, HIDDEN FEES (Midtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T17:08:36-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3634200683.html">
+<title><![CDATA[__&#9733; ___New_Real_Estate_Rental_Agents_Wanted___&#9733;___TOP_PRODUCING_FIRM (Midtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3634200683.html</link>
+<description><![CDATA[Information & Interview Contact - 917.476.7071 | 646.355.8226 
+Information & Interview Contact - 917.476.7071 | 646.355.8226 
+About Anchor Associates : NYC Real Estate Broker and Realtor, featuring apartment rentals and sales in Manhattan. We special [...]]]></description>
+<dc:date>2013-02-21T16:48:16-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3634200683.html</dc:source>
+<dc:title><![CDATA[__&#9733; ___New_Real_Estate_Rental_Agents_Wanted___&#9733;___TOP_PRODUCING_FIRM (Midtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T16:48:16-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/lgi/rej/3634008637.html">
+<title><![CDATA[Loan Processor Needed-Start Immediately (Valley Stream)]]></title>
+<link>http://newyork.craigslist.org/lgi/rej/3634008637.html</link>
+<description><![CDATA[Immediate Full Time Position Available!!! 
+Loan Processor: 
+Basic Knowledge of Loan Processing. The Ability to open, as well close an account. 
+Computer and Internet Literate and work comfortably with Microsoft Office Suite. 
+Please Call 516-837-9947 [...]]]></description>
+<dc:date>2013-02-21T15:32:20-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/lgi/rej/3634008637.html</dc:source>
+<dc:title><![CDATA[Loan Processor Needed-Start Immediately (Valley Stream)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T15:32:20-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633998389.html">
+<title><![CDATA[CLIENT RELATIONSHIP MANAGER (MIDTOWN)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633998389.html</link>
+<description><![CDATA[Top Broker in an elite Manhattan Real Estate firm seeks well spoken professional who can multi-task and manage our exclusives from inception through closing. STRONG COMPUTER SKILLS AND WRITING SKILLS A MUST. Be part of a successful team of luxury res [...]]]></description>
+<dc:date>2013-02-21T15:28:23-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633998389.html</dc:source>
+<dc:title><![CDATA[CLIENT RELATIONSHIP MANAGER (MIDTOWN)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T15:28:23-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633626112.html">
+<title><![CDATA[We are committed to your SUCCESS..Let Us Take You To The Point.(VIDEO) (Union Square)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633626112.html</link>
+<description><![CDATA[http://www.youtube.com/watch?v=Tpmk81eI6bU&feature=youtu.be ]]></description>
+<dc:date>2013-02-21T13:09:40-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633626112.html</dc:source>
+<dc:title><![CDATA[We are committed to your SUCCESS..Let Us Take You To The Point.(VIDEO) (Union Square)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T13:09:40-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633611888.html">
+<title><![CDATA[Listings Agent Needed for Mid Size Real Estate Firm - Heavy Data Entry (Downtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633611888.html</link>
+<description><![CDATA[Mid-size real estate brokerage, is looking to fill the position of Listings Agent. This individual will be responsible for maintaining a listings database of available apartments in a timely and accurate fashion. The Listings Agent will also serve as [...]]]></description>
+<dc:date>2013-02-21T13:04:23-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633611888.html</dc:source>
+<dc:title><![CDATA[Listings Agent Needed for Mid Size Real Estate Firm - Heavy Data Entry (Downtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T13:04:23-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brx/rej/3633588744.html">
+<title><![CDATA[WE'RE HIRING MOTIVATED REALTORS AT KELLER WILLIAMS - NEW AND LICENSED (Multiple Locations)]]></title>
+<link>http://newyork.craigslist.org/brx/rej/3633588744.html</link>
+<description><![CDATA[Real Estate Careers in New York, Bronx, Brooklyn, & Scarsdale]]></description>
+<dc:date>2013-02-21T12:55:43-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brx/rej/3633588744.html</dc:source>
+<dc:title><![CDATA[WE'RE HIRING MOTIVATED REALTORS AT KELLER WILLIAMS - NEW AND LICENSED (Multiple Locations)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T12:55:43-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633553055.html">
+<title><![CDATA[Interviewing Agents... (West Village)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633553055.html</link>
+<description><![CDATA[We are looking for people who want to make real estate their career. Come and work at a positive and well positioned boutique firm. Deals are happening now, how many did you do in January? Our exclusives create more leads than you can handle... 
+Excl [...]]]></description>
+<dc:date>2013-02-21T12:42:39-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633553055.html</dc:source>
+<dc:title><![CDATA[Interviewing Agents... (West Village)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T12:42:39-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633498019.html">
+<title><![CDATA[* 15 Mins of Your Time* We'll Show You How to Make 15% or More in RE* (Midtown/Flatiron)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633498019.html</link>
+<description><![CDATA[]]></description>
+<dc:date>2013-02-21T12:22:19-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633498019.html</dc:source>
+<dc:title><![CDATA[* 15 Mins of Your Time* We'll Show You How to Make 15% or More in RE* (Midtown/Flatiron)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T12:22:19-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633414928.html">
+<title><![CDATA[Keep 100% Commission, FREE Training/OH Every Friday 10AM. FT or PT OK (Manhattan)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633414928.html</link>
+<description><![CDATA[Come to our Open Houses or Call us for a personal interview. ]]></description>
+<dc:date>2013-02-21T11:51:33-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633414928.html</dc:source>
+<dc:title><![CDATA[Keep 100% Commission, FREE Training/OH Every Friday 10AM. FT or PT OK (Manhattan)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T11:51:33-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633296458.html">
+<title><![CDATA[&#9644;&#9658;AGENT POSITION AVAILABLE. EXPERIENCED OR NEWLY LICENSED WELCOME (MANHATTAN)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633296458.html</link>
+<description><![CDATA[SOMMERLYN ASSOCIATES  IS A PROGRESSIVE FIRM WITH A FRESH APPROACH TO TODAY'S REAL ESTATE MARKET.  
+We are looking for Experienced, Newly Licensed Or Soon to be Licensed Agents that are looking to succeed in this exciting, fast paced industry. 
+  We a [...]]]></description>
+<dc:date>2013-02-21T11:05:35-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633296458.html</dc:source>
+<dc:title><![CDATA[&#9644;&#9658;AGENT POSITION AVAILABLE. EXPERIENCED OR NEWLY LICENSED WELCOME (MANHATTAN)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T11:05:35-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633257826.html">
+<title><![CDATA[Real Estate Coordinator (Midtown East)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633257826.html</link>
+<description><![CDATA[Residential Real Estate Firm located in midtown seeks a Closing Coordinator for an immediate long term temp position. This position has a possibility of becoming permanent. 
+All candidates must have at least 1-2 years experience working as an Adminis [...]]]></description>
+<dc:date>2013-02-21T10:49:37-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633257826.html</dc:source>
+<dc:title><![CDATA[Real Estate Coordinator (Midtown East)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T10:49:37-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633255241.html">
+<title><![CDATA[Change companies before the busy season! Experienced Agents wanted! (Midtown West)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633255241.html</link>
+<description><![CDATA[Why go into the busy season with only OPEN listings to rent.....we have 4500 exclusive apartments that we own and manage, along with an entire listings dept and keys!! Think it's too good to be true?? Well here's a list of some of our owned and manag [...]]]></description>
+<dc:date>2013-02-21T10:48:34-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633255241.html</dc:source>
+<dc:title><![CDATA[Change companies before the busy season! Experienced Agents wanted! (Midtown West)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T10:48:34-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633246492.html">
+<title><![CDATA[&#9832;&#9832;&#9832; CHELSEA  is  H_O_T !  Hungry agents wanted... (Chelsea)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633246492.html</link>
+<description><![CDATA[To learn more about Anchor Chelsea click on the image above and meet some of our agents or even better; come in and meet us in person! Call Liat at 212.452.6111 or email HiringChelsea@anchornyc.com we look forward to meeting you.]]></description>
+<dc:date>2013-02-21T10:45:00-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633246492.html</dc:source>
+<dc:title><![CDATA[&#9832;&#9832;&#9832; CHELSEA  is  H_O_T !  Hungry agents wanted... (Chelsea)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T10:45:00-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/rej/3633220005.html">
+<title><![CDATA[PROPERTY MANAGER  UP TO 60K]]></title>
+<link>http://newyork.craigslist.org/brk/rej/3633220005.html</link>
+<description><![CDATA[PROPERTY MANAGER UP TO 60K 
+Supervise staff, Bldg repairs for rental properties in Brooklyn & Bronx. BA/BS & NYC Building/Housing codes. New Start, 50 Greene Avenue, Bklyn, NY 11238 ]]></description>
+<dc:date>2013-02-21T10:33:37-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/rej/3633220005.html</dc:source>
+<dc:title><![CDATA[PROPERTY MANAGER  UP TO 60K]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T10:33:37-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633210375.html">
+<title><![CDATA[ERGPA is Now Hiring Investment Sales and Commercial Mortgage Brokers (Flatiron)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633210375.html</link>
+<description><![CDATA[About: 
+ERG Property Advisors (www.ergpa.com) is a full-service commercial real estate marketing company based in New York City. Its core business activities are investment sales, finance and direct capital services. While focused on the broader New  [...]]]></description>
+<dc:date>2013-02-21T10:29:26-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633210375.html</dc:source>
+<dc:title><![CDATA[ERGPA is Now Hiring Investment Sales and Commercial Mortgage Brokers (Flatiron)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T10:29:26-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633198653.html">
+<title><![CDATA[now hiring -  six figures income]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633198653.html</link>
+<description><![CDATA[you have the potential to make $150k ++ with the right training and after a year experience. 
+a large, successful firm is looking to hire a full time real estate agent. 
+you must be highly motivated, self driven individual and willing to work hard to [...]]]></description>
+<dc:date>2013-02-21T10:24:12-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633198653.html</dc:source>
+<dc:title><![CDATA[now hiring -  six figures income]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T10:24:12-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633195215.html">
+<title><![CDATA[***$1000/week--Your 1st week (Murray Hill)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633195215.html</link>
+<description><![CDATA[Tired of the 9-5 gimmick ? Tired of not making ends meet ? Living paycheck to paycheck ? 
+If your tired of being bossed around - Told what to do - And are capable of so much more ! 
+WE WANT TO MEET YOU ! 
+Here is your call to start a new career , We' [...]]]></description>
+<dc:date>2013-02-21T10:22:41-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633195215.html</dc:source>
+<dc:title><![CDATA[***$1000/week--Your 1st week (Murray Hill)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T10:22:41-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/rej/3633194672.html">
+<title><![CDATA[LARGEST REAL ESTATE  COMPANY IN BROOKLYN NO EXPERIENCE NECCESSARY (BROOKLYN)]]></title>
+<link>http://newyork.craigslist.org/brk/rej/3633194672.html</link>
+<description><![CDATA[PARK SLOPE SOUTHDo you possess the following traits? 
+Outgoing and energetic 
+Like to meet new people everyday 
+Hate the thought of a 9-5 routine for you whole life 
+Then maybe a change in career is what you need right now 
+Why join Rapid Realty? 
+We [...]]]></description>
+<dc:date>2013-02-21T10:22:26-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/rej/3633194672.html</dc:source>
+<dc:title><![CDATA[LARGEST REAL ESTATE  COMPANY IN BROOKLYN NO EXPERIENCE NECCESSARY (BROOKLYN)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T10:22:26-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633169781.html">
+<title><![CDATA[Manhattan's most successful owner/manager is hiring! Can earn $100k+ (SoHo)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633169781.html</link>
+<description><![CDATA[Manhattan's most successful real estate apartment owner / manager is now hiring! 
+Potential to earn over $100k+ quickly 
+We have 1000s of apartment listings! 
+You must be licensed to be an agent. 
+We will work with licensed agents or train and sponso [...]]]></description>
+<dc:date>2013-02-21T10:10:56-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633169781.html</dc:source>
+<dc:title><![CDATA[Manhattan's most successful owner/manager is hiring! Can earn $100k+ (SoHo)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T10:10:56-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633165181.html">
+<title><![CDATA[Licensed Salesperson Needed - Busy Downtown Office - Near all Subways (Downtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633165181.html</link>
+<description><![CDATA[A valid NYS Real Estate Salesperson Licence is required.
+We may act as your sponsoring broker for your licence once you pass the required school and state exams.]]></description>
+<dc:date>2013-02-21T10:08:45-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633165181.html</dc:source>
+<dc:title><![CDATA[Licensed Salesperson Needed - Busy Downtown Office - Near all Subways (Downtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T10:08:45-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633102653.html">
+<title><![CDATA[$1500-$3000 A WEEK PERFECT FOR REAL ESTATE AGENTS-FLEXIBLE HOURS]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633102653.html</link>
+<description><![CDATA[WE ARE LIFE ALERT. IF YOU HAVE FLEXIBLE TIME DURING THE DAY, COME EARN MONEY WITH US 
+ALL LEADS ARE FROM INCOMING CALLS. THE WHOLE SALES TRANSACTION IS DONE OVER THE PHONE. 
+$ 3,000 WEEKLY - START IMMEDIATELY -- HIGH COMMISSION SALES 
+If you have gre [...]]]></description>
+<dc:date>2013-02-21T09:37:04-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633102653.html</dc:source>
+<dc:title><![CDATA[$1500-$3000 A WEEK PERFECT FOR REAL ESTATE AGENTS-FLEXIBLE HOURS]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T09:37:04-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633089857.html">
+<title><![CDATA[LEVEL GROUP - NOW HIRING AMBITIOUS AGENTS ]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633089857.html</link>
+<description><![CDATA[Level Group is currently seeking both NEW and EXPERIENCED agents who are driven, entrepreneurial and desire to succeed! 
+You will join over 150 other Level Group agents who have DOUBLED THEIR INCOME by switching to our company.
+We offer a unique and  [...]]]></description>
+<dc:date>2013-02-21T09:30:33-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633089857.html</dc:source>
+<dc:title><![CDATA[LEVEL GROUP - NOW HIRING AMBITIOUS AGENTS ]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T09:30:33-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brx/rej/3633078571.html">
+<title><![CDATA[Property Manager  (Riverdale, Bronx)]]></title>
+<link>http://newyork.craigslist.org/brx/rej/3633078571.html</link>
+<description><![CDATA[Real Estate company in Riverdale section of the Bronx seeks an in-office property manager for NYC residential properties. Knowledge of DHCR rent stabilazation,excellent computer, organizational skills and ability to work with MRI software. Salary req [...]]]></description>
+<dc:date>2013-02-21T09:24:30-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brx/rej/3633078571.html</dc:source>
+<dc:title><![CDATA[Property Manager  (Riverdale, Bronx)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T09:24:30-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brx/rej/3633076244.html">
+<title><![CDATA[Executive Administrative Assistant (Bronx, Riverdale)]]></title>
+<link>http://newyork.craigslist.org/brx/rej/3633076244.html</link>
+<description><![CDATA[Executive Administrative Assistant for property management director. Real Estate company in Riverdale seeks an experienced assistant. Excellent computer and organizational skills are a must. Salary requirements must be included in the cover letter. ]]></description>
+<dc:date>2013-02-21T09:23:14-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brx/rej/3633076244.html</dc:source>
+<dc:title><![CDATA[Executive Administrative Assistant (Bronx, Riverdale)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T09:23:14-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/rej/3633033776.html">
+<title><![CDATA[Learn, Earn, & Grow!!! Ideal Properties Group. (Downtown Brooklyn)]]></title>
+<link>http://newyork.craigslist.org/brk/rej/3633033776.html</link>
+<description><![CDATA[idealpropertiesgroup.com 
+Leave the stress of low-paying dead-end jobs behind! We will teach you the intricacies of becoming financially successful by investing in your talent. Simply bring your dedication and willingness to become successful, and be [...]]]></description>
+<dc:date>2013-02-21T08:58:07-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/rej/3633033776.html</dc:source>
+<dc:title><![CDATA[Learn, Earn, & Grow!!! Ideal Properties Group. (Downtown Brooklyn)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T08:58:07-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633030878.html">
+<title><![CDATA[Boutique Brokerage Firm in Midtown- Training/Support! (Midtown West)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633030878.html</link>
+<description><![CDATA[Â  CLICK HERE TO FIND OUT MORE ABOUT PLATINUM PROPERTIES EMPLOYMENT OPPORTUNITIES Who we are: A company that in 7 years has emerged as the leading luxury brokerage in Lower Manhattan and has expanded to Midtown Manhattan. A company that prides itself [...]]]></description>
+<dc:date>2013-02-21T08:56:11-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633030878.html</dc:source>
+<dc:title><![CDATA[Boutique Brokerage Firm in Midtown- Training/Support! (Midtown West)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T08:56:11-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3633026184.html">
+<title><![CDATA[Join NYC's leading independent firm today and be ready for the spring! (Flatiron)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3633026184.html</link>
+<description><![CDATA[]]></description>
+<dc:date>2013-02-21T08:53:02-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3633026184.html</dc:source>
+<dc:title><![CDATA[Join NYC's leading independent firm today and be ready for the spring! (Flatiron)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T08:53:02-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brx/rej/3632985860.html">
+<title><![CDATA[Real Estate Agent Wanted (Bronx,Queens,NYC,Brooklyn,Westchester,SI)]]></title>
+<link>http://newyork.craigslist.org/brx/rej/3632985860.html</link>
+<description><![CDATA[The Fastest Growing Real Estate Firm in North America is now hiring new and experienced agents. 
+EXIT REALTY has offices in: 
+-The Bronx 
+-Queens 
+-Brooklyn 
+-Manhattan 
+-Long Island 
+-Staten Island 
+-Upstate 
+We're now hiring full and part time asso [...]]]></description>
+<dc:date>2013-02-21T08:24:49-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brx/rej/3632985860.html</dc:source>
+<dc:title><![CDATA[Real Estate Agent Wanted (Bronx,Queens,NYC,Brooklyn,Westchester,SI)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-21T08:24:49-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/rej/3632614148.html">
+<title><![CDATA[$$$$$$$$$$$$$$$$$$$$$$$ (Fort Hamilton Brooklyn)]]></title>
+<link>http://newyork.craigslist.org/brk/rej/3632614148.html</link>
+<description><![CDATA[Rapid realty fort Hamilton needs liscensed and unliscensed real estate sales agents!!!!! 
+Largest rental firm on the northeast with over 60 locations ,we offer exclusive listings and database. 
+Non stop training and support and success to all that fo [...]]]></description>
+<dc:date>2013-02-20T23:48:28-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/rej/3632614148.html</dc:source>
+<dc:title><![CDATA[$$$$$$$$$$$$$$$$$$$$$$$ (Fort Hamilton Brooklyn)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T23:48:28-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3632591893.html">
+<title><![CDATA[Real Estate start up seeks Chinese/Mandarin speaker (Midtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3632591893.html</link>
+<description><![CDATA[Commercial real estate start up company is looking for a dynamic and motivated person to assist in real estate canvassing. Job involves strong phone skills, an entrepreneurial attitude, solid work ethic and ability to speak Chinese and/or Mandarin is [...]]]></description>
+<dc:date>2013-02-20T23:30:41-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3632591893.html</dc:source>
+<dc:title><![CDATA[Real Estate start up seeks Chinese/Mandarin speaker (Midtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T23:30:41-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/rej/3632335118.html">
+<title><![CDATA[Seeking New Agents Ready to go to the Next Level**Min 1 Yr Exp**100k (Cobble Hill Brooklyn)]]></title>
+<link>http://newyork.craigslist.org/brk/rej/3632335118.html</link>
+<description><![CDATA[235 Court Street Brooklyn NY 11201 
+Our Dynamic energy filled real estate office is looking for the next heavy hitter looking to excel in his/her real estate career. North Star Real Estate Group has been in the community for over 20 Years on Court St [...]]]></description>
+<dc:date>2013-02-20T20:48:37-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/rej/3632335118.html</dc:source>
+<dc:title><![CDATA[Seeking New Agents Ready to go to the Next Level**Min 1 Yr Exp**100k (Cobble Hill Brooklyn)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T20:48:37-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3632162678.html">
+<title><![CDATA[MORE LEADS=MORE DEALS: Join a Tested Company & Start Producing NOW! (Manhattan,Brooklyn,Queens,Bronx)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3632162678.html</link>
+<description><![CDATA[OPENINGS FOR  SEASONED OR NEWLY 
+LICENSED SALES ASSOCIATES WITH EXCEPTIONAL CUSTOMER SERVICE SKILLS: 
+Does your current company provide you on average with a minimum of 10 fresh 
+customer leads on a daily basis? If not, you should talk to us. Our sal [...]]]></description>
+<dc:date>2013-02-20T19:21:34-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3632162678.html</dc:source>
+<dc:title><![CDATA[MORE LEADS=MORE DEALS: Join a Tested Company & Start Producing NOW! (Manhattan,Brooklyn,Queens,Bronx)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T19:21:34-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3631913113.html">
+<title><![CDATA[Compstak Internship Opportunity (Greenwich Village)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3631913113.html</link>
+<description><![CDATA[Compstak is looking for a motivated intern for the spring to help us develop our product, launch in new markets, increase our user base, and creatively derive insights in our data. 
+About Compstak: 
+CompStak is the only crowd sourced database of comm [...]]]></description>
+<dc:date>2013-02-20T17:30:00-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3631913113.html</dc:source>
+<dc:title><![CDATA[Compstak Internship Opportunity (Greenwich Village)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T17:30:00-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3631884462.html">
+<title><![CDATA[WANT LEADS? Real Estate Agents WANTED!!! (Flatiron)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3631884462.html</link>
+<description><![CDATA[PREFER SOME EXPERIENCE HOWEVER, NOT NECESSARY
+A POSITIVE ATTITUDE IS A MUST!!! SELF STARTER, AND MOTIVATED!!!!!!
+Contact Lydia Galloza - lydia@weichertmazzeo.com / 212-995-0006 or
+Jim@weichertmazzeo.com / 212-995-0006]]></description>
+<dc:date>2013-02-20T17:18:19-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3631884462.html</dc:source>
+<dc:title><![CDATA[WANT LEADS? Real Estate Agents WANTED!!! (Flatiron)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T17:18:19-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3631884179.html">
+<title><![CDATA[Boutique Wall St. Firm Looking for Driven Agents (Downtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3631884179.html</link>
+<description><![CDATA[Who buys and rents the best real estate in Manhattan? Did you answer "The people who work on Wall Street"? 
+Our flagship office is located in the heart of the Financial District at 30 Wall Street, directly across from the New York Stock Exchange. Per [...]]]></description>
+<dc:date>2013-02-20T17:18:11-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3631884179.html</dc:source>
+<dc:title><![CDATA[Boutique Wall St. Firm Looking for Driven Agents (Downtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T17:18:11-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/wch/rej/3631742979.html">
+<title><![CDATA[Assistant Property Manager (Larchmont, NY)]]></title>
+<link>http://newyork.craigslist.org/wch/rej/3631742979.html</link>
+<description><![CDATA[Job Description: 
+QUADRELLE REALTY SERVICES is a property management firm located in Larchmont, NY. We manage industrial and commercial properties located throughout the U.S., and have been doing so for over 30 years. We are seeking an individual wit [...]]]></description>
+<dc:date>2013-02-20T16:22:31-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/wch/rej/3631742979.html</dc:source>
+<dc:title><![CDATA[Assistant Property Manager (Larchmont, NY)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T16:22:31-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/que/rej/3631737410.html">
+<title><![CDATA[PROPERTY FINDER (QUEENS,N.Y.)]]></title>
+<link>http://newyork.craigslist.org/que/rej/3631737410.html</link>
+<description><![CDATA[BIG QUEENS REAL ESTATE INVESTMENT COMPANY LOOKING FOR DEAL FINDER, MUST HAVE EXPERIENCE IN REAL ESTATE, WILL PAY SALARY + COMMISSION, PLEASE SEND RESUME TO: DANIEL7100@GMAIL.COM]]></description>
+<dc:date>2013-02-20T16:20:20-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/que/rej/3631737410.html</dc:source>
+<dc:title><![CDATA[PROPERTY FINDER (QUEENS,N.Y.)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T16:20:20-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3631732712.html">
+<title><![CDATA[Operations manager for Property Management Company  ]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3631732712.html</link>
+<description><![CDATA[Real Estate Management Company is seeking an office/operations manager to run day to day operations/functions offfice staff and managers. 
+Responsibilties include ensuring the effecient flow of operations in all departments including 
+Tenant services [...]]]></description>
+<dc:date>2013-02-20T16:18:29-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3631732712.html</dc:source>
+<dc:title><![CDATA[Operations manager for Property Management Company  ]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T16:18:29-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3631601666.html">
+<title><![CDATA[__&#9670;____Rental_Agents_Wanted____&#9670; ____PERSONAL_TRAINING__&__MENTORING (Manhattan)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3631601666.html</link>
+<description><![CDATA[Information & Interview Contact - 917.476.7071 | 646.355.8226 
+Information & Interview Contact - 917.476.7071 | 646.355.8226 
+About Anchor Associates : NYC Real Estate Broker and Realtor, featuring apartment rentals and sales in Manhattan. We special [...]]]></description>
+<dc:date>2013-02-20T15:28:16-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3631601666.html</dc:source>
+<dc:title><![CDATA[__&#9670;____Rental_Agents_Wanted____&#9670; ____PERSONAL_TRAINING__&__MENTORING (Manhattan)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T15:28:16-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3631535929.html">
+<title><![CDATA[Real Estate Firm seeks Closing Coordinator (Midtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3631535929.html</link>
+<description><![CDATA[Residential Real Estate Firm located in midtown seeks a Closing Coordinator for an immediate long term temp position. This position has a possibility of becoming permanent. 
+All candidates must have at least 1-2 years experience working as an Adminis [...]]]></description>
+<dc:date>2013-02-20T15:03:43-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3631535929.html</dc:source>
+<dc:title><![CDATA[Real Estate Firm seeks Closing Coordinator (Midtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T15:03:43-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3631529208.html">
+<title><![CDATA[Real Estate Firm seeks Executive Assistant to Controller (Midtown)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3631529208.html</link>
+<description><![CDATA[Real Estate Firm located in midtown seeks an Executive Assistant to support the Controller. This is an immediate temp to perm position. 
+Responsibilities include: 
+-Provide administrative support to the Controller and his team. 
+-Answering phones, ca [...]]]></description>
+<dc:date>2013-02-20T15:01:10-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3631529208.html</dc:source>
+<dc:title><![CDATA[Real Estate Firm seeks Executive Assistant to Controller (Midtown)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T15:01:10-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/lgi/rej/3631475540.html">
+<title><![CDATA[SHORT SALE CONSULTANT & MANAGER POSITIONS (MELVILLE)]]></title>
+<link>http://newyork.craigslist.org/lgi/rej/3631475540.html</link>
+<description><![CDATA[SHORT SALE CONSULTANTS & MANAGERS 
+Licensed Real Estate Professionals 
+1. SHORT SALE CONSULTANT POSITION 
+• Receive a weekly draw of $750.00 
+• Take constant inbound calls everyday 
+• Instantly have a team of licensed real estate agents working under [...]]]></description>
+<dc:date>2013-02-20T14:41:28-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/lgi/rej/3631475540.html</dc:source>
+<dc:title><![CDATA[SHORT SALE CONSULTANT & MANAGER POSITIONS (MELVILLE)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T14:41:28-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/rej/3631424794.html">
+<title><![CDATA[NOW HIRING - BROOKLYN AGENTS - HIGH INCOME OFFICE (DOWNTOWN BROOKLYN)]]></title>
+<link>http://newyork.craigslist.org/brk/rej/3631424794.html</link>
+<description><![CDATA[]]></description>
+<dc:date>2013-02-20T14:23:13-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/rej/3631424794.html</dc:source>
+<dc:title><![CDATA[NOW HIRING - BROOKLYN AGENTS - HIGH INCOME OFFICE (DOWNTOWN BROOKLYN)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T14:23:13-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/mnh/rej/3631400704.html">
+<title><![CDATA[NO License? NO Problem! Break Into the Business! Now is the Time!  (Lower East Side)]]></title>
+<link>http://newyork.craigslist.org/mnh/rej/3631400704.html</link>
+<description><![CDATA[Learn Real Estate Now - for FREE! Now hiring!! 
+We are looking for highly motivated, aggressive, individuals to train for our successful Lower East Side office! 
+No experience is necessary, we will give you all the tools you need to succeed! Benefits [...]]]></description>
+<dc:date>2013-02-20T14:14:41-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/mnh/rej/3631400704.html</dc:source>
+<dc:title><![CDATA[NO License? NO Problem! Break Into the Business! Now is the Time!  (Lower East Side)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T14:14:41-05:00</dcterms:issued>
+</item>
+<item rdf:about="http://newyork.craigslist.org/brk/rej/3631343622.html">
+<title><![CDATA[Rental Brokerage Needs 2 High Quality Agents (Park Slope &amp; Downtown Brooklyn)]]></title>
+<link>http://newyork.craigslist.org/brk/rej/3631343622.html</link>
+<description><![CDATA[We're expanding our team and are currently looking for 2 high quality rental agents. While we're looking hire an agent quickly, we're not looking for just a live body to take up space at a desk. We're looking for someone who is self starting, hard wo [...]]]></description>
+<dc:date>2013-02-20T13:54:23-05:00</dc:date>
+<dc:language>en-us</dc:language>
+<dc:rights>Copyright &#x26;copy; 2013 craigslist, inc.</dc:rights>
+<dc:source>http://newyork.craigslist.org/brk/rej/3631343622.html</dc:source>
+<dc:title><![CDATA[Rental Brokerage Needs 2 High Quality Agents (Park Slope &amp; Downtown Brooklyn)]]></dc:title>
+<dc:type>text</dc:type>
+<dcterms:issued>2013-02-20T13:54:23-05:00</dcterms:issued>
+</item>
+</rdf:RDF>

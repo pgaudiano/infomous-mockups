@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>StockCharts test</title>
+  <link>http://www.infomous.com</link>
+  <description>RSS feed of StockChart Tickers
+  </description>
+<item>
+	<title>$COMPQ: Nasdaq Composite Index - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$COMPQ</link>
+	<description>$COMPQ: Nasdaq Composite Index - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$COMPQ: Nasdaq Composite Index - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$COMPQ</link>
+	<description>$COMPQ: Nasdaq Composite Index - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$COMPQ: Nasdaq Composite Index - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$COMPQ</link>
+	<description>$COMPQ: Nasdaq Composite Index - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$COMPQ: Nasdaq Composite Index - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$COMPQ</link>
+	<description>$COMPQ: Nasdaq Composite Index - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$COMPQ: Nasdaq Composite Index - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$COMPQ</link>
+	<description>$COMPQ: Nasdaq Composite Index - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$COMPQ: Nasdaq Composite Index - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$COMPQ</link>
+	<description>$COMPQ: Nasdaq Composite Index - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$COMPQ: Nasdaq Composite Index - Site Search</title>
+	<link>http://stockcharts.com/search/?$COMPQ&section=sm</link>
+	<description>$COMPQ: Nasdaq Composite Index - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$GOLD: Gold - Continuous Contract (EOD) - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$GOLD</link>
+	<description>$GOLD: Gold - Continuous Contract (EOD) - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$GOLD: Gold - Continuous Contract (EOD) - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$GOLD</link>
+	<description>$GOLD: Gold - Continuous Contract (EOD) - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$GOLD: Gold - Continuous Contract (EOD) - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$GOLD</link>
+	<description>$GOLD: Gold - Continuous Contract (EOD) - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$GOLD: Gold - Continuous Contract (EOD) - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$GOLD</link>
+	<description>$GOLD: Gold - Continuous Contract (EOD) - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$GOLD: Gold - Continuous Contract (EOD) - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$GOLD</link>
+	<description>$GOLD: Gold - Continuous Contract (EOD) - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$GOLD: Gold - Continuous Contract (EOD) - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$GOLD</link>
+	<description>$GOLD: Gold - Continuous Contract (EOD) - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$GOLD: Gold - Continuous Contract (EOD) - Site Search</title>
+	<link>http://stockcharts.com/search/?$GOLD&section=sm</link>
+	<description>$GOLD: Gold - Continuous Contract (EOD) - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$INDU: Dow Jones Industrials - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$INDU</link>
+	<description>$INDU: Dow Jones Industrials - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$INDU: Dow Jones Industrials - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$INDU</link>
+	<description>$INDU: Dow Jones Industrials - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$INDU: Dow Jones Industrials - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$INDU</link>
+	<description>$INDU: Dow Jones Industrials - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$INDU: Dow Jones Industrials - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$INDU</link>
+	<description>$INDU: Dow Jones Industrials - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$INDU: Dow Jones Industrials - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$INDU</link>
+	<description>$INDU: Dow Jones Industrials - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$INDU: Dow Jones Industrials - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$INDU</link>
+	<description>$INDU: Dow Jones Industrials - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$INDU: Dow Jones Industrials - Site Search</title>
+	<link>http://stockcharts.com/search/?$INDU&section=sm</link>
+	<description>$INDU: Dow Jones Industrials - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NDX: Nasdaq 100 Index - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$NDX</link>
+	<description>$NDX: Nasdaq 100 Index - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NDX: Nasdaq 100 Index - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$NDX</link>
+	<description>$NDX: Nasdaq 100 Index - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NDX: Nasdaq 100 Index - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$NDX</link>
+	<description>$NDX: Nasdaq 100 Index - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NDX: Nasdaq 100 Index - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$NDX</link>
+	<description>$NDX: Nasdaq 100 Index - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NDX: Nasdaq 100 Index - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$NDX</link>
+	<description>$NDX: Nasdaq 100 Index - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NDX: Nasdaq 100 Index - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$NDX</link>
+	<description>$NDX: Nasdaq 100 Index - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NDX: Nasdaq 100 Index - Site Search</title>
+	<link>http://stockcharts.com/search/?$NDX&section=sm</link>
+	<description>$NDX: Nasdaq 100 Index - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NYA: NYSE Composite - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$NYA</link>
+	<description>$NYA: NYSE Composite - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NYA: NYSE Composite - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$NYA</link>
+	<description>$NYA: NYSE Composite - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NYA: NYSE Composite - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$NYA</link>
+	<description>$NYA: NYSE Composite - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NYA: NYSE Composite - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$NYA</link>
+	<description>$NYA: NYSE Composite - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NYA: NYSE Composite - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$NYA</link>
+	<description>$NYA: NYSE Composite - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NYA: NYSE Composite - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$NYA</link>
+	<description>$NYA: NYSE Composite - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$NYA: NYSE Composite - Site Search</title>
+	<link>http://stockcharts.com/search/?$NYA&section=sm</link>
+	<description>$NYA: NYSE Composite - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>QQQ: PowerShares QQQ Trust - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=QQQ</link>
+	<description>QQQ: PowerShares QQQ Trust - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>QQQ: PowerShares QQQ Trust - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=QQQ</link>
+	<description>QQQ: PowerShares QQQ Trust - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>QQQ: PowerShares QQQ Trust - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?QQQ</link>
+	<description>QQQ: PowerShares QQQ Trust - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>QQQ: PowerShares QQQ Trust - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?QQQ</link>
+	<description>QQQ: PowerShares QQQ Trust - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>QQQ: PowerShares QQQ Trust - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?QQQ</link>
+	<description>QQQ: PowerShares QQQ Trust - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>QQQ: PowerShares QQQ Trust - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?QQQ</link>
+	<description>QQQ: PowerShares QQQ Trust - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>QQQ: PowerShares QQQ Trust - Site Search</title>
+	<link>http://stockcharts.com/search/?QQQ&section=sm</link>
+	<description>QQQ: PowerShares QQQ Trust - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$RUT: Russell 2000 Small-Cap Index - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$RUT</link>
+	<description>$RUT: Russell 2000 Small-Cap Index - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$RUT: Russell 2000 Small-Cap Index - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$RUT</link>
+	<description>$RUT: Russell 2000 Small-Cap Index - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$RUT: Russell 2000 Small-Cap Index - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$RUT</link>
+	<description>$RUT: Russell 2000 Small-Cap Index - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$RUT: Russell 2000 Small-Cap Index - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$RUT</link>
+	<description>$RUT: Russell 2000 Small-Cap Index - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$RUT: Russell 2000 Small-Cap Index - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$RUT</link>
+	<description>$RUT: Russell 2000 Small-Cap Index - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$RUT: Russell 2000 Small-Cap Index - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$RUT</link>
+	<description>$RUT: Russell 2000 Small-Cap Index - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$RUT: Russell 2000 Small-Cap Index - Site Search</title>
+	<link>http://stockcharts.com/search/?$RUT&section=sm</link>
+	<description>$RUT: Russell 2000 Small-Cap Index - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$SPX: S&amp;P 500 Large-Cap Index - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$SPX</link>
+	<description>$SPX: S&amp;P 500 Large-Cap Index - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$SPX: S&amp;P 500 Large-Cap Index - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$SPX</link>
+	<description>$SPX: S&amp;P 500 Large-Cap Index - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$SPX: S&amp;P 500 Large-Cap Index - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$SPX</link>
+	<description>$SPX: S&amp;P 500 Large-Cap Index - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$SPX: S&amp;P 500 Large-Cap Index - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$SPX</link>
+	<description>$SPX: S&amp;P 500 Large-Cap Index - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$SPX: S&amp;P 500 Large-Cap Index - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$SPX</link>
+	<description>$SPX: S&amp;P 500 Large-Cap Index - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$SPX: S&amp;P 500 Large-Cap Index - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$SPX</link>
+	<description>$SPX: S&amp;P 500 Large-Cap Index - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$SPX: S&amp;P 500 Large-Cap Index - Site Search</title>
+	<link>http://stockcharts.com/search/?$SPX&section=sm</link>
+	<description>$SPX: S&amp;P 500 Large-Cap Index - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>SPY: S&amp;P 500 SPDR - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=SPY</link>
+	<description>SPY: S&amp;P 500 SPDR - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>SPY: S&amp;P 500 SPDR - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=SPY</link>
+	<description>SPY: S&amp;P 500 SPDR - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>SPY: S&amp;P 500 SPDR - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?SPY</link>
+	<description>SPY: S&amp;P 500 SPDR - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>SPY: S&amp;P 500 SPDR - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?SPY</link>
+	<description>SPY: S&amp;P 500 SPDR - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>SPY: S&amp;P 500 SPDR - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?SPY</link>
+	<description>SPY: S&amp;P 500 SPDR - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>SPY: S&amp;P 500 SPDR - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?SPY</link>
+	<description>SPY: S&amp;P 500 SPDR - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>SPY: S&amp;P 500 SPDR - Site Search</title>
+	<link>http://stockcharts.com/search/?SPY&section=sm</link>
+	<description>SPY: S&amp;P 500 SPDR - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TICK: NYSE - Tick - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$TICK</link>
+	<description>$TICK: NYSE - Tick - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TICK: NYSE - Tick - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$TICK</link>
+	<description>$TICK: NYSE - Tick - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TICK: NYSE - Tick - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$TICK</link>
+	<description>$TICK: NYSE - Tick - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TICK: NYSE - Tick - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$TICK</link>
+	<description>$TICK: NYSE - Tick - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TICK: NYSE - Tick - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$TICK</link>
+	<description>$TICK: NYSE - Tick - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TICK: NYSE - Tick - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$TICK</link>
+	<description>$TICK: NYSE - Tick - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TICK: NYSE - Tick - Site Search</title>
+	<link>http://stockcharts.com/search/?$TICK&section=sm</link>
+	<description>$TICK: NYSE - Tick - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TRIN: NYSE - Arms Index - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$TRIN</link>
+	<description>$TRIN: NYSE - Arms Index - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TRIN: NYSE - Arms Index - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$TRIN</link>
+	<description>$TRIN: NYSE - Arms Index - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TRIN: NYSE - Arms Index - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$TRIN</link>
+	<description>$TRIN: NYSE - Arms Index - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TRIN: NYSE - Arms Index - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$TRIN</link>
+	<description>$TRIN: NYSE - Arms Index - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TRIN: NYSE - Arms Index - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$TRIN</link>
+	<description>$TRIN: NYSE - Arms Index - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TRIN: NYSE - Arms Index - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$TRIN</link>
+	<description>$TRIN: NYSE - Arms Index - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TRIN: NYSE - Arms Index - Site Search</title>
+	<link>http://stockcharts.com/search/?$TRIN&section=sm</link>
+	<description>$TRIN: NYSE - Arms Index - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TSX: TSX Index - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$TSX</link>
+	<description>$TSX: TSX Index - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TSX: TSX Index - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$TSX</link>
+	<description>$TSX: TSX Index - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TSX: TSX Index - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$TSX</link>
+	<description>$TSX: TSX Index - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TSX: TSX Index - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$TSX</link>
+	<description>$TSX: TSX Index - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TSX: TSX Index - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$TSX</link>
+	<description>$TSX: TSX Index - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TSX: TSX Index - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$TSX</link>
+	<description>$TSX: TSX Index - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$TSX: TSX Index - Site Search</title>
+	<link>http://stockcharts.com/search/?$TSX&section=sm</link>
+	<description>$TSX: TSX Index - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$USD: US Dollar Index - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$USD</link>
+	<description>$USD: US Dollar Index - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$USD: US Dollar Index - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$USD</link>
+	<description>$USD: US Dollar Index - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$USD: US Dollar Index - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$USD</link>
+	<description>$USD: US Dollar Index - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$USD: US Dollar Index - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$USD</link>
+	<description>$USD: US Dollar Index - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$USD: US Dollar Index - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$USD</link>
+	<description>$USD: US Dollar Index - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$USD: US Dollar Index - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$USD</link>
+	<description>$USD: US Dollar Index - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$USD: US Dollar Index - Site Search</title>
+	<link>http://stockcharts.com/search/?$USD&section=sm</link>
+	<description>$USD: US Dollar Index - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$VIX: Volatility Index - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$VIX</link>
+	<description>$VIX: Volatility Index - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$VIX: Volatility Index - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$VIX</link>
+	<description>$VIX: Volatility Index - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$VIX: Volatility Index - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$VIX</link>
+	<description>$VIX: Volatility Index - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$VIX: Volatility Index - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$VIX</link>
+	<description>$VIX: Volatility Index - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$VIX: Volatility Index - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$VIX</link>
+	<description>$VIX: Volatility Index - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$VIX: Volatility Index - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$VIX</link>
+	<description>$VIX: Volatility Index - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$VIX: Volatility Index - Site Search</title>
+	<link>http://stockcharts.com/search/?$VIX&section=sm</link>
+	<description>$VIX: Volatility Index - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$WTIC: Crude Oil Index - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$WTIC</link>
+	<description>$WTIC: Crude Oil Index - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$WTIC: Crude Oil Index - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$WTIC</link>
+	<description>$WTIC: Crude Oil Index - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$WTIC: Crude Oil Index - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$WTIC</link>
+	<description>$WTIC: Crude Oil Index - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$WTIC: Crude Oil Index - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$WTIC</link>
+	<description>$WTIC: Crude Oil Index - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$WTIC: Crude Oil Index - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$WTIC</link>
+	<description>$WTIC: Crude Oil Index - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$WTIC: Crude Oil Index - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$WTIC</link>
+	<description>$WTIC: Crude Oil Index - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$WTIC: Crude Oil Index - Site Search</title>
+	<link>http://stockcharts.com/search/?$WTIC&section=sm</link>
+	<description>$WTIC: Crude Oil Index - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$XEU: Euro Index - SharpChart</title>
+	<link>http://www.stockcharts.com/h-sc/ui?s=$XEU</link>
+	<description>$XEU: Euro Index - SharpChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:58:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$XEU: Euro Index - P&amp;F Pattern Chart</title>
+	<link>http://stockcharts.com/def/servlet/SC.pnf?c=$XEU</link>
+	<description>$XEU: Euro Index - P&amp;F Pattern Chart</description>
+	<pubDate>Sat, 09 Nov 2013 11:57:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$XEU: Euro Index - CandleGlance</title>
+	<link>http://stockcharts.com/freecharts/candleglance.html?$XEU</link>
+	<description>$XEU: Euro Index - CandleGlance</description>
+	<pubDate>Sat, 09 Nov 2013 11:56:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$XEU: Euro Index - PerfChart</title>
+	<link>http://stockcharts.com/freecharts/perf.php?$XEU</link>
+	<description>$XEU: Euro Index - PerfChart</description>
+	<pubDate>Sat, 09 Nov 2013 11:55:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$XEU: Euro Index - Gallery View</title>
+	<link>http://stockcharts.com/freecharts/gallery.html?$XEU</link>
+	<description>$XEU: Euro Index - Gallery View</description>
+	<pubDate>Sat, 09 Nov 2013 11:54:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$XEU: Euro Index - Symbol Lookup</title>
+	<link>http://stockcharts.com/symsearch/?$XEU</link>
+	<description>$XEU: Euro Index - Symbol Lookup</description>
+	<pubDate>Sat, 09 Nov 2013 11:53:00 +0000</pubDate>
+</item>
+
+<item>
+	<title>$XEU: Euro Index - Site Search</title>
+	<link>http://stockcharts.com/search/?$XEU&section=sm</link>
+	<description>$XEU: Euro Index - Site Search</description>
+	<pubDate>Sat, 09 Nov 2013 11:52:00 +0000</pubDate>
+</item>
+
+</channel>
+</rss>

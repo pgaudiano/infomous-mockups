@@ -1,0 +1,58 @@
+<?php
+$page = file_get_contents('http://espn.go.com/');
+
+$page = str_replace('</head>',
+      '<base href="http://espn.go.com/">
+      </head>',
+      $page);
+
+$page = str_replace('url:\'nba/scoreboard\'',
+      'url:\'http://scores.espn.go.com/nba/scoreboard\'',
+      $page);
+
+$page = str_replace(
+		    '<ul class="headlines">',
+		    '
+		    <!-- Infomous insertion -->
+	<script language="javascript">
+          <!--
+          function openSnippet(){
+          	window.open("http://www.infomous.com/site/mockups/ESPN/popup.html","_blank", "width=800,height=650,menubar=no,toolbar=no,resizable=no");
+          }
+          function openHelp(){
+          	window.open("http://www.infomous.com/site/mockups/ESPN/infohelp.html","_blank", "width=800,height=400,menubar=no,toolbar=no,resizable=no");
+          }
+--></script>
+
+		    <div style="padding: 5px; margin: 0 0 10px 0;">
+                <div style="font-size: 14px; margin: 0 0 10px 0; font-weight: bold;">Interactive Headlines Cloud</div>
+                <a href="javascript:openHelp()"><img src="http://www.infomous.com/site/mockups/ESPN/help_on_big.png"></a>
+<!--
+		<a href="javascript:openSnippet()"><img src="http://www.infomous.com/site/mockups/ESPN/popup_on_big.png"></a>
+-->
+	<a onclick="window.open(\'http://dev3.infomous.com/cloud/fullscreen/5151?setHideControlBar=false\',\'_blank\',\'width=770,height=500,menubar=no,toolbar=no,location=no,resizable=yes,scrollbars=no\');void(0);"><img src="http://www.infomous.com/site/mockups/ESPN/popup_on_big.png"></a>
+	<div style="height:320px">
+<iframe frameborder="0" scrolling="no"
+
+src="http://infomous.com/cloud/fullscreen/24125?width=290&height=320&maxWords=40&interface=widget" width="294px" height="324px"> </iframe>
+
+<!--	<script type="text/javascript" src="http://dev3.infomous.com/cloud_widget/5151?width=290&height=320&maxWords=30"></script> -->
+	</div>
+                </div>
+
+<!-- <ul class="headlines">',
+	$page
+);
+
+$page = str_replace('<div id="mod-tab-content-myheadlines" class="ui-tabs-panel ui-tabs-hide">',
+'-->
+</div>
+</div>
+<div id="mod-tab-content-myheadlines" class="ui-tabs-panel ui-tabs-hide">
+',
+     $page
+);
+
+echo $page;
+
+?>

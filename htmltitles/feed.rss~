@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+ <channel>
+  <atom:link href="http://www.infomous.com/site/rss/Infomous_Demos_Page~9088709.xml" rel="self" type="application/rss+xml"/>
+  <title>Infomous_Demos_Page</title>
+  <link>http://www.infomous.com/site/rss</link>
+  <description>Description of various Infomous demos</description>
+  <item>
+   <title>Visual Exploration Buttons</title>
+   <author>info@infomous.com</author>
+   <link>http://www.infomous.com/site/Demos/Buttons.php</link>
+   <description>To save real estate and benefit from broad adoption, embed one of our customizable Visual Exploration Buttons throughout your web site. Readers will quickly adopt the pop-up Visual Exploration cloud as their favorite way to navigate your content - without getting lost in the structure of your site.</description>
+   <guid>http://www.infomous.com/site/Demos/Buttons.php#1</guid>
+   <pubDate>Mon, 11 Aug 2014 09:46:30 EST</pubDate>
+   <media:thumbnail url="http://www.infomous.com/site/Demos/img/Buttons.jpg"/>
+  </item>
+  <item>
+   <title>The Time Machine</title>
+   <author>info@infomous.com</author>
+   <link>http://usat.ly/VcfjXT</link>
+   <description>Give your reader access to archival stories to increase the yield and shelf life of your editorial. Readers will love using the Time Machine to re-live stories from last year, or simply to catch up on what happened during the past week.</description>
+   <guid>http://usat.ly/VcfjXT#2</guid>
+   <pubDate>Mon, 11 Aug 2014 09:48:47 EST</pubDate>
+   <media:thumbnail url="http://www.infomous.com/site/Demos/img/TimeMachine.jpg"/>
+  </item>
+  <item>
+   <title>The Advertiser &lt;b&gt;Display&lt;/b&gt; &#xA;This is line 2&#xA;&#x02605;</title>
+   <author>info@infomous.com</author>
+   <link>http://www.infomous.com/site/Demos/Advertiser.html</link>
+   <description>This module lets advertisers &#x3C;em&#x3E;showcase&#x3C;/em&#x3E; content in many formats (video, images, text, social media, ...) through a single, visually compelling Infomous cloud. Your advertisers will love the amount of time readers spend exploring their content with the Advertiser Display!</description>
+   <guid>http://www.infomous.com/site/Demos/Advertiser.html#3</guid>
+   <pubDate>Mon, 11 Aug 2014 09:50:40 EST</pubDate>
+   <media:thumbnail url="http://www.infomous.com/site/Demos/img/Advertiser.jpg"/>
+  </item>
+  <item>
+   <title>The Classifieds Explorer&#xA;</title>
+   <author>info@infomous.com</author>
+   <link>http://www.infomous.com/site/Demos/Classifieds.html</link>
+   <description>Browsing classified ads has never been so much fun... or so easy! Show your readers the most recent job offerings, or make the Classifieds Explorer a fully interactive page where readers can fine-tune their search, whether they are looking for the next job or the house of their dreams.</description>
+   <guid>http://www.infomous.com/site/Demos/Classifieds.html#4</guid>
+   <pubDate>Mon, 11 Aug 2014 09:51:35 EST</pubDate>
+   <media:thumbnail url="http://www.infomous.com/site/Demos/img/Classifieds.jpg"/>
+  </item>
+ </channel>
+</rss>

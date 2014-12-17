@@ -1,0 +1,27 @@
+skin = economist
+linkageThreshold = 1
+setShowReset = true
+setShowErrors = false
+setPanels = blobs,words,status,branding
+brandShowLogo = true
+brandLogoPosition = top left
+
+//colors
+colWord = 0x000000
+colWordHover = 0xFFFFFF
+colWordFade = 0x333333
+colWordOverLinked = 0x000000
+colBackground = 0xD9E4E6
+colHoverBox = 0x08526D
+colFocusBox = 0xFFFFFF
+colFocusBorder = 0x08526D
+colBlob = 0xFFFFFF
+colBlobHover = 0x96AFAE
+colBlobBorder = 0x86A1A8
+colLink = 0x86A1A8
+colLinkHover = 0xFF0000
+colSourcesFill = 0xFFFFFF
+colSourcesLine1 = 0x08526D
+colSourcesLine2 = 0x08526D
+colSourcesTextHover = 0x488CA7
+colSourcesBorder = 0x488CA7

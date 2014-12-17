@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:fb="http://ogp.me/ns/fb#" xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+<head>
+<title>Sample Embed units for The Economist</title>
+<style>
+iframe {
+     display: block;
+}
+</style>
+</head>
+<body>
+
+<table cellpadding="20">
+<tr>
+<td style="align:center;">
+<h2>300x250, normal action<br>(click to reveal list of articles)</h2>
+<script type="text/javascript" async data-infomous-id="nid54777" src="http://www.infomous.com/client2/?width=300&height=250"></script>
+</td>
+<td style="align:center;">
+<h2>300x250, click any word<br>to open discover.economist.com</h2>
+<iframe src="http://www.infomous.com/site/mockups/economist/campaign/embed300x250.html" border="0" width="350" height="250" scrolling="NO" frameborder="0"></iframe>
+</td>
+</tr>
+</table>
+
+<h2>728x90,  normal action (click to reveal list of articles)</h2>
+<script type="text/javascript" async data-infomous-id="nid54781" src="http://www.infomous.com/client2/?width=728&height=90"></script>
+
+<h2>728x90, clicking any word opens http://discover.economist.com</h2>
+<iframe src="http://www.infomous.com/site/mockups/economist/campaign/embed728x90.html" border="0" width="728" height="90" scrolling="NO" frameborder="0"></iframe>
+
+
+
+</body>
+</html>
+
+

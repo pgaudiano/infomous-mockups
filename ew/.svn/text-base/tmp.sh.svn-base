@@ -1,0 +1,1 @@
+wget --http-user=icosystem --http-passwd=cloud999 -O /tmp/ttt 'http://www.infomous.com/site/mockups/ew/proxy.php?hidden=Emmlia&maxWords=35&type=rss&fromDaysBack=1&linkageThreshold=1&clientVersion=52170&toDaysBack=0&dict=NOUN%7C1%2CVERB%7C1%2CADJECTIVE%7C1%2CADVERB%7C0%2CNUMBER%7C1%2COTHER%7C1&textOption=TITLE%5FONLY'

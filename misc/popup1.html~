@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+
+<head>
+<title>Popup examples
+</title>
+<script language="JavaScript">
+<!--
+
+var newWindow = null;
+
+function closeWin(){
+if (newWindow != null){
+if(!newWindow.closed)
+newWindow.close();
+}
+}
+
+function popUpWin(url, type, strWidth, strHeight){
+
+closeWin();
+
+if (type == "fullScreen"){
+strWidth = screen.availWidth - 10;
+strHeight = screen.availHeight - 10;
+}
+
+var tools="";
+if (type == "standard") tools = "resizable=yes,toolbar=yes,location=yes,scrollbars=yes,menubar=yes,width="+strWidth+",height="+strHeight+",top=0,left=0";
+if (type == "fullScreen") tools = "resizable=yes,toolbar=no,location=no,menubar=no,scrollbars=yes,width="+strWidth+",height="+strHeight+",left=0,top=0";
+if (type == "console1") tools = "resizable=yes,toolbar=no,location=no,scrollbars=yes,width="+strWidth+",height="+strHeight+",left=0,top=0";
+        if (type == "console2") tools = "resizable=yes,toolbar=yes,location=no,menubar=yes,scrollbars=yes,width="+strWidth+",height="+strHeight+",left=0,top=0";
+        if (type == "console3") tools = "resizable=no,toolbar=no,location=no,menubar=no,scrollbars=no,width="+strWidth+",height="+strHeight+",left=0,top=0";
+	newWindow = window.open(url, 'newWin', tools);
+	newWindow.focus();
+}
+//-->
+</script>
+
+</head>
+<body>
+<a href="http://www.infomous.com" target="popUpWin" onclick="popUpWin(this.href,'console3',400,300);return false;">Click Here</a>
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+the economist build
+=============================================================================
+
+snippet (e.g. in small.html)
+
+<!--infomous cloud-->
+
+<script type="text/javascript" src="economist_cloud.js?width=349&height=300&maxWords=24"></script> 
+
+<!--end of infomous cloud-->
+
+
+=============================================================================
+
+economist_cloud.js 
+
+is a minified version of:
+
+    * economist.js
+    * economist.css
+    * economist.html
+
+made with http://dean.edwards.name/packer/ for html
+
+

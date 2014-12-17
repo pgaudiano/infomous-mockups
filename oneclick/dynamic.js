@@ -1,0 +1,111 @@
+/* dynamic.js
+
+   This script is used to create a cloud dynamically using a single feed.
+
+   The script assumes that dynamic clouds are created from the RSS feeds of a WordPress blog,
+   of the form http://www.mywpblog.com/feed.
+
+   The script accepts the following parameters
+   width=SIZE (in pixels)
+   height=SIZE (in pixels)
+   url=[URL-encoded] (full address of WordPress blog)
+   use_comments=[yes|no] (whether or not to include the blog's comments feed)
+   title=STRING  (the title that will appear on the cloud's frame)
+   max_words=NUMBER (number of words to display in the cloud)
+   col_frame=6-digit hex RGB color, e.g., 0xFFFFFF (color of the cloud frame top)
+   col_frame_title=6-digit hex RGB color, e.g., 0xFFFFFF (color of the cloud frame title text)
+
+*/
+
+// Get the script name and params, strip out unnecessary characters
+var scripts = document.getElementsByTagName('script');
+var index = scripts.length - 1;
+var myScript = scripts[index];
+var queryString = myScript.src.replace(/^[^\?]+\??/,'');
+
+// Parse key/val pairs
+function getQueryVariable(query,variable) {
+  var vars = query.split('&');
+  for (var i = 0; i < vars.length; i++) {
+    var pair = vars[i].split('=');
+    if (decodeURIComponent(pair[0]) == variable) {
+      return decodeURIComponent(pair[1]);
+    }
+  }
+}
+
+// Get all relevant parameters
+var delta = getQueryVariable(queryString,"delta");
+var myWidth = getQueryVariable(queryString,"width");
+var myHeight = getQueryVariable(queryString,"height");
+var myBlogURL = getQueryVariable(queryString,"url");
+var useComments = getQueryVariable(queryString,"use_comments");
+var myTitle = getQueryVariable(queryString,"title");
+var myMaxWords = getQueryVariable(queryString,"max_words");
+var myColFrame = getQueryVariable(queryString,"col_frame");
+var myColFrameTitle = getQueryVariable(queryString,"col_frame_title");
+
+// When we create the cloud, we will set a custom NID for tracking.
+//var customID = "Cloud" + delta; //"WP-W"+ myWidth + '-H' + myHeight + '-URL' + myBlogURL;
+var customID = "TEST-W"+ myWidth + '-H' + myHeight + '-URL' + myBlogURL;
+
+// Use the default /feed and, if requested, also add the comments feed.
+var myFeedURL = (useComments=="yes") ? myBlogURL + '/comments/feed' : myBlogURL + '/feed';
+
+// Set reasonable defaults for any variables not passed in
+if (!myTitle) { myTitle = "Explore more content from this blog"; }
+
+/* The var below is used to set all the desired cloud vars. The
+   name of the var should match the id that is passed to the embed
+   script as 'data-infomous-id'.
+
+  Note that In order to prevent the call from looking for the cloud NID
+  through drupal, we tell the cloud to use a local copy of
+  config.txt (which can be blank or non-existent)
+// Need to close comment here
+*/
+
+window['blogCloud' + delta] = {
+	"nid" : customID,
+	"api" : 'true',
+	"title" : myTitle,
+    "maxWords" : myMaxWords,
+	"setConfigURL" : 'config.txt',
+	"frameHelpURL" : 'http://www.infomous.com/how_it_works',
+	"frameEnlargeURL" : '/',  //temporary hack, the pop-up window won't work
+	"hiddenSource" : 'http://www.infomous.com/site/blocked/english.txt',
+	"colFrame" : myColFrame,
+	"colFrameTitle" : myColFrameTitle,
+	"feeds" : myFeedURL,
+    "textOption" : "TITLE_AND_DESCRIPTION",
+    "setDelta" : delta,
+    "interest" : "fixing",
+    "setJSCallOnFocus" : 'true',
+    "setInteractionMode" : 'hover',
+};
+
+// infomous_ready() is the main API call.
+function infomous_ready(myCloud) {
+
+	// "cloud" is the cloud object
+  var cloud = myCloud.clouds.get();
+    cloud.on("menu_added", myCallback);
+
+  cloud.make_request(); // Need to call cloud.make_request() for the variables to take effect
+
+}
+
+function myCallback(e) {
+    document.getElementById("output").innerHTML = "You clicked on "+ e.word;
+//    window.open("http://www.infomous.com/site/mockups/BodiMojo/infohelp.html","_blank", "width=800,height=400,menubar=no,toolbar=no,resizable=no");
+
+}
+
+
+// Now we generate the embed code.
+document.write('<script type="text/javascript" async data-infomous-id="blogCloud',delta,'" src="http://www.infomous.com/client2/?width=',myWidth,'&height=',myHeight,'"></script>');
+
+function infomous(myWord) {
+
+    document.write('<p>Just clicked the word <b>',myWord,'</b>');
+}

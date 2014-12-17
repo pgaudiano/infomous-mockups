@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>The Economist BlogScope</title>
+<style type="text/css">
+<!--
+html, body{
+	margin: 0;
+	padding: 0;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+}
+#flash{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+-->
+</style>
+<script type="text/javascript" src="../swfobject.js"></script>
+</head>
+<body>
+	<div id="flash"> </div>
+	<script type="text/javascript">
+     // <![CDATA[
+        var so = new SWFObject("../infomous.swf", "infomous", "100%", "100%", "9", "#D9E4E6");
+        so.addParam("allowScriptAccess", "always");
+        so.addParam("allowFullScreen", "true");
+        so.addVariable("nid", "930");
+        so.addVariable("title", "Economist+Home+Page");
+        so.addVariable("loadAtStart", "true");
+        so.addVariable("feeds", "http%3A%2F%2Fwww.economist.com%2Frss%2Ffull_print_edition_rss.xml|http%3A%2F%2Fwww.economist.com%2Frss%2Funited_states_rss.xml|http%3A%2F%2Fwww.economist.com%2Frss%2Finternational_rss.xml|);
+        so.addVariable("groups", "1");
+        so.addVariable("fontScale", "1");
+        so.addVariable("zoom", "1");
+        so.addVariable("maxWords", "50");
+        so.addVariable("popularWordCutoff", "0");
+        so.addVariable("linkageThreshold", "2.5");
+        so.addVariable("dict", "NOUN|1,VERB|1,ADJECTIVE|0,ADVERB|0,NUMBER|0,OTHER|1");
+        so.addVariable("base_path", "http://dev.infomous.com/site/economist/front/");
+        so.addVariable("hidden", "will,do,more,economist,another,link,exchange,ahead,week,after,reading material,why,say,under,knife,mr,q%26a,still,no,other,over,up,better,reading,now,re,turn,difference,engine,been");
+        so.addVariable("textOption", "TITLE_AND_DESCRIPTION");
+        so.addVariable("status", "1");
+        so.addVariable("interfaceClass", "viewer");
+		so.addVariable("skin", "economist");
+      
+        so.write("flash");
+     // ]]>
+    </script>
+</body>
+</html>

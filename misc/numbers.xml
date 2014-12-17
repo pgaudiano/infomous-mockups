@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Infomous text comment viewer</title>
+  <link>http://www.infomous.com</link>
+  <description>Infomous text comment viewer
+  </description>
+<item>
+	<title>one </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers.html#item1</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>two two </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers.html#item2</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>three three three </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers.html#item3</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>four four four four </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers.html#item4</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>five five five five five </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers.html#item5</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>six six six six six six </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers.html#item6</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>seven seven seven seven seven seven seven </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers.html#item7</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>eight eight eight eight eight eight eight eight </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers.html#item8</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>nine nine nine nine nine nine nine nine nine </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers.html#item9</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+<item>
+	<title>ten ten ten ten ten ten ten ten ten ten </title>
+	<link>http://www.infomous.com/site/scripts/t2i/numbers.html#item10</link>
+	<author>No author info</author>
+	<description></description>
+</item>
+
+</channel>
+</rss>

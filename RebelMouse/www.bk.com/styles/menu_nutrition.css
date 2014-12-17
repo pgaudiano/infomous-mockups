@@ -1,0 +1,1741 @@
+﻿body 
+{
+    /* replace new menu */
+    background: none !important;
+}
+
+#PageWrapper
+{
+    background: url("../images/body-bg-ordinary-2.jpg") no-repeat scroll center top #f4e9d6 !important; 
+}
+
+#fancybox-overlay 
+{
+    z-index: 88888;
+}
+
+#fancybox-wrap 
+{
+    z-index: 99999
+}
+
+
+#menu-nutri-tabs #menu-btns-wrapper a.btn-text 
+{
+    font-family:Arial, sans-serif;
+    font-size:12px;
+    font-weight: bold;
+}
+
+#menu-nutri-tabs #menu-btns-wrapper
+{
+    position: absolute; 
+    right: 0;
+    top: 17px;
+}
+/* badge */
+.under100 
+{
+    background: url("../cms/en/us/cms_out/digital_assets/graphics/pages/badge-under100.png") no-repeat scroll  transparent center top
+}
+.under200 
+{
+    background: url("../cms/en/us/cms_out/digital_assets/graphics/pages/badge-under200.png") no-repeat scroll  transparent center top
+}
+.under300 
+{
+    background: url("../cms/en/us/cms_out/digital_assets/graphics/pages/badge-under300.png") no-repeat scroll  transparent center top
+}
+.under400 
+{
+    background: url("../cms/en/us/cms_out/digital_assets/graphics/pages/badge-under400.png") no-repeat scroll  transparent center top
+}
+.under500 
+{
+    background: url("../cms/en/us/cms_out/digital_assets/graphics/pages/badge-under500.png") no-repeat scroll  transparent center top
+}
+.under650 
+{
+    background: url("../cms/en/us/cms_out/digital_assets/graphics/pages/badge-under650.png") no-repeat scroll  transparent center top
+}
+
+
+/* tabs_override.css ------------------------------------------------------------ BEGIN */
+
+
+/* Override disabling on tab */
+#menu-nutri-tabs .ui-state-disabled, 
+#menu-nutri-tabs .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled
+ {
+    background-image: none;
+    filter: alpha(35);
+	opacity: 0.35;
+	
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */ 
+}
+
+.tabs-nutri-header-h2
+{
+    font-weight: bold;
+    font-size: 12px;
+    color: #6d6057;
+}
+.tabs-nutri-value
+{
+
+    font-size: 20px;
+    color: #575556;
+}
+
+.nutri-item
+{
+    padding: 0px 7px 8px 5px; 
+    border-bottom: 1px solid #cccccc;
+}
+.nutri-name-1
+{
+    height:30px; 
+    vertical-align: bottom;
+    display:table-cell; 
+    
+    position:relative; /*IE7*/
+    top: 50%; /*IE7*/
+}
+.nutri-name-value
+{
+    height:33px; 
+    vertical-align: bottom;
+    display:table-cell;
+    
+    position:relative; /*IE7*/
+     top: 20%;/*IE7*/
+}
+
+h2.tabs-content-header
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.tabs-content-header2
+{
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #362f2d;
+}
+
+/* override tabs content */
+
+#tabs
+{
+    font-size: 11px;
+    /* font-family: Verdana,Arial,sans-serif;*/
+    font-family: Arial, sans-serif;
+}
+#tabs i,
+#tabs em
+{
+    font-family: Arial, sans-serif;
+    font-style: italic;
+}
+
+
+#menu-nutri-tabs .ui-widget-header 
+{
+    /* apply to ul element */
+   background: none;
+   border-width: 0;
+    /* 
+    border: 1px solid #E78F08;
+    color: #FFFFFF;
+    font-weight: bold;*/
+}
+
+.ui-widget-content 
+{
+    /* apply to div element, override old css */
+    background: none;
+    border: none;
+    /*
+    border: 1px solid #DDDDDD; 
+    color: #DDDDDD;*/
+    
+
+
+}
+
+#menu-nutri-tabs .tabs-content
+{
+    /* apply to div element, add new css according the tabs */
+   border: 1px solid #DDDDDD;
+   border-top-right-radius: 4px;
+   padding: 20px;
+    /* width: 1310px;  */
+
+}
+
+/* override tabs header */
+
+
+#menu-nutri-tabs .ui-state-default, 
+#menu-nutri-tabs .ui-widget-content .ui-state-default,
+#menu-nutri-tabs .ui-widget-header .ui-state-default
+{
+    background:  url("../images/menu_nutrition/tab-default.png") no-repeat scroll left;
+    border: none;
+   /*
+    border: 1px solid #EB8F00;
+    color: #1C94C4;
+    font-weight: bold;*/
+}
+#menu-nutri-tabs .ui-state-active, 
+#menu-nutri-tabs .ui-widget-content .ui-state-active,
+#menu-nutri-tabs .ui-widget-header .ui-state-active
+{
+
+   background: url("../images/menu_nutrition/tab-active.png") no-repeat scroll left;
+     border: none;
+   /*  color: #1C94C4;
+   font-weight: bold;*/
+}
+
+
+
+
+#menu-nutri-tabs .ui-state-default a, 
+#menu-nutri-tabs .ui-state-default a:link, 
+#menu-nutri-tabs .ui-state-default a:visited
+{
+    color: #6b1d10;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+
+#menu-nutri-tabs .ui-state-active a,
+#menu-nutri-tabs .ui-state-active a:link, 
+#menu-nutri-tabs .ui-state-active a:visited
+{
+    color: #362f2d;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+#menu-nutri-tabs .tabs-header
+{
+    font-family: 'Trade Gothic W01 Bold';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+}
+#menu-nutri-tabs .tabs-header i,
+#menu-nutri-tabs .tabs-header em
+{
+    font-family: 'TradeGothicW01-BoldObl';
+    font-weight: normal;
+    font-style: normal;
+}
+
+#menu-product-state .full-menu-notice
+{
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    color: #362f2d;
+}
+
+/* tabs_override.css ------------------------------------------------------------ END */
+
+/*  carousel_override.css ------------------------------------------------------------ BEGIN */
+
+/**
+* Overwrite for having a carousel with dynamic width.
+*/
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+    margin-top: -20px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width: 100%;
+    height: 100%;
+}
+        
+.jcarousel-skin-tango .jcarousel-item 
+{
+    /*  width: 243px;width: 154px;
+    height: 100% ;*/
+    height: auto;
+            
+}
+/* Override */
+.jcarousel-skin-tango .jcarousel-container {
+    background: none;
+    border: none;
+    border-radius: none;    
+}
+        
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    background: transparent url("../images/menu_nutrition/carousel-right.png") no-repeat 0 0;
+}
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    background-image: url("../images/menu_nutrition/carousel-left.png");
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover {
+    background-image: url("../images/menu_nutrition/carousel-right-hover.png");
+}
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal:hover {
+    background-image: url("../images/menu_nutrition/carousel-left-hover.png");
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal.jcarousel-next-disabled {
+    background-image: url("../images/menu_nutrition/carousel-right-disabled.png");
+}
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal.jcarousel-next-disabled {
+    background-image: url("../images/menu_nutrition/carousel-left-disabled.png");
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    background: transparent url("../images/menu_nutrition/carousel-left.png") no-repeat 0 0;
+}
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    background-image: url("../images/menu_nutrition/carousel-right.png");
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover {
+    background-image: url("../images/menu_nutrition/carousel-left-hover.png");
+}
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal:hover {
+    background-image: url("../images/menu_nutrition/carousel-right-hover.png");
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal.jcarousel-prev-disabled {
+    background-image: url("../images/menu_nutrition/carousel-left-disabled.png");
+}
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal.jcarousel-prev-disabled {
+    background-image: url("../images/menu_nutrition/carousel-right-disabled.png");
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-next-horizontal:focus {
+    background-position: 0px 0px;
+}
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:hover
+{
+    background-position: 0px 0px;
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover, 
+.jcarousel-skin-tango .jcarousel-prev-horizontal:focus {
+    background-position: 0px 0px;
+}
+        
+    .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:hover
+{
+    background-position: 0px 0px;
+}
+
+/*  carousel_override.css ------------------------------------------------------------ END */
+
+
+/*  carousel_override.css ------------------------------------------------------------ BEGIN */
+
+ul.main-menu
+{
+    
+}
+
+.sep-vertical
+{
+    border-right: 1px solid #cccccc;
+}
+
+li.cat-menu-item
+{       /*154, 124*/
+        width: 154px;
+        min-height: 124px;
+        
+        display: -moz-inline-stack; /*  FF2 for  display: inline-block; */
+        display: inline-block;
+        vertical-align: top;
+        margin: 5px 5px 5px 0px;
+        zoom: 1; /* IE7 for unsupported display: inline-block */
+        *display: inline; /* IE6,7 */
+        _height: 124px; /* IE6 underscore hack for unsupported min-height */
+        
+       /* style='float: left; width: 120px;margin-bottom: 15px;margin-right: 15px;display: inline-block;'*/
+    
+}
+
+ul.sub-categories > li.separator {
+    background: url("../images/menu_nutrition/seperator_subcat.png") no-repeat scroll 0 0 transparent;
+    height: 35px;
+    width: 3px;
+    float: left;
+    margin-bottom: 10px; /*for 2nd lines*/
+}
+
+ul.sub-categories > li.item {
+    float: left;
+    width: 100px; /* minimum*/
+    height: 50px;
+    margin-bottom: 10px; /*for 2nd lines*/
+}
+.menu-item-text
+{
+    padding: 0 3px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #6b1d10;
+    /*line-height: 18px;*/
+}
+
+.menu-item-text img.new-marker
+{
+    margin-right: 4px;
+    vertical-align: bottom;
+    margin-top: -10px;
+}
+.warning-text
+{
+
+    font-size: 12px;
+    font-weight: bold;
+    color: #362f2d;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.warning-text-customizable
+{
+
+    font-size: 12px;
+    color: #362f2d;
+  /*  margin-top: 50px;*/
+
+}
+.h-line
+{
+    background: url("../images/menu_nutrition/hline.png") no-repeat scroll 0 0 transparent;
+    height: 5px;
+    width: 950px;
+}
+
+
+#category-header
+{
+    color: #ffffff;
+    float: left;
+    margin-left: 140px;
+    margin-top: -105px;
+    
+    min-width: 500px;
+}
+
+.my-meal
+{
+    background: url("../images/menu_nutrition/my-meal.png") no-repeat scroll 0 0 transparent;
+    
+    font-weight: bold;
+    font-size: 11px;
+    color: #ffffff;
+    /*
+       float: right;
+    margin-left: 140px;
+    margin-top: -130px;*/
+    position: absolute;
+    right: 0px;
+    width: 160px;
+    height: 40px;
+    padding-top: 13px;
+    top: 60px;
+    z-index: 1000;
+   /* position: relative;
+    z-index: 1000; Need to be above main image*/
+}
+#menu-header-group #menu-header-text
+{
+    font-family: 'TradeGothicW01-BoldCn20 675334';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 72px;
+    color: #ffffff;
+    width: 700px;
+    line-height: 70px;
+    float: left;
+
+    letter-spacing: -1px;
+    position: absolute;
+    top: 200px;
+    
+    text-shadow: 0px 0px 2px #999;
+    
+   /* position: relative;
+    z-index: 1000; Need to be above main image*/    
+}
+#menu-header-group #menu-header-text i,
+#menu-header-group #menu-header-text em
+{
+    font-family: 'TradeGothicW01-BoldCn20 675337';
+    font-weight: normal;
+	font-style: normal;
+}
+#menu-header-group #menu-header-text sup
+{
+    font-size: 0.6em;    
+    bottom: 1.0ex;
+}
+
+#menu-header-group
+{
+
+    height: 496px;
+    margin-bottom: 0px;
+    margin-top: -190px;
+    
+    position: relative;
+}
+
+.menu-seperator
+{ /* 
+        background: url("/images/menu_nutrition/seperator_subcat.png") no-repeat scroll 0 0 transparent;
+    height: 70px;
+    width: 3px;
+    float: left;*/
+}
+
+#menu-info
+{
+    background: url("../images/menu_nutrition/seperator_subcat.png") repeat-y scroll  transparent;
+    background-position:right top;
+}
+#menu-info-header
+{
+    color: #362f2d;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+#menu-info-desc
+{
+    color: #362f2d;
+    font-size: 15px;
+}
+#menu-social
+{
+   padding: 10px 0px;
+}
+#menu-social .gplus
+{
+   padding-top: 6px;
+}
+#menu-social .twitter
+{
+   padding-top: 10px;
+}
+
+#menu-nutri-tabs
+{
+    
+    background: url("../images/menu_nutrition/menu-bg-seperator.png") no-repeat scroll  transparent;
+    background-position:-50px 0px;
+    padding-bottom: 25px;
+}
+
+#menu-nutri-tabs .tabscontent-top-1
+{
+    
+    background: url("../images/menu_nutrition/tabscontent-top-1.png") no-repeat scroll  transparent;
+    background-position:center top;
+    height:20px;
+}
+
+#menu-nutri-tabs .tabscontent-top-2
+{
+    
+    background: url("../images/menu_nutrition/tabscontent-top-2.png") no-repeat scroll  transparent;
+    background-position:center top;
+    height:20px;
+}
+
+#menu-nutri-tabs .tabscontent-top-3
+{
+    
+    background: url("../images/menu_nutrition/tabscontent-top-3.png") no-repeat scroll  transparent;
+    background-position:center top;
+    height:20px;
+}
+
+
+#menu-nutri-tabs .tabscontent
+{
+    
+    background: url("../images/menu_nutrition/tabscontent.png") repeat-y scroll  transparent;
+    background-position:center top;
+    padding: 0px 15px 1px 15px; /* Error if set top,bottom to 0*/
+}
+
+#menu-nutri-tabs .tabscontent-bottom
+{
+    
+    background: url("../images/menu_nutrition/tabscontent-bottom.png") no-repeat scroll  transparent;
+    background-position:center top;
+    height:5px;
+}
+
+#menu-nutri-tabs #nutritabs-non-customize
+{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#menu-nutri-tabs #nutritabs-non-customize .nutritabs-non-customize-ie7 /*doesnt work*/
+{
+    padding-top: 0px;
+	margin-top: 10px;
+}
+
+#menu-nutri-tabs #nutritabs-customizable
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+#menu-nutri-tabs #nutritabs-customizable .value-meal-options
+{
+    float: left;
+}
+
+#menu-nutri-tabs #nutritabs-customizable .size
+{
+    border-right: 1px solid #E4D7C4; 
+    padding-right: 22px;
+}
+
+#menu-nutri-tabs #nutritabs-customizable .drink
+{
+    border-right: 1px solid #E4D7C4; 
+    padding-right: 22px;
+    padding-left: 22px;
+}
+
+#menu-nutri-tabs #nutritabs-customizable .side
+{
+    padding-left: 22px;
+}
+
+#menu-nutri-tabs #nutritabs-customizable li.each-variation
+{
+    float: left;
+    /*margin: 18px 10px 0 0;*/
+    margin-right: 10px;
+}
+
+/* Value Meal Variation */
+#menu-nutri-tabs #nutritabs-customizable ul#value-meal-variations li.each-variation .variation {
+    background: url("../images/menu_nutrition/value-meal-variation-unselected.png") no-repeat scroll right top transparent;
+    height: 26px;
+    width:25px;
+    color: #362f2d;
+    font-weight:bold;
+
+}
+
+#menu-nutri-tabs #nutritabs-customizable ul#value-meal-variations li.each-variation .active {
+    background: url("../images/menu_nutrition/value-meal-variation-selected.png") no-repeat scroll right top transparent;
+    color: #fff;
+
+}
+#menu-nutri-tabs #nutritabs-customizable ul#value-meal-variations li.each-variation span.text {
+    display: block;
+    height: 26px;
+    padding-top: 7px;
+    text-align: center;
+
+} 
+
+/* Menu Item Variation */
+#menu-nutri-tabs #nutritabs-customizable ul#variation-list li.each-variation .variation {
+    background: url("../images/menu_nutrition/value-meal-variation-unselected.png") no-repeat scroll right top transparent;
+    height: 26px;
+    width:25px;
+    color: #000;
+    font-weight:bold;
+
+}
+
+#menu-nutri-tabs #nutritabs-customizable ul#variation-list li.each-variation .active {
+    background: url("../images/menu_nutrition/value-meal-variation-selected.png") no-repeat scroll right top transparent;
+    color: #fff;
+
+}
+
+#menu-nutri-tabs #nutritabs-customizable ul#variation-list li.each-variation span.text {
+    display: block;
+    height: 26px;
+    padding-top: 7px;
+    text-align: center;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients #column-left
+{
+    float: left;
+    width: 308px;
+    padding-right: 24px;
+    border-right: 1px solid #E4D7C4;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients #column-right
+{
+    float: left;
+    width: 308px;
+    padding-left: 24px;
+}
+/*
+.value-meal-combobox-button
+{
+    
+}
+.value-meal-combobox-container {
+    border: medium none;
+    cursor: pointer;
+    font-weight: normal;
+    height: 30px;
+    width: 190px;
+}
+.value-meal-combobox-value-container {
+   height: 30px;
+    width: 190px;
+}*/
+.value-meal-combobox-value-content-190 {
+    background: url("../images/menu_nutrition/value-meal-dropdown190.png") no-repeat scroll left top transparent;
+    color: #3b4545;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 4px;
+    width: 190px !important;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.combobox-dropdown-container-190 {
+    background-color: #FFFFFF;
+    border-color: #CCCCCC #000000 #000000 #CCCCCC;
+    border-style: solid;
+    border-width: 1px 1px 1px 2px;
+    text-indent: 4px;
+    z-index: 3;
+    width: 178px !important;
+    /*width: 178px !important; 245px*/
+    margin-left: 5px !important;
+    font-size: 12px;
+    /*top: 208px !important;*/
+}
+.combobox-dropdown-container-190 .combobox-dropdown-item 
+{
+    padding-left: 3px;
+    text-indent: 0;
+}
+.value-meal-combobox-value-content-225 {
+    background: url("../images/menu_nutrition/value-meal-dropdown225.png") no-repeat scroll left top transparent;
+    color: #3b4545;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 4px;
+    width: 225px;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.combobox-dropdown-container-225 {
+    background-color: #FFFFFF;
+    border-color: #CCCCCC #000000 #000000 #CCCCCC;
+    border-style: solid;
+    border-width: 1px 1px 1px 2px;
+    text-indent: 4px;
+    z-index: 3;
+    width: 213px !important;
+    margin-left: 5px !important;
+    font-size: 12px;
+    /*top: 208px !important;*/
+}
+
+#menu-nutri-tabs #nutritabs-customizable .static-nutri-item 
+{
+    width: 180px;
+    min-height: 16px; /*For badge*/
+    _height:16px; /*For badge, IE6*/
+    /*background: url("/images/menu_nutrition/nutri-dots.png") no-repeat scroll left bottom transparent;*/
+    margin-bottom: 15px;
+    position: relative;
+}
+
+#menu-nutri-tabs #nutritabs-customizable .static-nutri-name
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #736357;
+    /* float: left;*/
+    padding-right: 3px;
+    /*erase the bottom line dots*/
+    /*background: none repeat scroll 0 0 #F7EFE0;*/
+    margin-top: 3px;
+    
+    position: absolute;
+    bottom: -1px;
+    
+}
+
+#menu-nutri-tabs #nutritabs-customizable .static-nutri-value
+{
+    font-family: 'Trade Gothic W01 Bold';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    color: #362f2d;
+    /* float: left;*/
+    padding-left: 3px;
+    /*erase the bottom line dots*/
+    /*background: none repeat scroll 0 0 #F7EFE0;*/
+    
+    position: absolute;
+    bottom: -3px;
+    right: 0px
+}
+#menu-nutri-tabs #nutritabs-customizable .static-nutri-value i,
+#menu-nutri-tabs #nutritabs-customizable .static-nutri-value em
+{
+    font-family: 'TradeGothicW01-BoldObl';
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+#menu-nutri-tabs #nutritabs-customizable .static-nutri-value-ie7
+{
+    font-family: 'Trade Gothic W01 Bold';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    color: #000000;
+    padding-left: 3px;
+    
+    position: absolute;
+    bottom: -3px; 
+    right: 0px
+}
+#menu-nutri-tabs #nutritabs-customizable .static-nutri-value-ie7 i,
+#menu-nutri-tabs #nutritabs-customizable .static-nutri-value-ie7 em
+{
+    font-family: 'TradeGothicW01-BoldObl';
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+#menu-nutri-tabs #nutritabs-customizable .static-nutri-dots
+{
+    background: url("../images/menu_nutrition/nutri-dots.png") no-repeat scroll left bottom transparent;
+    position:absolute;
+    bottom: 1px;
+    height: 1px;
+    width: 180px;
+}
+
+
+#menu-nutri-tabs #nutritabs-customizable .nutri-data
+{
+    float: left;
+    width: 180px;
+    padding-right: 25px;
+    padding-top: 9px;
+    border-right: 1px solid #C7B299;
+}
+
+#menu-nutri-tabs #nutritabs-customizable .customize-yr-meal
+{
+    float: left;
+    padding-left: 25px;
+    border-left: 1px solid #C7B299;
+    margin-left: -1px;
+    padding-top: 10px;
+}
+
+
+
+
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .controls .each-ingredient
+{
+    border-bottom: 1px solid #E4D7C4;
+    position: relative;
+
+    padding: 5px 0px;
+    font-size: 12px;
+    color: #362F2D;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .controls .remove-border-bottom
+{
+    border-bottom: none;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .controls .ingredient-btns
+{
+    background: url("../images/menu_nutrition/ingredient-value-bg.png") no-repeat scroll center top transparent; 
+    float:left;
+    width: 84px;
+    height: 23px;
+    position: relative;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .controls .ingredient-btns .icon
+{
+    left: 8px;
+    position: absolute;
+    top: 4px;
+}
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .controls .ingredient-btns .subtract-wrap
+{
+    /*
+    background: url("/images/menu_nutrition/ingredient-subtract.png") no-repeat scroll center top transparent;*/
+    position: absolute;
+    top: 3px;
+    right:4px;
+    
+    height: 18px;
+    width: 18px;
+
+}
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .controls .ingredient-btns .subtract-active
+{
+    background: url("../images/menu_nutrition/ingredient-subtract.png") no-repeat scroll center top transparent;
+    cursor: pointer;
+}
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .controls .ingredient-btns .subtract-hover
+{
+    background: url("../images/menu_nutrition/ingredient-subtract-hover.png") no-repeat scroll center top transparent;
+    cursor: pointer;
+}
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .controls .ingredient-btns .subtract-inactive
+{
+    background: url("../images/menu_nutrition/ingredient-subtract-inactive.png") no-repeat scroll center top transparent;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .controls .ingredient-btns .add-wrap
+{
+    /*
+    background: url("/images/menu_nutrition/ingredient-add.png") no-repeat scroll center top transparent;*/
+    position: absolute;
+    top: 3px;
+    right: 22px;
+    
+    height: 18px;
+    width: 18px;
+    
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .controls .ingredient-btns .add-active
+{
+    background: url("../images/menu_nutrition/ingredient-add.png") no-repeat scroll center top transparent;
+    cursor: pointer;
+}
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .controls .ingredient-btns .add-hover
+{
+    background: url("../images/menu_nutrition/ingredient-add-hover.png") no-repeat scroll center top transparent;
+    cursor: pointer;
+}
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .controls .ingredient-btns .add-inactive
+{
+    background: url("../images/menu_nutrition/ingredient-add-inactive.png") no-repeat scroll center top transparent;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .controls .ingredient-name
+{
+    float:left;
+    padding-left: 15px;
+    width: 200px; 
+    padding-top: 4px;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients #ingredient-options,
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients #ingredient-reset
+{
+    margin-top: 10px;
+    position: relative;
+    width: 72px;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients #ingredient-options .arrow-icon,
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients #ingredient-reset .arrow-icon
+{
+    background: url("../images/menu_nutrition/yellow-arrow.png") no-repeat scroll center top transparent;
+    width: 5px;
+    height: 8px;
+    position: absolute;
+    right: 0px;
+    top: 4px;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients a.ingre-options-text
+{
+    font-size:  12px;
+    font-weight: bold;
+    color: #6b1d10;
+    text-decoration:none;
+}
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients #ingredient-options a:hover,
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients #ingredient-reset a:hover
+{
+    text-decoration:underline;
+}
+
+
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients
+{
+    margin-bottom: 30px;
+}
+#menu-nutri-tabs #nutritabs-customizable #build-a-meal
+{
+     margin-bottom: 30px;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-variations
+{
+     margin-bottom: 30px;
+}
+
+#menu-nutri-tabs #nutritabs-customizable .nutri-badge
+{
+    width:37px;
+    height: 38px;    
+    position: absolute;
+    bottom: 10px;
+    right: 35px;
+    display: none; /*due to issue 1709 */
+}
+
+#menu-nutri-tabs #nutritabs-non-customize .static-nutri-item 
+{
+    padding: 10px;
+    width: 160px;
+    min-height: 25px; /*For badge*/
+    _height:25px; /*For badge, IE6*/
+
+}
+
+
+
+#menu-nutri-tabs #nutritabs-non-customize .nutri-firstline
+{
+    border-bottom: 1px solid #dfd1bc;
+    border-right: 1px solid #dfd1bc;
+    float: left;
+}
+
+#menu-nutri-tabs #nutritabs-non-customize .nutri-secondline
+{
+    border-right: 1px solid #dfd1bc;
+    float: left;
+}
+
+
+#menu-nutri-tabs #nutritabs-non-customize .static-nutri-name
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #736357;
+    float: left;
+    margin-top: 4px;
+}
+
+#menu-nutri-tabs #nutritabs-non-customize .static-nutri-value
+{
+    font-family: 'TradeGothicW01-BoldCn20 675334';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    color: #362f2d;
+    float: right;
+}
+#menu-nutri-tabs #nutritabs-non-customize .static-nutri-value i,
+#menu-nutri-tabs #nutritabs-non-customize .static-nutri-value em
+{
+    font-family: 'TradeGothicW01-BoldCn20 675337';
+    font-weight: normal;
+    font-style: normal;
+}
+
+#menu-nutri-tabs #nutritabs-non-customize .nutri-badge
+{
+    width:37px;
+    height: 38px;
+    margin-top: -17px;
+    margin-right: 10px;
+    float:right;    
+    display: none; /*due to issue 1709 */
+}
+
+#menu-nutri-tabs .allergens
+{
+    color: #362f2d;
+    margin-top: 15px; 
+    margin-bottom: 7px;
+    font-size: 12px;
+}
+#menu-more-carousel
+{
+    padding: 20px 0px;
+}
+
+#menu-more-carousel .carousel-header
+{
+    position: relative;
+  /*  width: 350px; */
+    height: 25px;/* max height from inner div*/
+    z-index: 1000; /* To be above the carousel*/
+}
+#menu-more-carousel .carousel-header .text
+{
+    font-size: 20px;
+    font-weight: bold;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    color: #362f2d;
+}
+
+#menu-more-carousel .carousel-see-all a
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #6b1d10;
+    
+    text-decoration: none;
+}
+#menu-more-carousel .carousel-see-all a:hover
+{
+    text-decoration: underline;
+}
+#menu-more-carousel .carousel-see-all  .arrow-icon
+{
+    background: url("../images/menu_nutrition/yellow-arrow.png") no-repeat scroll  transparent;
+    width: 5px;
+    height: 8px;
+    position: absolute;
+    right: 0px;
+    top: 4px;
+}
+.subcat-selected-left
+{
+    float:left;
+    background: url("../images/menu_nutrition/subcat-selected-left.png") no-repeat scroll top left transparent;
+    width: 7px;
+    height: 50px;
+    margin-top: -8px;
+}
+.subcat-selected-middle
+{
+    float:left;
+    background: url("../images/menu_nutrition/subcat-selected-middle.png") repeat-x scroll top left transparent;
+    height: 50px;
+    width: 120px;
+    margin-top: -8px;
+}
+.subcat-selected-right
+{
+    float:left;
+    background: url("../images/menu_nutrition/subcat-selected-right.png") no-repeat scroll top left transparent;
+    width: 7px;
+    height: 50px;
+    margin-top: -8px;
+}
+
+.left-202
+{
+    margin-left: -4px;
+}
+.left-202-ie7
+{
+    position: absolute;
+    left: -4px;
+}
+.right-202
+{
+    margin-right: -4px;
+}
+
+
+.subcat-arrow2
+{
+    background: url("../images/menu_nutrition/subcat-selected-arrow.png") no-repeat scroll 0 0 transparent;
+    height: 11px;
+    width: 20px;
+    
+    
+    bottom: -11px;
+    left: 52px;
+    position: absolute;
+}
+
+.sub-categories .text
+{
+    position:absolute; 
+    top:0px; 
+    left: 10px;
+    
+    color: #6b1d10;
+    font-family: 'TradeGothicW01-BoldCn20 675334';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+        
+    text-align: left;
+    line-height:17.5px;
+}
+.sub-categories .text sup
+{
+    font-size: 0.8em;    
+    bottom: 0.6ex;
+}
+.sub-categories .text.text-201
+{
+    left: 7px;
+}
+.sub-categories .text.text-202
+{
+    left: 6px;
+}
+.sub-categories .text.text-263
+{
+    left: 7px;
+}
+.sub-categories .text.text-264
+{
+    left: 6px;
+}
+.sub-categories .text.text-264-ie7
+{
+    left: 3px;
+}
+.sub-categories .text.text-265
+{
+    left: 7px;
+}
+
+.sub-categories .text i,
+.sub-categories .text em
+{
+    font-family: 'TradeGothicW01-BoldCn20 675337';
+    font-weight: normal;
+    font-style: normal;
+}
+.sub-categories .selected-text
+{
+    color: #362f2d;
+}
+.my-meal a
+{
+    text-decoration: none;
+    color: #ffd973;
+}
+.my-meal a:hover
+{
+    text-decoration: underline;
+    color: #ffd973;
+}
+.my-meal a:visited
+{
+    text-decoration: none;
+    color: #ffd973;
+}
+
+
+ .round-top-left
+{
+    background: url("../images/menu_nutrition/round-corner-left-top.png") no-repeat scroll 0 0 transparent;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    top: -5px;
+    z-index: 2000;
+}
+
+ .round-top-right
+{
+    background: url("../images/menu_nutrition/round-corner-right-top.png") no-repeat scroll 0 0 transparent;
+    height: 5px;
+    width: 5px;
+     position: absolute;
+    top: -5px;
+    right: 0px;
+    z-index: 2000;
+}
+
+ .round-bottom-left
+{
+    background: url("../images/menu_nutrition/round-corner-left-bottom.png") no-repeat scroll 0 0 transparent;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    bottom: -5px;
+    z-index: 2000;
+}
+
+ .round-bottom-right
+{
+    background: url("../images/menu_nutrition/round-corner-right-bottom.png") no-repeat scroll 0 0 transparent;
+    height: 5px;
+    width: 5px;
+     position: absolute;
+    bottom: -5px;
+    right: 0px;
+    z-index: 2000;
+}
+.round-bottom-middle
+{
+    height: 5px;
+    z-index: 2000;
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+    background-color: #fff;
+    
+    width: 700px;
+    
+}
+.round-top-middle
+{
+    height: 5px;
+    z-index: 2000;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    background-color: #fff;
+    
+    width: 700px;
+}
+
+
+/* Override*/
+#fancybox-wrap
+{
+    z-index: 99999;
+}
+
+
+#mymeal-grid table#mymeal-table td
+{
+    border: 1px solid #cdcbca;
+    padding: 8px;
+
+}
+#mymeal-grid table#mymeal-table th
+{
+    border: 1px solid #362f2d;
+    padding: 8px;
+    background-color: #362f2d;
+    color: #fff;
+    font-weight: bold;
+}
+
+#mymeal-grid table#mymeal-table .td-menu-remove
+{
+    float:left;
+    margin-right:5px
+
+}
+
+#mymeal-grid table#mymeal-table .td-menu-name
+{
+    float:left;
+    width: 280px;
+
+}
+
+table#mymeal-table
+{
+    border-collapse: collapse;
+}
+#mymeal-header
+{
+    border-bottom: 1px solid #DEDEDE;
+    padding-bottom: 12px;
+}
+/* use in layout.css
+#mymeal-header #mymeal-print
+{   
+    height: 19px;
+    width: 54px;
+    
+    cursor: pointer;
+}
+*/
+#mymeal-header #mymeal-social
+{
+
+    height: 24px;
+    width: 172px;
+}
+
+#mymeal-header #mymeal-social div
+{
+    float: left;    
+}
+/* used in layout.css
+#mymeal-header #mymeal-social #mymeal-social-shared
+{   
+    height: 24px;
+    width: 40px;
+}
+*/
+#mymeal-desc
+{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+#mymeal-header-text
+{
+    font-family: 'Trade Gothic W01 Bold';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    float: left;
+}
+#mymeal-header-text i,
+#mymeal-header-text em
+{
+    font-family: 'TradeGothicW01-BoldObl';
+    font-weight: normal;
+    font-style: normal;
+}
+#mymeal-content .header
+{
+    font-family: 'TradeGothicW01-BoldCn20 675334';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+#mymeal-content .header i,
+#mymeal-content .header em
+{
+    font-family: 'TradeGothicW01-BoldCn20 675337';
+    font-weight: normal;
+	font-style: normal;
+}
+
+#mymeal-content #maincontent
+{
+    padding-right: 25px;
+    border-right: 1px solid #dedede;
+    
+    width: 390px
+}
+#mymeal-content #maincontent #mymeal-grid
+{
+    margin-bottom: 20px;
+    margin-left: -3px;
+}
+#mymeal-content #maincontent #mymeal-grid .table-top
+{
+    background: url("../images/menu_nutrition/table-top.png") no-repeat scroll 0 0px transparent;
+    height: 8px;
+    width: 396px;
+}
+
+#mymeal-content #maincontent #mymeal-grid .table-middle
+{
+    background: url("../images/menu_nutrition/table-middle.png") repeat-y scroll 0 0 transparent;
+    width: 396px;
+    padding-left: 3px;
+}
+
+#mymeal-content #maincontent #mymeal-grid .table-bottom
+{
+    background: url("../images/menu_nutrition/table-bottom.png") no-repeat scroll 0 0px transparent;
+    height: 11px;
+    width: 396px;
+}
+
+#mymeal-content
+{
+    height: 470px;
+    overflow: auto;
+}
+
+#mymeal-content #order-at-bk, #mymeal-content #noYourBK 
+{
+    float: right;
+    padding: 0 10px 0 0;
+    width: 180px;
+}
+
+#mymeal-content #noYourBK 
+{
+    width: auto;
+    float: left;
+    margin-top: 5px;
+    display: none;
+}
+
+/* My meal Your BK */
+
+#myMealYourBKDetails 
+{    
+    font-size: 11px; 
+    margin: 20px 0;       
+}
+
+#myMealYourBKDetails span 
+{
+    font-size: 11px; 
+    line-height: 18px;
+}
+
+#myMealYourBKDetails .restaurantInfoTitle 
+{
+    font-weight: bold;    
+}
+
+
+#myMealYourBKDetails .restaurantOptionNo
+{
+    color: #F00;
+}
+
+#myMealYourBKDetails .restaurantOptionYes
+{
+    color: #00a651;
+}
+
+
+#myMealYourBKDetails .jobApplicationLink 
+{
+    color: #A54E32;
+    text-decoration: underline;
+}
+
+#myMealYourBKDetails .yourBKInfoDirectionsButton 
+{
+    cursor: pointer;
+    color: #A54E32;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;    
+}
+
+#total-nutrition-data .static-nutri-item {
+    min-height: 20px;
+    /*padding: 10px;*/
+    width: 168px;
+    float: left;
+    
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+
+#total-nutrition-data .static-nutri-name {
+    color: #988D84;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+#total-nutrition-data .static-nutri-value {
+    color: #362f2d;
+    float: right;
+    font-family: 'TradeGothicW01-BoldCn20 675334';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+}
+#total-nutrition-data .static-nutri-value i,
+#total-nutrition-data .static-nutri-value em {
+    font-family: 'TradeGothicW01-BoldCn20 675337';
+    font-weight: normal;
+    font-style: normal;
+}
+#total-nutrition-data .nutri-left
+{
+    border-bottom: 1px solid #CDCBCA;
+    border-right: 1px solid #CDCBCA;
+    
+    padding-left:12px;
+    padding-right: 14px;
+}
+#total-nutrition-data .nutri-right
+{
+    border-bottom: 1px solid #CDCBCA;
+    
+    padding-left:17px;
+    padding-right: 9px;
+}
+#total-allergens-data
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#mymeal-content .delete-item
+{
+    background: url("../images/menu_nutrition/mymeal-delete-menu.png") no-repeat scroll 0 0 transparent;
+    height: 15px;
+    width: 15px;
+}
+
+#fancybox-close {
+    background: url("../images/modalbox-btn-close.png") no-repeat scroll 0 0 transparent;
+     height: 40px;
+
+    right: -20px;
+    top: -25px;
+    width: 40px;
+    z-index: 2500;
+}
+#total-nutrition-data .nutri-badge
+{
+    
+    height: 38px;
+    width: 37px;
+    
+    float: right;
+    margin-right: 9px;
+    margin-top: -20px;
+    display: none; /*due to issue 1709 */
+
+}
+
+#menu-save-your-meal-prompt div.prompt-header
+{
+    font-family: 'Trade Gothic W01 Bold';
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+#menu-save-your-meal-prompt .rbutton
+{
+    font-family: Arial;
+}
+
+/*
+#fancybox-wrap {
+  margin-top: -200px; 
+
+}*/
+
+/* Your BK Info */
+
+#yourBKInfo .bkInfoArrowDown 
+{
+    background: url(../images/home/arr-down.png);
+    width: 24px;
+    height: 13px;
+    position: absolute;
+    left: 180px;
+    bottom: -13px;
+	display: block;
+}
+
+#dv-cannot-add-item 
+{
+    background: url(../images/modalbox-bg.png) no-repeat;
+    width: 369px;
+    height: 127px;
+    position:absolute;
+    z-index: 9999;
+    right: 0px;    
+}
+
+#dv-cannot-add-item #btnCloseCannotAddAlertMessage 
+{
+    background: url(../images/modalbox-btn-close-mini.png) no-repeat;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;    
+}
+
+#dv-cannot-add-item #message
+{
+    padding: 25px;
+}
+#dv-cannot-add-item #message .exclamation
+{
+    background: url(../images/modalbox-exclamation-mark.png) no-repeat;
+    height: 26px;
+    padding-left: 30px;
+    padding-top: 5px;
+    font-size: medium;
+    font-weight: bold;
+    color: #ed1c24;
+}
+#dv-cannot-add-item #message .content
+{
+    font-size: 90%;
+}
+
+/* print ------------------------------------------------------------ */
+@media print 
+{    
+    /*
+    body * { visibility: hidden !important; }
+    #fancybox-content * { visibility: visible !important; }
+    #fancybox-content { position: absolute !important; top: 1px !important; left: 1px !important; }
+    
+    * { margin: 0; padding: 0; } 
+    body * { visibility: hidden; }
+    #fancybox-content * { visibility: visible; } 
+    #fancybox-content { position: absolute; top: 0; left: 0; } 
+    body, html, div, #fancybox-content { background: #FFF !important; } 
+    
+    body{ background: #fff; }    
+    div#GlobalHeader, div#GlobalFooter, div#tmp-menu-my-meal-fancybox,
+    div#yourBKInfo, div.my-meal, a#ContentTop, div#menu-more-carousel,
+    div#menu-nutri-tabs, div#menu-product-state, div#menu-landing-state,
+    div#mymeal-print, div#mymeal-social
+    { 
+        display: none !important; 
+        visibility: hidden !important;        
+    }
+    
+    #menu-my-meal-fancybox-container, #menu-my-meal-fancybox
+    {
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    #menu-my-meal-fancybox
+    {       
+        height: auto !important;
+        padding-top: 0px !important;
+    }    
+    
+    #mymeal-content
+    {
+        height: auto !important;
+    }
+    
+    #mymeal-header-text, #order-at-bk.header,  #order-at-bk.header i,  #order-at-bk.header sup
+    {
+        font-family: Arial, sans-serif !important;
+    } */
+}
+
+
+/* fb hide popup ------------------------------------------------------------ */
+div.facebook 
+{
+    height: 20px;
+}
+/*
+div.facebook .fb_edge_widget_with_comment span.fb_edge_comment_widget iframe.fb_ltr 
+{
+    display: none !important;
+}
+*/

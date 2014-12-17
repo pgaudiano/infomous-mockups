@@ -1,0 +1,408 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<base href="http://www.innovationleader.com/">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Innovation Leader &mdash; Corporate Innovation Strategies for Competitive Advantage</title>
+<meta name="description" content="Corporate Innovation Strategies for Competitive Advantage" />
+<meta name="robots" content="noodp,noydir" />
+<link rel="Shortcut Icon" href="http://innovationleader.com/wp-content/themes/innovationleader/images/favicon.ico" type="image/x-icon" />
+<link rel="alternate" type="application/rss+xml" title="Innovation Leader &raquo; Feed" href="http://innovationleader.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Innovation Leader &raquo; Comments Feed" href="http://innovationleader.com/comments/feed/" />
+<link rel="canonical" href="http://innovationleader.com/" />
+<link rel='stylesheet' id='theme-my-login-css'  href='http://innovationleader.com/wp-content/plugins/theme-my-login/theme-my-login.css?ver=6.3.8' type='text/css' media='all' />
+<link rel='stylesheet' id='innovation-leader-css'  href='http://innovationleader.com/wp-content/themes/innovationleader/style.css?ver=1.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-my-login-ajax-css'  href='http://innovationleader.com/wp-content/plugins/theme-my-login/modules/ajax/css/ajax.css?ver=3.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='http://innovationleader.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script>var jquery_placeholder_url = 'http://innovationleader.com/wp-content/plugins/gravity-forms-placeholders/jquery.placeholder-1.0.1.js';</script><script type='text/javascript' src='http://innovationleader.com/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpAjax = {"noPerm":"You do not have permission to do that.","broken":"An unidentified error has occurred."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://innovationleader.com/wp-includes/js/wp-ajax-response.min.js?ver=3.5.2'></script>
+<script type='text/javascript' src='http://innovationleader.com/wp-content/plugins/theme-my-login/modules/ajax/js/ajax.js?ver=3.5.2'></script>
+<script type='text/javascript' src='http://innovationleader.com/wp-content/plugins/gravity-forms-placeholders/gf.placeholders.js?ver=1.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://innovationleader.com/xmlrpc.php?rsd" />
+<script type='text/javascript'>
+  //<![CDATA[
+    (function() {
+      var shr = document.createElement('script');
+      shr.setAttribute('data-cfasync', 'false');
+      shr.src = 'http://dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js?ver=7.0.4.3';
+      shr.type = 'text/javascript'; shr.async = 'true';
+      shr.onload = shr.onreadystatechange = function() {
+        var rs = this.readyState;
+        if (rs && rs != 'complete' && rs != 'loaded') return;
+        var apikey = '906bf948e90c1820065b4834c6c3b8b2';
+        try { Shareaholic.init(apikey); } catch (e) {}
+      };
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(shr, s);
+    })();
+  //]]>
+</script>
+
+<!-- Shareaholic Content Tags -->
+<meta name='shareaholic:site_name' content='Innovation Leader' />
+<meta name='shareaholic:language' content='en-US' />
+<meta name='shareaholic:wp_version' content='7.0.4.3' />
+
+<!-- Shareaholic Content Tags End -->
+	
+<script>
+    jQuery(document).ready(function() {
+jQuery("#choice_11_1").click(function() {
+	var user_email = jQuery("#input_1_6").val();
+        var ajaxurl = 'https://innovationleader.com/wp-admin/admin-ajax.php';
+        //alert(user_email);
+	
+	var data = {
+		action : 'check_user_email',
+		email : user_email
+	}
+	
+	jQuery.post(ajaxurl, data, function(response) {
+		//alert(response);
+		jQuery("#input_1_24").attr('value', response);
+
+		
+	});
+});
+
+});
+</script>
+<meta name="viewport" content="width=1200px, maximum-scale=1.0"/>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41357870-1', 'innovationleader.com');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+
+	jQuery.fn.cleardefault = function() {
+	return this.focus(function() {
+		if( this.value == this.defaultValue ) {
+			this.value = "";
+		}
+	}).blur(function() {
+		if( !this.value.length ) {
+			this.value = this.defaultValue;
+		}
+	});
+};
+jQuery(".clearit input, .clearit textarea").cleardefault();
+
+});
+
+</script>
+<link rel="icon" type="image/png" href="http://www.innovationleader.com/img/favicon.png" />
+<link rel="icon" type="image/png" href="http://www.innovationleader.com/img/favicon.ico" />     <script>
+	 jQuery(document).ready(function() {
+		 jQuery('.sub-popup-warning img').click(function() {
+			 jQuery('.sub-popup-warning').remove();
+		 });
+	 });
+	 </script>
+     
+     </head>
+<body class="home blog logged-in header-image content-sidebar">
+<div id="wrap">
+<div id="top-wrap"><div id="leftnav"><div id="text-13" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Main Nav</h4>
+			<div class="textwidget"><div class="leftnav-main">
+<li><a href="/" style="color:#cc3333;">Home</a></li>
+<li><a href="/category/people">People</a></li>
+<li><a href="/category/practices">Practices</a></li>
+<li><a href="/category/design">Design</a></li>
+<li><a href="/category/data">Data Points</a></li>
+<li><a href="/category/disrupters">Disrupters</a></li>
+<li><a href="/events">Events</a></li>
+<li><a href="/share">Share Something</a></li>
+</div></div>
+		</div></div>
+<div id="text-32" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Social Icons</h4>
+			<div class="textwidget"><div class="leftnav-main" style="border-top:none;margin-top:-20px;text-align:center;">
+<a href="http://twitter.com/innolead" target="_blank"><img src="/wp-content/uploads/2013/08/tw2.png" style="margin-right:15px;"></a>
+<a href="http://www.linkedin.com/company/3239435" target="_blank"><img src="/wp-content/uploads/2013/08/in2.png" style="margin-right:15px;"></a>
+<a href="http://innovationleader.com/feed/" target="_blank"><img src="/wp-content/uploads/2013/08/rss2.png"></a>
+</div></div>
+		</div></div>
+<div id="text-18" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Utility Nav</h4>
+			<div class="textwidget"><div class="leftnav-utility">
+<li><a href="/about">About</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/help">Help</a></li>
+<li><a href="/subscribe">Subscribe</a></li>
+</div></div>
+		</div></div>
+<div id="text-17" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Search Box</h4>
+			<div class="textwidget"><div class="searchbox">
+<form method="get" action="/" ><input type="text" value="search" name="s" onclick="this.value='';"  onfocus="this.select()" onblur="this.value=!this.value?\'search\':this.value;"><input type="image" src="/wp-content/uploads/2013/06/searchicon2.png" style="border:0px;">
+</form>
+</div></div>
+		</div></div>
+</div><div id="header"><div id="title-area"><h1 id="title"><a href="http://innovationleader.com/" title="Innovation Leader">Innovation Leader</a></h1><p id="description">Corporate Innovation Strategies for Competitive Advantage</p></div><!-- end #title-area --><div class="widget-area"><div id="text-12" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">SK image &amp; text</h4>
+			<div class="textwidget"><div class="upper-right">
+<div class="upper-right-message">
+<div class="upper-right-title">Welcome Back!</div><div class="upper-right-text">Seen our <a href=http://innovationleader.com/events>curated list</a> of innovation conferences worth your time? What are we missing? <a href="mailto:scott@innovationleader.com?Subject=Events">Send me your favorite...</a></div></div>
+
+<div class="sk">
+<img src="/wp-content/uploads/2013/09/sk.png">
+</div>
+
+</div></div>
+		</div></div>
+</div><!-- end .widget-area --></div><!--end #header--><div id="inner"><div class="wrap">
+<div class="greybar"><div id="text-15" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Right Side</h4>
+			<div class="textwidget"><div class="greybar-right">
+
+<a href="/account" style="color:#3366cc;">ACCOUNT</a> (Free: <strong>0</strong> of <strong>4</strong> free articles viewed.)<span style="color:#ccc;">&nbsp; &nbsp; | &nbsp; &nbsp;</span><a href="/upgrade" style="color:#3366cc;">UPGRADE</a><span style="color:#ccc;">&nbsp; &nbsp; | &nbsp; &nbsp;</span><a href="http://innovationleader.com/logout/?_wpnonce=f965abab5a" title="Logout">LOGOUT</a>
+</div></div>
+		</div></div>
+<div id="text-14" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Left Side</h4>
+			<div class="textwidget"><div class="greybar-left">
+
+<span style="text-transform:uppercase;"><a href="/account">Paolo Gaudiano, Infomous</a></span>
+</div></div>
+		</div></div>
+</div><div id="content-sidebar-wrap">
+
+<div id="content">
+
+
+	<a href="http://innovationleader.com/monitoring-internal-innovation-whirlpools-interactive-dashboard/"><h1>Monitoring internal innovation: Whirlpool&#8217;s dashboard</h1></a><div class="thumbnail"><a href="http://innovationleader.com/monitoring-internal-innovation-whirlpools-interactive-dashboard/"><img width="200" height="192" src="http://innovationleader.com/wp-content/uploads/2013/11/moisesn-sm.jpg" class="attachment-post-thumbnail wp-post-image" alt="moisesn-sm" /></a></div>How does the appliance and home products maker keep track of new product ideas bubbling up in the organization— and their market potential? Global director of innovation Moisés Norena shares the dashboard executives use in their meetings, and explains how it works.<div style="clear:both;margin:30px 0px 0px 0px;border-top:1px dashed #ccc;"></div>
+<br />
+
+ <!-- Stop The Loop (but note the "else:" - see next line). -->
+
+ 
+	<a href="http://innovationleader.com/project-flow-3-key-trends-in-distributed-work/"><h1>Project flow: 3 key trends in distributed work</h1></a><div class="thumbnail"><a href="http://innovationleader.com/project-flow-3-key-trends-in-distributed-work/"><img width="200" height="155" src="http://innovationleader.com/wp-content/uploads/2013/11/gary-odesk.jpg" class="attachment-post-thumbnail wp-post-image" alt="gary-odesk" /></a></div>There's an undeniable shift happening, toward judicious and strategic use of distributed talent — whether full-timers who don't happen to live where your company has an office, or freelancers who prefer not to become anyone's employee. We explore the shift with oDesk CEO Gary Swart, left, and Scott Berkun, author of the new book "My Year Without Pants: WordPress.com and the Future of Work."
+<div style="clear:both;margin:30px 0px 0px 0px;border-top:1px dashed #ccc;"></div>
+<br />
+
+ <!-- Stop The Loop (but note the "else:" - see next line). -->
+
+ 
+	<a href="http://innovationleader.com/why-coke-is-hiring-entrepreneurs-and-organizing-failure-conferences/"><h1>Why Coke is hiring founders and holding failure conferences</h1></a><div class="thumbnail"><a href="http://innovationleader.com/why-coke-is-hiring-entrepreneurs-and-organizing-failure-conferences/"></a></div><img src=http://innovationleader.com/wp-content/uploads/2013/10/startupweekendcoke.png><P>VP of innovation and entrepreneurship David Butler shares the experiments Coke is trying internally and externally as a way to "regenerate the culture" of the 150,000 employee company, including hackathons to improve its soda dispensers and conferences focused on learning from failure. Above, two employees present an idea at Coke's first employee Startup Weekend, held in June 2013.<div style="clear:both;margin:30px 0px 0px 0px;border-top:1px dashed #ccc;"></div>
+<br />
+
+ <!-- Stop The Loop (but note the "else:" - see next line). -->
+
+ 
+	<a href="http://innovationleader.com/does-your-organization-undermine-innovation-initiatives/"><h1>Does your organization undermine innovation?</h1></a><div class="thumbnail"><a href="http://innovationleader.com/does-your-organization-undermine-innovation-initiatives/"></a></div><iframe src="http://www.slideshare.net/slideshow/embed_code/27701226?rel=0" width="635" height="515" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
+<P>
+We spoke to more than 20 innovation executives across a range of industries, along with entrepreneurs who have had their startups acquired by big companies. Our focus: What are the most common ways you see large organizations shooting themselves in the foot when it comes to innovation? Click through the presentation above to see what they said.<div style="clear:both;margin:30px 0px 0px 0px;border-top:1px dashed #ccc;"></div>
+<br />
+
+ <!-- Stop The Loop (but note the "else:" - see next line). -->
+
+ 
+	<a href="http://innovationleader.com/3-reasons-pebble-is-worth-watching/"><h1>3 big company lessons from smartwatch startup Pebble</h1></a><div class="thumbnail"><a href="http://innovationleader.com/3-reasons-pebble-is-worth-watching/"><img width="200" height="160" src="http://innovationleader.com/wp-content/uploads/2013/10/pebble-featured.png" class="attachment-post-thumbnail wp-post-image" alt="pebble-featured" /></a></div>Pebble took 275,000 pre-orders for its first product, a $150 smartwatch, and also landed it on the shelves of Best Buy. Here's what you should know about the Silicon Valley startup that is suddenly on the radar of much bigger players like Apple and Samsung. Includes a video interview with founder Eric Migicovsky.<div style="clear:both;margin:30px 0px 0px 0px;border-top:1px dashed #ccc;"></div>
+<br />
+
+ <!-- Stop The Loop (but note the "else:" - see next line). -->
+
+ 
+<div class="kicker" style="margin-bottom:10px;font-size:12px;">
+In Case You Missed It:
+</div>
+
+
+<li style="list-style-type:square;margin-left:15px;margin-bottom:10px;"><a href="http://innovationleader.com/hackathon-how-to-five-examples/"><h4>Community hackathon how-to: 5 keys to success, 5 examples</h3></a></li>
+
+<li style="list-style-type:square;margin-left:15px;margin-bottom:10px;"><a href="http://innovationleader.com/rfi-whats-the-right-relationship-between-innovation-teams-and-business-units/"><h4>RFI: Right relationship between innovation and business units?</h3></a></li>
+
+<li style="list-style-type:square;margin-left:15px;margin-bottom:10px;"><a href="http://innovationleader.com/steve-case-creating-networks-is-the-new-competency/"><h4>Steve Case: Creating networks is the new competency</h3></a></li>
+
+</div>
+
+ <div id="sidebar" class="sidebar widget-area">
+<div id="text-10" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Top Section</h4>
+			<div class="textwidget"><h4 style="color:#cc3333; margin-top:20px;">
+Document
+</h4>
+<a href=http://innovationleader.com/learning-to-love-innovation-day-at-unitedhealth-group/><img src="http://innovationleader.com/wp-content/uploads/2013/10/uhgsidebar.jpg" style="margin-top:10px;"></a>
+<h2>Do 'Innovation Days' work?</h2>
+UnitedHealth Group's VP of Innovation Competency acknowledges that he was initially skeptical about the impact that a company-wide Innovation Day could have. But now, Ryan Armbruster is a convert. He shares the company's <a href=http://innovationleader.com/learning-to-love-innovation-day-at-unitedhealth-group/>blueprint for the event</a>.
+</div>
+		</div></div>
+<div id="text-24" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Newest Subscribers</h4>
+			<div class="textwidget"><div class="collaborators">
+
+<h4 style="color:#cc3333; margin-top:20px;">
+Our Newest Subscribers
+</h4>
+
+<div class="collaborators-list">
+
+<!-- subscriber 1 -->
+<div class="collaborators-item">
+<div class="collaborators-name"><strong>
+Amiel Kornel
+</strong><br />
+Spencer Trask & Co.<br />
+<em>
+Senior Managing Director
+</em>
+</div>
+</div>
+
+
+<!-- subscriber 2 -->
+<div class="collaborators-item">
+<div class="collaborators-name"><strong>
+Andrew Collins
+</strong><br />
+Sentient Jet
+<br />
+<em>
+President
+</em>
+</div>
+</div>
+
+
+<!-- subscriber 3 -->
+<div class="collaborators-item">
+<div class="collaborators-name"><strong>
+Abby Fichtner
+</strong><br />
+Harvard Innovation Lab
+<br />
+<em>
+Hacker in Residence
+</em>
+</div>
+</div>
+
+
+
+
+<!-- this is the auto-populate code, disable for now -->
+<!-- ?php
+    $blogusers = get_users('orderby=user_registered&order=desc&role=premium&number=3');
+    foreach ($blogusers as $user) {
+
+        echo '<div class="collaborators-item">';
+        echo '<div class="collaborators-name"><strong>';
+        echo $user->user_firstname;
+        echo ' ';
+        echo $user->user_lastname;
+        echo '</strong><br />';
+        echo $user->firm_name;
+        echo '<br /><em>';
+        echo $user->user_title;
+        echo '</em></div>';
+        /*echo '<div class="collaborators-date">';
+        echo date('m\/d',$user->signupdate);
+        echo '</div>';*/
+        echo '</div>';
+
+}
+? -->
+
+</div>
+
+<div style="text-align:center;margin-bottom:20px;">
+<a href="/subscribe" style="font-family:'Avenir Next W10 Regular';font-size:13px;">GET LISTED ... SUBSCRIBE NOW</a>
+</div>
+
+</div></div>
+		</div></div>
+<div id="text-23" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Bottom Section</h4>
+			<div class="textwidget"><h4 style="color:#cc3333; margin-top:20px;">
+60-Second Survey</h4>
+<a href=http://innovationleader.com/seeking-your-help-salary-survey-for-innovation-executives/><img src="http://innovationleader.com/wp-content/uploads/2013/10/currency-sidebar.jpg" style="margin-top:10px;"></a>
+<h2>What's in your wallet?</h2>
+No one has yet done a solid compensation survey of executives responsible for innovation. We'd like to fix that, and we're <a href=http://innovationleader.com/seeking-your-help-salary-survey-for-innovation-executives/>looking for your help</a>. It's anonymous, and it takes 60 seconds or less. We'll share the results here later in 2013.</div>
+		</div></div>
+
+			<div class="textwidget"><h4 style="color:#cc3333; margin-top:20px;">
+Find more content</h4>
+<p>
+<script type="text/javascript" async data-infomous-id="nid44593" src="http://www.infomous.com/client2?width=280&height=500&maxWords=30&skinSourcesWidth=240"></script>
+</div>
+
+
+</div>
+
+</div><!-- end #content-sidebar-wrap -->
+
+
+</div><!-- end .wrap --></div><!-- end #inner --><div id="footer" class="footer"><div class="gototop"><p><a href="#wrap" rel="nofollow">Return to top of page</a></p></div><div class="creds"><p>Copyright &#x000A9; 2013 &#x000B7; <a href="http://www.innovationleader.com" title="Innovation Leader">Innovation Leader</a> on <a href="http://www.studiopress.com/" title="Genesis Framework">Genesis Framework</a> &#x000B7; <a href="http://wordpress.org/" title="WordPress">WordPress</a> &#x000B7; <a href="http://innovationleader.com/logout/?_wpnonce=f965abab5a">Log out</a></p></div></div><!-- end #footer -->
+</div><div id="custom-footer"><div id="text-20" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Right column</h4>
+			<div class="textwidget"><div class="footer-right">
+
+<div style="margin-top:-10px;">
+<h1 style="color:#cc3333;font-family:'AvenirNextLTW01-Regular';font-size:36px;letter-spacing:-.5px;text-align:center;">Join Our Email List</h1>
+
+<div class="emailbox-footer" style="margin-top:-5px;">
+<form action="http://innovationleader.us7.list-manage.com/subscribe/post?u=c1b2092c1c162a858fab4adec&amp;id=71d0920fde" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+<input type="image" src="/wp-content/uploads/2013/06/arrow-footer.png" value="GO" name="subscribe"">
+<input type="email" name="EMAIL" value="Email" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'&nbsp;  Email':this.value;">
+<input type="hidden" name="SOURCE" value="Web">
+</form>
+</div>
+</div>
+<P><h3 style="color:#FFFF66;font-family:'AvenirNextLTW01-Regular';font-size:14px;letter-spacing:-.5px;text-align:center;">(Weekly updates on our <I>freshest</I> content.)</h3>
+<div class="footernav" style="clear:both;margin:0px auto;margin-left:70px;">
+<table border="0" width="360" align="center">
+<tr>
+<td valign="top" width="120">
+<li><a href="/about">About</a></li>
+<li><a href="/contact">Contact</a></li>
+</td>
+<td valign="top" width="120">
+<li><a href="/help">Help</a></li>
+<li><a href="/subscribe">Subscribe</a></li>
+</td>
+<td valign="top" width="120">
+<li><a href="/terms">Terms of Use</a></li>
+<li><a href="/privacy">Privacy Policy</a></li>
+</td>
+</tr>
+</table>
+</div>
+</div></div>
+		</div></div>
+<div id="text-19" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Left Column</h4>
+			<div class="textwidget"><div class="footer-left">
+Innovation Leader is a research and information service on corporate innovation. Led by award-winning journalist and author Scott Kirsner, Innovation Leader provides action-oriented tactics and strategies for corporate executives. <a href="/about">Learn More</a>.
+</div></div>
+		</div></div>
+<div id="text-25" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Copyright</h4>
+			<div class="textwidget"><div style="clear:both;"></div>
+<div style="height:20px;width:1200px;">&nbsp;</div>
+<div class="copyright" style="float:right;width:540px;">
+ALL RIGHTS RESERVED.
+</div>
+<div class="copyright" style="text-align:right;width:535px;">
+&copy; 2013 INNOVATION LEADER LLC.
+</div>
+</div>
+		</div></div>
+</div></div><!-- end #wrap -->
+<link rel='stylesheet' id='thickbox-css'  href='http://innovationleader.com/wp-includes/js/thickbox/thickbox.css?ver=20121105' type='text/css' media='all' />
+<link rel='stylesheet' id='farbtastic-css'  href='http://innovationleader.com/wp-admin/css/farbtastic.css?ver=1.3u1' type='text/css' media='all' />
+<link rel='stylesheet' id='cmb-styles-css'  href='http://innovationleader.com/wp-content/plugins/subscription/meta/style.css?ver=3.5.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://innovationleader.com/wp-content/plugins/subscription/meta/js/jquery.timePicker.min.js?ver=3.5.2'></script>
+<script type='text/javascript' src='http://innovationleader.com/wp-includes/js/jquery/ui/jquery.ui.core.min.js?ver=1.9.2'></script>
+<script type='text/javascript' src='http://innovationleader.com/wp-includes/js/jquery/ui/jquery.ui.datepicker.min.js?ver=1.9.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/innovationleader.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif","closeImage":"http:\/\/innovationleader.com\/wp-includes\/js\/thickbox\/tb-close.png"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://innovationleader.com/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105'></script>
+<script type='text/javascript' src='http://innovationleader.com/wp-content/plugins/subscription/meta/js/cmb.js?ver=3.5.2'></script>
+</body>
+</html>

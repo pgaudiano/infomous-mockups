@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/3af6/0/0/%2a/e;232834588;0-0;0;62809194;3-125/125;41253249/41271036/1;;~sscs=%3fhttp://www.foliosociety.com/oxfordukro"><img src="http://s0.2mdn.net/viewad/2217003/1-soed-uk_and_row.gif" border=0 alt="Click here to find out more!"></a>');

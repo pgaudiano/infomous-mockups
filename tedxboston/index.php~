@@ -1,0 +1,27 @@
+<?php
+$page = file_get_contents('http://www.gatesfoundation.org/foundationnotes/Pages/default.aspx');
+
+$page = str_replace('<head profile="http://gmpg.org/xfn/11">',
+      '<head profile="http://gmpg.org/xfn/11">
+      <base href="http://tedxboston.org/">
+      ',
+      $page);
+
+$page = str_replace(
+	 '<div id="sidebar">',
+	 '<div id="sidebar">
+
+<!-- Infomous Insertion -->
+	<script type="text/javascript" src="http://www.infomous.com/site/mockups/tedxboston//embed.js"></script>
+<!-- End Infomous Insertion -->
+
+
+',
+	$page
+);
+
+
+
+echo $page;
+
+?>

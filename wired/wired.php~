@@ -1,0 +1,88 @@
+<?php
+include("simple_html_dom.php");
+
+if(!isset($_GET["url"]))
+{
+$url = $_GET["url"];
+?>
+<form action="#">
+<label>Wired.com article URL: </label>
+<input type="text" name="url" style="width:600px"><br/>
+<input type="submit" value="Generate">
+</form>
+<?
+} else {
+$url = "http://www.wired.com/underwire/2013/03/oscars-vfx-protest/";
+?>
+<form action="#">
+<label>Wired.com article URL: </label>
+<input type="text" name="url" style="width:600px"><br/>
+<input type="submit" value="Generate">
+</form>
+<?
+}
+
+$page = file_get_html($url);
+
+foreach($page->find('ul.entryCategories li a') as $element) 
+{
+ $feeds .= $element->href."feed/|";
+}
+$page = str_replace(
+      '<title>',
+      '<base href="http://www.wired.com">
+      <title>
+      ',
+      $page);
+
+$page = preg_replace(
+'+<div id='linker_widget'></div>+s',	 '
+<style type="text/css">
+object,embed{width:inherit;height:inherit}
+</style>
+<h2 class="widget-title">Explore related content - click any word below</h2>
+<div id="infomous" class="infomous"></div>
+<script type="text/javascript">
+    var vars = {
+            width: "650",
+            height: "380",
+            //setInterfaceType: "widget",
+            feeds: "'.$feeds.'",
+	    campaign: "WiredCampaign",
+	    colWord: "0x000000",
+	    colWordHoverLinked: "0x4883ab",
+	    colWordFade: "0xbfcfd6",
+	    colWordHighlighted: "0x64a0c8",
+	    colHoverBox: "0x000000",
+	    colFocusBorder: "0x64a0c8",
+	    colLink: "0xf7f7f7",
+	    colLinkHover: "0xc7dbe8",
+	    colBlob: "0xf7fbfd",
+	    colBlobBorder: "0xdeebf3",
+	    colBlobHover: "0xedf3f7",
+	    colSourcesBorder: "0x64a0c8",
+	    colSourcesLine1: "0x000000",
+	    colSourcesTextHover: "0x60a0d1",
+	    colPanelFill: "0xdeebf3",
+	    colButton: "0x000000",
+	    colButtonHover: "0x383838",
+	    colButtonDown: "0x141014",
+	    colBackground: "0xffffff",
+	    skinMaxFontSize: "44",
+	    skinMinFontSize: "12",
+	    skinLine1Size: "13",
+	    skinLine2Size: "12",
+	    skinSourcesWidth: "300",
+    }
+</script>
+<script type="text/javascript" src="http://infomous.com/client/embed.js"></script>  
+	 <!-- Infomous insertion -->
+<h2 class="widget-title" style="margin-top:10px;">Related research</h2>',
+	$page
+);
+
+
+
+echo $page;
+
+?>

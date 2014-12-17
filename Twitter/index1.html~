@@ -1,0 +1,2605 @@
+<!DOCTYPE html>
+<html class=" js"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="TwitterHomeDemo/phoenix.js" async="" type="text/javascript"></script><script src="TwitterHomeDemo/phoenix_plugins.js" async="" type="text/javascript"></script><script src="TwitterHomeDemo/api.js" async="" type="text/javascript"></script><script src="TwitterHomeDemo/base.js" async="" type="text/javascript"></script>
+    
+    <title>Twitter / Home</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+
+<script src="TwitterHomeDemo/ga.js" async="" type="text/javascript"></script><script type="text/javascript" charset="utf-8">
+  
+  
+  document.domain = 'twitter.com';
+
+  // this will be copied to twttr.appStartTime once our JS has started up
+  document.startTime = new Date().getTime();
+  var twttr = {};
+  twttr.versionName = 'phoenix';
+
+  if (!window.console) {
+    (function() {
+      var names = ["log", "debug", "info", "warn", "error", "assert", "dir", "dirxml",
+      "group", "groupEnd", "time", "timeEnd", "count", "trace", "profile", "profileEnd"];
+      window.console = {};
+      for (var i = 0; i < names.length; ++i) {
+        window.console[names[i]] = function() {};
+      }
+    }());
+  }
+</script>
+
+<script type="text/javascript">(function () {
+  // patch some IE things
+  window.setTimeout = window.setTimeout;
+  window.setInterval = window.setInterval;
+
+  window.WATCH = function (label, block) {
+    if (typeof block === 'undefined') {
+      block = label;
+      label = undefined;
+    }
+    if (typeof label === 'string') {
+      WATCH._didExecute[label] = true;
+    }
+
+    WATCH._attempt(this, block);
+  };
+  WATCH._didExecute = {};
+
+  WATCH._reportCount = 0;
+
+  WATCH._reportLimit = 25;
+
+  WATCH._reportInterval = 60 * 1000;
+  WATCH._active = false;
+  WATCH.activate = function (setting) {
+    if (typeof setting === 'undefined'){
+      setting = true;
+    }
+    WATCH._active = setting;
+    extend(WATCH, WATCH._active ? WATCH.actives : WATCH.inactives)
+  };
+
+  WATCH.actives = {};
+  WATCH.inactives = {};
+
+  var extend = function(destination, source){
+    for (var key in source){
+      destination[key] = source[key];
+    }
+  }
+
+  var noop = function(){};
+
+  WATCH._attempt = function(that, block) {
+    if (arguments.length < 2) {
+      block = that;
+      that = window;
+    }
+
+    if (WATCH._active) {
+      try {
+        block.apply(that);
+      } catch (error) {
+        WATCH._triggerError(error);
+      }
+    } else {
+      block.apply(that);
+    }
+  };
+
+  WATCH.inactives.end = noop;
+  WATCH.actives.end = function (label) {
+    if (typeof label === 'undefined') {
+      throw new Error('WATCH.end() requires a label');
+    }
+    if (WATCH._didExecute[label]) {
+      WATCH._didExecute[label] = false;
+    } else if (WATCH._active) {
+      WATCH._triggerError(new Error('WATCH.end("'+label+'") called without successful call to WATCH("'+label+'", fn(){...}) - a SyntaxError probably just happened'));
+    }
+    WATCH._didExecute[label] = false;
+  };
+
+  /**
+   *  Given a function, return a version of that function that is wrapped by the WATCH function.
+   */
+  WATCH.inactives.callback = function(that, callback){
+    // pass the callback through
+    return typeof callback === 'undefined' ? that : callback;
+  };
+  WATCH.actives.callback = function (that, callback) {
+    if (arguments.length === 1) {
+      callback = that;
+      that = this;
+    }
+
+    if (typeof callback === 'string') {
+      callback = (function (stringVersion) {
+        return function () {
+          eval(stringVersion);
+        };
+      }(callback));
+    }
+
+    var watchedCallback = function () {
+      var that = this,
+          args = arguments,
+          result;
+
+      WATCH._attempt(function () {
+        result = callback.apply(that, args);
+      });
+      return result;
+    };
+
+    watchedCallback.isWatched = true;
+    return watchedCallback;
+  };
+
+  WATCH._onErrorCallbacks = {};
+
+  WATCH.inactives._addOnError = noop;
+  WATCH.actives._addOnError = function (callback) {
+    var unique = WATCH._unique();
+    WATCH._onErrorCallbacks[unique] = callback;
+    return unique;
+  };
+
+  WATCH.inactives._removeOnError = noop;
+  WATCH.actives._removeOnError = function (id) {
+    delete WATCH._onErrorCallbacks[id];
+  };
+
+  WATCH._lastUnique = -1;
+  WATCH._unique = function () {
+    return ++WATCH._lastUnique;
+  };
+
+  WATCH.inactives.jQuery = noop;
+  WATCH.actives.jQuery = function () {
+    //  Wrap jQuery's event binding code so all event handlers are wrapped
+    WATCH._originalJQueryEventAdd = WATCH._originalJQueryEventAdd || jQuery.event.add;
+    jQuery.event.add = function () {
+      var newArgs = Array.prototype.slice.call(arguments);
+
+      if (typeof newArgs[2] === 'function') {
+        newArgs[2] = WATCH.callback(newArgs[2]);
+      } else if (newArgs && typeof newArgs[2] === 'object' && newArgs[2].handler) {
+        newArgs[2].handler = WATCH.callback(newArgs[2].handler);
+      }
+      return WATCH._originalJQueryEventAdd.apply(this, newArgs);
+    };
+
+    WATCH._originalJQueryAjax = WATCH._originalJQueryAjax || jQuery.ajax;
+    jQuery.ajax = function (options) {
+      jQuery.each(['complete', 'error', 'success'], function (which, key) {
+        if (!options[key]) {
+          return;
+        }
+        options[key] = WATCH.callback(options[key]);
+      });
+
+      return WATCH._originalJQueryAjax.apply(this, arguments);
+    };
+  };
+  WATCH.inactives.undoJQuery = noop;
+  WATCH.actives.undoJQuery = function() {
+    jQuery.event.add = WATCH._originalJQueryEventAdd;
+    jQuery.ajax = WATCH._originalJQueryAjax;
+  };
+
+  WATCH._previousErrors = {};
+
+  var escapeDoubleQuotes = function (string) {
+    return string.toString().replace('"', '\\"');
+  };
+
+  var stringifyLite = function (object) {
+    var result = '{', hasProperty = false;
+    for (var key in object) {
+      if(typeof object[key] === 'undefined' || object[key] === null){
+        continue;
+      }
+      result += (hasProperty ? ',"' : '"') + escapeDoubleQuotes(key) + '":"' + escapeDoubleQuotes(object[key]) + '"';
+      hasProperty = true;
+    }
+    return result + '}';
+  };
+
+  WATCH._scribeError = function(report) {
+    if(WATCH._previousErrors[report.error] && (new Date()) - WATCH._previousErrors[report.error] < WATCH._reportInterval) {
+      //  We've recently logged this; don't log it again
+      return false;
+    }
+
+    if(WATCH.reportLimit <= WATCH.reportCount){
+      return;
+    }
+
+    WATCH.reportCount++;
+
+    if ( ! document.location.hostname.match(/(^(www|api)\.)?twitter\.com$/) ) {
+      return;
+    }
+
+    WATCH._previousErrors[report.error] = new Date();
+
+    report.product_name = 'webclient';
+    report.type = 'js_error';
+    report.url = window.location.href;
+    report.event_name = "test";
+
+    var isProduction = document.location.hostname.match(/(^(www|api|staging\d+.local)\.)twitter\.com$/) != null;
+    var scribeHost = isProduction ? 'scribe.twitter.com' : window.location.host;
+    var scribeUrl = (window.location.protocol.match(/s\:$/) ? 'https' : 'http') + '://' + scribeHost;
+    scribeUrl += isProduction ? '/' : '/scribe';
+    scribeUrl += '?category=client_watch_error&log=' + encodeURIComponent(stringifyLite(report)) + '&ts=' + (new Date()).getTime();
+
+    (new Image()).src = scribeUrl;
+  };
+
+  WATCH._triggerError = function(error) {
+    var reraise = true;
+
+    var report = {
+      error: error
+    };
+
+    for (var key in WATCH._onErrorCallbacks) {
+      try {
+        if (WATCH._onErrorCallbacks[key](report) === false) {
+          reraise = false;
+        }
+      } catch (callbackError) {
+        report.callbackFailure = true;
+      }
+    }
+    WATCH._scribeError(report);
+    if(reraise){
+      throw error;
+    }
+  };
+
+  /**
+   *  Wrap built-in functions with versions that WATCH for errors as appropriate.
+   */
+  WATCH.inactives.natives = noop;
+  WATCH.actives.natives = function () {
+    window.setInterval = WATCH._watchedSetInterval;
+    window.setTimeout = WATCH._watchedSetTimeout;
+  };
+
+  WATCH.inactives.undoNatives = noop;
+  WATCH.actives.undoNatives = function () {
+    window.setInterval = WATCH._originalSetInterval;
+    window.setTimeout = WATCH._originalSetTimeout;
+  };
+
+  WATCH._originalSetInterval = window.setInterval;
+  WATCH._originalSetTimeout = window.setTimeout;
+
+  //  Wrap setInterval and setTimeout, which run code asyncronously and therefore allow it
+  //  to escape any existing try/catch blocks.
+
+  //  Rebind window.setInterval and .setTimeout
+  WATCH._watchedSetInterval = function (callback, timeout) {
+    // in IE, native functions have no .call().
+    // we have to bind to a local var in order to get them to run in the context of window
+    var setInterval = WATCH._originalSetInterval;
+    return setInterval(WATCH.callback(callback), timeout);
+  };
+
+  WATCH._watchedSetTimeout = function (callback, timeout) {
+    // in IE, native functions have no .call().
+    // we have to bind to a local var in order to get them to run in the context of window
+    var setTimeout = WATCH._originalSetTimeout;
+    return setTimeout(WATCH.callback(callback), timeout);
+  };
+
+  WATCH.activate(false);
+}());
+</script>
+<script type="text/javascript">
+  </script>
+
+
+<script>
+function bust () {
+  document.write = "";
+  window.top.location = window.self.location;
+  setTimeout(function() {
+    document.body.innerHTML = '';
+    }, 0);
+  window.self.onload = function(evt) {
+    document.body.innerHTML = '';
+  };
+}
+if (window.top !== window.self) { // are you trying to put self in an iframe?
+  try {
+    if (window.top.location.host) { // this is illegal to access unless you share a non-spoofable document domain
+      // fun times
+    } else {
+      bust(); // chrome executes this
+    }
+  } catch (ex) {
+    bust(); // everyone executes this
+  }
+}
+</script>
+
+<link href="http://twitter.com/phoenix/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="TwitterHomeDemo/phoenix.css" type="text/css" media="screen">
+    <!-- basic RSS hoopla -->
+      <link rel="http://oexchange.org/spec/0.8/rel/related-target" href="http://twitter.com/oexchange.xrd" type="application/xrd+xml">
+      <link rel="alternate" href="http://twitter.com/favorites/10252872.rss" title="Your Twitter Favorites" type="application/rss+xml">
+    <noscript>
+        <meta http-equiv=refresh content="0; URL=/?_twitter_noscript=1" />
+        </noscript>
+    
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30775-6']);
+  _gaq.push(
+    ['_trackPageview'],
+    ['_setDomainName', 'twitter.com']
+  );
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  }());
+
+  twttr.trackPageView = function(pathName) {
+    var event = ['_trackPageview'];
+    if (pathName) {
+      event.push(pathName);
+    }
+    _gaq.push(event);
+  };
+
+</script>
+  <style id="user-style-icopaolo">
+  body.user-style-icopaolo {
+          background-position: left 40px;
+      background-attachment: fixed;
+              background-repeat: no-repeat;
+            background-color: #c7800e;
+          color: #333333;
+    }
+  body.user-style-icopaolo a,
+  body.user-style-icopaolo ul.stream-tabs li,
+  body.user-style-icopaolo .component .promo strong,
+  body.user-style-icopaolo .message-thread-preview:hover .message-count,
+  body.user-style-icopaolo .list-membership-container li.create-a-list {
+          color: #0084B4;
+    }
+  body.user-style-icopaolo .stream-item:hover .tweet-screen-name,
+  body.user-style-icopaolo .stream-item:hover .tweet-timestamp,
+  body.user-style-icopaolo .stream-item:hover .tweet-geo-text,
+  body.user-style-icopaolo .stream-item:hover .user-profile-link,
+  body.user-style-icopaolo div.latest-favorite .user-profile-link,
+  body.user-style-icopaolo span.user-stat-link,
+  body.user-style-icopaolo a.title-link:hover,
+  body.user-style-icopaolo a.user-stats-count:hover span.user-stats-stat,
+  body.user-style-icopaolo .dashboard .user-small-list-item:hover a.user-screen-name,
+  body.user-style-icopaolo .user-detailed-list-item:hover a.user-screen-name,
+  body.user-style-icopaolo .tweet-activity:hover a.latest-tweet-timestamp {
+          color: #0084B4 !important;
+    }
+  body.user-style-icopaolo .hovered-stream-item,
+  body.user-style-icopaolo .stream-item:hover,
+  body.user-style-icopaolo #new-tweets-bar,
+  body.user-style-icopaolo #new-tweets-bar:active {
+          background-color: rgba(0,132,180,0.1);
+          border-color: rgba(0,132,180,0.15);
+    }
+  body.user-style-icopaolo #new-tweets-bar:hover {
+          background-color: rgba(0,132,180,0.2);
+          border-color: rgba(0,132,180,0.25);
+    }
+  body.user-style-icopaolo .dashboard .user-small-list-item .user-screen-name,
+  body.user-style-icopaolo .profile-screenname,
+  body.user-style-icopaolo .title-link,
+  body.user-style-icopaolo div.latest-tweet .latest-tweet-timestamp,
+  body.user-style-icopaolo a.user-stats-count span.user-stats-stat,
+  body.user-style-icopaolo .welcome-steps li .active a strong {
+          color: #333333;
+    }
+  body.user-style-icopaolo .dashboard .user-small-list-item .user-full-name,
+  body.user-style-icopaolo span.trend-location,
+  body.user-style-icopaolo .your-activity h3,
+  body.user-style-icopaolo .trends-inner h3,
+  body.user-style-icopaolo .dashboard .user-rec-inner h3,
+  body.user-style-icopaolo .recently-listed-in,
+  body.user-style-icopaolo .latest-favorite-inner,
+  body.user-style-icopaolo .latest-tweet,
+  body.user-style-icopaolo .latest-tweet a.latest-tweet-timestamp,
+  body.user-style-icopaolo .dashboard .dot,
+  body.user-style-icopaolo .component .promo,
+  body.user-style-icopaolo .component .promo a.definition,
+  body.user-style-icopaolo .dashboard .user-small-list-item .dismiss,
+  body.user-style-icopaolo .dashboard .user-small-list-item .ellip,
+  body.user-style-icopaolo .dashboard .copyright {
+          color: rgba(51,51,51,0.6);
+    }
+  body.user-style-icopaolo #page-container,
+  body.user-style-icopaolo .user-sidebar-color {
+          /* IE7/8 */
+      background: #ffc15c;
+          /* Modern browsers */
+      background: rgba(255,193,92,0.9);
+          /* IE6 */
+      _background-color: #ffc15c;
+    }
+.profile-style-icopaolo a {
+      color: #0084B4 !important;
+  }
+a:hover .geo-pin, body.user-style-icopaolo .stream-item:hover .geo-pin, .place_link span.place_icon {
+  background-color: #0084B4;
+}
+</style>
+<noscript>
+  <style id="user-style-icopaolo-bg-img">
+  body.user-style-icopaolo {
+                  background-image: url(http://a1.twimg.com/profile_background_images/98638040/IMG_1068.png);
+      }
+</style>
+</noscript><style id="user-style-icopaolo-bg-img">
+  body.user-style-icopaolo {
+                  background-image: url(http://a1.twimg.com/profile_background_images/98638040/IMG_1068.png);
+      }
+</style></head>
+  <body class="mozilla user-style-icopaolo"><iframe tabindex="-1" role="presentation" style="position: absolute; top: -9999px;" src="TwitterHomeDemo/receiver.html"></iframe>
+    <div class="route-home" id="doc">
+      <div id="top-stuff">
+        <div id="banners" style="clear:both;"><div><div class="welcome-banner-outer banner-outer">
+  <div class="welcome-banner banner">
+    <div style="left: 0px;" class="welcome-banner-inside banner-inside">
+      <a class="pane-close" href="#">Close&nbsp;<span>×</span></a>
+      <span>
+        <form method="post" action="/account/use_phx?setting=false&amp;format=html" class="turn-phx-off-form"><input name="setting" value="false" type="hidden"><input name="format" value="html" type="hidden"><input value="0f405962ac5626a0b2e63d9149931c67dfabbd21" name="authenticity_token" type="hidden">Welcome to <a href="http://twitter.com/#%21/search/%23NewTwitter">#NewTwitter</a>! Read up on <a target="_blank" href="http://twitter.com/newtwitter">what’s new</a>. You can still access <button type="submit" class="turn-phx-off-button">old Twitter</button> for a limited time.</form>
+      </span>
+    </div>
+  </div>
+</div></div></div>
+        <div id="top-bar-outer">
+          <div id="top-bar-bg"></div>
+          <div id="top-bar">
+            <div style="left: 0px;" class="top-bar-inside">
+              <div class="static-links">
+  <div id="logo">
+    <a href="http://twitter.com/">Twitter</a>
+  </div>
+  <form id="search-form" action="/search" method="GET">
+    <span class="glass"><i></i></span>
+    <input placeholder="Search" name="q" id="search-query" type="text">
+  </form>
+  <div id="global-nav">
+    <ul>
+      <li class="active" id="global-nav-home"><a href="http://twitter.com/#%21/">Home</a></li>
+          <li id="global-nav-profile"><a href="http://twitter.com/#%21/icopaolo">Profile</a></li>
+          <li id="global-nav-messages"><a href="http://twitter.com/#%21/messages">Messages</a></li>
+          <li id="global-nav-whotofollow"><a href="http://twitter.com/#%21/who_to_follow">Who To Follow</a></li>
+      </ul>
+  </div>
+  <div id="sections"></div>
+</div>
+<div class="active-links">
+  <a original-title="New Tweet" id="new-tweet">
+      <span>New Tweet</span></a><span class="vr">
+    </span><span id="session" class="loggedin">
+      <a class="profile-links" href="#">
+        <img src="TwitterHomeDemo/ArtsyMe_normal.png">
+      </a>
+      <span class="ellipsify-container" id="screen-name"><span class="content">
+        icopaolo
+      </span></span>&nbsp;<span id="screen-name-dropdown">&nbsp;</span>
+      <div class="dropdown">
+        <ul class="user-dropdown">
+  <li><a href="http://twitter.com/settings/account">Settings</a></li>
+    <li><a href="http://support.twitter.com/">Help</a></li>
+
+    <li>
+        <form method="post" action="/account/use_phx" class="turn-phx-off-form">
+          <input name="setting" value="false" type="hidden">
+          <input name="format" value="html" type="hidden">
+          <input value="" name="authenticity_token" type="hidden">
+          <button type="submit" class="turn-phx-off-button">Switch to Old Twitter</button>
+        </form>
+      </li>
+    <li>
+      <form id="signout-form" class="signout-form" action="/logout" method="POST">
+        <a class="signout-button" href="#">Sign out</a>
+        <input value="0f405962ac5626a0b2e63d9149931c67dfabbd21" name="authenticity_token" id="authenticity_token" type="hidden">
+      </form>
+    </li>
+
+    </ul>
+
+      </div>
+    </span>
+  </div>
+            </div>
+          </div>
+          <div id="message-drawer"></div>
+        </div>
+      </div>
+
+      <div style="padding-top: 96px;" id="page-outer">
+
+        <div style="" id="page-container" class="home-container"><div><div style="min-height: 560px;" class="main-content">
+      <div class="page-header home-header">
+      <div class="main-tweet-box"><div class="tweet-box condensed">
+      <div class="tweet-box-title">
+      <h2>What’s happening?</h2>
+    </div>
+  <div class="text-area">
+    <div class="text-area-editor twttr-editor"><textarea style="width: 482px; height: 56px;" class="twitter-anywhere-tweet-box-editor"></textarea><ul style="width: 498px; top: 32px; left: 0px;" class="autocomplete-container"></ul></div>
+  </div>
+  <div class="tweet-button-container">
+          <span class="geo-control"></span>
+    <img src="TwitterHomeDemo/spinner.gif" class="tweet-spinner" style="display: none;">
+    <input class="tweet-counter" value="140" disabled="disabled">
+    <a href="#" class="tweet-button button disabled">Tweet</a>
+  </div>
+</div></div>
+      <ul class="stream-tabs">
+        <li class="stream-tab stream-tab-home  active">
+          <a class="tab-text" title="All you follow" href="http://twitter.com/#%21/">Timeline</a>
+        </li>
+        <li class="stream-tab stream-tab-mentions">
+          <a class="tab-text" title="Mentions" href="http://twitter.com/#%21/mentions">@Mentions</a>
+        </li>
+        <!-- here once stood an html comment fight btwn @ded and @k -->
+        <li class="stream-tab stream-tab-retweets dropdown-link">
+          <a class="tab-text" href="#">Retweets<i></i></a>
+        </li>
+        <li class="stream-tab stream-tab-searches dropdown-link">
+          <a class="tab-text" href="#">Searches<i></i></a>
+        </li>
+        <li class="stream-tab stream-tab-lists dropdown-link">
+          <a class="tab-text" href="#">Lists<i></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="stream-manager">
+  <div><div class="stream-title"></div><div class="stream-container"><div class="stream">
+  <div class="stream-items"><div media="true" class="stream-item  hovered-stream-item" data-item-id="66569936914485248" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66569936914485248" data-item-id="66569936914485248" data-screen-name="tikkers" data-user-id="1054551">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/Picture_82_normal.png" alt="Tikva Morowati" class="user-profile-link" data-user-id="1054551" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="1054551" href="http://twitter.com/#%21/tikkers" title="Tikva Morowati">tikkers</a>
+  <span class="tweet-full-name">Tikva Morowati</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Here to talk about @<a class="  twitter-atreply" data-screen-name="ignitenyc" href="http://twitter.com/ignitenyc" rel="nofollow">ignitenyc</a> through the lens of communication design. (@ Baruch College w/ 6 others) <a title="https://foursquare.com/tikkers/checkin/4dc43dae45dd26455251df3e/?s=a4iHWHI290ITQgQtY65qlw8QHTQ" data-expanded-url="https://foursquare.com/tikkers/checkin/4dc43dae45dd26455251df3e/?s=a4iHWHI290ITQgQtY65qlw8QHTQ" href="http://4sq.com/imGWNy" target="_blank" rel="nofollow" class="twitter-timeline-link">http://4sq.com/imGWNy</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/tikkers/status/66569936914485248" class="tweet-timestamp" title="2:28 PM May 6th"><span class="_timestamp" data-time="1304706484000" data-long-form="true">3 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66569936914485248">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="tikkers" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66562649491648513" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66562649491648513" data-item-id="66562649491648513" data-retweet-id="66563720154857473" data-screen-name="BAESystemsInc" data-user-id="50446312">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/Twitter_Icon_1_normal.jpg" alt="BAE Systems" class="user-profile-link" data-user-id="50446312" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="50446312" href="http://twitter.com/#%21/BAESystemsInc" title="BAE Systems">BAESystemsInc</a>
+  <span class="tweet-full-name">BAE Systems</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+                            <span class="retweet-icon"></span> <em>by pricefloyd</em><div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">MT @<a class="  twitter-atreply" data-screen-name="dodlivemil" href="http://twitter.com/dodlivemil" rel="nofollow">dodlivemil</a>: Awesome video on @<a class="  twitter-atreply" data-screen-name="USNavy" href="http://twitter.com/USNavy" rel="nofollow">USNavy</a> <a href="http://twitter.com/#%21/search?q=%23SEAL" title="#SEAL" class="  twitter-hashtag" rel="nofollow">#SEAL</a> Lt. Michael Murphy, the namesake of the Navy's newest destroyer <a title="http://www.dodlive.mil/index.php/2011/05/a-heros-name-on-a-mighty-vessel/" data-expanded-url="http://www.dodlive.mil/index.php/2011/05/a-heros-name-on-a-mighty-vessel/" href="http://bit.ly/kA3Vy3" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/kA3Vy3</a> <a href="http://twitter.com/#%21/search?q=%23sot" title="#sot" class="  twitter-hashtag" rel="nofollow">#sot</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/BAESystemsInc/status/66562649491648513" class="tweet-timestamp" title="1:59 PM May 6th"><span class="_timestamp" data-time="1304704746000" data-long-form="true">32 minutes ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66562649491648513">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="BAESystemsInc" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66549527666114561" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66549527666114561" data-item-id="66549527666114561" data-screen-name="maurygiles" data-user-id="19136797">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/image_normal_002.jpg" alt="Maury Giles" class="user-profile-link" data-user-id="19136797" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="19136797" href="http://twitter.com/#%21/maurygiles" title="Maury Giles">maurygiles</a>
+  <span class="tweet-full-name">Maury Giles</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Call me - just quick question. 512 656 3800</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/maurygiles/status/66549527666114561" class="tweet-timestamp" title="1:06 PM May 6th"><span class="_timestamp" data-time="1304701618000" data-long-form="true">1 hour ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66549527666114561">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="maurygiles" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66514744223346689" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66514744223346689" data-item-id="66514744223346689" data-screen-name="ginatrapani" data-user-id="930061">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/gtrapani_wadman_2011_160_normal.jpg" alt="Gina Trapani" class="user-profile-link" data-user-id="930061" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="930061" href="http://twitter.com/#%21/ginatrapani" title="Gina Trapani">ginatrapani</a>
+  <span class="tweet-full-name">Gina Trapani</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Oh you know. Just a day at work with team @<a class="  twitter-atreply" data-screen-name="expertlabs" href="http://twitter.com/expertlabs" rel="nofollow">expertlabs</a>. No big deal. (@ The White House w/ @<a class="  twitter-atreply" data-screen-name="waxpancake" href="http://twitter.com/waxpancake" rel="nofollow">waxpancake</a> @<a class="  twitter-atreply" data-screen-name="anildash" href="http://twitter.com/anildash" rel="nofollow">anildash</a>) <a title="https://foursquare.com/ginatrapani/checkin/4dc40a4cd164eb9c9fca9ce3/?s=JQ6XkROTGrxd7I8qPpn9jfb11U4" data-expanded-url="https://foursquare.com/ginatrapani/checkin/4dc40a4cd164eb9c9fca9ce3/?s=JQ6XkROTGrxd7I8qPpn9jfb11U4" href="http://4sq.com/kZJCb7" target="_blank" rel="nofollow" class="twitter-timeline-link">http://4sq.com/kZJCb7</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/ginatrapani/status/66514744223346689" class="tweet-timestamp" title="10:48 AM May 6th"><span class="_timestamp" data-time="1304693325000" data-long-form="true">3 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66514744223346689">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="ginatrapani" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66505201472909312" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66505201472909312" data-item-id="66505201472909312" data-screen-name="timoreilly" data-user-id="2384071">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/IMG_3811_v4_normal.jpg" alt="Tim O'Reilly" class="user-profile-link" data-user-id="2384071" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="2384071" href="http://twitter.com/#%21/timoreilly" title="Tim O'Reilly">timoreilly</a>
+  <span class="tweet-full-name">Tim O'Reilly</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">RT marytreseler ePayments Week: Report says developers chill on Android <a title="http://radar.oreilly.com/2011/05/epayments-android-development-facebook-paypal.html/" data-expanded-url="http://radar.oreilly.com/2011/05/epayments-android-development-facebook-paypal.html/" href="http://bit.ly/imN9W7" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/imN9W7</a> via @<a class="  twitter-atreply" data-screen-name="radar" href="http://twitter.com/radar" rel="nofollow">radar</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/timoreilly/status/66505201472909312" class="tweet-timestamp" title="10:10 AM May 6th"><span class="_timestamp" data-time="1304691050000" data-long-form="true">4 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66505201472909312">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="timoreilly" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66500549511610368" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66500549511610368" data-item-id="66500549511610368" data-screen-name="timoreilly" data-user-id="2384071">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/IMG_3811_v4_normal.jpg" alt="Tim O'Reilly" class="user-profile-link" data-user-id="2384071" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="2384071" href="http://twitter.com/#%21/timoreilly" title="Tim O'Reilly">timoreilly</a>
+  <span class="tweet-full-name">Tim O'Reilly</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Laughing at the cartoon about Donald Trump on the research.ly site:  <a title="http://research.ly/" data-expanded-url="http://research.ly/" href="http://bit.ly/moGbOG" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/moGbOG</a> "You're fired"</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/timoreilly/status/66500549511610368" class="tweet-timestamp" title="9:52 AM May 6th"><span class="_timestamp" data-time="1304689941000" data-long-form="true">4 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66500549511610368">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="timoreilly" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66499755030757376" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66499755030757376" data-item-id="66499755030757376" data-screen-name="pricefloyd" data-user-id="48463769">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/Price__No_Hair_normal.jpg" alt="Price Floyd" class="user-profile-link" data-user-id="48463769" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="48463769" href="http://twitter.com/#%21/pricefloyd" title="Price Floyd">pricefloyd</a>
+  <span class="tweet-full-name">Price Floyd</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Doing the Soldier Ride today in DC.  <a href="http://twitter.com/#%21/search?q=%23woundedwarior" title="#woundedwarior" class="  twitter-hashtag" rel="nofollow">#woundedwarior</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/pricefloyd/status/66499755030757376" class="tweet-timestamp" title="9:49 AM May 6th"><span class="_timestamp" data-time="1304689751000" data-long-form="true">4 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66499755030757376">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="pricefloyd" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66497336955781121" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66497336955781121" data-item-id="66497336955781121" data-screen-name="milouness" data-user-id="14576426">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/moyoheadshot4_normal.jpg" alt="Carmen A. Medina" class="user-profile-link" data-user-id="14576426" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="14576426" href="http://twitter.com/#%21/milouness" title="Carmen A. Medina">milouness</a>
+  <span class="tweet-full-name">Carmen A. Medina</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">We will go from constructing knowledge 
+from billions of bits of data to assembling knowledge from billions upon
+ billions of databases. <a href="http://twitter.com/#%21/search?q=%23yam" title="#yam" class="  twitter-hashtag" rel="nofollow">#yam</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/milouness/status/66497336955781121" class="tweet-timestamp" title="9:39 AM May 6th"><span class="_timestamp" data-time="1304689175000" data-long-form="true">4 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66497336955781121">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="milouness" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66496876643483648" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66496876643483648" data-item-id="66496876643483648" data-screen-name="milouness" data-user-id="14576426">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/moyoheadshot4_normal.jpg" alt="Carmen A. Medina" class="user-profile-link" data-user-id="14576426" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="14576426" href="http://twitter.com/#%21/milouness" title="Carmen A. Medina">milouness</a>
+  <span class="tweet-full-name">Carmen A. Medina</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Science went from thinking galaxy was the 
+universe to realizing there r billions of galaxies in universe. Analogue
+ for big data journey</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/milouness/status/66496876643483648" class="tweet-timestamp" title="9:37 AM May 6th"><span class="_timestamp" data-time="1304689065000" data-long-form="true">4 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66496876643483648">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="milouness" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66496021798199296" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66496021798199296" data-item-id="66496021798199296" data-screen-name="milouness" data-user-id="14576426">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/moyoheadshot4_normal.jpg" alt="Carmen A. Medina" class="user-profile-link" data-user-id="14576426" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="14576426" href="http://twitter.com/#%21/milouness" title="Carmen A. Medina">milouness</a>
+  <span class="tweet-full-name">Carmen A. Medina</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">In a world of Big Data, the number of DataBases extant in the world exceeds the individual bits of data we used to have. <a href="http://twitter.com/#%21/search?q=%23yam" title="#yam" class="  twitter-hashtag" rel="nofollow">#yam</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/milouness/status/66496021798199296" class="tweet-timestamp" title="9:34 AM May 6th"><span class="_timestamp" data-time="1304688861000" data-long-form="true">4 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66496021798199296">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="milouness" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66493623331594240" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66493623331594240" data-item-id="66493623331594240" data-retweet-id="66493728398917634" data-screen-name="WSJ" data-user-id="3108351">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/wsj_normal.jpg" alt="Wall Street Journal" class="user-profile-link" data-user-id="3108351" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="3108351" href="http://twitter.com/#%21/WSJ" title="Wall Street Journal">WSJ</a>
+  <span class="tweet-full-name">Wall Street Journal</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+                            <span class="retweet-icon"></span> <em>by milouness</em><div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Manufacturing sector has added jobs over six straight months for the first time since 1998 <a title="http://blogs.wsj.com/economics/2011/05/06/more-good-news-on-manufacturing-in-jobs-report-but-long-way-to-go/?mod=e2tw" data-expanded-url="http://blogs.wsj.com/economics/2011/05/06/more-good-news-on-manufacturing-in-jobs-report-but-long-way-to-go/?mod=e2tw" href="http://on.wsj.com/kHyJ0x" target="_blank" rel="nofollow" class="twitter-timeline-link">http://on.wsj.com/kHyJ0x</a> via @<a class="  twitter-atreply" data-screen-name="WSJ_Econ" href="http://twitter.com/WSJ_Econ" rel="nofollow">WSJ_Econ</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/WSJ/status/66493623331594240" class="tweet-timestamp" title="9:24 AM May 6th"><span class="_timestamp" data-time="1304688289000" data-long-form="true">5 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66493623331594240">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="WSJ" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66493531535060992" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66493531535060992" data-item-id="66493531535060992" data-screen-name="milouness" data-user-id="14576426">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/moyoheadshot4_normal.jpg" alt="Carmen A. Medina" class="user-profile-link" data-user-id="14576426" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="14576426" href="http://twitter.com/#%21/milouness" title="Carmen A. Medina">milouness</a>
+  <span class="tweet-full-name">Carmen A. Medina</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Far better approximate answer to right question (which can always be made precise) than exact answer to wrong question J. Tukey <a href="http://twitter.com/#%21/search?q=%23yam" title="#yam" class="  twitter-hashtag" rel="nofollow">#yam</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/milouness/status/66493531535060992" class="tweet-timestamp" title="9:24 AM May 6th"><span class="_timestamp" data-time="1304688267000" data-long-form="true">5 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66493531535060992">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="milouness" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66486015833030656" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66486015833030656" data-item-id="66486015833030656" data-screen-name="milouness" data-user-id="14576426">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/moyoheadshot4_normal.jpg" alt="Carmen A. Medina" class="user-profile-link" data-user-id="14576426" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="14576426" href="http://twitter.com/#%21/milouness" title="Carmen A. Medina">milouness</a>
+  <span class="tweet-full-name">Carmen A. Medina</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Which is the better life: one that accumulates answers or one that accumulates questions?</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/milouness/status/66486015833030656" class="tweet-timestamp" title="8:54 AM May 6th"><span class="_timestamp" data-time="1304686476000" data-long-form="true">5 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66486015833030656">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="milouness" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66483293926850560" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66483293926850560" data-item-id="66483293926850560" data-retweet-id="66483364219203584" data-screen-name="mpoppel" data-user-id="17568791">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/mpoppeltwittericon3_normal.jpg" alt="Michael van Poppel" class="user-profile-link" data-user-id="17568791" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="17568791" href="http://twitter.com/#%21/mpoppel" title="Michael van Poppel">mpoppel</a>
+  <span class="tweet-full-name">Michael van Poppel</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+                            <span class="retweet-icon"></span> <em>by milouness</em><div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">BNO News: Al-Qaeda statement says Bin Laden recorded an audio statement one week before his death, and it will be released soon</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/mpoppel/status/66483293926850560" class="tweet-timestamp" title="8:43 AM May 6th"><span class="_timestamp" data-time="1304685827000" data-long-form="true">5 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66483293926850560">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="mpoppel" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66483112250580993" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66483112250580993" data-item-id="66483112250580993" data-screen-name="milouness" data-user-id="14576426">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/moyoheadshot4_normal.jpg" alt="Carmen A. Medina" class="user-profile-link" data-user-id="14576426" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="14576426" href="http://twitter.com/#%21/milouness" title="Carmen A. Medina">milouness</a>
+  <span class="tweet-full-name">Carmen A. Medina</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Thoughtful RT @<a class="  twitter-atreply" data-screen-name="ryonck" href="http://twitter.com/ryonck" rel="nofollow">ryonck</a> More than 20% atheist scientists spiritual <a title="http://www.physorg.com/news/2011-05-percent-atheist-scientists-spiritual.html/" data-expanded-url="http://www.physorg.com/news/2011-05-percent-atheist-scientists-spiritual.html/" href="http://bit.ly/mIVSuz" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/mIVSuz</a> Spirituality pervades both religious &amp; atheist thought</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/milouness/status/66483112250580993" class="tweet-timestamp" title="8:43 AM May 6th"><span class="_timestamp" data-time="1304685783000" data-long-form="true">5 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66483112250580993">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="milouness" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66482370617946114" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66482370617946114" data-item-id="66482370617946114" data-retweet-id="66482737485332481" data-screen-name="JeffreyDavis108" data-user-id="145320853">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/Hillary_Harvey_0113_normal.jpg" alt="Jeffrey Davis" class="user-profile-link" data-user-id="145320853" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="145320853" href="http://twitter.com/#%21/JeffreyDavis108" title="Jeffrey Davis">JeffreyDavis108</a>
+  <span class="tweet-full-name">Jeffrey Davis</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+                            <span class="retweet-icon"></span> <em>by milouness</em><div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Good Morning. What question are you living in today?</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/JeffreyDavis108/status/66482370617946114" class="tweet-timestamp" title="8:40 AM May 6th"><span class="_timestamp" data-time="1304685606000" data-long-form="true">5 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66482370617946114">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="JeffreyDavis108" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66467357857550336" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66467357857550336" data-item-id="66467357857550336" data-retweet-id="66467608530128896" data-screen-name="paulocoelho" data-user-id="5520952">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/Avatar_normal.png" alt="Paulo Coelho" class="user-profile-link" data-user-id="5520952" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="5520952" href="http://twitter.com/#%21/paulocoelho" title="Paulo Coelho">paulocoelho</a>
+  <span class="tweet-full-name">Paulo Coelho</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+                            <span class="retweet-icon"></span> <em>by milouness</em><div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Only mediocrity is safe. Be the best and get prepared to be attacked</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/paulocoelho/status/66467357857550336" class="tweet-timestamp" title="7:40 AM May 6th"><span class="_timestamp" data-time="1304682027000" data-long-form="true">6 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66467357857550336">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="paulocoelho" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66466799264337920" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66466799264337920" data-item-id="66466799264337920" data-screen-name="pricefloyd" data-user-id="48463769">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/Price__No_Hair_normal.jpg" alt="Price Floyd" class="user-profile-link" data-user-id="48463769" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="48463769" href="http://twitter.com/#%21/pricefloyd" title="Price Floyd">pricefloyd</a>
+  <span class="tweet-full-name">Price Floyd</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text"><a href="http://twitter.com/#%21/search?q=%23FF" title="#FF" class="  twitter-hashtag" rel="nofollow">#FF</a> @<a class="  twitter-atreply" data-screen-name="ScoutComms" href="http://twitter.com/ScoutComms" rel="nofollow">ScoutComms</a> @<a class="  twitter-atreply" data-screen-name="tariksed" href="http://twitter.com/tariksed" rel="nofollow">tariksed</a> @<a class="  twitter-atreply" data-screen-name="KatieS" href="http://twitter.com/KatieS" rel="nofollow">KatieS</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/pricefloyd/status/66466799264337920" class="tweet-timestamp" title="7:38 AM May 6th"><span class="_timestamp" data-time="1304681894000" data-long-form="true">6 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66466799264337920">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="pricefloyd" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item " data-item-id="66466484569903104" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66466484569903104" data-item-id="66466484569903104" data-screen-name="milouness" data-user-id="14576426">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/moyoheadshot4_normal.jpg" alt="Carmen A. Medina" class="user-profile-link" data-user-id="14576426" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="14576426" href="http://twitter.com/#%21/milouness" title="Carmen A. Medina">milouness</a>
+  <span class="tweet-full-name">Carmen A. Medina</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Some are really amusing. The Best of the Situation Room LOL Pics <a title="http://www.wired.com/underwire/2011/05/situation-room-lol-pics/" data-expanded-url="http://www.wired.com/underwire/2011/05/situation-room-lol-pics/" href="http://bit.ly/iCRFTd" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/iCRFTd</a> @<a class="  twitter-atreply" data-screen-name="wirednews_ext" href="http://twitter.com/wirednews_ext" rel="nofollow">wirednews_ext</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/milouness/status/66466484569903104" class="tweet-timestamp" title="7:36 AM May 6th"><span class="_timestamp" data-time="1304681819000" data-long-form="true">6 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66466484569903104">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="milouness" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item  last-new-tweet" data-item-id="66461682750324736" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66461682750324736" data-item-id="66461682750324736" data-retweet-id="66465109563801600" data-screen-name="denny" data-user-id="775957">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/fuzzy-hat.png" alt="Denny" class="user-profile-link" data-user-id="775957" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="775957" href="http://twitter.com/#%21/denny" title="Denny">denny</a>
+  <span class="tweet-full-name">Denny</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+                            <span class="retweet-icon"></span> <em>by doctorow</em><div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">A Codified Set of the Builder's, Crafter's, Maker's Rules <a title="http://wondermark.com/tink8/" data-expanded-url="http://wondermark.com/tink8/" href="http://wondermark.com/tink8" target="_blank" rel="nofollow" class="twitter-timeline-link">http://wondermark.com/tink8</a> <a href="http://twitter.com/#%21/search?q=%23Hacking" title="#Hacking" class="  twitter-hashtag" rel="nofollow">#Hacking</a> cc. @<a class="  twitter-atreply" data-screen-name="Doctorow" href="http://twitter.com/Doctorow" rel="nofollow">Doctorow</a> @<a class="  twitter-atreply" data-screen-name="LondonHackspace" href="http://twitter.com/LondonHackspace" rel="nofollow">LondonHackspace</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/denny/status/66461682750324736" class="tweet-timestamp" title="7:17 AM May 6th"><span class="_timestamp" data-time="1304680674000" data-long-form="true">7 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66461682750324736">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="denny" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66461470971527169" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66461470971527169" data-item-id="66461470971527169" data-screen-name="milouness" data-user-id="14576426">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/moyoheadshot4_normal.jpg" alt="Carmen A. Medina" class="user-profile-link" data-user-id="14576426" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="14576426" href="http://twitter.com/#%21/milouness" title="Carmen A. Medina">milouness</a>
+  <span class="tweet-full-name">Carmen A. Medina</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">The Future is Uncertain--that's a feature of life, not a bug!!</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/milouness/status/66461470971527169" class="tweet-timestamp" title="7:17 AM May 6th"><span class="_timestamp" data-time="1304680624000" data-long-form="true">7 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66461470971527169">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="milouness" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66447301517901824" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66447301517901824" data-item-id="66447301517901824" data-retweet-id="66447929199697920" data-screen-name="TimHarford" data-user-id="32493647">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/Harford_Cropped_normal.JPG" alt="Tim Harford" class="user-profile-link" data-user-id="32493647" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="32493647" href="http://twitter.com/#%21/TimHarford" title="Tim Harford">TimHarford</a>
+  <span class="tweet-full-name">Tim Harford</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+                            <span class="retweet-icon"></span> <em>by doctorow</em><div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">via @<a class="  twitter-atreply" data-screen-name="doctorow" href="http://twitter.com/doctorow" rel="nofollow">doctorow</a>. But More or Less was there first! "Two billion people and the royal wedding: pretty damned unlikely" <a title="http://www.boingboing.net/2011/05/06/two-billion-people-a.html/?dlvrit=36761" data-expanded-url="http://www.boingboing.net/2011/05/06/two-billion-people-a.html/?dlvrit=36761" href="http://bit.ly/isQUQY" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/isQUQY</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/TimHarford/status/66447301517901824" class="tweet-timestamp" title="6:20 AM May 6th"><span class="_timestamp" data-time="1304677245000" data-long-form="true">8 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66447301517901824">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="TimHarford" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66439281731829760" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66439281731829760" data-item-id="66439281731829760" data-screen-name="pricefloyd" data-user-id="48463769">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/Price__No_Hair_normal.jpg" alt="Price Floyd" class="user-profile-link" data-user-id="48463769" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="48463769" href="http://twitter.com/#%21/pricefloyd" title="Price Floyd">pricefloyd</a>
+  <span class="tweet-full-name">Price Floyd</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Riding for <a href="http://t.co/vWLCoB6" data-expanded-url="http://www.woundedwarriorproject.org/today/" title="http://www.woundedwarriorproject.org/today/" target="_blank" rel="nofollow" class="twitter-timeline-link">woundedwarriorproject.org/today</a>.  Please donate if you can.</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/pricefloyd/status/66439281731829760" class="tweet-timestamp" title="5:48 AM May 6th"><span class="_timestamp" data-time="1304675333000" data-long-form="true">8 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66439281731829760">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="pricefloyd" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66438791010861056" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66438791010861056" data-item-id="66438791010861056" data-screen-name="pricefloyd" data-user-id="48463769">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/Price__No_Hair_normal.jpg" alt="Price Floyd" class="user-profile-link" data-user-id="48463769" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="48463769" href="http://twitter.com/#%21/pricefloyd" title="Price Floyd">pricefloyd</a>
+  <span class="tweet-full-name">Price Floyd</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text"><a title="http://www.woundedwarriorproject.org/" data-expanded-url="http://www.woundedwarriorproject.org/" href="http://bit.ly/kZF3zL" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/kZF3zL</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/pricefloyd/status/66438791010861056" class="tweet-timestamp" title="5:46 AM May 6th"><span class="_timestamp" data-time="1304675216000" data-long-form="true">8 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66438791010861056">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="pricefloyd" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66393927502135296" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66393927502135296" data-item-id="66393927502135296" data-screen-name="doctorow" data-user-id="2729061">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/4754569947_2f0232ff93_b_normal.jpg" alt="Cory Doctorow" class="user-profile-link" data-user-id="2729061" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="2729061" href="http://twitter.com/#%21/doctorow" title="Cory Doctorow">doctorow</a>
+  <span class="tweet-full-name">Cory Doctorow</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">"Honey, the Singularity is at the door! He
+ says everything is different now!!" "Tell him we don't want any!" "He's
+ very insistent!"</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/doctorow/status/66393927502135296" class="tweet-timestamp" title="2:48 AM May 6th"><span class="_timestamp" data-time="1304664520000" data-long-form="true">11 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66393927502135296">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="doctorow" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66355916534054912" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66355916534054912" data-item-id="66355916534054912" data-screen-name="ginatrapani" data-user-id="930061">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/gtrapani_wadman_2011_160_normal.jpg" alt="Gina Trapani" class="user-profile-link" data-user-id="930061" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="930061" href="http://twitter.com/#%21/ginatrapani" title="Gina Trapani">ginatrapani</a>
+  <span class="tweet-full-name">Gina Trapani</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"><span class="media photo" data-media-class="photo" data-media-type="flickr"></span></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Had a blast at tonight's Colbert Report taping, thx to @<a class="  twitter-atreply" data-screen-name="waxpancake" href="http://twitter.com/waxpancake" rel="nofollow">waxpancake</a>. Snagged a quick photo of the set: <a title="http://www.flickr.com/photos/ginatrapani/5691735613/" data-expanded-url="http://www.flickr.com/photos/ginatrapani/5691735613/" href="http://flic.kr/p/9EXCGD" target="_blank" rel="nofollow" class="twitter-timeline-link">http://flic.kr/p/9EXCGD</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/ginatrapani/status/66355916534054912" class="tweet-timestamp" title="12:17 AM May 6th"><span class="_timestamp" data-time="1304655457000" data-long-form="true">14 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66355916534054912">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="ginatrapani" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66327410580267008" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66327410580267008" data-item-id="66327410580267008" data-retweet-id="66340754515181568" data-screen-name="seanjoreilly" data-user-id="15079844">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/DSC_0268__2__normal.jpg" alt="Sean O'Reilly" class="user-profile-link" data-user-id="15079844" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="15079844" href="http://twitter.com/#%21/seanjoreilly" title="Sean O'Reilly">seanjoreilly</a>
+  <span class="tweet-full-name">Sean O'Reilly</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+                            <span class="retweet-icon"></span> <em>by timoreilly</em><div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">"Let us live that when we come to die even the undertaker will be sorry."  Mark Twain</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/seanjoreilly/status/66327410580267008" class="tweet-timestamp" title="10:24 PM May 5th"><span class="_timestamp" data-time="1304648661000" data-long-form="true">16 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66327410580267008">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="seanjoreilly" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66337995183235074" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66337995183235074" data-item-id="66337995183235074" data-screen-name="milouness" data-user-id="14576426">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/moyoheadshot4_normal.jpg" alt="Carmen A. Medina" class="user-profile-link" data-user-id="14576426" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="14576426" href="http://twitter.com/#%21/milouness" title="Carmen A. Medina">milouness</a>
+  <span class="tweet-full-name">Carmen A. Medina</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">So ure finally beginning to understand LIFE when you realize that fact future is uncertain is actually a FEATURE, not a bug.</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/milouness/status/66337995183235074" class="tweet-timestamp" title="11:06 PM May 5th"><span class="_timestamp" data-time="1304651185000" data-long-form="true">15 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66337995183235074">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="milouness" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66336538644058113" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66336538644058113" data-item-id="66336538644058113" data-screen-name="krash63" data-user-id="14747183">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/Kristi_Commodore_s_Ball_normal.JPG" alt="Kristi Miller Durazo" class="user-profile-link" data-user-id="14747183" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="14747183" href="http://twitter.com/#%21/krash63" title="Kristi Miller Durazo">krash63</a>
+  <span class="tweet-full-name">Kristi Miller Durazo</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Lovely celebration of the Mexican vs French...... Yes, another celebration in ......</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/krash63/status/66336538644058113" class="tweet-timestamp" title="11:00 PM May 5th"><span class="_timestamp" data-time="1304650837000" data-long-form="true">15 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66336538644058113">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="krash63" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66327500061552640" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66327500061552640" data-item-id="66327500061552640" data-screen-name="timoreilly" data-user-id="2384071">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/IMG_3811_v4_normal.jpg" alt="Tim O'Reilly" class="user-profile-link" data-user-id="2384071" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="2384071" href="http://twitter.com/#%21/timoreilly" title="Tim O'Reilly">timoreilly</a>
+  <span class="tweet-full-name">Tim O'Reilly</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      <span class="geo-pin"></span></div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">+1: RT @<a class="  twitter-atreply" data-screen-name="georgevhulme" href="http://twitter.com/georgevhulme" rel="nofollow">georgevhulme</a>: .@<a class="  twitter-atreply" data-screen-name="timoreilly" href="http://twitter.com/timoreilly" rel="nofollow">timoreilly</a> My idea of a real-life Farmville is micro loans to agri-businesses on Kiva</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/timoreilly/status/66327500061552640" class="tweet-timestamp" title="10:24 PM May 5th"><span class="_timestamp" data-time="1304648682000" data-long-form="true">16 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66327500061552640">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="timoreilly" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="65885444981792768" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="65885444981792768" data-item-id="65885444981792768" data-retweet-id="66319095695548416" data-screen-name="pdfteam" data-user-id="5908622">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/Picture_25_normal.png" alt="PdF" class="user-profile-link" data-user-id="5908622" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="5908622" href="http://twitter.com/#%21/pdfteam" title="PdF">pdfteam</a>
+  <span class="tweet-full-name">PdF</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+                            <span class="retweet-icon"></span> <em>by nsjacob</em><div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text"><a href="http://twitter.com/#%21/search?q=%23Podcast" title="#Podcast" class="  twitter-hashtag" rel="nofollow">#Podcast</a> and @<a class="  twitter-atreply" data-screen-name="techPresident" href="http://twitter.com/techPresident" rel="nofollow">techPresident</a> write up of last week's <a href="http://twitter.com/#%21/search?q=%23PdFNetwork" title="#PdFNetwork" class="  twitter-hashtag" rel="nofollow">#PdFNetwork</a> call featuring @<a class="  twitter-atreply" data-screen-name="nsjacob" href="http://twitter.com/nsjacob" rel="nofollow">nsjacob</a> on Connected Cities now up via <a title="http://techpresident.com/audio/what-you-missed-last-weeks-pdf-network-call-connected-cities-how-boston-linking-citizens-gover/" data-expanded-url="http://techpresident.com/audio/what-you-missed-last-weeks-pdf-network-call-connected-cities-how-boston-linking-citizens-gover/" href="http://bit.ly/mdt1cO" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/mdt1cO</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/pdfteam/status/65885444981792768" class="tweet-timestamp" title="5:08 PM May 4th"><span class="_old-timestamp" data-time="1304543288000" data-long-form="true">4 May</span></a>
+      <span class="tweet-actions" data-tweet-id="65885444981792768">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="pdfteam" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66310096673718272" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66310096673718272" data-item-id="66310096673718272" data-retweet-id="66310884246556672" data-screen-name="brainpicker" data-user-id="9207632">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/twitter_normal.jpg" alt="Maria Popova" class="user-profile-link" data-user-id="9207632" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="9207632" href="http://twitter.com/#%21/brainpicker" title="Maria Popova">brainpicker</a>
+  <span class="tweet-full-name">Maria Popova</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+                            <span class="retweet-icon"></span> <em>by JFLeStage</em><div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">5 curious factoids about crying – particularly interesting on counterintuitive gender breakdown <a title="https://www.readability.com/~/nqqv2hg2/" data-expanded-url="https://www.readability.com/~/nqqv2hg2/" href="http://rdd.me/nqqv2hg2" target="_blank" rel="nofollow" class="twitter-timeline-link">http://rdd.me/nqqv2hg2</a> (via @<a class="  twitter-atreply" data-screen-name="Alyssa_Milano" href="http://twitter.com/Alyssa_Milano" rel="nofollow">Alyssa_Milano</a>)</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/brainpicker/status/66310096673718272" class="tweet-timestamp" title="9:15 PM May 5th"><span class="_timestamp" data-time="1304644533000" data-long-form="true">17 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66310096673718272">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="brainpicker" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66299103386152960" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66299103386152960" data-item-id="66299103386152960" data-retweet-id="66306442734473219" data-screen-name="digiphile" data-user-id="1175221">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/twitter-profile-pic-small_normal.jpg" alt="Alex Howard" class="user-profile-link" data-user-id="1175221" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="1175221" href="http://twitter.com/#%21/digiphile" title="Alex Howard">digiphile</a>
+  <span class="tweet-full-name">Alex Howard</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+                            <span class="retweet-icon"></span> <em>by timoreilly</em><div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">RT @<a class="  twitter-atreply" data-screen-name="dsilverman" href="http://twitter.com/dsilverman" rel="nofollow">dsilverman</a> Outstanding piece by @<a class="  twitter-atreply" data-screen-name="edbott" href="http://twitter.com/edbott" rel="nofollow">edbott</a> on why a Mac malware conflagration is imminent. <a title="http://www.zdnet.com/blog/bott/why-malware-for-macs-is-on-its-way/3243/" data-expanded-url="http://www.zdnet.com/blog/bott/why-malware-for-macs-is-on-its-way/3243/" href="http://zd.net/mqUaqI" target="_blank" rel="nofollow" class="twitter-timeline-link">http://zd.net/mqUaqI</a> Must-reading for Mac users.</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/digiphile/status/66299103386152960" class="tweet-timestamp" title="8:31 PM May 5th"><span class="_timestamp" data-time="1304641912000" data-long-form="true">17 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66299103386152960">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="digiphile" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66301635042873345" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66301635042873345" data-item-id="66301635042873345" data-screen-name="timoreilly" data-user-id="2384071">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/IMG_3811_v4_normal.jpg" alt="Tim O'Reilly" class="user-profile-link" data-user-id="2384071" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="2384071" href="http://twitter.com/#%21/timoreilly" title="Tim O'Reilly">timoreilly</a>
+  <span class="tweet-full-name">Tim O'Reilly</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      <span class="geo-pin"></span></div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Maybe just crazy enough to work. Real-life Farmville. <a href="http://t.co/JdhdUq1" data-expanded-url="http://slashdot.org/story/11/05/05/0113242/Real-Life-Farmville/" title="http://slashdot.org/story/11/05/05/0113242/Real-Life-Farmville/" target="_blank" rel="nofollow" class="twitter-timeline-link">slashdot.org/story/11/05/05…</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/timoreilly/status/66301635042873345" class="tweet-timestamp" title="8:41 PM May 5th"><span class="_timestamp" data-time="1304642516000" data-long-form="true">17 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66301635042873345">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="timoreilly" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66288103488372736" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66288103488372736" data-item-id="66288103488372736" data-screen-name="krash63" data-user-id="14747183">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/Kristi_Commodore_s_Ball_normal.JPG" alt="Kristi Miller Durazo" class="user-profile-link" data-user-id="14747183" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="14747183" href="http://twitter.com/#%21/krash63" title="Kristi Miller Durazo">krash63</a>
+  <span class="tweet-full-name">Kristi Miller Durazo</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Say it with me...Cinco de Mayo.  Means Margarita in English:).  Enjoying mine overlooking the ocean in the sunshine!
+Happy happy.</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/krash63/status/66288103488372736" class="tweet-timestamp" title="7:48 PM May 5th"><span class="_timestamp" data-time="1304639290000" data-long-form="true">18 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66288103488372736">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="krash63" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66288038413742080" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66288038413742080" data-item-id="66288038413742080" data-screen-name="timoreilly" data-user-id="2384071">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/IMG_3811_v4_normal.jpg" alt="Tim O'Reilly" class="user-profile-link" data-user-id="2384071" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="2384071" href="http://twitter.com/#%21/timoreilly" title="Tim O'Reilly">timoreilly</a>
+  <span class="tweet-full-name">Tim O'Reilly</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Innovative New Nike Project Hopes To Connect Climate Dots <a title="http://blogs.forbes.com/eco-nomics/2011/05/05/innovative-new-nike-project-hopes-to-connect-climate-dots/" data-expanded-url="http://blogs.forbes.com/eco-nomics/2011/05/05/innovative-new-nike-project-hopes-to-connect-climate-dots/" href="http://onforb.es/mlbJ5r" target="_blank" rel="nofollow" class="twitter-timeline-link">http://onforb.es/mlbJ5r</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/timoreilly/status/66288038413742080" class="tweet-timestamp" title="7:47 PM May 5th"><span class="_timestamp" data-time="1304639274000" data-long-form="true">18 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66288038413742080">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="timoreilly" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66279135617622016" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66279135617622016" data-item-id="66279135617622016" data-screen-name="timoreilly" data-user-id="2384071">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/IMG_3811_v4_normal.jpg" alt="Tim O'Reilly" class="user-profile-link" data-user-id="2384071" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="2384071" href="http://twitter.com/#%21/timoreilly" title="Tim O'Reilly">timoreilly</a>
+  <span class="tweet-full-name">Tim O'Reilly</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Good discussion of how embodied energy (energy of manufacturing) needs to be considered. Very high for hi-tech goods. <a title="http://www.lowtechmagazine.com/2009/06/embodied-energy-of-digital-technology.html/" data-expanded-url="http://www.lowtechmagazine.com/2009/06/embodied-energy-of-digital-technology.html/" href="http://bit.ly/mI7NXN" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/mI7NXN</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/timoreilly/status/66279135617622016" class="tweet-timestamp" title="7:12 PM May 5th"><span class="_timestamp" data-time="1304637151000" data-long-form="true">19 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66279135617622016">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="timoreilly" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66269182181900288" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66269182181900288" data-item-id="66269182181900288" data-screen-name="anildash" data-user-id="36823">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/image_normal.jpg" alt="Anil Dash" class="user-profile-link" data-user-id="36823" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="36823" href="http://twitter.com/#%21/anildash" title="Anil Dash">anildash</a>
+  <span class="tweet-full-name">Anil Dash</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Just said "effluvia" out loud for the 1st 
+time. Previously it was one of those "have read it, but not said it" 
+words. Verdict? "Nailed it."</div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/anildash/status/66269182181900288" class="tweet-timestamp" title="6:32 PM May 5th"><span class="_timestamp" data-time="1304634778000" data-long-form="true">19 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66269182181900288">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="anildash" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66265110938791936" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66265110938791936" data-item-id="66265110938791936" data-screen-name="timoreilly" data-user-id="2384071">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/IMG_3811_v4_normal.jpg" alt="Tim O'Reilly" class="user-profile-link" data-user-id="2384071" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="2384071" href="http://twitter.com/#%21/timoreilly" title="Tim O'Reilly">timoreilly</a>
+  <span class="tweet-full-name">Tim O'Reilly</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Fascinating argument in @<a class="  twitter-atreply" data-screen-name="edge" href="http://twitter.com/edge" rel="nofollow">edge</a>: Reasoning evolved to persuade, not to make better deciscions <a title="http://www.edge.org/documents/archive/edge.org/conversation/the-argumentative-theory/" data-expanded-url="http://www.edge.org/documents/archive/edge.org/conversation/the-argumentative-theory/" href="http://bit.ly/lEehIj" target="_blank" rel="nofollow" class="twitter-timeline-link">http://bit.ly/lEehIj</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/timoreilly/status/66265110938791936" class="tweet-timestamp" title="6:16 PM May 5th"><span class="_timestamp" data-time="1304633808000" data-long-form="true">20 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66265110938791936">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="timoreilly" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div><div media="true" class="stream-item" data-item-id="66254746696155137" data-item-type="tweet">
+  <div class="more">»</div>
+<div class="stream-item-content tweet stream-tweet " data-tweet-id="66254746696155137" data-item-id="66254746696155137" data-screen-name="doctorow" data-user-id="2729061">
+  <div class="tweet-dogear "></div>
+  <div class="tweet-image">
+      <img src="TwitterHomeDemo/4754569947_2f0232ff93_b_normal.jpg" alt="Cory Doctorow" class="user-profile-link" data-user-id="2729061" height="48" width="48">
+  </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <span class="tweet-user-name">
+  <a class="tweet-screen-name user-profile-link" data-user-id="2729061" href="http://twitter.com/#%21/doctorow" title="Cory Doctorow">doctorow</a>
+  <span class="tweet-full-name">Cory Doctorow</span>
+</span>
+      <div class="tweet-corner">
+        <div class="tweet-meta">
+  <span class="icons">
+          <div class="extra-icons">
+      <span class="inlinemedia-icons"></span>
+      </div>
+  </span>
+</div>
+      </div>
+    </div>
+    <div class="tweet-row">
+      <div class="tweet-text">Incredibly bummed that I'm out of town for all 3 of these barista courses. Taylor Street are among London's best <a title="http://www.taylor-st.com/corporate/courses.html/" data-expanded-url="http://www.taylor-st.com/corporate/courses.html/" href="http://tinyurl.com/6gspt2g" target="_blank" rel="nofollow" class="twitter-timeline-link">http://tinyurl.com/6gspt2g</a></div>
+    </div>
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/doctorow/status/66254746696155137" class="tweet-timestamp" title="5:35 PM May 5th"><span class="_timestamp" data-time="1304631337000" data-long-form="true">20 hours ago</span></a>
+      <span class="tweet-actions" data-tweet-id="66254746696155137">
+            <a href="#" class="favorite-action" title="Favorite"><span><i></i><b>Favorite</b></span></a>
+                  <a href="#" class="retweet-action" title="Retweet"><span><i></i><b>Retweet</b></span></a>
+      <a href="#" class="reply-action" data-screen-name="doctorow" title="Reply"><span><i></i><b>Reply</b></span></a>
+    </span>
+    </div>
+          </div>
+</div>
+</div></div>
+</div></div></div></div>
+  </div>
+<div class="dashboard">
+      <div style="display: none;" class="component"></div><div class="component"><div class="tweet-activity">
+<div class="follower-request"></div>
+<h2><a href="http://twitter.com/#%21/icopaolo" class="title-link"><span class="dashboard-component-title">Your Tweets</span><span class="tweet-count user-stat-link">32</span></a></h2>
+  <div class="tweet latest-tweet" data-tweet-id="43724373298921472" data-item-id="43724373298921472" data-screen-name="icopaolo">
+      <div class="tweet-image">
+      <a href="http://twitter.com/#%21/icopaolo"><img src="TwitterHomeDemo/ArtsyMe_normal.png" alt="icopaolo" class="user-profile-link" data-user-id="10252872" height="48" width="48">
+</a>
+    </div>
+  <div class="tweet-content">
+    <div class="tweet-row">
+      <a href="http://twitter.com/#%21/icopaolo/status/43724373298921472" class="latest-tweet-timestamp" title="12:27 PM Mar 4th"><span class="_old-timestamp" data-time="1299259677000" data-long-form="true">4 Mar</span></a>:
+       <div class="tweet-text">@<a class="  twitter-atreply" data-screen-name="apoloohno" href="http://twitter.com/apoloohno" rel="nofollow">apoloohno</a> at <a href="http://twitter.com/#%21/search?q=%23SSAC" title="#SSAC" class="  twitter-hashtag" rel="nofollow">#SSAC</a> talks about shaving his soul patch to go faster...</div>
+    </div>
+  </div>
+</div>
+</div><hr class="component-spacer"></div><div class="component"><div class="your-activity following-activity">
+  <h2>
+          <a href="http://twitter.com/#%21/icopaolo/following" class="title-link"><span class="dashboard-component-title">Following</span><span class="user-stat-link">19</span></a>
+    </h2>
+      <h3></h3>
+  <ul class="inline-list">
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/nsjacob" class="user-profile-link" data-user-id="2934781"><img original-title="nsjacob" src="TwitterHomeDemo/nige1_mini.jpg" height="24" width="24"></a>
+</li>
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/pricefloyd" class="user-profile-link" data-user-id="48463769"><img original-title="pricefloyd" src="TwitterHomeDemo/Price__No_Hair_mini.jpg" height="24" width="24"></a>
+</li>
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/krash63" class="user-profile-link" data-user-id="14747183"><img original-title="krash63" src="TwitterHomeDemo/Kristi_Commodore_s_Ball_mini.JPG" height="24" width="24"></a>
+</li>
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/milouness" class="user-profile-link" data-user-id="14576426"><img src="TwitterHomeDemo/moyoheadshot4_mini.jpg" title="milouness" height="24" width="24"></a>
+</li>
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/robfrohman" class="user-profile-link" data-user-id="25443202"><img src="TwitterHomeDemo/P7240222_mini.JPG" title="robfrohman" height="24" width="24"></a>
+</li>
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/Caterina" class="user-profile-link" data-user-id="5702"><img original-title="Caterina" src="TwitterHomeDemo/caterina_square_mini.png" height="24" width="24"></a>
+</li>
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/bonabeau" class="user-profile-link" data-user-id="48127927"><img src="TwitterHomeDemo/bonabeau_SF1_mini.jpg" title="bonabeau" height="24" width="24"></a>
+</li>
+  </ul></div>
+  
+<div class="your-activity new-followers-activity">
+  <h2>
+    <a href="http://twitter.com/#%21/icopaolo/followers" class="title-link"><span class="dashboard-component-title">Followers</span><span class="user-stat-link">26</span></a>
+  </h2>
+<h3></h3>
+  <ul class="inline-list">
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/tricia217" class="user-profile-link" data-user-id="30947799"><img original-title="tricia217" src="TwitterHomeDemo/P3060239-1_mini.jpg" height="24" width="24"></a>
+</li>
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/AllieGood789" class="user-profile-link" data-user-id="271664264"><img original-title="AllieGood789" src="TwitterHomeDemo/default_profile_4_mini.png" height="24" width="24"></a>
+</li>
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/InfomousClouds" class="user-profile-link" data-user-id="199968162"><img src="TwitterHomeDemo/logo_sm_mini.png" title="InfomousClouds" height="24" width="24"></a>
+</li>
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/FollowIcosystem" class="user-profile-link" data-user-id="227035474"><img original-title="FollowIcosystem" src="TwitterHomeDemo/twit_mini.jpg" height="24" width="24"></a>
+</li>
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/LeapingLlamas" class="user-profile-link" data-user-id="8258242"><img src="TwitterHomeDemo/54613528_N00_mini.jpg" title="LeapingLlamas" height="24" width="24"></a>
+</li>
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/EllenJoseph" class="user-profile-link" data-user-id="163586093"><img src="TwitterHomeDemo/EllenAboutr_mini.jpg" title="EllenJoseph" height="24" width="24"></a>
+</li>
+      <li class="user-thumb-list-member">
+  <a href="http://twitter.com/#%21/MassInno" class="user-profile-link" data-user-id="23877960"><img src="TwitterHomeDemo/massinno-avatar_mini.png" title="MassInno" height="24" width="24"></a>
+</li>
+  </ul></div>
+  
+  
+<div class="your-activity lists-activity">
+  <h2>
+   <a href="http://twitter.com/#%21/icopaolo/lists/memberships" class="title-link"><span class="dashboard-component-title">Listed</span> <span class="user-stat-link">1</span></a>
+  </h2>
+<div class="recently-listed-in">
+  <i></i>Recently listed in:
+  <ul class="recent-lists inline-list">
+    <li class="recent-list-item">
+  <a href="http://twitter.com/#%21/tikkers/foo-camp-east-2010" data-user-id="11642600">Foo Camp East 2010</a>
+</li>
+  </ul>
+</div></div><hr class="component-spacer"></div>
+
+<div class="component"><div class="definition">
+<h2>Your Interactive Visual Explorer</h2>
+<script type="text/javascript" src="http://www.infomous.com/cloud_widget/2595?width=460&height=300&colLink=0xDDDDDD"></script>
+  </div><hr class="component-spacer"></div>
+
+<div class="component"><div class="trends-inner">
+  <h2>Trends
+          </h2>
+            <h3><span woeid="2367105" class="trend-location">Boston</span>
+      <span class="dot">·</span>
+      <span class="trend-toggle"><a href="#">change</a></span></h3>
+    <ul class="trends"><li class="trend-item promoted-trend">
+  <a href="http://twitter.com/#%21/search/%23AndroidUnlimited" class="trend-link">#AndroidUnlimited</a>
+            <a href="http://twitter.com/#%21/search/%23AndroidUnlimited" class="tweet-label promoted-label">
+                                  Promoted
+            </a>
+    </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/%23nu2011" class="trend-link">#nu2011</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/%23cmtsocial" class="trend-link">#cmtsocial</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/%23mamasays" class="trend-link">#mamasays</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/Katie%20Couric" class="trend-link">Katie Couric</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/Herman%20Cain" class="trend-link">Herman Cain</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/DiMasi" class="trend-link">DiMasi</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/Commencement" class="trend-link">Commencement</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/Nicki%20Minaj" class="trend-link">Nicki Minaj</a>
+  </li><li class="trend-item ">
+  <a href="http://twitter.com/#%21/search/Charles" class="trend-link">Charles</a>
+  </li></ul>
+</div><hr class="component-spacer"></div><div class="component"><div class="user-rec-inner ">
+            <h2 class="user-rec-component"><a class="title-link" href="http://twitter.com/#%21/who_to_follow/suggestions"><span class="dashboard-component-title">Who to follow</span></a></h2>
+      <h3>Suggestions for you
+        <span class="dot">·</span>
+        <a href="http://twitter.com/#%21/who_to_follow/suggestions">view all</a>
+      </h3>
+    <ul class="recommended-followers user-rec-component">
+            <li class="user-small-list-item promoted-account" data-user-id="131003396" data-impression-id="4dc3dac42b3edf96">
+  <a href="http://twitter.com/#%21/DODOsays" class="user-profile-link user-thumb" data-user-id="131003396"><img src="TwitterHomeDemo/Dodo_Mark_normal.jpg" alt="DODOsays"></a>
+      <a class="dismiss" href="#" title="Hide">×</a>
+  <div class="user-name-info">
+    <a class="user-profile-link user-screen-name" href="http://twitter.com/#%21/DODOsays" data-user-id="131003396">DODOsays</a>
+          <span class="user-follow-state" data-user-id="131003396" data-impression-id="4dc3dac42b3edf96">
+            <span class="dot">·</span>
+              <a href="#" class="user-follow-link follow-action" data-user-id="131003396" data-impression-id="4dc3dac42b3edf96">Follow</a>
+      </span>
+      <div class="user-full-name-and-label">
+        <span class="user-full-name">
+  DODOcase
+      <span class="verified-icon-small">&nbsp;</span>
+  </span>
+                    <a class="tweet-label promoted-label" href="http://twitter.com/#%21/DODOsays">Promoted</a>
+        </div>
+    </div>
+</li>
+  <li class="user-small-list-item " data-user-id="6141832" data-feedback-token="1">
+  <a href="http://twitter.com/#%21/cshirky" class="user-profile-link user-thumb" data-user-id="6141832"><img src="TwitterHomeDemo/hands_normal.jpg" alt="cshirky"></a>
+      <a class="dismiss" href="#" title="Hide">×</a>
+  <div class="user-name-info">
+    <a class="user-profile-link user-screen-name" href="http://twitter.com/#%21/cshirky" data-user-id="6141832">cshirky</a>
+          <span class="user-follow-state" data-user-id="6141832">
+            <span class="dot">·</span>
+              <a href="#" class="user-follow-link follow-action" data-user-id="6141832">Follow</a>
+      </span>
+      <div class="user-full-name-and-label">
+        <span class="user-full-name">
+  Clay Shirky
+  </span>
+        </div>
+    </div>
+</li>
+  <li class="user-small-list-item " data-user-id="19611866" data-feedback-token="1">
+  <a href="http://twitter.com/#%21/JohnFritz" class="user-profile-link user-thumb" data-user-id="19611866"><img src="TwitterHomeDemo/JOHN_FRITZ_9052_normal.jpg" alt="JohnFritz"></a>
+      <a class="dismiss" href="#" title="Hide">×</a>
+  <div class="user-name-info">
+    <a class="user-profile-link user-screen-name" href="http://twitter.com/#%21/JohnFritz" data-user-id="19611866">JohnFritz</a>
+          <span class="user-follow-state" data-user-id="19611866">
+            <span class="dot">·</span>
+              <a href="#" class="user-follow-link follow-action" data-user-id="19611866">Follow</a>
+      </span>
+      <div class="user-full-name-and-label">
+        <span class="user-full-name">
+  John Fritz
+  </span>
+        </div>
+    </div>
+</li>
+  <li class="user-small-list-item " data-user-id="5017" data-feedback-token="1">
+  <a href="http://twitter.com/#%21/joshu" class="user-profile-link user-thumb" data-user-id="5017"><img src="TwitterHomeDemo/joshua-small_normal.jpg" alt="joshu"></a>
+      <a class="dismiss" href="#" title="Hide">×</a>
+  <div class="user-name-info">
+    <a class="user-profile-link user-screen-name" href="http://twitter.com/#%21/joshu" data-user-id="5017">joshu</a>
+          <span class="user-follow-state" data-user-id="5017">
+            <span class="dot">·</span>
+              <a href="#" class="user-follow-link follow-action" data-user-id="5017">Follow</a>
+      </span>
+      <div class="user-full-name-and-label">
+        <span class="user-full-name">
+  joshua schachter
+  </span>
+        </div>
+    </div>
+</li>
+    </ul>
+            <div class="user-rec-links"><a href="#" class="refresh-suggestions">Refresh suggestions</a><br>
+        <a href="http://twitter.com/#%21/who_to_follow/interests">Browse interests</a>
+        <span class="dot">·</span>
+        <a href="http://twitter.com/#%21/who_to_follow/import">Find friends</a>
+      </div>
+    </div> <hr class="component-spacer"></div>
+<div class="component"><div class="definition">
+      <p class="promo"><a href="http://www.blackberry.com/twitter" class="definition" onclick="javascript: pageTracker._trackPageview('/definition/blackberrytwitter');"><strong>Twitter·for·BlackBerry</strong></a><em>n.</em> the official Twitter app for BlackBerry.</p>
+  </div><hr class="component-spacer"></div>
+
+<div class="component"><div class="footer inline-list">
+  <ul>
+    <li><a href="http://twitter.com/about">About</a><span class="dot"> ·</span></li>
+    <li><a href="http://support.twitter.com/">Help</a><span class="dot"> ·</span></li>
+    <li><a href="http://blog.twitter.com/">Blog</a><span class="dot"> ·</span></li>
+    <li><a href="http://twitter.com/#%21/download">Mobile</a><span class="dot"> ·</span></li>
+<li><a href="http://status.twitter.com/">Status</a><span class="dot"> ·</span></li>
+    <li><a href="http://twitter.com/jobs">Jobs</a><span class="dot"> ·</span></li>
+    <li><a href="http://twitter.com/tos">Terms</a><span class="dot"> ·</span></li>
+    <li><a href="http://twitter.com/privacy">Privacy</a><span class="dot"> ·</span></li>
+    <li><a href="#" id="keyboard-shortcut-trigger">Shortcuts</a><span class="dot"> ·</span></li>
+<li><a href="http://business.twitter.com/advertise/start">Advertisers</a><span class="dot"> ·</span></li>
+    <li><a href="http://business.twitter.com/">Businesses</a><span class="dot"> ·</span></li>
+    <li><a href="http://media.twitter.com/">Media</a><span class="dot"> ·</span></li>
+    <li><a href="http://dev.twitter.com/">Developers</a><span class="dot"> ·</span></li>
+    <li><a href="http://twitter.com/about/resources">Resources</a><span class="dot"> ·</span></li>
+    <li><span class="copyright">© 2011 Twitter</span></li><li>
+  <ul>
+  </ul></li></ul></div><hr class="component-spacer"></div></div>
+<div style="top: 96px;" id="details-pane-outer">
+  <div class="details-pane-shell">
+    <div style="height: 552px; width: 500px;" class="details-pane">
+      
+    </div>
+  </div>
+</div></div></div>
+      </div>
+
+      <div id="message-notifications"></div>
+    </div>
+
+    <div id="flash-message-storage" style="display:none"></div>
+
+    <script type="text/javascript">
+      </script>
+
+    <script type="text/javascript">WATCH('loadrunner', function() {
+        (function loadrunner(E){var V=E.document;var H=V.getElementsByTagName("script"),M,J;var b={},I={},U;for(var Y=0,R;R=H[Y];Y++){if(R.src.match(/loadrunner\.js(\?|#|$)/)){M=R;break}}function C(e){if(e.length>0){return e.replace(/\/$/,"")+"/"}return""}function N(e){return Array.prototype.slice.call(e)}function B(e,f){for(var g=0,h;h=e[g];g++){if(f==h){return g}}return -1}function S(e){return !!e.match(/^(([a-zA-Z0-9\-_]+)\/)*[a-zA-Z0-9\-_]+$/)||!Z(e)}function O(e){return !!e.match(/^(([a-zA-Z0-9\-_]+)\/)*[a-zA-Z0-9\-_]+$/)}function Z(e){return !e.match(/^>/)}function Q(e){return[C(X.path),e,".js"].join("")}function D(e){if(e.match(/^(https?)?:?\/\//)){return e}if(e.match(/^\/[^\/]/)){return C(X.docRoot)+e}if(e.match(/^\$/)){return C(X.path)+e.replace(/^\$/,"")}return e}function P(f){var e;if(e=I[f]){return e}else{return f}}function F(){}F.prototype.addCallback=function(e){if(this.completed){e.apply(this,this.results)}else{this.callbacks=this.callbacks||[];this.callbacks.push(e)}};F.prototype.complete=function(){if(!this.completed){this.results=N(arguments);this.completed=true;if(this.callbacks){for(var f=0,e;e=this.callbacks[f];f++){e.apply(window,this.results)}}}};function d(f,e){this.id=f;var h=this;function g(i){h.exports=i;h.complete(h.exports)}if(typeof e=="function"){e(g)}else{this.exports=e;this.complete(this.exports)}X.loaded.push(f)}d.prototype=new F;var A={};function L(h,j){var i;if(!A[h]){i=new F;A[h]=i;var g=function(){delete A[h];X.loaded.push(h);i.complete(h)};if(Z(h)){var e=V.createElement("script");e.type="text/javascript";e.async=true;e.onload=g;e.onerror=function(){throw h+" not loaded"};e.onreadystatechange=function(){if(this.readyState=="loaded"||this.readyState=="complete"){this.onreadystatechange=null;g()}};e.src=h;var f=V.getElementsByTagName("head")[0];if(!f){f=V.createElement("head");V.documentElement.appendChild(f)}f.insertBefore(e,f.firstChild)}else{i.onManualLoad=i.onManualLoad||[];i.onManualLoad.push(g)}}else{i=A[h]}if(j){i.addCallback(j)}return i}function T(f,e){e=[].concat(e);for(var g=0,h;h=e[g];g++){I[unescape(h)]=unescape(f)}}function X(){var f=new F,e=N(arguments),k=0,q=[];for(var n=0;n<e.length;n++){if(typeof e[n].length==="number"&&e[n].splice){e=e.slice(0,n).concat(e[n]).concat(e.slice(n+1))}}function j(){k++;if(k==e.length){var s;var v=[],u={},p;for(var t=0,r;r=q[t];t++){p=b[r].exports;v.push(p);u[r]=p}f.complete.apply(f,v)}}function g(i,p){return function(){if(!b[i]){throw new Error("File "+p+" does not provide module "+i)}b[i].addCallback(function(){j()})}}if(typeof e[e.length-1]=="function"){f.addCallback(e.pop())}if(!e.length){setTimeout(function(){f.complete()},0)}for(var l=0,h;h=e[l];l++){if(S(h)){var m=P(h);var o;if(O(h)){o=Q(m)}else{o=m}q.push(h);if(B(X.loaded,h)>-1){g(h)()}else{X.load(D(o),g(h,o))}}else{if(B(X.loaded,h)>-1){j()}else{X.load(D(P(h)),j)}}}return f}X.loaded=[];X.path="";if(M){X.path=M.getAttribute("data-path")||M.src.split(/loadrunner\.js/)[0]||"";if(U=M.getAttribute("data-alias")||window.__lralias){for(var Y=0,W,c=U.split("&");W=c[Y]&&c[Y].split("=");Y++){var K=W[0],G=W[1].split(",");T(K,G)}}}X.docRoot=X.cwd="";X.reset=function(){X.loaded=[];b={}};function a(g,f){b[g]=new d(g,f);var j=A[g];if(j&&j.onManualLoad){for(var h=0,e=j.onManualLoad.length;h<e;++h){j.onManualLoad[h]()}delete j.onManualLoad}return b[g]}E.using=X;E.using.load=L;E.using.alias=T;E.provide=a;if(J=(M&&M.getAttribute("data-main"))){X.apply(E,J.split(/\s*,\s*/))}})(this);
+      });
+    </script>
+    <script>WATCH.end('loadrunner');</script>
+    <script type="text/javascript">WATCH('javascript_includes', function() {
+
+  (function loadrunner(E){var V=E.document;var H=V.getElementsByTagName("script"),M,J;var b={},I={},U;for(var Y=0,R;R=H[Y];Y++){if(R.src.match(/loadrunner\.js(\?|#|$)/)){M=R;break}}function C(e){if(e.length>0){return e.replace(/\/$/,"")+"/"}return""}function N(e){return Array.prototype.slice.call(e)}function B(e,f){for(var g=0,h;h=e[g];g++){if(f==h){return g}}return -1}function S(e){return !!e.match(/^(([a-zA-Z0-9\-_]+)\/)*[a-zA-Z0-9\-_]+$/)||!Z(e)}function O(e){return !!e.match(/^(([a-zA-Z0-9\-_]+)\/)*[a-zA-Z0-9\-_]+$/)}function Z(e){return !e.match(/^>/)}function Q(e){return[C(X.path),e,".js"].join("")}function D(e){if(e.match(/^(https?)?:?\/\//)){return e}if(e.match(/^\/[^\/]/)){return C(X.docRoot)+e}if(e.match(/^\$/)){return C(X.path)+e.replace(/^\$/,"")}return e}function P(f){var e;if(e=I[f]){return e}else{return f}}function F(){}F.prototype.addCallback=function(e){if(this.completed){e.apply(this,this.results)}else{this.callbacks=this.callbacks||[];this.callbacks.push(e)}};F.prototype.complete=function(){if(!this.completed){this.results=N(arguments);this.completed=true;if(this.callbacks){for(var f=0,e;e=this.callbacks[f];f++){e.apply(window,this.results)}}}};function d(f,e){this.id=f;var h=this;function g(i){h.exports=i;h.complete(h.exports)}if(typeof e=="function"){e(g)}else{this.exports=e;this.complete(this.exports)}X.loaded.push(f)}d.prototype=new F;var A={};function L(h,j){var i;if(!A[h]){i=new F;A[h]=i;var g=function(){delete A[h];X.loaded.push(h);i.complete(h)};if(Z(h)){var e=V.createElement("script");e.type="text/javascript";e.async=true;e.onload=g;e.onerror=function(){throw h+" not loaded"};e.onreadystatechange=function(){if(this.readyState=="loaded"||this.readyState=="complete"){this.onreadystatechange=null;g()}};e.src=h;var f=V.getElementsByTagName("head")[0];if(!f){f=V.createElement("head");V.documentElement.appendChild(f)}f.insertBefore(e,f.firstChild)}else{i.onManualLoad=i.onManualLoad||[];i.onManualLoad.push(g)}}else{i=A[h]}if(j){i.addCallback(j)}return i}function T(f,e){e=[].concat(e);for(var g=0,h;h=e[g];g++){I[unescape(h)]=unescape(f)}}function X(){var f=new F,e=N(arguments),k=0,q=[];for(var n=0;n<e.length;n++){if(typeof e[n].length==="number"&&e[n].splice){e=e.slice(0,n).concat(e[n]).concat(e.slice(n+1))}}function j(){k++;if(k==e.length){var s;var v=[],u={},p;for(var t=0,r;r=q[t];t++){p=b[r].exports;v.push(p);u[r]=p}f.complete.apply(f,v)}}function g(i,p){return function(){if(!b[i]){throw new Error("File "+p+" does not provide module "+i)}b[i].addCallback(function(){j()})}}if(typeof e[e.length-1]=="function"){f.addCallback(e.pop())}if(!e.length){setTimeout(function(){f.complete()},0)}for(var l=0,h;h=e[l];l++){if(S(h)){var m=P(h);var o;if(O(h)){o=Q(m)}else{o=m}q.push(h);if(B(X.loaded,h)>-1){g(h)()}else{X.load(D(o),g(h,o))}}else{if(B(X.loaded,h)>-1){j()}else{X.load(D(P(h)),j)}}}return f}X.loaded=[];X.path="";if(M){X.path=M.getAttribute("data-path")||M.src.split(/loadrunner\.js/)[0]||"";if(U=M.getAttribute("data-alias")||window.__lralias){for(var Y=0,W,c=U.split("&");W=c[Y]&&c[Y].split("=");Y++){var K=W[0],G=W[1].split(",");T(K,G)}}}X.docRoot=X.cwd="";X.reset=function(){X.loaded=[];b={}};function a(g,f){b[g]=new d(g,f);var j=A[g];if(j&&j.onManualLoad){for(var h=0,e=j.onManualLoad.length;h<e;++h){j.onManualLoad[h]()}delete j.onManualLoad}return b[g]}E.using=X;E.using.load=L;E.using.alias=T;E.provide=a;if(J=(M&&M.getAttribute("data-main"))){X.apply(E,J.split(/\s*,\s*/))}})(this);
+
+  twttr.session = twttr.session || {};
+  twttr.loggedIn = true;
+
+  twttr.appStartTime = document.startTime; // set in phoenix.mustache
+
+  //  Give our session a unique impression id for profiling purposes
+  twttr.session.impressionId = twttr.appStartTime + Math.random();
+
+  twttr.remoteIP = '76.119.90.51';
+  twttr.requestFullCity = 'us,ma,boston';
+  twttr.geo = twttr.geo || {};
+
+  twttr.bundles = {"phoenix_plugins":"http:\/\/a2.twimg.com\/a\/1304464034\/javascripts\/phoenix_plugins.bundle.js","phxie6":"http:\/\/a2.twimg.com\/a\/1304464034\/javascripts\/phxie6.bundle.js","admin":"http:\/\/a1.twimg.com\/a\/1304464034\/javascripts\/admin.bundle.js","griffin":"http:\/\/a1.twimg.com\/a\/1304464034\/javascripts\/griffin.bundle.js","base":"http:\/\/a0.twimg.com\/sticky\/base.18.bundle.js","api":"http:\/\/a2.twimg.com\/a\/1304464034\/javascripts\/api.bundle.js","phoenix":"http:\/\/a0.twimg.com\/a\/1304464034\/javascripts\/phoenix.bundle.js"};
+
+  using(
+    '>allCurrentUserDataLoaded',
+    '>request_cache_seeded',
+    '>base_bundle_evaled',
+    '>phoenix_plugins_bundle_evaled',
+    '>phoenix_bundle_evaled',
+    '>languageData',
+
+    function () {
+      // Manually trigger ready event, avoiding race condition where it never fires due to iframe thingy
+      // This should be safe based on how our script loading is done
+      jQuery.ready();
+      twttr.setup();
+    }
+  );
+
+  /* -------------------- Autocomplete place data from CDN -------------------- */
+
+  twttr.placeDataPrefix = "http://geo.l3.twitter.com/places/autocomplete_places-";
+
+  /* -------------------- Initialize API Method -------------------- */
+
+  function initAPI() {
+    twttr.anywhere.api.initialize();
+
+    twttr.API = {};
+
+    twttr.aug(twttr.API, twttr.anywhere.api.models);
+    twttr.aug(twttr.API, {
+      globalEvents: twttr.anywhere.api.globalEvents
+    });
+
+    twttr.API.setConfig = twttr.anywhere.api.updateConfig;
+    twttr.API.getConfig = function () {
+      return twttr.anywhere.api.config;
+    };
+
+    if (!twttr.API.util) {
+      twttr.API.util = {};
+    }
+
+    twttr.aug(twttr.API.util, twttr.anywhere.api.util);
+
+    if (!twttr.API._requestCache) {
+      twttr.API._requestCache = twttr.anywhere.api.cache;
+    }
+
+    twttr.API.setConfig({
+      cacheObjects: true,
+      includeEntities: true
+    });
+
+    twttr.extendAPI();
+  }
+
+  /* -------------------- Init CurrentUser Method -------------------- */
+
+  function initCurrentUser() {
+    if (twttr.loggedIn) {
+      using('>bootstrap_data', '>request_cache_seeded', function (bootstrapData) {
+        twttr.API.User.current({
+          error: function() {
+            //  Not logged in anymore; refresh the page
+            window.location.reload(true);
+          },
+          success: function(currentUser) {
+            twttr.currentUser = currentUser;
+
+            for (var propName in bootstrapData.userProperties) {
+              twttr.currentUser.sync(propName, bootstrapData.userProperties[propName] || false);
+            }
+
+            provide('>allCurrentUserDataLoaded');
+          }
+        });
+      });
+    } else {
+      provide('>allCurrentUserDataLoaded');
+    }
+  };
+
+  /* -------------------- Setting up Domains -------------------- */
+
+  twttr.proto = window.location.protocol.match(/s\:$/) ? 'https' : 'http';
+  twttr.isSSL = function () {
+    return twttr.proto === 'https';
+  };
+
+  twttr.domains = {
+    local: 'twitter.com',
+    remote: 'api.twitter.com'
+  };
+
+  var match = window.location.hostname.match(/^(staging\d+\.[a-zA-Z0-9_]*?)\.twitter\.com$/i);
+
+  if (match) {
+    twttr.domains.local = match[1] + '.twitter.com';
+    twttr.domains.remote = 'api-' + match[1] + '.twitter.com';
+  }
+
+  if (document.location.hostname === "localhost.twitter.com") {
+    twttr.domains.local = 'localhost.twitter.com:3000';
+      twttr.domains.remote = 'api.localhost.twitter.com:3000';
+    }
+
+  twttr.hosts = {
+    local: twttr.proto + "://" + twttr.domains.local,
+    remote: twttr.proto + "://" + twttr.domains.remote
+  };
+
+  var pReceiverURL = twttr.hosts.remote + '/receiver.html';
+  twttr.jsonpSandboxURL = 'http://a3.twimg.com/a/1304464034/jsonp_sandbox.html#scripts=http://a0.twimg.com/sticky/base.18.bundle.js';
+
+  /* -------------------- Iframe Creator Method -------------------- */
+
+  function createIFrame(complete) {
+    var frag = document.createElement('div');
+    frag.innerHTML = '<iframe tabindex="-1" role="presentation" style="position:absolute;top:-9999px;" src="' + pReceiverURL + '"></iframe>';
+
+    var iframe = frag.firstChild;
+    var fnComplete = function() {
+      complete.apply(iframe, arguments);
+    };
+
+    iframe.addEventListener ? iframe.addEventListener('load', fnComplete, false) : iframe.attachEvent('onload', fnComplete);
+
+    //  Avoid "operation aborted" error in IE that can be caused by
+    //  appending a new element to the body via body.appendChild
+    //  by a script that is not a direct descendant of the <body>.
+    document.body.insertBefore(iframe, document.body.firstChild);
+
+    return iframe;
+  }
+
+  /*------------------- Local Assets --------------------*/
+  /*------------------- CDN Assets --------------------*/
+
+  /*------------------- fetch base --------------------*/
+    (function() {
+      var bundleFetchStartTime = new Date();
+
+      using(twttr.bundles.base, function() {
+        provide('>base_bundle_evaled');
+      });
+
+      using('>base_bundle_evaled',
+        twttr.bundles.api,
+        twttr.bundles.phoenix_plugins,
+        twttr.bundles.phoenix,
+        function() {
+          var bundleFetchEndTime = new Date();
+          provide('>allCodeLoaded');
+
+          using('>bootstrap_data', function() {
+            twttr.util.Profiler.logPreviousEvent('twttr.bundles fetched', bundleFetchStartTime, bundleFetchEndTime);
+          });
+        }
+      );
+    })();
+  /*------------------- fetch bootstrap data --------------------*/
+  (function() {
+    
+    var xhr;
+    if(window.XMLHttpRequest) {
+      xhr = new window.XMLHttpRequest();
+    } else {
+      try {
+        xhr = new window.ActiveXObject("Microsoft.XMLHTTP");
+      } catch(e) {
+        //  Eep
+      }
+    }
+
+    xhr.onreadystatechange = function() {
+      if(xhr.readyState == 4) {
+        if(xhr.responseText.charAt(0) === '{') {
+          provide('>bootstrap_data', function(exports) {
+            exports(JSON.parse(xhr.responseText));
+          });
+        } else {
+          
+          eval(xhr.responseText);
+        }
+      }
+    };
+    //  Note: we include window.location.search here so any query string parameters given to load the page are passed
+    //  along to /account/bootstrap_data.js. In particular, we want things like ?lang=ja to propogate through to the
+    //  request for bootstrap data.
+    xhr.open('GET', '/account/bootstrap_data' + (window.location.search ? (window.location.search + '&') : '?') + 'r=' + Math.random(), true);
+    xhr.send(null);
+  })();
+
+  using('>base_bundle_evaled', '>api_bundle_evaled', function() {
+    twttr.anywhere.remote = {};
+
+    provide('>api_ready', function(exports) {
+      initAPI();
+      exports();
+    });
+
+    using('>request_cache_seeded', function() {
+      initCurrentUser();
+    });
+  });
+
+  using('>bootstrap_data', function(data) {
+    twttr.payload = data.payload;
+    provide('>payload');
+
+    twttr.remoteIP = data.remoteIP;
+    twttr.requestFullCity = data.requestFullCity;
+    twttr.recentPlaces = data.recentPlaces;
+    twttr.cdnBase = data.cdnBase;
+
+    if(data.currentUser) {
+      twttr.currentUserScreenName = data.currentUserScreenName;
+    }
+
+    if (data.frontSuggestedUsers) {
+      twttr.frontSuggestedUsers = data.frontSuggestedUsers;
+    }
+
+    if(data.griffinConfig) {
+      twttr.griffinConfig = data.griffinConfig;
+      provide('>griffin_config');
+    }
+
+    if (data.isAdmin) {
+      twttr.rights = data.adminRights
+      twttr.isAdmin = true;
+    }
+
+    if (data.isNarrow) {
+      twttr.isNarrow = true;
+    }
+
+    if(data.pageLocale) {
+      twttr.pageLocale = data.pageLocale;
+    }
+    if(data.pageLocaleJS) {
+      //  Need to load language data
+      using(data.pageLocaleJS, function() {
+        provide('>languageData');
+      });
+    } else {
+      provide('>languageData');
+    }
+    if(data.pageLocaleClass) {
+      using('>base_bundle_evaled', function() {
+        $(function() {
+          $(document.body).addClass(data.pageLocaleClass);
+        });
+      });
+    }
+    if(data.languages) {
+      twttr.languages = data.languages;
+    }
+
+    using('>defaultViews', function() {
+      if(data.showWelcomeBanner) {
+        (new twttr.views.WelcomeToPhoenixBanner()).render($('#banners'), 'append');
+      }
+
+      if (data.flashNotice) {
+        $('#flash-message-storage').html(data.flashNotice).show();
+      }
+    });
+
+    using('>decider', function() {
+      twttr.decider._updateFeatures(data.deciderFeatures);
+    });
+
+    using('>ab_decider', function() {
+      twttr.abdecider._updateExperiments(data.abBuckets);
+    });
+
+    using('>api_ready', function() {
+      twttr.API.setConfig({ postAuthenticityToken: data.postAuthenticityToken });
+      $('#authenticity_token').val(data.postAuthenticityToken);
+      provide('>request_cache_seeded', function(exports) {
+        var seedData = data.requestCacheSeedData;
+        for (var i = 0, len = seedData.length; i < len; ++i) {
+          var seedItem = seedData[i];
+          twttr.API._requestCache.inject(seedItem.api_request_name, seedItem.options, seedItem.json, 1);
+        }
+        exports();
+      });
+
+      if(data.homeTimelineFetchSize) {
+        twttr.API.homeTimelineFetchSize = data.homeTimelineFetchSize;
+      }
+    });
+  });
+
+  createIFrame(function() {
+    var that = this;
+
+    using('>base_bundle_evaled', '>api_bundle_evaled', function() {
+      twttr.anywhere.remote.server = that;
+      twttr.anywhere.api.util.RemoteRequest.flush();
+    });
+  });
+
+});</script>
+<script>WATCH.end('javascript_includes');</script>
+
+<!--[if lte IE 6]>
+<script src="http://a2.twimg.com/a/1304464034/javascripts/phxie6.bundle.js"></script>
+<![endif]-->
+
+  
+
+</body></html>

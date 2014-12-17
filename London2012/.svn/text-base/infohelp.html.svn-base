@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Infomous Help</title>
+
+<style type="text/css">
+  <!--
+  html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 86%;
+    line-height: 1.4em;
+  }
+  table{
+    margin: 10px;
+  }
+  h1{
+    color: #007BCC;
+    padding: 7px 10px;
+    font-size: 1.7em;
+    background-color: #f2f2f2;
+    margin-top: 0;
+  }
+  p{
+    padding-left: 10px;
+    color: #4C4C4C;
+  }
+  a {
+    color: #007BCC;
+    text-decoration: none;
+  }
+  -->
+</style>
+</head>
+
+<body>
+<div id="container">
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="180" valign="top">
+      <img src="logo-green.png" />
+    </td>
+    <td valign="top">
+      <h1>Infomous Help</h1>
+      <p>This application is based on the <strong><a
+      href="http://www.infomous.com" target="_blank">Infomous</a></strong>
+      interactive text cloud technolgy.</p>
+      
+      <p>Word size indicates relevance; the larger the word, the more relevant
+      it is to stories posted on the site throughout the day. Only the 40 or
+      so most relevant words appear. Related terms and concepts are linked
+      together with lines.</p>
+      
+      <p>Click a word to show links to relevant stories on the site. Click
+      any link to open that link in a new page. Click anywhere to close the
+      list. Double-click on a word to focus content around it. Focus mode
+      places that word in the center of the screen and rearranges the rest
+      of the cloud so that only those words related to the focus word remain
+      in view. To exit focus and return to overview mode, click the pushpin
+      icon. </p>
+      
+      <p>Find out more at <a href="http://www.infomous.com">the Infomous web
+      site</a></p>
+    </td>
+  </tr>
+  
+</table>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:fb="http://ogp.me/ns/fb#" xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+<head>
+<title>Infomous demo for AlleyNYC's StartupBattles</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<script type="tex/javascript">
+var nid49435 = {
+     "zoom" : '3',
+     "setControlBar": 'true',
+}
+</script>
+
+<div style="margin-left:40px; margin-right:auto; margin-top:24px;">
+<script type="text/javascript" async data-infomous-id="nid49435" src="http://infomous.com/client2/?width=1300&height=700"></script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+obama,barack obama
+romney,mitt romney

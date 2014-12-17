@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>XD Proxy</title>
+  </head>
+  <body onload="doFragmentSend()">
+    <div id="swf_holder" style="position: absolute; top: -10000px; width: 1px; height: 1px">
+    </div>
+    <script>var XdCommUrl = "http:\/\/connect.facebook.net\/rsrc.php\/v1\/yD\/r\/GL74y29Am1r.swf";var AllowFbCom = false;function resolveRelation(b){var g,d,f=b.split('.'),e=window;for(var a=0,c=f.length;a<c;a++){g=f[a];if(g==='opener'||g==='parent'||g==='top'){e=e[g];}else if(d=/^frames\[['"]?([a-zA-Z0-9-_]+)['"]?\]$/.exec(g)){e=e.frames[d[1]];}else throw new SyntaxError('Malformed id to resolve: '+b+', pt: '+g);}return e;}function createXdCommSwf(){var a=!!document.attachEvent,c=/(?:MSIE.(\d+\.\d+))|(?:(?:Firefox|GranParadiso|Iceweasel).(\d+\.\d+))|(?:Opera(?:.+Version.|.)(\d+\.\d+))|(?:AppleWebKit.(\d+(?:\.\d+)?))/.exec(navigator.userAgent),b=(c[1]&&(parseFloat(c[1])>=9)),e='XdComm'+(b?(Math.random()*(1<<30)).toString(16).replace('.',''):''),d=('<object '+'type="application/x-shockwave-flash" '+'id="'+e+'" '+(a?'name="XdComm" ':'')+(a?'':'data="'+XdCommUrl+'" ')+(a?'classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" ':'')+'allowscriptaccess="always">'+'<param name="movie" value="'+XdCommUrl+'"></param>'+'<param name="allowscriptaccess" value="always"></param>'+'</object>');if(b)window.attachEvent('onunload',function(){document.getElementById(e).removeNode(true);});document.getElementById('swf_holder').innerHTML=d;}function _isNativeAppUserAgent(){return navigator.userAgent.match(/FBAN\/\w+;/i);}function doFragmentSend(){if(!AllowFbCom&&/(^|\.)facebook.com$/.test(document.domain.toString()))return;var c=window.location.toString(),a=c.substr(c.indexOf('#')+1),g={},h=a.split('&'),b,f;for(b=0;b<h.length;b++){f=h[b].split('=',2);g[decodeURIComponent(f[0])]=decodeURIComponent(f[1]);}if(g.transport=='postmessage'){if(_isNativeAppUserAgent()&&window.top===window){if(window.__fbNative&&window.__fbNative.postMessage){__fbNative.postMessage(a,g.relation);}else{var e=function(j){window.removeEventListener('fbNativeReady',e);__fbNative.postMessage(a,g.origin);};window.addEventListener('fbNativeReady',e);}}else{var i=resolveRelation(g.relation);if(i)i.postMessage(a,g.origin);}}else if(g.transport=='flash'){var d=window.location.toString()+Math.random();window.FB_OnFlashXdCommReady=function(){document.XdComm.postMessage_init('dummy',d);document.XdComm.postMessage_send(a,g.origin);};createXdCommSwf();}}
+</script>
+  
+
+</body></html>

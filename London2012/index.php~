@@ -1,0 +1,36 @@
+<?php
+
+$page = file_get_contents('http://www.london2012.com/news/');
+
+$page = str_replace(
+      '<head>',
+      '<head>
+      <base href="http://www.london2012.com/">
+      ',
+      $page);
+
+
+$page = str_replace(
+      '<ul id="news-articles-2012">',
+      '<ul id="news-articles-2012">
+
+<!-- BEGIN Infomous insertion -->
+<li>
+                    <div class="newsHeader">
+<h1>The London2012 Interactive News Navigator</h1>
+</div>
+<div class="newsInfo">
+<script type="text/javascript" src="http://www.infomous.com/cloud_widget/8860?width=426&height=200&caption=false&maxWords=30&colWord=0xE3008F&colWordHover=0xCF3F19&colWordFade=0x05BFF7&colWordHoverLinked=0xFF4E1F&colLink=0xFFE08C&colLinkHover=0xFFBC82&colBlobBorder=0x05DFF7&colBlobHover=0xB4ECF7"></script>
+</div> 
+
+<!-- END Infomous insertion -->
+
+',
+	$page
+);
+
+
+
+echo $page;
+
+?>

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Infomous test</title>
+
+<script type="text/javascript" src="/misc/jquery.js" ></script>
+
+<!-- PUT THIS TAG IN THE head SECTION -->
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+</script>
+<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-1876439796539993");
+  GS_googleEnableAllServices();
+</script>
+<script type="text/javascript">
+  GA_googleAddSlot("ca-pub-1876439796539993", "Infomous_468x60"); 
+</script>
+<script type="text/javascript">
+  GA_googleFetchAds();
+</script>
+<!-- END OF TAG FOR head SECTION -->
+
+</head>
+<body>
+
+<script type="text/javascript" src="philstar_frame.js?d" ></script>
+<div style="width: 600px; height: 475px;" class="infomous-embed-frame">
+<script  type="text/javascript" async data-infomous-id="nid32935" src="http://www.infomous.com/client2/?width=600&height=350&setFrame=false&maxWords=40"></script>
+<div id="ads-container" style="text-align: center; margin: 1px 0">
+<script type="text/javascript">GA_googleFillSlot("Infomous_468x60");</script>
+</div>
+</div>
+
+
+
+</body>
+</html>

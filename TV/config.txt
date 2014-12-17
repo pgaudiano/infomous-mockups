@@ -1,0 +1,7 @@
+
+//This is a comment
+brandShowLogo = true
+brandLogoPosition = top right
+brandLogoSize = 28
+brandLogoDestination = "http://infomous.com"
+brandShowTagline = false

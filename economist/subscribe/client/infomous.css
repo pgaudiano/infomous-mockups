@@ -1,0 +1,105 @@
+/** CSS reset rules, to avoid contamination from wrapping page styles **/
+.infomous {
+  line-height: 1;
+}
+.infomous div, .infomous span, .infomous object,
+.infomous a, .infomous em, .infomous embed, .infomous img,
+.infomous strong, .infomous ol, .infomous ul, .infomous li{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+.infomous ol, .infomous ul {
+  list-style: none;
+}
+/** end reset **/
+
+.infomous .body{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: absolute;
+  color: #1E450C;
+  border: none;
+  cursor: pointer;
+  cursor: hand;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-decoration: none;
+}
+.infomous .body:hover{
+  color: #103800;
+  background-color: #EEE;
+  border: 1px solid #999;
+  z-index: 500 !important;
+}
+.infomous .focused{
+  background-color: #EEE;
+  border: 1px solid #C00;
+  z-index: 499 !important;
+}
+.infomous .hide{
+  width: 12px;
+  height: 12px;
+  background-image: url(img/removeMidUp.png);
+  background-repeat: no-repeat;
+  float:right;
+}
+.infomous .hide:hover{
+  background-image: url(img/removeMidOver.png);
+}
+.infomous .sources{
+  font-family: Arial, Helvetica, sans-serif;
+  display: none;
+  z-index: 999;
+  background: #EEE;
+  border: 1px solid #999;
+  margin: 0;
+  padding: 3px;
+  list-style: none;
+  font-size: 11px;
+  max-height: 300px;
+  min-width: 180px;
+  max-width: 240px;
+  overflow: auto;
+}
+.infomous .sources li{
+  margin-bottom: 1em;
+  background: inherit;
+}
+.infomous .sources li a{
+  text-decoration: none;
+  color: #333;
+}
+.infomous .sources li a:hover{
+  color: #009;
+}
+.infomous .sources li .line2{
+  color: #666;
+  padding-top: 0.5em;
+}
+.infomous .sources li.i-ad{
+  background-color: #DDD;
+  border: 1px solid #CCC;
+  padding: 2px;
+}
+#infomous-logo{
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background-image: url(img/infomous_icon_24x24.png);
+  background-repeat: no-repeat;
+  z-index: 1002;
+}
+#infomous-switch{
+  font-size: 11px;
+  font-family: Arial,sans-serif;
+}

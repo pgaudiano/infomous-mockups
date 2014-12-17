@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>The Economist Opinion Cloud v. 1.6</title>
+
+<!--<link rel="stylesheet" type="text/css" media="all" href="style.css" />-->
+<link rel="stylesheet" type="text/css" href="landing.css" />
+
+<style type="text/css">
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div style="margin:10px">
+<p>The Economist + Twitter @Electionism </p>
+
+<script language="javascript">
+
+    function infomous_load(platform) {
+
+        console.log('infomous_load platform:', platform);        
+
+        Infomous.require('jquery', function() {
+            I = Infomous;
+            cloudproxy = new CloudProxy(platform, vars, true);
+        });
+    }
+
+    function set_date(el, opt) {
+
+        console.log('set date', opt);
+
+        if (!I) return;
+
+        for (var k in opt)
+            cloudproxy.set_var('query:'+k, opt[k]);
+
+        cloudproxy.make_request();
+
+        I.$("a.date").removeClass("activeDate");
+        I.$(el).addClass("activeDate");
+    }
+
+    function set_now(el) { set_date( el, { sinceLast:'1h' } ); }
+
+    function set_today(el) { set_date( el, { sinceLast:'24h' } ); }
+
+    function set_last_week(el) { set_date( el, { sinceLast:'7d' } ); }
+
+    function set_two_weeks(el) { set_date( el, { sinceLast:'14d' } ); }
+
+    function set_this_month(el) { set_date( el, { sinceLast:'30d' } ); }
+    
+    var vars = {
+
+        width: 595,
+        height: 550,  
+        maxWords: 40,
+
+        setFrame: false,
+        setInterfaceType: "widget",
+        linkageThreshold: 1,
+
+        "query:sinceLast": "1d",
+
+        //setPanels: "words,blobs,status,branding,bottom",
+        //setControls: "fontSlider,zoomSlider,wordsSlider,groups"
+
+        trackGoogle: true,
+        trackGAAccount: "UA-20995290-1",
+        trackOmniture: true,
+
+        skin: "economist"
+    };
+
+    var params = {
+        allowFullScreen: true,
+        allowScriptAccess: "always",
+        bgcolor: "#D9E4E6"
+    };
+
+</script>
+
+<div id="cloudPeriodBar" style="width:595px; height:25px;">
+
+    <span class="period">Period:</span> 
+
+    <a class="date activeDate" onclick="set_now(this)" id="sortBy1" href="javascript:void(0);"><span>now</span></a>
+
+    <a class="date" onclick="set_today(this)" id="sortBy2" href="javascript:void(0);"><span>today</span></a>
+
+    <a class="date" onclick="set_last_week(this)" id="sortBy3" href="javascript:void(0);"><span>this week</span></a>
+
+    <a class="date" onclick="set_two_weeks(this)" id="sortBy3" href="javascript:void(0);"><span>two weeks</span></a>
+
+    <a class="date" onclick="set_this_month(this)" id="sortBy3" href="javascript:void(0);"><span>this month</span></a>
+
+</div> 
+
+<div id="infomous" class="infomous"></div>
+<script type="text/javascript" src="http://dev3.infomous.com/site/economist/elec2/client/embed.js"></script>
+
+</div>
+
+</body>
+</html>
+
+

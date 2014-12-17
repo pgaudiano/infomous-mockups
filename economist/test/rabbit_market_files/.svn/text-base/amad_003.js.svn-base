@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/3af1/0/0/%2a/s;239742613;0-0;1;59875002;21-88/31;41662533/41680320/1;;~sscs=%3fhttp://ad.doubleclick.net/clk;239204187;62119579;p;pc=[TPAS_ID]"><img src="http://s0.2mdn.net/viewad/2283727/0211_GIF_88x31.gif" border=0 alt="Click here!"></a>');

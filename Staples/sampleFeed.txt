@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+  <title>Women In Technology (sponsored by EMC)</title>
+  <link>http://www.linkedin.com/groups?home=&gid=1001387&trk=anet_ug_hm</link>
+  <description>Women In Technology (sponsored by EMC)
+  </description>
+
+<item>
+  <title>Hiring by Cultural Matching: Potential for Bias</title>
+  <link>http://www.linkedin.com/groups/Hiring-Cultural-Matching-Potential-Bias-1001387.S.231052819</link>
+  <author>Kathryn W.</author>
+  <description>http://wp.me/p2OBfB-zv Keywords: business performance improvement,...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:58 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/183/2d6/12b847e.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/183/2d6/12b847e.jpg"/>
+</item>
+
+<item>
+  <title>Primetime | CIO Magazine New Zealand</title>
+  <link>http://www.linkedin.com/groups/Primetime-CIO-Magazine-New-Zealand-1001387.S.231047949</link>
+  <author>JJ D.</author>
+  <description>Sonal Patel, a friend and co-worker, says Women of Purpose was...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:57 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/3/000/0aa/3b1/01d8975.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/3/000/0aa/3b1/01d8975.jpg"/>
+</item>
+
+<item>
+  <title>Research shows that women who succeed in jobs dominated by men, not surprisingly,</title>
+  <link>http://www.linkedin.com/groups/Research-shows-that-women-who-1001387.S.231016990</link>
+  <author>Kare A.</author>
+  <description>often do so by distancing themselves from other women. What&#x2019;s...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:56 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"/>
+</item>
+
+<item>
+  <title>New book series supports business of security &#x2013; physical and digital: ow.ly/jVyH0 &#x2014;#infosec #cybersecurity via @ElsevierConnect</title>
+  <link>http://www.linkedin.com/groups/New-book-series-supports-business-1001387.S.231014466</link>
+  <author>Angelina W.</author>
+  <description>Publishing partnership helps organizational leaders achieve their...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:55 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/184/365/2b8acb1.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/184/365/2b8acb1.jpg"/>
+</item>
+
+<item>
+  <title>Destructive belief</title>
+  <link>http://www.linkedin.com/groups/Destructive-belief-1001387.S.231010035</link>
+  <author>Kare A.</author>
+  <description>How bad behavior, seems to look like social norm when it isn&#x2019;t...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:54 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"/>
+</item>
+
+<item>
+  <title>Workshops with Top Coaches: Negotiate, Present, Lead, Build the &quot;Myself, Inc.&quot; Brand</title>
+  <link>http://www.linkedin.com/groups/Workshops-Top-Coaches-Negotiate-Present-1001387.S.230419158</link>
+  <author>Lilia S.</author>
+  <description>I'm super excited to invite you to a series of interactive, hands-on workshops designed to hone your most critical business skills,...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:53 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/5/000/1fd/2ff/27687c8.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/5/000/1fd/2ff/27687c8.jpg"/>
+</item>
+
+<item>
+  <title>Getting Out From Under The Marketing Department: The Case For The 'Chief Of Social' - Forbes</title>
+  <link>http://www.linkedin.com/groups/Getting-Out-From-Under-Marketing-1001387.S.230365130</link>
+  <author>Ilene F.</author>
+  <description>This article is by Gretchen Fox, social architect at grtchnfx, a...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:52 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/0b3/188/01a63c4.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/0b3/188/01a63c4.jpg"/>
+</item>
+
+<item>
+  <title>Elsevier welcomes Mendeley</title>
+  <link>http://www.linkedin.com/groups/Elsevier-welcomes-Mendeley-1001387.S.230354497</link>
+  <author>Angelina W.</author>
+  <description>Elsevier&#x2019;s acquisition of an innovative research management and...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:51 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/184/365/2b8acb1.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/184/365/2b8acb1.jpg"/>
+</item>
+
+<item>
+  <title>Oh this is something we really needed to know :-)</title>
+  <link>http://www.linkedin.com/groups/Oh-this-is-something-we-1001387.S.230319492</link>
+  <author>Kare A.</author>
+  <description>Now what will marketers do with this insight? Add advertising or...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:50 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"/>
+</item>
+
+<item>
+  <title>Here's something you can do to help bring about positive change in our industry.....and bring MORE FEMALES into technical careers....</title>
+  <link>http://www.linkedin.com/groups/Heres-something-you-can-do-1001387.S.230317236</link>
+  <author>Karen S.</author>
+  <description>Send these links to whoever writes your corporate internal newsletter, or local newspaper business column, and encourage them to publish...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:49 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/156/21f/3e87787.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/156/21f/3e87787.jpg"/>
+</item>
+
+<item>
+  <title>I enjoyed Brian Solis' book, What&#x2019;s the Future of Business.</title>
+  <link>http://www.linkedin.com/groups/I-enjoyed-Brian-Solis-book-1001387.S.230248064</link>
+  <author>Kare A.</author>
+  <description>Key to companies integrating an interesting, relevant and involving...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:48 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"/>
+</item>
+
+<item>
+  <title>L'Or&#xe9;al Women in Digital opens nominations for 2013 Next Generation awards</title>
+  <link>http://www.linkedin.com/groups/LOréal-Women-in-Digital-opens-1001387.S.230153374</link>
+  <author>Paolo G.</author>
+  <description>Nominate yourself or someone you know through May 10, 2013 at http://lorealwomenindigital.com/awards/</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:47 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/7/000/222/3ac/2082137.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/7/000/222/3ac/2082137.jpg"/>
+</item>
+
+<item>
+  <title>Seeking South Australian women to share their stories of studying/working in STEM</title>
+  <link>http://www.linkedin.com/groups/Seeking-South-Australian-women-share-1001387.S.230006319</link>
+  <author>Amanda U.</author>
+  <description>I am working with DFEEST on the development of a website promoting training, careers and pathways in science, technology, engineering and...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:46 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/3/000/220/3bf/06458c3.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/3/000/220/3bf/06458c3.jpg"/>
+</item>
+
+<item>
+  <title>STEAM-powered Innovation: Science, Technology, Engineering, Arts, Mathematics</title>
+  <link>http://www.linkedin.com/groups/STEAMpowered-Innovation-Science-Technology-Engineering-1001387.S.229978974</link>
+  <author>Kathryn W.</author>
+  <description>http://wp.me/p2OBfB-zm Keywords: Ainissa Ramirez, computational...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:45 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/183/2d6/12b847e.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/183/2d6/12b847e.jpg"/>
+</item>
+
+<item>
+  <title>Angry people are more likely to see guns in the situation.</title>
+  <link>http://www.linkedin.com/groups/Angry-people-are-more-likely-1001387.S.229916638</link>
+  <author>Kare A.</author>
+  <description>If you, too, are fascinated by what influences how we act towards...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:44 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"/>
+</item>
+
+<item>
+  <title>5 Steps to Prepare for Your Career Leap!</title>
+  <link>http://www.linkedin.com/groups/5-Steps-Prepare-Your-Career-1001387.S.229771768</link>
+  <author>JJ D.</author>
+  <description>Contemplating making a change in your career? Whether you are...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:43 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/3/000/0aa/3b1/01d8975.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/3/000/0aa/3b1/01d8975.jpg"/>
+</item>
+
+<item>
+  <title>Money matters: why women founders struggle in Silicon Valley</title>
+  <link>http://www.linkedin.com/groups/Money-matters-why-women-founders-1001387.S.229364314</link>
+  <author>Ilene F.</author>
+  <description>Last spring and summer, Kathryn Minshew, co-founder of The Muse and...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:42 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/0b3/188/01a63c4.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/0b3/188/01a63c4.jpg"/>
+</item>
+
+<item>
+  <title>7th Annual Invent Your Future Silicon Valley Conference</title>
+  <link>http://www.linkedin.com/groups/7th-Annual-Invent-Your-Future-1001387.S.229362295</link>
+  <author>Ruth S.</author>
+  <description>The Bay Area's premier event for businesswomen and entrepreneurs. Our...</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:41 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/178/21d/0666bcb.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/178/21d/0666bcb.jpg"/>
+</item>
+
+<item>
+  <title>Good perspective on recent press post Lean In</title>
+  <link>http://www.linkedin.com/groups/Good-perspective-on-recent-press-1001387.S.230742404</link>
+  <author>Bobbie L.</author>
+  <description>Good perspective on recent press post Lean In</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:40 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/148/14d/0758920.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/148/14d/0758920.jpg"/>
+</item>
+
+<item>
+  <title>Ambassadors Wanted for Crowdsourced Book on Women in Tech! Please send me a private message if you're interested in contributing!</title>
+  <link>http://www.linkedin.com/groups/Ambassadors-Wanted-Crowdsourced-Book-on-1001387.S.228497874</link>
+  <author>Dana P.</author>
+  <description>Ambassadors Wanted for Crowdsourced Book on Women in Tech! Please send me a private message if you're interested in contributing!</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:39 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/2/000/22e/128/31cc3a1.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/2/000/22e/128/31cc3a1.jpg"/>
+</item>
+
+<item>
+  <title>6 Secrets of Women Entrepreneurs Who Built $10 Million Companies - Forbes</title>
+  <link>http://www.linkedin.com/news</link>
+  <author>Ilene F.</author>
+  <description>6 Secrets of Women Entrepreneurs Who Built $10 Million Companies - Forbes</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:38 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/0b3/188/01a63c4.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/0b3/188/01a63c4.jpg"/>
+</item>
+
+<item>
+  <title>&#x201c;Self-Packaging&#x201d; as Personal Brand: Implicit Requirements for Personal Appearance?</title>
+  <link>http://www.linkedin.com/groups/SelfPackaging-as-Personal-Brand-Implicit-1001387.S.228967492</link>
+  <author>Kathryn W.</author>
+  <description>&#x201c;Self-Packaging&#x201d; as Personal Brand: Implicit Requirements for Personal Appearance?</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:37 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/183/2d6/12b847e.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/4/000/183/2d6/12b847e.jpg"/>
+</item>
+
+<item>
+  <title>Congrats to Amanda Peyton, co-founder of Grand St., on raising $1.13 million</title>
+  <link>http://www.linkedin.com/groups/Congrats-Amanda-Peyton-cofounder-Grand-1001387.S.229226645</link>
+  <author>Oujua C.</author>
+  <description>Congrats to Amanda Peyton, co-founder of Grand St., on raising $1.13 million</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:36 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/7/000/210/138/24decbc.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/7/000/210/138/24decbc.jpg"/>
+</item>
+
+<item>
+  <title>Richard Branson writes &#x201c;As power shifts from the hands of central authorities to the hands of people</title>
+  <link>http://www.linkedin.com/groups/Richard-Branson-writes-As-power-1001387.S.229203895</link>
+  <author>Kare A.</author>
+  <description>Richard Branson writes &#x201c;As power shifts from the hands of central authorities to the hands of people</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:35 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"/>
+</item>
+
+<item>
+  <title>Incentives for Men, to Help Women to Work</title>
+  <link>http://www.linkedin.com/news</link>
+  <author>Ilene F.</author>
+  <description>Incentives for Men, to Help Women to Work</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:34 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/0b3/188/01a63c4.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/0b3/188/01a63c4.jpg"/>
+</item>
+
+<item>
+  <title>Does a happy workplace matter?</title>
+  <link>http://www.linkedin.com/groups/Does-happy-workplace-matter-1001387.S.227890722</link>
+  <author>Kristi R.</author>
+  <description>Does a happy workplace matter?</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:33 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/5/000/200/13a/1ede615.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/5/000/200/13a/1ede615.jpg"/>
+</item>
+
+<item>
+  <title>You can disagree with an argument</title>
+  <link>http://www.linkedin.com/groups/You-can-disagree-argument-1001387.S.227723722</link>
+  <author>Kare A.</author>
+  <description>You can disagree with an argument</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:32 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"/>
+</item>
+
+<item>
+  <title>Keeping Women Off Of Corporate Boards Is A Really Bad Idea</title>
+  <link>http://www.linkedin.com/news</link>
+  <author>Nolwenn G.</author>
+  <description>Keeping Women Off Of Corporate Boards Is A Really Bad Idea</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:31 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/6/000/228/0c4/156e25c.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/6/000/228/0c4/156e25c.jpg"/>
+</item>
+
+<item>
+  <title>Accenture Research Finds Most Professionals Believe They Can &#x201c;Have It All&#x201d;</title>
+  <link>http://www.linkedin.com/news</link>
+  <author>Ilene F.</author>
+  <description>Accenture Research Finds Most Professionals Believe They Can &#x201c;Have It All&#x201d;</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:30 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/0b3/188/01a63c4.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/0b3/188/01a63c4.jpg"/>
+</item>
+
+<item>
+  <title>End of Men? Not Even Close</title>
+  <link>http://www.linkedin.com/groups/End-Men-Not-Even-Close-1001387.S.227535462</link>
+  <author>Kare A.</author>
+  <description>End of Men? Not Even Close</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:29 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"/>
+</item>
+
+<item>
+  <title>&quot;People with high self-esteem are more likely than those with low self-esteem</title>
+  <link>http://www.linkedin.com/groups/People-high-selfesteem-are-more-1001387.S.225685414</link>
+  <author>Kare A.</author>
+  <description>&quot;People with high self-esteem are more likely than those with low self-esteem</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:28 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"/>
+</item>
+
+<item>
+  <title>After former Facebook employee Katherine Losse penned a negative review of Sheryl Sandberg&#x2019;s ubiquitous book</title>
+  <link>http://www.linkedin.com/groups/After-former-Facebook-employee-Katherine-1001387.S.227034311</link>
+  <author>Kare A.</author>
+  <description>After former Facebook employee Katherine Losse penned a negative review of Sheryl Sandberg&#x2019;s ubiquitous book</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:27 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/000/05e/12e2ff1.jpg"/>
+</item>
+
+<item>
+  <title>Women make better corporate leaders than men, study finds</title>
+  <link>http://www.linkedin.com/news</link>
+  <author>Ilene F.</author>
+  <description>Women make better corporate leaders than men, study finds</description>
+  <pubDate>Mon, 25 Mar 2013 16:08:26 EST</pubDate>
+  <media:thumbnail url="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/0b3/188/01a63c4.jpg"  xmlns:media="http://media.licdn.com/mpr/mpr/shrink_40_40/p/1/000/0b3/188/01a63c4.jpg"/>
+</item>
+</channel>
+</rss>

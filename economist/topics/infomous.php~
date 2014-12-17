@@ -1,0 +1,105 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:fb="http://ogp.me/ns/fb#" xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+<script type="text/javascript" src="http://www.infomous.com/site/scripts/shadowbox/shadowbox.js"></script>
+<link type="text/css" rel="stylesheet" href="http://www.infomous.com/site/scripts/shadowbox/shadowbox.css"/>
+<head>
+<title>Infomous Topics Explorer </title>
+</head>
+<body>
+
+<?php
+
+/* This script looks for certain GET parameters and uses them to create an
+   Infomous cloud on-the-fly
+*/
+
+// Look for GET params but if not passed use a default
+if (!isset($_GET["q"]))
+{
+$feedurl="http://www.economist.com/topics/europe/index.xml";
+}
+else
+{
+$feedurl="http://www.economist.com".$_GET["q"]."/index.html";
+}
+
+if (!isset($_GET["title"]))
+{
+$title="Explore Economist Topics";
+}
+else
+{
+$title=$_GET["title"];
+}
+
+if (!isset($_GET["width"])) {
+$width=600;
+} else {
+$width=$_GET["width"];
+}
+
+if (!isset($_GET["height"])) {
+$height=400;
+} else {
+$height=$_GET["height"];
+}
+
+/* Now generate the dynamic embed */
+print('
+  Shadowbox.init({
+    handleOversize: "resize"
+  });
+
+  var myFeed = "'.$feedurl.'"; // Feeds constructed above.
+  var cloud;
+  var myInfomousCloud = {  // Parameters that alter the look & feel of the cloud.
+    api: "true",
+    nid: "ReCodeDemo",
+    width: "620",
+    height: "400",
+    setFrame: "False",
+    setControls: "False",
+    highlighted: "'.$highlighted.'",
+    colBackground: "0xeeeeee",
+  }
+  // This is the main Infomous API function
+  function infomous_ready(I) {
+    cloud = I.clouds.get();  // Create the cloud object
+    
+    cloud.set_var(\'feeds\',myFeed);   // Set the feeds
+  
+    cloud.make_request();   // Update the cloud
+  }
+</script>
+
+<!-- The header information -->
+<div style="font-family:futura-pt,helvetica,arial,sans-serif;font-weight: bold;margin:10px 0 10px 0;">
+Explore related stories from Re/Code
+</div>
+<!-- This is the actual embed code for the cloud -->
+<script type="text/javascript" async data-infomous-id="myInfomousCloud" src="http://www.infomous.com/client2/"></script>
+[<a rel="shadowbox;width=700;height=370" href="http://infomous.com/site/mockups/recode/help.php" style="color:blue;">What is this?</a>]
+
+');
+
+print('<p>You can modify this cloud by passing the following parameters:<br>
+<ul>
+  <li>width=xxx (xxx in pixels)</li>
+  <li>height=xxx (xxx in pixels)</li>
+  <li>title=blah ("blah" should be URL encoded)</li>
+  <li>feedurl=url (url may need to be encoded if it includes certain characters)</li>
+</ul>
+
+For example, try:
+<a href="http://www.infomous.com/site/mockups/EmbedSamples/dynamic.php?feedurl=http://www.icosystem.com/feed&title=Explore%20my%20blog&width=800&height=400">http://www.infomous.com/site/mockups/EmbedSamples/dynamic.php?feedurl=http://www.icosystem.com/feed&title=Explore%20my%20blog&width=800&height=400</a>
+
+<p>
+You can view the source code for this file <a href="dynamic.php.txt">here</a>, and the JavaScript embed file <a href="embed.js.txt">here</a>.
+
+');
+
+?>
+
+</body>
+</html>

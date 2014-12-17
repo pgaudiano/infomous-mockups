@@ -1,0 +1,4 @@
+Satisfy any
+<Files *.xml>
+Allow from all
+</Files>

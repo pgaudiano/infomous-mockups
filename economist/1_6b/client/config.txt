@@ -1,0 +1,3 @@
+brandShowLogo = true
+adsShowPlain = true
+query:sort=d

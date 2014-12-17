@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>Related Procedures</title>
+    <link>http://www.infomous.com/site/mockups/HealthcareMagic/</link>
+
+ <item>
+    <title>Magnetic resonance imaging</title>
+    <link>http://www.healthcaremagic.com/topics/procedures/magnetic-resonance-imaging/970</link>
+ </item>
+ <item>
+    <title>X ray</title>
+    <link>http://www.healthcaremagic.com/topics/procedures/x-ray/9942</link>
+ </item>
+</channel>
+</rss>

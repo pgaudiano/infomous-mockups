@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+<head>
+  <title>Emmy opinions navigator - Infomous</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/all/themes/infomous2/img/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/forum/forum.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/infomous2/style.css?y" />
+  <script type="text/javascript" src="/misc/jquery.js?y"></script>
+<script type="text/javascript" src="/misc/drupal.js?y"></script>
+<script type="text/javascript" src="/sites/all/themes/infomous2/scripts/analytics.js?y"></script>
+<script type="text/javascript">jQuery.extend(Drupal.settings, { "basePath": "/" });</script>
+<script type="text/javascript" src="swfobject.js"></script>
+  <script type="text/javascript"> </script>
+<style type="text/css">
+        <!--
+          #infomousCloud{
+            font-family: Verdana, Helvetica, Arial, sans-serif;
+            border: 1px solid #CDD9DA;
+            background-color: #F4F8FB;
+            margin-bottom: 25px;
+          }
+      #cloudTitle{
+        font-weight: bold;
+        font-size: 13px;
+        margin: 20px 10px 5px 15px;
+      }
+      #cloudPeriodBar{
+          background-color: #E5ECF2;
+          font-size: 11px;
+          margin-bottom: 0;
+          margin-top: 10px;
+          border-bottom: 2px ;
+      }
+      #JDGTagCloudControlsDiv a {
+          text-decoration: none;
+      }
+      #cloudContainer{
+        margin: 0;
+      }
+      #movie {
+        border-bottom: 1px solid #598a9e;
+        padding: 0;
+        line-height: 0;
+      }
+      #cloudFooter{
+        color:#08526D;
+        font-size:11px;
+        font-weight: bold;
+        margin: 10px 15px;
+      }
+      .cloudCaption{
+        margin: 5px 0 10px 15px;
+      }
+      .period {
+        color: #999;
+        font-weight: bold;
+        padding: 4px 10px 0 15px;
+        float: left;
+      }
+      
+      span.date {
+          color: #26526F;
+          display:block;
+          float: left;
+          height: 21px;
+          border-left: 1px solid #CCC;
+          background-color: #E5ECF2;
+          text-decoration: none;
+          padding: 0 5px;
+          position: relative;
+          top: 4px;
+      }
+
+      a.date {
+          color: #26526F;
+          display:block;
+          float: left;
+          height: 25px;
+          border-left: 1px solid #CCC;
+          background-color: #E5ECF2;
+          text-decoration: none;
+          padding: 0 5px;
+      }
+      a.date span{
+        position: relative;
+          top: 4px;
+      }
+      a.date:hover {
+        background-color: #D4DBE1;
+      }
+      a.activeDate {
+        color: #FFF;
+        font-weight: bold;
+        background-color: #598a9e;
+      }
+      a.last{
+          border-right: 1px solid #CCC;
+      }
+    /*span.sortSeparator {
+          color: #989898;
+          padding: 0 5px;
+      }*/
+        -->
+</style>
+</head>
+<body>
+<div align="center">
+  
+<table border="0" cellpadding="0" cellspacing="0" id="header" class="home-block">
+  <tr>
+    <td id="logo">
+        <map name="Map" id="Map">
+          <area shape="rect" coords="0,0,300,110" href="/explore/news" alt="Home" />
+          <area shape="rect" coords="301,0,480,110" href="http://icosystem.com" alt="icosystem.com" />
+        </map>
+        <img src="/sites/all/themes/infomous2/img/logo.jpg" alt="Home" usemap="#Map" />
+		</td>
+    <td id="menu">
+      <ul class="links" id="navlist"><li class="menu-237 first"><a href="/help/main" title="Infomous Help - Main Page">HELP</a></li>
+        <li class="menu-177"><a href="/about" title="">ABOUT</a></li>
+        <li class="menu-193"><a href="/contact" title="">CONTACT</a></li>
+        <li class="menu-174 last"><a href="/user/login" title="">LOG IN</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<div style="width:800px; padding:10px; text-align:center; font-family:Arial,Helvetica,sans-serif; font-size:1.5em; color:#3B6614; font-weight:bold;">
+  <em>Infomous</em>&trade; Emmy Opinion Navigator
+</div>
+
+<div style="width:880px; padding:5px; text-align:center; font-size:1.2em; color:#444444; font-weight:normal">
+  Use the <em>Emmy Opinion Navigator</em>, developed in partnership
+  with our friends at <a href="http://www.appinions.com"
+  target="_blank">Appinions</a> to follow the commentary on the Internet
+  as history gets rewritten in the streets of Emmy.
+</div>
+
+<script language="javascript">
+    <!--
+    function thisMovie(movieName) {
+         if (navigator.appName.indexOf("Microsoft") != -1) {
+             return window[movieName];
+         } else {
+             return document[movieName];
+         }
+     }
+          
+    function setDate(elem, days,daysTo){
+            thisMovie("infomous").setDate(days,daysTo);
+            $("a.date").removeClass("activeDate");
+            $(elem).addClass("activeDate");
+            $("a#popup-link").attr("href", "http://dev.infomous.com/site/economist/full_cloud.html?days="+days+"&daysTo="+daysTo);
+    }
+    -->
+  </script>
+
+<div id="cloudPeriodBar" style="width:880px; height:25px;">
+  <span class="period">Period:</span> 
+    <a class="date activeDate" onclick="setDate(this, 1,0);" id="sortBy1" href="javascript:void(0);"><span>today</span></a>
+    <a class="date" onclick="setDate(this, 2,1);" id="sortBy2" href="javascript:void(0);"><span>yesterday</span></a>
+    <a class="date" onclick="setDate(this, 3,2);" id="sortBy3" href="javascript:void(0);"><span>2</span></a>
+    <a class="date" onclick="setDate(this, 4,3);" id="sortBy4" href="javascript:void(0);"><span>3</span></a>
+    <a class="date" onclick="setDate(this, 5,4);" id="sortBy5" href="javascript:void(0);"><span>4</span></a>
+    <a class="date" onclick="setDate(this, 6,5);" id="sortBy6" href="javascript:void(0);"><span>5</span></a>
+    <a class="date" onclick="setDate(this, 7,6);" id="sortBy7" href="javascript:void(0);"><span>6</span></a> <span class="date">days ago</span>
+    <!-- <a class="date" onclick="setDate(this, 14,7);" id="sortBy8" href="javascript:void(0);"><span>2</span></a> 
+    <a class="date" onclick="setDate(this, 21,14);" id="sortBy9" href="javascript:void(0);"><span>3</span></a> 
+    <a class="date" onclick="setDate(this, 28,21);" id="sortByA" href="javascript:void(0);"><span>4</span></a> <span class="date">weeks ago</span>
+-->
+</div>
+   
+<div id="flash" align="center" style="clear:both;">You need Flash Player 8 or newer and JavaScript on to view this site. </div>
+<script type="text/javascript">
+        // <![CDATA[
+	var so = new SWFObject("infomous2.swf", "infomous", "880", "400", "9", "#D9E4E6");
+	so.addParam("allowScriptAccess", "always");
+	so.addParam("allowFullScreen", "true");
+	so.addVariable("setInterfaceType", "viewer");
+	        so.addVariable("groups", "1");
+	        so.addVariable("fontScale", "0.9");
+	        so.addVariable("zoom", "1");
+	        so.addVariable("maxWords", "35");
+	        so.addVariable("linkageThreshold", "1");
+	        so.addVariable("dict", "NOUN|1,VERB|1,ADJECTIVE|1,ADVERB|0,NUMBER|1,OTHER|1");
+	        so.addVariable("hidden","Emmy");
+		so.addVariable("fromDaysBack", "1");
+		so.addVariable("toDaysBack", "0");
+		so.addVariable("setPanels","top,bottom,blobs,words,status,branding");
+		so.addVariable("setControls", "groups,focusSelect,wordsSlider,zoomSlider");
+		so.addVariable("brandShowLogo","false");
+		so.addVariable("brandBoxedLogo","false");
+		so.addVariable("brandShowTagline","false");
+		so.addVariable("brandTaglineText","%3Cfont%20color%3D%22%23999999%22%3EPowered%20by%3C%2Ffont%3E%20%3Ca%20href%3D%22http%3A%2F%2Finfomous.com%22%3EInfomous%3C%2Fa%3E%3Cfont%20color%3D%22%23999999%22%3E%20and%20%3C%2Ffont%3E%3Ca%20href%3D%22http%3A%2F%2Fappinions.com%22%3EAppinions%3C%2Fa%3E");
+		
+	        so.write("flash");
+	     // ]]>
+</script> 
+<div style="width:880px; margin:0; padding: 4px 0; font-size:12px; color:#3B6614; background-color:#E5ECF2; text-align:right;">
+  <font color="#777777">Powered by </font>
+  <a href="http://www.infomous.com" target="_blank" style="text-decoration:underline">Infomous<a/> 
+  <font color="#777777"> and </font>
+  <a href="http://www.appinions.com" target="_blank" style="text-decoration:underline">Appinions</a>&nbsp;&nbsp;
+</div>
+
+
+
+<div style="width:800px; margin:10px 0 20px 0; padding:0px; text-align:left; font-size:11px; color:#3B6614; font-weight:normal;">
+  Click a word to see relevant content. Double click on a
+  word to see related words. Click on the <strong>x</strong> next to a
+  word to remove it and change your perspective. Hover the mouse near
+  the bottom of the cloud to reveal a control bar for additional
+  fine-tuning. <!-- or to embed a widget-sized version on your own page
+  (click the <strong>&lt;&gt;</strong> icon in the control bar). -->
+</div>
+
+
+<div id="footer" class="home-block" style="margin: 0px 0 0px 0;">
+  <p>Like this? Share it!&nbsp;
+    <a href="http://twitter.com/share" class="twitter-share-button"
+    data-text="Infomous Emmy Opinion Navigator" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    &nbsp;
+    <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like layout="button_count"></fb:like> 
+
+Copyright 2007-2011 Icosystem. All rights reserved. <a href="/drupal/terms">Terms of service</a> | <a href="/drupal/privacy">Privacy policy</a> | <a href="/drupal/about">About us</a> | <a href="/drupal/contact">Feedback</a></p>
+</div><!-- footer -->
+
+
+
+	</div><!-- align="center" -->
+</body>

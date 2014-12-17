@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>Related Treatment/Therapy</title>
+    <link>http://www.infomous.com/site/mockups/HealthcareMagic/</link>
+
+ <item>
+    <title>Psychotherapy</title>
+    <link>http://www.healthcaremagic.com/topics/treatments/psychotherapy/1870</link>
+ </item>
+ <item>
+    <title>Behaviour therapy</title>
+    <link>http://www.healthcaremagic.com/topics/treatments/behaviour-therapy/4701</link>
+ </item>
+ <item>
+    <title>Vascular surgery</title>
+    <link>http://www.healthcaremagic.com/topics/treatments/vascular-surgery/1600</link>
+ </item>
+</channel>
+</rss>

@@ -1,0 +1,27 @@
+<?php
+
+$page = file_get_contents('http://radar.oreilly.com/sara/index.html');
+
+$page = str_replace(
+      '<head>',
+      '<head>
+      <base href="http://radar.oreilly.com/">
+      ',
+      $page);
+
+
+$page = preg_replace(
+      '+<p class="sidebar-title2">From Twitter</p>.*?</div>+s',
+      '<p class="sidebar-title2">The @sarawinge Navigator</p>
+<script type="text/javascript" src="http://www.infomous.com/cloud_widget/6957?width=320&height=350&caption=true&skinMinFontSize=12"></script> 
+
+</div>
+',
+	$page
+);
+
+
+
+echo $page;
+
+?>

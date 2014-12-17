@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<!--
+Things I am doing to this file for conversion:
+
+* Add proper header information
+* Convert each <Voice_of_Customer> into an <item> 
+* Make the item title a combination of Sender and Subject (if available)
+* Make the item description from the Contents
+* Strip out unnecessary tags:
+   - <Received> (Note: tried to convert to pubDate but format needs to be fixed)
+   - <Sender_x0020_Name>
+   - <Has_x0020_Attachments>
+
+Additional things I am cleaning up manually:
+* Removed cid: lines
+* For forwarded messages, cleaned up unnecessary stuff and replace sender with original sender
+-->
+<channel>
+  <title>Navistar Voice of Customer</title>
+  <link>http://www.infomous.com</link>
+  <description>Test of using Infomous to visualize Navistar's Voice of Customer messages
+    </description>
+  
+<item>
+<title>Kerri Podewell:
+voice of the customer template - FL</title>
+<description> 
+
+
+Kerri Podewell
+
+Director, Pricing &amp; Strategic Initiatives
+
+phone: 331-332-6966  І   cell:  630-743-9079
+
+ 
+
+Navistar, Inc.
+
+2701 Navistar Drive
+
+Lisle, IL  60532
+
+ 
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:</title>
+<description> 
+
+We should include the parts in the ppt to our VOC database.
+
+ 
+
+Thanks,
+Kerri
+
+ 
+
+
+ 
+
+Kerri Podewell
+
+Director, Pricing &amp; Strategic Initiatives
+
+phone: 331-332-6966  І   cell:  630-743-9079
+
+ 
+
+Navistar, Inc.
+
+2701 Navistar Drive
+
+Lisle, IL  60532
+
+ 
+
+</description>
+</item>
+<item>
+<title>Scott Zinsli:
+Boyer Meritor </title>
+<description>Starting of competitive knowledge…this one is old from 2009….would like some similar info more current on air bags if possible.
+
+Here is the list from 2009.
+
+ 
+
+I will follow up with you on Goodyear Pricing, from Freightliner, and local WD’s
+
+ 
+
+Thanks for all your help.
+
+ 
+</description>
+</item>
+<item>
+<title>Linda B Stone:
+Pricing on AC29884PG...Direct Ship</title>
+<description>For voice of customer
+
+AA Wheel, Kansas City, Mo. sells this wheel to end user for $137………….our DN is $155.78
+
+Dealer is buying from AA wheel….no freight and lower price.  I don’t know what our cost is, but would be good to check it out, since it is exact same product…apples for apples  
+
+Linda Stone, PSM-Parts
+
+</description>
+</item>
+<item>
+<title>Dave Olson
+pricing</title>
+<description> 
+
+Carlos,
+
+ 
+
+Here is the list for all makes.
+
+ 
+
+Please let me know if you have any questions.
+
+ 
+
+Thanks
+
+ 
+
+</description>
+</item>
+<item>
+<title>Scott Zinsli:
+WD Pricing </title>
+<description>
+
+Kerri,
+
+Here are some examples on WD pricing in Iowa and Minnesota.
+
+I will be sending you updates as I receive them.
+
+ </description>
+</item>
+<item>
+<title>Rickey Hall:
+Parts Pricing</title>
+<description>More competitive intel
+ 
+Here are some flyers from MHC Kenworth out of Memphis by Diamond International
+
+Chuck Imbler, Jr.
+
+
+Also see attachments
+
+ 
+visit us at www.diamondtrucks.com &lt;http://www.diamondtrucks.com&gt;  or www.facebook.com/diamondtrucks &lt;http://www.facebook.com/diamondtrucks&gt; 
+
+ 
+</description>
+</item>
+<item>
+<title>Chuck Imbler, Jr.:
+pricing eamples</title>
+<description>Another….
+ 
+
+Here is pricing examples from the Rush Enterprise people.
+
+Chuck
+
+
+Would you please forward to Kerri Podewell. Rich asked me to send some pricing examples.
+
+</description>
+</item>
+<item>
+<title>Ronnie Hartman:
+pricing</title>
+<description>While this is an email….the source info is good.
+
+
+Can we note vendor in the database?  It would be compared to DNet  (but we will also compare to our cost in the end….)
+
+ 
+Here is a pricing Issue from Ed Kyrish out of Houston Texas. We also buy product from the company he references TTAC and there prices are much cheaper than Navistar.
+
+Chuck Imbler, Jr.
+
+Ed
+
+FYI
+
+ 
+
+We need to discuss we can purchase from a company called TTAC cost is $175.00. 
+
+Something is very wrong with Navistar’s pricing
+
+ 
+
+Ronnie
+
+ 
+
+Ronnie, as our conversation here are the part numbers and issues , first Cy Fair I.S.D. drivers heater core 2585989c1 natl fleet $ 909.00 , they said they
+
+Can purchase this locally under a Kysor # 2612251 for $ 189.00, second pricing complaints on surge tank # 2602943c91 this price has increased
+
+From 2010  for $ 95.00, to 2011 $ 221.00, to current price of $ 315.68   this is  a duel port sure tank with a long hose and a piece of reflective tape
+
+There is another tank ( the tank itself is identical ) with a shorter hose and no tape 2602872c91 that sell for $ 153.09 customers do not understand
+
+Why such an increase and price difference. Thanks Ray Z.
+
+</description>
+</item>
+<item>
+<title>Ed Kyrish:
+Scanned from ToshParts 04/25/2012 14:44</title>
+<description>Email and file….
+
+More pricing issues from Houston Texas
+
+Chuck Imbler, Jr.
+
+
+  I TALKED WITH THREE DIFFERENT DEALERS.  IT  SEEMS LIKE AT THE MOMENT FLYERS ARE NOT IN VOGUE.
+
+PRICING COMPARISONS ARE WORSE THAN EVER.  LET ME EXPLAIN THE ATTACHED.
+
+ITEM # 1.  THIS IS A PTO WE ARE INSTALLING ON 50 NEW UNITS.  NAV. PRICE IS $ 581.96.  CUSTOMER WAS
+
+QUOTED $ 495.02.  OBVIOUSLY OUR COMPETITION IS MAKING A PROFIT.   WE HAVE ASKED FOR AN SPA.  
+
+WE WILL PURCHASE OUTSIDE IF WE DO NOT HEAR PROMPTLY.
+
+ITEM # 2
+
+IN THE SPIRIT OF DEALING WITH CARQUEST WE PURCHASED THIS BATTERY FOR 100.07.  NAV.DEALER NET
+
+WAS $ 49.05 .  WHERE IS THE RECIPROCITY?
+
+ITEM # 3.  
+
+THIS IS A PAGE FROM A COMPETITOR SHOWING THE HEATER CORE REFERRED TO YOU IN THE MESSAGE
+
+I FORWARDED YOUFROM RON HARTMAN.  THE PRICING IS RIDICULOUS.    
+
+ 
+
+DISREGARD THE SEAL PRICING MEMO.  I ADDRESSED IT LAST YEAR.  DON&apos;T KNOW HOW IT GOT COPIED.
+
+ 
+
+SORRY COULD NOT GIVE YOU MORE.  I WILL FORWARD JACK SAUMS RESPONSE.
+
+
+Scanned from ToshParts.
+Resolution:200x200 DPI
+----------------------------------------
+This is automated scan.  Please do not reply.
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: FL template to DL (2).xlsx</title>
+<description> 
+
+
+Lets try this again.
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: Autocar Sales to Rush</title>
+<description>This and Boyer should be top priority for review.
+
+ 
+
+Thanks,
+
+Kerri
+
+ 
+
+
+Kerri – stop by and I’ll give you the background on this file.
+
+ 
+
+Mike Harris
+
+Director, Product Management - Vehicle Components Group
+
+ 
+
+Navistar Inc | 2701 Navistar Drive, Lisle, IL 60532
+
+P:  331-332-2125 | C: 813-376-9977  mike.harris@navistar.com
+
+ 
+
+</description>
+</item>
+<item>
+<title>Russell Benko:
+FW: ATF Fluid - FATF27101D</title>
+<description>Please add to VOC database.
+
+ 
+PDC,
+
+I think it is Fleetrite 
+
+
+The supplier is BASF.
+
+ 
+This is the part you asked me to follow up on.
+
+ 
+
+Our price on this part is $2166.19
+
+ 
+
+Our cost is $1,630
+
+ 
+
+Alison’s price is $1,610.53 
+
+ 
+
+Our cost is higher than the competitive price.
+
+</description>
+</item>
+<item>
+<title>Kerri Podewell:
+FW: Emailing: 20120518084632832</title>
+<description>Price - Kenworth data for VOC
+
+Gina - can you summarize how we compare - both our DNet, and our GM%  (to understand if a cost issue or price risk compared to Kenworth)
+
+Thanks,
+Kerri
+
+
+Kerri    Here is another line of parts (Bendix) that might need to be looked
+at.  
+
+
+Mal
+
+Check out the pricing on the 298818 bendix knob. I put that we purchased from Freightliner but seen that we got it from Kenworth.
+
+Eddie
+The message is ready to be sent with the following file or link attachments:
+
+</description>
+</item>
+<item>
+<title>Gina Hoefferle:
+FW: Competitive Information</title>
+<description>Info to VOC
+
+Vince,
+
+
+Thank you for sharing the data.  I do have a question.  Can you tell me what price level these prices would be compared to?
+
+ 
+
+·         For example, the Bendix 102657N is advertised at $21.91 in attachment 5.  Current Navistar National Fleet is $12.89 and Retail is $25.86 for part BX102657N.  Would you be competing at the Retail price level with this competitor?
+
+ 
+
+·         Bendix Air Dryer Cartridge is 109685X is $157.91 in the advertisement.  Navistar National Fleet is $179.17 and Retail is $378.13.  What price level would we be comparing to in this example?
+
+Thanks,
+
+
+Greetings:
+
+The six attachments, submitted for your information, are examples of competitive pricing we continuously face in our market area.
+
+Please contact our Parts Manager, Todd Moyer, or me with any questions you may have.
+
+Thank you,
+
+Vince Wigfield,
+
+Del-Val International Trucks, Inc.
+
+
+</description>
+</item>
+
+</channel>
+</rss>
+

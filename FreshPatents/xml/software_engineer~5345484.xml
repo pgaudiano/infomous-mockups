@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+ <channel>
+  <atom:link href="http://www.infomous.com/site/mockups/FreshPatents/software_engineer~5345484.xml" rel="self" type="application/rss+xml"/>
+  <title>Search pattern for software_engineer</title>
+  <link>http://www.infomous.com/site/mockups/FreshPatents</link>
+  <description>Explore software engineer from FreshPatents</description>
+  <item>
+   <title>Category -- Software Engineer</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Engineer-bx1.rss&amp;title=Software Engineer</link>
+   <description>Category -- Software Engineer</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Engineer-bx1.rss&amp;title=Software Engineer</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+ </channel>
+</rss>

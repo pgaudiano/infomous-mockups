@@ -1,0 +1,16 @@
+<Files "*.xml">
+    Satisfy any
+    Allow from all
+</Files>
+
+<Files "*.png">
+    Satisfy any
+    Allow from all
+</Files>
+
+<Files "*.jpg">
+    Satisfy any
+    Allow from all
+</Files>
+
+Require group all-access oglobo

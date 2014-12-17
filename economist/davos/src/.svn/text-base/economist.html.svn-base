@@ -1,0 +1,41 @@
+<div id="infomous-cloudContainer">
+
+    <div id="infomous-cloudSections">
+
+        <!--<a class="section" id="electionism" href="javascript:void(0);"><span>Election 2012 tweets</span></a>-->
+
+        <!--<a class="section active" id="readerscomments" href="javascript:void(0);"><span>Readers'</span><span> comments</span></a>-->
+    </div>
+
+    <div id="infomous-cloudPeriodBar" style="display:none;">
+
+        <span class="period">Period:</span> 
+
+        <a class="date activeDate" id="daysback_1" href="javascript:void(0);"><span>1 day</span></a>
+
+        <a class="date" id="daysback_7" href="javascript:void(0);"><span>1 week</span></a>
+
+        <a class="date" id="daysback_14" href="javascript:void(0);"><span>2 weeks</span></a>
+
+        <a class="date" id="daysback_30" href="javascript:void(0);"><span>30 days</span></a>
+
+        <img src="http://economist.infomous.com/site/economist/1_6b/img/cross.png" class="period-close-icon" alt="Toggle Period Bar" height="15" width="15" />
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-triangle"><polygon points="0,0 12,0 6,10"/></svg>
+
+    </div> 
+
+    <div id="infomous-movie-container">
+
+        <div id="infomous" class="infomous"></div>
+
+    </div>
+
+    <div id="infomous-cloudFooter"> 
+
+        <a class="footer-elem" id="cloud-full-bt" style="display:none;" href="#" target="_blank"><img src="http://economist.infomous.com/site/economist/1_6b/img/cloud-full-icon.png" class="cloud-full-icon"/><span>Full version</span></a>
+
+        <a class="footer-elem" id="cloud-period-bt" href="javascript:void(0);"><img src="http://economist.infomous.com/site/economist/1_6b/img/cloud-period-icon.png" class="cloud-period-icon"/><span>Change time span</span></a>
+
+    </div>
+
+</div>

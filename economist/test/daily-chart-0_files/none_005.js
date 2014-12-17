@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/3bd8/0/0/%2a/p;248136219;0-0;1;41934750;3-125/125;45248548/45266316/1;;~sscs=%3fhttp://itunes.apple.com/app/the-world-in-2012-from-the/id479904046"><img src="http://s0.2mdn.net/viewad/2314158/ipad_125x125_v2.gif" border=0 alt="Click here to find out more!"></a>');

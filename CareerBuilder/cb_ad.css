@@ -1,0 +1,138 @@
+body {
+    font: 12px Arial, Helvetica, sans-serif;   
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #000066;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+input, select, textarea {
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 4px; 
+    border: 1px solid #B4B4B4;
+    z-index: 11;
+    font: inherit;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 0 0 2px;   
+}
+
+/* Global button styles */
+.btn, div.ui-widget-content button.ui-button, .button { 
+    -webkit-appearance: none;
+    background:none; 
+    background-image: none;
+    background-color: #DF691E;
+    border: none; 
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    padding: 6px 10px;
+}
+.btn:hover, div.ui-widget-content button.ui-button:hover, .button:hover {
+    background-color: #F88C2E;
+    text-decoration: none;
+}
+
+a:hover, .btn:hover {
+    cursor: pointer;
+}
+
+#pnlInnerWrapper{
+    max-width: 980px;
+    width: 96%; 
+    padding: 25px 2%;
+    background-color: #fff;
+    text-align: left;
+    margin: 0 auto;
+    position: relative\9;
+    z-index: 10;
+   
+}
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+    line-height:0;
+}
+
+.thin { font-weight: normal; }
+#advSrchBox {
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding: 25px 10px;
+    font-size: 14px;
+}
+#advSrchBox label, #advSrchBox .label {
+    color: #333;
+    margin-bottom: 9px;
+    font-weight: bold;
+}
+#advSrchBox .checkbox_group label, #advSrchBox .checkbox-label {
+    font-weight: normal;
+    margin-bottom: 11px;
+}
+#advSrchBox .note {
+    font-style: italic;
+    font-weight: normal;
+}
+#advSrchBox .column, #advSrchBox ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#advSrchBox .column {
+    width: 33.3%;
+    float: left;
+}
+#advSrchBox .column li { padding-bottom: 12px; }
+#advSrchBox .column li:last-child { padding-bottom: 0px; }
+#advSrchBox .column input[type=text], #advSrchBox .column select {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 9px;
+}
+#advSrchBox .column ul { padding: 0 20px; }
+#advSrchBox select.not-so-wide { width: inherit; }
+#advSrchBox .special-button {
+    text-align: right;
+    padding: 0 20px;
+    margin-top: -42px;
+}
+
+a.desktop-logo {
+  background-image: url("http://img.icbdr.com/images/js/cb_logo_new_homepage.png");
+  background-size: 100%;
+  display: inline-block;
+  height: 40px;
+  margin: 16px 16px;
+  width: 180px;
+}
+
+@media (min-width: 760px) {
+    .new-nav-search-bar {
+        display: block;
+    }
+}
+
+.new-platform-nav .row { width: 1000px; max-width: 100%; min-width: 768px; margin: 0 auto; }
+.new-platform-nav .row:before, .new-platform-nav .row:after { content: " "; display: table; }
+.new-platform-nav .row:after { clear: both; }

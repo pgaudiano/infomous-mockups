@@ -1,0 +1,72 @@
+!<network>
+  <exceptions/>
+  <requests>
+    <rssInputRequest type="rss" id="0" url="http://www.infomous.com/site/mockups/TV/data/at-he91922-20110226209-c301-wNames-1.rss" textOption="TITLE_AND_DESCRIPTION" itemCount="319"/>
+  </requests>
+  <sources>
+    <source id="0" request="0" title="Patrick Dempsey"/>
+    <source id="1" request="0" title="Ben Affleck"/>
+    <source id="2" request="0" title="Jennifer Aniston &lt;a href=&quot;http://www.imdb.com/name/nm0000098/&quot;&gt;&lt;font color=&quot;#000099&quot;&gt;IMDb&lt;/font&gt;&lt;/a&gt;"/>
+    <source id="3" request="0" title="Justin Bartha"/>
+    <source id="4" request="0" title="Jason Kolotouros"/>
+    <source id="5" request="0" title="Eric Dane"/>
+    <source id="6" request="0" title="Jennifer Connelly"/>
+    <source id="7" request="0" title="Sasha Barrese"/>
+    <source id="8" request="0" title="Drew Barrymore"/>
+    <source id="9" request="0" title="Gerard Butler"/>
+    <source id="10" request="0" title="Bradley Cooper"/>
+    <source id="11" request="0" title="Ginnifer Goodwin"/>
+    <source id="12" request="0" title="Zach Galifianakis"/>
+    <source id="13" request="0" title="Ed Helms"/>
+    <source id="14" request="0" title="Kathy Bates"/>
+    <source id="15" request="0" title="Christine Baranski"/>
+    <source id="16" request="0" title="Matt Malloy"/>
+    <source id="17" request="0" title="Jessica Biel"/>
+    <source id="18" request="0" title="Gio Perez"/>
+    <source id="19" request="0" title="Heather Graham"/>
+    <source id="1010" request="0" title="Valentine&apos;s Day &lt;a href=&quot;http://www.infomous.com/site/mockups/TV/actors-categs-comediesOnly.html&quot;&gt;&lt;font color=&quot;#009900&quot;&gt;Comedy&lt;/font&gt;&lt;/a&gt; &lt;font color=&quot;#999999&quot;&gt;Romance&lt;/font&gt;" caption="As Valentine&apos;s Day quickly approaches in the city of Los Angeles, couples will attempt to determine the status of their relationships, people will search for love and romance, and some will be the recipient of heartbreaking news." captionLink=""/>
+    <source id="1025" request="0" title="The Bounty Hunter &lt;a href=&quot;http://www.infomous.com/site/mockups/TV/actors-categs-comediesOnly.html&quot;&gt;&lt;font color=&quot;#009900&quot;&gt;Comedy&lt;/font&gt;&lt;/a&gt; &lt;font color=&quot;#999999&quot;&gt;Romance&lt;/font&gt;" caption="A reporter assigned to investigate a murder is relentlessly pursued by her ex-husband, the hapless bounty hunter, after she jumps bail to pursue her story, but when they become the prey they have to run for their lives while trying to solve the case." captionLink=""/>
+	<source id="1039" request="0" title="9 &lt;font color=&quot;#999999&quot;&gt;Drama&lt;/font&gt; &lt;font color=&quot;#999999&quot;&gt;Fantasy&lt;/font&gt; &lt;font color=&quot;#999999&quot;&gt;SciFi&lt;/font&gt;" caption="In a post-apocalyptic world devoid of any human existence and full of marauding machines, a lone burlap doll is brought to life and exposed to small community of other dolls, and he attempts to lead them in a revolution against the deadly machines." captionLink=""/>
+    <source id="1051" request="0" title="The Hangover &lt;a href=&quot;http://www.infomous.com/site/mockups/TV/actors-categs-comediesOnly.html&quot;&gt;&lt;font color=&quot;#009900&quot;&gt;Comedy&lt;/font&gt;&lt;/a&gt; &lt;font color=&quot;#999999&quot;&gt;Romance&lt;/font&gt;" caption="After a bachelor party, groomsmen wake up in a Las Vegas hotel room with no memory of their wild night on the town, and they must piece together the clues and retrace their steps in order to find the missing groom before his wedding." captionLink=""/>
+    <source id="1052" request="0" title="&lt;a href=&quot;http://www.infomous.com/site/mockups/TV/focusedMovie.html&quot;&gt;&lt;b&gt;He&apos;s Just Not That Into You&lt;/b&gt;&lt;/a&gt; &lt;a href=&quot;http://www.infomous.com/site/mockups/TV/actors-categs-comediesOnly.html&quot;&gt;&lt;font color=&quot;#009900&quot;&gt;Comedy&lt;/font&gt;&lt;/a&gt; &lt;font color=&quot;#999999&quot;&gt;Drama&lt;/font&gt; &lt;font color=&quot;#999999&quot;&gt;Romance&lt;/font&gt;" caption="A needy woman who is looking for the perfect man receives advice from her friends about the dating scene, while her friends must deal with their own struggles with men regarding commitment issues, potential affairs and online encounters. &lt;a href=&quot;http://www.imdb.com/title/tt1001508/&quot;&gt;&lt;font color=&quot;#0000FF&quot;&gt;IMDb&lt;/font&gt;&lt;/a&gt;" captionLink=""/>
+	<source id="1054" request="0" title="A Beautiful Mind &lt;font color=&quot;#999999&quot;&gt;Drama&lt;/font&gt; &lt;font color=&quot;#999999&quot;&gt;Romance&lt;/font&gt;" caption="After making an important mathematical discovery, a man is awarded a teaching position at the prestigious Massachusetts Institute of Technology and meets his future wife; soon he is approached by the CIA and begins to suffer from painful delusions." captionLink=""/>
+	<source id="1089" request="0" title="A Single Man &lt;font color=&quot;#999999&quot;&gt;Drama&lt;/font&gt;" caption="A homosexual college professor in 1962 California, bereaved after the death of his longtime lover, contemplates suicide, but unexpected encounters with a female friend and a very smitten student give him pause to reconsider." captionLink=""/>
+	<source id="10151" request="0" title="Daredevil &lt;font color=&quot;#999999&quot;&gt;Drama&lt;/font&gt;" caption="A boy who is accidentally blinded after a toxic spill learns to use his other senses in an extraordinary way, leading him to become a superhero at night while practicing law during the day; he falls in love with a fellow superhero." captionLink=""/>
+</sources>
+  <ads>
+    <ad id="0" url="http://www.icosystem.com" line1="Infomous brought to you by Icosystem" line2="www.icosystem.com"/>
+    <ad id="1" url="http://www.economist.com" line1="Read The Economist for insights and opinions." line2="www.economist.com"/>
+    <ad id="2" url="http://www.nymbler.com" line1="Let Nymbler help you find your baby&apos;s name" line2="www.nymbler.com"/>
+    <ad id="3" url="http://www.infomous.com/explore/hot" line1="Follow user commentary on developing events" line2="Infomous Hot Topics"/>
+    <ad id="4" url="http://www.economist.com/products/subscribe" line1="Subscribe to The Economist Print Edition" line2="The Economist"/>
+    <ad id="5" url="http://www.icosystem.com" line1="Icosystem: Our Science, your success" line2="Icosystem Corporation"/>
+  </ads>
+  <words>
+    <word id="0" text="He&apos;s Just Not That Into You" count="5.0" group="0" sources="1,2,6,8,10,11" ads=""/>
+    <word id="1" text="The Bounty Hunter" count="5.0" group="0" sources="2,4,9,15,16,18" ads="4"/>
+    <word id="2" text="The Hangover" count="5.0" group="0" sources="3,7,10,12,13,19" ads=""/>
+    <word id="3" text="Valentine&apos;s Day" count="5.0" group="0" sources="0,5,10,14,17" ads="3"/>
+    <word id="4" text="Ben Affleck" count="2.0" group="0" sources="1052,10151" ads="2"/>
+    <word id="5" text="Bradley Cooper" count="3.0" group="0" sources="1010,1051,1052" ads="5"/>
+    <word id="6" text="Drew Barrymore" count="1.0" group="0" sources="1052" ads="1"/>
+    <word id="7" text="Ginnifer Goodwin" count="2.0" group="0" sources="1052,1089" ads=""/>
+    <word id="8" text="Jennifer Aniston" count="2.0" group="0" sources="1025,1052" ads="0"/>
+    <word id="9" text="Jennifer Connelly" count="3.0" group="0" sources="1052,1039,1054" ads=""/>
+  </words>
+  <links>
+    <link from="4" to="0" weight="6.5"/>
+    <link from="6" to="0" weight="6.5"/>
+    <link from="7" to="0" weight="6.5"/>
+    <link from="8" to="0" weight="6.5"/>
+    <link from="9" to="0" weight="6.5"/>
+    <link from="0" to="1" weight="6.5"/>
+    <link from="0" to="2" weight="6.5"/>
+    <link from="0" to="3" weight="6.5"/>
+    <link from="2" to="3" weight="6.5"/>
+    <link from="5" to="0" weight="6.5"/>
+    <link from="5" to="2" weight="6.5"/>
+    <link from="5" to="3" weight="6.5"/>
+    <link from="8" to="1" weight="6.5"/>
+  </links>
+</network>
+

@@ -1,0 +1,347 @@
+/* REQUIRED STYLES (be careful overriding)
+================================================================================ */
+
+/* Box containing video, controls, and download links.
+   If you want to add some kind of frame, use another containing element, not this one. */
+.video-js-box { overflow:hidden; position:relative; text-align:left; }
+
+/* Video Element */
+video.video-js { background-color:#000000; cursor:pointer; position:relative; }
+
+/* Fullscreen styles for main elements */
+.video-js-box.vjs-fullscreen { position: fixed; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: 1000; }
+.video-js-box.vjs-fullscreen video.video-js { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1001; }
+.video-js-box.vjs-fullscreen .vjs-controls { z-index: 1002; }
+
+/* Poster styles */
+.vjs-poster { display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+
+
+/* DEFAULT SKIN (override in another file)
+================================================================================
+Using all CSS to draw the controls. Images could be used if desired.
+Instead of editing this file, I recommend creating your own skin CSS file to be included after this file,
+so you can upgrade to newer versions easier. */
+
+/* Replay Button */
+
+.replay {  opacity: 0; 
+           background:none repeat scroll 0 0 transparent;
+           border:3px solid #FFFFFF;
+           height:74px; 
+           left:53%; 
+           margin:-52px 0 0 -62px; 
+           position:absolute; 
+           top:50%; 
+           width:72px; 
+           cursor: pointer;
+
+	/* CSS Curved Corners */
+	border-radius: 40px; -webkit-border-radius: 40px; -moz-border-radius: 40px;
+	
+	/* CSS Gradient BG (With Fallback) */
+	/*background:none repeat scroll 0 0 #757575;
+	background:-webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(117,117,117)), color-stop(1, rgb(11,11,11)) );
+	background:-moz-linear-gradient( center bottom, rgb(117,117,117) 0%, rgb(11,11,11) 100% );*/
+}
+.replay:hover { background:none repeat scroll 0 0 #FCBC10; }
+/*.replayArrow { background:url("/images/video_player_circle.png") repeat scroll 0 0 transparent; height:100px; left:0px; margin-left:-14px; position:absolute; top:-12px; width:100px; }*/
+.replayArrow { border-bottom:18px solid transparent; border-left:25px solid #FFFFFF; border-top:18px solid transparent; display:block; height:0; left:28px; margin:0; position:absolute; top:20px; width:0; }
+
+/* Controls Layout
+   Using a Holy Grail type method to allow the progress bar holder to expand into all available space,
+   but using abosolute positioning for individual controls. http://www.alistapart.com/articles/holygrail */
+   
+.vjs-controls {
+	/*background:none repeat scroll 0 0 rgba(0, 0, 0, 0.8);*/
+	list-style: none; position: absolute; margin: 0; border: none; color: #FFF; /*opacity: 0.85;*/ 
+	display: none; /* Start hidden */
+	left: 0; right: 0; /* 100% width of video-js-box */
+	height: 35px; /* Including any margin you want above or below control items */
+	padding-left: 35px; /* Width of play button + margin */
+	padding-right: 115px; /* Width of all the controls to the right of the progress control + margins */
+	
+	
+	background: none repeat scroll 0 0 rgb(92,80,77);
+	background:-webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(11,11,11)), color-stop(1, rgb(92,80,77)) );
+	background:-moz-linear-gradient( center bottom, rgb(11,11,11) 0%, rgb(92,80,77) 100% );
+	
+	
+	
+	
+	
+}
+/* Controls styles when below the video */
+.video-js-box.vjs-controls-below .vjs-controls { background-color: #000; }
+
+.vjs-controls > li { /* Direct li children of control bar */
+	position: absolute; list-style: none; float: left; padding: 0; text-align: center;
+	height: 20px; /* Default height of individual controls */
+	margin: 7px 0 0; /* Top margin to put space between video and controls when controls are below */
+	
+	/* CSS Background Gradients */
+	/* Default */ /*background-color: #DB6A19;*/
+	/* Webkit  */ /*background: #1F3744 -webkit-gradient( linear, left bottom, left top, color-stop(0.28, rgb(219,106,25)), color-stop(0.63, rgb(234,166,88)) );*/
+	/* Firefox */ /*background: rgb(219,106,25) -moz-linear-gradient( center bottom, rgb(219,106,25) 28%, rgb(234,166,88) 63% );*/
+	
+	/* CSS Curved Corners */
+	/*border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;*/
+	
+	/* CSS Shadows */
+	/*box-shadow: 1px 1px 1px #F2C895 inset; -webkit-box-shadow: 1px 1px 1px #F2C895 inset; -moz-box-shadow: 1px 1px 1px #F2C895 inset;*/
+}
+
+/* Placement of Control Items */
+
+.vjs-controls > li.vjs-play-control       	{ width: 0; height: 16px; left: 10px; }
+.vjs-controls > li.vjs-progress-control   	{ width: 70%; position: relative; }
+.vjs-controls > li.vjs-time-control       	{ width: 75px; right: 180px; }
+.vjs-controls > li.vjs-volume-control 		{ width:11px; right:160px; margin-top: 6px; }
+.vjs-controls > li.vjs-fullscreen-control 	{ width: 16px; height: 16px; right: 90px; margin-top: 10px; }
+.vjs-controls > li.vjs-share-control 	    { /*width: 30px;*/ right: 20px; margin-top: 10px; }
+
+/* Removing curves on progress control and time control to join them. */
+.vjs-controls > li.vjs-progress-control {
+	background:none repeat scroll 0 0 transparent;
+	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;
+	border-top-right-radius: 0; -webkit-border-top-right-radius: 0; -moz-border-radius-topright: 0;
+	border-bottom-right-radius: 0; -webkit-border-bottom-right-radius: 0; -moz-border-radius-bottomright: 0;
+}
+.vjs-controls > li.vjs-time-control { 
+	background:none repeat scroll 0 0 transparent;
+	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;
+	border-top-left-radius: 0; -webkit-border-top-left-radius: 0; -moz-border-radius-topleft: 0;
+	border-bottom-left-radius: 0; -webkit-border-bottom-left-radius: 0; -moz-border-radius-bottomleft: 0;
+	margin:6px 0 0;
+}
+.vjs-controls > li.vjs-volume-control {
+	/*background:url("/images/video_player.png") repeat scroll 0 0 transparent;
+	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;
+	border-top-right-radius: 0; -webkit-border-top-right-radius: 0; -moz-border-radius-topright: 0;
+	border-bottom-right-radius: 0; -webkit-border-bottom-right-radius: 0; -moz-border-radius-bottomright: 0;*/
+}
+
+/*.vjs-controls > li.vjs-volume-control.muted { background:url("/images/video_player.png") repeat scroll -11px 0 transparent; }*/
+
+/* Play/Pause
+-------------------------------------------------------------------------------- */
+.vjs-play-control { cursor: pointer !important; }
+.vjs-play-control span { display: block; font-size: 0; line-height: 0; }
+.vjs-play-control.vjs-play span {
+	width: 0; height: 0; margin: 4px 0 0 5px;
+	/* Drawing the play triangle with borders - http://www.infimum.dk/HTML/slantinfo.html */
+	border-left: 10px solid #fff; /* Width & Color of play icon */
+	/* Height of play icon is total top & bottom border widths. Color is transparent. */
+	border-top: 7px solid rgba(0,0,0,0); border-bottom: 7px solid rgba(0,0,0,0);
+}
+.vjs-play-control:hover.vjs-play span
+{
+    border-left-color: #FCBC10;
+}
+.vjs-play-control.vjs-pause span {
+	width: 3px; height: 13px; margin: 4px 0 0 5px;
+	/* Drawing the pause bars with borders */
+	border-top: 0px; border-left: 3px solid #fff; border-bottom: 0px; border-right: 3px solid #fff;
+}
+.vjs-play-control:hover.vjs-pause span
+{
+    border-left-color: #FCBC10;
+    border-right-color: #FCBC10;
+}
+
+/* Progress
+-------------------------------------------------------------------------------- */
+.vjs-progress-holder { /* Box containing play and load progresses */
+	border:medium none;
+	cursor:pointer !important;
+	height:9px;
+	list-style:none outside none;
+	margin:10px 17px 0 4px;
+	padding:0;
+	position:relative;
+}
+.vjs-progress-holder li { /* Progress Bars */
+  	position: absolute; display: block; width: 0; height: 2px; 
+}
+.vjs-base-progress
+{
+    width: 100% !important;
+    background-color: #000;
+    z-index: 1;    
+}
+.vjs-progress-holder li.vjs-load-progress { z-index: 2; }
+.vjs-progress-holder li.vjs-play-progress { z-index: 2; }
+.vjs-progress-holder li.vjs-play-scrubber { z-index: 2; }
+
+.vjs-load-progress {
+	opacity: 0.8;
+	/* Default */ background-color: #505151;
+}
+.vjs-play-progress {
+	/* Default */ background: #FCBC10;
+	/* Webkit  */ /*background: -webkit-gradient(linear, left top, left bottom, from(#FCBC10), to(#777));*/
+	/* Firefox */ /*background: -moz-linear-gradient(top,  #FCBC10,  #777);*/
+}
+
+li.vjs-play-scrubber { color:#FFFFFF; font-size:5px; font-weight:bold; height:6px; letter-spacing:-0.15em; line-height:6px; margin:-2px 0 0 -5px; width:6px;
+
+	/* CSS Background Gradients */
+	/* Default */ background-color: #FCBC10;
+	/* Webkit  */ background: #1F3744 -webkit-gradient( linear, left bottom, left top, color-stop(0.28, rgb(252,188,16)), color-stop(0.63, rgb(252,188,16)) );
+	/* Firefox */ background: rgb(252,188,16) -moz-linear-gradient( center bottom, rgb(252,188,16) 28%, rgb(234,166,88) 63% );
+	
+	/* CSS Curved Corners */
+	border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+	
+	/* CSS Shadows */
+	box-shadow: 1px 1px 1px #F2C895 inset; -webkit-box-shadow: 1px 1px 1px #F2C895 inset; -moz-box-shadow: 1px 1px 1px #F2C895 inset;
+}
+li.vjs-play-scrubber:hover 
+{
+    height:10px; line-height:10px; margin:-4px 0 0 -5px; width:10px;
+    
+    /* CSS Curved Corners */
+	border-radius: 6px; -webkit-border-radius: 6px; -moz-border-radius: 6px;
+	
+	/* CSS Shadows */
+	box-shadow: 1px 1px 1px #F2C895 inset; -webkit-box-shadow: 1px 1px 1px #F2C895 inset; -moz-box-shadow: 1px 1px 1px #F2C895 inset;
+}
+
+li.vjs-play-scrubber .scrubOverlay { height:100%; left:0; position:absolute; top:0; width:100%; }
+
+/* Time Display
+-------------------------------------------------------------------------------- */
+.vjs-controls .vjs-time-control { font-size: 12px; line-height: 1; font-weight: bold; font-family: Helvetica, Arial, sans-serif; }
+.vjs-controls .vjs-time-control span { line-height: 25px; /* Centering vertically */ }
+
+/* Volume
+-------------------------------------------------------------------------------- */
+.vjs-volume-control ul li { cursor: pointer !important; }
+.vjs-volume-control ul { width:50px; list-style: none; display: block; margin: 0 5px 0 5px; padding: 0; }
+/* Drawing the volume icon using 6 li elements */
+.vjs-volume-control ul li { /* Individual volume bars */
+	list-style: none; float: left; padding: 0;
+	margin: 0 3px 0 0; /* Space between */
+	width: 4px; height: 4px; /* Total height is height + bottom border */
+	border-bottom: 16px solid #666666; /* Default (off) color and height of visible portion */
+}
+.vjs-volume-control ul li.vjs-volume-level-on { border-color: #fff; /* Volume on bar color */ }
+.vjs-volume-control ul li:hover { border-color: #FCBC10; }
+/*
+.vjs-controls > li.vjs-volume-control ul
+{
+    margin-top: -10px;
+    padding: 7px 0 0 5px; width: 30px;
+}
+.vjs-volume-control ul li {
+  float: left; margin: 0 2px 0 0; padding: 0; width: 3px; height: 3px; border-bottom: 12px solid #666666;
+  -webkit-transition: all 100ms linear; -moz-transition: all 100ms linear;
+}
+.vjs-volume-control ul li.vjs-volume-level-on { border-color: #00ADEF; }
+.vjs-volume-control ul li:hover { height: 0; border-bottom-width: 15px; }
+*/
+
+/* Creating differnt bar heights through height (transparent) and bottom border (visible). */
+/*.vjs-volume-control ul li:nth-child(1) { border-bottom-width: 2px; height: 16px; }
+.vjs-volume-control ul li:nth-child(2) { border-bottom-width: 4px; height: 14px; }
+.vjs-volume-control ul li:nth-child(3) { border-bottom-width: 7px; height: 11px; }
+.vjs-volume-control ul li:nth-child(4) { border-bottom-width: 10px; height: 8px; }
+.vjs-volume-control ul li:nth-child(5) { border-bottom-width: 14px; height: 4px; }
+.vjs-volume-control ul li:nth-child(6) { margin-right: 0; }*/
+
+/* Fullscreen
+-------------------------------------------------------------------------------- */
+.vjs-fullscreen-control  
+{
+    cursor: pointer !important; 
+    background:url("../../../images/video_fullscreen.png") repeat scroll 0 0 transparent;                       
+}
+.vjs-fullscreen-control:hover  
+{
+    background:url("../../../images/video_fullscreen_hover.png") repeat scroll 0 0 transparent;                       
+}
+.vjs-fullscreen-control ul 
+{
+    list-style: none; padding: 0; text-align: left; vertical-align: top; cursor: pointer !important; 
+	margin: 5px 0 0 5px; /* Placement within the fullscreen control item */
+	/*width: 20px; height: 20px;*/
+}
+/* Drawing the fullscreen icon using 4 li elements */
+/*.vjs-fullscreen-control ul li { list-style: none; float: left; margin: 0; padding: 0; font-size: 0; line-height: 0; width: 0; text-align: left; vertical-align: top; }
+.vjs-fullscreen-control ul li:nth-child(1) { /* Top-left triangle */
+/*	margin-right: 3px; /* Space between top-left and top-right */
+/*	margin-bottom: 3px; /* Space between top-left and bottom-left */
+/*	border-top: 6px solid #fff; /* Height and color */
+/*	border-right: 6px solid rgba(0,0,0,0);  /* Width */
+/*}*/
+/*.vjs-fullscreen-control ul li:nth-child(2) { border-top: 6px solid #fff; border-left: 6px solid rgba(0,0,0,0); }
+.vjs-fullscreen-control ul li:nth-child(3) { clear: both; margin: 0 3px 0 0; border-bottom: 6px solid #fff; border-right: 6px solid rgba(0,0,0,0); }
+.vjs-fullscreen-control ul li:nth-child(4) { border-bottom: 6px solid #fff; border-left: 6px solid rgba(0,0,0,0); }*/
+/* Icon when video is in fullscreen mode */
+/*.vjs-fullscreen .vjs-fullscreen-control ul li:nth-child(1) { border: none; border-bottom: 6px solid #fff; border-left: 6px solid rgba(0,0,0,0); }
+.vjs-fullscreen .vjs-fullscreen-control ul li:nth-child(2) { border: none; border-bottom: 6px solid #fff; border-right: 6px solid rgba(0,0,0,0); }
+.vjs-fullscreen .vjs-fullscreen-control ul li:nth-child(3) { border: none; border-top: 6px solid #fff; border-left: 6px solid rgba(0,0,0,0); }
+.vjs-fullscreen .vjs-fullscreen-control ul li:nth-child(4) { border: none; border-top: 6px solid #fff; border-right: 6px solid rgba(0,0,0,0); }*/
+
+
+/* Share
+-------------------------------------------------------------------------------- */
+.vjs-share-control { cursor: pointer !important; }
+.vjs-share-control:hover span.share-text { color: #FCBC10; }
+.vjs-share-control:hover span.share-icon { border-top-color: #FCBC10; }
+.vjs-share-control span.share-text{ font-weight: bold; }
+.vjs-share-control span.share-icon {
+	font-size: 0;
+	width: 0; height: 0; line-height: 0;
+	margin: 4px 0 0 5px;
+	/* Drawing the arrow-down triangle with borders - http://www.infimum.dk/HTML/slantinfo.html */
+	border-top: 6px solid #fff; /* Height & Color of play icon */
+	/* Width of arrow-down is total left & right border widths. Color is transparent. */
+	border-left: 5px solid rgba(0,0,0,0); 
+	border-right: 5px solid rgba(0,0,0,0);
+}
+
+.vjs-share-links
+{
+    right: 5px;
+    margin-top: -40px !important;
+    width: 130px;
+    padding: 8px 11px 5px;
+}
+.vjs-share-links #share-links
+{
+    padding: 10px 3px 3px 3px;
+	height: 30px;
+	
+    /* CSS Gradient BG (With Fallback) */
+	background:none repeat scroll 0 0 #FEFEFD;
+	background:-webkit-gradient( linear, left bottom, left top, color-stop(0, #FEFEFD), color-stop(1, #E4DACE)) );
+	background:-moz-linear-gradient( center bottom, #FEFEFD 0%, #E4DACE 100% );
+
+	/* CSS Curved Corners */
+	border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+	
+	/* CSS Shadows */
+	box-shadow: 1px 1px 1px #F2C895 inset; -webkit-box-shadow: 1px 1px 1px #F2C895 inset; -moz-box-shadow: 1px 1px 1px #F2C895 inset;
+}
+
+.vjs-share-links #share-links a
+{
+    padding-right: 3px;
+}
+
+.vjs-share-links #share-links span
+{
+    font-size: 0;
+	width: 0; height: 0; line-height: 0;
+	margin: 0 0 0 47px;
+	/* Drawing the arrow-down triangle with borders - http://www.infimum.dk/HTML/slantinfo.html */
+	border-top: 7px solid #fff; /* Height & Color of play icon */
+	/* Width of arrow-down is total left & right border widths. Color is transparent. */
+	border-left: 7px solid rgba(0,0,0,0); 
+	border-right: 7px solid rgba(0,0,0,0);
+}
+
+/* Download Links - Used for browsers that don't support any video.
+-------------------------------------------------------------------------------- */
+.vjs-no-video { font-size: small; }

@@ -1,0 +1,11 @@
+/* -- INSIDER -- */
+
+/* -- SWEETSPOT -- */
+.blog #subheader #sub-branding{background-color: #142D41; background-image:url(http://a.espncdn.com/i/blog/sweetspot_bg.jpg) !important;}
+
+/* -- SWEETSPOT MODULES -- */
+.sweetspot-table td a img {margin-right: 4px; vertical-align: top; float: left; }
+.sweetspot-table td {padding: 4px;}
+.logo-mlb-small {width: 25px; height: 25px; float: left; margin: 0 4px 4px 0; }
+.logo-mlb-small a {display:block; height:25px;}
+.logo-mlb-small a span {left:-9999em; position: absolute;}

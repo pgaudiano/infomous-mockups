@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$COMPQ</link> <author>Nasdaq Composite Index - SharpChart</author> <title>$compq</title> </item>
+<item><link>http://stockcharts.com/def/servlet/SC.pnf?c=$COMPQ,P</link> <author>Nasdaq Composite Index - P&amp;F Pattern chart Paolo</author> <title>$compq</title> </item>
+<item><link>http://stockcharts.com/freecharts/candleglance.html?%24COMPQ</link> <author>Nasdaq Composite Index - CandleGlance</author> <title>$compq</title> </item>
+<item><link>http://stockcharts.com/freecharts/perf.php?%24COMPQ</link> <author>Nasdaq Composite Index - PerfChart</author> <title>$compq</title> </item>
+<item><link>http://stockcharts.com/freecharts/gallery.html?%24COMPQ</link> <author>Nasdaq Composite Index - Gallery View</author> <title>$compq</title> </item>
+<item><link>http://stockcharts.com/symsearch/?%24COMPQ</link> <author>Nasdaq Composite Index - Symbol Lookup</author> <title>$compq</title> </item>
+<item><link>http://stockcharts.com/search/?%24COMPQ&section=sm</link> <author>Nasdaq Composite Index - Site Search</author> <title>$compq</title> </item>
+
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$INDU</link> <author>Dow Jones Industrials - SharpChart</author> <title>$indu</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$INDU</link> <author>Dow Jones Industrials - P&amp;F Pattern chart</author> <title>$indu</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$NDX</link> <author>Nasdaq 100 Index - SharpChart</author> <title>$ndx</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$NDX</link> <author>Nasdaq 100 Index - P&amp;F Pattern chart</author> <title>$ndx</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$NYA</link> <author>NYSE Composite - SharpChart</author> <title>$nya</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$NYA</link> <author>NYSE Composite - P&amp;F Pattern chart</author> <title>$nya</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=QQQ</link> <author>PowerShares QQQ Trust - SharpChart</author> <title>qqq</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=QQQ</link> <author>PowerShares QQQ Trust - P&amp;F Pattern chart</author> <title>qqq</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$RUT</link> <author>Russell 2000 Small-Cap Index - SharpChart</author> <title>$rut</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$RUT</link> <author>Russell 2000 Small-Cap Index - P&amp;F Pattern chart</author> <title>$rut</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$SPX</link> <author>S&amp;P 500 Large-Cap Index - SharpChart</author> <title>$spx</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$SPX</link> <author>S&amp;P 500 Large-Cap Index - P&amp;F Pattern chart</author> <title>$spx</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=SPY</link> <author>S&amp;P 500 SPDR - SharpChart</author> <title>spy</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=SPY</link> <author>S&amp;P 500 SPDR - P&amp;F Pattern chart</author> <title>spy</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$TICK</link> <author>NYSE - Tick - SharpChart</author> <title>$tick</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$TICK</link> <author>NYSE - Tick - P&amp;F Pattern chart</author> <title>$tick</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$TRIN</link> <author>NYSE - Arms Index - SharpChart</author> <title>$trin</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$TRIN</link> <author>NYSE - Arms Index - P&amp;F Pattern chart</author> <title>$trin</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$TSX</link> <author>TSX Index - SharpChart</author> <title>$tsx</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$TSX</link> <author>TSX Index - P&amp;F Pattern chart</author> <title>$tsx</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$USD</link> <author>US Dollar Index - SharpChart</author> <title>$usd</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$USD</link> <author>US Dollar Index - P&amp;F Pattern chart</author> <title>$usd</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$VIX</link> <author>Volatility Index - SharpChart</author> <title>$vix</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$VIX</link> <author>Volatility Index - P&amp;F Pattern chart</author> <title>$vix</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$WTIC</link> <author>Crude Oil Index - SharpChart</author> <title>$wtic</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$WTIC</link> <author>Crude Oil Index - P&amp;F Pattern chart</author> <title>$wtic</title> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$XEU</link> <author>Euro Index - SharpChart</author> <title>$xeu</title> </item>
+<item><link> http://www.stockcharts.com/def/servlet/SC.pnf?c=$XEU</link> <author>Euro Index - P&amp;F Pattern chart</author> <title>$xeu</title> </item>
+
+</channel>
+</rss>

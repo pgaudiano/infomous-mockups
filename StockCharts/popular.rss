@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$COMPQ</link> <author>Nasdaq Composite Index</author> <title>$compq</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$INDU</link> <author>Dow Jones Industrials</author> <title>$indu</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$NDX</link> <author>Nasdaq 100 Index</author> <title>$ndx</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$NYA</link> <author>NYSE Composite</author> <title>$nya</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=QQQ</link> <author>PowerShares QQQ Trust</author> <title>qqq</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$RUT</link> <author>Russell 2000 Small-Cap Index</author> <title>$rut</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$SPX</link> <author>S&amp;P 500 Large-Cap Index</author> <title>$spx</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=SPY</link> <author>S&amp;P 500 SPDR</author> <title>spy</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$TICK</link> <author>NYSE - Tick</author> <title>$tick</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$TRIN</link> <author>NYSE - Arms Index</author> <title>$trin</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$TSX</link> <author>TSX Index</author> <title>$tsx</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$USD</link> <author>US Dollar Index</author> <title>$usd</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$VIX</link> <author>Volatility Index</author> <title>$vix</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$WTIC</link> <author>Crude Oil Index</author> <title>$wtic</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+<item><link> http://www.stockcharts.com/h-sc/ui?s=$XEU</link> <author>Euro Index</author> <title>$xeu</title> <pubDate>Sat, 09 Nov 2013 11:00:00 +0000 </pubDate> </item>
+
+</channel>
+</rss>

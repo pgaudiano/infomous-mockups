@@ -1,0 +1,153 @@
+﻿.rbuttonwrap {
+   display: -moz-inline-stack;
+   display: inline-block;
+   position: relative;
+   zoom: 1;
+   *display: inline;
+   padding: 0px 5px;
+   height: 27px;
+}
+.rbuttonwrap .left, .rbuttonwrap .right {
+   position: absolute;
+   width: 5px;
+   height: 100%;
+}
+.rbuttonwrap .left {
+   top: 0; left: 0; 
+   background: transparent url(../images/small_left.png) no-repeat 0 0;
+}
+.rbuttonwrap .right {
+   top: 0; right: 0; 
+   background: transparent url(../images/small_right.png) no-repeat 0 0;
+}
+.rbutton {
+   display: inline-block;
+   line-height: 1;
+   padding: 7px 5px;
+   height: 13px;
+   text-decoration: none;
+   font-weight: bold;
+   color: #fff;
+   background-color: #a54e32;
+   margin: 0px;
+   cursor: pointer;
+   background: transparent url(../images/small_content.png) repeat-x 0 0;
+}
+input.rbutton, button.rbutton {
+   border: 0px none;
+   height: 27px;
+
+   /* fix IE button width problem */
+   *width: auto;  /* targets IE6 and 7 */
+   *overflow:visible;  /* targets IE6 and 7 */
+}
+
+.rbuttonwrap, .rbuttonwrap a, .rbuttonwrap .rbutton {
+   color: white !important;
+   text-decoration: none !important;
+}
+.rbuttonwrap.hover, .rbuttonwrap.hover a, .rbuttonwrap.hover .rbutton {
+   color: white !important;
+   text-decoration: none !important;
+}
+.rbuttonwrap.active, .rbuttonwrap.active a, .rbuttonwrap.active .rbutton {
+   color: #362f2d !important;
+   text-decoration: none !important;
+}
+.rbuttonwrap.disabled, .rbuttonwrap.disabled a, .rbuttonwrap.disabled .rbutton {
+   color: white !important;
+   text-decoration: none !important;
+   cursor: default;
+}
+
+.rbuttonwrap.hover .rbutton,
+.rbuttonwrap.hover .left,
+.rbuttonwrap.hover .right {
+   background-position: 0px -27px;
+}
+.rbuttonwrap.active .rbutton,
+.rbuttonwrap.active .left,
+.rbuttonwrap.active .right {
+   background-position: 0px -54px;
+}
+.rbuttonwrap.disabled .rbutton,
+.rbuttonwrap.disabled .left,
+.rbuttonwrap.disabled .right {
+   background-position: 0px -81px;
+}
+
+
+.rbuttonwrap.tiny {
+   height: 23px;
+   padding: 0px 4px;
+}
+.rbuttonwrap.tiny .rbutton {
+   line-height: 10px;
+   padding: 7px 2px;
+   height: 9px;
+   min-width: 14px;
+}
+.rbuttonwrap.tiny .left, .rbuttonwrap.tiny .right {
+   width: 4px;
+}
+.rbuttonwrap.tiny .rbutton {
+   background-image: url(../images/tiny_content.png);
+}
+.rbuttonwrap.tiny .left {
+   background-image: url(../images/tiny_left.png);
+}
+.rbuttonwrap.tiny .right {
+   background-image: url(../images/tiny_right.png);
+}
+.rbuttonwrap.tiny.hover .rbutton,
+.rbuttonwrap.tiny.hover .left,
+.rbuttonwrap.tiny.hover .right {
+   background-position: 0px -23px;
+}
+.rbuttonwrap.tiny.active .rbutton,
+.rbuttonwrap.tiny.active .left,
+.rbuttonwrap.tiny.active .right {
+   background-position: 0px -46px;
+}
+.rbuttonwrap.tiny.disabled .rbutton,
+.rbuttonwrap.tiny.disabled .left,
+.rbuttonwrap.tiny.disabled .right {
+   background-position: 0px -69px;
+}
+
+
+.rbuttonwrap.large {
+   height: 35px;
+}
+.rbuttonwrap.large .rbutton {
+   height: 21px;
+   line-height: 21px !important;
+}
+.rbuttonwrap.large .left, .rbuttonwrap.tiny .right {
+   width: 5px;
+}
+.rbuttonwrap.large .rbutton {
+   background-image: url(../images/large_content.png);
+}
+.rbuttonwrap.large .left {
+   background-image: url(../images/large_left.png);
+}
+.rbuttonwrap.large .right {
+   background-image: url(../images/large_right.png);
+}
+.rbuttonwrap.large.hover .rbutton,
+.rbuttonwrap.large.hover .left,
+.rbuttonwrap.large.hover .right {
+   background-position: 0px -35px;
+}
+.rbuttonwrap.large.active .rbutton,
+.rbuttonwrap.large.active .left,
+.rbuttonwrap.large.active .right {
+   background-position: 0px -70px;
+}
+.rbuttonwrap.large.disabled .rbutton,
+.rbuttonwrap.large.disabled .left,
+.rbuttonwrap.large.disabled .right {
+   background-position: 0px -105px;
+}
+

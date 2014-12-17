@@ -1,0 +1,143 @@
+<?
+$titles = array ( "San Antonio Spurs News",
+"San Antonio Spurs on Twitter",
+"San Antonio Spurs on Instagram",
+       		  );
+$dates = array(
+"2013,0,23,6,0,0,0",
+"2013,0,23,6,0,0,0",
+"2013,0,23,6,0,0,0",
+);
+
+$nids = array(
+33469,
+33476,
+33473
+);
+
+$width=950;
+$height=500;
+$sw=300;
+$sl1=14;
+$sl2=11;
+$cam="SpursCampaign";
+
+$cloudParams = "width=".$width."&height=".$height."&setFrame=false&maxWords=50&wmode=transparent&setControlBar=true&setShowTitle=0&setDemoMode=1&demoKillOnHover=1&demoFocusWords=1&demoShowLists=1&skinSourcesWidth=".$sw.'&skinLine1Size='.$sl1.'&skinLine2Size='.$sl2.'&campaign='.$cam.'"';
+
+
+if (isset($_GET["nid_key"]))
+   $nid_key = $_GET["nid_key"];
+else
+   $nid_key = 0;
+   
+$expires = 60*2;   # seconds
+header('Pragma: public');
+header('Cache-Control: public,max-age='.$expires);
+header('Last-modified: ' . gmdate('D, d M Y H:i:s', time()) . ' GMT');
+header('Expires: ' . gmdate('D, d M Y H:i:s', time()+$expires) . ' GMT');
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+
+<head>
+  <title>San Antonio Spurs Spotlighters by Infomous</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/all/themes/infomous2/img/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/forum/forum.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/infomous2/style.css?y" />
+
+
+<script type="text/javascript" src="/misc/jquery.js?y"></script>
+
+
+<script type="text/javascript" src="/misc/drupal.js?y"></script>
+<script type="text/javascript" src="/sites/all/themes/infomous2/scripts/analytics.js?y"></script>
+<script type="text/javascript">jQuery.extend(Drupal.settings, { "basePath": "/" });</script>
+<link type="text/css" rel="stylesheet" media="all" href="/client/lib/jquery-ui-1.8.16.custom.css" />
+<script type="text/javascript" src="/client/lib/jquery-ui-1.8.16.custom.min.js"></script>
+<script src="jQAllRangeSliders-min.js"></script>
+<style type="text/css">
+.fb_iframe_widget iframe {min-height: 21px !important;margin-top:-4px;min-height:80px !important;min-width:80px;}
+.fb_iframe_widget span {min-height: 21px !important;min-height:21px !important;}}
+</style>
+
+<script>
+var minDate_preset = new Date(<?=$dates[$nid_key]?>);
+</script>
+<script type="text/javascript" src="timeline.js"></script>
+<link rel="stylesheet" id="themeCSS" href="css/slider.css"> 
+
+<link rel="stylesheet" type="text/css" href="landing/infomous.css" />
+
+</head>
+
+<body style="background: #ffffff url('SpursBG.jpg') no-repeat center top;">
+
+<div style="font-size:22pt;color:#ffffff;margin-top:10px;margin-left:auto;margin-right:auto;width:1000px">
+<table width="100%" cellspacing="60px">
+<tr>
+<td >
+<img src="SpursHeader2.png" style="vertical-align:middle">
+</td>
+<td>
+<?=$titles[$nid_key]?> by <a href="http://infomous.com">Infomous</a>
+</td>
+</tr>
+</table>
+
+<div style="font-size:16pt;color:#ff5703;margin-top:-30px;margin-bottom:44px;text-align:right">
+<p>
+<form action="" method="GET" name="category">
+<label>Select a different Spotlighter: </label><select onChange="document.category.submit()" name="nid_key">
+<?
+ foreach($nids as $key => $nid) {
+
+?>
+<option value="<?=$key?>" <?=($key==$nid_key)?" selected":""?>><?=$titles[$key]?></option>
+<?}?>
+</select>
+<?
+foreach($_GET as $key =>$value)
+{
+if($key != "nid_key")
+{
+ echo "<input type='hidden' name='$key' value='$value' >";
+}
+}
+?>
+</form>
+</div>
+
+<div id="infomousMovie" style="border-style:none;background-image:url('SpursLogo.png');width:950px;margin-left:auto;margin-right:auto">
+<script type="text/javascript" async data-infomous-id="nid<?=$nids[$nid_key]?>" src="http://www.infomous.com/client2/?<?=$cloudparams?>"></script>
+<!--<script type="text/javascript" src="http://www.infomous.com/cloud_widget/<?=$nids[$nid_key].'?'.$cloudParams?>"></script>-->
+</div>
+
+<div style="font-size:14pt; font-family: arial,helvetica,sans-serif;
+color:#333333; font-weight:normal; margin-top:10px;font-style:normal;width:950px;margin-left:auto;margin-right:auto">
+Click any word to open a list of links to news articles, tweets or
+other items that contain that word. Clicking any of the links will
+open that item in a separate browser window.
+
+<p>If you have any questions or if you would like to create and embed your own spotlighters, please <a href="http://www.infomous.com/contact">contact us</a>.
+
+<div id="footer" class="home-block" style="font-size:11pt;text-align:center;line-height:14pt">
+
+  <p>Like this? Share it!&nbsp;
+    <a href="http://twitter.com/share" class="twitter-share-button"
+    data-text="San Antonio Spurs Spotlighters" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    &nbsp;
+    <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like layout="button_count"></fb:like> 
+Copyright 2007-2013 Icosystem. All rights reserved. <p><a href="/drupal/terms">Terms of service</a> | <a href="/drupal/privacy">Privacy policy</a> | <a href="/drupal/about">About us</a> | <a href="/drupal/contact">Feedback</a></p>
+
+</div>
+
+</body>
+

@@ -1,0 +1,4 @@
+//This is a comment
+brandShowLogo = true
+brandLogoPosition = top left
+maxWords = 5

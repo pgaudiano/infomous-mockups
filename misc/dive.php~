@@ -1,0 +1,49 @@
+<?php
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+
+<head>
+  <title>Word test</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+</head>
+
+<body>
+<h1>Infomous popularWordCutoff test</h1>
+
+<script type="text/javascript">
+
+   var words = <?=($_GET["n"])?$_GET["n"]:0; ?>;
+   var myInfomousCloud = {
+     api : "true",
+     width: "600",
+     height: "400",
+     maxWords: 20,
+     nid: "38474",
+  }
+
+  function infomous_ready(I){
+   myCloud = I.clouds.get();
+  }
+
+</script>
+
+<div style="height:400px">
+<script type="text/javascript" async data-infomous-id="myInfomousCloud" src="https://www.infomous.com/client2"></script>
+</div>
+
+<form name="update" action="" method="GET">
+<input type="text" name="cutoff" onChange="myCloud.set_var('popularWordCutoff',this.value);myCloud.make_request();">
+</form>
+
+<p><a href="javascript:void(0);" onclick="myCloud.set_var('popularWordCutoff',++words);myCloud.make_request();">
+Increase depth</a></p>
+
+<p><a href="javascript:void(0);" onclick="myCloud.set_var('maxWords',--words);myCloud.make_request();">
+Subtract a word</a></p>
+
+</body>
+
+</html>
+

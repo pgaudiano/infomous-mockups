@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+ <channel>
+  <atom:link href="http://www.infomous.com/site/mockups/FreshPatents/software~8464621.xml" rel="self" type="application/rss+xml"/>
+  <title>Search pattern for software</title>
+  <link>http://www.infomous.com/site/mockups/FreshPatents</link>
+  <description>Explore software from FreshPatents</description>
+  <item>
+   <title>Category -- Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-bx1.rss&amp;title=Software</link>
+   <description>Category -- Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-bx1.rss&amp;title=Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Rot</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Rot-bx1.rss&amp;title=Software Rot</link>
+   <description>Category -- Software Rot</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Rot-bx1.rss&amp;title=Software Rot</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Tool</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Tool-bx1.rss&amp;title=Software Tool</link>
+   <description>Category -- Software Tool</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Tool-bx1.rss&amp;title=Software Tool</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Free Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Free-Software-bx1.rss&amp;title=Free Software</link>
+   <description>Category -- Free Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Free-Software-bx1.rss&amp;title=Free Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Trial Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Trial-Software-bx1.rss&amp;title=Trial Software</link>
+   <description>Category -- Trial Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Trial-Software-bx1.rss&amp;title=Trial Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Agent Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Agent-Software-bx1.rss&amp;title=Agent Software</link>
+   <description>Category -- Agent Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Agent-Software-bx1.rss&amp;title=Agent Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Agent</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Agent-bx1.rss&amp;title=Software Agent</link>
+   <description>Category -- Software Agent</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Agent-bx1.rss&amp;title=Software Agent</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Modem</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Modem-bx1.rss&amp;title=Software Modem</link>
+   <description>Category -- Software Modem</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Modem-bx1.rss&amp;title=Software Modem</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Audit</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Audit-bx1.rss&amp;title=Software Audit</link>
+   <description>Category -- Software Audit</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Audit-bx1.rss&amp;title=Software Audit</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Suite</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Suite-bx1.rss&amp;title=Software Suite</link>
+   <description>Category -- Software Suite</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Suite-bx1.rss&amp;title=Software Suite</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Tools</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Tools-bx1.rss&amp;title=Software Tools</link>
+   <description>Category -- Software Tools</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Tools-bx1.rss&amp;title=Software Tools</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Cross Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Cross-Software-bx1.rss&amp;title=Cross Software</link>
+   <description>Category -- Cross Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Cross-Software-bx1.rss&amp;title=Cross Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- System Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/System-Software-bx1.rss&amp;title=System Software</link>
+   <description>Category -- System Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/System-Software-bx1.rss&amp;title=System Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Legacy Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Legacy-Software-bx1.rss&amp;title=Legacy Software</link>
+   <description>Category -- Legacy Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Legacy-Software-bx1.rss&amp;title=Legacy Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Backup Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Backup-Software-bx1.rss&amp;title=Backup Software</link>
+   <description>Category -- Backup Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Backup-Software-bx1.rss&amp;title=Backup Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Custom Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Custom-Software-bx1.rss&amp;title=Custom Software</link>
+   <description>Category -- Custom Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Custom-Software-bx1.rss&amp;title=Custom Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Dating Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Dating-Software-bx1.rss&amp;title=Dating Software</link>
+   <description>Category -- Dating Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Dating-Software-bx1.rss&amp;title=Dating Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Social Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Social-Software-bx1.rss&amp;title=Social Software</link>
+   <description>Category -- Social Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Social-Software-bx1.rss&amp;title=Social Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Piracy</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Piracy-bx1.rss&amp;title=Software Piracy</link>
+   <description>Category -- Software Piracy</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Piracy-bx1.rss&amp;title=Software Piracy</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Metric</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Metric-bx1.rss&amp;title=Software Metric</link>
+   <description>Category -- Software Metric</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Metric-bx1.rss&amp;title=Software Metric</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Bundled Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Bundled-Software-bx1.rss&amp;title=Bundled Software</link>
+   <description>Category -- Bundled Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Bundled-Software-bx1.rss&amp;title=Bundled Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Imaging Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Imaging-Software-bx1.rss&amp;title=Imaging Software</link>
+   <description>Category -- Imaging Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Imaging-Software-bx1.rss&amp;title=Imaging Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Generic Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Generic-Software-bx1.rss&amp;title=Generic Software</link>
+   <description>Category -- Generic Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Generic-Software-bx1.rss&amp;title=Generic Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software License</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-License-bx1.rss&amp;title=Software License</link>
+   <description>Category -- Software License</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-License-bx1.rss&amp;title=Software License</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Bespoke Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Bespoke-Software-bx1.rss&amp;title=Bespoke Software</link>
+   <description>Category -- Bespoke Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Bespoke-Software-bx1.rss&amp;title=Bespoke Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Package</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Package-bx1.rss&amp;title=Software Package</link>
+   <description>Category -- Software Package</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Package-bx1.rss&amp;title=Software Package</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Wrapper Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Wrapper-Software-bx1.rss&amp;title=Wrapper Software</link>
+   <description>Category -- Wrapper Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Wrapper-Software-bx1.rss&amp;title=Wrapper Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Business Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Business-Software-bx1.rss&amp;title=Business Software</link>
+   <description>Category -- Business Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Business-Software-bx1.rss&amp;title=Business Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Portable Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Portable-Software-bx1.rss&amp;title=Portable Software</link>
+   <description>Category -- Portable Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Portable-Software-bx1.rss&amp;title=Portable Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Packaged Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Packaged-Software-bx1.rss&amp;title=Packaged Software</link>
+   <description>Category -- Packaged Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Packaged-Software-bx1.rss&amp;title=Packaged Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Vertical Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Vertical-Software-bx1.rss&amp;title=Vertical Software</link>
+   <description>Category -- Vertical Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Vertical-Software-bx1.rss&amp;title=Vertical Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Avionics Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Avionics-Software-bx1.rss&amp;title=Avionics Software</link>
+   <description>Category -- Avionics Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Avionics-Software-bx1.rss&amp;title=Avionics Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Graphing Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Graphing-Software-bx1.rss&amp;title=Graphing Software</link>
+   <description>Category -- Graphing Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Graphing-Software-bx1.rss&amp;title=Graphing Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Graphics Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Graphics-Software-bx1.rss&amp;title=Graphics Software</link>
+   <description>Category -- Graphics Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Graphics-Software-bx1.rss&amp;title=Graphics Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Engineer</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Engineer-bx1.rss&amp;title=Software Engineer</link>
+   <description>Category -- Software Engineer</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Engineer-bx1.rss&amp;title=Software Engineer</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Component Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Component-Software-bx1.rss&amp;title=Component Software</link>
+   <description>Category -- Component Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Component-Software-bx1.rss&amp;title=Component Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Antivirus Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Antivirus-Software-bx1.rss&amp;title=Antivirus Software</link>
+   <description>Category -- Antivirus Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Antivirus-Software-bx1.rss&amp;title=Antivirus Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Licensing</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Licensing-bx1.rss&amp;title=Software Licensing</link>
+   <description>Category -- Software Licensing</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Licensing-bx1.rss&amp;title=Software Licensing</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Enterprise Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Enterprise-Software-bx1.rss&amp;title=Enterprise Software</link>
+   <description>Category -- Enterprise Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Enterprise-Software-bx1.rss&amp;title=Enterprise Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Instrument Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Instrument-Software-bx1.rss&amp;title=Instrument Software</link>
+   <description>Category -- Instrument Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Instrument-Software-bx1.rss&amp;title=Instrument Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Processing Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Processing-Software-bx1.rss&amp;title=Processing Software</link>
+   <description>Category -- Processing Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Processing-Software-bx1.rss&amp;title=Processing Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Pipelining</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Pipelining-bx1.rss&amp;title=Software Pipelining</link>
+   <description>Category -- Software Pipelining</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Pipelining-bx1.rss&amp;title=Software Pipelining</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Commercial Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Commercial-Software-bx1.rss&amp;title=Commercial Software</link>
+   <description>Category -- Commercial Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Commercial-Software-bx1.rss&amp;title=Commercial Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Environment</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Environment-bx1.rss&amp;title=Software Environment</link>
+   <description>Category -- Software Environment</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Environment-bx1.rss&amp;title=Software Environment</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Engineering</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Engineering-bx1.rss&amp;title=Software Engineering</link>
+   <description>Category -- Software Engineering</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Engineering-bx1.rss&amp;title=Software Engineering</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Development</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Development-bx1.rss&amp;title=Software Development</link>
+   <description>Category -- Software Development</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Development-bx1.rss&amp;title=Software Development</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Data Mining Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Data-Mining-Software-bx1.rss&amp;title=Data Mining Software</link>
+   <description>Category -- Data Mining Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Data-Mining-Software-bx1.rss&amp;title=Data Mining Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Application Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Application-Software-bx1.rss&amp;title=Application Software</link>
+   <description>Category -- Application Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Application-Software-bx1.rss&amp;title=Application Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Proprietary Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Proprietary-Software-bx1.rss&amp;title=Proprietary Software</link>
+   <description>Category -- Proprietary Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Proprietary-Software-bx1.rss&amp;title=Proprietary Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Distribution</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Distribution-bx1.rss&amp;title=Software Distribution</link>
+   <description>Category -- Software Distribution</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Distribution-bx1.rss&amp;title=Software Distribution</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Architecture</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Architecture-bx1.rss&amp;title=Software Architecture</link>
+   <description>Category -- Software Architecture</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Architecture-bx1.rss&amp;title=Software Architecture</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Distribution Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Distribution-Software-bx1.rss&amp;title=Distribution Software</link>
+   <description>Category -- Distribution Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Distribution-Software-bx1.rss&amp;title=Distribution Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Collaborative Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Collaborative-Software-bx1.rss&amp;title=Collaborative Software</link>
+   <description>Category -- Collaborative Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Collaborative-Software-bx1.rss&amp;title=Collaborative Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Communications Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Communications-Software-bx1.rss&amp;title=Communications Software</link>
+   <description>Category -- Communications Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Communications-Software-bx1.rss&amp;title=Communications Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Image Analysis Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Image-Analysis-Software-bx1.rss&amp;title=Image Analysis Software</link>
+   <description>Category -- Image Analysis Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Image-Analysis-Software-bx1.rss&amp;title=Image Analysis Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Remote Control Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Remote-Control-Software-bx1.rss&amp;title=Remote Control Software</link>
+   <description>Category -- Remote Control Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Remote-Control-Software-bx1.rss&amp;title=Remote Control Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Development Kit</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Development-Kit-bx1.rss&amp;title=Software Development Kit</link>
+   <description>Category -- Software Development Kit</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Development-Kit-bx1.rss&amp;title=Software Development Kit</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Data Management Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Data-Management-Software-bx1.rss&amp;title=Data Management Software</link>
+   <description>Category -- Data Management Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Data-Management-Software-bx1.rss&amp;title=Data Management Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Defined Antenna</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Defined-Antenna-bx1.rss&amp;title=Software Defined Antenna</link>
+   <description>Category -- Software Defined Antenna</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Defined-Antenna-bx1.rss&amp;title=Software Defined Antenna</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Data Acquisition Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Data-Acquisition-Software-bx1.rss&amp;title=Data Acquisition Software</link>
+   <description>Category -- Data Acquisition Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Data-Acquisition-Software-bx1.rss&amp;title=Data Acquisition Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Berkeley Software Distribution</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Berkeley-Software-Distribution-bx1.rss&amp;title=Berkeley Software Distribution</link>
+   <description>Category -- Berkeley Software Distribution</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Berkeley-Software-Distribution-bx1.rss&amp;title=Berkeley Software Distribution</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Engineering Institute</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Engineering-Institute-bx1.rss&amp;title=Software Engineering Institute</link>
+   <description>Category -- Software Engineering Institute</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Engineering-Institute-bx1.rss&amp;title=Software Engineering Institute</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Business Intelligence Software</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Business-Intelligence-Software-bx1.rss&amp;title=Business Intelligence Software</link>
+   <description>Category -- Business Intelligence Software</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Business-Intelligence-Software-bx1.rss&amp;title=Business Intelligence Software</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Enterprise Software Architecture</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Enterprise-Software-Architecture-bx1.rss&amp;title=Enterprise Software Architecture</link>
+   <description>Category -- Enterprise Software Architecture</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Enterprise-Software-Architecture-bx1.rss&amp;title=Enterprise Software Architecture</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Software Configuration Management</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Configuration-Management-bx1.rss&amp;title=Software Configuration Management</link>
+   <description>Category -- Software Configuration Management</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Software-Configuration-Management-bx1.rss&amp;title=Software Configuration Management</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Computer Aided Software Engineering</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Computer-Aided-Software-Engineering-bx1.rss&amp;title=Computer Aided Software Engineering</link>
+   <description>Category -- Computer Aided Software Engineering</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Computer-Aided-Software-Engineering-bx1.rss&amp;title=Computer Aided Software Engineering</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+ </channel>
+</rss>

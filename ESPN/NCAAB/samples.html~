@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+
+<head>
+  <title>Sample ESPN NCAAB Infomous Clouds</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/all/themes/infomous2/img/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/forum/forum.css?y" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/infomous2/style.css?y" />
+  <script type="text/javascript" src="/misc/jquery.js?y"></script>
+<script type="text/javascript" src="/misc/drupal.js?y"></script>
+<script type="text/javascript" src="/sites/all/modules/cloud/swfobject.js?y"></script>
+<script type="text/javascript" src="/sites/all/themes/infomous2/scripts/analytics.js?y"></script>
+<script type="text/javascript">jQuery.extend(Drupal.settings, { "basePath": "/" });</script>
+  <script type="text/javascript"> </script>
+</head>
+
+<body>
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="0" id="header" class="home-block">
+  <tr>
+    <td id="logo">
+            	<map name="Map" id="Map">
+          <area shape="rect" coords="0,0,300,110" href="/news/world" alt="Home" />
+          <area shape="rect" coords="301,0,480,110" href="http://icosystem.com" alt="icosystem.com" />
+        </map>
+        <img src="/sites/all/themes/infomous2/img/logo.jpg" alt="Home" usemap="#Map" />
+			    </td>
+    <td id="menu">
+      <ul class="links" id="navlist"><li class="menu-237 first"><a href="/help/main" title="Infomous Help - Main Page">HELP</a></li>
+<li class="menu-177"><a href="/about" title="">ABOUT</a></li>
+<li class="menu-193"><a href="/contact" title="">CONTACT</a></li>
+<li class="menu-174 last"><a href="/user/login" title="">LOG IN</a></li>
+</ul>    </td>
+  </tr>
+  <tr>
+    <td colspan="3"><div></div></td>
+  </tr>
+</table>
+
+<div style="width:800px;padding:10px;align:center;font-size:1.5em;color:#3B6614;font-weight:bold">
+Infomous visualization of Obama's 2011 <em>State of the Union</em> address
+<br>
+(<a href="compare.php" style="text-decoration: underline">compare 2010 and 2011 addresses</a>)
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" id="home-table" class="home-block">
+	<tr>
+	  <td colspan="3">
+	    <div id="flash1" align="center">
+	      You need Flash Player 8 or newer and JavaScript on to view this site.
+
+	      <script type="text/javascript">
+		// <![CDATA[
+			var so = new SWFObject("/site/events/infomous.swf", "infomous", "95%", "500", "8", "#EEEEEE");
+			so.addVariable("basePath", "http://infomous.com/site/events/");
+			so.addVariable("linkageThreshold", "1.5");
+			so.addVariable("popularWordCutoff", getQueryParamValue("popularWordCutoff"));
+			so.addVariable("hidden", "applause,ll,ve,re,so,do,will");
+			so.addVariable("zoom", "1.5");
+			so.addVariable("panels","top,bottom,status,blobs,words,branding");
+			so.addVariable("fontScale","1.3");
+			so.addVariable("groups", "true");
+		 	so.addVariable("maxWords","35");
+			so.addVariable("dict", "NOUN|1,VERB|1,ADJECTIVE|1,ADVERB|0,NUMBER|1,OTHER|1");
+//			so.addVariable("bottomBarControls", "pos,groups,capture,focusSelect");
+			
+
+//            so.addVariable("feeds", "http%3A%2F%2Fwww.infomous.com%2Fsite%2Fevents%2Fuploaded-files%2FObama2011.html");
+            so.addVariable("feeds", "http%3A%2F%2Fwww.infomous.com%2Fsite%2Fevents%2Fuploaded-files%2Fparts%2FObama2011-p00.html|\
+http%3A%2F%2Fwww.infomous.com%2Fsite%2Fevents%2Fuploaded-files%2Fparts%2FObama2011-p01.html|\
+http%3A%2F%2Fwww.infomous.com%2Fsite%2Fevents%2Fuploaded-files%2Fparts%2FObama2011-p02.html|\
+http%3A%2F%2Fwww.infomous.com%2Fsite%2Fevents%2Fuploaded-files%2Fparts%2FObama2011-p03.html|\
+http%3A%2F%2Fwww.infomous.com%2Fsite%2Fevents%2Fuploaded-files%2Fparts%2FObama2011-p04.html|\
+http%3A%2F%2Fwww.infomous.com%2Fsite%2Fevents%2Fuploaded-files%2Fparts%2FObama2011-p05.html|\
+http%3A%2F%2Fwww.infomous.com%2Fsite%2Fevents%2Fuploaded-files%2Fparts%2FObama2011-p06.html|\
+http%3A%2F%2Fwww.infomous.com%2Fsite%2Fevents%2Fuploaded-files%2Fparts%2FObama2011-p07.html|\
+http%3A%2F%2Fwww.infomous.com%2Fsite%2Fevents%2Fuploaded-files%2Fparts%2FObama2011-p08.html\
+");
+
+			so.addParam("allowScriptAccess", "always");
+			so.addParam("allowFullScreen", "true");
+			so.write("flash1");
+		// ]]>
+	      </script>
+	    </div>
+	  </td>
+	</tr>
+	<tr>
+	  <td colspan="3" align="center">
+<div style="width:800px;padding:10px;align:center;font-size:1em;color:#3B6614;font-weight:normal">
+Click on the x next to a word to remove it and change your perspective; click on a word to see related words.
+Hover the mouse near the bottom of the cloud to reveal a control bar for additional fine-tuning.
+</div>
+
+	  </td>
+	</tr>
+	<tr align="center">
+	</tr>
+</table>
+
+<div id="footer" class="home-block" style="margin: 20px 0 20px 0;">
+  <p>Like this? Share it!&nbsp;
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="Infomous visualization of Obama's 2011 State of the Union address" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    &nbsp;
+    <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like layout="button_count"></fb:like> 
+
+Copyright 2007-2011 Icosystem. All rights reserved. <a href="/drupal/terms">Terms of service</a> | <a href="/drupal/privacy">Privacy policy</a> | <a href="/drupal/about">About us</a> | <a href="/drupal/contact">Feedback</a></p>
+    </div>
+
+  </div>
+</body>
+</html>

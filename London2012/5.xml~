@@ -1,0 +1,274 @@
+<network>
+ <exceptions/>
+
+<!-- Feed REQUESTS section -->
+  <requests>
+
+   <rssInputRequest id="10" feedName="Archery" url="http://www.london2012.com/archery"></rssInputRequest>
+   <rssInputRequest id="20" feedName="Athletics" url="http://www.london2012.com/athletics"></rssInputRequest>
+   <rssInputRequest id="30" feedName="Badminton" url="http://www.london2012.com/badminton"></rssInputRequest>
+   <rssInputRequest id="40" feedName="Basketball" url="http://www.london2012.com/basketball"></rssInputRequest>
+   <rssInputRequest id="50" feedName="Beach Volleyball" url="http://www.london2012.com/beach-volleyball"></rssInputRequest>
+   <rssInputRequest id="60" feedName="Boxing" url="http://www.london2012.com/boxing"></rssInputRequest>
+   <rssInputRequest id="70" feedName="Canoe Slalom" url="http://www.london2012.com/canoe-slalom"></rssInputRequest>
+   <rssInputRequest id="80" feedName="Canoe Sprint" url="http://www.london2012.com/canoe-sprint"></rssInputRequest>
+
+   <rssInputRequest id="91" feedName="BMX" url="http://www.london2012.com/cycling-bmx"></rssInputRequest>
+   <rssInputRequest id="92" feedName="Mountain Bike" url="http://www.london2012.com/cycling-mountain-bike"></rssInputRequest>
+   <rssInputRequest id="93" feedName="Road" url="http://www.london2012.com/cycling-road"></rssInputRequest>
+   <rssInputRequest id="94" feedName="Track" url="http://www.london2012.com/cycling-track"></rssInputRequest>
+   <rssInputRequest id="130" feedName="Diving" url="http://www.london2012.com/diving"></rssInputRequest>
+
+   <rssInputRequest id="141" feedName="Dressage" url="http://www.london2012.com/equestrian-dressage"></rssInputRequest>
+   <rssInputRequest id="142" feedName="Eventing" url="http://www.london2012.com/equestrian-eventing"></rssInputRequest>
+   <rssInputRequest id="143" feedName="Jumping" url="http://www.london2012.com/equestrian-jumping"></rssInputRequest>
+   <rssInputRequest id="170" feedName="Fencing" url="http://www.london2012.com/fencing"></rssInputRequest>
+   <rssInputRequest id="180" feedName="Football" url="http://www.london2012.com/football"></rssInputRequest>
+
+   <rssInputRequest id="191" feedName="Artistic" url="http://www.london2012.com/gymnastics-artistic"></rssInputRequest>
+   <rssInputRequest id="192" feedName="Rhythmic" url="http://www.london2012.com/gymnastics-rhythmic"></rssInputRequest>
+   <rssInputRequest id="193" feedName="Trampoline" url="http://www.london2012.com/gymnastics-trampoline"></rssInputRequest>
+   <rssInputRequest id="220" feedName="Handball" url="http://www.london2012.com/handball"></rssInputRequest>
+   <rssInputRequest id="230" feedName="Hockey" url="http://www.london2012.com/hockey"></rssInputRequest>
+   <rssInputRequest id="240" feedName="Judo" url="http://www.london2012.com/judo"></rssInputRequest>
+   <rssInputRequest id="250" feedName="Modern Pentathlon" url="http://www.london2012.com/modern-pentathlon"></rssInputRequest>
+   <rssInputRequest id="260" feedName="Rowing" url="http://www.london2012.com/rowing"></rssInputRequest>
+   <rssInputRequest id="270" feedName="Sailing" url="http://www.london2012.com/sailing"></rssInputRequest>
+   <rssInputRequest id="280" feedName="Shooting" url="http://www.london2012.com/shooting"></rssInputRequest>
+   <rssInputRequest id="290" feedName="Swimming" url="http://www.london2012.com/swimming"></rssInputRequest>
+   <rssInputRequest id="300" feedName="Synchronised Swimming" url="http://www.london2012.com/synchronised-swimming"></rssInputRequest>
+   <rssInputRequest id="310" feedName="Table Tennis" url="http://www.london2012.com/table-tennis"></rssInputRequest>
+   <rssInputRequest id="320" feedName="Taekwondo" url="http://www.london2012.com/taekwondo"></rssInputRequest>
+   <rssInputRequest id="330" feedName="Tennis" url="http://www.london2012.com/tennis"></rssInputRequest>
+   <rssInputRequest id="340" feedName="Triathlon" url="http://www.london2012.com/triathlon"></rssInputRequest>
+   <rssInputRequest id="350" feedName="Volleyball" url="http://www.london2012.com/volleyball"></rssInputRequest>
+   <rssInputRequest id="360" feedName="Water Polo" url="http://www.london2012.com/water-polo"></rssInputRequest>
+   <rssInputRequest id="370" feedName="Weightlifting" url="http://www.london2012.com/weightlifting"></rssInputRequest>
+   <rssInputRequest id="380" feedName="Wrestling" url="http://www.london2012.com/wrestling"></rssInputRequest>
+
+<!-- Feed 999 is blank-->
+   <rssInputRequest id="999">
+   </rssInputRequest>
+   
+  </requests>
+<!-- SOURCES section -->
+<sources>
+
+<!-- Start with links to the main pages for each sport -->
+   <source id="105" request="999" title="Archery main page" url="http://www.london2012.com/archery"></source>
+   <source id="205" request="999" title="Athletics main page" url="http://www.london2012.com/athletics"></source>
+   <source id="305" request="999" title="Badminton main page" url="http://www.london2012.com/badminton"></source>
+   <source id="405" request="999" title="Basketball main page" url="http://www.london2012.com/basketball"></source>
+   <source id="505" request="999" title="Beach Volleyball main page" url="http://www.london2012.com/beach-volleyball"></source>
+   <source id="605" request="999" title="Boxing main page" url="http://www.london2012.com/boxing"></source>
+   <source id="705" request="999" title="Canoe Slalom main page" url="http://www.london2012.com/canoe-slalom"></source>
+   <source id="805" request="999" title="Canoe Sprint main page" url="http://www.london2012.com/canoe-sprint"></source>
+
+   <source id="915" request="999" title="BMX main page" url="http://www.london2012.com/cycling-bmx"></source>
+   <source id="925" request="999" title="Mountain Bike main page" url="http://www.london2012.com/cycling-mountain-bike"></source>
+   <source id="935" request="999" title="Road main page" url="http://www.london2012.com/cycling-road"></source>
+   <source id="945" request="999" title="Track main page" url="http://www.london2012.com/cycling-track"></source>
+   <source id="1305" request="999" title="Diving main page" url="http://www.london2012.com/diving"></source>
+
+   <source id="1415" request="999" title="Dressage main page" url="http://www.london2012.com/equestrian-dressage"></source>
+   <source id="1425" request="999" title="Eventing main page" url="http://www.london2012.com/equestrian-eventing"></source>
+   <source id="1435" request="999" title="Jumping main page" url="http://www.london2012.com/equestrian-jumping"></source>
+   <source id="1705" request="999" title="Fencing main page" url="http://www.london2012.com/fencing"></source>
+   <source id="1805" request="999" title="Football main page" url="http://www.london2012.com/football"></source>
+
+   <source id="1915" request="999" title="Artistic main page" url="http://www.london2012.com/gymnastics-artistic"></source>
+   <source id="1925" request="999" title="Rhythmic main page" url="http://www.london2012.com/gymnastics-rhythmic"></source>
+   <source id="1935" request="999" title="Trampoline main page" url="http://www.london2012.com/gymnastics-trampoline"></source>
+   <source id="2205" request="999" title="Handball main page" url="http://www.london2012.com/handball"></source>
+   <source id="2305" request="999" title="Hockey main page" url="http://www.london2012.com/hockey"></source>
+   <source id="2405" request="999" title="Judo main page" url="http://www.london2012.com/judo"></source>
+   <source id="2505" request="999" title="Modern Pentathlon main page" url="http://www.london2012.com/modern-pentathlon"></source>
+   <source id="2605" request="999" title="Rowing main page" url="http://www.london2012.com/rowing"></source>
+   <source id="2705" request="999" title="Sailing main page" url="http://www.london2012.com/sailing"></source>
+   <source id="2805" request="999" title="Shooting main page" url="http://www.london2012.com/shooting"></source>
+   <source id="2905" request="999" title="Swimming main page" url="http://www.london2012.com/swimming"></source>
+   <source id="3005" request="999" title="Synchronised Swimming main page" url="http://www.london2012.com/synchronised-swimming"></source>
+   <source id="3105" request="999" title="Table Tennis main page" url="http://www.london2012.com/table-tennis"></source>
+   <source id="3205" request="999" title="Taekwondo main page" url="http://www.london2012.com/taekwondo"></source>
+   <source id="3305" request="999" title="Tennis main page" url="http://www.london2012.com/tennis"></source>
+   <source id="3405" request="999" title="Triathlon main page" url="http://www.london2012.com/triathlon"></source>
+   <source id="3505" request="999" title="Volleyball main page" url="http://www.london2012.com/volleyball"></source>
+   <source id="3605" request="999" title="Water Polo main page" url="http://www.london2012.com/water-polo"></source>
+   <source id="3705" request="999" title="Weightlifting main page" url="http://www.london2012.com/weightlifting"></source>
+   <source id="3805" request="999" title="Wrestling main page" url="http://www.london2012.com/wrestling"></source>
+
+<!-- Sources: links to schedules for each sport -->
+   <source id="155" request="999" title="Archery schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Archery"></source>
+   <source id="255" request="999" title="Athletics schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Athletics"></source>
+   <source id="355" request="999" title="Badminton schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Badminton"></source>
+   <source id="455" request="999" title="Basketball schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Basketball"></source>
+   <source id="555" request="999" title="Beach Volleyball schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Beach+Volleyball"></source>
+   <source id="655" request="999" title="Boxing schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Boxing"></source>
+   <source id="755" request="999" title="Canoe Slalom schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Canoe+Slalom"></source>
+   <source id="855" request="999" title="Canoe Sprint schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Canoe+Sprint"></source>
+
+   <source id="965" request="999" title="BMX schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Cycling+-+BMX"></source>
+   <source id="975" request="999" title="Mountain Bike schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Cycling+-+Mountain+Bike"></source>
+   <source id="985" request="999" title="Road schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Cycling+-+Road"></source>
+   <source id="995" request="999" title="Track schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Cycling+-+Track"></source>
+   <source id="1355" request="999" title="Diving schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Diving"></source>
+
+   <source id="1465" request="999" title="Dressage schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Equestrian+-+Dressage"></source>
+   <source id="1475" request="999" title="Eventing schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Equestrian+-+Eventing"></source>
+   <source id="1485" request="999" title="Jumping schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Equestrian+-+Jumping"></source>
+   <source id="1755" request="999" title="Fencing schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Fencing"></source>
+   <source id="1855" request="999" title="Football schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Football"></source>
+
+   <source id="1965" request="999" title="Artistic schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Gymnastics+-+Artistic"></source>
+   <source id="1975" request="999" title="Rhythmic schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Gymnastics+-+Rhythmic"></source>
+   <source id="1985" request="999" title="Trampoline schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Gymnastics+-+Trampoline"></source>
+   <source id="2255" request="999" title="Handball schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Handball"></source>
+   <source id="2355" request="999" title="Hockey schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Hockey"></source>
+   <source id="2455" request="999" title="Judo schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Judo"></source>
+   <source id="2555" request="999" title="Modern Pentathlon schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Modern+Pentathlon"></source>
+   <source id="2655" request="999" title="Rowing schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Rowing"></source>
+   <source id="2755" request="999" title="Sailing schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Sailing"></source>
+   <source id="2855" request="999" title="Shooting schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Shooting"></source>
+   <source id="2955" request="999" title="Swimming schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Swimming"></source>
+   <source id="3055" request="999" title="Synchronised Swimming schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Synchronised+Swimming"></source>
+   <source id="3155" request="999" title="Table Tennis schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Table+Tennis"></source>
+   <source id="3255" request="999" title="Taekwondo schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Taekwondo"></source>
+   <source id="3355" request="999" title="Tennis schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Tennis"></source>
+   <source id="3455" request="999" title="Triathlon schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Triathlon"></source>
+   <source id="3555" request="999" title="Volleyball schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Volleyball"></source>
+   <source id="3655" request="999" title="Water Polo schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Water+Polo"></source>
+   <source id="3755" request="999" title="Weightlifting schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Weightlifting"></source>
+   <source id="3855" request="999" title="Wrestling schedule" url="http://www.london2012.com/games/sport-competition-schedules/olympic-sport-competition-schedule.php?sport=Wrestling"></source>
+
+<!-- Sources: links to schedules for each sport -->
+   <source id="156" request="999" title="Archery athletes"></source>
+   <source id="256" request="999" title="Athletics athletes"></source>
+   <source id="356" request="999" title="Badminton athletes"></source>
+   <source id="456" request="999" title="Basketball athletes"></source>
+   <source id="556" request="999" title="Beach Volleyball athletes"></source>
+   <source id="656" request="999" title="Boxing athletes"></source>
+   <source id="756" request="999" title="Canoe Slalom athletes"></source>
+   <source id="856" request="999" title="Canoe Sprint athletes"></source>
+
+   <source id="966" request="999" title="BMX athletes"></source>
+   <source id="976" request="999" title="Mountain Bike athletes"></source>
+   <source id="986" request="999" title="Road athletes"></source>
+   <source id="996" request="999" title="Track athletes"></source>
+   <source id="1356" request="999" title="Diving athletes"></source>
+
+   <source id="1466" request="999" title="Dressage athletes"></source>
+   <source id="1476" request="999" title="Eventing athletes"></source>
+   <source id="1486" request="999" title="Jumping athletes"></source>
+   <source id="1756" request="999" title="Fencing athletes"></source>
+   <source id="1856" request="999" title="Football athletes"></source>
+
+   <source id="1966" request="999" title="Artistic athletes"></source>
+   <source id="1976" request="999" title="Rhythmic athletes"></source>
+   <source id="1986" request="999" title="Trampoline athletes"></source>
+   <source id="2256" request="999" title="Handball athletes"></source>
+   <source id="2356" request="999" title="Hockey athletes"></source>
+   <source id="2456" request="999" title="Judo athletes"></source>
+   <source id="2556" request="999" title="Modern Pentathlon athletes"></source>
+   <source id="2656" request="999" title="Rowing athletes"></source>
+   <source id="2756" request="999" title="Sailing athletes"></source>
+   <source id="2856" request="999" title="Shooting athletes"></source>
+   <source id="2956" request="999" title="Swimming athletes"></source>
+   <source id="3056" request="999" title="Synchronised Swimming athletes"></source>
+   <source id="3156" request="999" title="Table Tennis athletes"></source>
+   <source id="3256" request="999" title="Taekwondo athletes"></source>
+   <source id="3356" request="999" title="Tennis athletes"></source>
+   <source id="3456" request="999" title="Triathlon athletes"></source>
+   <source id="3556" request="999" title="Volleyball athletes"></source>
+   <source id="3656" request="999" title="Water Polo athletes"></source>
+   <source id="3756" request="999" title="Weightlifting athletes"></source>
+   <source id="3856" request="999" title="Wrestling athletes"></source>
+
+  <!-- Sources: sponsored links -->
+
+  <!-- Generic SPONSORED LINK header -->
+  <source id="800" request="999" title="------- SPONSORED LINK -------"></source>  <!-- Header -->
+
+  <!-- The following use the source to display a sponsored link -->
+  <source id="801" request="999" title="Find the perfect name for your baby with Nymbler" url="http://www.nymbler.com"></source>  <!-- Nymbler -->
+  <source id="802" request="999" title="Discover the power of Icosystem's predictive modeling and analytics" url="http://www.icosystem.com"></source>  <!-- Icosystem -->
+  <source id="803" request="999" title="Get your daily news and more at The Atlantic" url="http://www.theatlantic.com"></source>  <!-- Atlantic -->
+
+  <source id="999" request="999"></source>  <!-- Blank -->
+
+</sources>
+
+<ads>
+	<ad id="801" line1="Find the perfect name for your baby with Nymbler" url="http://www.nymbler.com" line2="nymbler.com" />
+	<ad id="802" line1="Discover the power of Icosystem's predictive modeling and analytics" url="http://www.icosystem.com" line2="icosystem.com" />
+	<ad id="803" line1="See how The Atlantic is using Infomous" url="http://www.theatlantic.com" line2="theatlantic.com" />
+	<ad id="810" line1="Get more information in a pop-up" url="popup.php" line2="" />
+</ads>
+
+<!-- WORDS section -->
+<words>
+
+   <word id="109" text="Archery" count="3" group="1" sources="105,155,156"/>
+   <word id="209" text="Athletics" count="3" group="2" sources="205,255,256"/>
+   <word id="309" text="Badminton" count="3" group="3" sources="305,355,356"/>
+   <word id="409" text="Basketball" count="3" group="4" sources="405,455,456"/>
+   <word id="509" text="Beach Volleyball" count="3" group="5" sources="505,555,556"/>
+   <word id="609" text="Boxing" count="3" group="6" sources="605,655,656"/>
+   <word id="709" text="Canoe Slalom" count="3" group="7" sources="705,755,756"/>
+   <word id="809" text="Canoe Sprint" count="3" group="8" sources="805,855,856"/>
+   <word id="909" text="Cycling" count="3" group="9" sources="915,925,935,945"/>
+   <word id="919" text="BMX" count="2" group="9" sources="915,965,966"/>
+   <word id="929" text="Mountain Bike" count="2" group="9" sources="925,975,976"/>
+   <word id="939" text="Road" count="2" group="9" sources="935,985,986"/>
+   <word id="949" text="Track" count="2" group="9" sources="945,995,996"/>
+   <word id="1309" text="Diving" count="3" group="13" sources="1305,1355,1356"/>
+   <word id="1409" text="Equestrian" count="3" group="9" sources="1415,1425,1435"/>
+   <word id="1419" text="Dressage" count="2" group="14" sources="1415,1465,1466"/>
+   <word id="1429" text="Eventing" count="2" group="14" sources="1425,1475,1476"/>
+   <word id="1439" text="Jumping" count="2" group="14" sources="1435,1485,1486"/>
+   <word id="1709" text="Fencing" count="3" group="17" sources="1705,1755,1756"/>
+   <word id="1809" text="Football" count="3" group="18" sources="1805,1855,1856"/>
+   <word id="1909" text="Gymnastics" count="3" group="9" sources="1915,1925,1935"/>
+   <word id="1919" text="Artistic" count="2" group="19" sources="1915,1965,1966"/>
+   <word id="1929" text="Rhythmic" count="2" group="19" sources="1925,1975,1976"/>
+   <word id="1939" text="Trampoline" count="2" group="19" sources="1935,1985,1986"/>
+   <word id="2209" text="Handball" count="3" group="22" sources="2205,2255,2256"/>
+   <word id="2309" text="Hockey" count="3" group="23" sources="2305,2355,2356"/>
+   <word id="2409" text="Judo" count="3" group="24" sources="2405,2455,2456"/>
+   <word id="2509" text="Modern Pentathlon" count="3" group="25" sources="2505,2555,2556"/>
+   <word id="2609" text="Rowing" count="3" group="26" sources="2605,2655,2656"/>
+   <word id="2709" text="Sailing" count="3" group="27" sources="2705,2755,2756"/>
+   <word id="2809" text="Shooting" count="3" group="28" sources="2805,2855,2856"/>
+   <word id="2909" text="Swimming" count="3" group="29" sources="2905,2955,2956"/>
+   <word id="3009" text="Synchronised Swimming" count="2.8" group="30" sources="3005,3055,3056"/>
+   <word id="3109" text="Table Tennis" count="3" group="31" sources="3105,3155,3156"/>
+   <word id="3209" text="Taekwondo" count="3" group="32" sources="3205,3255,3256"/>
+   <word id="3309" text="Tennis" count="3" group="33" sources="3305,3355,3356"/>
+   <word id="3409" text="Triathlon" count="3" group="34" sources="3405,3455,3456"/>
+   <word id="3509" text="Volleyball" count="3" group="35" sources="3505,3555,3556"/>
+   <word id="3609" text="Water Polo" count="3" group="36" sources="3605,3655,3656"/>
+   <word id="3709" text="Weightlifting" count="3" group="37" sources="3705,3755,3756"/>
+   <word id="3809" text="Wrestling" count="3" group="38" sources="3805,3855,3856"/>
+</words>
+
+<!-- LINKS section -->
+<links>
+
+<!-- Links: Cycling -->
+  <link from="909" to="919" weight="2.0"/>
+  <link from="909" to="929" weight="2.0"/>
+  <link from="909" to="939" weight="2.0"/>
+  <link from="909" to="949" weight="2.0"/>
+
+<!-- Links: Equestrian -->
+  <link from="1409" to="1419" weight="2.0"/>
+  <link from="1409" to="1429" weight="2.0"/>
+  <link from="1409" to="1439" weight="2.0"/>
+
+<!-- Links: Gymnastics -->
+  <link from="1909" to="1919" weight="2.0"/>
+  <link from="1909" to="1929" weight="2.0"/>
+  <link from="1909" to="1939" weight="2.0"/>
+
+</links>
+
+</network>

@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/3bd8/0/0/%2a/i;246142468;0-0;0;41934750;4307-300/250;44014864/44032651/1;;~sscs=%3fhttp://store.eiu.com/"><img src="http://s0.2mdn.net/viewad/2073642/MPU-300x250.gif" border=0 alt="Click here to find out more!"></a>');

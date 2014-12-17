@@ -1,0 +1,6 @@
+/* MLB */
+body.tier3 .bg-elements, .tier3-standard .bg-elements {background-image:url(http://a2.espncdn.com/prod/assets/bg_tier3/elements/mlb.jpg) !important;}
+body.tier3 #sub-branding{background:#0f4871;}
+/* full branding */
+body.tier3-full{background-image:url(http://a2.espncdn.com/prod/assets/bg_tier3/gradients/mlb_fullbrand.jpg) !important;}
+body.tier3-full .bg-elements{background-image:url(http://a2.espncdn.com/prod/assets/bg_tier3/elements/mlb_fullbrand.jpg) !important;}

@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+
+<head>
+  <title>Sample Infomous embed</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+</head>
+
+<body>
+
+<script type="text/javascript" async data-infomous-id="nid964" src="http://analyst2.infomous.com/client2?width=300&height=250&maxWords=20&frameShowByLine=false&frameTitleImage=http%3A%2F%2Fwww.infomous.com%2Fsite%2Fmockups%2FNYT%2FNYT_title.png"></script>
+
+
+</body>
+
+</html>

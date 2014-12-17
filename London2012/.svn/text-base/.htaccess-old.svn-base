@@ -1,0 +1,11 @@
+<Files "*.xml">
+    Satisfy any
+    Allow from all
+</Files>
+
+<Files "*.png">
+    Satisfy any
+    Allow from all
+</Files>
+
+Require group all-access london2012

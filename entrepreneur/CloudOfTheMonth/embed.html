@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:fb="http://ogp.me/ns/fb#" xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+<head>
+<base href="http://www.infomous.com">
+<title>Cloud of the Month with Sponsorship Demo </title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?y" />
+<script type="text/javascript" src="/misc/jquery.js?y"></script>
+<script type="text/javascript" src="/misc/drupal.js?y"></script>
+<script type="text/javascript">
+
+// google analytics
+  var _gaq = _gaq || [];
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+$(document).ready(function(){
+	_gaq.push(['_setAccount', 'UA-18489566-1']);
+	_gaq.push(['_trackPageview']);
+	_gaq.push(['_trackPageLoadTime']);
+});
+</script>
+
+
+<script type="text/javascript">jQuery.extend(Drupal.settings, { "basePath": "/" });</script>
+<link type="text/css" rel="stylesheet" media="all" href="/client/lib/jquery-ui-1.8.16.custom.css" />
+<script type="text/javascript" src="/client/lib/jquery-ui-1.8.16.custom.min.js"></script>
+<style type="text/css" media="all">
+
+#container {
+	font-size:1em;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	width:892px;
+        height:617px;
+}
+
+#slider-container {
+        width: 640px;
+        margin: -31px 0px 0px 155px;
+        position: relative;
+        z-index: 1;
+}
+
+#date-labels {
+	     width:91%;
+	     text-align: justify;
+	     margin:0 auto;
+             font-size: 10pt;
+             font-family: helvetica,sans-serif,arial;
+             font-weight: bold;
+             height: 1em;
+}
+
+#date-labels div {
+	   display: inline-block;
+}
+
+#date-labels:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  height: 0px;
+  display: inline-block;
+}
+
+#legend {
+        width: 95%;
+	font-size:11pt;
+	font-family: helvetica,sans-serif,arial;
+	margin:11px auto 0px auto;
+	text-align:left;
+}
+     
+
+#cloud-legend {
+	font-size:1em;
+	font-family: helvetica,sans-serif,arial;
+	color:#333333;
+	margin-top:5px;
+	text-align:left;
+}
+
+</style>
+</head>
+
+<body>
+
+<script>
+
+/* Core Infomous function */
+function infomous_ready(I) {
+
+	var cloud = I.clouds.get();
+        var startYear = new Date("December 1, 2013 00:00:00");
+        var d1 = new Date();
+        var d2 = new Date();
+        var oneDayInMsec = 86400000;
+        var oneWeekInMsec = 7*86400000;
+        var previousWeek = -1; // Use this to track week changes - initially -1 to recognize
+	
+	//event tracker variables
+
+	var href = I.href();
+	
+	
+	var slider = $( "#slider" ).slider({
+		value: 0,
+		min: 0,
+		max: 29, 
+		slide: function( e, ui ) {
+			update_date_text( ui.value );
+		},
+		change: function( e, ui ) {
+			update_date( ui.value );  
+		}
+	}).data('slider');
+
+	update_date( slider.value() );
+	update_date_text( slider.value() );
+	
+	function update_date( period ) {
+                d1.setTime(startYear.getTime()+period*oneDayInMsec);
+                d2.setTime(d1.getTime()+oneDayInMsec);
+		cloud.set_var('sinceLast', undefined);
+		since = '2013'+to2digits(d1.getMonth()+1)+to2digits(d1.getDate());
+		cloud.set_var('since', since +'T000000Z');
+		until = '2013'+to2digits(d2.getMonth()+1)+to2digits(d2.getDate());
+		cloud.set_var('until', until + 'T000000Z');
+		cloud.make_request();   
+/*		slider_id = 'Jmp ' + to2digits(weeks-previousWeek) + '; Frm ' + to2digits(previousWeek+1) + '; To ' + to2digits(weeks+1);
+		_gaq.push(['_setCustomVar', 3,'slider_change', slider_id]); 
+//		_gaq.push(['_setCustomVar', 4,'week', weeks+1, 1]); 
+		_gaq.push(['_trackEvent', href, 'slider', '']);
+                previousWeek = weeks;
+*/
+	}
+
+	function update_date_text( period ) {
+                d1 = new Date();
+                d1.setTime(startYear.getTime()+period*oneDayInMsec);
+                d2 = new Date();
+                d2.setTime(d1.getTime()+oneDayInMsec-1);
+/*                if (weeks == 51) { // Catch the last day of the year!
+                  d2.setTime(d2.getTime()+86399999);
+                }
+*/
+
+		$( "#legend" ).html('Move the green dot to change dates - currently showing <em>USA TODAY</em> news for <b>' + d1.toDateString() + '</b>');
+	}
+	
+	function to2digits(n) {
+		var nstr = n.toString();
+		return n < 10 && nstr.length === 1 ? '0'+n : nstr;
+	}
+
+	function get_url_params() {
+		var url = window.location.href;
+		var sep = '?';
+		var query = url.split(sep);
+		if (query.length == 1)
+			return {};
+		query = query[1];
+		var args = query.split('&'),
+		    i = args.length,
+		    params = {};
+		while (i--) {
+			var keyval = args[i].split('=');
+			params[ keyval[0] ] = keyval[1]; 
+		}
+		return params;
+	}
+
+}
+
+</script>
+
+<!-- Overall container for the entire body -->
+<div id="container">
+
+  <!-- Box containing the cloud, legend, slider etc. -->
+  <div style="border: 1px solid #333333; margin-top:5px; height:611px;">
+
+    <!-- Infomous Cloud -->
+    <div id="infomousMovie" style="border-style:none; margin-top:0px; height: 575px;background:url('http://www.infomous.com/site/client/USAT/CloudOfTheMonth/gecko.jpg');background-repeat:no-repeat;background-position:right bottom;">
+     <script type="text/javascript" async data-infomous-id="nid44207" src="http://www.infomous.com/client2/?width=890&height=575&wmode=transparent"></script> 
+    </div> 
+
+      <div id="slider-container">
+      <!-- Date labels -->
+      <div id="date-labels">
+<!--	<div>Jan</div>
+	<div>Feb</div>
+	<div>Mar</div>
+	<div>Apr</div>
+	<div>May</div>
+	<div>Jun</div>
+	<div>Jul</div>
+	<div>Aug</div>
+	<div>Sep</div>
+	<div>Oct</div>
+	<div>Nov</div>
+	<div>Dec</div>
+-->
+      <div>Dec 1</div>
+      <div>Dec 8</div>
+      <div>Dec 15</div>
+      <div>Dec 22</div>
+      <div>Dec 29</div>
+      </div> <!-- End of Date Labels -->
+
+      <!-- Date slider -->
+      <div style="height:15px;">
+      <div id="slider" style="margin:2px auto 0px auto;width:95%;height:8px;"></div>
+      </div> <!-- End of Date slider -->
+
+      </div> <!-- End of slider and labels container -->
+
+    <!-- Container for legend, slider and date labels -->
+    <div style="margin-left:auto; margin-right:auto; position: relative;">
+
+            <!-- Legend -->
+    <div id="legend">&nbsp;</div>
+
+    </div> <!-- End of Containter for legend, slider and date labels -->
+
+  </div> <!-- End of Box containing the cloud, legend, slider etc. -->
+
+
+</div> <!-- End of Container -->
+
+
+</body>

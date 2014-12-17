@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+ <channel>
+  <atom:link href="http://www.infomous.com/site/mockups/FreshPatents/spin~9392378.xml" rel="self" type="application/rss+xml"/>
+  <title>Search pattern for spin</title>
+  <link>http://www.infomous.com/site/mockups/FreshPatents</link>
+  <description>Explore spin from FreshPatents</description>
+  <item>
+   <title>Category -- Spin</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-bx1.rss</link>
+   <description>Category -- Spin</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-bx1.rss</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Spin Memory</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-Memory-bx1.rss</link>
+   <description>Category -- Spin Memory</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-Memory-bx1.rss</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Spin Torque</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-Torque-bx1.rss</link>
+   <description>Category -- Spin Torque</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-Torque-bx1.rss</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Electron Spin</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Electron-Spin-bx1.rss</link>
+   <description>Category -- Electron Spin</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Electron-Spin-bx1.rss</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Spin Stabilization</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-Stabilization-bx1.rss</link>
+   <description>Category -- Spin Stabilization</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-Stabilization-bx1.rss</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Spin Coating Method</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-Coating-Method-bx1.rss</link>
+   <description>Category -- Spin Coating Method</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-Coating-Method-bx1.rss</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Spin Torque Oscillator</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-Torque-Oscillator-bx1.rss</link>
+   <description>Category -- Spin Torque Oscillator</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-Torque-Oscillator-bx1.rss</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Spin Coating Technique</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-Coating-Technique-bx1.rss</link>
+   <description>Category -- Spin Coating Technique</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Spin-Coating-Technique-bx1.rss</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+ </channel>
+</rss>

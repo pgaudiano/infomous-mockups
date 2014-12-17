@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Infomous: TV Program Explorer</title>
+<link rel="shortcut icon" href="favicon.ico">
+<style type="text/css">
+<!--
+html, body{
+margin: 0;
+padding: 0;
+background-color: #DDDDDD;
+width: 100%;
+height: 100%;
+}
+#flash{
+margin: 0;
+width: 100%;
+height: 100%;
+}
+-->
+</style>
+<script type="text/javascript" src="swfobject.js"></script>
+</head>
+
+<body>
+	<table width=100%" height="100%">
+	<tr height="100%">
+	<td width="70%">
+	<div id="flash" align="left">
+			You need Flash Player 8 or newer and JavaScript on to view this site.
+	</div>
+	</td>
+	<td width="30%" valign="top">
+		<b>Actors only (for all movies)</b>
+		<p>This cloud shows relationships between actors based on movies they've co-starred in.  The data represents all movies from the New York headend on Saturday Feb 26 2011 starting at or after 8pm.  The relative sizes of words are based on their frequency.
+		<p> Note the category names have been hidden (you can see them in the "Hidden" popup and un-hide them).  A cloud with all categories visible can be viewed <a href="http://www.infomous.com/site/mockups/TV/actors-categs-allMovies.html">here</a>.
+		<p> Things to play with:
+		<ul>
+			<li>Hover over actor names to see a list of movies they star in, complete with description and categories</li>
+			<li>Find "Jennifer Aniston" and hover over; the "He's just not that into you" movie title is a link - click it; this will open a cloud focused on this movie</li>
+			<li>Uncheck "Groups" - more links will show up</li>
+			<li>Focus on an actor (e.g. Bradley Cooper) - all actors connected to them will show up
+				<ul>
+				<li>Note that when hovering over a related actor the popup list now shows only the movies also casting the focused actor.</li>
+				<li>Click the focused actor or click anywhere in the cloud background to unfocus and see the original cloud again</li>
+				</ul>
+			</li>
+		</ul>
+	<p><a href="http://www.infomous.com/site/mockups/TV/index.html">HOME</a>
+	</td>
+	</tr>
+	</table>
+
+	<script type="text/javascript">
+		// <![CDATA[
+			var so = new SWFObject("infomous2.swf", "infomous", "100%", "100%", "8", "#DDDDDD");
+			so.addVariable("name", getQueryParamValue("name"));
+			so.addVariable("linkageThreshold", "1.5");
+			so.addVariable("popularWordCutoff", getQueryParamValue("popularWordCutoff"));
+			so.addVariable("pos", getQueryParamValue("pos"));
+			so.addVariable("focused", getQueryParamValue("focused"));
+			so.addVariable("hidden", "Sports_Baseball,Comedy,Children,Drama,Fantasy,Horror,Musical,Mystery,Romance,SciFi,Suspense,Western,Other,Sports_Baseball");
+			so.addVariable("zoom", "1.5");
+			so.addVariable("fontScale", ".7");
+			so.addVariable("maxWords", "100");
+			so.addVariable("groups", "true");
+			so.addVariable("bottomBarControls", "fontSlider,zoomSlider,wordsSlider,pos,groups,capture,fullscreen,focusSelect");
+            		so.addVariable("feeds", "http%3A%2F%2Fwww.infomous.com%2Fsite%2Fmockups%2FTV%2Fdata%2Fxml%2Fprog-he91922-20110226209-c3-progTitleWithCategs-actorList-4.xml");
+			so.addParam("allowScriptAccess", "always");
+			so.addParam("allowFullScreen", "true");
+ 			so.addVariable("setPanels", "status,blobs,words,bottom");
+			so.addVariable("dict", "NOUN|1,VERB|1,ADJECTIVE|1,ADVERB|1,NUMBER|1,OTHER|1");
+ 		        so.addVariable("highlighted", "MV_Comedy,MV_Children,MV_Drama,MV_Fantasy,MV_Horror,MV_Musical,MV_Mystery,MV_Romance,MV_SciFi,MV_Suspense,MV_Western,MV_Other,Sports_Baseball,Comedy,Children,Drama,Fantasy,Horror,Musical,Mystery,Romance,SciFi,Suspense,Western,Other,Sports_Baseball");
+        		so.addVariable("colWordHighlighted", "0x0000FF");
+			so.addVariable("skinMaxFontSize", "30");
+			so.write("flash");
+		// ]]>
+	</script>
+</body>
+</html>
+

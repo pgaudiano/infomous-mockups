@@ -1,0 +1,50 @@
+﻿#mymeal-header #mymeal-print
+{
+    background: url("../../../../../cms/en/us/cms_out/digital_assets/graphics/menu_nutrition/mymeal-print.png") no-repeat scroll 0 0 transparent;
+    height: 19px;
+    width: 54px;
+    
+    cursor: pointer;
+}
+
+#mymeal-header #mymeal-social #mymeal-social-shared
+{
+    background: url("../../../../../cms/en/us/cms_out/digital_assets/graphics/menu_nutrition/mymeal-social.png") no-repeat scroll 0 0 transparent;
+    height: 24px;
+    width: 40px;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-custom-ingredients .header
+{
+    background: url("../../../../../cms/en/us/cms_out/digital_assets/graphics/menu_nutrition/customize-ingredients-header.png") no-repeat scroll left top transparent;
+    width: 277px;
+    height: 17px;
+    margin-bottom: 24px;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #build-a-meal .header
+{
+    background: url("../../../../../cms/en/us/cms_out/digital_assets/graphics/menu_nutrition/build-a-meal-header.png") no-repeat scroll left top transparent;
+    width: 98px;
+    height: 17px;
+    margin-bottom: 24px;
+}
+
+#menu-nutri-tabs #nutritabs-customizable #menu-variations .header
+{
+    background: url("../../../../../cms/en/us/cms_out/digital_assets/graphics/menu_nutrition/select-option-header.png") no-repeat scroll left top transparent;
+    width: 104px;
+    height: 17px;
+    margin-bottom: 24px;
+}
+
+#menu-more-carousel .carousel-see-all 
+{
+
+    height: 20px;
+    width: 49px;
+
+    position: absolute;
+    right:0;
+    bottom: 0;
+}

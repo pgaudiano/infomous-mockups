@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+ <channel>
+  <atom:link href="http://www.infomous.com/site/mockups/FreshPatents/test~7584593.xml" rel="self" type="application/rss+xml"/>
+  <title>Search pattern for test</title>
+  <link>http://www.infomous.com/site/mockups/FreshPatents</link>
+  <description>Explore test from FreshPatents</description>
+  <item>
+   <title>Category -- Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Test-bx1.rss&amp;title=Test</link>
+   <description>Category -- Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Test-bx1.rss&amp;title=Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Lab Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Lab-Test-bx1.rss&amp;title=Lab Test</link>
+   <description>Category -- Lab Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Lab-Test-bx1.rss&amp;title=Lab Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- NSE Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/NSE-Test-bx1.rss&amp;title=NSE Test</link>
+   <description>Category -- NSE Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/NSE-Test-bx1.rss&amp;title=NSE Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Pap Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Pap-Test-bx1.rss&amp;title=Pap Test</link>
+   <description>Category -- Pap Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Pap-Test-bx1.rss&amp;title=Pap Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Drug Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Drug-Test-bx1.rss&amp;title=Drug Test</link>
+   <description>Category -- Drug Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Drug-Test-bx1.rss&amp;title=Drug Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Beta Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Beta-Test-bx1.rss&amp;title=Beta Test</link>
+   <description>Category -- Beta Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Beta-Test-bx1.rss&amp;title=Beta Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Alpha Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Alpha-Test-bx1.rss&amp;title=Alpha Test</link>
+   <description>Category -- Alpha Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Alpha-Test-bx1.rss&amp;title=Alpha Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Genetic Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Genetic-Test-bx1.rss&amp;title=Genetic Test</link>
+   <description>Category -- Genetic Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Genetic-Test-bx1.rss&amp;title=Genetic Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Carrier Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Carrier-Test-bx1.rss&amp;title=Carrier Test</link>
+   <description>Category -- Carrier Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Carrier-Test-bx1.rss&amp;title=Carrier Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Exercise Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Exercise-Test-bx1.rss&amp;title=Exercise Test</link>
+   <description>Category -- Exercise Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Exercise-Test-bx1.rss&amp;title=Exercise Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Loopback Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Loopback-Test-bx1.rss&amp;title=Loopback Test</link>
+   <description>Category -- Loopback Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Loopback-Test-bx1.rss&amp;title=Loopback Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Diabetes Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Diabetes-Test-bx1.rss&amp;title=Diabetes Test</link>
+   <description>Category -- Diabetes Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Diabetes-Test-bx1.rss&amp;title=Diabetes Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Pregnancy Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Pregnancy-Test-bx1.rss&amp;title=Pregnancy Test</link>
+   <description>Category -- Pregnancy Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Pregnancy-Test-bx1.rss&amp;title=Pregnancy Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Refraction Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Refraction-Test-bx1.rss&amp;title=Refraction Test</link>
+   <description>Category -- Refraction Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Refraction-Test-bx1.rss&amp;title=Refraction Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Cholesterol Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Cholesterol-Test-bx1.rss&amp;title=Cholesterol Test</link>
+   <description>Category -- Cholesterol Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Cholesterol-Test-bx1.rss&amp;title=Cholesterol Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Lactic Acid Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Lactic-Acid-Test-bx1.rss&amp;title=Lactic Acid Test</link>
+   <description>Category -- Lactic Acid Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Lactic-Acid-Test-bx1.rss&amp;title=Lactic Acid Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Cross Hatch Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Cross-Hatch-Test-bx1.rss&amp;title=Cross Hatch Test</link>
+   <description>Category -- Cross Hatch Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Cross-Hatch-Test-bx1.rss&amp;title=Cross Hatch Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Intelligence Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Intelligence-Test-bx1.rss&amp;title=Intelligence Test</link>
+   <description>Category -- Intelligence Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Intelligence-Test-bx1.rss&amp;title=Intelligence Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Filter Test Device</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Filter-Test-Device-bx1.rss&amp;title=Filter Test Device</link>
+   <description>Category -- Filter Test Device</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Filter-Test-Device-bx1.rss&amp;title=Filter Test Device</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Power On Self Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Power-On-Self-Test-bx1.rss&amp;title=Power On Self Test</link>
+   <description>Category -- Power On Self Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Power-On-Self-Test-bx1.rss&amp;title=Power On Self Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Power Cycling Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Power-Cycling-Test-bx1.rss&amp;title=Power Cycling Test</link>
+   <description>Category -- Power Cycling Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Power-Cycling-Test-bx1.rss&amp;title=Power Cycling Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Disintegration Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Disintegration-Test-bx1.rss&amp;title=Disintegration Test</link>
+   <description>Category -- Disintegration Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Disintegration-Test-bx1.rss&amp;title=Disintegration Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Nuclear Stress Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Nuclear-Stress-Test-bx1.rss&amp;title=Nuclear Stress Test</link>
+   <description>Category -- Nuclear Stress Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Nuclear-Stress-Test-bx1.rss&amp;title=Nuclear Stress Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Breath Alcohol Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Breath-Alcohol-Test-bx1.rss&amp;title=Breath Alcohol Test</link>
+   <description>Category -- Breath Alcohol Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Breath-Alcohol-Test-bx1.rss&amp;title=Breath Alcohol Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Glycated Albumin Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Glycated-Albumin-Test-bx1.rss&amp;title=Glycated Albumin Test</link>
+   <description>Category -- Glycated Albumin Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Glycated-Albumin-Test-bx1.rss&amp;title=Glycated Albumin Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Nerve Conduction Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Nerve-Conduction-Test-bx1.rss&amp;title=Nerve Conduction Test</link>
+   <description>Category -- Nerve Conduction Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Nerve-Conduction-Test-bx1.rss&amp;title=Nerve Conduction Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Glucose Tolerance Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Glucose-Tolerance-Test-bx1.rss&amp;title=Glucose Tolerance Test</link>
+   <description>Category -- Glucose Tolerance Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Glucose-Tolerance-Test-bx1.rss&amp;title=Glucose Tolerance Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Fecal Occult Blood Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Fecal-Occult-Blood-Test-bx1.rss&amp;title=Fecal Occult Blood Test</link>
+   <description>Category -- Fecal Occult Blood Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Fecal-Occult-Blood-Test-bx1.rss&amp;title=Fecal Occult Blood Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Pulmonary Function Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Pulmonary-Function-Test-bx1.rss&amp;title=Pulmonary Function Test</link>
+   <description>Category -- Pulmonary Function Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Pulmonary-Function-Test-bx1.rss&amp;title=Pulmonary Function Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Joint Test Action Group</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Joint-Test-Action-Group-bx1.rss&amp;title=Joint Test Action Group</link>
+   <description>Category -- Joint Test Action Group</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Joint-Test-Action-Group-bx1.rss&amp;title=Joint Test Action Group</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Pharmacologic Stress Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Pharmacologic-Stress-Test-bx1.rss&amp;title=Pharmacologic Stress Test</link>
+   <description>Category -- Pharmacologic Stress Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Pharmacologic-Stress-Test-bx1.rss&amp;title=Pharmacologic Stress Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Oral Glucose Tolerance Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Oral-Glucose-Tolerance-Test-bx1.rss&amp;title=Oral Glucose Tolerance Test</link>
+   <description>Category -- Oral Glucose Tolerance Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Oral-Glucose-Tolerance-Test-bx1.rss&amp;title=Oral Glucose Tolerance Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+  <item>
+   <title>Category -- Nerve Conduction Velocity Test</title>
+   <link>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Nerve-Conduction-Velocity-Test-bx1.rss&amp;title=Nerve Conduction Velocity Test</link>
+   <description>Category -- Nerve Conduction Velocity Test</description>
+   <guid>http://www.infomous.com/site/mockups/FreshPatents/getcloud.php?input=http://tgs.freshpatents.com/Nerve-Conduction-Velocity-Test-bx1.rss&amp;title=Nerve Conduction Velocity Test</guid>
+   <media:thumbnail url="http://www.infomous.com/site/rss/thumbs/info.png"/>
+  </item>
+ </channel>
+</rss>

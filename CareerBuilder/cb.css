@@ -1,0 +1,173 @@
+body {
+    font: 12px Arial, Helvetica, sans-serif;   
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+body a {
+    text-decoration: none;  
+    color: #363FB5; 
+}
+body a:hover {
+text-decoration: underline;
+}
+h1 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #000066;
+    margin: 0;
+    padding: 5px 0 10px 0;
+}
+input, select, textarea {
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 4px; 
+    border: 1px solid #B4B4B4;
+    z-index: 11;
+    font: inherit;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin: 0 0 2px;   
+}
+/* Global button styles */
+.btn, div.ui-widget-content button.ui-button, .button { 
+    -webkit-appearance: none;
+    background:none; 
+    background-image: none;
+    background-color: #DF691E;
+    border: none; 
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    padding: 6px 10px;
+}
+.btn:hover, div.ui-widget-content button.ui-button:hover, .button:hover {
+    background-color: #F88C2E;
+    text-decoration: none;
+}
+
+.btn.blue, .button.blue ,.confirmationDialog .button, .confirmationDialog .btn { 
+    background-color: #0252A2;
+    font-size: 14px;
+}
+.btn.blue:hover, .button.blue:hover ,.confirmationDialog .button:hover, .confirmationDialog .btn:hover {
+    background-color: #0267CC;
+}
+
+.btn.grey, .button.grey {
+    color: #0252A2;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    font-weight: normal;
+}
+.btn.grey:hover, .button.grey:hover {
+    background-color: #F5F5F5;
+}
+
+.btn.large { font-size: 16px; padding: 8px 12px; }
+
+a:hover, .btn:hover {
+    cursor: pointer;
+}
+
+.btn:hover, .button:hover ,div.ui-widget-content button.ui-button:focus, .button:focus, .btn:focus, .button:focus {
+    outline: none;
+}
+/* End Global button styles */
+.quickSearchBar h1 {
+    font-size: 20px;
+    color: #fff;
+}
+* html .quickbar_inner {
+    box-shadow: 0;
+    filter: 0;
+}
+.narrowWidth {
+    width: 800px;
+    margin: 0 auto;   
+    position: relative;  
+    padding: 1% 0;  
+}
+.quickbar_inner .searchBox {
+    float: left;
+    padding: 1% 4% 1% 0;
+    width: 64%;   
+    color: #fff;
+}
+/* temp */
+.quickbar_inner .narrowWidth .searchBox {
+    width: 57%;
+}
+.quickbar_inner .searchBox  .btn {
+    padding:6px 1px; 
+    width:50%; 
+}
+.quickbar_inner .searchBox a {
+    color: #fff; 
+    font-size: 10px;  
+}
+.searchBox .inputWrapper {
+    float: left;
+    margin: 0 2% 10px 0;
+    width: 48%;
+    position: relative;
+    height: 45px;
+}
+.searchBox .inputWrapper input, .searchBox .inputWrapper select {
+    width: 100%;   
+}
+.searchBox .example {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 10px;   
+}
+.searchBox a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.searchBox .btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+* html .clearfix {
+    height:1%;
+}
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+    line-height:0;
+}
+.quickSearchBar {
+    background-color: #0079B5;
+}
+
+
+
+a.desktop-logo {
+  background-image: url("http://img.icbdr.com/images/js/cb_logo_new_homepage.png");
+  background-size: 100%;
+  display: inline-block;
+  height: 40px;
+  margin: 16px 16px;
+  width: 180px;
+}
+@media (min-width: 760px) {
+   .new-nav-search-bar {
+        display: block;
+    }
+}
+.new-platform-nav .row { width: 1000px; max-width: 100%; min-width: 768px; margin: 0 auto; }
+.new-platform-nav .row:before, .new-platform-nav .row:after { content: " "; display: table; }
+.new-platform-nav .row:after { clear: both; }

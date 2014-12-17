@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>direct embed test using vars and list of feeds</title>
+<style type="text/css">
+  <!--
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  -->
+</style>
+
+</head>
+<body>
+  
+  <div id="infomous" class="infomous"></div>
+  <script type="text/javascript">
+    var vars = {
+      width: "600",
+      height: "300",
+      setInterfaceType: "widget",
+      "query:test" : 1,
+      feeds: "http://www.economist.com/rss/international_rss.xml|http://www.economist.com/rss/united_states_rss.xml|http://www.economist.com/rss/business_rss.xml"
+   }
+  </script>
+	<script type="text/javascript" src="client/embed.js"></script>
+	<br/><br/>
+	<iframe name="infomous-target" id="infomous-target" width="600" height="300"></iframe>
+
+</body>
+</html>

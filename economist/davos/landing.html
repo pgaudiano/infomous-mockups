@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+<head>
+
+<title>Economist Opinion Cloud by Infomous and Appinions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<link rel="stylesheet" type="text/css" media="all" href="landing/style.css" />
+<link rel="stylesheet" type="text/css" href="economist.css" />
+<script type="text/javascript" src="economist.js"></script>
+
+</head>
+
+<body>
+
+<div align="center">
+<table cellpadding="10" cellspacing="0" style="width:880px; border:1px solid #4A8019; text-align:center; margin: 15px 0;" >
+  <tr>
+    <td>
+      <a href="http://infomous.com">
+          <img src="landing/logo_on_white.jpg" alt="Infomous" />
+      </a>
+    </td>
+    <td>
+    	<a href="http://appinions.com">
+            <img src="landing/Appinions_logo_40p.png" alt="Appinions" />
+    	</a>
+    </td>
+  </tr>
+</table>
+
+<div style="width:800px; padding:5px; text-align:center; font-family:Arial,Helvetica,sans-serif; font-size:2em; color:#3B6614; font-weight:bold;">
+<a href="http://economist.com">The Economist</a> Opinion Cloud by <a href="http://infomous.com">Infomous</a> and <a href="http://appinions.com">Appinions</a>
+</div>
+
+<div style="width:880px; padding:5px; text-align:center; font-size:1.0em; color:#444444; font-weight:normal; margin-bottom: 20px;">
+  The Economist Opinion Cloud aggregates all user commentary by readers of <a href="http://economist.com">The Economist</a>. It is made possible by a collaboration of <a href="http://appinions.com"> Appinions </a> 
+  opinion extraction technology and <a href="http://infomous.com"> Infomous </a> text visualization. 
+</div>
+
+<script language="javascript">
+
+    var vars = {
+
+		width: 880,
+		height: 500,  
+		maxWords: 50,
+
+        loadAtStart: true,
+		setFrame: false,
+		setInterfaceType: "widget",
+		linkageThreshold: 1,
+
+		'query:fromDaysBack': 1,
+		'query:toDaysBack': 0,
+
+		skin: "economist"
+	};
+
+	var params = {
+		allowFullScreen: true,
+		allowScriptAccess: "always",
+		bgcolor: "#D9E4E6"
+	};
+
+</script>
+
+<div id="cloudPeriodBar" style="width:880px; height:25px;">
+
+    <span class="period">Period:</span> 
+    
+    <a class="date activeDate" onclick="set_date(this, 1,0);" id="sortBy1" href="javascript:void(0);"><span>today</span></a>
+
+    <a class="date" onclick="set_date(this, 2,1);" id="sortBy2" href="javascript:void(0);"><span>yesterday</span></a>
+
+    <a class="date" onclick="set_date(this, 7,0);" id="sortBy3" href="javascript:void(0);"><span>this week</span></a>
+
+    <a class="date" onclick="set_date(this, 14,0);" id="sortBy3" href="javascript:void(0);"><span>two weeks</span></a>
+
+    <a class="date" onclick="set_date(this, 30,0);" id="sortBy3" href="javascript:void(0);"><span>this month</span></a>
+
+</div>
+
+
+<div id="infomous" class="infomous"></div>
+<script type="text/javascript" src="http://infomous.com/site/economist/1_6b/client/embed.js"> 
+</script>  
+
+
+<div style="width:880px; margin:0; padding: 4px 0; font-size:12px; color:#3B6614; background-color:#E5ECF2; text-align:right;">
+  <font color="#777777">Powered by </font>
+  <a href="http://www.infomous.com" target="_blank" style="text-decoration:underline">Infomous<a/> 
+  <font color="#777777"> and </font>
+  <a href="http://www.appinions.com" target="_blank" style="text-decoration:underline">Appinions</a>&nbsp;&nbsp;
+</div>
+
+<div style="width:800px; margin:10px 0 20px 0; padding:0px; text-align:left; font-size:11px; color:#3B6614; font-weight:normal;">
+  Hover your cursor over a word to see relevant content. Click on a
+  word to see related words. Click on the <strong>x</strong> next to a
+  word to remove it and change your perspective. Hover the mouse near
+  the bottom of the cloud to reveal a control bar for additional
+  fine-tuning. <!-- or to embed a widget-sized version on your own page
+  (click the <strong>&lt;&gt;</strong> icon in the control bar). -->
+</div>
+
+<div style="margin: 15px 0; width:880px; border:1px solid #4A8019; font-size: 0.8em; padding: 10px;">
+  <p>Like this? Share it!&nbsp;
+    <a href="http://twitter.com/share" class="twitter-share-button"
+    data-text="Economist Opinion Cloud" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    &nbsp;
+    <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like layout="button_count"></fb:like> 
+
+Copyright 2007-2011 Icosystem. All rights reserved. <a href="/drupal/terms">Terms of service</a> | <a href="/drupal/privacy">Privacy policy</a> | <a href="/drupal/about">About us</a> | <a href="/drupal/contact">Feedback</a></p>
+</div><!-- footer -->
+
+	</div><!-- align="center" -->
+</body>
