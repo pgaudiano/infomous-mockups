@@ -12,7 +12,7 @@ if (isset($_GET['input'])) {
   $title = $_GET['title'];
 } 
 
-echo '<html><body>
+echo '<html><body style="margin:0;padding:0;">
 <!-- BEGIN Infomous insertion --> 
 <script>
     Shadowbox.init({
@@ -22,16 +22,25 @@ echo '<html><body>
     var cloud;
     var myInfomousCloud = {  // Parameters that alter the look & feel of the cloud.
       api: "true",
-      width: "650",
-      height: "500",
-      setFrame: "True",
+      width: "100%",
+      height: "92%",
+      zoom: "6",
+      dict: "NOUN|1, VERB|0, ADJECTIVE|1, ADVERB|0, NUMBER|0, OTHER|1",
+      hiddenSource: "http://www.infomous.com/site/blocked/english.txt",
+      fontScale: "0.9",
+      setFrame: "false",
       setControls: "False",
       textOption: "TITLE_ONLY",
-      colFrame: "0x2164F3",
-      colFrameTitle: "0xffffff",
-      skinBackgroundImage: "http://www.infomous.com/site/mockups/indeed/indeed_logo.png",
+      skinSourcesWidth: "400",
+      skinLine1Size: "15",
+      skinLine2Size: "12",
+      skinMaxFontSize: "42",
+      skinMinFontSize: "10",
       colSourcesBorder: "0x2164F3",
-      title: "Explore Indeed \''.$title.'\' jobs with Infomous",
+      colBackground: "transparent",
+      wmode: "transparent",
+      colWord: "0x333333",
+      colBlobBorder: "0x2164F3",
       "query:titleFmt": "%t",
     }
     // This is the main Infomous API function

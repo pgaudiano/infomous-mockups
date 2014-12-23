@@ -72,11 +72,22 @@ function curlInfo($term, $loc) {
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&dummy=.js"></script>
     <title>Indeed Visual Explorer</title>
+<script type="text/javascript" src="http://www.infomous.com/site/scripts/shadowbox/shadowbox.js"></script>
+<link type="text/css" rel="stylesheet" href="http://www.infomous.com/site/scripts/shadowbox/shadowbox.css"/>
+<style>
+#sb-body,#sb-loading{background-color:#ffffff;}
+</style>
+<script>
+	Shadowbox.init({
+	handleOversize: "resize"
+	});
+</script>
+
 </head>
 <center>
-<body>
-    <div style="width:700px;font-family:helvetica,sans-serif,arial;padding:20px;">
-        <table style="width:96%;  margin-left: 2%; margin-right: 2%">
+<body  style="background: url('jobs3.png');background-size: cover">
+    <div style="width:90%;font-family:helvetica,sans-serif,arial;padding:20px;">
+        <table style="width:96%; margin: -10px 2% -20px 2%;">
           <tr>
             <td align=left>
               <a href="http://www.infomous.com"><img src="http://www.infomous.com/site/logos/logo_on_white.jpg" height="50"></a>
@@ -86,20 +97,22 @@ function curlInfo($term, $loc) {
             </td>         
           </tr>
         </table>
-        <h3>The Indeed Visual Explorer by <em>Infomous</em></h3>
+        <h3>The Indeed Visual Explorer by <em>Infomous</em>
+<a rel="shadowbox;width=720;height=400" href="help.php" style="color:#2164F3;text-decoration:none;margin-left:20px;">[Help]</a>
+</h3>
     
-        <div>
-            <span style="padding: 10px;">Keywords: 
+        <div style="margin-top:-18px;">
+            <span style="padding: 0px;">Keywords: 
 	    		<input type="text" name="kw" size="40" id="search_term" onkeypress="searchKeyPress(event);">
-	    	</span><BR>
-	    	<span style="padding: 10px;">Location: 
+	    	</span>
+	    	<span style="margin-left: 10px;padding: 0px ;">Location: 
 	    		<input type="text" name="kw" size="40" id="search_loc" placeholder="city, state/province/region" >
-	    	</span><BR>
-	    	<input type="button" id="btnSearch" value="Explore" onclick="search()" style="margin-top:15;width:10em" >
+	    	</span>
+	    	<input type="button" id="btnSearch" value="Explore" onclick="search()" style="margin-top:15;width:8em;margin-left:10px;" >
         </div>
     </div>
-    <iframe id="myframe" width="700" height="550" frameBorder="0"></iframe>
-    <div id="url"></div> 
+    <iframe id="myframe" width="100%" height="100%" frameBorder="0"></iframe>
+<!--     <div id="url"></div> -->
     <script>
     	var fullpath = "";
         var path = "";
@@ -179,4 +192,3 @@ function curlInfo($term, $loc) {
 </body>
 </center>
 </html>
-

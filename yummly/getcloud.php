@@ -24,27 +24,25 @@ echo '<html><body style="margin:0;padding:0;">
       zoom: "3",
       setFrame: "false",
       setControls: "False",
-      textOption: "DESCRIPTION_ONLY",
+//      textOption: "DESCRIPTION_ONLY",
+      textOption: "TITLE_AND_DESCRIPTION",
+//      textOption: "TITLE_ONLY",
+      dict: "NOUN|1, VERB|0, ADJECTIVE|1, ADVERB|0, NUMBER|0, OTHER|1",
       skinSourcesWidth: "400",
       skinLine1Size: "15",
       skinLine2Size: "12",
       skinMaxFontSize: "48",
       skinMinFontSize: "12",
-      colFrame: "0xE75918",
-      colFrameTitle: "0xffffff",
-//      skinBackgroundImage: "http://www.infomous.com/site/mockups/yummly/yummly_background.png",
-      skinImagePosition: "center middle",
       colBackground: "transparent",
+      wmode: "transparent",
       fontScale: "1.2",
       colSourcesBorder: "0xE06331",
       colWord: "0x333333",
       colBlobBorder: "0xE06331",
-      hidden: "Course,course,Ingredients,ingredients,Cuisine,cuisine",
+      hidden: "Course,course,Ingredients,ingredients,Cuisine,cuisine,cooking,time,rating",
       title: "Explore Yummly \''.$title.'\' recipes with Infomous",
       ngramsSource: "'.$ngram.'",
-      "query: cFmt": "true",
       "query:titleFmt" : "%t",
-//      "query:captionFmt" : "%t",
     }
     // This is the main Infomous API function
     function infomous_ready(I) {
@@ -55,7 +53,7 @@ echo '<html><body style="margin:0;padding:0;">
       cloud.make_request();   // Update the cloud
     }
 </script>
-<script type="text/javascript" async data-infomous-id="myInfomousCloud" src="http://www.infomous.com/client2/?wmode=transparent"></script>
+<script type="text/javascript" async data-infomous-id="myInfomousCloud" src="http://www.infomous.com/client2/"></script>
 </body>
 </html>
 ';

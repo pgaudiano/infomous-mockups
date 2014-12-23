@@ -2,7 +2,7 @@
 require_once('rss_generator.php');
 require_once('simple_html_dom.php');
 
-// crawl information from yummly and write to file
+// Get information from yummly and write to a file
 if (isset($_POST['term'])) {
 	// avoid cache problem
 	echo "<script>console.log('test');</script>";
@@ -140,8 +140,12 @@ function curlInfo($term, $url, $id, $key) {
 <head>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <title>Yummly Visual Explorer</title>
-<script type="text/javascript" src="http://www.infomous.com/site/scripts/shadowbox/shadowbox.js"></script>
-<link type="text/css" rel="stylesheet" href="http://www.infomous.com/site/scripts/shadowbox/shadowbox.css"/>
+<!-- Use local copies of shadowbox.{js,css} for the help lightbox -->
+<script type="text/javascript" src="lib/shadowbox.js"></script>
+<link type="text/css" rel="stylesheet" href="lib/shadowbox.css"/>
+<style>
+#sb-body,#sb-loading{background-color:#ffffff;}
+</style>
 </head>
 <center>
 <body  style="background: url('spices.jpg');background-size: cover">
@@ -169,7 +173,7 @@ function curlInfo($term, $url, $id, $key) {
 	    		<input type="text" name="kw" size="50" id="search_term" onkeypress="searchKeyPress(event);">
 	    		<input type="button" id="btnSearch" value="Explore" onclick="search()">
 	    	</span>
-     <a rel="shadowbox;width=700;height=370" href="help.php" style="color:#444444;text-decoration:none;">[Help]</a>
+     <a rel="shadowbox;width=720;height=400" href="help.php" style="color:#E06331;text-decoration:none;">[Help]</a>
         </div>
     </div>
     <div style="width:95%;height:95%;">
@@ -235,7 +239,8 @@ function curlInfo($term, $url, $id, $key) {
         }
 	// used for showing the rss xml file's url
         function showUrl(url) {
-            document.getElementById('url').innerHTML='<pre><p>' + url + ' <button onclick="copy()"><b>Copy To Clipboard</b></button></p></pre>';
+	// Temporarily disabled by PG
+        //    document.getElementById('url').innerHTML='<pre><p>' + url + ' <button onclick="copy()"><b>Copy To Clipboard</b></button></p></pre>';
         }
         // used for ppoping up a dialog and copying the url 
         function copy() {
